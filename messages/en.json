@@ -17,19 +17,24 @@
     "startFree": "Start Free"
   },
   "hero": {
-    "badge": "AI-Powered Math Education",
-    "titleLine1": "Learn Math Like a",
-    "titleHighlight1": "Game",
-    "titleLine2": "Ace Exams Like a",
-    "titleHighlight2": "Quest",
-    "description": "Your personal AI math tutor that makes studying feel like playing. Get a custom learning path, practice with smart questions, and prepare for SAT, IGCSE, IB, and more — all in one place.",
-    "ctaPrimary": "Start Free Trial",
+    "badge": "AI Math Coach for International School Exams",
+    "headlineLine1": "Find your child's math weak spots",
+    "headlineHighlight": " in 10 minutes",
+    "headlineLine2": " — then fix them",
+    "subHeadline": "Spending a fortune on private tutoring? For just RM 99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and explains mistakes with custom videos.",
+    "benefits": {
+      "diagnosis": "10-minute adaptive test for precise skill assessment",
+      "analytics": "Real-time parent dashboard to track learning progress",
+      "gamification": "RPG-style learning that keeps kids studying on their own"
+    },
+    "ctaPrimary": "Start Free Diagnosis",
     "ctaSecondary": "See How It Works",
-    "stats": {
-      "exams": { "value": "6+", "label": "Exams Supported" },
-      "tutor": { "value": "24/7", "label": "AI Tutor Available" },
-      "problems": { "value": "1,000+", "label": "Practice Problems" },
-      "analytics": { "value": "Real-time", "label": "Progress Analytics" }
+    "trustNote": "Free diagnostic available immediately after sign-up · No credit card required",
+    "trustStats": {
+      "exams": { "value": "6+", "label": "Exams (SAT, IGCSE, IB...)" },
+      "accuracy": { "value": "88%", "label": "Avg. Accuracy Improvement" },
+      "available": { "value": "24/7", "label": "AI Tutor Available" },
+      "problems": { "value": "1,000+", "label": "Personalized Problems" }
     }
   },
   "problem": {

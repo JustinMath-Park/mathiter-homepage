@@ -1,17 +1,42 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+const DashboardMockup = dynamic(() => import("./DashboardMockup"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full max-w-lg mx-auto h-[400px] bg-gray-50 rounded-2xl animate-pulse" />
+  ),
+});
 
 export default function Hero() {
   const t = useTranslations("hero");
 
-  const stats = [
-    { value: t("stats.exams.value"), label: t("stats.exams.label") },
-    { value: t("stats.tutor.value"), label: t("stats.tutor.label") },
-    { value: t("stats.problems.value"), label: t("stats.problems.label") },
-    { value: t("stats.analytics.value"), label: t("stats.analytics.label") },
+  const benefits = [
+    { icon: "🎯", text: t("benefits.diagnosis") },
+    { icon: "📊", text: t("benefits.analytics") },
+    { icon: "🎮", text: t("benefits.gamification") },
+  ];
+
+  const trustStats = [
+    { value: t("trustStats.exams.value"), label: t("trustStats.exams.label") },
+    {
+      value: t("trustStats.accuracy.value"),
+      label: t("trustStats.accuracy.label"),
+    },
+    {
+      value: t("trustStats.available.value"),
+      label: t("trustStats.available.label"),
+    },
+    {
+      value: t("trustStats.problems.value"),
+      label: t("trustStats.problems.label"),
+    },
   ];
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
+    <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl" />
@@ -19,61 +44,89 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          {/* Badge */}
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
-            <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-sm font-medium text-primary">
-              {t("badge")}
-            </span>
-          </div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left: Copy */}
+          <div className="text-center lg:text-left">
+            {/* Badge */}
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
+              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              <span className="text-sm font-medium text-primary">
+                {t("badge")}
+              </span>
+            </div>
 
-          {/* Heading */}
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            {t("titleLine1")}{" "}
-            <span className="gradient-text">{t("titleHighlight1")}</span>
-            <br />
-            {t("titleLine2")}{" "}
-            <span className="gradient-text">{t("titleHighlight2")}</span>
-          </h1>
+            {/* Headline */}
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl leading-tight">
+              {t("headlineLine1")}
+              <br />
+              <span className="gradient-text">{t("headlineHighlight")}</span>
+              {t("headlineLine2")}
+            </h1>
 
-          <p className="mt-6 text-lg leading-8 text-muted max-w-2xl mx-auto">
-            {t("description")}
-          </p>
+            {/* Sub-headline */}
+            <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted max-w-xl mx-auto lg:mx-0">
+              {t("subHeadline")}
+            </p>
 
-          {/* CTAs */}
-          <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
-            <a
-              href="https://app.mathiter.com"
-              className="gradient-bg text-white font-semibold px-8 py-3.5 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
-            >
-              {t("ctaPrimary")}
-            </a>
-            <a
-              href="#features"
-              className="flex items-center gap-2 font-semibold px-8 py-3.5 rounded-full text-base border border-gray-200 hover:border-gray-300 transition-colors"
-            >
-              {t("ctaSecondary")}
-              <svg
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            {/* Key benefits */}
+            <div className="mt-6 space-y-2.5">
+              {benefits.map((b) => (
+                <div
+                  key={b.text}
+                  className="flex items-center gap-2.5 text-sm text-gray-700 justify-center lg:justify-start"
+                >
+                  <span className="text-base">{b.icon}</span>
+                  <span>{b.text}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTAs */}
+            <div className="mt-8 flex items-center gap-4 flex-wrap justify-center lg:justify-start">
+              <a
+                href="https://app.mathiter.com"
+                className="gradient-bg text-white font-semibold px-7 py-3.5 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </a>
+                {t("ctaPrimary")}
+              </a>
+              <a
+                href="#features"
+                className="flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full text-base border border-gray-200 hover:border-gray-300 transition-colors"
+              >
+                {t("ctaSecondary")}
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            {/* Trust note */}
+            <p className="mt-4 text-xs text-muted">
+              {t("trustNote")}
+            </p>
           </div>
 
-          {/* Stats */}
-          <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label}>
+          {/* Right: Dashboard Mockup */}
+          <div className="relative">
+            <DashboardMockup />
+          </div>
+        </div>
+
+        {/* Trust stats bar */}
+        <div className="mt-16 pt-8 border-t border-gray-100">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+            {trustStats.map((stat) => (
+              <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold gradient-text">
                   {stat.value}
                 </div>

@@ -17,19 +17,24 @@
     "startFree": "무료 시작"
   },
   "hero": {
-    "badge": "AI 기반 수학 교육",
-    "titleLine1": "수학 공부를",
-    "titleHighlight1": "게임처럼",
-    "titleLine2": "시험 준비를",
-    "titleHighlight2": "퀘스트처럼",
-    "description": "공부가 놀이처럼 느껴지는 나만의 AI 수학 튜터. 맞춤형 학습 경로, 스마트한 문제 풀이, SAT, IGCSE, IB 등 시험 준비까지 — 한곳에서 모두 해결하세요.",
-    "ctaPrimary": "무료 체험 시작",
+    "badge": "국제학교 수학 시험 대비 AI 학습 코치",
+    "headlineLine1": "우리 아이 수학,",
+    "headlineHighlight": " 10분 진단",
+    "headlineLine2": "으로 취약점을 찾아드립니다",
+    "subHeadline": "과외비 월 100만원? Mathiter는 월 RM 99로 AI가 우리 아이만의 취약 단원을 찾고, 맞춤 문제를 출제하고, 오답을 영상으로 설명해 줍니다.",
+    "benefits": {
+      "diagnosis": "10분 적응형 진단으로 정확한 실력 파악",
+      "analytics": "학부모 대시보드에서 학습 현황 실시간 확인",
+      "gamification": "RPG 스타일 학습으로 아이가 스스로 공부합니다"
+    },
+    "ctaPrimary": "무료 진단 시작",
     "ctaSecondary": "학습 방법 보기",
-    "stats": {
-      "exams": { "value": "6+", "label": "지원 시험" },
-      "tutor": { "value": "24/7", "label": "AI 튜터 이용 가능" },
-      "problems": { "value": "1,000+", "label": "연습 문제" },
-      "analytics": { "value": "실시간", "label": "학습 분석" }
+    "trustNote": "가입 후 즉시 무료 진단 가능 · 카드 등록 불필요",
+    "trustStats": {
+      "exams": { "value": "6+", "label": "지원 시험 (SAT, IGCSE, IB 등)" },
+      "accuracy": { "value": "88%", "label": "평균 정답률 향상" },
+      "available": { "value": "24/7", "label": "언제든 AI 튜터 이용" },
+      "problems": { "value": "1,000+", "label": "맞춤형 연습 문제" }
     }
   },
   "problem": {

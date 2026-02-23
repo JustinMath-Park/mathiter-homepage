@@ -17,19 +17,24 @@
     "startFree": "Mula Percuma"
   },
   "hero": {
-    "badge": "Pendidikan Matematik Berkuasa AI",
-    "titleLine1": "Belajar Matematik Seperti",
-    "titleHighlight1": "Permainan",
-    "titleLine2": "Takluk Peperiksaan Seperti",
-    "titleHighlight2": "Quest",
-    "description": "Tutor matematik AI peribadi anda yang menjadikan belajar terasa seperti bermain. Dapatkan laluan pembelajaran peribadi, berlatih dengan soalan pintar, dan bersedia untuk SAT, IGCSE, IB, dan banyak lagi — semuanya di satu tempat.",
-    "ctaPrimary": "Mula Percubaan Percuma",
+    "badge": "Jurulatih Matematik AI untuk Peperiksaan Sekolah Antarabangsa",
+    "headlineLine1": "Kenal pasti kelemahan matematik anak anda",
+    "headlineHighlight": " dalam 10 minit",
+    "headlineLine2": " — dan perbaikinya",
+    "subHeadline": "Tuisyen peribadi mahal? Dengan hanya RM 99/bulan, AI Mathiter mengesan topik lemah anak anda, menjana soalan peribadi, dan menerangkan kesilapan dengan video tersuai.",
+    "benefits": {
+      "diagnosis": "Ujian adaptif 10 minit untuk penilaian kemahiran tepat",
+      "analytics": "Papan pemuka ibu bapa masa nyata untuk jejak kemajuan",
+      "gamification": "Pembelajaran gaya RPG yang membuatkan anak belajar sendiri"
+    },
+    "ctaPrimary": "Mula Diagnosis Percuma",
     "ctaSecondary": "Lihat Cara Belajar",
-    "stats": {
-      "exams": { "value": "6+", "label": "Peperiksaan Disokong" },
-      "tutor": { "value": "24/7", "label": "Tutor AI Tersedia" },
-      "problems": { "value": "1,000+", "label": "Soalan Latihan" },
-      "analytics": { "value": "Masa Nyata", "label": "Analitik Kemajuan" }
+    "trustNote": "Diagnosis percuma tersedia serta-merta selepas pendaftaran · Tiada kad kredit diperlukan",
+    "trustStats": {
+      "exams": { "value": "6+", "label": "Peperiksaan (SAT, IGCSE, IB...)" },
+      "accuracy": { "value": "88%", "label": "Peningkatan Ketepatan Purata" },
+      "available": { "value": "24/7", "label": "Tutor AI Tersedia" },
+      "problems": { "value": "1,000+", "label": "Soalan Peribadi" }
     }
   },
   "problem": {
