@@ -78,7 +78,8 @@ export default async function Image({
   const { locale } = await params;
   const c = ogContent[locale] || ogContent.en;
 
-  const allText = c.title + c.subtitle + c.stats.map((s) => s.value + s.label).join("");
+  const allText =
+    c.title + c.subtitle + c.stats.map((s) => s.value + s.label).join("");
   const fontData = await loadFont("Noto Sans KR", 700, allText);
   const fontDataRegular = await loadFont("Noto Sans KR", 400, allText);
 
@@ -93,157 +94,205 @@ export default async function Image({
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          background: "linear-gradient(135deg, #312e81 0%, #1e40af 50%, #0891b2 100%)",
-          padding: "60px 70px",
+          background: "#ffffff",
           fontFamily: "NotoSansKR",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* Decorative circles */}
+        {/* Left accent bar */}
         <div
           style={{
             position: "absolute",
-            top: "-100px",
-            right: "-100px",
-            width: "400px",
-            height: "400px",
-            borderRadius: "50%",
-            background: "rgba(255,255,255,0.05)",
-            display: "flex",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            bottom: "-150px",
-            left: "30%",
-            width: "500px",
-            height: "500px",
-            borderRadius: "50%",
-            background: "rgba(255,255,255,0.03)",
+            top: 0,
+            left: 0,
+            width: "8px",
+            height: "100%",
+            background: "linear-gradient(180deg, #1e3a5f 0%, #2563eb 50%, #06b6d4 100%)",
             display: "flex",
           }}
         />
 
-        {/* Top: Logo + Badge */}
+        {/* Bottom accent stripe */}
         <div
           style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "6px",
+            background: "linear-gradient(90deg, #1e3a5f 0%, #2563eb 50%, #06b6d4 100%)",
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
+          }}
+        />
+
+        {/* Decorative dot pattern - top right */}
+        <div
+          style={{
+            position: "absolute",
+            top: "40px",
+            right: "40px",
+            width: "120px",
+            height: "120px",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "16px",
+            opacity: 0.08,
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <img
-              src={logoBase64}
-              width={48}
-              height={48}
-              style={{ borderRadius: "12px" }}
+          {Array.from({ length: 25 }).map((_, i) => (
+            <div
+              key={i}
+              style={{
+                width: "8px",
+                height: "8px",
+                borderRadius: "50%",
+                background: "#1e3a5f",
+                display: "flex",
+              }}
             />
-            <span style={{ fontSize: "32px", fontWeight: 700, color: "white" }}>
-              Mathiter
-            </span>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              background: "rgba(255,255,255,0.15)",
-              borderRadius: "24px",
-              padding: "8px 20px",
-              fontSize: "16px",
-              color: "rgba(255,255,255,0.9)",
-            }}
-          >
-            SAT · IGCSE · IB · A-Level · CSAT
-          </div>
+          ))}
         </div>
 
-        {/* Middle: Headline */}
+        {/* Main content */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
+            padding: "56px 70px 48px 70px",
             flex: 1,
-            justifyContent: "center",
-            gap: "16px",
-            marginTop: "-10px",
           }}
         >
-          <div
-            style={{
-              fontSize: "52px",
-              fontWeight: 700,
-              color: "white",
-              lineHeight: 1.25,
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            {c.title}
-          </div>
-          <div
-            style={{
-              fontSize: "22px",
-              fontWeight: 400,
-              color: "rgba(255,255,255,0.7)",
-              marginTop: "4px",
-            }}
-          >
-            {c.subtitle}
-          </div>
-        </div>
-
-        {/* Bottom: Stats */}
-        <div
-          style={{
-            display: "flex",
-            gap: "24px",
-          }}
-        >
-          {c.stats.map((stat) => (
-            <div
-              key={stat.label}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "12px",
-                background: "rgba(255,255,255,0.1)",
-                borderRadius: "16px",
-                padding: "14px 24px",
-                border: "1px solid rgba(255,255,255,0.15)",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "28px",
-                  fontWeight: 700,
-                  color: "#67e8f9",
-                }}
-              >
-                {stat.value}
-              </span>
-              <span
-                style={{
-                  fontSize: "16px",
-                  color: "rgba(255,255,255,0.8)",
-                }}
-              >
-                {stat.label}
-              </span>
-            </div>
-          ))}
-
-          {/* Domain */}
+          {/* Top: Logo + Brand + Badge */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              marginLeft: "auto",
-              fontSize: "18px",
-              color: "rgba(255,255,255,0.5)",
+              justifyContent: "space-between",
             }}
           >
-            mathiter.com
+            <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+              <img
+                src={logoBase64}
+                width={52}
+                height={52}
+                style={{ borderRadius: "14px" }}
+              />
+              <span
+                style={{
+                  fontSize: "30px",
+                  fontWeight: 700,
+                  color: "#1e3a5f",
+                }}
+              >
+                Mathiter
+              </span>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                background: "#f0f4ff",
+                borderRadius: "24px",
+                padding: "8px 22px",
+                fontSize: "15px",
+                fontWeight: 400,
+                color: "#3b5998",
+                border: "1px solid #dce4f5",
+              }}
+            >
+              SAT · IGCSE · IB · A-Level · CSAT
+            </div>
+          </div>
+
+          {/* Middle: Headline */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flex: 1,
+              justifyContent: "center",
+              gap: "14px",
+              marginTop: "-6px",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "50px",
+                fontWeight: 700,
+                color: "#111827",
+                lineHeight: 1.25,
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {c.title}
+            </div>
+            <div
+              style={{
+                fontSize: "21px",
+                fontWeight: 400,
+                color: "#6b7280",
+                marginTop: "2px",
+              }}
+            >
+              {c.subtitle}
+            </div>
+          </div>
+
+          {/* Bottom: Stats bar */}
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              alignItems: "center",
+            }}
+          >
+            {c.stats.map((stat) => (
+              <div
+                key={stat.label}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  background: "#f8fafc",
+                  borderRadius: "14px",
+                  padding: "12px 22px",
+                  border: "1px solid #e5e7eb",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "26px",
+                    fontWeight: 700,
+                    color: "#2563eb",
+                  }}
+                >
+                  {stat.value}
+                </span>
+                <span
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    color: "#6b7280",
+                  }}
+                >
+                  {stat.label}
+                </span>
+              </div>
+            ))}
+
+            {/* Domain */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginLeft: "auto",
+                fontSize: "17px",
+                fontWeight: 400,
+                color: "#9ca3af",
+              }}
+            >
+              mathiter.com
+            </div>
           </div>
         </div>
       </div>
