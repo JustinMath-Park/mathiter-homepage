@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function CTA() {
+  const t = useTranslations("cta");
+
   return (
     <section className="py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -11,11 +15,10 @@ export default function CTA() {
 
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Ready to Navigate Your Math Journey?
+              {t("title")}
             </h2>
             <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
-              Join students from international schools who are already learning
-              smarter with AI-powered personalized math education.
+              {t("description")}
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
@@ -23,13 +26,13 @@ export default function CTA() {
                 href="https://app.mathiter.com"
                 className="bg-white text-primary font-semibold px-8 py-3.5 rounded-full text-base hover:bg-gray-50 transition-colors shadow-lg"
               >
-                Start Free Trial
+                {t("ctaPrimary")}
               </a>
               <a
                 href="mailto:contact@mathiter.com"
                 className="border-2 border-white/30 text-white font-semibold px-8 py-3.5 rounded-full text-base hover:border-white/60 transition-colors"
               >
-                Contact Sales
+                {t("ctaSecondary")}
               </a>
             </div>
           </div>

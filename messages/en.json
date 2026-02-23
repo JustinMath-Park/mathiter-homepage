@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "title": "Mathiter — Your AI Math Tutor for Exam Success",
+    "description": "Struggling with math exams? Mathiter's AI tutor helps you master SAT, IGCSE, IB, and A-Level math with personalized practice, game-like learning, and real exam simulations.",
+    "ogTitle": "Mathiter — Your AI Math Tutor for Exam Success",
+    "ogDescription": "Master SAT, IGCSE, IB & A-Level math with your personal AI tutor. Fun, game-like learning that actually improves your scores."
+  },
+  "header": {
+    "nav": {
+      "whyMathiter": "Why Mathiter",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "team": "Team"
+    },
+    "signIn": "Sign In",
+    "startFree": "Start Free"
+  },
+  "hero": {
+    "badge": "AI-Powered Math Education",
+    "titleLine1": "Learn Math Like a",
+    "titleHighlight1": "Game",
+    "titleLine2": "Ace Exams Like a",
+    "titleHighlight2": "Quest",
+    "description": "Your personal AI math tutor that makes studying feel like playing. Get a custom learning path, practice with smart questions, and prepare for SAT, IGCSE, IB, and more — all in one place.",
+    "ctaPrimary": "Start Free Trial",
+    "ctaSecondary": "See How It Works",
+    "stats": {
+      "exams": { "value": "6+", "label": "Exams Supported" },
+      "tutor": { "value": "24/7", "label": "AI Tutor Available" },
+      "problems": { "value": "1,000+", "label": "Practice Problems" },
+      "analytics": { "value": "Real-time", "label": "Progress Analytics" }
+    }
+  },
+  "problem": {
+    "label": "The Problem",
+    "title": "Sound Familiar?",
+    "subtitle": "Three challenges that hold students back — and that we built Mathiter to solve.",
+    "items": {
+      "retention": {
+        "title": "\"I study, but I forget everything.\"",
+        "description": "Traditional study methods don't stick. Without engaging practice and smart review, knowledge fades fast. Students lose motivation when studying feels like a chore."
+      },
+      "gap": {
+        "title": "\"I understand the concept, but I fail the test.\"",
+        "description": "There's a big gap between understanding math in class and scoring well on standardized exams like the SAT or IGCSE. Test-taking requires different skills that most courses don't teach."
+      },
+      "personalization": {
+        "title": "\"Everyone learns the same thing, but I need different help.\"",
+        "description": "Every student has unique weak spots, but most programs treat everyone the same. Without personalized guidance, students waste time on what they already know and miss what they actually need."
+      }
+    }
+  },
+  "features": {
+    "label": "Core Features",
+    "title": "Everything You Need to Raise Your Score",
+    "subtitle": "Six powerful tools that work together to help you study smarter, not harder.",
+    "items": {
+      "coach": {
+        "tag": "AI Coach",
+        "title": "Smart Questioning That Finds Your Weak Spots",
+        "description": "Instead of just giving you answers, our AI asks guiding questions that help you discover mistakes on your own. It detects hidden gaps in your understanding and tracks them for focused review."
+      },
+      "videos": {
+        "tag": "Video Lessons",
+        "title": "Personalized Explanation Videos",
+        "description": "When you struggle with a concept, the AI creates a short video explanation tailored to your exact mistake. Each video targets the specific topic you need help with — not a generic lecture."
+      },
+      "analytics": {
+        "tag": "Smart Analytics",
+        "title": "AI That Understands How You Learn",
+        "description": "Our system analyzes your learning patterns from multiple angles — identifying strengths, predicting scores, planning your study path, and recommending exactly what to practice next."
+      },
+      "gamification": {
+        "tag": "Gamification",
+        "title": "RPG-Style Learning That Keeps You Coming Back",
+        "description": "Earn XP, customize your avatar, care for virtual pets, and climb seasonal rankings. Daily study sessions grow your character — making math practice feel like your favorite game."
+      },
+      "examPractice": {
+        "tag": "Exam Practice",
+        "title": "Real Exam Simulations",
+        "description": "Practice under the exact conditions of your target exam — including the Digital SAT's adaptive format, IGCSE, IB, and more. Get auto-graded results with detailed analysis of where to improve."
+      },
+      "dashboard": {
+        "tag": "Dashboard",
+        "title": "Parent & Teacher Insights",
+        "description": "Parents can track study habits, progress, and weak areas in real time. Teachers get automatic grading, reports, and assignment tools — saving hours of manual work every week."
+      }
+    }
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "title": "Your Learning Journey in 5 Steps",
+    "subtitle": "A smart cycle that keeps adapting to your progress and gets you closer to your target score with every session.",
+    "steps": {
+      "diagnose": {
+        "step": "01",
+        "title": "Diagnose",
+        "subtitle": "Smart Assessment",
+        "description": "Take a quick adaptive test that figures out exactly where you stand. Questions adjust to your level in real time, so you get an accurate picture with fewer questions."
+      },
+      "learn": {
+        "step": "02",
+        "title": "Learn",
+        "subtitle": "Your Roadmap",
+        "description": "Get a personalized study plan based on your target exam and current skill level. Lessons are structured concept-by-concept, so nothing is skipped or repeated."
+      },
+      "practice": {
+        "step": "03",
+        "title": "Practice",
+        "subtitle": "AI-Guided Problems",
+        "description": "Work through problems with an AI coach that asks guiding questions instead of just giving answers. Tricky questions help reveal hidden misunderstandings."
+      },
+      "review": {
+        "step": "04",
+        "title": "Review",
+        "subtitle": "Video & Analysis",
+        "description": "When you make repeated mistakes, the AI creates personalized video explanations. Your data is analyzed to predict scores and plan what to study next."
+      },
+      "test": {
+        "step": "05",
+        "title": "Test",
+        "subtitle": "Exam Simulation",
+        "description": "Take realistic mock exams that mirror the format and timing of your target test. Get instant grading with detailed analytics to close every gap."
+      }
+    },
+    "loopText": "This cycle repeats — each round gets you closer to your target score"
+  },
+  "curriculum": {
+    "label": "Supported Exams",
+    "title": "One Platform, Every Major Exam",
+    "subtitle": "Math problems may look different across exams, but the skills you need are universal. Mathiter helps you master them all from a single platform.",
+    "exams": {
+      "sat": { "name": "Digital SAT", "description": "College Board adaptive format" },
+      "igcse": { "name": "IGCSE", "description": "Cambridge International" },
+      "ib": { "name": "IB Math", "description": "AA & AI (SL/HL)" },
+      "aLevel": { "name": "A-Level", "description": "Edexcel / CIE" },
+      "csat": { "name": "CSAT Math", "description": "Korean College Scholastic Ability Test" },
+      "more": { "name": "More", "description": "AP, GCE O-Level, and more" }
+    },
+    "statuses": {
+      "live": "Live",
+      "comingSoon": "Coming Soon",
+      "planned": "Planned",
+      "expanding": "Expanding"
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Less Than One Tutoring Session",
+    "subtitle": "A full month of AI-powered learning for less than the cost of a single hour with a private tutor.",
+    "mostPopular": "Most Popular",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "Free",
+        "period": "",
+        "description": "Get started with essential features",
+        "cta": "Start Free",
+        "features": {
+          "0": "Adaptive diagnostic test",
+          "1": "Personalized study roadmap",
+          "2": "Limited daily practice (5 sessions)",
+          "3": "Basic progress tracking",
+          "4": "Gamification (XP & avatar)"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "RM 99",
+        "period": "/month",
+        "description": "Full access to all AI features",
+        "cta": "Start Free Trial",
+        "features": {
+          "0": "Everything in Basic",
+          "1": "Unlimited AI-guided practice",
+          "2": "Personalized video explanations",
+          "3": "Deep learning analytics",
+          "4": "Exam simulations (SAT, IGCSE...)",
+          "5": "Score prediction tracking",
+          "6": "Parent dashboard access",
+          "7": "Priority support"
+        }
+      },
+      "school": {
+        "name": "School / Academy",
+        "price": "Custom",
+        "period": "",
+        "description": "For schools and tutoring centers",
+        "cta": "Contact Sales",
+        "features": {
+          "0": "All Premium features",
+          "1": "Volume discounts available",
+          "2": "Teacher admin dashboard",
+          "3": "Assignment & grading tools",
+          "4": "Easy student onboarding",
+          "5": "Custom reports & analytics",
+          "6": "Dedicated support"
+        }
+      }
+    }
+  },
+  "team": {
+    "label": "Our Team",
+    "title": "Where Tech Meets Teaching",
+    "subtitle": "A game developer turned math AI engineer and a veteran math instructor — the rare combination that understands both the code and the classroom.",
+    "members": {
+      "sejun": {
+        "name": "Sejun Park",
+        "role": "CEO / CTO",
+        "bio": "20 years of game development experience combined with a Mathematics degree from Korea University. A father of two international school students in Malaysia, he built Mathiter because he saw firsthand how hard it was to find the right math support.",
+        "highlights": {
+          "0": "Korea Univ. Mathematics graduate",
+          "1": "20-year game & software veteran",
+          "2": "International school parent in Malaysia"
+        }
+      },
+      "seongryong": {
+        "name": "Seongryong Lim",
+        "role": "Chief Content Officer",
+        "bio": "17 years of math teaching experience with thousands of students. Deep expertise across international curricula including IGCSE, SAT, and IB. Ensures every problem and explanation meets the highest quality standards.",
+        "highlights": {
+          "0": "17-year math education veteran",
+          "1": "SAT, IGCSE, and IB curriculum expert",
+          "2": "Content quality assurance lead"
+        }
+      }
+    },
+    "quote": "A math-major engineer with 20 years of game development experience and a 17-year veteran math instructor — together, we built a platform that truly understands both technology and education."
+  },
+  "cta": {
+    "title": "Ready to Improve Your Math Score?",
+    "description": "Join students from international schools who are already learning smarter with their personal AI math tutor.",
+    "ctaPrimary": "Start Free Trial",
+    "ctaSecondary": "Contact Sales"
+  },
+  "footer": {
+    "brandDescription": "AI-powered math learning platform for international school students. Math + Iter (Latin: path) — guiding your journey to your target score.",
+    "product": {
+      "title": "Product",
+      "diagnosticTest": "Diagnostic Test",
+      "aiPractice": "AI-Guided Practice",
+      "examSimulation": "Exam Simulation",
+      "videoLessons": "Video Lessons",
+      "pricing": "Pricing"
+    },
+    "exams": {
+      "title": "Supported Exams",
+      "items": {
+        "0": "Digital SAT",
+        "1": "IGCSE Mathematics",
+        "2": "IB Math AA/AI",
+        "3": "A-Level Math",
+        "4": "More coming soon"
+      }
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "© {year} Mathiter. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ko": "한국어",
+    "ms": "Bahasa Melayu"
+  }
+}

@@ -24,7 +24,7 @@
   --color-surface: var(--surface);
   --color-surface-dark: var(--surface-dark);
   --color-muted: var(--muted);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans), var(--font-noto-sans-kr), sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 

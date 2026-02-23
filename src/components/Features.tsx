@@ -1,9 +1,9 @@
-const features = [
-  {
-    tag: "SRG",
-    title: "Socratic AI Coach",
-    description:
-      "Instead of giving answers, SRG asks the right questions — guiding students to discover their own misconceptions. Smart traps in MCQs surface hidden weak points, while the system auto-tags errors for spaced repetition.",
+import { useTranslations } from "next-intl";
+
+const featureKeys = ["coach", "videos", "analytics", "gamification", "examPractice", "dashboard"] as const;
+
+const featureMeta: Record<string, { color: string; icon: React.ReactNode }> = {
+  coach: {
     color: "bg-indigo-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -11,11 +11,7 @@ const features = [
       </svg>
     ),
   },
-  {
-    tag: "PSV",
-    title: "AI-Generated Video Lessons",
-    description:
-      "When a misconception is detected, PSV auto-generates a personalized correction video — from error analysis to script to math visualization rendering. Each video targets exactly the concept the student struggles with.",
+  videos: {
     color: "bg-cyan-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,11 +20,7 @@ const features = [
       </svg>
     ),
   },
-  {
-    tag: "LAAS",
-    title: "5-Agent Analytics System",
-    description:
-      "Five specialized AI agents collaborate to analyze learning data from multiple sources — profiling, score prediction, curriculum planning, misconception detection, and practice recommendation — all in real time.",
+  analytics: {
     color: "bg-violet-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,11 +28,7 @@ const features = [
       </svg>
     ),
   },
-  {
-    tag: "Gamification",
-    title: "RPG-Style Learning",
-    description:
-      "XP, avatars, pets, Tamagotchi-style care, and seasonal rankings make daily learning irresistible. 20 years of game development DNA transformed into an education system where studying grows your character.",
+  gamification: {
     color: "bg-emerald-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,11 +36,7 @@ const features = [
       </svg>
     ),
   },
-  {
-    tag: "Exam Practice",
-    title: "Real Exam Simulation",
-    description:
-      "Practice under identical conditions to your target exam — Digital SAT adaptive format, IGCSE, IB, and more. Auto-graded with detailed weakness analysis reports.",
+  examPractice: {
     color: "bg-orange-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,11 +44,7 @@ const features = [
       </svg>
     ),
   },
-  {
-    tag: "Dashboard",
-    title: "Parent & Teacher Analytics",
-    description:
-      "Real-time monitoring of study frequency, progress, weak concepts, and predicted score changes. Teachers get automatic grading, reports, and assignment management — saving hours of manual work.",
+  dashboard: {
     color: "bg-pink-500",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,49 +52,47 @@ const features = [
       </svg>
     ),
   },
-];
+};
 
 export default function Features() {
+  const t = useTranslations("features");
+
   return (
     <section id="features" className="py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Core Features
+            {t("label")}
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Dual-Engine AI Meets Gamification
-          </h2>
-          <p className="mt-4 text-muted text-lg">
-            Six integrated systems that work together to create a complete math
-            learning navigation experience.
-          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">{t("title")}</h2>
+          <p className="mt-4 text-muted text-lg">{t("subtitle")}</p>
         </div>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((f) => (
-            <div
-              key={f.tag}
-              className="group rounded-2xl border border-gray-100 p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-lg ${f.color} text-white`}
-                >
-                  {f.icon}
+          {featureKeys.map((key) => {
+            const meta = featureMeta[key];
+            return (
+              <div
+                key={key}
+                className="group rounded-2xl border border-gray-100 p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${meta.color} text-white`}>
+                    {meta.icon}
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted">
+                    {t(`items.${key}.tag`)}
+                  </span>
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider text-muted">
-                  {f.tag}
-                </span>
+                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                  {t(`items.${key}.title`)}
+                </h3>
+                <p className="mt-2 text-sm text-muted leading-relaxed">
+                  {t(`items.${key}.description`)}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                {f.title}
-              </h3>
-              <p className="mt-2 text-sm text-muted leading-relaxed">
-                {f.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

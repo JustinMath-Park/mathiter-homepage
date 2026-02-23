@@ -1,4 +1,15 @@
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+  const t = useTranslations("hero");
+
+  const stats = [
+    { value: t("stats.exams.value"), label: t("stats.exams.label") },
+    { value: t("stats.tutor.value"), label: t("stats.tutor.label") },
+    { value: t("stats.problems.value"), label: t("stats.problems.label") },
+    { value: t("stats.analytics.value"), label: t("stats.analytics.label") },
+  ];
+
   return (
     <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
       {/* Background decoration */}
@@ -13,24 +24,21 @@ export default function Hero() {
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
             <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
             <span className="text-sm font-medium text-primary">
-              AI-Powered Math Education
+              {t("badge")}
             </span>
           </div>
 
           {/* Heading */}
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Learn Math Like a{" "}
-            <span className="gradient-text">Game</span>
+            {t("titleLine1")}{" "}
+            <span className="gradient-text">{t("titleHighlight1")}</span>
             <br />
-            Ace Exams Like a{" "}
-            <span className="gradient-text">Quest</span>
+            {t("titleLine2")}{" "}
+            <span className="gradient-text">{t("titleHighlight2")}</span>
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-muted max-w-2xl mx-auto">
-            Gamification + Dual-Engine AI courseware that navigates your math
-            journey — from diagnosis to personalized practice to real exam prep.
-            Built for international school students targeting SAT, IGCSE, IB
-            and beyond.
+            {t("description")}
           </p>
 
           {/* CTAs */}
@@ -39,13 +47,13 @@ export default function Hero() {
               href="https://app.mathiter.com"
               className="gradient-bg text-white font-semibold px-8 py-3.5 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
             >
-              Start Free Trial
+              {t("ctaPrimary")}
             </a>
             <a
               href="#features"
               className="flex items-center gap-2 font-semibold px-8 py-3.5 rounded-full text-base border border-gray-200 hover:border-gray-300 transition-colors"
             >
-              See How It Works
+              {t("ctaSecondary")}
               <svg
                 className="h-4 w-4"
                 fill="none"
@@ -64,12 +72,7 @@ export default function Hero() {
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            {[
-              { value: "25,000+", label: "Lines of Code" },
-              { value: "49", label: "AI Services" },
-              { value: "5", label: "AI Agents" },
-              { value: "13", label: "Dev Phases Done" },
-            ].map((stat) => (
+            {stats.map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-bold gradient-text">
                   {stat.value}

@@ -1,4 +1,16 @@
+import { useTranslations } from "next-intl";
+
 export default function Footer() {
+  const t = useTranslations("footer");
+
+  const productLinks = [
+    { label: t("product.diagnosticTest"), href: "#features" },
+    { label: t("product.aiPractice"), href: "#features" },
+    { label: t("product.examSimulation"), href: "#features" },
+    { label: t("product.videoLessons"), href: "#features" },
+    { label: t("product.pricing"), href: "#pricing" },
+  ];
+
   return (
     <footer className="border-t border-gray-100 bg-white">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
@@ -12,25 +24,17 @@ export default function Footer() {
               <span className="text-xl font-bold">Mathiter</span>
             </div>
             <p className="mt-4 text-sm text-muted leading-relaxed">
-              AI-powered math learning navigator for international school
-              students. Math + Iter (Latin: path) — guiding your journey to the
-              target score.
+              {t("brandDescription")}
             </p>
           </div>
 
           {/* Product */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Product
+              {t("product.title")}
             </h4>
             <ul className="mt-4 space-y-2.5">
-              {[
-                { label: "Adaptive Test", href: "#features" },
-                { label: "SRG Practice", href: "#features" },
-                { label: "Exam Practice", href: "#features" },
-                { label: "PSV Videos", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
-              ].map((link) => (
+              {productLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -43,24 +47,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Curricula */}
+          {/* Exams */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Supported Exams
+              {t("exams.title")}
             </h4>
             <ul className="mt-4 space-y-2.5">
-              {[
-                "Digital SAT",
-                "IGCSE Mathematics",
-                "IB Math AA/AI",
-                "A-Level Math",
-                "More coming soon",
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="text-sm text-muted"
-                >
-                  {item}
+              {[0, 1, 2, 3, 4].map((i) => (
+                <li key={i} className="text-sm text-muted">
+                  {t(`exams.items.${i}`)}
                 </li>
               ))}
             </ul>
@@ -69,7 +64,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Contact
+              {t("contact.title")}
             </h4>
             <ul className="mt-4 space-y-2.5">
               <li>
@@ -94,20 +89,20 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Mathiter. All rights reserved.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex gap-6">
             <a
               href="#"
               className="text-xs text-muted hover:text-foreground transition-colors"
             >
-              Privacy Policy
+              {t("privacyPolicy")}
             </a>
             <a
               href="#"
               className="text-xs text-muted hover:text-foreground transition-colors"
             >
-              Terms of Service
+              {t("termsOfService")}
             </a>
           </div>
         </div>

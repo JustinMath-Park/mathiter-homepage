@@ -1,17 +1,20 @@
 "use client";
 
 import { useState } from "react";
-
-const navLinks = [
-  { href: "#problem", label: "Why Mathiter" },
-  { href: "#features", label: "Features" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#team", label: "Team" },
-];
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const t = useTranslations("header");
+
+  const navLinks = [
+    { href: "#problem", label: t("nav.whyMathiter") },
+    { href: "#features", label: t("nav.features") },
+    { href: "#how-it-works", label: t("nav.howItWorks") },
+    { href: "#pricing", label: t("nav.pricing") },
+    { href: "#team", label: t("nav.team") },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
@@ -40,17 +43,18 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <a
               href="https://app.mathiter.com"
               className="text-sm font-medium text-primary hover:text-primary-dark transition-colors"
             >
-              Sign In
+              {t("signIn")}
             </a>
             <a
               href="https://app.mathiter.com"
               className="gradient-bg text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity"
             >
-              Start Free
+              {t("startFree")}
             </a>
           </div>
 
@@ -88,6 +92,9 @@ export default function Header() {
         {/* Mobile Nav */}
         {mobileOpen && (
           <div className="md:hidden pb-4 border-t border-gray-100 mt-2 pt-4">
+            <div className="mb-3">
+              <LanguageSwitcher />
+            </div>
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -102,7 +109,7 @@ export default function Header() {
               href="https://app.mathiter.com"
               className="mt-3 block w-full text-center gradient-bg text-white text-sm font-medium px-5 py-2.5 rounded-full"
             >
-              Start Free
+              {t("startFree")}
             </a>
           </div>
         )}

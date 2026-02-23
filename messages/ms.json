@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "title": "Mathiter — Tutor Matematik AI Anda untuk Kejayaan Peperiksaan",
+    "description": "Bergelut dengan peperiksaan matematik? Tutor AI Mathiter membantu anda menguasai matematik SAT, IGCSE, IB, dan A-Level dengan latihan peribadi, pembelajaran seperti permainan, dan simulasi peperiksaan sebenar.",
+    "ogTitle": "Mathiter — Tutor Matematik AI Anda untuk Kejayaan Peperiksaan",
+    "ogDescription": "Kuasai matematik SAT, IGCSE, IB & A-Level dengan tutor AI peribadi anda. Pembelajaran seperti permainan yang benar-benar meningkatkan markah anda."
+  },
+  "header": {
+    "nav": {
+      "whyMathiter": "Kenapa Mathiter",
+      "features": "Ciri-ciri",
+      "howItWorks": "Cara Belajar",
+      "pricing": "Harga",
+      "team": "Pasukan"
+    },
+    "signIn": "Log Masuk",
+    "startFree": "Mula Percuma"
+  },
+  "hero": {
+    "badge": "Pendidikan Matematik Berkuasa AI",
+    "titleLine1": "Belajar Matematik Seperti",
+    "titleHighlight1": "Permainan",
+    "titleLine2": "Takluk Peperiksaan Seperti",
+    "titleHighlight2": "Quest",
+    "description": "Tutor matematik AI peribadi anda yang menjadikan belajar terasa seperti bermain. Dapatkan laluan pembelajaran peribadi, berlatih dengan soalan pintar, dan bersedia untuk SAT, IGCSE, IB, dan banyak lagi — semuanya di satu tempat.",
+    "ctaPrimary": "Mula Percubaan Percuma",
+    "ctaSecondary": "Lihat Cara Belajar",
+    "stats": {
+      "exams": { "value": "6+", "label": "Peperiksaan Disokong" },
+      "tutor": { "value": "24/7", "label": "Tutor AI Tersedia" },
+      "problems": { "value": "1,000+", "label": "Soalan Latihan" },
+      "analytics": { "value": "Masa Nyata", "label": "Analitik Kemajuan" }
+    }
+  },
+  "problem": {
+    "label": "Masalah",
+    "title": "Bunyi Biasa?",
+    "subtitle": "Tiga cabaran yang menghalang pelajar — dan Mathiter dibina untuk menyelesaikannya.",
+    "items": {
+      "retention": {
+        "title": "\"Saya belajar, tapi saya lupa semuanya.\"",
+        "description": "Kaedah belajar tradisional tidak kekal. Tanpa latihan yang menarik dan ulang kaji pintar, ilmu cepat hilang. Pelajar kehilangan motivasi apabila belajar terasa seperti beban."
+      },
+      "gap": {
+        "title": "\"Saya faham konsep, tapi saya gagal ujian.\"",
+        "description": "Ada jurang besar antara memahami matematik di kelas dan mendapat markah tinggi dalam peperiksaan piawai seperti SAT atau IGCSE. Menghadapi ujian memerlukan kemahiran berbeza yang kebanyakan kursus tidak ajar."
+      },
+      "personalization": {
+        "title": "\"Semua orang belajar benda sama, tapi saya perlukan bantuan berbeza.\"",
+        "description": "Setiap pelajar mempunyai kelemahan unik, tetapi kebanyakan program melayan semua orang sama. Tanpa bimbingan peribadi, pelajar membuang masa pada apa yang sudah diketahui dan terlepas apa yang benar-benar diperlukan."
+      }
+    }
+  },
+  "features": {
+    "label": "Ciri Utama",
+    "title": "Semua Yang Anda Perlukan untuk Naikkan Markah",
+    "subtitle": "Enam alat berkuasa yang bekerjasama untuk membantu anda belajar dengan lebih bijak, bukan lebih keras.",
+    "items": {
+      "coach": {
+        "tag": "Jurulatih AI",
+        "title": "Soalan Pintar Yang Menemui Kelemahan Anda",
+        "description": "Daripada sekadar memberi jawapan, AI kami bertanya soalan panduan yang membantu anda menemui kesilapan sendiri. Ia mengesan jurang tersembunyi dalam pemahaman anda dan menjejaki untuk ulang kaji berfokus."
+      },
+      "videos": {
+        "tag": "Pelajaran Video",
+        "title": "Video Penjelasan Peribadi",
+        "description": "Apabila anda bergelut dengan konsep, AI mencipta video penjelasan pendek yang disesuaikan dengan kesilapan tepat anda. Setiap video mensasarkan topik spesifik yang anda perlukan — bukan kuliah umum."
+      },
+      "analytics": {
+        "tag": "Analitik Pintar",
+        "title": "AI Yang Memahami Cara Anda Belajar",
+        "description": "Sistem kami menganalisis corak pembelajaran anda dari pelbagai sudut — mengenal pasti kekuatan, meramal markah, merancang laluan belajar, dan mengesyorkan dengan tepat apa yang perlu dilatih seterusnya."
+      },
+      "gamification": {
+        "tag": "Gamifikasi",
+        "title": "Pembelajaran Gaya RPG Yang Membuatkan Anda Kembali",
+        "description": "Kumpul XP, sesuaikan avatar anda, jaga haiwan peliharaan maya, dan naik ranking bermusim. Sesi belajar harian mengembangkan watak anda — menjadikan latihan matematik terasa seperti permainan kegemaran anda."
+      },
+      "examPractice": {
+        "tag": "Latihan Peperiksaan",
+        "title": "Simulasi Peperiksaan Sebenar",
+        "description": "Berlatih dalam keadaan yang sama dengan peperiksaan sasaran anda — termasuk format adaptif Digital SAT, IGCSE, IB, dan banyak lagi. Dapatkan keputusan auto-gred dengan analisis terperinci di mana perlu diperbaiki."
+      },
+      "dashboard": {
+        "tag": "Papan Pemuka",
+        "title": "Wawasan Ibu Bapa & Guru",
+        "description": "Ibu bapa boleh menjejak tabiat belajar, kemajuan, dan kawasan lemah secara masa nyata. Guru mendapat pemarkahan automatik, laporan, dan alat tugasan — menjimatkan berjam-jam kerja manual setiap minggu."
+      }
+    }
+  },
+  "howItWorks": {
+    "label": "Cara Belajar",
+    "title": "Perjalanan Pembelajaran Anda dalam 5 Langkah",
+    "subtitle": "Kitaran pintar yang terus menyesuaikan dengan kemajuan anda dan mendekatkan anda kepada markah sasaran setiap sesi.",
+    "steps": {
+      "diagnose": {
+        "step": "01",
+        "title": "Diagnos",
+        "subtitle": "Penilaian Pintar",
+        "description": "Ambil ujian adaptif pantas yang menentukan dengan tepat di mana tahap anda. Soalan menyesuaikan dengan tahap anda secara masa nyata, supaya anda mendapat gambaran tepat dengan soalan yang lebih sedikit."
+      },
+      "learn": {
+        "step": "02",
+        "title": "Belajar",
+        "subtitle": "Peta Jalan Anda",
+        "description": "Dapatkan pelan belajar peribadi berdasarkan peperiksaan sasaran dan tahap kemahiran semasa anda. Pelajaran disusun konsep demi konsep, supaya tiada yang terlepas atau berulang."
+      },
+      "practice": {
+        "step": "03",
+        "title": "Latihan",
+        "subtitle": "Soalan Berpandukan AI",
+        "description": "Selesaikan masalah dengan jurulatih AI yang bertanya soalan panduan dan bukannya sekadar memberi jawapan. Soalan rumit membantu mendedahkan salah faham tersembunyi."
+      },
+      "review": {
+        "step": "04",
+        "title": "Ulang Kaji",
+        "subtitle": "Video & Analisis",
+        "description": "Apabila anda melakukan kesilapan berulang, AI mencipta video penjelasan peribadi. Data anda dianalisis untuk meramal markah dan merancang apa yang perlu dipelajari seterusnya."
+      },
+      "test": {
+        "step": "05",
+        "title": "Ujian",
+        "subtitle": "Simulasi Peperiksaan",
+        "description": "Ambil peperiksaan mock realistik yang mencerminkan format dan masa peperiksaan sasaran anda. Dapatkan pemarkahan segera dengan analitik terperinci untuk menutup setiap jurang."
+      }
+    },
+    "loopText": "Kitaran ini berulang — setiap pusingan mendekatkan anda kepada markah sasaran"
+  },
+  "curriculum": {
+    "label": "Peperiksaan Disokong",
+    "title": "Satu Platform, Setiap Peperiksaan Utama",
+    "subtitle": "Soalan matematik mungkin kelihatan berbeza merentasi peperiksaan, tetapi kemahiran yang anda perlukan adalah universal. Mathiter membantu anda menguasai semuanya dari satu platform.",
+    "exams": {
+      "sat": { "name": "Digital SAT", "description": "Format adaptif College Board" },
+      "igcse": { "name": "IGCSE", "description": "Cambridge International" },
+      "ib": { "name": "IB Math", "description": "AA & AI (SL/HL)" },
+      "aLevel": { "name": "A-Level", "description": "Edexcel / CIE" },
+      "csat": { "name": "Matematik CSAT", "description": "Ujian Keupayaan Skolastik Korea" },
+      "more": { "name": "Lagi", "description": "AP, GCE O-Level, dan lagi" }
+    },
+    "statuses": {
+      "live": "Aktif",
+      "comingSoon": "Akan Datang",
+      "planned": "Dirancang",
+      "expanding": "Berkembang"
+    }
+  },
+  "pricing": {
+    "label": "Harga",
+    "title": "Lebih Murah Daripada Satu Sesi Tuisyen",
+    "subtitle": "Sebulan penuh pembelajaran berkuasa AI dengan harga kurang daripada satu jam dengan tutor peribadi.",
+    "mostPopular": "Paling Popular",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "Percuma",
+        "period": "",
+        "description": "Mulakan dengan ciri-ciri penting",
+        "cta": "Mula Percuma",
+        "features": {
+          "0": "Ujian diagnostik adaptif",
+          "1": "Peta jalan belajar peribadi",
+          "2": "Latihan harian terhad (5 sesi)",
+          "3": "Penjejakan kemajuan asas",
+          "4": "Gamifikasi (XP & avatar)"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "RM 99",
+        "period": "/bulan",
+        "description": "Akses penuh ke semua ciri AI",
+        "cta": "Mula Percubaan Percuma",
+        "features": {
+          "0": "Semua dalam Basic",
+          "1": "Latihan berpandukan AI tanpa had",
+          "2": "Video penjelasan peribadi",
+          "3": "Analitik pembelajaran mendalam",
+          "4": "Simulasi peperiksaan (SAT, IGCSE...)",
+          "5": "Penjejakan ramalan markah",
+          "6": "Akses papan pemuka ibu bapa",
+          "7": "Sokongan keutamaan"
+        }
+      },
+      "school": {
+        "name": "School / Academy",
+        "price": "Khas",
+        "period": "",
+        "description": "Untuk sekolah dan pusat tuisyen",
+        "cta": "Hubungi Jualan",
+        "features": {
+          "0": "Semua ciri Premium",
+          "1": "Diskaun pukal tersedia",
+          "2": "Papan pemuka admin guru",
+          "3": "Alat tugasan & pemarkahan",
+          "4": "Pendaftaran pelajar pukal mudah",
+          "5": "Laporan & analitik tersuai",
+          "6": "Sokongan khusus"
+        }
+      }
+    }
+  },
+  "team": {
+    "label": "Pasukan Kami",
+    "title": "Di Mana Teknologi Bertemu Pengajaran",
+    "subtitle": "Pembangun permainan yang menjadi jurutera matematik AI dan pengajar matematik veteran — gabungan jarang yang memahami kedua-dua kod dan bilik darjah.",
+    "members": {
+      "sejun": {
+        "name": "Sejun Park",
+        "role": "CEO / CTO",
+        "bio": "20 tahun pengalaman pembangunan permainan digabungkan dengan ijazah Matematik dari Korea University. Seorang bapa kepada dua pelajar sekolah antarabangsa di Malaysia, beliau membina Mathiter kerana melihat sendiri betapa sukarnya mencari sokongan matematik yang betul.",
+        "highlights": {
+          "0": "Graduan Matematik Korea University",
+          "1": "Veteran pembangunan permainan & perisian 20 tahun",
+          "2": "Ibu bapa sekolah antarabangsa di Malaysia"
+        }
+      },
+      "seongryong": {
+        "name": "Seongryong Lim",
+        "role": "Chief Content Officer",
+        "bio": "17 tahun pengalaman mengajar matematik dengan ribuan pelajar. Kepakaran mendalam merentasi kurikulum antarabangsa termasuk IGCSE, SAT, dan IB. Memastikan setiap soalan dan penjelasan memenuhi standard kualiti tertinggi.",
+        "highlights": {
+          "0": "Veteran pendidikan matematik 17 tahun",
+          "1": "Pakar kurikulum SAT, IGCSE, dan IB",
+          "2": "Ketua jaminan kualiti kandungan"
+        }
+      }
+    },
+    "quote": "Seorang jurutera jurusan matematik dengan 20 tahun pengalaman pembangunan permainan dan pengajar matematik veteran 17 tahun — bersama, kami membina platform yang benar-benar memahami kedua-dua teknologi dan pendidikan."
+  },
+  "cta": {
+    "title": "Bersedia untuk Naikkan Markah Matematik Anda?",
+    "description": "Sertai pelajar dari sekolah antarabangsa yang sudah belajar dengan lebih bijak bersama tutor matematik AI peribadi mereka.",
+    "ctaPrimary": "Mula Percubaan Percuma",
+    "ctaSecondary": "Hubungi Jualan"
+  },
+  "footer": {
+    "brandDescription": "Platform pembelajaran matematik berkuasa AI untuk pelajar sekolah antarabangsa. Math + Iter (Latin: laluan) — membimbing perjalanan anda ke markah sasaran.",
+    "product": {
+      "title": "Produk",
+      "diagnosticTest": "Ujian Diagnostik",
+      "aiPractice": "Latihan Berpandukan AI",
+      "examSimulation": "Simulasi Peperiksaan",
+      "videoLessons": "Pelajaran Video",
+      "pricing": "Harga"
+    },
+    "exams": {
+      "title": "Peperiksaan Disokong",
+      "items": {
+        "0": "Digital SAT",
+        "1": "IGCSE Mathematics",
+        "2": "IB Math AA/AI",
+        "3": "A-Level Math",
+        "4": "Lebih banyak akan datang"
+      }
+    },
+    "contact": {
+      "title": "Hubungi"
+    },
+    "copyright": "© {year} Mathiter. Hak cipta terpelihara.",
+    "privacyPolicy": "Dasar Privasi",
+    "termsOfService": "Terma Perkhidmatan"
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "en": "English",
+    "ko": "한국어",
+    "ms": "Bahasa Melayu"
+  }
+}
