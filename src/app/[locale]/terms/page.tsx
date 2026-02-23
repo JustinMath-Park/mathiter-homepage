@@ -27,7 +27,7 @@ export default async function TermsPage({ params }: Props) {
               <a href="https://mathiter.com">mathiter.com</a>), mobile
               applications, and all related products and services
               (collectively, the &quot;Service&quot;) provided by 주식회사
-              매씨터 (Mathiter Inc.) (&quot;Mathiter,&quot; &quot;we,&quot; &quot;us,&quot; or
+              매쓰이터 (Mathiter Inc.) (&quot;Mathiter,&quot; &quot;we,&quot; &quot;us,&quot; or
               &quot;our&quot;).
             </p>
             <p>
@@ -275,7 +275,7 @@ export default async function TermsPage({ params }: Props) {
                 If you have questions about these Terms, please contact us at:
               </p>
               <p className="mt-2">
-                <strong>주식회사 매씨터 (Mathiter Inc.)</strong>
+                <strong>주식회사 매쓰이터 (Mathiter Inc.)</strong>
                 <br />
                 Email:{" "}
                 <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>

@@ -22,7 +22,7 @@ export default async function PrivacyPage({ params }: Props) {
 
           <div className="prose prose-sm max-w-none space-y-8 text-foreground/90">
             <p>
-              주식회사 매씨터 (Mathiter Inc.) (&quot;Mathiter,&quot; &quot;we,&quot;
+              주식회사 매쓰이터 (Mathiter Inc.) (&quot;Mathiter,&quot; &quot;we,&quot;
               &quot;us,&quot; or &quot;our&quot;) is committed to protecting
               your privacy. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your information when you use the Mathiter
@@ -331,7 +331,7 @@ export default async function PrivacyPage({ params }: Props) {
                 our data practices, please contact us at:
               </p>
               <p className="mt-2">
-                <strong>주식회사 매씨터 (Mathiter Inc.)</strong>
+                <strong>주식회사 매쓰이터 (Mathiter Inc.)</strong>
                 <br />
                 Email:{" "}
                 <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>
