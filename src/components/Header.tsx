@@ -22,9 +22,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="gradient-bg h-8 w-8 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
+            <img src="/logo.png" alt="Mathiter" className="h-8 w-8 rounded-lg" />
             <span className="text-xl font-bold text-foreground">Mathiter</span>
           </a>
 

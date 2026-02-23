@@ -18,9 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
-              <div className="gradient-bg h-8 w-8 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
-              </div>
+              <img src="/logo.png" alt="Mathiter" className="h-8 w-8 rounded-lg" />
               <span className="text-xl font-bold">Mathiter</span>
             </div>
             <p className="mt-4 text-sm text-muted leading-relaxed">

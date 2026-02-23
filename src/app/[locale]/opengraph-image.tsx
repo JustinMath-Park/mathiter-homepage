@@ -1,4 +1,6 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "fs/promises";
+import { join } from "path";
 import { routing } from "@/i18n/routing";
 
 export const size = { width: 1200, height: 630 };
@@ -80,6 +82,9 @@ export default async function Image({
   const fontData = await loadFont("Noto Sans KR", 700, allText);
   const fontDataRegular = await loadFont("Noto Sans KR", 400, allText);
 
+  const logoBuffer = await readFile(join(process.cwd(), "public", "logo.png"));
+  const logoBase64 = `data:image/png;base64,${logoBuffer.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -130,22 +135,12 @@ export default async function Image({
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <div
-              style={{
-                width: "48px",
-                height: "48px",
-                borderRadius: "12px",
-                background: "rgba(255,255,255,0.2)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "24px",
-                fontWeight: 700,
-                color: "white",
-              }}
-            >
-              M
-            </div>
+            <img
+              src={logoBase64}
+              width={48}
+              height={48}
+              style={{ borderRadius: "12px" }}
+            />
             <span style={{ fontSize: "32px", fontWeight: 700, color: "white" }}>
               Mathiter
             </span>
