@@ -26,8 +26,8 @@ export default async function TermsPage({ params }: Props) {
               govern your access to and use of the Mathiter website (
               <a href="https://mathiter.com">mathiter.com</a>), mobile
               applications, and all related products and services
-              (collectively, the &quot;Service&quot;) provided by Mathiter Sdn.
-              Bhd. (&quot;Mathiter,&quot; &quot;we,&quot; &quot;us,&quot; or
+              (collectively, the &quot;Service&quot;) provided by 주식회사
+              매씨터 (Mathiter Inc.) (&quot;Mathiter,&quot; &quot;we,&quot; &quot;us,&quot; or
               &quot;our&quot;).
             </p>
             <p>
@@ -251,9 +251,10 @@ export default async function TermsPage({ params }: Props) {
               <h2 className="text-xl font-semibold mt-10 mb-3">13. Governing Law</h2>
               <p>
                 These Terms shall be governed by and construed in accordance
-                with the laws of Malaysia, without regard to conflict of law
-                principles. Any disputes arising from these Terms shall be
-                subject to the exclusive jurisdiction of the courts of Malaysia.
+                with the laws of the Republic of Korea, without regard to
+                conflict of law principles. Any disputes arising from these
+                Terms shall be subject to the exclusive jurisdiction of the
+                courts of the Republic of Korea.
               </p>
             </section>
 
@@ -274,7 +275,7 @@ export default async function TermsPage({ params }: Props) {
                 If you have questions about these Terms, please contact us at:
               </p>
               <p className="mt-2">
-                <strong>Mathiter Sdn. Bhd.</strong>
+                <strong>주식회사 매씨터 (Mathiter Inc.)</strong>
                 <br />
                 Email:{" "}
                 <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>
