@@ -9,11 +9,11 @@ export default function Header() {
   const t = useTranslations("header");
 
   const navLinks = [
-    { href: "#problem", label: t("nav.whyMathiter") },
-    { href: "#features", label: t("nav.features") },
-    { href: "#how-it-works", label: t("nav.howItWorks") },
-    { href: "#pricing", label: t("nav.pricing") },
-    { href: "#team", label: t("nav.team") },
+    { href: "/#problem", label: t("nav.whyMathiter") },
+    { href: "/#features", label: t("nav.features") },
+    { href: "/#how-it-works", label: t("nav.howItWorks") },
+    { href: "/#pricing", label: t("nav.pricing") },
+    { href: "/#team", label: t("nav.team") },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <img src="/logo.png" alt="Mathiter" className="h-8 w-8 rounded-lg" />
             <span className="text-xl font-bold text-foreground">Mathiter</span>
           </a>

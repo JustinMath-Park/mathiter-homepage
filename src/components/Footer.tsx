@@ -4,11 +4,11 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   const productLinks = [
-    { label: t("product.diagnosticTest"), href: "#features" },
-    { label: t("product.aiPractice"), href: "#features" },
-    { label: t("product.examSimulation"), href: "#features" },
-    { label: t("product.videoLessons"), href: "#features" },
-    { label: t("product.pricing"), href: "#pricing" },
+    { label: t("product.diagnosticTest"), href: "/#features" },
+    { label: t("product.aiPractice"), href: "/#features" },
+    { label: t("product.examSimulation"), href: "/#features" },
+    { label: t("product.videoLessons"), href: "/#features" },
+    { label: t("product.pricing"), href: "/#pricing" },
   ];
 
   return (
