@@ -21,7 +21,7 @@
     "headlineLine1": "Kenal pasti kelemahan matematik anak anda",
     "headlineHighlight": " dalam 10 minit",
     "headlineLine2": " — dan perbaikinya",
-    "subHeadline": "Tuisyen peribadi mahal? Dengan hanya RM 99/bulan, AI Mathiter mengesan topik lemah anak anda, menjana soalan peribadi, dan menerangkan kesilapan dengan video tersuai.",
+    "subHeadline": "Tuisyen peribadi mahal? Dengan hanya RM 99.99/bulan, AI Mathiter mengesan topik lemah anak anda, menjana soalan peribadi, dan menerangkan kesilapan dengan video tersuai.",
     "benefits": {
       "diagnosis": "Ujian adaptif 10 minit untuk penilaian kemahiran tepat",
       "analytics": "Papan pemuka ibu bapa masa nyata untuk jejak kemajuan",
@@ -172,7 +172,7 @@
       },
       "premium": {
         "name": "Premium",
-        "price": "RM 99",
+        "price": "RM 99.99",
         "period": "/bulan",
         "description": "Akses penuh ke semua ciri AI",
         "cta": "Mula Percubaan Percuma",

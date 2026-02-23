@@ -21,7 +21,7 @@
     "headlineLine1": "우리 아이 수학,",
     "headlineHighlight": " 10분 진단",
     "headlineLine2": "으로 취약점을 찾아드립니다",
-    "subHeadline": "과외비 월 100만원? Mathiter는 월 RM 99로 AI가 우리 아이만의 취약 단원을 찾고, 맞춤 문제를 출제하고, 오답을 영상으로 설명해 줍니다.",
+    "subHeadline": "과외비 월 100만원? Mathiter는 월 34,900원으로 AI가 우리 아이만의 취약 단원을 찾고, 맞춤 문제를 출제하고, 오답을 영상으로 설명해 줍니다.",
     "benefits": {
       "diagnosis": "10분 적응형 진단으로 정확한 실력 파악",
       "analytics": "학부모 대시보드에서 학습 현황 실시간 확인",
@@ -172,7 +172,7 @@
       },
       "premium": {
         "name": "Premium",
-        "price": "RM 99",
+        "price": "₩34,900",
         "period": "/월",
         "description": "모든 AI 기능 이용",
         "cta": "무료 체험 시작",

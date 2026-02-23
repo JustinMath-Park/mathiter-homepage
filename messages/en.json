@@ -21,7 +21,7 @@
     "headlineLine1": "Find your child's math weak spots",
     "headlineHighlight": " in 10 minutes",
     "headlineLine2": " — then fix them",
-    "subHeadline": "Spending a fortune on private tutoring? For just RM 99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and explains mistakes with custom videos.",
+    "subHeadline": "Spending a fortune on private tutoring? For just $24.99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and explains mistakes with custom videos.",
     "benefits": {
       "diagnosis": "10-minute adaptive test for precise skill assessment",
       "analytics": "Real-time parent dashboard to track learning progress",
@@ -172,7 +172,7 @@
       },
       "premium": {
         "name": "Premium",
-        "price": "RM 99",
+        "price": "$24.99",
         "period": "/month",
         "description": "Full access to all AI features",
         "cta": "Start Free Trial",
