@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 
-type Locale = "en" | "ko" | "ms";
+type Locale = "en" | "ko" | "ms" | "zh";
 
 interface StudentData {
   name: string;
@@ -76,6 +76,19 @@ const labels: Record<Locale, Labels> = {
     scoreTrend: "📈 Perubahan Skor",
     topicSkills: "🎯 Kemahiran Topik",
     weakTopics: "⚠️ Topik Lemah",
+  },
+  zh: {
+    level: "等级",
+    xp: "XP",
+    streak: "连续学习",
+    mathScore: "数学成绩",
+    accuracy: "正确率",
+    problems: "已做题目",
+    tests: "测试",
+    testUnit: "次",
+    scoreTrend: "📈 成绩趋势",
+    topicSkills: "🎯 知识点能力",
+    weakTopics: "⚠️ 薄弱知识点",
   },
 };
 
@@ -290,6 +303,53 @@ const studentText: Record<
       scoreChange: "+6 mata ↑",
       radarLabels: ["Fungsi", "Kalkulus", "Kebarangkalian", "Vektor", "Jujukan"],
       weakLabels: ["Kamiran", "Kompleks", "Vektor"],
+    },
+  ],
+  zh: [
+    {
+      name: "金志勋",
+      initial: "金",
+      grade: "初中二年级",
+      streak: "15天",
+      scoreChange: "+12分 ↑",
+      radarLabels: ["函数", "方程", "几何", "统计", "概率"],
+      weakLabels: ["比例", "概率", "函数"],
+    },
+    {
+      name: "Sarah Lee",
+      initial: "S",
+      grade: "Year 10 · IGCSE",
+      streak: "23天",
+      scoreChange: "+8分 ↑",
+      radarLabels: ["代数", "几何", "统计", "数论", "三角函数"],
+      weakLabels: ["三角函数", "向量", "证明"],
+    },
+    {
+      name: "朴素妍",
+      initial: "朴",
+      grade: "高中一年级",
+      streak: "8天",
+      scoreChange: "+15分 ↑",
+      radarLabels: ["函数", "微积分", "概率", "向量", "数列"],
+      weakLabels: ["微积分", "数列", "向量"],
+    },
+    {
+      name: "Amir Razak",
+      initial: "A",
+      grade: "Form 4 · SPM",
+      streak: "31天",
+      scoreChange: "+10分 ↑",
+      radarLabels: ["代数", "图形", "统计", "微积分", "几何"],
+      weakLabels: ["微积分", "证明", "图形"],
+    },
+    {
+      name: "李夏恩",
+      initial: "李",
+      grade: "Grade 11 · IB Math",
+      streak: "42天",
+      scoreChange: "+6分 ↑",
+      radarLabels: ["函数", "微积分", "概率", "向量", "数列"],
+      weakLabels: ["积分", "复数", "向量"],
     },
   ],
 };
