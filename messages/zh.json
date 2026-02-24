@@ -29,13 +29,7 @@
     },
     "ctaPrimary": "免费开始诊断",
     "ctaSecondary": "了解学习方法",
-    "trustNote": "注册后即可免费诊断 · 无需绑定信用卡",
-    "trustStats": {
-      "exams": { "value": "6+", "label": "支持考试（SAT、IGCSE、IB等）" },
-      "accuracy": { "value": "88%", "label": "平均正确率提升" },
-      "available": { "value": "24/7", "label": "AI导师随时在线" },
-      "problems": { "value": "1,000+", "label": "个性化练习题" }
-    }
+    "trustNote": "注册后即可免费诊断 · 无需绑定信用卡"
   },
   "problem": {
     "label": "问题所在",
@@ -175,7 +169,7 @@
         "price": "$24.99",
         "period": "/月",
         "description": "全面使用所有AI功能",
-        "cta": "免费试用",
+        "cta": "免费开始诊断",
         "features": {
           "0": "包含基础版所有功能",
           "1": "无限AI引导练习",
@@ -210,15 +204,8 @@
     "title": "让数学进步可预见。",
     "subtitle": "大多数学生并非「数学差」，而是没有一条清晰的路。",
     "mission": "Mathiter 将迷茫变成路线图——让学生始终知道下一步该做什么，以及为什么。",
-    "visionLabel": "我们的愿景",
-    "vision": "为每位学生提供通往目标分数的个性化路径——通过一个持续的学习闭环：",
-    "loop": {
-      "diagnose": "诊断",
-      "plan": "规划",
-      "practice": "练习",
-      "fix": "纠错",
-      "prove": "验证"
-    },
+    "visionLabel": "我们的方法",
+    "vision": "我们将体系化的全球数学课程与韩国应试教育的精髓相结合——打造扎实的概念理解和真正的解题能力，直接转化为更高的考试分数。",
     "beliefsLabel": "我们的信念",
     "beliefs": {
       "direction": {

@@ -29,13 +29,7 @@
     },
     "ctaPrimary": "Mula Diagnosis Percuma",
     "ctaSecondary": "Lihat Cara Belajar",
-    "trustNote": "Diagnosis percuma tersedia serta-merta selepas pendaftaran · Tiada kad kredit diperlukan",
-    "trustStats": {
-      "exams": { "value": "6+", "label": "Peperiksaan (SAT, IGCSE, IB...)" },
-      "accuracy": { "value": "88%", "label": "Peningkatan Ketepatan Purata" },
-      "available": { "value": "24/7", "label": "Tutor AI Tersedia" },
-      "problems": { "value": "1,000+", "label": "Soalan Peribadi" }
-    }
+    "trustNote": "Diagnosis percuma tersedia serta-merta selepas pendaftaran · Tiada kad kredit diperlukan"
   },
   "problem": {
     "label": "Masalah",
@@ -175,7 +169,7 @@
         "price": "RM 99.99",
         "period": "/bulan",
         "description": "Akses penuh ke semua ciri AI",
-        "cta": "Mula Percubaan Percuma",
+        "cta": "Mula Diagnosis Percuma",
         "features": {
           "0": "Semua dalam Basic",
           "1": "Latihan berpandukan AI tanpa had",
@@ -210,15 +204,8 @@
     "title": "Jadikan kemajuan matematik boleh diramal.",
     "subtitle": "Kebanyakan pelajar bukan gagal kerana mereka \"lemah matematik.\" Mereka gagal kerana tiada laluan yang jelas.",
     "mission": "Mathiter wujud untuk menukar kekeliruan menjadi peta hala tuju — supaya pelajar sentiasa tahu apa yang perlu dilakukan seterusnya, dan mengapa.",
-    "visionLabel": "Visi kami",
-    "vision": "Berikan setiap pelajar laluan peribadi ke skor sasaran mereka — melalui satu gelung pembelajaran berterusan:",
-    "loop": {
-      "diagnose": "Diagnos",
-      "plan": "Rancang",
-      "practice": "Latih",
-      "fix": "Baiki",
-      "prove": "Buktikan"
-    },
+    "visionLabel": "Pendekatan kami",
+    "vision": "Kami menggabungkan kurikulum matematik global yang berstruktur dengan kepakaran persediaan peperiksaan dari sistem pendidikan Korea — membina pemahaman konsep yang mendalam dan kemahiran penyelesaian masalah sebenar yang terus diterjemahkan kepada skor ujian yang lebih tinggi.",
     "beliefsLabel": "Apa yang kami percaya",
     "beliefs": {
       "direction": {

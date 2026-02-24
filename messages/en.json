@@ -29,13 +29,7 @@
     },
     "ctaPrimary": "Start Free Diagnosis",
     "ctaSecondary": "See How It Works",
-    "trustNote": "Free diagnostic available immediately after sign-up · No credit card required",
-    "trustStats": {
-      "exams": { "value": "6+", "label": "Exams (SAT, IGCSE, IB...)" },
-      "accuracy": { "value": "88%", "label": "Avg. Accuracy Improvement" },
-      "available": { "value": "24/7", "label": "AI Tutor Available" },
-      "problems": { "value": "1,000+", "label": "Personalized Problems" }
-    }
+    "trustNote": "Free diagnostic available immediately after sign-up · No credit card required"
   },
   "problem": {
     "label": "The Problem",
@@ -175,7 +169,7 @@
         "price": "$24.99",
         "period": "/month",
         "description": "Full access to all AI features",
-        "cta": "Start Free Trial",
+        "cta": "Start Free Diagnosis",
         "features": {
           "0": "Everything in Basic",
           "1": "Unlimited AI-guided practice",
@@ -210,15 +204,8 @@
     "title": "Make math progress predictable.",
     "subtitle": "Most students don't struggle because they're \"bad at math.\" They struggle because they don't have a clear path.",
     "mission": "Mathiter exists to turn confusion into a roadmap — so students always know what to do next, and why.",
-    "visionLabel": "Our vision",
-    "vision": "Give every student a personalized route to their target score — through one continuous learning loop:",
-    "loop": {
-      "diagnose": "Diagnose",
-      "plan": "Plan",
-      "practice": "Practice",
-      "fix": "Fix",
-      "prove": "Prove"
-    },
+    "visionLabel": "Our approach",
+    "vision": "We combine a globally structured math curriculum with the intensive exam-prep know-how of Korea's education system — building deep conceptual understanding and real problem-solving skills that translate directly into higher test scores.",
     "beliefsLabel": "What we believe",
     "beliefs": {
       "direction": {

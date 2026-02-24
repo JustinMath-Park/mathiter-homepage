@@ -29,13 +29,7 @@
     },
     "ctaPrimary": "무료 진단 시작",
     "ctaSecondary": "학습 방법 보기",
-    "trustNote": "가입 후 즉시 무료 진단 가능 · 카드 등록 불필요",
-    "trustStats": {
-      "exams": { "value": "6+", "label": "지원 시험 (SAT, IGCSE, IB 등)" },
-      "accuracy": { "value": "88%", "label": "평균 정답률 향상" },
-      "available": { "value": "24/7", "label": "언제든 AI 튜터 이용" },
-      "problems": { "value": "1,000+", "label": "맞춤형 연습 문제" }
-    }
+    "trustNote": "가입 후 즉시 무료 진단 가능 · 카드 등록 불필요"
   },
   "problem": {
     "label": "문제점",
@@ -175,7 +169,7 @@
         "price": "₩34,900",
         "period": "/월",
         "description": "모든 AI 기능 이용",
-        "cta": "무료 체험 시작",
+        "cta": "무료 진단 시작",
         "features": {
           "0": "Basic의 모든 기능",
           "1": "무제한 AI 가이드 연습",
@@ -210,15 +204,8 @@
     "title": "수학 성장을 예측 가능하게.",
     "subtitle": "대부분의 학생이 수학을 못하는 게 아닙니다. 명확한 길이 없어서 헤매는 것입니다.",
     "mission": "Mathiter는 혼란을 로드맵으로 바꿔줍니다 — 학생이 항상 다음에 무엇을, 왜 해야 하는지 알 수 있도록.",
-    "visionLabel": "우리의 비전",
-    "vision": "모든 학생에게 목표 점수까지의 맞춤형 경로를 — 하나의 끊임없는 학습 순환을 통해:",
-    "loop": {
-      "diagnose": "진단",
-      "plan": "계획",
-      "practice": "연습",
-      "fix": "교정",
-      "prove": "검증"
-    },
+    "visionLabel": "우리의 접근법",
+    "vision": "개념에 충실한 글로벌 수학 커리큘럼에 한국 입시 교육의 노하우를 접목합니다. 확실한 개념 이해와 실전 문제 풀이 능력 향상을 통해, 시험 고득점으로 이어지는 학습 경험을 제공합니다.",
     "beliefsLabel": "우리의 믿음",
     "beliefs": {
       "direction": {

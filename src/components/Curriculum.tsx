@@ -38,28 +38,33 @@ export default function Curriculum() {
           {examKeys.map((key) => {
             const statusKey = examStatuses[key];
             const status = t(`statuses.${statusKey}`);
+            const isAvailable = statusKey === "live" || statusKey === "comingSoon";
             return (
               <div
                 key={key}
-                className="flex items-center gap-4 rounded-xl border border-gray-100 bg-white p-5 hover:shadow-sm transition-shadow"
+                className={`flex items-center gap-4 rounded-xl border p-5 transition-shadow ${
+                  isAvailable
+                    ? "border-gray-100 bg-white hover:shadow-sm"
+                    : "border-gray-100/60 bg-gray-50/50 opacity-60"
+                }`}
               >
-                <span className="text-3xl">{examFlags[key]}</span>
+                <span className={`text-3xl ${isAvailable ? "" : "grayscale"}`}>{examFlags[key]}</span>
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold">{t(`exams.${key}.name`)}</span>
+                    <span className={`font-semibold ${isAvailable ? "" : "text-gray-400"}`}>{t(`exams.${key}.name`)}</span>
                     <span
                       className={`inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${
                         statusKey === "live"
                           ? "bg-green-50 text-green-700"
                           : statusKey === "comingSoon"
                           ? "bg-amber-50 text-amber-700"
-                          : "bg-gray-50 text-gray-600"
+                          : "bg-gray-100 text-gray-400"
                       }`}
                     >
                       {status}
                     </span>
                   </div>
-                  <p className="text-sm text-muted">{t(`exams.${key}.description`)}</p>
+                  <p className={`text-sm ${isAvailable ? "text-muted" : "text-gray-400"}`}>{t(`exams.${key}.description`)}</p>
                 </div>
               </div>
             );

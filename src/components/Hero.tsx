@@ -19,22 +19,6 @@ export default function Hero() {
     { icon: "🎮", text: t("benefits.gamification") },
   ];
 
-  const trustStats = [
-    { value: t("trustStats.exams.value"), label: t("trustStats.exams.label") },
-    {
-      value: t("trustStats.accuracy.value"),
-      label: t("trustStats.accuracy.label"),
-    },
-    {
-      value: t("trustStats.available.value"),
-      label: t("trustStats.available.label"),
-    },
-    {
-      value: t("trustStats.problems.value"),
-      label: t("trustStats.problems.label"),
-    },
-  ];
-
   return (
     <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
       {/* Background decoration */}
@@ -122,19 +106,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Trust stats bar */}
-        <div className="mt-16 pt-8 border-t border-gray-100">
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-            {trustStats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl font-bold gradient-text">
-                  {stat.value}
-                </div>
-                <div className="mt-1 text-sm text-muted">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
