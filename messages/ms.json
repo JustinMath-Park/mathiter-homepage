@@ -51,8 +51,8 @@
         "description": "Ada jurang besar antara memahami matematik di kelas dan mendapat markah tinggi dalam peperiksaan piawai seperti SAT atau IGCSE. Menghadapi ujian memerlukan kemahiran berbeza yang kebanyakan kursus tidak ajar."
       },
       "personalization": {
-        "title": "\"Semua orang belajar benda sama, tapi saya perlukan bantuan berbeza.\"",
-        "description": "Setiap pelajar mempunyai kelemahan unik, tetapi kebanyakan program melayan semua orang sama. Tanpa bimbingan peribadi, pelajar membuang masa pada apa yang sudah diketahui dan terlepas apa yang benar-benar diperlukan."
+        "title": "\"Saya harap seseorang boleh tunjuk tepat apa yang saya tidak tahu.\"",
+        "description": "Setiap pelajar mempunyai kelemahan unik, tetapi kebanyakan pendidikan melayan semua orang sama. Tanpa bimbingan peribadi, pelajar membuang masa pada apa yang sudah diketahui dan terlepas apa yang benar-benar diperlukan."
       }
     }
   },
@@ -206,32 +206,50 @@
     }
   },
   "team": {
-    "label": "Pasukan Kami",
-    "title": "Di Mana Teknologi Bertemu Pengajaran",
-    "subtitle": "Pembangun permainan yang menjadi jurutera matematik AI dan pengajar matematik veteran — gabungan jarang yang memahami kedua-dua kod dan bilik darjah.",
-    "members": {
-      "sejun": {
-        "name": "Sejun Park",
-        "role": "CEO / CTO",
-        "bio": "20 tahun pengalaman pembangunan permainan digabungkan dengan ijazah Matematik dari Korea University. Seorang bapa kepada dua pelajar sekolah antarabangsa di Malaysia, beliau membina Mathiter kerana melihat sendiri betapa sukarnya mencari sokongan matematik yang betul.",
-        "highlights": {
-          "0": "Graduan Matematik Korea University",
-          "1": "Veteran pembangunan permainan & perisian 20 tahun",
-          "2": "Ibu bapa sekolah antarabangsa di Malaysia"
-        }
+    "label": "Visi Pasukan",
+    "title": "Jadikan kemajuan matematik boleh diramal.",
+    "subtitle": "Kebanyakan pelajar bukan gagal kerana mereka \"lemah matematik.\" Mereka gagal kerana tiada laluan yang jelas.",
+    "mission": "Mathiter wujud untuk menukar kekeliruan menjadi peta hala tuju — supaya pelajar sentiasa tahu apa yang perlu dilakukan seterusnya, dan mengapa.",
+    "visionLabel": "Visi kami",
+    "vision": "Berikan setiap pelajar laluan peribadi ke skor sasaran mereka — melalui satu gelung pembelajaran berterusan:",
+    "loop": {
+      "diagnose": "Diagnos",
+      "plan": "Rancang",
+      "practice": "Latih",
+      "fix": "Baiki",
+      "prove": "Buktikan"
+    },
+    "beliefsLabel": "Apa yang kami percaya",
+    "beliefs": {
+      "direction": {
+        "title": "Arah mengalahkan usaha.",
+        "description": "Urutan yang betul lebih penting daripada \"buat lebih banyak.\""
       },
-      "seongryong": {
-        "name": "Seongryong Lim",
-        "role": "Chief Content Officer",
-        "bio": "17 tahun pengalaman mengajar matematik dengan ribuan pelajar. Kepakaran mendalam merentasi kurikulum antarabangsa termasuk IGCSE, SAT, dan IB. Memastikan setiap soalan dan penjelasan memenuhi standard kualiti tertinggi.",
-        "highlights": {
-          "0": "Veteran pendidikan matematik 17 tahun",
-          "1": "Pakar kurikulum SAT, IGCSE, dan IB",
-          "2": "Ketua jaminan kualiti kandungan"
-        }
+      "feedback": {
+        "title": "Maklum balas membina keyakinan.",
+        "description": "Kesilapan harus serta-merta menjadi pembelajaran."
+      },
+      "consistency": {
+        "title": "Konsistensi direka bentuk.",
+        "description": "Motivasi memerlukan sistem, bukan kekuatan semata."
       }
     },
-    "quote": "Seorang jurutera jurusan matematik dengan 20 tahun pengalaman pembangunan permainan dan pengajar matematik veteran 17 tahun — bersama, kami membina platform yang benar-benar memahami kedua-dua teknologi dan pendidikan."
+    "promisesLabel": "Janji kami",
+    "promises": {
+      "clarity": {
+        "title": "Kejelasan",
+        "description": "Anda sentiasa tahu langkah terbaik seterusnya."
+      },
+      "consistency": {
+        "title": "Konsistensi",
+        "description": "Kemajuan terasa seperti permainan — dan menjadi tabiat."
+      },
+      "confidence": {
+        "title": "Keyakinan",
+        "description": "Latihan sepadan dengan ujian, jadi markah mengikut."
+      }
+    },
+    "cta": "Mula Diagnosis Percuma"
   },
   "cta": {
     "title": "Bersedia untuk Naikkan Markah Matematik Anda?",
@@ -270,6 +288,7 @@
     "label": "Bahasa",
     "en": "English",
     "ko": "한국어",
-    "ms": "Bahasa Melayu"
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
   }
 }

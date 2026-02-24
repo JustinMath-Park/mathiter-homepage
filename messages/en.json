@@ -51,8 +51,8 @@
         "description": "There's a big gap between understanding math in class and scoring well on standardized exams like the SAT or IGCSE. Test-taking requires different skills that most courses don't teach."
       },
       "personalization": {
-        "title": "\"Everyone learns the same thing, but I need different help.\"",
-        "description": "Every student has unique weak spots, but most programs treat everyone the same. Without personalized guidance, students waste time on what they already know and miss what they actually need."
+        "title": "\"I wish someone could just pinpoint exactly what I don't know.\"",
+        "description": "Every student has unique weak spots, but most education treats everyone the same. Without personalized guidance, students waste time on what they already know and miss what they actually need."
       }
     }
   },
@@ -206,32 +206,50 @@
     }
   },
   "team": {
-    "label": "Our Team",
-    "title": "Where Tech Meets Teaching",
-    "subtitle": "A game developer turned math AI engineer and a veteran math instructor — the rare combination that understands both the code and the classroom.",
-    "members": {
-      "sejun": {
-        "name": "Sejun Park",
-        "role": "CEO / CTO",
-        "bio": "20 years of game development experience combined with a Mathematics degree from Korea University. A father of two international school students in Malaysia, he built Mathiter because he saw firsthand how hard it was to find the right math support.",
-        "highlights": {
-          "0": "Korea Univ. Mathematics graduate",
-          "1": "20-year game & software veteran",
-          "2": "International school parent in Malaysia"
-        }
+    "label": "Team Vision",
+    "title": "Make math progress predictable.",
+    "subtitle": "Most students don't struggle because they're \"bad at math.\" They struggle because they don't have a clear path.",
+    "mission": "Mathiter exists to turn confusion into a roadmap — so students always know what to do next, and why.",
+    "visionLabel": "Our vision",
+    "vision": "Give every student a personalized route to their target score — through one continuous learning loop:",
+    "loop": {
+      "diagnose": "Diagnose",
+      "plan": "Plan",
+      "practice": "Practice",
+      "fix": "Fix",
+      "prove": "Prove"
+    },
+    "beliefsLabel": "What we believe",
+    "beliefs": {
+      "direction": {
+        "title": "Direction beats effort.",
+        "description": "The right sequence matters more than \"doing more.\""
       },
-      "seongryong": {
-        "name": "Seongryong Lim",
-        "role": "Chief Content Officer",
-        "bio": "17 years of math teaching experience with thousands of students. Deep expertise across international curricula including IGCSE, SAT, and IB. Ensures every problem and explanation meets the highest quality standards.",
-        "highlights": {
-          "0": "17-year math education veteran",
-          "1": "SAT, IGCSE, and IB curriculum expert",
-          "2": "Content quality assurance lead"
-        }
+      "feedback": {
+        "title": "Feedback builds confidence.",
+        "description": "Mistakes should instantly become learning."
+      },
+      "consistency": {
+        "title": "Consistency is designed.",
+        "description": "Motivation needs systems, not willpower."
       }
     },
-    "quote": "A math-major engineer with 20 years of game development experience and a 17-year veteran math instructor — together, we built a platform that truly understands both technology and education."
+    "promisesLabel": "What we promise",
+    "promises": {
+      "clarity": {
+        "title": "Clarity",
+        "description": "You always know your next best step."
+      },
+      "consistency": {
+        "title": "Consistency",
+        "description": "Progress feels like a game — and becomes a habit."
+      },
+      "confidence": {
+        "title": "Confidence",
+        "description": "Practice matches the test, so scores follow."
+      }
+    },
+    "cta": "Start Free Diagnosis"
   },
   "cta": {
     "title": "Ready to Improve Your Math Score?",
@@ -270,6 +288,7 @@
     "label": "Language",
     "en": "English",
     "ko": "한국어",
-    "ms": "Bahasa Melayu"
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
   }
 }

@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "title": "Mathiter — 助你考试成功的AI数学导师",
+    "description": "数学考试遇到困难？Mathiter的AI导师帮助你掌握SAT、IGCSE、IB和A-Level数学，提供个性化练习、游戏化学习和真实考试模拟。",
+    "ogTitle": "Mathiter — 助你考试成功的AI数学导师",
+    "ogDescription": "通过专属AI导师掌握SAT、IGCSE、IB和A-Level数学。有趣的游戏化学习，真正提升你的成绩。"
+  },
+  "header": {
+    "nav": {
+      "whyMathiter": "为什么选择Mathiter",
+      "features": "核心功能",
+      "howItWorks": "学习流程",
+      "pricing": "价格",
+      "team": "团队"
+    },
+    "signIn": "登录",
+    "startFree": "免费开始"
+  },
+  "hero": {
+    "badge": "国际学校考试AI数学教练",
+    "headlineLine1": "10分钟内找到孩子的数学薄弱点",
+    "headlineHighlight": "，",
+    "headlineLine2": "然后精准提升",
+    "subHeadline": "花大价钱请私教？每月只需$24.99，Mathiter的AI精准定位孩子的薄弱知识点，生成个性化练习题，并通过定制视频讲解错误。",
+    "benefits": {
+      "diagnosis": "10分钟自适应测试，精准评估实力",
+      "analytics": "家长仪表盘实时追踪学习进度",
+      "gamification": "RPG风格学习，让孩子主动学习"
+    },
+    "ctaPrimary": "免费开始诊断",
+    "ctaSecondary": "了解学习方法",
+    "trustNote": "注册后即可免费诊断 · 无需绑定信用卡",
+    "trustStats": {
+      "exams": { "value": "6+", "label": "支持考试（SAT、IGCSE、IB等）" },
+      "accuracy": { "value": "88%", "label": "平均正确率提升" },
+      "available": { "value": "24/7", "label": "AI导师随时在线" },
+      "problems": { "value": "1,000+", "label": "个性化练习题" }
+    }
+  },
+  "problem": {
+    "label": "问题所在",
+    "title": "这些情况，你是否似曾相识？",
+    "subtitle": "阻碍学生进步的三大难题——Mathiter为此而生。",
+    "items": {
+      "retention": {
+        "title": "「学了就忘，怎么都记不住。」",
+        "description": "传统学习方法难以持久。没有有趣的练习和科学的复习，知识很快就会遗忘。当学习变成负担，动力也随之消失。"
+      },
+      "gap": {
+        "title": "「概念都懂了，考试还是考不好。」",
+        "description": "课堂上理解数学和在SAT、IGCSE等标准化考试中取得高分完全是两回事。应试需要大多数课程不会教的考试技巧。"
+      },
+      "personalization": {
+        "title": "「希望有人能精准指出我到底哪里不会。」",
+        "description": "每个学生的薄弱点各不相同，但大多数教育对所有人一视同仁。没有个性化指导，学生会在已掌握的内容上浪费时间，却错过真正需要补强的部分。"
+      }
+    }
+  },
+  "features": {
+    "label": "核心功能",
+    "title": "提分所需的一切",
+    "subtitle": "六大强力工具协同运作，帮你更聪明地学习。",
+    "items": {
+      "coach": {
+        "tag": "AI教练",
+        "title": "智能提问，精准找到薄弱点",
+        "description": "我们的AI不是直接给答案，而是通过引导式提问帮你自己发现错误。它能检测你理解中的隐藏漏洞，并追踪记录以便重点复习。"
+      },
+      "videos": {
+        "tag": "视频课程",
+        "title": "个性化讲解视频",
+        "description": "当你在某个概念上遇到困难时，AI会针对你的具体错误创建一段简短的讲解视频。每个视频都针对你需要帮助的特定知识点——不是千篇一律的通用课程。"
+      },
+      "analytics": {
+        "tag": "智能分析",
+        "title": "AI深度理解你的学习方式",
+        "description": "我们的系统从多个维度分析你的学习模式——识别优势、预测成绩、规划学习路径，并精准推荐下一步该练什么。"
+      },
+      "gamification": {
+        "tag": "游戏化",
+        "title": "RPG风格学习，让你欲罢不能",
+        "description": "赚取经验值、定制头像、养成虚拟宠物、攀登赛季排行榜。每天的学习都在培养你的角色——让数学练习变得像玩你最爱的游戏。"
+      },
+      "examPractice": {
+        "tag": "模拟考试",
+        "title": "真实考试模拟",
+        "description": "在与目标考试完全相同的条件下练习——包括Digital SAT的自适应模式、IGCSE、IB等。即时评分并提供详细分析，告诉你哪里需要改进。"
+      },
+      "dashboard": {
+        "tag": "仪表盘",
+        "title": "家长与教师数据洞察",
+        "description": "家长可以实时追踪学习习惯、进度和薄弱领域。教师获得自动评分、报告和作业工具——每周节省数小时的手动工作。"
+      }
+    }
+  },
+  "howItWorks": {
+    "label": "学习流程",
+    "title": "5步学习旅程",
+    "subtitle": "智能循环不断适应你的进度，每一轮都让你更接近目标分数。",
+    "steps": {
+      "diagnose": {
+        "step": "01",
+        "title": "诊断",
+        "subtitle": "智能评估",
+        "description": "通过快速自适应测试精准定位你的水平。题目实时调整难度，用更少的题目获得更准确的评估。"
+      },
+      "learn": {
+        "step": "02",
+        "title": "学习",
+        "subtitle": "专属路线图",
+        "description": "根据目标考试和当前水平获取个性化学习计划。课程按知识点结构化编排，不遗漏、不重复。"
+      },
+      "practice": {
+        "step": "03",
+        "title": "练习",
+        "subtitle": "AI引导练习",
+        "description": "在AI教练的引导下做题，AI会通过提问而非直接给答案来帮助你。巧妙的问题帮你发现隐藏的知识盲点。"
+      },
+      "review": {
+        "step": "04",
+        "title": "复习",
+        "subtitle": "视频与分析",
+        "description": "当你反复犯同样的错误时，AI会创建个性化视频讲解。你的数据被分析以预测成绩并规划下一步学习内容。"
+      },
+      "test": {
+        "step": "05",
+        "title": "测试",
+        "subtitle": "模拟考试",
+        "description": "参加与目标考试格式和时间完全一致的模拟考试。即时评分并提供详细分析，帮你补上每一个漏洞。"
+      }
+    },
+    "loopText": "这个循环不断重复——每一轮都让你更接近目标分数"
+  },
+  "curriculum": {
+    "label": "支持考试",
+    "title": "一个平台，覆盖所有主流考试",
+    "subtitle": "不同考试的数学题看起来不同，但所需的能力是相通的。Mathiter帮你在一个平台上全部掌握。",
+    "exams": {
+      "sat": { "name": "Digital SAT", "description": "College Board自适应模式" },
+      "igcse": { "name": "IGCSE", "description": "剑桥国际" },
+      "ib": { "name": "IB Math", "description": "AA & AI (SL/HL)" },
+      "aLevel": { "name": "A-Level", "description": "Edexcel / CIE" },
+      "csat": { "name": "高考数学", "description": "韩国大学学术能力测试" },
+      "more": { "name": "更多", "description": "AP、GCE O-Level等" }
+    },
+    "statuses": {
+      "live": "已上线",
+      "comingSoon": "即将推出",
+      "planned": "规划中",
+      "expanding": "扩展中"
+    }
+  },
+  "pricing": {
+    "label": "价格",
+    "title": "比一节补习课还便宜",
+    "subtitle": "一整个月的AI智能学习，还不到私教一小时的费用。",
+    "mostPopular": "最受欢迎",
+    "plans": {
+      "basic": {
+        "name": "基础版",
+        "price": "免费",
+        "period": "",
+        "description": "基础功能入门体验",
+        "cta": "免费开始",
+        "features": {
+          "0": "自适应诊断测试",
+          "1": "个性化学习路线图",
+          "2": "每日限量练习（5次）",
+          "3": "基础进度追踪",
+          "4": "游戏化（经验值和头像）"
+        }
+      },
+      "premium": {
+        "name": "高级版",
+        "price": "$24.99",
+        "period": "/月",
+        "description": "全面使用所有AI功能",
+        "cta": "免费试用",
+        "features": {
+          "0": "包含基础版所有功能",
+          "1": "无限AI引导练习",
+          "2": "个性化视频讲解",
+          "3": "深度学习分析",
+          "4": "模拟考试（SAT、IGCSE等）",
+          "5": "成绩预测追踪",
+          "6": "家长仪表盘",
+          "7": "优先客服支持"
+        }
+      },
+      "school": {
+        "name": "学校/机构版",
+        "price": "定制",
+        "period": "",
+        "description": "适用于学校和培训机构",
+        "cta": "联系销售",
+        "features": {
+          "0": "包含高级版所有功能",
+          "1": "批量折扣",
+          "2": "教师管理后台",
+          "3": "作业与评分工具",
+          "4": "便捷学生入驻",
+          "5": "定制报告与分析",
+          "6": "专属客服支持"
+        }
+      }
+    }
+  },
+  "team": {
+    "label": "团队愿景",
+    "title": "让数学进步可预见。",
+    "subtitle": "大多数学生并非「数学差」，而是没有一条清晰的路。",
+    "mission": "Mathiter 将迷茫变成路线图——让学生始终知道下一步该做什么，以及为什么。",
+    "visionLabel": "我们的愿景",
+    "vision": "为每位学生提供通往目标分数的个性化路径——通过一个持续的学习闭环：",
+    "loop": {
+      "diagnose": "诊断",
+      "plan": "规划",
+      "practice": "练习",
+      "fix": "纠错",
+      "prove": "验证"
+    },
+    "beliefsLabel": "我们的信念",
+    "beliefs": {
+      "direction": {
+        "title": "方向胜过努力。",
+        "description": "正确的顺序比「多做题」更重要。"
+      },
+      "feedback": {
+        "title": "反馈建立信心。",
+        "description": "错误应该立刻变成学习机会。"
+      },
+      "consistency": {
+        "title": "坚持靠设计。",
+        "description": "动力需要系统，而非意志力。"
+      }
+    },
+    "promisesLabel": "我们的承诺",
+    "promises": {
+      "clarity": {
+        "title": "清晰",
+        "description": "你始终知道下一步最佳行动。"
+      },
+      "consistency": {
+        "title": "持续",
+        "description": "进步像游戏一样有趣，并成为习惯。"
+      },
+      "confidence": {
+        "title": "自信",
+        "description": "练习对标考试，成绩自然跟上。"
+      }
+    },
+    "cta": "免费开始诊断"
+  },
+  "cta": {
+    "title": "准备好提升数学成绩了吗？",
+    "description": "加入来自国际学校的学生们，用专属AI数学导师更高效地学习。",
+    "ctaPrimary": "免费试用",
+    "ctaSecondary": "联系销售"
+  },
+  "footer": {
+    "brandDescription": "面向国际学校学生的AI驱动数学学习平台。Math + Iter（拉丁语：道路）——引导你走向目标分数的旅程。",
+    "product": {
+      "title": "产品",
+      "diagnosticTest": "诊断测试",
+      "aiPractice": "AI引导练习",
+      "examSimulation": "模拟考试",
+      "videoLessons": "视频课程",
+      "pricing": "价格"
+    },
+    "exams": {
+      "title": "支持考试",
+      "items": {
+        "0": "Digital SAT",
+        "1": "IGCSE Mathematics",
+        "2": "IB Math AA/AI",
+        "3": "A-Level Math",
+        "4": "更多即将推出"
+      }
+    },
+    "contact": {
+      "title": "联系我们"
+    },
+    "copyright": "© {year} Mathiter. 保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "en": "English",
+    "ko": "한국어",
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
+  }
+}

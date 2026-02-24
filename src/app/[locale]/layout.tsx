@@ -62,7 +62,13 @@ export async function generateMetadata({
       siteName: "Mathiter",
       type: "website",
       locale:
-        locale === "en" ? "en_US" : locale === "ko" ? "ko_KR" : "ms_MY",
+        locale === "en"
+          ? "en_US"
+          : locale === "ko"
+            ? "ko_KR"
+            : locale === "zh"
+              ? "zh_CN"
+              : "ms_MY",
     },
     twitter: {
       card: "summary_large_image",

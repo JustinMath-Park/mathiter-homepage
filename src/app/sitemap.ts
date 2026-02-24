@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://mathiter.com";
-const locales = ["en", "ko", "ms"];
+const locales = ["en", "ko", "ms", "zh"];
 const defaultLocale = "en";
 
 function localeUrl(locale: string, path: string = "") {
