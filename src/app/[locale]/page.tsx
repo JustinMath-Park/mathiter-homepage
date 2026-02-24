@@ -7,7 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Curriculum from "@/components/Curriculum";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
-import CTA from "@/components/CTA";
+
 import Footer from "@/components/Footer";
 
 type Props = {
@@ -29,7 +29,6 @@ export default async function Home({ params }: Props) {
         <Curriculum />
         <Pricing />
         <Team />
-        <CTA />
       </main>
       <Footer />
     </>
