@@ -53,7 +53,7 @@ export default function LectureMockup() {
       </div>
 
       {/* Video player area */}
-      <div className="relative bg-gray-900 aspect-video flex items-center justify-center">
+      <div className="relative bg-gray-900 h-44 flex items-center justify-center">
         <svg viewBox="0 0 320 180" className="w-full h-full">
           <rect width="320" height="180" fill="#1a1a2e" />
 
@@ -151,7 +151,7 @@ export default function LectureMockup() {
       </div>
 
       {/* Content - math explanation */}
-      <div className="px-4 pb-4 space-y-2.5">
+      <div className="px-4 pb-3 space-y-2">
         {/* Key formula */}
         <div className="bg-indigo-50 border border-indigo-200 rounded-lg px-3 py-2">
           <p className="text-[10px] text-indigo-600 font-medium mb-1">Standard Form:</p>

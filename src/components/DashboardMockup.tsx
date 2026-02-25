@@ -423,7 +423,7 @@ export default function DashboardMockup() {
       <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-2xl opacity-60" />
 
       <div
-        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
+        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-500 h-[480px] ${fading ? "opacity-0" : "opacity-100"}`}
       >
         {slideIndex === 0 ? (
           <DashboardScreen
@@ -532,7 +532,7 @@ function DashboardScreen({
       </div>
 
       {/* Charts area */}
-      <div className="p-4 space-y-3">
+      <div className="px-4 py-3 space-y-2.5">
         <div className="bg-gray-50 rounded-xl p-3">
           <div className="flex items-center justify-between mb-2">
             <span className="text-[11px] font-semibold text-gray-700">
