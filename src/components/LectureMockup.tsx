@@ -3,7 +3,33 @@
 /**
  * Lecture (PSV) Mockup
  * Shows a math lecture video player on top + concept explanation below
+ *
+ * Graph coordinate system for f(x) = (x-1)² - 4:
+ *   math x: -3 to 5  →  SVG x: 40 to 280  (30 px per unit)
+ *   math y: -5 to 5   →  SVG y: 155 to 20  (13.5 px per unit, inverted)
  */
+const mapX = (x: number) => 40 + (x + 3) * 30;
+const mapY = (y: number) => 155 - (y + 5) * 13.5;
+
+// Generate smooth parabola: f(x) = (x-1)² - 4, x from -2 to 4 in 0.25 steps
+const parabolaPoints: [number, number][] = [];
+for (let x = -2; x <= 4; x += 0.25) {
+  const y = (x - 1) ** 2 - 4;
+  parabolaPoints.push([mapX(x), mapY(y)]);
+}
+const parabolaPath =
+  parabolaPoints.map(([sx, sy], i) => `${i === 0 ? "M" : "L"}${sx.toFixed(1)},${sy.toFixed(1)}`).join(" ");
+
+// Grid lines aligned to integer coordinates
+const vGridLines = [-2, -1, 0, 1, 2, 3, 4].map((x) => mapX(x));
+const hGridLines = [-4, -3, -2, -1, 0, 1, 2, 3, 4].map((y) => mapY(y));
+
+// Key points
+const origin = { x: mapX(0), y: mapY(0) };
+const vertex = { x: mapX(1), y: mapY(-4) };
+const intercept1 = { x: mapX(-1), y: mapY(0) };
+const intercept2 = { x: mapX(3), y: mapY(0) };
+
 export default function LectureMockup() {
   return (
     <>
@@ -28,73 +54,75 @@ export default function LectureMockup() {
 
       {/* Video player area */}
       <div className="relative bg-gray-900 aspect-video flex items-center justify-center">
-        {/* Fake video content - math animation frame */}
         <svg viewBox="0 0 320 180" className="w-full h-full">
-          {/* Dark background */}
           <rect width="320" height="180" fill="#1a1a2e" />
 
-          {/* Grid lines */}
-          {Array.from({ length: 9 }, (_, i) => (
-            <line
-              key={`v${i}`}
-              x1={40 + i * 30}
-              y1="20"
-              x2={40 + i * 30}
-              y2="155"
-              stroke="#2a2a4a"
-              strokeWidth="0.5"
-            />
+          {/* Grid lines at integer coordinates */}
+          {vGridLines.map((sx) => (
+            <line key={`v${sx}`} x1={sx} y1="20" x2={sx} y2="160" stroke="#2a2a4a" strokeWidth="0.5" />
           ))}
-          {Array.from({ length: 6 }, (_, i) => (
-            <line
-              key={`h${i}`}
-              x1="40"
-              y1={20 + i * 27}
-              x2="280"
-              y2={20 + i * 27}
-              stroke="#2a2a4a"
-              strokeWidth="0.5"
-            />
+          {hGridLines.map((sy) => (
+            <line key={`h${sy}`} x1="35" y1={sy} x2="280" y2={sy} stroke="#2a2a4a" strokeWidth="0.5" />
           ))}
 
-          {/* Axes */}
-          <line x1="40" y1="155" x2="280" y2="155" stroke="#6366f1" strokeWidth="1.5" />
-          <line x1="160" y1="20" x2="160" y2="155" stroke="#6366f1" strokeWidth="1.5" />
+          {/* Axes at y=0 and x=0 */}
+          <line x1="35" y1={origin.y} x2="280" y2={origin.y} stroke="#6366f1" strokeWidth="1.2" />
+          <line x1={origin.x} y1="20" x2={origin.x} y2="160" stroke="#6366f1" strokeWidth="1.2" />
 
           {/* Axis labels */}
-          <text x="275" y="168" fontSize="8" className="fill-indigo-400">x</text>
-          <text x="165" y="28" fontSize="8" className="fill-indigo-400">y</text>
+          <text x="276" y={origin.y - 4} fontSize="8" className="fill-indigo-400">x</text>
+          <text x={origin.x + 5} y="27" fontSize="8" className="fill-indigo-400">y</text>
 
-          {/* Parabola: y = (x-1)² - 4, scaled */}
+          {/* Tick labels on x-axis */}
+          {[-2, -1, 1, 2, 3, 4].map((n) => (
+            <text key={`xt${n}`} x={mapX(n)} y={origin.y + 10} textAnchor="middle" fontSize="6" className="fill-gray-500">
+              {n}
+            </text>
+          ))}
+          {/* Tick labels on y-axis */}
+          {[-4, -3, -2, -1, 1, 2, 3, 4].map((n) => (
+            <text key={`yt${n}`} x={origin.x - 7} y={mapY(n) + 2.5} textAnchor="end" fontSize="6" className="fill-gray-500">
+              {n}
+            </text>
+          ))}
+
+          {/* Axis of symmetry: x = 1 */}
+          <line
+            x1={vertex.x} y1="25" x2={vertex.x} y2="158"
+            stroke="#fbbf24" strokeWidth="0.8" strokeDasharray="3,3" opacity="0.4"
+          />
+
+          {/* Parabola - computed from actual function values */}
           <path
-            d="M 55,40 Q 80,120 115,148 Q 140,162 160,155 Q 180,148 205,120 Q 240,60 265,20"
+            d={parabolaPath}
             fill="none"
             stroke="#a78bfa"
             strokeWidth="2.5"
             strokeLinecap="round"
+            strokeLinejoin="round"
           />
 
-          {/* Vertex point */}
-          <circle cx="160" cy="155" r="4" fill="#fbbf24" />
-          <text x="168" y="168" fontSize="7" className="fill-yellow-400">vertex (1, −4)</text>
-
-          {/* Equation label */}
-          <rect x="15" y="5" width="110" height="18" rx="4" fill="#6366f1" opacity="0.8" />
-          <text x="70" y="17" textAnchor="middle" fontSize="9" className="fill-white" fontWeight="600">
-            f(x) = (x − 1)² − 4
+          {/* Vertex point (1, -4) */}
+          <circle cx={vertex.x} cy={vertex.y} r="4" fill="#fbbf24" />
+          <text x={vertex.x + 7} y={vertex.y + 11} fontSize="7" className="fill-yellow-400">
+            vertex (1, −4)
           </text>
 
-          {/* X-intercepts */}
-          <circle cx="100" cy="155" r="3" fill="#34d399" />
-          <text x="88" y="148" fontSize="6" className="fill-emerald-400">(−1, 0)</text>
-          <circle cx="220" cy="155" r="3" fill="#34d399" />
-          <text x="224" y="148" fontSize="6" className="fill-emerald-400">(3, 0)</text>
+          {/* X-intercepts (-1, 0) and (3, 0) */}
+          <circle cx={intercept1.x} cy={intercept1.y} r="3" fill="#34d399" />
+          <text x={intercept1.x - 3} y={intercept1.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400">
+            (−1, 0)
+          </text>
+          <circle cx={intercept2.x} cy={intercept2.y} r="3" fill="#34d399" />
+          <text x={intercept2.x + 3} y={intercept2.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400">
+            (3, 0)
+          </text>
 
-          {/* Axis of symmetry dashed line */}
-          <line
-            x1="160" y1="20" x2="160" y2="155"
-            stroke="#fbbf24" strokeWidth="1" strokeDasharray="3,3" opacity="0.5"
-          />
+          {/* Equation label */}
+          <rect x="15" y="5" width="115" height="18" rx="4" fill="#6366f1" opacity="0.8" />
+          <text x="72" y="17" textAnchor="middle" fontSize="9" className="fill-white" fontWeight="600">
+            f(x) = (x − 1)² − 4
+          </text>
         </svg>
 
         {/* Play button overlay */}
