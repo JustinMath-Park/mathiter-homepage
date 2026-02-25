@@ -532,7 +532,7 @@ function DashboardScreen({
       </div>
 
       {/* Charts area */}
-      <div className="px-4 py-3 space-y-2">
+      <div className="px-4 py-2 space-y-2">
         <div className="bg-gray-50 rounded-xl p-2.5">
           <div className="flex items-center justify-between mb-1.5">
             <span className="text-[11px] font-semibold text-gray-700">
@@ -566,7 +566,7 @@ function DashboardScreen({
             <span className="text-[11px] font-semibold text-gray-700">
               {l.weakTopics}
             </span>
-            <div className="mt-2 space-y-1.5">
+            <div className="mt-1.5 space-y-1.5">
               {student.weakTopics.map((topic, i) => (
                 <WeakTopicBar
                   key={topic.label}
@@ -681,7 +681,7 @@ function MiniRadarChart({
 }) {
   const size = 100;
   const center = size / 2;
-  const radius = 35;
+  const radius = 32;
   const levels = 3;
 
   const getPoint = (index: number, value: number) => {
@@ -730,7 +730,7 @@ function MiniRadarChart({
         strokeLinejoin="round"
       />
       {labels.map((cat, i) => {
-        const p = getPoint(i, 1.25);
+        const p = getPoint(i, 1.3);
         return (
           <text
             key={cat}
@@ -739,7 +739,7 @@ function MiniRadarChart({
             textAnchor="middle"
             dominantBaseline="middle"
             className="fill-gray-500"
-            fontSize="6"
+            fontSize="5"
           >
             {cat}
           </text>
