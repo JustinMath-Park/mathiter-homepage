@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useLocale } from "next-intl";
+import SATExamMockup from "./SATExamMockup";
 
 type Locale = "en" | "ko" | "ms" | "zh";
 
@@ -379,6 +380,7 @@ function buildStudents(locale: Locale): StudentData[] {
 }
 
 const ROTATE_INTERVAL = 5000;
+const SCREEN_SWITCH_INTERVAL = 12000;
 
 export default function DashboardMockup() {
   const locale = useLocale() as Locale;
@@ -388,6 +390,8 @@ export default function DashboardMockup() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fading, setFading] = useState(false);
   const [animated, setAnimated] = useState(false);
+  const [activeScreen, setActiveScreen] = useState<"dashboard" | "sat">("dashboard");
+  const [screenFading, setScreenFading] = useState(false);
 
   const rotateStudent = useCallback(() => {
     setFading(true);
@@ -404,10 +408,31 @@ export default function DashboardMockup() {
     return () => clearTimeout(initTimer);
   }, []);
 
+  // Student rotation (only when dashboard is active)
   useEffect(() => {
+    if (activeScreen !== "dashboard") return;
     const interval = setInterval(rotateStudent, ROTATE_INTERVAL);
     return () => clearInterval(interval);
-  }, [rotateStudent]);
+  }, [rotateStudent, activeScreen]);
+
+  // Screen switching (dashboard ↔ sat)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScreenFading(true);
+      setTimeout(() => {
+        setActiveScreen((prev) => {
+          const next = prev === "dashboard" ? "sat" : "dashboard";
+          if (next === "dashboard") {
+            setAnimated(false);
+            setTimeout(() => setAnimated(true), 100);
+          }
+          return next;
+        });
+        setScreenFading(false);
+      }, 500);
+    }, SCREEN_SWITCH_INTERVAL);
+    return () => clearInterval(interval);
+  }, []);
 
   const student = students[currentIndex];
 
@@ -416,132 +441,175 @@ export default function DashboardMockup() {
       <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-2xl opacity-60" />
 
       <div
-        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-400 ${fading ? "opacity-0" : "opacity-100"}`}
+        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-500 ${screenFading ? "opacity-0" : "opacity-100"}`}
       >
-        {/* Top bar */}
-        <div className="bg-gradient-to-r from-indigo-500 to-blue-500 px-5 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white text-xs font-bold">
-              {student.initial}
-            </div>
-            <div>
-              <div className="text-white text-sm font-semibold">
-                {student.name}
-              </div>
-              <div className="text-blue-100 text-[10px]">{student.grade}</div>
-            </div>
+        {activeScreen === "dashboard" ? (
+          <DashboardScreen
+            student={student}
+            students={students}
+            currentIndex={currentIndex}
+            l={l}
+            fading={fading}
+            animated={animated}
+          />
+        ) : (
+          <SATExamMockup />
+        )}
+      </div>
+
+      {/* Screen indicators */}
+      <div className="flex justify-center gap-2 mt-3">
+        <div className={`h-1.5 rounded-full transition-all duration-300 ${
+          activeScreen === "dashboard" ? "w-4 bg-indigo-500" : "w-1.5 bg-gray-300"
+        }`} />
+        <div className={`h-1.5 rounded-full transition-all duration-300 ${
+          activeScreen === "sat" ? "w-4 bg-indigo-500" : "w-1.5 bg-gray-300"
+        }`} />
+      </div>
+    </div>
+  );
+}
+
+function DashboardScreen({
+  student,
+  students,
+  currentIndex,
+  l,
+  fading,
+  animated,
+}: {
+  student: StudentData;
+  students: StudentData[];
+  currentIndex: number;
+  l: Labels;
+  fading: boolean;
+  animated: boolean;
+}) {
+  return (
+    <div className={`transition-opacity duration-400 ${fading ? "opacity-0" : "opacity-100"}`}>
+      {/* Top bar */}
+      <div className="bg-gradient-to-r from-indigo-500 to-blue-500 px-5 py-3 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white text-xs font-bold">
+            {student.initial}
           </div>
-          <div className="flex items-center gap-3 text-white text-[10px]">
-            <div className="text-center">
-              <div className="font-bold text-sm">{student.level}</div>
-              <div className="text-blue-100">{l.level}</div>
+          <div>
+            <div className="text-white text-sm font-semibold">
+              {student.name}
             </div>
-            <div className="text-center">
-              <div className="font-bold text-sm">{student.xp}</div>
-              <div className="text-blue-100">{l.xp}</div>
-            </div>
-            <div className="text-center">
-              <div className="font-bold text-sm">{student.streak}</div>
-              <div className="text-blue-100">{l.streak}</div>
-            </div>
+            <div className="text-blue-100 text-[10px]">{student.grade}</div>
           </div>
         </div>
+        <div className="flex items-center gap-3 text-white text-[10px]">
+          <div className="text-center">
+            <div className="font-bold text-sm">{student.level}</div>
+            <div className="text-blue-100">{l.level}</div>
+          </div>
+          <div className="text-center">
+            <div className="font-bold text-sm">{student.xp}</div>
+            <div className="text-blue-100">{l.xp}</div>
+          </div>
+          <div className="text-center">
+            <div className="font-bold text-sm">{student.streak}</div>
+            <div className="text-blue-100">{l.streak}</div>
+          </div>
+        </div>
+      </div>
 
-        {/* Stats row */}
-        <div className="grid grid-cols-4 gap-0 border-b border-gray-100">
-          <StatCard
-            label={l.mathScore}
-            value={String(student.mathScore)}
-            unit="/100"
-            color="text-indigo-600"
+      {/* Stats row */}
+      <div className="grid grid-cols-4 gap-0 border-b border-gray-100">
+        <StatCard
+          label={l.mathScore}
+          value={String(student.mathScore)}
+          unit="/100"
+          color="text-indigo-600"
+          animated={animated}
+        />
+        <StatCard
+          label={l.accuracy}
+          value={String(student.accuracy)}
+          unit="%"
+          color="text-emerald-600"
+          animated={animated}
+        />
+        <StatCard
+          label={l.problems}
+          value={String(student.problemsSolved)}
+          unit=""
+          color="text-blue-600"
+          animated={animated}
+        />
+        <StatCard
+          label={l.tests}
+          value={String(student.testsCompleted)}
+          unit={l.testUnit}
+          color="text-purple-600"
+          animated={animated}
+        />
+      </div>
+
+      {/* Charts area */}
+      <div className="p-4 space-y-3">
+        <div className="bg-gray-50 rounded-xl p-3">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-[11px] font-semibold text-gray-700">
+              {l.scoreTrend}
+            </span>
+            <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 px-1.5 py-0.5 rounded">
+              {student.scoreChange}
+            </span>
+          </div>
+          <MiniLineChart
+            points={student.scoreTrend}
             animated={animated}
-          />
-          <StatCard
-            label={l.accuracy}
-            value={String(student.accuracy)}
-            unit="%"
-            color="text-emerald-600"
-            animated={animated}
-          />
-          <StatCard
-            label={l.problems}
-            value={String(student.problemsSolved)}
-            unit=""
-            color="text-blue-600"
-            animated={animated}
-          />
-          <StatCard
-            label={l.tests}
-            value={String(student.testsCompleted)}
-            unit={l.testUnit}
-            color="text-purple-600"
-            animated={animated}
+            id={currentIndex}
           />
         </div>
 
-        {/* Charts area */}
-        <div className="p-4 space-y-3">
+        <div className="grid grid-cols-2 gap-3">
           <div className="bg-gray-50 rounded-xl p-3">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] font-semibold text-gray-700">
-                {l.scoreTrend}
-              </span>
-              <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 px-1.5 py-0.5 rounded">
-                {student.scoreChange}
-              </span>
-            </div>
-            <MiniLineChart
-              points={student.scoreTrend}
+            <span className="text-[11px] font-semibold text-gray-700">
+              {l.topicSkills}
+            </span>
+            <MiniRadarChart
+              values={student.radarValues}
+              labels={student.radarLabels}
               animated={animated}
               id={currentIndex}
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
-            <div className="bg-gray-50 rounded-xl p-3">
-              <span className="text-[11px] font-semibold text-gray-700">
-                {l.topicSkills}
-              </span>
-              <MiniRadarChart
-                values={student.radarValues}
-                labels={student.radarLabels}
-                animated={animated}
-                id={currentIndex}
-              />
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-3">
-              <span className="text-[11px] font-semibold text-gray-700">
-                {l.weakTopics}
-              </span>
-              <div className="mt-2 space-y-1.5">
-                {student.weakTopics.map((topic, i) => (
-                  <WeakTopicBar
-                    key={`${currentIndex}-${topic.label}`}
-                    label={topic.label}
-                    value={topic.value}
-                    animated={animated}
-                    delay={i * 100}
-                  />
-                ))}
-              </div>
+          <div className="bg-gray-50 rounded-xl p-3">
+            <span className="text-[11px] font-semibold text-gray-700">
+              {l.weakTopics}
+            </span>
+            <div className="mt-2 space-y-1.5">
+              {student.weakTopics.map((topic, i) => (
+                <WeakTopicBar
+                  key={`${currentIndex}-${topic.label}`}
+                  label={topic.label}
+                  value={topic.value}
+                  animated={animated}
+                  delay={i * 100}
+                />
+              ))}
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Dot indicators */}
-        <div className="flex justify-center gap-1.5 pb-3">
-          {students.map((_, i) => (
-            <div
-              key={i}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === currentIndex
-                  ? "w-4 bg-indigo-500"
-                  : "w-1.5 bg-gray-300"
-              }`}
-            />
-          ))}
-        </div>
+      {/* Student dot indicators */}
+      <div className="flex justify-center gap-1.5 pb-3">
+        {students.map((_, i) => (
+          <div
+            key={i}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === currentIndex
+                ? "w-4 bg-indigo-500"
+                : "w-1.5 bg-gray-300"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
