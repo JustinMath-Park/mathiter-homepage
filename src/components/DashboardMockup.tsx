@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import SATExamMockup from "./SATExamMockup";
 import { SRGGeometryMockup, SRGNumberLineMockup } from "./SRGMockup";
 import LectureMockup from "./LectureMockup";
+import TeacherDashboardMockup from "./TeacherDashboardMockup";
 
 type Locale = "en" | "ko" | "ms" | "zh";
 
@@ -382,7 +383,7 @@ function buildStudents(locale: Locale): StudentData[] {
 }
 
 const SLIDE_INTERVAL = 6000;
-const TOTAL_SLIDES = 5;
+const TOTAL_SLIDES = 6;
 
 export default function DashboardMockup() {
   const locale = useLocale() as Locale;
@@ -414,7 +415,7 @@ export default function DashboardMockup() {
     return () => clearInterval(interval);
   }, [rotate]);
 
-  // Slides: 0=dashboard(Sarah), 1=SAT, 2=SRG-geometry, 3=SRG-numberline, 4=lecture
+  // Slides: 0=dashboard(Sarah), 1=SAT, 2=SRG-geometry, 3=SRG-numberline, 4=lecture, 5=teacher
   const student = students[1]; // Sarah Lee
 
   return (
@@ -436,8 +437,10 @@ export default function DashboardMockup() {
           <SRGGeometryMockup />
         ) : slideIndex === 3 ? (
           <SRGNumberLineMockup />
-        ) : (
+        ) : slideIndex === 4 ? (
           <LectureMockup />
+        ) : (
+          <TeacherDashboardMockup />
         )}
       </div>
 
