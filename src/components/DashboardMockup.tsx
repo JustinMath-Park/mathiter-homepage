@@ -379,77 +379,55 @@ function buildStudents(locale: Locale): StudentData[] {
   }));
 }
 
-const ROTATE_INTERVAL = 5000;
-const SCREEN_SWITCH_INTERVAL = 12000;
+const SLIDE_INTERVAL = 6000;
+const TOTAL_SLIDES = 3;
 
 export default function DashboardMockup() {
   const locale = useLocale() as Locale;
   const l = labels[locale] || labels.en;
   const students = buildStudents(locale);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Slides: 0 = dashboard(student 0), 1 = SAT, 2 = dashboard(student 1)
+  const [slideIndex, setSlideIndex] = useState(0);
   const [fading, setFading] = useState(false);
   const [animated, setAnimated] = useState(false);
-  const [activeScreen, setActiveScreen] = useState<"dashboard" | "sat">("dashboard");
-  const [screenFading, setScreenFading] = useState(false);
-
-  const rotateStudent = useCallback(() => {
-    setFading(true);
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev + 1) % students.length);
-      setAnimated(false);
-      setFading(false);
-      setTimeout(() => setAnimated(true), 100);
-    }, 400);
-  }, [students.length]);
 
   useEffect(() => {
     const initTimer = setTimeout(() => setAnimated(true), 600);
     return () => clearTimeout(initTimer);
   }, []);
 
-  // Student rotation (only when dashboard is active)
-  useEffect(() => {
-    if (activeScreen !== "dashboard") return;
-    const interval = setInterval(rotateStudent, ROTATE_INTERVAL);
-    return () => clearInterval(interval);
-  }, [rotateStudent, activeScreen]);
-
-  // Screen switching (dashboard ↔ sat)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScreenFading(true);
-      setTimeout(() => {
-        setActiveScreen((prev) => {
-          const next = prev === "dashboard" ? "sat" : "dashboard";
-          if (next === "dashboard") {
-            setAnimated(false);
-            setTimeout(() => setAnimated(true), 100);
-          }
-          return next;
-        });
-        setScreenFading(false);
-      }, 500);
-    }, SCREEN_SWITCH_INTERVAL);
-    return () => clearInterval(interval);
+  const rotate = useCallback(() => {
+    setFading(true);
+    setTimeout(() => {
+      setSlideIndex((prev) => (prev + 1) % TOTAL_SLIDES);
+      setAnimated(false);
+      setFading(false);
+      setTimeout(() => setAnimated(true), 100);
+    }, 500);
   }, []);
 
-  const student = students[currentIndex];
+  useEffect(() => {
+    const interval = setInterval(rotate, SLIDE_INTERVAL);
+    return () => clearInterval(interval);
+  }, [rotate]);
+
+  // Map slide index to student index: slide 0 → student 0, slide 2 → student 1
+  const studentIndex = slideIndex === 2 ? 1 : 0;
+  const student = students[studentIndex];
+  const isDashboard = slideIndex === 0 || slideIndex === 2;
 
   return (
     <div className="relative w-full max-w-lg mx-auto">
       <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-2xl opacity-60" />
 
       <div
-        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-500 ${screenFading ? "opacity-0" : "opacity-100"}`}
+        className={`relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
       >
-        {activeScreen === "dashboard" ? (
+        {isDashboard ? (
           <DashboardScreen
             student={student}
-            students={students}
-            currentIndex={currentIndex}
             l={l}
-            fading={fading}
             animated={animated}
           />
         ) : (
@@ -457,14 +435,16 @@ export default function DashboardMockup() {
         )}
       </div>
 
-      {/* Screen indicators */}
-      <div className="flex justify-center gap-2 mt-3">
-        <div className={`h-1.5 rounded-full transition-all duration-300 ${
-          activeScreen === "dashboard" ? "w-4 bg-indigo-500" : "w-1.5 bg-gray-300"
-        }`} />
-        <div className={`h-1.5 rounded-full transition-all duration-300 ${
-          activeScreen === "sat" ? "w-4 bg-indigo-500" : "w-1.5 bg-gray-300"
-        }`} />
+      {/* Slide indicators */}
+      <div className="flex justify-center gap-1.5 mt-3">
+        {Array.from({ length: TOTAL_SLIDES }, (_, i) => (
+          <div
+            key={i}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === slideIndex ? "w-4 bg-indigo-500" : "w-1.5 bg-gray-300"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
@@ -472,21 +452,15 @@ export default function DashboardMockup() {
 
 function DashboardScreen({
   student,
-  students,
-  currentIndex,
   l,
-  fading,
   animated,
 }: {
   student: StudentData;
-  students: StudentData[];
-  currentIndex: number;
   l: Labels;
-  fading: boolean;
   animated: boolean;
 }) {
   return (
-    <div className={`transition-opacity duration-400 ${fading ? "opacity-0" : "opacity-100"}`}>
+    <div>
       {/* Top bar */}
       <div className="bg-gradient-to-r from-indigo-500 to-blue-500 px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -562,7 +536,7 @@ function DashboardScreen({
           <MiniLineChart
             points={student.scoreTrend}
             animated={animated}
-            id={currentIndex}
+            id={0}
           />
         </div>
 
@@ -575,7 +549,7 @@ function DashboardScreen({
               values={student.radarValues}
               labels={student.radarLabels}
               animated={animated}
-              id={currentIndex}
+              id={0}
             />
           </div>
 
@@ -586,7 +560,7 @@ function DashboardScreen({
             <div className="mt-2 space-y-1.5">
               {student.weakTopics.map((topic, i) => (
                 <WeakTopicBar
-                  key={`${currentIndex}-${topic.label}`}
+                  key={topic.label}
                   label={topic.label}
                   value={topic.value}
                   animated={animated}
@@ -598,19 +572,6 @@ function DashboardScreen({
         </div>
       </div>
 
-      {/* Student dot indicators */}
-      <div className="flex justify-center gap-1.5 pb-3">
-        {students.map((_, i) => (
-          <div
-            key={i}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              i === currentIndex
-                ? "w-4 bg-indigo-500"
-                : "w-1.5 bg-gray-300"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

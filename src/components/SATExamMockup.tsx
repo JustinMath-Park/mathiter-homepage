@@ -59,12 +59,12 @@ export default function SATExamMockup() {
       </div>
 
       {/* Question content */}
-      <div className="px-5 py-4">
+      <div className="px-5 pt-4 pb-3">
         <div className="text-[10px] text-gray-400 mb-2">Question 5</div>
         <p className="text-xs text-gray-800 leading-relaxed">
           A function <span className="italic">f</span> is defined by
         </p>
-        <p className="mt-2 mb-2 font-mono text-sm font-semibold text-indigo-700 text-center">
+        <p className="mt-3 mb-3 font-mono text-sm font-semibold text-indigo-700 text-center">
           f(x) = 3(x + 2)² − 12
         </p>
         <p className="text-xs text-gray-800 leading-relaxed">
@@ -73,7 +73,7 @@ export default function SATExamMockup() {
       </div>
 
       {/* Answer choices */}
-      <div className="px-5 pb-4 space-y-2">
+      <div className="px-5 pb-5 space-y-2.5">
         {choices.map((choice) => (
           <div
             key={choice.letter}
