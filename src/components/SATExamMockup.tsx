@@ -1,6 +1,7 @@
 "use client";
 
-// Static question navigation states for visual variety
+import { useEffect, useState } from "react";
+
 const questionStates = [
   "answered", "answered", "answered", "flagged", "current",
   "unanswered", "unanswered", "answered", "unanswered", "unanswered",
@@ -10,13 +11,23 @@ const questionStates = [
 ] as const;
 
 const choices = [
-  { letter: "A", value: "−12", selected: true },
-  { letter: "B", value: "−6", selected: false },
-  { letter: "C", value: "2", selected: false },
-  { letter: "D", value: "12", selected: false },
+  { letter: "A", value: "−12" },
+  { letter: "B", value: "−6" },
+  { letter: "C", value: "2" },
+  { letter: "D", value: "12" },
 ];
 
-export default function SATExamMockup() {
+export default function SATExamMockup({ animated }: { animated: boolean }) {
+  const [selected, setSelected] = useState(false);
+
+  useEffect(() => {
+    if (animated) {
+      const timer = setTimeout(() => setSelected(true), 1200);
+      return () => clearTimeout(timer);
+    }
+    setSelected(false);
+  }, [animated]);
+
   return (
     <>
       {/* Header bar */}
@@ -74,35 +85,39 @@ export default function SATExamMockup() {
 
       {/* Answer choices */}
       <div className="px-5 pb-5 space-y-2.5">
-        {choices.map((choice) => (
-          <div
-            key={choice.letter}
-            className={`flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs border ${
-              choice.selected
-                ? "border-indigo-300 bg-indigo-50"
-                : "border-gray-200 bg-white"
-            }`}
-          >
+        {choices.map((choice) => {
+          const isA = choice.letter === "A";
+          const isSelected = isA && selected;
+          return (
             <div
-              className={`w-5 h-5 rounded-full border-2 flex items-center justify-center text-[10px] font-bold shrink-0 ${
-                choice.selected
-                  ? "border-indigo-500 bg-indigo-500 text-white"
-                  : "border-gray-300 text-gray-400"
+              key={choice.letter}
+              className={`flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs border transition-all duration-500 ${
+                isSelected
+                  ? "border-indigo-300 bg-indigo-50"
+                  : "border-gray-200 bg-white"
               }`}
             >
-              {choice.letter}
+              <div
+                className={`w-5 h-5 rounded-full border-2 flex items-center justify-center text-[10px] font-bold shrink-0 transition-all duration-500 ${
+                  isSelected
+                    ? "border-indigo-500 bg-indigo-500 text-white"
+                    : "border-gray-300 text-gray-400"
+                }`}
+              >
+                {choice.letter}
+              </div>
+              <span
+                className={`transition-colors duration-500 ${
+                  isSelected
+                    ? "text-indigo-700 font-medium"
+                    : "text-gray-700"
+                }`}
+              >
+                {choice.value}
+              </span>
             </div>
-            <span
-              className={
-                choice.selected
-                  ? "text-indigo-700 font-medium"
-                  : "text-gray-700"
-              }
-            >
-              {choice.value}
-            </span>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Bottom toolbar */}

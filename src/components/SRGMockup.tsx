@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 /**
  * SRG (Socratic Reasoning Guide) Mockup Slides
  * Shows how the system guides students through mistakes with diagrams and questions
@@ -7,7 +9,17 @@
  */
 
 // ─── Variation A: Geometry Rectangle ────────────────────────────────
-export function SRGGeometryMockup() {
+export function SRGGeometryMockup({ animated }: { animated: boolean }) {
+  const [selected, setSelected] = useState(false);
+
+  useEffect(() => {
+    if (animated) {
+      const timer = setTimeout(() => setSelected(true), 1200);
+      return () => clearTimeout(timer);
+    }
+    setSelected(false);
+  }, [animated]);
+
   return (
     <>
       {/* Header */}
@@ -76,16 +88,20 @@ export function SRGGeometryMockup() {
 
       {/* Answer options */}
       <div className="mx-4 mt-2.5 mb-4 grid grid-cols-2 gap-2">
-        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600">
+        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600 transition-all duration-500">
           84m²
         </div>
-        <div className="text-center py-1.5 rounded-lg border-2 border-blue-400 bg-blue-50 text-[10px] text-blue-700 font-medium">
+        <div className={`text-center py-1.5 rounded-lg text-[10px] transition-all duration-500 ${
+          selected
+            ? "border-2 border-blue-400 bg-blue-50 text-blue-700 font-medium"
+            : "border border-gray-200 text-gray-600"
+        }`}>
           204m²
         </div>
-        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600">
+        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600 transition-all duration-500">
           168m²
         </div>
-        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600">
+        <div className="text-center py-1.5 rounded-lg border border-gray-200 text-[10px] text-gray-600 transition-all duration-500">
           60m²
         </div>
       </div>
@@ -169,7 +185,17 @@ export function SRGDiscriminantMockup() {
 }
 
 // ─── Variation C: Number Line ───────────────────────────────────────
-export function SRGNumberLineMockup() {
+export function SRGNumberLineMockup({ animated }: { animated: boolean }) {
+  const [selected, setSelected] = useState(false);
+
+  useEffect(() => {
+    if (animated) {
+      const timer = setTimeout(() => setSelected(true), 1200);
+      return () => clearTimeout(timer);
+    }
+    setSelected(false);
+  }, [animated]);
+
   return (
     <>
       {/* Header */}
@@ -253,10 +279,14 @@ export function SRGNumberLineMockup() {
 
       {/* Answer options */}
       <div className="mx-4 mt-2.5 mb-4 flex gap-2">
-        <div className="flex-1 text-center py-2 rounded-lg border border-gray-200 text-[10px] text-gray-600">
+        <div className="flex-1 text-center py-2 rounded-lg border border-gray-200 text-[10px] text-gray-600 transition-all duration-500">
           Yes, it can be negative
         </div>
-        <div className="flex-1 text-center py-2 rounded-lg border-2 border-green-400 bg-green-50 text-[10px] text-green-700 font-medium">
+        <div className={`flex-1 text-center py-2 rounded-lg text-[10px] transition-all duration-500 ${
+          selected
+            ? "border-2 border-green-400 bg-green-50 text-green-700 font-medium"
+            : "border border-gray-200 text-gray-600"
+        }`}>
           No, that&apos;s impossible
         </div>
       </div>

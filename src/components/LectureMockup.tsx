@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+
 /**
  * Lecture (PSV) Mockup
  * Shows a math lecture video player on top + concept explanation below
@@ -30,7 +32,28 @@ const vertex = { x: mapX(1), y: mapY(-4) };
 const intercept1 = { x: mapX(-1), y: mapY(0) };
 const intercept2 = { x: mapX(3), y: mapY(0) };
 
-export default function LectureMockup() {
+export default function LectureMockup({ animated }: { animated: boolean }) {
+  const pathRef = useRef<SVGPathElement>(null);
+  const [pathLength, setPathLength] = useState(0);
+  const [drawn, setDrawn] = useState(false);
+  const [showPoints, setShowPoints] = useState(false);
+
+  useEffect(() => {
+    if (pathRef.current) {
+      setPathLength(pathRef.current.getTotalLength());
+    }
+  }, []);
+
+  useEffect(() => {
+    if (animated) {
+      const t1 = setTimeout(() => setDrawn(true), 400);
+      const t2 = setTimeout(() => setShowPoints(true), 1800);
+      return () => { clearTimeout(t1); clearTimeout(t2); };
+    }
+    setDrawn(false);
+    setShowPoints(false);
+  }, [animated]);
+
   return (
     <>
       {/* Header */}
@@ -92,29 +115,39 @@ export default function LectureMockup() {
             stroke="#fbbf24" strokeWidth="0.8" strokeDasharray="3,3" opacity="0.4"
           />
 
-          {/* Parabola - computed from actual function values */}
+          {/* Parabola - computed from actual function values, with draw animation */}
           <path
+            ref={pathRef}
             d={parabolaPath}
             fill="none"
             stroke="#a78bfa"
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
+            strokeDasharray={pathLength || 500}
+            strokeDashoffset={drawn ? 0 : (pathLength || 500)}
+            style={{ transition: "stroke-dashoffset 1.2s ease-out" }}
           />
 
           {/* Vertex point (1, -4) */}
-          <circle cx={vertex.x} cy={vertex.y} r="4" fill="#fbbf24" />
-          <text x={vertex.x + 7} y={vertex.y + 11} fontSize="7" className="fill-yellow-400">
+          <circle cx={vertex.x} cy={vertex.y} r="4" fill="#fbbf24"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease" }} />
+          <text x={vertex.x + 7} y={vertex.y + 11} fontSize="7" className="fill-yellow-400"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease 0.15s" }}>
             vertex (1, −4)
           </text>
 
           {/* X-intercepts (-1, 0) and (3, 0) */}
-          <circle cx={intercept1.x} cy={intercept1.y} r="3" fill="#34d399" />
-          <text x={intercept1.x - 3} y={intercept1.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400">
+          <circle cx={intercept1.x} cy={intercept1.y} r="3" fill="#34d399"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease 0.3s" }} />
+          <text x={intercept1.x - 3} y={intercept1.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease 0.4s" }}>
             (−1, 0)
           </text>
-          <circle cx={intercept2.x} cy={intercept2.y} r="3" fill="#34d399" />
-          <text x={intercept2.x + 3} y={intercept2.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400">
+          <circle cx={intercept2.x} cy={intercept2.y} r="3" fill="#34d399"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease 0.3s" }} />
+          <text x={intercept2.x + 3} y={intercept2.y - 6} textAnchor="middle" fontSize="6" className="fill-emerald-400"
+            opacity={showPoints ? 1 : 0} style={{ transition: "opacity 0.5s ease 0.4s" }}>
             (3, 0)
           </text>
 
@@ -124,13 +157,6 @@ export default function LectureMockup() {
             f(x) = (x − 1)² − 4
           </text>
         </svg>
-
-        {/* Play button overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
-            <div className="w-0 h-0 border-l-[10px] border-l-white border-y-[6px] border-y-transparent ml-1" />
-          </div>
-        </div>
 
         {/* Video progress bar */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">

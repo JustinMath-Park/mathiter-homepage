@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 /**
  * Teacher Dashboard Mockup
  * Shows class overview with student analytics, performance comparison, and alerts
@@ -18,7 +20,17 @@ const alerts = [
   { name: "Daniel Lim", rate: 58, topic: "Probability" },
 ];
 
-export default function TeacherDashboardMockup() {
+export default function TeacherDashboardMockup({ animated }: { animated: boolean }) {
+  const [fireActive, setFireActive] = useState(false);
+
+  useEffect(() => {
+    if (animated) {
+      const timer = setTimeout(() => setFireActive(true), 1200);
+      return () => clearTimeout(timer);
+    }
+    setFireActive(false);
+  }, [animated]);
+
   return (
     <>
       {/* Header */}
@@ -98,7 +110,13 @@ export default function TeacherDashboardMockup() {
                 <span className={`font-bold ${s.rate >= 85 ? "text-emerald-600" : s.rate >= 70 ? "text-amber-600" : "text-red-500"}`}>
                   {s.rate}%
                 </span>
-                <span className="font-bold text-orange-500">🔥{s.streak}</span>
+                <span className={`font-bold transition-all duration-700 ${
+                  s.rank === 1
+                    ? fireActive
+                      ? "text-orange-500 scale-125"
+                      : "text-gray-300 scale-100"
+                    : "text-orange-500"
+                }`} style={{ display: "inline-block" }}>🔥{s.streak}</span>
               </div>
             </div>
           ))}

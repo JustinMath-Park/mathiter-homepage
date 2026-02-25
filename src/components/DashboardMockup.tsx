@@ -432,15 +432,15 @@ export default function DashboardMockup() {
             animated={animated}
           />
         ) : slideIndex === 1 ? (
-          <SATExamMockup />
+          <SATExamMockup animated={animated} />
         ) : slideIndex === 2 ? (
-          <SRGGeometryMockup />
+          <SRGGeometryMockup animated={animated} />
         ) : slideIndex === 3 ? (
-          <SRGNumberLineMockup />
+          <SRGNumberLineMockup animated={animated} />
         ) : slideIndex === 4 ? (
-          <LectureMockup />
+          <LectureMockup animated={animated} />
         ) : (
-          <TeacherDashboardMockup />
+          <TeacherDashboardMockup animated={animated} />
         )}
       </div>
 
