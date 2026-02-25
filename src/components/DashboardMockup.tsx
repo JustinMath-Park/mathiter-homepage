@@ -532,9 +532,9 @@ function DashboardScreen({
       </div>
 
       {/* Charts area */}
-      <div className="px-4 py-3 space-y-2.5">
-        <div className="bg-gray-50 rounded-xl p-3">
-          <div className="flex items-center justify-between mb-2">
+      <div className="px-4 py-3 space-y-2">
+        <div className="bg-gray-50 rounded-xl p-2.5">
+          <div className="flex items-center justify-between mb-1.5">
             <span className="text-[11px] font-semibold text-gray-700">
               {l.scoreTrend}
             </span>
@@ -549,8 +549,8 @@ function DashboardScreen({
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
-          <div className="bg-gray-50 rounded-xl p-3">
+        <div className="grid grid-cols-2 gap-2">
+          <div className="bg-gray-50 rounded-xl p-2.5">
             <span className="text-[11px] font-semibold text-gray-700">
               {l.topicSkills}
             </span>
@@ -562,7 +562,7 @@ function DashboardScreen({
             />
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-3">
+          <div className="bg-gray-50 rounded-xl p-2.5">
             <span className="text-[11px] font-semibold text-gray-700">
               {l.weakTopics}
             </span>
@@ -599,7 +599,7 @@ function StatCard({
   animated: boolean;
 }) {
   return (
-    <div className="text-center py-3 border-r border-gray-100 last:border-r-0">
+    <div className="text-center py-2 border-r border-gray-100 last:border-r-0">
       <div
         className={`text-lg font-bold ${color} transition-all duration-700 ${animated ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
       >
@@ -621,7 +621,7 @@ function MiniLineChart({
   id: number;
 }) {
   const width = 280;
-  const height = 48;
+  const height = 40;
   const padding = 4;
   const min = Math.min(...points) - 5;
   const max = Math.max(...points) + 5;

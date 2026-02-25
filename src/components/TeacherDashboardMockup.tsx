@@ -45,17 +45,17 @@ export default function TeacherDashboardMockup() {
           { label: "Avg Level", value: "14", color: "text-purple-600", icon: "⭐" },
           { label: "Active", value: "28", color: "text-orange-600", icon: "🔥" },
         ].map((stat) => (
-          <div key={stat.label} className="text-center py-2.5 border-r border-gray-100 last:border-r-0">
+          <div key={stat.label} className="text-center py-2 border-r border-gray-100 last:border-r-0">
             <div className="text-[8px] mb-0.5">{stat.icon}</div>
-            <div className={`text-base font-bold ${stat.color}`}>{stat.value}</div>
+            <div className={`text-sm font-bold ${stat.color}`}>{stat.value}</div>
             <div className="text-[9px] text-gray-500">{stat.label}</div>
           </div>
         ))}
       </div>
 
       {/* Student ranking */}
-      <div className="px-4 pt-3 pb-1">
-        <div className="flex items-center justify-between mb-2">
+      <div className="px-4 pt-2.5 pb-1">
+        <div className="flex items-center justify-between mb-1.5">
           <span className="text-[11px] font-semibold text-gray-700">🏆 Top Performers</span>
           <div className="flex gap-1">
             <span className="text-[8px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 font-medium">Level</span>
@@ -64,11 +64,11 @@ export default function TeacherDashboardMockup() {
           </div>
         </div>
 
-        <div className="space-y-1.5">
+        <div className="space-y-1">
           {students.map((s) => (
             <div
               key={s.rank}
-              className="flex items-center gap-2 px-2 py-1.5 rounded-lg bg-gray-50 hover:bg-gray-100"
+              className="flex items-center gap-2 px-2 py-1 rounded-lg bg-gray-50 hover:bg-gray-100"
             >
               {/* Rank */}
               <span
@@ -87,26 +87,18 @@ export default function TeacherDashboardMockup() {
 
               {/* Name & grade */}
               <div className="flex-1 min-w-0">
-                <div className="text-[11px] font-medium text-gray-800 truncate">{s.name}</div>
-                <div className="text-[9px] text-gray-400">{s.grade}</div>
+                <div className="text-[11px] font-medium text-gray-800 truncate">
+                  {s.name} <span className="text-[9px] text-gray-400 font-normal">{s.grade}</span>
+                </div>
               </div>
 
               {/* Stats */}
-              <div className="flex items-center gap-2.5 text-[10px] shrink-0">
-                <div className="text-center">
-                  <div className="font-bold text-blue-600">{s.level}</div>
-                  <div className="text-[7px] text-gray-400">LV</div>
-                </div>
-                <div className="text-center">
-                  <div className={`font-bold ${s.rate >= 85 ? "text-emerald-600" : s.rate >= 70 ? "text-amber-600" : "text-red-500"}`}>
-                    {s.rate}%
-                  </div>
-                  <div className="text-[7px] text-gray-400">ACC</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-bold text-orange-500">{s.streak}</div>
-                  <div className="text-[7px] text-gray-400">🔥</div>
-                </div>
+              <div className="flex items-center gap-2 text-[10px] shrink-0">
+                <span className="font-bold text-blue-600">{s.level}</span>
+                <span className={`font-bold ${s.rate >= 85 ? "text-emerald-600" : s.rate >= 70 ? "text-amber-600" : "text-red-500"}`}>
+                  {s.rate}%
+                </span>
+                <span className="font-bold text-orange-500">🔥{s.streak}</span>
               </div>
             </div>
           ))}
@@ -114,8 +106,8 @@ export default function TeacherDashboardMockup() {
       </div>
 
       {/* Needs attention */}
-      <div className="mx-4 mt-2.5 mb-4 px-3 py-2 bg-red-50 border border-red-200 rounded-lg">
-        <p className="text-[10px] text-red-700 font-semibold mb-1.5">⚠️ Needs Attention</p>
+      <div className="mx-4 mt-2 mb-3 px-3 py-2 bg-red-50 border border-red-200 rounded-lg">
+        <p className="text-[10px] text-red-700 font-semibold mb-1">⚠️ Needs Attention</p>
         <div className="space-y-1">
           {alerts.map((a) => (
             <div key={a.name} className="flex items-center justify-between text-[10px]">
