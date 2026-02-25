@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 import SATExamMockup from "./SATExamMockup";
+import { SRGGeometryMockup, SRGDiscriminantMockup, SRGNumberLineMockup } from "./SRGMockup";
 
 type Locale = "en" | "ko" | "ms" | "zh";
 
@@ -380,7 +381,7 @@ function buildStudents(locale: Locale): StudentData[] {
 }
 
 const SLIDE_INTERVAL = 6000;
-const TOTAL_SLIDES = 3;
+const TOTAL_SLIDES = 6;
 
 export default function DashboardMockup() {
   const locale = useLocale() as Locale;
@@ -412,7 +413,7 @@ export default function DashboardMockup() {
     return () => clearInterval(interval);
   }, [rotate]);
 
-  // Map slide index to student index: slide 0 → student 0, slide 2 → student 1
+  // Slides: 0=dashboard1, 1=SAT, 2=dashboard2, 3=SRG-geometry, 4=SRG-discriminant, 5=SRG-numberline
   const studentIndex = slideIndex === 2 ? 1 : 0;
   const student = students[studentIndex];
   const isDashboard = slideIndex === 0 || slideIndex === 2;
@@ -430,8 +431,14 @@ export default function DashboardMockup() {
             l={l}
             animated={animated}
           />
-        ) : (
+        ) : slideIndex === 1 ? (
           <SATExamMockup />
+        ) : slideIndex === 3 ? (
+          <SRGGeometryMockup />
+        ) : slideIndex === 4 ? (
+          <SRGDiscriminantMockup />
+        ) : (
+          <SRGNumberLineMockup />
         )}
       </div>
 
