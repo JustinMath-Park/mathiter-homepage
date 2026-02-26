@@ -1,4 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import { useTranslations } from "next-intl";
+import FeatureModal from "./FeatureModal";
+import CoachDemo from "./feature-demos/CoachDemo";
+import VideosDemo from "./feature-demos/VideosDemo";
+import AnalyticsDemo from "./feature-demos/AnalyticsDemo";
+import GamificationDemo from "./feature-demos/GamificationDemo";
+import ExamDemo from "./feature-demos/ExamDemo";
+import DashboardDemo from "./feature-demos/DashboardDemo";
 
 const featureKeys = ["coach", "videos", "analytics", "gamification", "examPractice", "dashboard"] as const;
 
@@ -54,8 +64,12 @@ const featureMeta: Record<string, { color: string; icon: React.ReactNode }> = {
   },
 };
 
+// Features with demo modals ready
+const demoReady = new Set(["coach", "videos", "analytics", "gamification", "examPractice", "dashboard"]);
+
 export default function Features() {
   const t = useTranslations("features");
+  const [openModal, setOpenModal] = useState<string | null>(null);
 
   return (
     <section id="features" className="py-20 lg:py-28">
@@ -71,10 +85,14 @@ export default function Features() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featureKeys.map((key) => {
             const meta = featureMeta[key];
+            const hasDemo = demoReady.has(key);
             return (
               <div
                 key={key}
-                className="group rounded-2xl border border-gray-100 p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                onClick={hasDemo ? () => setOpenModal(key) : undefined}
+                className={`group rounded-2xl border border-gray-100 p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300 ${
+                  hasDemo ? "cursor-pointer" : ""
+                }`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${meta.color} text-white`}>
@@ -90,11 +108,39 @@ export default function Features() {
                 <p className="mt-2 text-sm text-muted leading-relaxed">
                   {t(`items.${key}.description`)}
                 </p>
+                {hasDemo && (
+                  <div className="mt-4 flex items-center gap-1 text-xs font-medium text-indigo-600 group-hover:text-indigo-700 transition-colors">
+                    <span>{t("viewDemo")}</span>
+                    <svg className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
       </div>
+
+      {/* Demo modals */}
+      <FeatureModal isOpen={openModal === "coach"} onClose={() => setOpenModal(null)}>
+        <CoachDemo />
+      </FeatureModal>
+      <FeatureModal isOpen={openModal === "videos"} onClose={() => setOpenModal(null)}>
+        <VideosDemo />
+      </FeatureModal>
+      <FeatureModal isOpen={openModal === "analytics"} onClose={() => setOpenModal(null)}>
+        <AnalyticsDemo />
+      </FeatureModal>
+      <FeatureModal isOpen={openModal === "gamification"} onClose={() => setOpenModal(null)}>
+        <GamificationDemo />
+      </FeatureModal>
+      <FeatureModal isOpen={openModal === "examPractice"} onClose={() => setOpenModal(null)}>
+        <ExamDemo />
+      </FeatureModal>
+      <FeatureModal isOpen={openModal === "dashboard"} onClose={() => setOpenModal(null)}>
+        <DashboardDemo />
+      </FeatureModal>
     </section>
   );
 }

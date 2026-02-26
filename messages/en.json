@@ -85,7 +85,8 @@
         "title": "Parent & Teacher Insights",
         "description": "Parents can track study habits, progress, and weak areas in real time. Teachers get automatic grading, reports, and assignment tools — saving hours of manual work every week."
       }
-    }
+    },
+    "viewDemo": "See how it works"
   },
   "howItWorks": {
     "label": "How It Works",

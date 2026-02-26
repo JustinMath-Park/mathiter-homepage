@@ -85,7 +85,8 @@
         "title": "Wawasan Ibu Bapa & Guru",
         "description": "Ibu bapa boleh menjejak tabiat belajar, kemajuan, dan kawasan lemah secara masa nyata. Guru mendapat pemarkahan automatik, laporan, dan alat tugasan — menjimatkan berjam-jam kerja manual setiap minggu."
       }
-    }
+    },
+    "viewDemo": "Lihat cara ia berfungsi"
   },
   "howItWorks": {
     "label": "Cara Belajar",
