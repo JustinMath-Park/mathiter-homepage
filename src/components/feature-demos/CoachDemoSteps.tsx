@@ -274,7 +274,7 @@ export function StepSocratic3({ active }: { active: boolean }) {
         {showHint && (
           <div className="mt-3 p-3 bg-yellow-50 border border-yellow-300 rounded-lg">
             <p className="text-xs font-semibold text-yellow-800 mb-0.5">💡 Hint:</p>
-            <p className="text-xs text-gray-700">4k = 36이니까, 양변을 4로 나누어 보세요.</p>
+            <p className="text-xs text-gray-700">Since 4k = 36, try dividing both sides by 4.</p>
           </div>
         )}
 
@@ -354,7 +354,7 @@ export function StepVisualNudge({ active }: { active: boolean }) {
               <div className={`bg-red-50 p-3 rounded-lg border border-red-200 transition-all duration-500 ${showWarning ? "opacity-100" : "opacity-0"}`}>
                 <p className="text-[10px] font-semibold text-red-700">⚠️ Common Mistake</p>
                 <p className="text-xs text-red-600 mt-0.5">
-                  b를 절반으로 나누는 게 아니라 <span className="font-bold">제곱</span>해야 해요!
+                  You need to <span className="font-bold">square</span> b, not halve it!
                 </p>
                 <p className="text-[10px] font-mono text-red-400 mt-1 line-through">k = 6 ÷ 2 = 3 ✗</p>
               </div>
@@ -434,7 +434,7 @@ export function StepRetry({ active }: { active: boolean }) {
         {showXP && (
           <div className="mt-4 text-center">
             <span className="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-bold animate-bounce">
-              +25 XP 획득!
+              +25 XP Earned!
             </span>
           </div>
         )}
@@ -466,7 +466,7 @@ export function StepResult({ active }: { active: boolean }) {
         {/* Card */}
         <div className={`w-full max-w-xs bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-4 text-white text-center transition-all duration-700 ${showCard ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}>
           <div className="text-2xl mb-1">🏅</div>
-          <div className="font-bold text-sm">New Card: 판별식 마스터</div>
+          <div className="font-bold text-sm">New Card: Discriminant Master</div>
           <div className="text-xs text-indigo-200 mt-1">Discriminant Expert</div>
           <div className="mt-2 inline-block px-2 py-0.5 bg-white/20 rounded text-[10px]">Bronze Tier</div>
         </div>
@@ -475,13 +475,13 @@ export function StepResult({ active }: { active: boolean }) {
         <div className={`flex items-center gap-2 px-4 py-2 bg-orange-50 border border-orange-200 rounded-lg transition-all duration-700 ${showStreak ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
           <span className="text-xl">🔥</span>
           <div>
-            <div className="text-sm font-bold text-orange-700">7일 연속 학습 중!</div>
+            <div className="text-sm font-bold text-orange-700">7-Day Streak!</div>
             <div className="text-[10px] text-orange-500">Keep going — you&apos;re on fire!</div>
           </div>
         </div>
 
         <p className="text-xs text-gray-400 text-center mt-2">
-          이 실수는 이제 안 해요. 다음 문제로 가볼까요?
+          You won&apos;t make this mistake again. Ready for the next one?
         </p>
       </div>
     </div>
