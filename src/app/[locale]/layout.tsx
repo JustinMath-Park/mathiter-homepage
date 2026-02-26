@@ -87,6 +87,11 @@ export async function generateMetadata({
       "adaptive learning",
       "personalized education",
     ],
+    verification: {
+      other: {
+        "naver-site-verification": "918ae4c809e73461b289340dd3c2ad66c2261a63",
+      },
+    },
     robots: {
       index: true,
       follow: true,
