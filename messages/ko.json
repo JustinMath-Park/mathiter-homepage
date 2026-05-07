@@ -11,7 +11,8 @@
       "features": "주요 기능",
       "howItWorks": "학습 방법",
       "pricing": "가격",
-      "team": "비전"
+      "team": "비전",
+      "blog": "블로그"
     },
     "signIn": "로그인",
     "startFree": "무료 시작"
@@ -269,6 +270,11 @@
     "contact": {
       "title": "연락처"
     },
+    "resources": {
+      "title": "리소스",
+      "blog": "블로그",
+      "contact": "무료 상담 신청"
+    },
     "copyright": "© {year} Mathiter. All rights reserved.",
     "privacyPolicy": "개인정보 처리방침",
     "termsOfService": "이용약관"
@@ -294,7 +300,8 @@
       "tutor": "원장 소개",
       "pricing": "수업료",
       "signIn": "상담 신청",
-      "app": "Mathiter 앱 →"
+      "app": "Mathiter 앱 →",
+      "blog": "블로그 →"
     },
     "hero": {
       "badge": "국제학교 학부모를 위한 1:1 수학 과외 · SAT · AP · IB · IGCSE",
@@ -573,6 +580,7 @@
       "terms": "이용약관",
       "app": "app.mathiter.com",
       "productPage": "Mathiter 학습앱 소개",
+      "blog": "블로그",
       "tagline": "Math + Iter — 수학의 길을 안내합니다."
     },
     "modal": {

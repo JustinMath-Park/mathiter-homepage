@@ -1,3 +1,4 @@
+import { getLocale } from "next-intl/server";
 import TutoringNav from "./TutoringNav";
 import TutoringHero from "./TutoringHero";
 import WorryHook from "./WorryHook";
@@ -7,8 +8,10 @@ import TutorProfile from "./TutorProfile";
 import TutoringPricing from "./TutoringPricing";
 import Faq from "./Faq";
 import FinalCta from "./FinalCta";
+import HomeBlogSection from "@/components/HomeBlogSection";
 
-export default function TutoringPage() {
+export default async function TutoringPage() {
+  const locale = await getLocale();
   return (
     <>
       <TutoringNav />
@@ -20,6 +23,7 @@ export default function TutoringPage() {
         <TutorProfile />
         <TutoringPricing />
         <Faq />
+        <HomeBlogSection locale={locale} />
         <FinalCta />
       </main>
     </>

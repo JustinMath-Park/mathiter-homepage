@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#3730a3" />
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#3730a3" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg2)" />
+  <circle cx="200" cy="180" r="220" fill="#ffffff" opacity="0.05" />
+  <circle cx="1380" cy="720" r="280" fill="#ffffff" opacity="0.05" />
+
+  <!-- AB card -->
+  <g transform="translate(280, 220)">
+    <rect width="440" height="460" rx="32" fill="url(#cardA)" />
+    <text x="220" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.85">AP Calculus</text>
+    <text x="220" y="260" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="180" font-weight="800" fill="#ffffff">AB</text>
+    <text x="220" y="340" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">기초 + 응용</text>
+    <text x="220" y="380" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">1학기 분량 학점 인정</text>
+  </g>
+
+  <!-- vs -->
+  <text x="800" y="475" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="60" font-weight="700" fill="#ffffff" opacity="0.6">vs</text>
+
+  <!-- BC card -->
+  <g transform="translate(880, 220)">
+    <rect width="440" height="460" rx="32" fill="url(#cardB)" />
+    <text x="220" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.85">AP Calculus</text>
+    <text x="220" y="260" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="180" font-weight="800" fill="#ffffff">BC</text>
+    <text x="220" y="340" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">+ 무한급수 + 매개변수</text>
+    <text x="220" y="380" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">2학기 분량 학점 인정</text>
+  </g>
+</svg>

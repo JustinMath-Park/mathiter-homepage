@@ -1,19 +1,30 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations("header");
+  const locale = useLocale();
+
+  const localePrefix = locale === "en" ? "" : `/${locale}`;
+  const showBlogNav = locale === "ko" || locale === "en";
 
   const navLinks = [
-    { href: "#problem", label: t("nav.whyMathiter") },
-    { href: "#features", label: t("nav.features") },
-    { href: "#how-it-works", label: t("nav.howItWorks") },
-    { href: "#pricing", label: t("nav.pricing") },
-    { href: "#team", label: t("nav.team") },
+    { href: `${localePrefix}/product#problem`, label: t("nav.whyMathiter") },
+    { href: `${localePrefix}/product#features`, label: t("nav.features") },
+    { href: `${localePrefix}/product#how-it-works`, label: t("nav.howItWorks") },
+    { href: `${localePrefix}/product#pricing`, label: t("nav.pricing") },
+    ...(showBlogNav
+      ? [
+          {
+            href: `${localePrefix}/blog`,
+            label: t("nav.blog"),
+          },
+        ]
+      : []),
   ];
 
   return (
@@ -27,7 +38,7 @@ export default function Header() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.href}

@@ -1,15 +1,28 @@
-import { useTranslations } from "next-intl";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
+
+  const localePrefix = locale === "en" ? "" : `/${locale}`;
+  const showTutoringLinks = locale === "ko" || locale === "en";
 
   const productLinks = [
-    { label: t("product.diagnosticTest"), href: "/#features" },
-    { label: t("product.aiPractice"), href: "/#features" },
-    { label: t("product.examSimulation"), href: "/#features" },
-    { label: t("product.videoLessons"), href: "/#features" },
-    { label: t("product.pricing"), href: "/#pricing" },
+    { label: t("product.diagnosticTest"), href: `${localePrefix}/product#features` },
+    { label: t("product.aiPractice"), href: `${localePrefix}/product#features` },
+    { label: t("product.examSimulation"), href: `${localePrefix}/product#features` },
+    { label: t("product.videoLessons"), href: `${localePrefix}/product#features` },
+    { label: t("product.pricing"), href: `${localePrefix}/product#pricing` },
   ];
+
+  const resourceLinks = showTutoringLinks
+    ? [
+        { label: t("resources.blog"), href: `${localePrefix}/blog` },
+        { label: t("resources.contact"), href: `${localePrefix}/contact` },
+      ]
+    : [];
 
   return (
     <footer className="border-t border-gray-100 bg-white">
@@ -59,12 +72,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Resources / Contact */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-muted">
-              {t("contact.title")}
+              {showTutoringLinks ? t("resources.title") : t("contact.title")}
             </h4>
             <ul className="mt-4 space-y-2.5">
+              {resourceLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a
                   href="mailto:contact@mathiter.com"
@@ -91,13 +114,13 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="/privacy"
+              href={`${localePrefix}/privacy`}
               className="text-xs text-muted hover:text-foreground transition-colors"
             >
               {t("privacyPolicy")}
             </a>
             <a
-              href="/terms"
+              href={`${localePrefix}/terms`}
               className="text-xs text-muted hover:text-foreground transition-colors"
             >
               {t("termsOfService")}

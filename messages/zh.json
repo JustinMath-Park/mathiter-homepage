@@ -7,11 +7,12 @@
   },
   "header": {
     "nav": {
-      "whyMathiter": "Why Mathiter",
-      "features": "Features",
-      "howItWorks": "How It Works",
-      "pricing": "Pricing",
-      "team": "Our Vision"
+      "whyMathiter": "为什么选择Mathiter",
+      "features": "核心功能",
+      "howItWorks": "学习流程",
+      "pricing": "价格",
+      "team": "我们的愿景",
+      "blog": "博客"
     },
     "signIn": "Sign In",
     "startFree": "Start Free"
@@ -269,9 +270,14 @@
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© {year} Mathiter. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "resources": {
+      "title": "资源",
+      "blog": "博客",
+      "contact": "免费咨询"
+    },
+    "copyright": "© {year} Mathiter. 保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -294,7 +300,8 @@
       "tutor": "About Justin",
       "pricing": "Pricing",
       "signIn": "Book Consultation",
-      "app": "Mathiter App →"
+      "app": "Mathiter App →",
+      "blog": "博客 →"
     },
     "hero": {
       "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
@@ -573,6 +580,7 @@
       "terms": "Terms",
       "app": "app.mathiter.com",
       "productPage": "About the Mathiter App",
+      "blog": "博客",
       "tagline": "Math + Iter — guiding the math path."
     },
     "modal": {

@@ -204,6 +204,9 @@ export default function FinalCta() {
             </span>
           </div>
           <div style={{ display: "flex", gap: 24, fontSize: 13, color: "#64748b", flexWrap: "wrap" }}>
+            <Link href="/blog" style={{ color: "inherit", textDecoration: "none" }}>
+              {tFooter("blog")}
+            </Link>
             <Link href="/product" style={{ color: "inherit", textDecoration: "none" }}>
               {tFooter("productPage")}
             </Link>

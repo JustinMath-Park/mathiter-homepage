@@ -7,11 +7,12 @@
   },
   "header": {
     "nav": {
-      "whyMathiter": "Why Mathiter",
-      "features": "Features",
-      "howItWorks": "How It Works",
-      "pricing": "Pricing",
-      "team": "Our Vision"
+      "whyMathiter": "Kenapa Mathiter",
+      "features": "Ciri-ciri",
+      "howItWorks": "Cara Belajar",
+      "pricing": "Harga",
+      "team": "Visi Kami",
+      "blog": "Blog"
     },
     "signIn": "Sign In",
     "startFree": "Start Free"
@@ -269,9 +270,14 @@
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© {year} Mathiter. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "resources": {
+      "title": "Sumber",
+      "blog": "Blog",
+      "contact": "Perundingan Percuma"
+    },
+    "copyright": "© {year} Mathiter. Hak cipta terpelihara.",
+    "privacyPolicy": "Dasar Privasi",
+    "termsOfService": "Terma Perkhidmatan"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -294,7 +300,8 @@
       "tutor": "About Justin",
       "pricing": "Pricing",
       "signIn": "Book Consultation",
-      "app": "Mathiter App →"
+      "app": "Mathiter App →",
+      "blog": "Blog →"
     },
     "hero": {
       "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
@@ -573,6 +580,7 @@
       "terms": "Terms",
       "app": "app.mathiter.com",
       "productPage": "About the Mathiter App",
+      "blog": "Blog",
       "tagline": "Math + Iter — guiding the math path."
     },
     "modal": {

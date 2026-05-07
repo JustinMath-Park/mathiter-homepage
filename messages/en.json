@@ -11,7 +11,8 @@
       "features": "Features",
       "howItWorks": "How It Works",
       "pricing": "Pricing",
-      "team": "Our Vision"
+      "team": "Our Vision",
+      "blog": "Blog"
     },
     "signIn": "Sign In",
     "startFree": "Start Free"
@@ -269,6 +270,11 @@
     "contact": {
       "title": "Contact"
     },
+    "resources": {
+      "title": "Resources",
+      "blog": "Blog",
+      "contact": "Free Consultation"
+    },
     "copyright": "© {year} Mathiter. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
@@ -294,7 +300,8 @@
       "tutor": "About Justin",
       "pricing": "Pricing",
       "signIn": "Book Consultation",
-      "app": "Mathiter App →"
+      "app": "Mathiter App →",
+      "blog": "Blog →"
     },
     "hero": {
       "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
@@ -573,6 +580,7 @@
       "terms": "Terms",
       "app": "app.mathiter.com",
       "productPage": "About the Mathiter App",
+      "blog": "Blog",
       "tagline": "Math + Iter — guiding the math path."
     },
     "modal": {

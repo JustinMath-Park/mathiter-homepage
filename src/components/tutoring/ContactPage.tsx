@@ -1,12 +1,19 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useActionState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { submitInquiry, type SubmitResult } from "@/app/[locale]/contact/actions";
 
 export default function ContactPage() {
   const t = useTranslations("tutoring.contact");
-  const [submitted, setSubmitted] = useState(false);
+  const locale = useLocale();
+  const [state, formAction, isPending] = useActionState<
+    SubmitResult | null,
+    FormData
+  >(submitInquiry, null);
+  const submitted = state?.ok === true;
+  const submitError = state && state.ok === false ? state.error : null;
 
   const phoneNumber = t("phone.value");
   const kakaoId = t("kakao.value");
@@ -239,12 +246,7 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    // TODO: wire up actual submit endpoint (email/Slack/Notion).
-                    // For now, just show the placeholder confirmation.
-                    setSubmitted(true);
-                  }}
+                  action={formAction}
                   style={{
                     marginTop: 24,
                     display: "flex",
@@ -252,28 +254,52 @@ export default function ContactPage() {
                     gap: 16,
                   }}
                 >
+                  <input type="hidden" name="locale" value={locale} />
+                  <input type="hidden" name="source" value="tutoring-contact" />
+                  <input type="hidden" name="contactMethod" value="kakao" />
+
                   <FormField
+                    name="parentName"
                     label={t("form.nameLabel")}
                     placeholder={t("form.namePlaceholder")}
                     required
                   />
                   <FormField
+                    name="contactDetail"
                     label={t("form.contactLabel")}
                     placeholder={t("form.contactPlaceholder")}
                     required
                   />
                   <FormField
+                    name="studentGrade"
                     label={t("form.studentLabel")}
                     placeholder={t("form.studentPlaceholder")}
                   />
                   <FormField
+                    name="message"
                     label={t("form.messageLabel")}
                     placeholder={t("form.messagePlaceholder")}
                     multiline
                   />
 
+                  {submitError && (
+                    <div
+                      style={{
+                        background: "#fef2f2",
+                        border: "1px solid #fecaca",
+                        color: "#b91c1c",
+                        padding: "10px 14px",
+                        borderRadius: 10,
+                        fontSize: 13,
+                      }}
+                    >
+                      {submitError}
+                    </div>
+                  )}
+
                   <button
                     type="submit"
+                    disabled={isPending}
                     style={{
                       marginTop: 4,
                       background: "linear-gradient(135deg,#f59e0b 0%, #f97316 100%)",
@@ -283,7 +309,8 @@ export default function ContactPage() {
                       padding: "15px 24px",
                       borderRadius: 9999,
                       fontSize: 15,
-                      cursor: "pointer",
+                      cursor: isPending ? "not-allowed" : "pointer",
+                      opacity: isPending ? 0.7 : 1,
                       boxShadow:
                         "0 12px 28px rgba(249,115,22,0.32), 0 2px 4px rgba(249,115,22,0.18)",
                       display: "inline-flex",
@@ -292,7 +319,7 @@ export default function ContactPage() {
                       gap: 10,
                     }}
                   >
-                    {t("form.submit")}
+                    {isPending ? "전송 중..." : t("form.submit")}
                     <svg
                       width="16"
                       height="16"
@@ -512,13 +539,14 @@ function ChannelCard({ tag, title, value, hint, cta, href, accent, chipBg }: Cha
 }
 
 type FormFieldProps = {
+  name: string;
   label: string;
   placeholder: string;
   required?: boolean;
   multiline?: boolean;
 };
 
-function FormField({ label, placeholder, required, multiline }: FormFieldProps) {
+function FormField({ name, label, placeholder, required, multiline }: FormFieldProps) {
   const inputStyle: React.CSSProperties = {
     width: "100%",
     padding: "12px 14px",
@@ -539,6 +567,7 @@ function FormField({ label, placeholder, required, multiline }: FormFieldProps) 
       </span>
       {multiline ? (
         <textarea
+          name={name}
           placeholder={placeholder}
           required={required}
           rows={4}
@@ -555,6 +584,7 @@ function FormField({ label, placeholder, required, multiline }: FormFieldProps) 
       ) : (
         <input
           type="text"
+          name={name}
           placeholder={placeholder}
           required={required}
           style={inputStyle}
