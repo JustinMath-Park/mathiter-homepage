@@ -11,7 +11,9 @@
       "features": "核心功能",
       "howItWorks": "学习流程",
       "pricing": "价格",
-      "team": "我们的愿景"
+      "team": "我们的愿景",
+      "tutoring": "1:1 辅导",
+      "blog": "博客"
     },
     "signIn": "登录",
     "startFree": "免费开始"
@@ -268,6 +270,12 @@
     },
     "contact": {
       "title": "联系我们"
+    },
+    "resources": {
+      "title": "资源",
+      "tutoring": "1:1 辅导",
+      "blog": "博客",
+      "contact": "免费咨询"
     },
     "copyright": "© {year} Mathiter. 保留所有权利。",
     "privacyPolicy": "隐私政策",

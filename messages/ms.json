@@ -11,7 +11,9 @@
       "features": "Ciri-ciri",
       "howItWorks": "Cara Belajar",
       "pricing": "Harga",
-      "team": "Visi Kami"
+      "team": "Visi Kami",
+      "tutoring": "1:1 Tuisyen",
+      "blog": "Blog"
     },
     "signIn": "Log Masuk",
     "startFree": "Mula Percuma"
@@ -268,6 +270,12 @@
     },
     "contact": {
       "title": "Hubungi"
+    },
+    "resources": {
+      "title": "Sumber",
+      "tutoring": "1:1 Tuisyen",
+      "blog": "Blog",
+      "contact": "Perundingan Percuma"
     },
     "copyright": "© {year} Mathiter. Hak cipta terpelihara.",
     "privacyPolicy": "Dasar Privasi",

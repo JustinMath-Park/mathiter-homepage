@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- decorative blurred orbs -->
+  <circle cx="200" cy="180" r="220" fill="#ffffff" opacity="0.08" />
+  <circle cx="1380" cy="720" r="280" fill="#ffffff" opacity="0.08" />
+
+  <!-- center card -->
+  <rect x="380" y="220" width="840" height="460" rx="32" fill="url(#card)" />
+
+  <!-- english/korean term pairs -->
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="start">
+    <text x="430" y="320" font-size="46" font-weight="700" fill="#0f172a">Vertex</text>
+    <text x="700" y="320" font-size="32" fill="#64748b">→ 꼭짓점</text>
+
+    <text x="430" y="400" font-size="46" font-weight="700" fill="#0f172a">Coefficient</text>
+    <text x="700" y="400" font-size="32" fill="#64748b">→ 계수</text>
+
+    <text x="430" y="480" font-size="46" font-weight="700" fill="#0f172a">Reciprocal</text>
+    <text x="700" y="480" font-size="32" fill="#64748b">→ 역수</text>
+
+    <text x="430" y="560" font-size="46" font-weight="700" fill="#0f172a">Substitute</text>
+    <text x="700" y="560" font-size="32" fill="#64748b">→ 대입</text>
+
+    <text x="430" y="640" font-size="20" fill="#4f46e5" font-weight="600" letter-spacing="3">+ 46 MORE TERMS</text>
+  </g>
+</svg>

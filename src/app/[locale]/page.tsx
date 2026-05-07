@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Curriculum from "@/components/Curriculum";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
+import HomeBlogSection from "@/components/HomeBlogSection";
 
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,7 @@ export default async function Home({ params }: Props) {
         <HowItWorks />
         <Curriculum />
         <Pricing />
+        <HomeBlogSection locale={locale} />
         <Team />
       </main>
       <Footer />
