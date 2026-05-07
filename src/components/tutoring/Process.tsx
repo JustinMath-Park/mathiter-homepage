@@ -181,6 +181,7 @@ export default function Process() {
                   fontSize: 14,
                   lineHeight: 1.65,
                   color: "#475569",
+                  whiteSpace: "pre-line",
                 }}
               >
                 {t(`${key}.body` as `step1.body`)}
