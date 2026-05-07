@@ -50,8 +50,14 @@ export function getAdminDb(): Firestore | null {
   if (!app) return null;
   const db = getFirestore(app);
   // Allow optional form fields (school/examGoal/message) to be omitted
-  // without failing the write. Must be called once before any read/write.
-  db.settings({ ignoreUndefinedProperties: true });
+  // without failing the write. settings() can only be called once before any
+  // read/write — if blog/sitemap already initialized Firestore in this
+  // process, this throws; we swallow and rely on the existing settings.
+  try {
+    db.settings({ ignoreUndefinedProperties: true });
+  } catch {
+    // Already initialized elsewhere — that's fine, fields handled in caller.
+  }
   cachedDb = db;
   return cachedDb;
 }

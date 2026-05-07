@@ -10,11 +10,13 @@
     "seed:blog": "node scripts/seed-blog.mjs"
   },
   "dependencies": {
+    "@types/nodemailer": "^8.0.0",
     "firebase-admin": "^13.8.0",
     "gray-matter": "^4.0.3",
     "katex": "^0.16.45",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
+    "nodemailer": "^8.0.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",

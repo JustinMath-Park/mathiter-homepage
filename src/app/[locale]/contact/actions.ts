@@ -1,6 +1,7 @@
 "use server";
 
 import { getAdminDb, isFirebaseConfigured } from "@/lib/firebase-admin";
+import { sendInquiryNotification } from "@/lib/notify-email";
 import type { TutoringInquiry } from "@/types/blog";
 
 const INQUIRY_COLLECTION = "tutoringInquiries";
@@ -38,29 +39,51 @@ export async function submitInquiry(
   }
 
   const db = getAdminDb();
+  const receivedAt = new Date();
+
+  // Step 1: Persist to Firestore (or log if not configured)
+  let firestoreDocId: string | undefined;
+  let mode: "firestore" | "log" = "log";
+
   if (!db) {
     console.warn(
       "[contact] Firestore not configured. Inquiry would be:",
       JSON.stringify(inquiry, null, 2)
     );
-    return { ok: true, mode: "log" };
+  } else {
+    try {
+      const doc = await db.collection(INQUIRY_COLLECTION).add({
+        ...inquiry,
+        createdAt: receivedAt,
+        status: "new",
+      });
+      firestoreDocId = doc.id;
+      mode = "firestore";
+    } catch (err) {
+      console.error("[contact] Failed to save inquiry:", err);
+      return {
+        ok: false,
+        error:
+          "신청 저장 중 오류가 발생했습니다. 잠시 후 다시 시도해 주시거나 contact@mathiter.com으로 직접 연락해 주세요.",
+      };
+    }
   }
 
+  // Step 2: Email notification (best-effort — don't fail user submission if SMTP fails)
   try {
-    await db.collection(INQUIRY_COLLECTION).add({
+    const result = await sendInquiryNotification({
       ...inquiry,
-      createdAt: new Date(),
-      status: "new",
+      receivedAt,
+      firestoreDocId,
     });
-    return { ok: true, mode: "firestore" };
+    if (!result.ok) {
+      console.warn("[contact] Email notification skipped:", result.error);
+    }
   } catch (err) {
-    console.error("[contact] Failed to save inquiry:", err);
-    return {
-      ok: false,
-      error:
-        "신청 저장 중 오류가 발생했습니다. 잠시 후 다시 시도해 주시거나 contact@mathiter.com으로 직접 연락해 주세요.",
-    };
+    console.error("[contact] Email notification threw:", err);
   }
+
+  return { ok: true, mode };
 }
 
 export async function isContactBackendReady(): Promise<boolean> {
