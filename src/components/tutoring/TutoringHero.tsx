@@ -137,9 +137,10 @@ export default function TutoringHero() {
             {t("subHeadline")}
           </p>
 
-          <div style={{ marginTop: 36, display: "flex", gap: 14, flexWrap: "wrap" }}>
+          <div className="hero-cta-row" style={{ marginTop: 36, display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link
               href="/contact"
+              className="hero-cta-button"
               style={{
                 background: "linear-gradient(135deg,#f59e0b 0%, #f97316 100%)",
                 color: "#fff",
@@ -155,6 +156,7 @@ export default function TutoringHero() {
                 transition: "transform .2s, box-shadow .2s",
                 display: "inline-flex",
                 alignItems: "center",
+                justifyContent: "center",
                 gap: 10,
               }}
               onMouseEnter={(e) => {
@@ -175,6 +177,7 @@ export default function TutoringHero() {
             </Link>
             <a
               href="#process"
+              className="hero-cta-button"
               style={{
                 background: "#fff",
                 color: "#0b2a57",
@@ -186,7 +189,9 @@ export default function TutoringHero() {
                 cursor: "pointer",
                 transition: "border-color .2s",
                 textDecoration: "none",
-                display: "inline-block",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#0b2a57")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#cbd5e1")}
@@ -262,6 +267,15 @@ export default function TutoringHero() {
         }
         :global(.hero-title) {
           font-size: 36px;
+        }
+        :global(.hero-cta-button) {
+          width: 100%;
+          padding: 15px 24px !important;
+        }
+        @media (min-width: 480px) {
+          :global(.hero-cta-button) {
+            width: auto;
+          }
         }
         @media (min-width: 1024px) {
           .hero-grid {

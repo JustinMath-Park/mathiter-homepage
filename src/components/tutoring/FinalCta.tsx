@@ -112,9 +112,7 @@ export default function FinalCta() {
               style={{
                 marginTop: 40,
                 display: "flex",
-                gap: 14,
                 justifyContent: "center",
-                flexWrap: "wrap",
               }}
             >
               <Link
@@ -124,40 +122,21 @@ export default function FinalCta() {
                   color: "#fff",
                   border: "none",
                   fontWeight: 600,
-                  padding: "16px 32px",
+                  padding: "18px 36px",
                   borderRadius: 9999,
-                  fontSize: 16,
+                  fontSize: 17,
                   cursor: "pointer",
                   textDecoration: "none",
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 12,
-                  boxShadow: "0 12px 28px rgba(249,115,22,0.40)",
+                  boxShadow: "0 16px 36px rgba(249,115,22,0.45)",
                 }}
               >
-                {t("whatsapp")}
+                {t("primaryCta")}
                 <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-              </Link>
-              <Link
-                href="/contact"
-                style={{
-                  background: "rgba(255,255,255,0.1)",
-                  color: "#fff",
-                  border: "1.5px solid rgba(255,255,255,0.3)",
-                  fontWeight: 600,
-                  padding: "14.5px 28px",
-                  borderRadius: 9999,
-                  fontSize: 15.5,
-                  cursor: "pointer",
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                {t("kakao")}
               </Link>
             </div>
 
