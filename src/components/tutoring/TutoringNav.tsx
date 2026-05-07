@@ -117,7 +117,7 @@ export default function TutoringNav() {
           >
             {t("app")}
           </Link>
-          <div className="hidden sm:block">
+          <div className="tutoring-nav-lang">
             <LanguageSwitcher />
           </div>
           <Link
@@ -154,20 +154,33 @@ export default function TutoringNav() {
       <style jsx>{`
         .tutoring-nav-row {
           padding: 0 16px;
+          height: 60px;
         }
         @media (min-width: 768px) {
           .tutoring-nav-row {
             padding: 0 32px;
+            height: 72px;
           }
         }
         :global(.tutoring-nav-cta) {
-          padding: 8px 14px !important;
-          font-size: 13px !important;
+          padding: 7px 12px !important;
+          font-size: 12.5px !important;
         }
         @media (min-width: 480px) {
           :global(.tutoring-nav-cta) {
             padding: 10px 18px !important;
             font-size: 14px !important;
+          }
+        }
+        /* Compact LanguageSwitcher on mobile so it fits next to the CTA */
+        .tutoring-nav-lang :global(select) {
+          font-size: 11.5px !important;
+          padding: 4px 22px 4px 8px !important;
+        }
+        @media (min-width: 480px) {
+          .tutoring-nav-lang :global(select) {
+            font-size: 13px !important;
+            padding: 6px 28px 6px 12px !important;
           }
         }
       `}</style>

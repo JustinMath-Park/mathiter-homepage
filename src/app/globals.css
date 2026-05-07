@@ -71,3 +71,36 @@ html {
 .gradient-bg {
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
 }
+
+/* ============================================================
+ * Tutoring landing — mobile vertical rhythm
+ * Reduce the 96–120px section paddings to comfortable mobile values.
+ * Targets sections inside the tutoring page (id'd) — does not touch
+ * /product, /blog, etc.
+ * ============================================================ */
+@media (max-width: 767px) {
+  section#programs,
+  section#hero,
+  section#worry,
+  section#process,
+  section#system,
+  section#tutor,
+  section#pricing,
+  section#faq,
+  section#contact {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+  /* Hero is the first section — tighten its top padding even more so it
+   * sits close to the sticky nav. */
+  section#hero,
+  section#programs {
+    padding-top: 28px !important;
+    padding-bottom: 40px !important;
+  }
+  /* FinalCta has a 120px bottom in desktop — keep it slightly larger
+   * so the footer doesn't crowd the gradient card. */
+  section#contact {
+    padding-bottom: 64px !important;
+  }
+}
