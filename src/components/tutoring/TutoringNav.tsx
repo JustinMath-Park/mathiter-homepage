@@ -99,21 +99,6 @@ export default function TutoringNav() {
 
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <Link
-            href="/blog"
-            className="hidden md:inline-block"
-            style={{
-              fontSize: 13,
-              color: "#475569",
-              textDecoration: "none",
-              fontWeight: 500,
-              transition: "color .2s",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#0b2a57")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#475569")}
-          >
-            {t("blog")}
-          </Link>
-          <Link
             href="/product"
             className="hidden md:inline-block"
             style={{
