@@ -48,7 +48,11 @@ export function getAdminDb(): Firestore | null {
   if (cachedDb) return cachedDb;
   const app = initAdmin();
   if (!app) return null;
-  cachedDb = getFirestore(app);
+  const db = getFirestore(app);
+  // Allow optional form fields (school/examGoal/message) to be omitted
+  // without failing the write. Must be called once before any read/write.
+  db.settings({ ignoreUndefinedProperties: true });
+  cachedDb = db;
   return cachedDb;
 }
 
