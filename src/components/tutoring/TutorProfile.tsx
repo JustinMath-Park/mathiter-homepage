@@ -75,19 +75,17 @@ export default function TutorProfile() {
               position: "relative",
             }}
           >
-            <span
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/justin-park.jpg"
+              alt="박세준 (Justin Park) — Mathiter Tutoring 원장 · 국제학교 1:1 수학 과외"
               style={{
-                fontSize: 12,
-                color: "rgba(255,255,255,0.55)",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textAlign: "center",
-                lineHeight: 1.6,
-                whiteSpace: "pre-line",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
               }}
-            >
-              {t("photoPlaceholder")}
-            </span>
+            />
             <div
               style={{
                 position: "absolute",

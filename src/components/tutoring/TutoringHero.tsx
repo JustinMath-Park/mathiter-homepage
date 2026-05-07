@@ -314,25 +314,17 @@ function HeroVisual() {
           background: "linear-gradient(135deg, #1d5396, #0b2a57)",
         }}
       >
-        <div
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/justin-park.jpg"
+          alt="박세준 (Justin Park) — Mathiter Tutoring 원장"
           style={{
             width: "100%",
             height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "rgba(255,255,255,0.85)",
-            fontSize: 11,
-            fontWeight: 600,
-            letterSpacing: "0.04em",
-            textAlign: "center",
-            lineHeight: 1.4,
-            padding: 16,
-            whiteSpace: "pre-line",
+            objectFit: "cover",
+            display: "block",
           }}
-        >
-          {t("tutorPhotoPlaceholder")}
-        </div>
+        />
       </div>
 
       <div
