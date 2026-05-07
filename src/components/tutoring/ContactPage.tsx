@@ -144,7 +144,7 @@ export default function ContactPage() {
                 value={phoneNumber}
                 hint={t("phone.hint")}
                 cta={t("phone.cta")}
-                href={`tel:${phoneNumber.replace(/[^+\d]/g, "")}`}
+                href={`tel:${t("phone.tel")}`}
                 accent="#1d5396"
                 chipBg="#eff5fc"
               />
