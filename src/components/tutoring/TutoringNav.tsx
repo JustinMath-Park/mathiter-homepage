@@ -38,15 +38,15 @@ export default function TutoringNav() {
       }}
     >
       <div
+        className="tutoring-nav-row"
         style={{
           maxWidth: 1280,
           margin: "0 auto",
-          padding: "0 32px",
           height: 72,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: 24,
+          gap: 16,
         }}
       >
         <a
@@ -97,7 +97,10 @@ export default function TutoringNav() {
           ))}
         </nav>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div
+          className="tutoring-nav-actions"
+          style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}
+        >
           <Link
             href="/product"
             className="hidden md:inline-block"
@@ -107,19 +110,23 @@ export default function TutoringNav() {
               textDecoration: "none",
               fontWeight: 500,
               transition: "color .2s",
+              whiteSpace: "nowrap",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "#0b2a57")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#475569")}
           >
             {t("app")}
           </Link>
-          <LanguageSwitcher />
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
           <Link
             href="/contact"
+            className="tutoring-nav-cta"
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: 8,
+              gap: 6,
               background: "#0b2a57",
               color: "#fff",
               border: "1px solid #0b2a57",
@@ -128,19 +135,42 @@ export default function TutoringNav() {
               padding: "10px 18px",
               borderRadius: 9999,
               textDecoration: "none",
+              whiteSpace: "nowrap",
+              flexShrink: 0,
               boxShadow: "0 4px 12px rgba(11,42,87,0.15)",
               transition: "background .2s",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.background = "#153f7a")}
             onMouseLeave={(e) => (e.currentTarget.style.background = "#0b2a57")}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ flexShrink: 0 }}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
             </svg>
             {t("signIn")}
           </Link>
         </div>
       </div>
+
+      <style jsx>{`
+        .tutoring-nav-row {
+          padding: 0 16px;
+        }
+        @media (min-width: 768px) {
+          .tutoring-nav-row {
+            padding: 0 32px;
+          }
+        }
+        :global(.tutoring-nav-cta) {
+          padding: 8px 14px !important;
+          font-size: 13px !important;
+        }
+        @media (min-width: 480px) {
+          :global(.tutoring-nav-cta) {
+            padding: 10px 18px !important;
+            font-size: 14px !important;
+          }
+        }
+      `}</style>
     </header>
   );
 }
