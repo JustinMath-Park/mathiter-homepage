@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import StructuredData from "@/components/StructuredData";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -36,7 +35,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
+  const t = await getTranslations({ locale, namespace: "tutoring.metadata" });
 
   const languages: Record<string, string> = {};
   for (const loc of routing.locales) {
@@ -76,16 +75,18 @@ export async function generateMetadata({
       description: t("ogDescription"),
     },
     keywords: [
-      "math",
-      "AI tutor",
-      "SAT math",
-      "IGCSE math",
-      "IB math",
-      "gamification",
-      "edtech",
-      "international school",
-      "adaptive learning",
-      "personalized education",
+      "국제학교 수학 과외",
+      "SAT 수학 과외",
+      "AP Calculus 과외",
+      "AP Calc BC",
+      "IB Math",
+      "IGCSE Math",
+      "international school math tutoring",
+      "SAT math tutor",
+      "AP math tutor",
+      "Mathiter",
+      "박세준",
+      "Justin Park",
     ],
     verification: {
       other: {
@@ -132,7 +133,6 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
-        <StructuredData />
       </body>
     </html>
   );

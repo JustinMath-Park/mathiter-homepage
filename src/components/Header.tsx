@@ -9,11 +9,11 @@ export default function Header() {
   const t = useTranslations("header");
 
   const navLinks = [
-    { href: "/#problem", label: t("nav.whyMathiter") },
-    { href: "/#features", label: t("nav.features") },
-    { href: "/#how-it-works", label: t("nav.howItWorks") },
-    { href: "/#pricing", label: t("nav.pricing") },
-    { href: "/#team", label: t("nav.team") },
+    { href: "#problem", label: t("nav.whyMathiter") },
+    { href: "#features", label: t("nav.features") },
+    { href: "#how-it-works", label: t("nav.howItWorks") },
+    { href: "#pricing", label: t("nav.pricing") },
+    { href: "#team", label: t("nav.team") },
   ];
 
   return (

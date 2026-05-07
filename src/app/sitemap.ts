@@ -10,7 +10,7 @@ function localeUrl(locale: string, path: string = "") {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/terms", "/privacy"];
+  const pages = ["", "/contact", "/product", "/terms", "/privacy"];
 
   return pages.flatMap((path) =>
     locales.map((locale) => ({

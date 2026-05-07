@@ -1,283 +1,645 @@
 {
   "metadata": {
-    "title": "Mathiter — 助你考试成功的AI数学导师",
-    "description": "数学考试遇到困难？Mathiter的AI导师帮助你掌握SAT、IGCSE、IB和A-Level数学，提供个性化练习、游戏化学习和真实考试模拟。",
-    "ogTitle": "Mathiter — 助你考试成功的AI数学导师",
-    "ogDescription": "通过专属AI导师掌握SAT、IGCSE、IB和A-Level数学。有趣的游戏化学习，真正提升你的成绩。"
+    "title": "Mathiter — Your AI Math Tutor for Exam Success",
+    "description": "Struggling with math exams? Mathiter's AI tutor helps you master SAT, IGCSE, IB, and A-Level math with personalized practice, game-like learning, and real exam simulations.",
+    "ogTitle": "Mathiter — Your AI Math Tutor for Exam Success",
+    "ogDescription": "Master SAT, IGCSE, IB & A-Level math with your personal AI tutor. Fun, game-like learning that actually improves your scores."
   },
   "header": {
     "nav": {
-      "whyMathiter": "为什么选择Mathiter",
-      "features": "核心功能",
-      "howItWorks": "学习流程",
-      "pricing": "价格",
-      "team": "我们的愿景"
+      "whyMathiter": "Why Mathiter",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "team": "Our Vision"
     },
-    "signIn": "登录",
-    "startFree": "免费开始"
+    "signIn": "Sign In",
+    "startFree": "Start Free"
   },
   "hero": {
-    "badge": "国际学校考试AI数学教练",
-    "headlineLine1": "10分钟内找到孩子的数学薄弱点",
-    "headlineHighlight": "，",
-    "headlineLine2": "然后精准提升",
-    "subHeadline": "花大价钱请私教？每月只需$24.99，Mathiter的AI精准定位孩子的薄弱知识点，生成个性化练习题，并通过定制视频讲解错误。",
+    "badge": "AI Math Coach for International School Exams",
+    "headlineLine1": "Find your child's math weak spots",
+    "headlineHighlight": " in 10 minutes",
+    "headlineLine2": " — then fix them",
+    "subHeadline": "Spending a fortune on private tutoring? For just $24.99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and explains mistakes with custom videos.",
     "benefits": {
-      "diagnosis": "10分钟自适应测试，精准评估实力",
-      "analytics": "家长仪表盘实时追踪学习进度",
-      "gamification": "RPG风格学习，让孩子主动学习"
+      "diagnosis": "10-minute adaptive test for precise skill assessment",
+      "analytics": "Real-time parent dashboard to track learning progress",
+      "gamification": "RPG-style learning that keeps kids studying on their own"
     },
-    "ctaPrimary": "免费开始诊断",
-    "ctaSecondary": "了解学习方法",
-    "trustNote": "注册后即可免费诊断 · 无需绑定信用卡"
+    "ctaPrimary": "Start Free Diagnosis",
+    "ctaSecondary": "See How It Works",
+    "trustNote": "Free diagnostic available immediately after sign-up · No credit card required"
   },
   "problem": {
-    "label": "问题所在",
-    "title": "这些情况，你是否似曾相识？",
-    "subtitle": "阻碍学生进步的三大难题——Mathiter为此而生。",
+    "label": "The Problem",
+    "title": "Sound Familiar?",
+    "subtitle": "Three challenges that hold students back — and that we built Mathiter to solve.",
     "items": {
       "retention": {
-        "title": "「学了就忘，怎么都记不住。」",
-        "description": "传统学习方法难以持久。没有有趣的练习和科学的复习，知识很快就会遗忘。当学习变成负担，动力也随之消失。"
+        "title": "\"I study, but I forget everything.\"",
+        "description": "Traditional study methods don't stick. Without engaging practice and smart review, knowledge fades fast. Students lose motivation when studying feels like a chore."
       },
       "gap": {
-        "title": "「概念都懂了，考试还是考不好。」",
-        "description": "课堂上理解数学和在SAT、IGCSE等标准化考试中取得高分完全是两回事。应试需要大多数课程不会教的考试技巧。"
+        "title": "\"I understand the concept, but I fail the test.\"",
+        "description": "There's a big gap between understanding math in class and scoring well on standardized exams like the SAT or IGCSE. Test-taking requires different skills that most courses don't teach."
       },
       "personalization": {
-        "title": "「希望有人能精准指出我到底哪里不会。」",
-        "description": "每个学生的薄弱点各不相同，但大多数教育对所有人一视同仁。没有个性化指导，学生会在已掌握的内容上浪费时间，却错过真正需要补强的部分。"
+        "title": "\"I wish someone could just pinpoint exactly what I don't know.\"",
+        "description": "Every student has unique weak spots, but most education treats everyone the same. Without personalized guidance, students waste time on what they already know and miss what they actually need."
       }
     }
   },
   "features": {
-    "label": "核心功能",
-    "title": "提分所需的一切",
-    "subtitle": "六大强力工具协同运作，帮你更聪明地学习。",
+    "label": "Core Features",
+    "title": "Everything You Need to Raise Your Score",
+    "subtitle": "Six powerful tools that work together to help you study smarter, not harder.",
     "items": {
       "coach": {
-        "tag": "AI教练",
-        "title": "智能提问，精准找到薄弱点",
-        "description": "我们的AI不是直接给答案，而是通过引导式提问帮你自己发现错误。它能检测你理解中的隐藏漏洞，并追踪记录以便重点复习。"
+        "tag": "AI Coach",
+        "title": "Smart Questioning That Finds Your Weak Spots",
+        "description": "Instead of just giving you answers, our AI asks guiding questions that help you discover mistakes on your own. It detects hidden gaps in your understanding and tracks them for focused review."
       },
       "videos": {
-        "tag": "视频课程",
-        "title": "个性化讲解视频",
-        "description": "当你在某个概念上遇到困难时，AI会针对你的具体错误创建一段简短的讲解视频。每个视频都针对你需要帮助的特定知识点——不是千篇一律的通用课程。"
+        "tag": "Video Lessons",
+        "title": "Personalized Explanation Videos",
+        "description": "When you struggle with a concept, the AI creates a short video explanation tailored to your exact mistake. Each video targets the specific topic you need help with — not a generic lecture."
       },
       "analytics": {
-        "tag": "智能分析",
-        "title": "AI深度理解你的学习方式",
-        "description": "我们的系统从多个维度分析你的学习模式——识别优势、预测成绩、规划学习路径，并精准推荐下一步该练什么。"
+        "tag": "Smart Analytics",
+        "title": "AI That Understands How You Learn",
+        "description": "Our system analyzes your learning patterns from multiple angles — identifying strengths, predicting scores, planning your study path, and recommending exactly what to practice next."
       },
       "gamification": {
-        "tag": "游戏化",
-        "title": "RPG风格学习，让你欲罢不能",
-        "description": "赚取经验值、定制头像、养成虚拟宠物、攀登赛季排行榜。每天的学习都在培养你的角色——让数学练习变得像玩你最爱的游戏。"
+        "tag": "Gamification",
+        "title": "RPG-Style Learning That Keeps You Coming Back",
+        "description": "Earn XP, customize your avatar, care for virtual pets, and climb seasonal rankings. Daily study sessions grow your character — making math practice feel like your favorite game."
       },
       "examPractice": {
-        "tag": "模拟考试",
-        "title": "真实考试模拟",
-        "description": "在与目标考试完全相同的条件下练习——包括Digital SAT的自适应模式、IGCSE、IB等。即时评分并提供详细分析，告诉你哪里需要改进。"
+        "tag": "Exam Practice",
+        "title": "Real Exam Simulations",
+        "description": "Practice under the exact conditions of your target exam — including the Digital SAT's adaptive format, IGCSE, IB, and more. Get auto-graded results with detailed analysis of where to improve."
       },
       "dashboard": {
-        "tag": "仪表盘",
-        "title": "家长与教师数据洞察",
-        "description": "家长可以实时追踪学习习惯、进度和薄弱领域。教师获得自动评分、报告和作业工具——每周节省数小时的手动工作。"
+        "tag": "Dashboard",
+        "title": "Parent & Teacher Insights",
+        "description": "Parents can track study habits, progress, and weak areas in real time. Teachers get automatic grading, reports, and assignment tools — saving hours of manual work every week."
       }
     },
-    "viewDemo": "查看演示"
+    "viewDemo": "See how it works"
   },
   "howItWorks": {
-    "label": "学习流程",
-    "title": "5步学习旅程",
-    "subtitle": "智能循环不断适应你的进度，每一轮都让你更接近目标分数。",
+    "label": "How It Works",
+    "title": "Your Learning Journey in 5 Steps",
+    "subtitle": "A smart cycle that keeps adapting to your progress and gets you closer to your target score with every session.",
     "steps": {
       "diagnose": {
         "step": "01",
-        "title": "诊断",
-        "subtitle": "智能评估",
-        "description": "通过快速自适应测试精准定位你的水平。题目实时调整难度，用更少的题目获得更准确的评估。"
+        "title": "Diagnose",
+        "subtitle": "Smart Assessment",
+        "description": "Take a quick adaptive test that figures out exactly where you stand. Questions adjust to your level in real time, so you get an accurate picture with fewer questions."
       },
       "learn": {
         "step": "02",
-        "title": "学习",
-        "subtitle": "专属路线图",
-        "description": "根据目标考试和当前水平获取个性化学习计划。课程按知识点结构化编排，不遗漏、不重复。"
+        "title": "Learn",
+        "subtitle": "Your Roadmap",
+        "description": "Get a personalized study plan based on your target exam and current skill level. Lessons are structured concept-by-concept, so nothing is skipped or repeated."
       },
       "practice": {
         "step": "03",
-        "title": "练习",
-        "subtitle": "AI引导练习",
-        "description": "在AI教练的引导下做题，AI会通过提问而非直接给答案来帮助你。巧妙的问题帮你发现隐藏的知识盲点。"
+        "title": "Practice",
+        "subtitle": "AI-Guided Problems",
+        "description": "Work through problems with an AI coach that asks guiding questions instead of just giving answers. Tricky questions help reveal hidden misunderstandings."
       },
       "review": {
         "step": "04",
-        "title": "复习",
-        "subtitle": "视频与分析",
-        "description": "当你反复犯同样的错误时，AI会创建个性化视频讲解。你的数据被分析以预测成绩并规划下一步学习内容。"
+        "title": "Review",
+        "subtitle": "Video & Analysis",
+        "description": "When you make repeated mistakes, the AI creates personalized video explanations. Your data is analyzed to predict scores and plan what to study next."
       },
       "test": {
         "step": "05",
-        "title": "测试",
-        "subtitle": "模拟考试",
-        "description": "参加与目标考试格式和时间完全一致的模拟考试。即时评分并提供详细分析，帮你补上每一个漏洞。"
+        "title": "Test",
+        "subtitle": "Exam Simulation",
+        "description": "Take realistic mock exams that mirror the format and timing of your target test. Get instant grading with detailed analytics to close every gap."
       }
     },
-    "loopText": "这个循环不断重复——每一轮都让你更接近目标分数"
+    "loopText": "This cycle repeats — each round gets you closer to your target score"
   },
   "curriculum": {
-    "label": "支持考试",
-    "title": "一个平台，覆盖所有主流考试",
-    "subtitle": "不同考试的数学题看起来不同，但所需的能力是相通的。Mathiter帮你在一个平台上全部掌握。",
+    "label": "Supported Exams",
+    "title": "One Platform, Every Major Exam",
+    "subtitle": "Math problems may look different across exams, but the skills you need are universal. Mathiter helps you master them all from a single platform.",
     "exams": {
-      "sat": { "name": "Digital SAT", "description": "College Board自适应模式" },
-      "igcse": { "name": "IGCSE", "description": "剑桥国际" },
+      "sat": { "name": "Digital SAT", "description": "College Board adaptive format" },
+      "igcse": { "name": "IGCSE", "description": "Cambridge International" },
       "ib": { "name": "IB Math", "description": "AA & AI (SL/HL)" },
       "aLevel": { "name": "A-Level", "description": "Edexcel / CIE" },
-      "csat": { "name": "高考数学", "description": "韩国大学学术能力测试" },
-      "more": { "name": "更多", "description": "AP、GCE O-Level等" }
+      "csat": { "name": "CSAT Math", "description": "Korean College Scholastic Ability Test" },
+      "more": { "name": "More", "description": "AP, GCE O-Level, and more" }
     },
     "statuses": {
-      "live": "已上线",
-      "comingSoon": "即将推出",
-      "planned": "规划中",
-      "expanding": "扩展中"
+      "live": "Live",
+      "comingSoon": "Coming Soon",
+      "planned": "Planned",
+      "expanding": "Expanding"
     }
   },
   "pricing": {
-    "label": "价格",
-    "title": "比一节补习课还便宜",
-    "subtitle": "一整个月的AI智能学习，还不到私教一小时的费用。",
-    "mostPopular": "最受欢迎",
+    "label": "Pricing",
+    "title": "Less Than One Tutoring Session",
+    "subtitle": "A full month of AI-powered learning for less than the cost of a single hour with a private tutor.",
+    "mostPopular": "Most Popular",
     "plans": {
       "basic": {
-        "name": "基础版",
-        "price": "免费",
+        "name": "Basic",
+        "price": "Free",
         "period": "",
-        "description": "基础功能入门体验",
-        "cta": "免费开始",
+        "description": "Get started with essential features",
+        "cta": "Start Free",
         "features": {
-          "0": "自适应诊断测试",
-          "1": "个性化学习路线图",
-          "2": "每日限量练习（5次）",
-          "3": "基础进度追踪",
-          "4": "游戏化（经验值和头像）"
+          "0": "Adaptive diagnostic test",
+          "1": "Personalized study roadmap",
+          "2": "Limited daily practice (5 sessions)",
+          "3": "Basic progress tracking",
+          "4": "Gamification (XP & avatar)"
         }
       },
       "premium": {
-        "name": "高级版",
+        "name": "Premium",
         "price": "$24.99",
-        "period": "/月",
-        "description": "全面使用所有AI功能",
-        "cta": "免费开始诊断",
+        "period": "/month",
+        "description": "Full access to all AI features",
+        "cta": "Start Free Diagnosis",
         "features": {
-          "0": "包含基础版所有功能",
-          "1": "无限AI引导练习",
-          "2": "个性化视频讲解",
-          "3": "深度学习分析",
-          "4": "模拟考试（SAT、IGCSE等）",
-          "5": "成绩预测追踪",
-          "6": "家长仪表盘",
-          "7": "优先客服支持"
+          "0": "Everything in Basic",
+          "1": "Unlimited AI-guided practice",
+          "2": "Personalized video explanations",
+          "3": "Deep learning analytics",
+          "4": "Exam simulations (SAT, IGCSE...)",
+          "5": "Score prediction tracking",
+          "6": "Parent dashboard access",
+          "7": "Priority support"
         }
       },
       "school": {
-        "name": "学校/机构版",
-        "price": "定制",
+        "name": "School / Academy",
+        "price": "Custom",
         "period": "",
-        "description": "适用于学校和培训机构",
-        "cta": "联系销售",
+        "description": "For schools and tutoring centers",
+        "cta": "Contact Sales",
         "features": {
-          "0": "包含高级版所有功能",
-          "1": "批量折扣",
-          "2": "教师管理后台",
-          "3": "作业与评分工具",
-          "4": "便捷学生入驻",
-          "5": "定制报告与分析",
-          "6": "专属客服支持"
+          "0": "All Premium features",
+          "1": "Volume discounts available",
+          "2": "Teacher admin dashboard",
+          "3": "Assignment & grading tools",
+          "4": "Easy student onboarding",
+          "5": "Custom reports & analytics",
+          "6": "Dedicated support"
         }
       }
     }
   },
   "team": {
-    "label": "团队愿景",
-    "title": "让数学进步可预见。",
-    "subtitle": "大多数学生并非「数学差」，而是没有一条清晰的路。",
-    "mission": "Mathiter 将迷茫变成路线图——让学生始终知道下一步该做什么，以及为什么。",
-    "visionLabel": "我们的方法",
-    "vision": "我们将体系化的全球数学课程与韩国应试教育的精髓相结合——打造扎实的概念理解和真正的解题能力，直接转化为更高的考试分数。",
-    "beliefsLabel": "我们的信念",
+    "label": "Team Vision",
+    "title": "Make math progress predictable.",
+    "subtitle": "Most students don't struggle because they're \"bad at math.\" They struggle because they don't have a clear path.",
+    "mission": "Mathiter exists to turn confusion into a roadmap — so students always know what to do next, and why.",
+    "visionLabel": "Our approach",
+    "vision": "We combine a globally structured math curriculum with the intensive exam-prep know-how of Korea's education system — building deep conceptual understanding and real problem-solving skills that translate directly into higher test scores.",
+    "beliefsLabel": "What we believe",
     "beliefs": {
       "direction": {
-        "title": "方向胜过努力。",
-        "description": "正确的顺序比「多做题」更重要。"
+        "title": "Direction beats effort.",
+        "description": "The right sequence matters more than \"doing more.\""
       },
       "feedback": {
-        "title": "反馈建立信心。",
-        "description": "错误应该立刻变成学习机会。"
+        "title": "Feedback builds confidence.",
+        "description": "Mistakes should instantly become learning."
       },
       "consistency": {
-        "title": "坚持靠设计。",
-        "description": "动力需要系统，而非意志力。"
+        "title": "Consistency is designed.",
+        "description": "Motivation needs systems, not willpower."
       }
     },
-    "promisesLabel": "我们的承诺",
+    "promisesLabel": "What we promise",
     "promises": {
       "clarity": {
-        "title": "清晰",
-        "description": "你始终知道下一步最佳行动。"
+        "title": "Clarity",
+        "description": "You always know your next best step."
       },
       "consistency": {
-        "title": "持续",
-        "description": "进步像游戏一样有趣，并成为习惯。"
+        "title": "Consistency",
+        "description": "Progress feels like a game — and becomes a habit."
       },
       "confidence": {
-        "title": "自信",
-        "description": "练习对标考试，成绩自然跟上。"
+        "title": "Confidence",
+        "description": "Practice matches the test, so scores follow."
       }
     },
-    "cta": "免费开始诊断",
-    "tagline": "今天就知道下一步该学什么。"
+    "cta": "Start Free Diagnosis",
+    "tagline": "Know what to study next — today."
   },
   "cta": {
-    "title": "准备好提升数学成绩了吗？",
-    "description": "加入来自国际学校的学生们，用专属AI数学导师更高效地学习。",
-    "ctaPrimary": "免费试用",
-    "ctaSecondary": "联系销售"
+    "title": "Ready to Improve Your Math Score?",
+    "description": "Join students from international schools who are already learning smarter with their personal AI math tutor.",
+    "ctaPrimary": "Start Free Trial",
+    "ctaSecondary": "Contact Sales"
   },
   "footer": {
-    "brandDescription": "面向国际学校学生的AI驱动数学学习平台。Math + Iter（拉丁语：道路）——引导你走向目标分数的旅程。",
+    "brandDescription": "AI-powered math learning platform for international school students. Math + Iter (Latin: path) — guiding your journey to your target score.",
     "product": {
-      "title": "产品",
-      "diagnosticTest": "诊断测试",
-      "aiPractice": "AI引导练习",
-      "examSimulation": "模拟考试",
-      "videoLessons": "视频课程",
-      "pricing": "价格"
+      "title": "Product",
+      "diagnosticTest": "Diagnostic Test",
+      "aiPractice": "AI-Guided Practice",
+      "examSimulation": "Exam Simulation",
+      "videoLessons": "Video Lessons",
+      "pricing": "Pricing"
     },
     "exams": {
-      "title": "支持考试",
+      "title": "Supported Exams",
       "items": {
         "0": "Digital SAT",
         "1": "IGCSE Mathematics",
         "2": "IB Math AA/AI",
         "3": "A-Level Math",
-        "4": "更多即将推出"
+        "4": "More coming soon"
       }
     },
     "contact": {
-      "title": "联系我们"
+      "title": "Contact"
     },
-    "copyright": "© {year} Mathiter. 保留所有权利。",
-    "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款"
+    "copyright": "© {year} Mathiter. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   },
   "languageSwitcher": {
-    "label": "语言",
+    "label": "Language",
     "en": "English",
     "ko": "한국어",
     "ms": "Bahasa Melayu",
     "zh": "中文"
+  },
+  "tutoring": {
+    "metadata": {
+      "title": "1:1 International School Math Tutor — SAT, AP, IB | Mathiter Tutoring",
+      "description": "Bilingual KR/EN 1:1 online math tutoring for international-school students. SAT, AP Calc AB/BC, IB Math AA/AI, IGCSE — by Justin Park, with Mathiter app.",
+      "ogTitle": "1:1 International School Math Tutoring — SAT, AP, IB, IGCSE | Mathiter Tutoring",
+      "ogDescription": "Worried about your child's math as you prepare for international school or move abroad? Justin Park, 8-year specialist, taught 1:1 with the Mathiter Web App."
+    },
+    "nav": {
+      "worry": "Concerns",
+      "process": "How It Works",
+      "system": "The App",
+      "tutor": "About Justin",
+      "pricing": "Pricing",
+      "signIn": "Book Consultation",
+      "app": "Mathiter App →"
+    },
+    "hero": {
+      "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
+      "headline": "<grad>International School Math</grad> <em>1:1 Tutoring</em><br></br>for SAT · AP · IB · IGCSE.",
+      "subHeadline": "I'm an international-school parent myself — facing the same math worries with my own two children every day.\nHaving walked that path first, I've taken many students to 800/800 SAT Math and 5/5 AP Calc BC over 8 years.",
+      "ctaPrimary": "Book a Free Consultation",
+      "ctaSecondary": "How does it work?",
+      "ctaMicrocopy": "● Reply within 1 business hour · Decide after one trial lesson",
+      "trustBadges": {
+        "experience": "8 Years Teaching International-School Math",
+        "results": "SAT 800/800 · AP BC 5/5 — Many Students",
+        "app": "Mathiter Web App Included"
+      },
+      "dashboard": {
+        "url": "app.mathiter.com",
+        "studentName": "Junho Kim · Grade 11",
+        "studentInfo": "SAT Math · Target 800",
+        "trend": "+12 PTS ↑",
+        "predicted": "Predicted",
+        "accuracy": "Accuracy",
+        "sessions": "Sessions",
+        "weeks": "Weeks",
+        "trendTitle": "📈 SAT Math · Score Trend",
+        "trendDelta": "+12 pts in 5 weeks"
+      },
+      "nextSession": {
+        "label": "NEXT SESSION",
+        "value": "Tue · 7:00 PM",
+        "topic": "SAT · Algebra II",
+        "status": "● Confirmed"
+      },
+      "tutorPhotoPlaceholder": "[ TUTOR & STUDENT PHOTO ]"
+    },
+    "worryHook": {
+      "eyebrow": "DOES THIS SOUND FAMILIAR?",
+      "titleLine1": "International school —",
+      "titleLine2": "and math is the biggest worry.",
+      "subtitle": "An 8-year international-school math specialist who is also raising two children\nin international schools abroad — that's who's teaching.",
+      "going": {
+        "tag": "PREPARING TO MOVE ABROAD",
+        "q": "We're moving abroad soon. Can my child follow math taught entirely in English?",
+        "a": "I've watched my own two children — used to Korean math vocabulary — hit walls in English SAT/AP problems. We start building that bridge before you even leave."
+      },
+      "current": {
+        "tag": "INTERNATIONAL SCHOOL IN KOREA",
+        "q": "My child is at an international school but the SAT/AP scores aren't there.",
+        "a": "Understanding it in class and scoring on the test are two different things. We build test-taking strategies in both Korean and English so the gap closes."
+      },
+      "abroad": {
+        "tag": "ALREADY LIVING ABROAD",
+        "q": "We're already abroad and math has become my child's weakest subject.",
+        "a": "1:1 online tutoring delivered via Google Meet inside the Mathiter Web App — distance and time zones don't matter. The same quality you'd get in Korea, delivered to wherever you are."
+      },
+      "meaning": {
+        "title": "Mathiter — <grad>Math + Iter</grad>",
+        "body": "'Iter' is Latin for 'path'. Mathiter walks the entire math journey with your child — from start to finish."
+      },
+      "cta": "Book a Free Consultation"
+    },
+    "process": {
+      "eyebrow": "HOW LESSONS WORK",
+      "titleLine1": "From consultation to regular lessons,",
+      "titleHighlight": "in 4 steps.",
+      "subtitle": "Start with one in-person meeting. Regular lessons run 100% online.\nMeet first — decide later.",
+      "step1": {
+        "number": "01",
+        "title": "Parent Consultation",
+        "duration": "~30 min · Free",
+        "modeTag": "Chat · Call · Meeting",
+        "body": "Tell us about your child via KakaoTalk, phone, or in person — whichever you prefer. A prior level test makes the conversation even more precise."
+      },
+      "step2": {
+        "number": "02",
+        "title": "First Meeting With Your Child",
+        "duration": "~55 min",
+        "modeTag": "● 1× IN-PERSON",
+        "body": "I meet your child face-to-face, walk through the level test results together, and run a light first lesson. A relaxed first meeting to read learning style and rapport."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Decide & Schedule",
+        "duration": "Together",
+        "modeTag": "DECISION",
+        "body": "After both meetings, we decide on regular lessons and weekly schedule together. If it isn't the right fit, you walk away with no obligation."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Online Regular Lessons",
+        "duration": "1–3× / week",
+        "modeTag": "● 100% ONLINE",
+        "body": "1:1 live tutoring via Google Meet inside the Mathiter Web App. Same tutor, same schedule, regardless of where the family lives."
+      },
+      "footerNote": "One in-person meeting to start, then 100% online — the same quality whether you're in Korea or abroad."
+    },
+    "system": {
+      "eyebrow": "THE MATHITER WEB APP",
+      "titleLine1": "Lessons end,",
+      "titleLine2": "but learning keeps going.",
+      "subtitle": "The Mathiter Web App handles your child's self-study and gives parents real-time visibility — both at once.",
+      "students": {
+        "tag": "FOR STUDENTS",
+        "title": "Never get stuck between lessons.",
+        "body": "Review problems, weak-topic drills, AI auto-grading — students keep moving even when the tutor isn't there.",
+        "item1Title": "Full-length SAT / AP / IB / IGCSE practice tests",
+        "item1Body": "Timed, scored, and benchmarked against real exam distributions.",
+        "item2Title": "Automatic incorrect-answer notes",
+        "item2Body": "Every miss is logged with the original solution, the student's attempt, and a step-by-step fix.",
+        "item3Title": "Topic mastery charts",
+        "item3Body": "Algebra, geometry, statistics, trig — see exactly which topics need work."
+      },
+      "studentMockup": {
+        "header": "SAT Math · Practice Test #4",
+        "questionLabel": "Question 14 of 22",
+        "questionText": "What is the value of f(−2)?",
+        "correctLabel": "CORRECT",
+        "pickedLabel": "YOUR PICK",
+        "autoNote": "Auto-note: Sign error when substituting negatives into quadratics. 8 drill problems queued.",
+        "topicMastery": "🎯 Topic Mastery",
+        "updated": "Updated live",
+        "topic1": "Linear Functions",
+        "topic2": "Quadratics",
+        "topic3": "Trigonometry",
+        "topic4": "Statistics",
+        "topic5": "Geometry"
+      },
+      "appCta": "Explore the Mathiter App →",
+      "parents": {
+        "tag": "FOR PARENTS",
+        "title": "Your child's learning, on one screen.",
+        "body": "Schedule, homework progress, lesson attitude, score trajectory — see how things change week-by-week, in real time.",
+        "item1Title": "Schedule + attendance",
+        "item1Body": "Upcoming lessons, completed lessons, absences and reasons — all in one place.",
+        "item2Title": "Homework progress + lesson-attitude notes",
+        "item2Body": "Within 24 hours of each lesson: what was covered, what was mastered, what to watch.",
+        "item3Title": "Score trajectory + predicted score",
+        "item3Body": "Trends, not snapshots. Predicted score updates after every diagnostic."
+      },
+      "parentMockup": {
+        "view": "PARENT VIEW",
+        "title": "Junho's Progress · May 2026",
+        "tuitionStatus": "Tuition: Auto-pay ✓",
+        "predictedLabel": "Predicted SAT Math",
+        "predictedValue": "770",
+        "predictedMax": "/ 800",
+        "trend": "+12 pts ↑",
+        "targetLabel": "Target by Aug 2026",
+        "targetValue": "800",
+        "notesTitle": "📋 Recent Tutor Notes",
+        "viewAll": "View all →",
+        "session1Date": "Tue · May 5",
+        "session1Topic": "Quadratic Applications",
+        "session1Summary": "Strong — ready for next level",
+        "session2Date": "Sat · May 2",
+        "session2Topic": "Trig Identities",
+        "session2Summary": "Watch: still confusing sin² + cos²",
+        "session3Date": "Tue · Apr 29",
+        "session3Topic": "Linear Inequalities",
+        "session3Summary": "Mastered — moving on",
+        "invoiceTitle": "May invoice · $1,080",
+        "invoiceMeta": "12 sessions · Auto-charged May 31",
+        "invoiceStatus": "● PAID"
+      }
+    },
+    "tutor": {
+      "eyebrow": "WHY JUSTIN PARK",
+      "name": "Justin Park",
+      "subtitle": "Founder · SAT & AP Math Specialist · Father of two international-school children",
+      "leadTag": "● FOUNDER",
+      "quote": "I'm a fellow parent — both my children are growing up in international schools abroad.\nThe questions you have about your child's math, I'm asking them every day too.\nMore than \"a tutor who teaches well\", I want to be a companion who walks the path with you.",
+      "stat1Value": "8+ yrs",
+      "stat1Label": "International-school math teaching",
+      "stat2Value": "Many",
+      "stat2Label": "SAT 800 · AP BC 5/5 students",
+      "stat3Value": "2 kids",
+      "stat3Label": "Raised in international schools abroad",
+      "educationTitle": "Education & Experience",
+      "education1": "Whimoon Middle · Joongdong High — grew up as a student in Daechi-dong (12 years, K-12)",
+      "education2": "Korea University · Mathematics (admitted)",
+      "education3": "Hanyang University · Electronic, Electrical & Computer Engineering (graduated)",
+      "education4": "8 years teaching international-school math",
+      "education5": "Two children in international schools abroad (kindergarten → middle/high)",
+      "subjectsTitle": "Subjects Taught",
+      "subject1": "SAT Math (Digital)",
+      "subject2": "AP Calculus AB / BC",
+      "subject3": "AP Statistics",
+      "subject4": "IB Math AA / AI",
+      "subject5": "IGCSE Extended",
+      "subject6": "A-Level / Further Math",
+      "subject7": "Korean CSAT Math",
+      "credentialLabel": "Specialty",
+      "credentialValue": "SAT · AP Calc BC",
+      "photoPlaceholder": "[ FOUNDER PORTRAIT ]"
+    },
+    "pricing": {
+      "eyebrow": "PRICING",
+      "titleLine1": "Transparent per-session rate.",
+      "titleHighlight": "No packages.",
+      "subtitle": "Pay per session. Pause or cancel anytime.",
+      "currencySymbol": "$",
+      "currencyCode": "USD",
+      "perSession": "/ session",
+      "sessionLength": "1 session = 55 min · 1:1",
+      "highlightTag": "Most Requested",
+      "primaryCta": "Book a Free Consultation",
+      "secondaryCta": "Inquire about this plan",
+      "paymentNote": "💳 Card · Bank transfer accepted",
+      "elem": {
+        "name": "Elementary",
+        "desc": "Math foundations · English-math adjustment",
+        "price": "60",
+        "feat1": "Bilingual instruction (EN / KR)",
+        "feat2": "Weekly homework + Mathiter App self-study",
+        "feat3": "Parent dashboard access",
+        "feat4": "Monthly progress report"
+      },
+      "middle": {
+        "name": "Middle School",
+        "desc": "Pre-Algebra · Algebra · Geometry foundations",
+        "price": "75",
+        "feat1": "Everything in Elementary",
+        "feat2": "IGCSE foundation prep",
+        "feat3": "Topic mastery analytics",
+        "feat4": "Monthly progress report"
+      },
+      "high": {
+        "name": "High School / SAT / AP",
+        "desc": "SAT · AP Calculus · IB Math · IGCSE Extended",
+        "price": "90",
+        "feat1": "Everything in Middle School",
+        "feat2": "Full-length adaptive practice tests",
+        "feat3": "Score prediction tracking",
+        "feat4": "AP / IB exam-style problem sets",
+        "feat5": "Priority scheduling (evenings + weekends)"
+      },
+      "groupBanner": {
+        "kicker": "GROUP DISCOUNT",
+        "titleLine1": "Form a group of up to 3 students",
+        "titleLine2Prefix": "and get ",
+        "titleLine2Highlight": "30% OFF",
+        "titleLine2Suffix": " per student.",
+        "cta": "Form a Group"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions parents ask first.",
+      "q1": "Do you cover PSAT prep as well?",
+      "a1": "Yes. PSAT 8/9, PSAT 10, and the PSAT/NMSQT are all covered under the High School plan — same rate, same tutor, same dashboard. Most students start PSAT-focused 10–14 weeks before the October test window.",
+      "q2": "Does the Mathiter Web App require installation?",
+      "a2": "No. The Mathiter Web App is browser-based (app.mathiter.com) — nothing to install or update. It works on tablet, laptop, desktop, and iPad.",
+      "q3": "What if my child lives abroad, or our family is preparing to relocate?",
+      "a3": "That is exactly why all regular lessons run 100% online. Whether the family relocates abroad or briefly leaves Korea on a holiday, the same tutor and the same schedule continue uninterrupted. Time zones — both Korea and the destination country — are accommodated.",
+      "q4": "Do you teach all the lessons yourself?",
+      "a4": "Yes. All current 1:1 lessons are taught directly by the founder, Justin Park. He has taught international-school math for 8 years, with many students scoring 800/800 on SAT Math and 5/5 on AP Calculus BC, and he is currently raising two children in international schools abroad. Future tutors will only be added at the same bar (international curriculum experience + perfect-score track record).",
+      "q5": "Can we trial a session before signing up?",
+      "a5": "Yes. After the free 30-minute consultation, your child has one trial lesson (55 min, in person) — and only then do you decide whether to commit. The trial is run exactly like a regular lesson.",
+      "q6": "Which curricula are supported beyond SAT and AP?",
+      "a6": "IB Math (AA/AI, SL & HL), IGCSE Extended Math, Cambridge A-Level Math and Further Math, and Korean CSAT Math are all supported. Each curriculum has its own dedicated content track inside the Web App.",
+      "q7": "How does payment work?",
+      "a7": "Card and bank transfer are both accepted. Monthly auto-pay is the default; per-session billing is available on request."
+    },
+    "finalCta": {
+      "tag": "● NOW ACCEPTING NEW STUDENTS",
+      "titleLine1": "If you no longer want math",
+      "titleLine2": "to be your child's weak point.",
+      "subtitle": "Book a free 30-minute consultation. We listen to your child's situation and propose the right path forward — no obligation.",
+      "whatsapp": "Chat via WhatsApp",
+      "kakao": "Chat via KakaoTalk",
+      "trust1": "● Reply within 1 business hour",
+      "trust2": "● Decide after one trial lesson",
+      "trust3": "● Card · Bank transfer accepted"
+    },
+    "footer": {
+      "by": "Mathiter Tutoring · by Elicova · © 2026",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "app": "app.mathiter.com",
+      "productPage": "About the Mathiter App",
+      "tagline": "Math + Iter — guiding the math path."
+    },
+    "modal": {
+      "title": "We'll be in touch shortly.",
+      "body": "We'll reply within 1 business hour with a free 30-minute consultation slot. Just tell us about your child — no commitment.",
+      "ok": "Got it"
+    },
+    "contact": {
+      "metadata": {
+        "title": "Book Free Consultation | Mathiter Tutoring 1:1 International School Math",
+        "description": "Book a free consultation with Mathiter Tutoring. Pick whichever channel suits you — phone, KakaoTalk, email, or message form. We reply within 1 business hour."
+      },
+      "back": "← Back to home",
+      "header": {
+        "eyebrow": "● BOOK A FREE CONSULTATION",
+        "title": "Reach out via your preferred channel.",
+        "subtitle": "We reply within 1 business hour.\nWe listen to your child's situation and propose the right path forward."
+      },
+      "phone": {
+        "tag": "📞 Phone",
+        "title": "Call us directly",
+        "value": "+82-10-XXXX-XXXX",
+        "hint": "Weekdays 09:00 — 22:00 KST · Weekends by arrangement",
+        "cta": "Call now"
+      },
+      "kakao": {
+        "tag": "💬 KakaoTalk",
+        "title": "Message via KakaoTalk",
+        "value": "@mathiter",
+        "hint": "Open chat or ID search",
+        "cta": "Open KakaoTalk"
+      },
+      "email": {
+        "tag": "✉️ Email",
+        "title": "Email us",
+        "value": "contact@mathiter.com",
+        "hint": "Reply within 24 hours",
+        "cta": "Compose email"
+      },
+      "form": {
+        "tag": "📝 Leave a message",
+        "title": "Or write to us right here",
+        "subtitle": "Leave your name, contact, and a brief situation — Justin Park will respond personally.",
+        "nameLabel": "Parent's name",
+        "namePlaceholder": "e.g. Min-ji Kim",
+        "contactLabel": "Contact (phone or email)",
+        "contactPlaceholder": "e.g. +82-10-XXXX-XXXX or example@email.com",
+        "studentLabel": "Child's grade / target exam",
+        "studentPlaceholder": "e.g. Year 10 IGCSE / Grade 10 SAT prep",
+        "messageLabel": "What would you like to discuss? (optional)",
+        "messagePlaceholder": "Current situation, your child's weak spots, or any questions.",
+        "submit": "Send",
+        "submitNote": "※ Submit endpoint will be wired soon. In the meantime, please reach out via one of the channels above.",
+        "agreement": "By submitting, you agree to our collection and use of personal information."
+      },
+      "trust": {
+        "reply": "● Reply within 1 business hour",
+        "trial": "● Decide after one trial lesson",
+        "payment": "● Card / bank transfer accepted",
+        "refund": "● Full refund after 1st session"
+      },
+      "tutor": {
+        "title": "You'll be talking with",
+        "name": "Justin Park (Founder, Mathiter Tutoring)",
+        "summary": "8 years teaching international-school math 1:1 · many students with SAT 800 / AP BC 5 · raising two children in international schools abroad",
+        "education": "Korea University Mathematics (admitted) · Hanyang University EECE (graduated) · Whimoon Middle / Joongdong High"
+      }
+    }
   }
 }

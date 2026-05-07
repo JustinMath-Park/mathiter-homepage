@@ -279,5 +279,367 @@
     "ko": "한국어",
     "ms": "Bahasa Melayu",
     "zh": "中文"
+  },
+  "tutoring": {
+    "metadata": {
+      "title": "1:1 International School Math Tutor — SAT, AP, IB | Mathiter Tutoring",
+      "description": "Bilingual KR/EN 1:1 online math tutoring for international-school students. SAT, AP Calc AB/BC, IB Math AA/AI, IGCSE — by Justin Park, with Mathiter app.",
+      "ogTitle": "1:1 International School Math Tutoring — SAT, AP, IB, IGCSE | Mathiter Tutoring",
+      "ogDescription": "Worried about your child's math as you prepare for international school or move abroad? Justin Park, 8-year specialist, taught 1:1 with the Mathiter Web App."
+    },
+    "nav": {
+      "worry": "Concerns",
+      "process": "How It Works",
+      "system": "The App",
+      "tutor": "About Justin",
+      "pricing": "Pricing",
+      "signIn": "Book Consultation",
+      "app": "Mathiter App →"
+    },
+    "hero": {
+      "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
+      "headline": "<grad>International School Math</grad> <em>1:1 Tutoring</em><br></br>for SAT · AP · IB · IGCSE.",
+      "subHeadline": "I'm an international-school parent myself — facing the same math worries with my own two children every day.\nHaving walked that path first, I've taken many students to 800/800 SAT Math and 5/5 AP Calc BC over 8 years.",
+      "ctaPrimary": "Book a Free Consultation",
+      "ctaSecondary": "How does it work?",
+      "ctaMicrocopy": "● Reply within 1 business hour · Decide after one trial lesson",
+      "trustBadges": {
+        "experience": "8 Years Teaching International-School Math",
+        "results": "SAT 800/800 · AP BC 5/5 — Many Students",
+        "app": "Mathiter Web App Included"
+      },
+      "dashboard": {
+        "url": "app.mathiter.com",
+        "studentName": "Junho Kim · Grade 11",
+        "studentInfo": "SAT Math · Target 800",
+        "trend": "+12 PTS ↑",
+        "predicted": "Predicted",
+        "accuracy": "Accuracy",
+        "sessions": "Sessions",
+        "weeks": "Weeks",
+        "trendTitle": "📈 SAT Math · Score Trend",
+        "trendDelta": "+12 pts in 5 weeks"
+      },
+      "nextSession": {
+        "label": "NEXT SESSION",
+        "value": "Tue · 7:00 PM",
+        "topic": "SAT · Algebra II",
+        "status": "● Confirmed"
+      },
+      "tutorPhotoPlaceholder": "[ TUTOR & STUDENT PHOTO ]"
+    },
+    "worryHook": {
+      "eyebrow": "DOES THIS SOUND FAMILIAR?",
+      "titleLine1": "International school —",
+      "titleLine2": "and math is the biggest worry.",
+      "subtitle": "An 8-year international-school math specialist who is also raising two children\nin international schools abroad — that's who's teaching.",
+      "going": {
+        "tag": "PREPARING TO MOVE ABROAD",
+        "q": "We're moving abroad soon. Can my child follow math taught entirely in English?",
+        "a": "I've watched my own two children — used to Korean math vocabulary — hit walls in English SAT/AP problems. We start building that bridge before you even leave."
+      },
+      "current": {
+        "tag": "INTERNATIONAL SCHOOL IN KOREA",
+        "q": "My child is at an international school but the SAT/AP scores aren't there.",
+        "a": "Understanding it in class and scoring on the test are two different things. We build test-taking strategies in both Korean and English so the gap closes."
+      },
+      "abroad": {
+        "tag": "ALREADY LIVING ABROAD",
+        "q": "We're already abroad and math has become my child's weakest subject.",
+        "a": "1:1 online tutoring delivered via Google Meet inside the Mathiter Web App — distance and time zones don't matter. The same quality you'd get in Korea, delivered to wherever you are."
+      },
+      "meaning": {
+        "title": "Mathiter — <grad>Math + Iter</grad>",
+        "body": "'Iter' is Latin for 'path'. Mathiter walks the entire math journey with your child — from start to finish."
+      },
+      "cta": "Book a Free Consultation"
+    },
+    "process": {
+      "eyebrow": "HOW LESSONS WORK",
+      "titleLine1": "From consultation to regular lessons,",
+      "titleHighlight": "in 4 steps.",
+      "subtitle": "Start with one in-person meeting. Regular lessons run 100% online.\nMeet first — decide later.",
+      "step1": {
+        "number": "01",
+        "title": "Parent Consultation",
+        "duration": "~30 min · Free",
+        "modeTag": "Chat · Call · Meeting",
+        "body": "Tell us about your child via KakaoTalk, phone, or in person — whichever you prefer. A prior level test makes the conversation even more precise."
+      },
+      "step2": {
+        "number": "02",
+        "title": "First Meeting With Your Child",
+        "duration": "~55 min",
+        "modeTag": "● 1× IN-PERSON",
+        "body": "I meet your child face-to-face, walk through the level test results together, and run a light first lesson. A relaxed first meeting to read learning style and rapport."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Decide & Schedule",
+        "duration": "Together",
+        "modeTag": "DECISION",
+        "body": "After both meetings, we decide on regular lessons and weekly schedule together. If it isn't the right fit, you walk away with no obligation."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Online Regular Lessons",
+        "duration": "1–3× / week",
+        "modeTag": "● 100% ONLINE",
+        "body": "1:1 live tutoring via Google Meet inside the Mathiter Web App. Same tutor, same schedule, regardless of where the family lives."
+      },
+      "footerNote": "One in-person meeting to start, then 100% online — the same quality whether you're in Korea or abroad."
+    },
+    "system": {
+      "eyebrow": "THE MATHITER WEB APP",
+      "titleLine1": "Lessons end,",
+      "titleLine2": "but learning keeps going.",
+      "subtitle": "The Mathiter Web App handles your child's self-study and gives parents real-time visibility — both at once.",
+      "students": {
+        "tag": "FOR STUDENTS",
+        "title": "Never get stuck between lessons.",
+        "body": "Review problems, weak-topic drills, AI auto-grading — students keep moving even when the tutor isn't there.",
+        "item1Title": "Full-length SAT / AP / IB / IGCSE practice tests",
+        "item1Body": "Timed, scored, and benchmarked against real exam distributions.",
+        "item2Title": "Automatic incorrect-answer notes",
+        "item2Body": "Every miss is logged with the original solution, the student's attempt, and a step-by-step fix.",
+        "item3Title": "Topic mastery charts",
+        "item3Body": "Algebra, geometry, statistics, trig — see exactly which topics need work."
+      },
+      "studentMockup": {
+        "header": "SAT Math · Practice Test #4",
+        "questionLabel": "Question 14 of 22",
+        "questionText": "What is the value of f(−2)?",
+        "correctLabel": "CORRECT",
+        "pickedLabel": "YOUR PICK",
+        "autoNote": "Auto-note: Sign error when substituting negatives into quadratics. 8 drill problems queued.",
+        "topicMastery": "🎯 Topic Mastery",
+        "updated": "Updated live",
+        "topic1": "Linear Functions",
+        "topic2": "Quadratics",
+        "topic3": "Trigonometry",
+        "topic4": "Statistics",
+        "topic5": "Geometry"
+      },
+      "appCta": "Explore the Mathiter App →",
+      "parents": {
+        "tag": "FOR PARENTS",
+        "title": "Your child's learning, on one screen.",
+        "body": "Schedule, homework progress, lesson attitude, score trajectory — see how things change week-by-week, in real time.",
+        "item1Title": "Schedule + attendance",
+        "item1Body": "Upcoming lessons, completed lessons, absences and reasons — all in one place.",
+        "item2Title": "Homework progress + lesson-attitude notes",
+        "item2Body": "Within 24 hours of each lesson: what was covered, what was mastered, what to watch.",
+        "item3Title": "Score trajectory + predicted score",
+        "item3Body": "Trends, not snapshots. Predicted score updates after every diagnostic."
+      },
+      "parentMockup": {
+        "view": "PARENT VIEW",
+        "title": "Junho's Progress · May 2026",
+        "tuitionStatus": "Tuition: Auto-pay ✓",
+        "predictedLabel": "Predicted SAT Math",
+        "predictedValue": "770",
+        "predictedMax": "/ 800",
+        "trend": "+12 pts ↑",
+        "targetLabel": "Target by Aug 2026",
+        "targetValue": "800",
+        "notesTitle": "📋 Recent Tutor Notes",
+        "viewAll": "View all →",
+        "session1Date": "Tue · May 5",
+        "session1Topic": "Quadratic Applications",
+        "session1Summary": "Strong — ready for next level",
+        "session2Date": "Sat · May 2",
+        "session2Topic": "Trig Identities",
+        "session2Summary": "Watch: still confusing sin² + cos²",
+        "session3Date": "Tue · Apr 29",
+        "session3Topic": "Linear Inequalities",
+        "session3Summary": "Mastered — moving on",
+        "invoiceTitle": "May invoice · $1,080",
+        "invoiceMeta": "12 sessions · Auto-charged May 31",
+        "invoiceStatus": "● PAID"
+      }
+    },
+    "tutor": {
+      "eyebrow": "WHY JUSTIN PARK",
+      "name": "Justin Park",
+      "subtitle": "Founder · SAT & AP Math Specialist · Father of two international-school children",
+      "leadTag": "● FOUNDER",
+      "quote": "I'm a fellow parent — both my children are growing up in international schools abroad.\nThe questions you have about your child's math, I'm asking them every day too.\nMore than \"a tutor who teaches well\", I want to be a companion who walks the path with you.",
+      "stat1Value": "8+ yrs",
+      "stat1Label": "International-school math teaching",
+      "stat2Value": "Many",
+      "stat2Label": "SAT 800 · AP BC 5/5 students",
+      "stat3Value": "2 kids",
+      "stat3Label": "Raised in international schools abroad",
+      "educationTitle": "Education & Experience",
+      "education1": "Whimoon Middle · Joongdong High — grew up as a student in Daechi-dong (12 years, K-12)",
+      "education2": "Korea University · Mathematics (admitted)",
+      "education3": "Hanyang University · Electronic, Electrical & Computer Engineering (graduated)",
+      "education4": "8 years teaching international-school math",
+      "education5": "Two children in international schools abroad (kindergarten → middle/high)",
+      "subjectsTitle": "Subjects Taught",
+      "subject1": "SAT Math (Digital)",
+      "subject2": "AP Calculus AB / BC",
+      "subject3": "AP Statistics",
+      "subject4": "IB Math AA / AI",
+      "subject5": "IGCSE Extended",
+      "subject6": "A-Level / Further Math",
+      "subject7": "Korean CSAT Math",
+      "credentialLabel": "Specialty",
+      "credentialValue": "SAT · AP Calc BC",
+      "photoPlaceholder": "[ FOUNDER PORTRAIT ]"
+    },
+    "pricing": {
+      "eyebrow": "PRICING",
+      "titleLine1": "Transparent per-session rate.",
+      "titleHighlight": "No packages.",
+      "subtitle": "Pay per session. Pause or cancel anytime.",
+      "currencySymbol": "$",
+      "currencyCode": "USD",
+      "perSession": "/ session",
+      "sessionLength": "1 session = 55 min · 1:1",
+      "highlightTag": "Most Requested",
+      "primaryCta": "Book a Free Consultation",
+      "secondaryCta": "Inquire about this plan",
+      "paymentNote": "💳 Card · Bank transfer accepted",
+      "elem": {
+        "name": "Elementary",
+        "desc": "Math foundations · English-math adjustment",
+        "price": "60",
+        "feat1": "Bilingual instruction (EN / KR)",
+        "feat2": "Weekly homework + Mathiter App self-study",
+        "feat3": "Parent dashboard access",
+        "feat4": "Monthly progress report"
+      },
+      "middle": {
+        "name": "Middle School",
+        "desc": "Pre-Algebra · Algebra · Geometry foundations",
+        "price": "75",
+        "feat1": "Everything in Elementary",
+        "feat2": "IGCSE foundation prep",
+        "feat3": "Topic mastery analytics",
+        "feat4": "Monthly progress report"
+      },
+      "high": {
+        "name": "High School / SAT / AP",
+        "desc": "SAT · AP Calculus · IB Math · IGCSE Extended",
+        "price": "90",
+        "feat1": "Everything in Middle School",
+        "feat2": "Full-length adaptive practice tests",
+        "feat3": "Score prediction tracking",
+        "feat4": "AP / IB exam-style problem sets",
+        "feat5": "Priority scheduling (evenings + weekends)"
+      },
+      "groupBanner": {
+        "kicker": "GROUP DISCOUNT",
+        "titleLine1": "Form a group of up to 3 students",
+        "titleLine2Prefix": "and get ",
+        "titleLine2Highlight": "30% OFF",
+        "titleLine2Suffix": " per student.",
+        "cta": "Form a Group"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions parents ask first.",
+      "q1": "Do you cover PSAT prep as well?",
+      "a1": "Yes. PSAT 8/9, PSAT 10, and the PSAT/NMSQT are all covered under the High School plan — same rate, same tutor, same dashboard. Most students start PSAT-focused 10–14 weeks before the October test window.",
+      "q2": "Does the Mathiter Web App require installation?",
+      "a2": "No. The Mathiter Web App is browser-based (app.mathiter.com) — nothing to install or update. It works on tablet, laptop, desktop, and iPad.",
+      "q3": "What if my child lives abroad, or our family is preparing to relocate?",
+      "a3": "That is exactly why all regular lessons run 100% online. Whether the family relocates abroad or briefly leaves Korea on a holiday, the same tutor and the same schedule continue uninterrupted. Time zones — both Korea and the destination country — are accommodated.",
+      "q4": "Do you teach all the lessons yourself?",
+      "a4": "Yes. All current 1:1 lessons are taught directly by the founder, Justin Park. He has taught international-school math for 8 years, with many students scoring 800/800 on SAT Math and 5/5 on AP Calculus BC, and he is currently raising two children in international schools abroad. Future tutors will only be added at the same bar (international curriculum experience + perfect-score track record).",
+      "q5": "Can we trial a session before signing up?",
+      "a5": "Yes. After the free 30-minute consultation, your child has one trial lesson (55 min, in person) — and only then do you decide whether to commit. The trial is run exactly like a regular lesson.",
+      "q6": "Which curricula are supported beyond SAT and AP?",
+      "a6": "IB Math (AA/AI, SL & HL), IGCSE Extended Math, Cambridge A-Level Math and Further Math, and Korean CSAT Math are all supported. Each curriculum has its own dedicated content track inside the Web App.",
+      "q7": "How does payment work?",
+      "a7": "Card and bank transfer are both accepted. Monthly auto-pay is the default; per-session billing is available on request."
+    },
+    "finalCta": {
+      "tag": "● NOW ACCEPTING NEW STUDENTS",
+      "titleLine1": "If you no longer want math",
+      "titleLine2": "to be your child's weak point.",
+      "subtitle": "Book a free 30-minute consultation. We listen to your child's situation and propose the right path forward — no obligation.",
+      "whatsapp": "Chat via WhatsApp",
+      "kakao": "Chat via KakaoTalk",
+      "trust1": "● Reply within 1 business hour",
+      "trust2": "● Decide after one trial lesson",
+      "trust3": "● Card · Bank transfer accepted"
+    },
+    "footer": {
+      "by": "Mathiter Tutoring · by Elicova · © 2026",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "app": "app.mathiter.com",
+      "productPage": "About the Mathiter App",
+      "tagline": "Math + Iter — guiding the math path."
+    },
+    "modal": {
+      "title": "We'll be in touch shortly.",
+      "body": "We'll reply within 1 business hour with a free 30-minute consultation slot. Just tell us about your child — no commitment.",
+      "ok": "Got it"
+    },
+    "contact": {
+      "metadata": {
+        "title": "Book Free Consultation | Mathiter Tutoring 1:1 International School Math",
+        "description": "Book a free consultation with Mathiter Tutoring. Pick whichever channel suits you — phone, KakaoTalk, email, or message form. We reply within 1 business hour."
+      },
+      "back": "← Back to home",
+      "header": {
+        "eyebrow": "● BOOK A FREE CONSULTATION",
+        "title": "Reach out via your preferred channel.",
+        "subtitle": "We reply within 1 business hour.\nWe listen to your child's situation and propose the right path forward."
+      },
+      "phone": {
+        "tag": "📞 Phone",
+        "title": "Call us directly",
+        "value": "+82-10-XXXX-XXXX",
+        "hint": "Weekdays 09:00 — 22:00 KST · Weekends by arrangement",
+        "cta": "Call now"
+      },
+      "kakao": {
+        "tag": "💬 KakaoTalk",
+        "title": "Message via KakaoTalk",
+        "value": "@mathiter",
+        "hint": "Open chat or ID search",
+        "cta": "Open KakaoTalk"
+      },
+      "email": {
+        "tag": "✉️ Email",
+        "title": "Email us",
+        "value": "contact@mathiter.com",
+        "hint": "Reply within 24 hours",
+        "cta": "Compose email"
+      },
+      "form": {
+        "tag": "📝 Leave a message",
+        "title": "Or write to us right here",
+        "subtitle": "Leave your name, contact, and a brief situation — Justin Park will respond personally.",
+        "nameLabel": "Parent's name",
+        "namePlaceholder": "e.g. Min-ji Kim",
+        "contactLabel": "Contact (phone or email)",
+        "contactPlaceholder": "e.g. +82-10-XXXX-XXXX or example@email.com",
+        "studentLabel": "Child's grade / target exam",
+        "studentPlaceholder": "e.g. Year 10 IGCSE / Grade 10 SAT prep",
+        "messageLabel": "What would you like to discuss? (optional)",
+        "messagePlaceholder": "Current situation, your child's weak spots, or any questions.",
+        "submit": "Send",
+        "submitNote": "※ Submit endpoint will be wired soon. In the meantime, please reach out via one of the channels above.",
+        "agreement": "By submitting, you agree to our collection and use of personal information."
+      },
+      "trust": {
+        "reply": "● Reply within 1 business hour",
+        "trial": "● Decide after one trial lesson",
+        "payment": "● Card / bank transfer accepted",
+        "refund": "● Full refund after 1st session"
+      },
+      "tutor": {
+        "title": "You'll be talking with",
+        "name": "Justin Park (Founder, Mathiter Tutoring)",
+        "summary": "8 years teaching international-school math 1:1 · many students with SAT 800 / AP BC 5 · raising two children in international schools abroad",
+        "education": "Korea University Mathematics (admitted) · Hanyang University EECE (graduated) · Whimoon Middle / Joongdong High"
+      }
+    }
   }
 }
