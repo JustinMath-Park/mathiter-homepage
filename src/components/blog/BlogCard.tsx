@@ -46,7 +46,6 @@ export default function BlogCard({ post, variant = "default" }: Props) {
           </h3>
           <p className="text-xs text-muted mt-1">
             {formatDate(post.publishedAt, post.locale)}
-            {post.readingTime ? ` · ${post.readingTime}분` : ""}
           </p>
         </div>
       </a>
@@ -80,9 +79,6 @@ export default function BlogCard({ post, variant = "default" }: Props) {
           <span className="text-muted">
             {formatDate(post.publishedAt, post.locale)}
           </span>
-          {post.readingTime ? (
-            <span className="text-muted">· {post.readingTime}분</span>
-          ) : null}
         </div>
         <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-2">
           {post.title}

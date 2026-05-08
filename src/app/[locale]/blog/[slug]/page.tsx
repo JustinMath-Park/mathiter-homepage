@@ -188,12 +188,6 @@ export default async function BlogPostPage({ params }: Props) {
               <span className="text-muted">
                 {formatDate(post.publishedAt, blogLocale)}
               </span>
-              {post.readingTime ? (
-                <span className="text-muted">
-                  · {post.readingTime}
-                  {blogLocale === "ko" ? "분 읽기" : " min read"}
-                </span>
-              ) : null}
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
               {post.title}
