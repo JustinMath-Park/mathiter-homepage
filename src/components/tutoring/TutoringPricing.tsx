@@ -13,6 +13,13 @@ type Tier = {
   prevName: string | null;
 };
 
+const PREV_ICON: Record<TierKey, string> = {
+  basic: "",
+  advanced: "🚗",
+  pro: "🚙",
+  master: "🏎️",
+};
+
 export default function TutoringPricing() {
   const t = useTranslations("tutoring.pricing");
 
@@ -21,7 +28,7 @@ export default function TutoringPricing() {
       k: "basic",
       hi: false,
       hasGroup: false,
-      features: ["feat1", "feat2", "feat3", "feat4", "feat5"],
+      features: ["feat1", "feat2", "feat3", "feat4", "feat5", "feat6"],
       prevName: null,
     },
     {
@@ -301,6 +308,7 @@ export default function TutoringPricing() {
                     alignSelf: "flex-start",
                   }}
                 >
+                  {PREV_ICON[tier.k] ? `${PREV_ICON[tier.k]} ` : ""}
                   {t("includesPrev", { prevName: tier.prevName })}
                 </div>
               )}
