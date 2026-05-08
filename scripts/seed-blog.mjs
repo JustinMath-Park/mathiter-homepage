@@ -13,15 +13,16 @@
  * Adding a new post = just edit content/blog/posts.json and rerun.
  */
 
-import { readFileSync } from "node:fs";
-import { resolve, dirname } from "node:path";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
+import matter from "gray-matter";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
-const POSTS_FILE = resolve(ROOT, "content/blog/posts.json");
+const POSTS_DIR = resolve(ROOT, "content/blog/posts");
 
 function loadEnv() {
   try {
@@ -70,16 +71,21 @@ if (getApps().length === 0) {
 
 const db = getFirestore();
 
-let posts;
-try {
-  posts = JSON.parse(readFileSync(POSTS_FILE, "utf8"));
-} catch (err) {
-  console.error(`❌ Failed to read ${POSTS_FILE}:`, err);
+if (!existsSync(POSTS_DIR)) {
+  console.error(`❌ Posts directory not found: ${POSTS_DIR}`);
   process.exit(1);
 }
 
-if (!Array.isArray(posts)) {
-  console.error("❌ content/blog/posts.json must be a JSON array.");
+const posts = readdirSync(POSTS_DIR)
+  .filter((f) => f.endsWith(".md"))
+  .map((file) => {
+    const raw = readFileSync(join(POSTS_DIR, file), "utf8");
+    const { data, content } = matter(raw);
+    return { ...data, content };
+  });
+
+if (posts.length === 0) {
+  console.error(`❌ No .md files found in ${POSTS_DIR}`);
   process.exit(1);
 }
 
