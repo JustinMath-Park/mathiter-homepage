@@ -154,7 +154,8 @@ export default function ContactPage() {
                 value={kakaoId}
                 hint={t("kakao.hint")}
                 cta={t("kakao.cta")}
-                href="#kakao-placeholder"
+                href={t("kakao.url")}
+                external
                 accent="#92400e"
                 chipBg="#fef3c7"
               />
@@ -468,12 +469,14 @@ type ChannelCardProps = {
   href: string;
   accent: string;
   chipBg: string;
+  external?: boolean;
 };
 
-function ChannelCard({ tag, title, value, hint, cta, href, accent, chipBg }: ChannelCardProps) {
+function ChannelCard({ tag, title, value, hint, cta, href, accent, chipBg, external }: ChannelCardProps) {
   return (
     <a
       href={href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       style={{
         display: "block",
         background: "#fff",
