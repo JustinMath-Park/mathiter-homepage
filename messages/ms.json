@@ -7,11 +7,11 @@
   },
   "header": {
     "nav": {
-      "whyMathiter": "Kenapa Mathiter",
-      "features": "Ciri-ciri",
-      "howItWorks": "Cara Belajar",
-      "pricing": "Harga",
-      "team": "Visi Kami",
+      "whyMathiter": "Why Mathiter",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "team": "Our Vision",
       "blog": "Blog"
     },
     "signIn": "Sign In",
@@ -271,13 +271,13 @@
       "title": "Contact"
     },
     "resources": {
-      "title": "Sumber",
+      "title": "Resources",
       "blog": "Blog",
-      "contact": "Perundingan Percuma"
+      "contact": "Free Consultation"
     },
-    "copyright": "© {year} Mathiter. Hak cipta terpelihara.",
-    "privacyPolicy": "Dasar Privasi",
-    "termsOfService": "Terma Perkhidmatan"
+    "copyright": "© {year} Mathiter. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -496,54 +496,101 @@
       "photoPlaceholder": "[ FOUNDER PORTRAIT ]"
     },
     "pricing": {
-      "eyebrow": "PRICING",
-      "titleLine1": "Transparent per-session rate.",
-      "titleHighlight": "No packages.",
-      "subtitle": "Pay per session. Pause or cancel anytime.",
-      "currencySymbol": "$",
-      "currencyCode": "USD",
-      "perSession": "/ session",
-      "sessionLength": "1 session = 55 min · 1:1",
-      "highlightTag": "Most Requested",
+      "eyebrow": "WHY MATHITER TUTORING",
+      "valueTitleLine1": "This is not a 2-hour-a-week tutoring session.",
+      "valueTitleLine2": "It is a hybrid system that tracks your child's math",
+      "valueTitleHighlight": "24 hours a day.",
+      "valueSubtitle": "A premium monthly package combining daily data analysis through our proprietary AI learning platform 'Mathiter'\nwith certified expert 1:1 video coaching.",
+      "pillar1Icon": "📚",
+      "pillar1Title": "1:1 Video Coaching",
+      "pillar1Body": "2–3× per week · 55 min each",
+      "pillar2Icon": "📊",
+      "pillar2Title": "Daily AI Tracking",
+      "pillar2Body": "Mathiter App + weekly platform check-ins",
+      "pillar3Icon": "📋",
+      "pillar3Title": "Weekly Reports",
+      "pillar3Body": "Parent dashboard for progress, attitude, scores",
+      "tableEyebrow": "MONTHLY PACKAGES",
+      "tableTitleLine1": "Four tiers,",
+      "tableTitleHighlight": "by grade and exam.",
+      "tableSubtitle": "Each tier automatically includes everything from the previous tier.",
+      "currencySymbol": "₩",
+      "currencyCode": "KRW",
+      "perMonth": "/ month",
+      "groupPriceLabel": "Per person in a group of 3",
+      "noGroupLabel": "1:1 only (no group discount)",
+      "highlightTag": "👑 BEST",
       "primaryCta": "Book a Free Consultation",
-      "secondaryCta": "Inquire about this plan",
-      "paymentNote": "💳 Card · Bank transfer accepted",
-      "elem": {
-        "name": "Elementary",
-        "desc": "Math foundations · English-math adjustment",
-        "price": "60",
-        "feat1": "Bilingual instruction (EN / KR)",
-        "feat2": "Weekly homework + Mathiter App self-study",
-        "feat3": "Parent dashboard access",
-        "feat4": "Monthly progress report"
+      "secondaryCta": "Inquire about this tier",
+      "includesPrev": "🚗 Includes everything in {prevName}",
+      "basic": {
+        "name": "Basic",
+        "stage": "Elementary · Foundations",
+        "desc": "Build calculation fluency and study habits",
+        "price": "600,000",
+        "monthly": "8 sessions / month (2× weekly) · 55 min 1:1",
+        "feat1": "Unlimited Mathiter Learning App",
+        "feat2": "Daily arithmetic and core-concept practice",
+        "feat3": "1:1 correction of bad solving habits",
+        "feat4": "Parent dashboard (schedule, homework, attitude)",
+        "feat5": "Weekly progress report"
       },
-      "middle": {
-        "name": "Middle School",
-        "desc": "Pre-Algebra · Algebra · Geometry foundations",
-        "price": "75",
-        "feat1": "Everything in Elementary",
-        "feat2": "IGCSE foundation prep",
-        "feat3": "Topic mastery analytics",
-        "feat4": "Monthly progress report"
+      "advanced": {
+        "name": "Advanced",
+        "stage": "Middle School · IGCSE",
+        "desc": "Deep math concepts + IGCSE prep",
+        "price": "860,000",
+        "monthly": "8 sessions / month (2× weekly) · 55 min 1:1",
+        "groupPrice": "600,000",
+        "prevName": "Basic",
+        "feat1": "In-depth middle-school math concepts",
+        "feat2": "IGCSE Extended preparation curriculum",
+        "feat3": "AI weakness analysis + unlimited similar-error problems",
+        "feat4": "Asynchronous written-solution feedback",
+        "feat5": "Always-on Q&A channel (between sessions)"
       },
-      "high": {
-        "name": "High School / SAT / AP",
-        "desc": "SAT · AP Calculus · IB Math · IGCSE Extended",
-        "price": "90",
-        "feat1": "Everything in Middle School",
-        "feat2": "Full-length adaptive practice tests",
-        "feat3": "Score prediction tracking",
-        "feat4": "AP / IB exam-style problem sets",
-        "feat5": "Priority scheduling (evenings + weekends)"
+      "pro": {
+        "name": "Pro",
+        "stage": "High School · SAT",
+        "desc": "High-school concepts + practice + SAT",
+        "price": "960,000",
+        "monthly": "8 sessions / month (2× weekly) · 55 min 1:1",
+        "groupPrice": "600,000",
+        "prevName": "Advanced",
+        "feat1": "High-school math concepts + applied practice",
+        "feat2": "SAT Math past-paper mock exams",
+        "feat3": "Per-topic error-rate and time-spent analytics",
+        "feat4": "Targeted weak-pattern drill",
+        "feat5": "Time-pressure technique training"
+      },
+      "master": {
+        "name": "Master",
+        "stage": "Exam·Olympiad · Specialized",
+        "desc": "AP · A-Level · math olympiad-level rigor",
+        "price": "1,200,000",
+        "monthly": "12 sessions / month (3× weekly) · 55 min 1:1",
+        "prevName": "Pro",
+        "feat1": "AP Calculus AB/BC · AP Statistics",
+        "feat2": "A-Level Math · Further Math",
+        "feat3": "Math olympiad-level problem solving",
+        "feat4": "Pre-exam compressed and intensive scheduling",
+        "feat5": "Unlimited AI mock-exam training",
+        "feat6": "1:1 admissions / study consulting included"
       },
       "groupBanner": {
         "kicker": "GROUP DISCOUNT",
-        "titleLine1": "Form a group of up to 3 students",
-        "titleLine2Prefix": "and get ",
-        "titleLine2Highlight": "30% OFF",
-        "titleLine2Suffix": " per student.",
+        "titleLine1": "Form a group of 3.",
+        "titleLine2Prefix": "Advanced or Pro becomes ",
+        "titleLine2Highlight": "₩600,000 per person",
+        "titleLine2Suffix": ".",
+        "subtitle": "Same price as Basic — find two more friends in your child's grade and start.",
+        "noteMaster": "※ Master (Exam·Olympiad Specialized) is 1:1 only — no group discount.",
         "cta": "Form a Group"
-      }
+      },
+      "paymentBoxTitle": "Payment & Policies",
+      "paymentLine1": "💳 Monthly auto-billing — same date each month, anchored to your child's start date",
+      "paymentLine2": "🔄 Missed a session? Make-up time is guaranteed; if a make-up isn't possible we shift the next billing date instead",
+      "paymentLine3": "✓ Card · bank transfer · first trial lesson is free"
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -561,7 +608,13 @@
       "q6": "Which curricula are supported beyond SAT and AP?",
       "a6": "IB Math (AA/AI, SL & HL), IGCSE Extended Math, Cambridge A-Level Math and Further Math, and Korean CSAT Math are all supported. Each curriculum has its own dedicated content track inside the Web App.",
       "q7": "How does payment work?",
-      "a7": "Card and bank transfer are both accepted. Monthly auto-pay is the default; per-session billing is available on request."
+      "a7": "Both card and bank transfer are accepted. Monthly auto-billing is the default, anchored to your child's start date. If a session is missed, a make-up time is scheduled to fill that session; if a make-up cannot be arranged, the next billing date is shifted instead.",
+      "q8": "Isn't this expensive compared to a per-hour tutor?",
+      "a8": "These packages are not 2-hour-a-week tutoring — they are a monthly system that tracks and analyses your child's math every day. Each price includes 1:1 video coaching + the Mathiter Learning App + weekly parent reports. Per-hour math compared to a hagwon may seem higher, but once you add daily solution analysis, weakness drilling, and AI-mock-exam time, the effective rate is competitive with — and outperforms — typical hagwon rates.",
+      "q9": "What's the difference between Pro and Master?",
+      "a9": "Pro (₩960,000) is the standard high-school SAT prep tier — 2× per week, 8 sessions per month. Master (₩1,200,000) is for students within 3 months of an exam, or those tackling high-difficulty exams like AP Calculus, A-Level, and math olympiads. Coaching frequency is 1.5× higher (3× per week, 12 sessions per month) and includes 1:1 admissions/study consulting.",
+      "q10": "How do I sign up for the 3-person group discount?",
+      "a10": "Find two other students in the same grade and similar level, then sign up for Advanced (Middle School) or Pro (High School). Per-person pricing automatically drops to ₩600,000 (Basic-tier price). Mention \"3-person group\" when you book the free consultation. ※ Master (Exam·Olympiad Specialized) is 1:1 only — no group discount."
     },
     "finalCta": {
       "tag": "● NOW ACCEPTING NEW STUDENTS",
