@@ -286,61 +286,6 @@ export default function TutoringPricing() {
                 <div style={{ fontSize: 12, color: "#64748b", marginTop: 4 }}>
                   {t(`${tier.k}.monthly` as "basic.monthly")}
                 </div>
-
-                {tier.hasGroup && (
-                  <div
-                    style={{
-                      marginTop: 10,
-                      padding: "8px 10px",
-                      background: "#ecfdf5",
-                      border: "1px solid #6ee7b7",
-                      borderRadius: 10,
-                    }}
-                  >
-                    <div
-                      style={{
-                        fontSize: 10.5,
-                        fontWeight: 700,
-                        letterSpacing: "0.08em",
-                        color: "#047857",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      {t("groupPriceLabel")}
-                    </div>
-                    <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginTop: 2, flexWrap: "wrap" }}>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: "#047857" }}>
-                        {t("currencySymbol")}
-                      </span>
-                      <span
-                        style={{
-                          fontSize: 19,
-                          fontWeight: 700,
-                          color: "#047857",
-                          letterSpacing: "-0.01em",
-                        }}
-                      >
-                        {t(`${tier.k}.groupPrice` as "advanced.groupPrice")}
-                      </span>
-                      <span style={{ fontSize: 11, color: "#047857", marginLeft: 2 }}>
-                        {t("perMonth")}
-                      </span>
-                    </div>
-                  </div>
-                )}
-
-                {tier.hi && (
-                  <div
-                    style={{
-                      marginTop: 10,
-                      fontSize: 11.5,
-                      color: "#64748b",
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    {t("noGroupLabel")}
-                  </div>
-                )}
               </div>
 
               {tier.prevName && (
