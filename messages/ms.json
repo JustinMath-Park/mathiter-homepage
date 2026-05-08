@@ -612,9 +612,9 @@
         "tag": "💬 KakaoTalk",
         "title": "Message via KakaoTalk",
         "value": "mathiter",
-        "url": "https://open.kakao.com/o/gSdKAYti",
-        "hint": "Open Chat — start the conversation in one tap",
-        "cta": "Open Chat"
+        "hint": "Copy the ID, then add as a friend in KakaoTalk",
+        "cta": "Copy ID",
+        "copied": "Copied ✓"
       },
       "email": {
         "tag": "✉️ Email",

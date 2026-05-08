@@ -612,9 +612,9 @@
         "tag": "💬 카카오톡",
         "title": "카카오톡으로 상담",
         "value": "mathiter",
-        "url": "https://open.kakao.com/o/gSdKAYti",
-        "hint": "오픈채팅으로 바로 상담 시작",
-        "cta": "오픈채팅 열기"
+        "hint": "ID 복사 후 카카오톡 검색 → 친구 추가",
+        "cta": "ID 복사",
+        "copied": "복사됨 ✓"
       },
       "email": {
         "tag": "✉️ 이메일",

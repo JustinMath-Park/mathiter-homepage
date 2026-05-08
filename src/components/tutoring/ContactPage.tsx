@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { submitInquiry, type SubmitResult } from "@/app/[locale]/contact/actions";
@@ -14,10 +14,20 @@ export default function ContactPage() {
   >(submitInquiry, null);
   const submitted = state?.ok === true;
   const submitError = state && state.ok === false ? state.error : null;
+  const [kakaoCopied, setKakaoCopied] = useState(false);
 
   const phoneNumber = t("phone.value");
   const kakaoId = t("kakao.value");
   const emailAddress = t("email.value");
+
+  function handleKakaoCopy(e: React.MouseEvent<HTMLAnchorElement>) {
+    e.preventDefault();
+    if (typeof navigator !== "undefined" && navigator.clipboard) {
+      navigator.clipboard.writeText(kakaoId).catch(() => {});
+    }
+    setKakaoCopied(true);
+    window.setTimeout(() => setKakaoCopied(false), 2000);
+  }
 
   return (
     <div style={{ background: "#f8fafc", minHeight: "100vh" }}>
@@ -153,9 +163,9 @@ export default function ContactPage() {
                 title={t("kakao.title")}
                 value={kakaoId}
                 hint={t("kakao.hint")}
-                cta={t("kakao.cta")}
-                href={t("kakao.url")}
-                external
+                cta={kakaoCopied ? t("kakao.copied") : t("kakao.cta")}
+                href="#kakao-copy"
+                onClick={handleKakaoCopy}
                 accent="#92400e"
                 chipBg="#fef3c7"
               />
@@ -470,12 +480,14 @@ type ChannelCardProps = {
   accent: string;
   chipBg: string;
   external?: boolean;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
-function ChannelCard({ tag, title, value, hint, cta, href, accent, chipBg, external }: ChannelCardProps) {
+function ChannelCard({ tag, title, value, hint, cta, href, accent, chipBg, external, onClick }: ChannelCardProps) {
   return (
     <a
       href={href}
+      onClick={onClick}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       style={{
         display: "block",
