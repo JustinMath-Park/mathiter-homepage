@@ -14,7 +14,9 @@ export default function PostBody({ content }: Props) {
   return (
     <article className="prose-custom">
       <ReactMarkdown
-        remarkPlugins={[remarkGfm, remarkMath]}
+        // singleTilde: false → only `~~two~~` triggers strikethrough,
+        // not single `~` used in Korean range expressions like "A*~G".
+        remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath]}
         rehypePlugins={[rehypeKatex]}
         components={{
           h2: ({ children }) => (

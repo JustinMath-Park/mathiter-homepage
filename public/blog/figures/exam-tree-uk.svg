@@ -79,7 +79,7 @@
     <!-- Specs -->
     <g transform="translate(40, 200)" font-size="14" fill="#334155">
       <text x="0" y="0">📚  보통 3~4과목 선택 (STEM은 Math + Further Math 4과목 표준)</text>
-      <text x="0" y="32">⚠  5~6월에만 시행 — 사실상 <tspan fill="#dc2626" font-weight="700">연 1회 응시 한정</tspan></text>
+      <text x="0" y="32">📅  메인 시험 5–6월 (IAL은 <tspan fill="#dc2626" font-weight="700">1월·10–11월 추가 세션</tspan>)</text>
       <text x="0" y="64">🏛  보드: Cambridge International / Edexcel / AQA / OCR</text>
       <text x="0" y="96">🔢  Math + Further Math = Oxbridge STEM 사실상 필수 (Cambridge Math 96%)</text>
     </g>

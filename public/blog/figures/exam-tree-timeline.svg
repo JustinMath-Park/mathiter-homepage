@@ -110,7 +110,7 @@
       <circle cx="660" cy="3" r="18" fill="#7c3aed" stroke="#a855f7" stroke-width="3" />
       <text x="660" y="55" text-anchor="middle" font-size="15" font-weight="800" fill="#3b0764">A-Level 최종</text>
       <text x="660" y="73" text-anchor="middle" font-size="12" font-weight="600" fill="#dc2626">A*~E 등급</text>
-      <text x="660" y="90" text-anchor="middle" font-size="11" fill="#64748b">5–6월 · 연 1회</text>
+      <text x="660" y="90" text-anchor="middle" font-size="11" fill="#64748b">메인 5–6월</text>
     </g>
     <g>
       <circle cx="900" cy="3" r="14" fill="#10b981" />
@@ -123,7 +123,7 @@
   <g transform="translate(80, 790)">
     <rect width="1440" height="80" rx="14" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5" />
     <text x="32" y="38" font-size="20" font-weight="700" fill="#92400e">⚠</text>
-    <text x="64" y="38" font-size="16" font-weight="700" fill="#92400e">SAT는 연 7~8회 응시 가능 / A-Level은 5~6월에만 — 사실상 연 1회.</text>
+    <text x="64" y="38" font-size="16" font-weight="700" fill="#92400e">SAT는 연 7–8회 / A-Level은 5–6월 메인 (IAL은 1월·10–11월 추가).</text>
     <text x="64" y="62" font-size="13" fill="#78350f">방향을 1년 늦게 정하면, 그 사이 1년이 통째로 비효율 학년이 됩니다.</text>
   </g>
 </svg>
