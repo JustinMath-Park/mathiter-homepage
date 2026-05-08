@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Pretendard', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1530" />
+      <stop offset="100%" stop-color="#1a1d3a" />
+    </linearGradient>
+    <linearGradient id="usCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d5396" />
+      <stop offset="100%" stop-color="#0b2a57" />
+    </linearGradient>
+    <linearGradient id="ukCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- ambient glow -->
+  <circle cx="400" cy="500" r="380" fill="#1d5396" opacity="0.15" />
+  <circle cx="1200" cy="400" r="380" fill="#7c3aed" opacity="0.15" />
+
+  <!-- Eyebrow -->
+  <text x="800" y="120" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff" opacity="0.55" letter-spacing="6">EXAM TREE GUIDE</text>
+
+  <!-- Headline -->
+  <text x="800" y="190" text-anchor="middle" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">우리 아이는 어디로?</text>
+  <text x="800" y="245" text-anchor="middle" font-size="22" font-weight="500" fill="#ffffff" opacity="0.7">— 유학 준비 시험 트리, 5분 결정 가이드 —</text>
+
+  <!-- US Card -->
+  <g transform="translate(180, 320)" filter="url(#cardShadow)">
+    <rect width="540" height="460" rx="28" fill="url(#usCard)" />
+    <text x="40" y="60" font-size="14" font-weight="700" fill="#ffffff" opacity="0.6" letter-spacing="3">US TREE</text>
+    <text x="40" y="130" font-size="84" font-weight="800" fill="#ffffff">SAT</text>
+    <text x="200" y="130" font-size="46" font-weight="600" fill="#ffffff" opacity="0.7">+ AP</text>
+    <line x1="40" y1="160" x2="500" y2="160" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1" />
+
+    <text x="40" y="210" font-size="18" fill="#ffffff" opacity="0.85">• 미국 Top 30 (HYPSM, MIT, Caltech)</text>
+    <text x="40" y="245" font-size="18" fill="#ffffff" opacity="0.85">• SAT 1600 만점 — 연 7~8회 응시 가능</text>
+    <text x="40" y="280" font-size="18" fill="#ffffff" opacity="0.85">• AP 1~5점 — 매년 5월 시행</text>
+    <text x="40" y="315" font-size="18" fill="#ffffff" opacity="0.85">• 적응형 + Super-scoring 가능</text>
+    <text x="40" y="350" font-size="18" fill="#ffffff" opacity="0.85">• AP 5점은 미국 대학 학점 인정</text>
+
+    <text x="40" y="420" font-size="13" font-weight="700" fill="#ffffff" opacity="0.5" letter-spacing="2">MIT 합격자 SAT</text>
+    <text x="40" y="450" font-size="32" font-weight="800" fill="#ffffff">1520–1580</text>
+  </g>
+
+  <!-- VS divider -->
+  <g transform="translate(770, 530)">
+    <circle cx="30" cy="30" r="42" fill="#0b1530" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" />
+    <text x="30" y="42" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff" opacity="0.7">vs</text>
+  </g>
+
+  <!-- UK Card -->
+  <g transform="translate(880, 320)" filter="url(#cardShadow)">
+    <rect width="540" height="460" rx="28" fill="url(#ukCard)" />
+    <text x="40" y="60" font-size="14" font-weight="700" fill="#ffffff" opacity="0.6" letter-spacing="3">UK TREE</text>
+    <text x="40" y="130" font-size="60" font-weight="800" fill="#ffffff">A-Level</text>
+    <text x="280" y="130" font-size="32" font-weight="600" fill="#ffffff" opacity="0.7">← IGCSE</text>
+    <line x1="40" y1="160" x2="500" y2="160" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1" />
+
+    <text x="40" y="210" font-size="18" fill="#ffffff" opacity="0.85">• 영국 G5 + HK Top 3 + SG NUS·NTU</text>
+    <text x="40" y="245" font-size="18" fill="#ffffff" opacity="0.85">• 등급 A*~E — 보통 3~4과목</text>
+    <text x="40" y="280" font-size="18" fill="#ffffff" opacity="0.85">• 5~6월에만 시행 — 사실상 연 1회</text>
+    <text x="40" y="315" font-size="18" fill="#ffffff" opacity="0.85">• 한 분야 깊이 — 에세이·풀이형</text>
+    <text x="40" y="350" font-size="18" fill="#ffffff" opacity="0.85">• Cambridge / Edexcel / AQA / OCR</text>
+
+    <text x="40" y="420" font-size="13" font-weight="700" fill="#ffffff" opacity="0.5" letter-spacing="2">Oxford·Cambridge offer</text>
+    <text x="40" y="450" font-size="32" font-weight="800" fill="#ffffff">A*A*A</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="800" y="850" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.5">Mathiter Tutoring · 박세준 — 8년 국제학교 1:1 수학 과외</text>
+</svg>

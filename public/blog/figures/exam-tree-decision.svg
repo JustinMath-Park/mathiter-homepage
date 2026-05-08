@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Pretendard', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8fafc" />
+
+  <!-- Title -->
+  <text x="80" y="80" font-size="14" font-weight="700" fill="#64748b" letter-spacing="3">FIG 5 — DECISION GUIDE</text>
+  <text x="80" y="125" font-size="36" font-weight="800" fill="#0b2a57">5분 결정 플로차트</text>
+  <text x="80" y="160" font-size="16" fill="#64748b">5개 질문에 답하면 트리는 거의 결정됩니다</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(80, 220)">
+    <rect width="280" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="32" cy="32" r="18" fill="#0b2a57" />
+    <text x="32" y="39" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">1</text>
+    <text x="62" y="38" font-size="13" font-weight="700" fill="#0b2a57" letter-spacing="2">CURRICULUM</text>
+    <text x="20" y="78" font-size="14" font-weight="600" fill="#0f172a">자녀 학교의</text>
+    <text x="20" y="100" font-size="14" font-weight="600" fill="#0f172a">국제 커리큘럼은?</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(380, 220)">
+    <rect width="280" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="32" cy="32" r="18" fill="#0b2a57" />
+    <text x="32" y="39" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">2</text>
+    <text x="62" y="38" font-size="13" font-weight="700" fill="#0b2a57" letter-spacing="2">DESTINATION</text>
+    <text x="20" y="78" font-size="14" font-weight="600" fill="#0f172a">목표 대학 지역?</text>
+    <text x="20" y="100" font-size="13" fill="#64748b">미국 / 영국·HK·SG / 양쪽</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(680, 220)">
+    <rect width="280" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="32" cy="32" r="18" fill="#0b2a57" />
+    <text x="32" y="39" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">3</text>
+    <text x="62" y="38" font-size="13" font-weight="700" fill="#0b2a57" letter-spacing="2">FREQUENCY</text>
+    <text x="20" y="78" font-size="14" font-weight="600" fill="#0f172a">시험 응시 빈도?</text>
+    <text x="20" y="100" font-size="13" fill="#64748b">여러 번 / 한 번에 끝</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(980, 220)">
+    <rect width="280" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="32" cy="32" r="18" fill="#0b2a57" />
+    <text x="32" y="39" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">4</text>
+    <text x="62" y="38" font-size="13" font-weight="700" fill="#0b2a57" letter-spacing="2">STYLE</text>
+    <text x="20" y="78" font-size="14" font-weight="600" fill="#0f172a">자녀 학습 스타일?</text>
+    <text x="20" y="100" font-size="13" fill="#64748b">시험형 / 풀이형 / 균형형</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(1280, 220)">
+    <rect width="240" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="32" cy="32" r="18" fill="#0b2a57" />
+    <text x="32" y="39" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">5</text>
+    <text x="62" y="38" font-size="13" font-weight="700" fill="#0b2a57" letter-spacing="2">CREDIT</text>
+    <text x="20" y="78" font-size="14" font-weight="600" fill="#0f172a">학점 인정 필요?</text>
+    <text x="20" y="100" font-size="13" fill="#64748b">미국 학점 / 무관</text>
+  </g>
+
+  <!-- Connecting arrows between steps -->
+  <g stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="362" y1="280" x2="376" y2="280" />
+    <line x1="662" y1="280" x2="676" y2="280" />
+    <line x1="962" y1="280" x2="976" y2="280" />
+    <line x1="1262" y1="280" x2="1276" y2="280" />
+  </g>
+
+  <!-- Vertical arrows down -->
+  <g stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="800" y1="360" x2="800" y2="430" />
+  </g>
+
+  <!-- Three outcome cards -->
+  <text x="800" y="410" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b" letter-spacing="3">→ 답 패턴 →</text>
+
+  <!-- Outcome: US -->
+  <g transform="translate(80, 460)">
+    <rect width="460" height="280" rx="20" fill="#1d5396" />
+    <text x="40" y="50" font-size="14" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">PATTERN A</text>
+    <text x="40" y="100" font-size="36" font-weight="800" fill="#ffffff">US 트리</text>
+    <text x="40" y="135" font-size="20" font-weight="600" fill="#ffffff" opacity="0.85">SAT + AP</text>
+
+    <line x1="40" y1="155" x2="420" y2="155" stroke="#ffffff" stroke-opacity="0.2" />
+
+    <g font-size="13" fill="#ffffff" opacity="0.9">
+      <text x="40" y="185">✓ American 커리큘럼</text>
+      <text x="40" y="208">✓ 미국 Top 30이 주된 목표</text>
+      <text x="40" y="231">✓ 여러 번 응시 + best score 조합</text>
+      <text x="40" y="254">✓ 시험형 + 학점 인정 원함</text>
+    </g>
+  </g>
+
+  <!-- Outcome: UK -->
+  <g transform="translate(570, 460)">
+    <rect width="460" height="280" rx="20" fill="#7c3aed" />
+    <text x="40" y="50" font-size="14" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">PATTERN B</text>
+    <text x="40" y="100" font-size="36" font-weight="800" fill="#ffffff">UK 트리</text>
+    <text x="40" y="135" font-size="20" font-weight="600" fill="#ffffff" opacity="0.85">IGCSE → A-Level</text>
+
+    <line x1="40" y1="155" x2="420" y2="155" stroke="#ffffff" stroke-opacity="0.2" />
+
+    <g font-size="13" fill="#ffffff" opacity="0.9">
+      <text x="40" y="185">✓ British / Cambridge 커리큘럼</text>
+      <text x="40" y="208">✓ 영국 G5 + HK Top 3 + SG NUS·NTU</text>
+      <text x="40" y="231">✓ 한 번에 깊이 — 풀이·에세이형</text>
+      <text x="40" y="254">✓ 학점 인정 무관</text>
+    </g>
+  </g>
+
+  <!-- Outcome: IB -->
+  <g transform="translate(1060, 460)">
+    <rect width="460" height="280" rx="20" fill="#0d9488" />
+    <text x="40" y="50" font-size="14" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">PATTERN C</text>
+    <text x="40" y="100" font-size="36" font-weight="800" fill="#ffffff">IB Diploma</text>
+    <text x="40" y="135" font-size="20" font-weight="600" fill="#ffffff" opacity="0.85">양쪽 인정의 안전망</text>
+
+    <line x1="40" y1="155" x2="420" y2="155" stroke="#ffffff" stroke-opacity="0.2" />
+
+    <g font-size="13" fill="#ffffff" opacity="0.9">
+      <text x="40" y="185">✓ IB World School 또는 다중 옵션</text>
+      <text x="40" y="208">✓ 미국 + 영국 + HK + SG 모두 후보</text>
+      <text x="40" y="231">✓ 다과목 + IA + EE 균형형</text>
+      <text x="40" y="254">✓ 가장 유연하나 부담 큼</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <g transform="translate(80, 790)">
+    <rect width="1440" height="80" rx="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="32" y="38" font-size="20" font-weight="700" fill="#1e40af">💡</text>
+    <text x="64" y="38" font-size="16" font-weight="700" fill="#1e40af">가장 큰 변수는 1번 — 자녀의 학교 커리큘럼.</text>
+    <text x="64" y="62" font-size="13" fill="#1e3a8a">학교 커리큘럼과 목표 대학이 어긋나면 한 학년 통째로 손해. 결정은 G9 시작 전에.</text>
+  </g>
+</svg>

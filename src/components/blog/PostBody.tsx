@@ -99,6 +99,25 @@ export default function PostBody({ content }: Props) {
             </strong>
           ),
           hr: () => <hr className="my-10 border-gray-200" />,
+          img: ({ src, alt }) => {
+            if (!src) return null;
+            return (
+              <span className="block my-10 -mx-4 sm:mx-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={typeof src === "string" ? src : ""}
+                  alt={alt ?? ""}
+                  className="block w-full rounded-2xl border border-gray-100 shadow-sm bg-surface"
+                  loading="lazy"
+                />
+                {alt && (
+                  <span className="mt-3 block text-center text-xs text-muted italic">
+                    {alt}
+                  </span>
+                )}
+              </span>
+            );
+          },
         }}
       >
         {content}

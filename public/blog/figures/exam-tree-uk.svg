@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Pretendard', sans-serif">
+  <defs>
+    <linearGradient id="ukHeader" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8fafc" />
+
+  <!-- Header -->
+  <rect x="80" y="60" width="1440" height="120" rx="20" fill="url(#ukHeader)" />
+  <text x="120" y="105" font-size="14" font-weight="700" fill="#ffffff" opacity="0.65" letter-spacing="3">FIG 3 — UK TREE</text>
+  <text x="120" y="155" font-size="32" font-weight="800" fill="#ffffff">IGCSE → A-Level — 영국·홍콩·싱가포르의 길</text>
+
+  <!-- IGCSE Block -->
+  <g transform="translate(80, 220)">
+    <rect width="700" height="350" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <rect x="0" y="0" width="700" height="64" rx="20" fill="#7c3aed" />
+    <rect x="0" y="44" width="700" height="20" fill="#7c3aed" />
+    <text x="32" y="42" font-size="14" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">IGCSE — Year 10–11</text>
+    <text x="600" y="42" font-size="11" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="2">G9–G10</text>
+
+    <!-- Two boards -->
+    <g transform="translate(40, 100)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#64748b" letter-spacing="2">두 시험 보드 (영국 대학에서 동등 인정)</text>
+
+      <g transform="translate(0, 24)">
+        <rect width="300" height="120" rx="14" fill="#f5f3ff" stroke="#a855f7" stroke-width="1.5" />
+        <text x="20" y="32" font-size="14" font-weight="800" fill="#4c1d95" letter-spacing="1">CAMBRIDGE (CAIE)</text>
+        <text x="20" y="62" font-size="13" fill="#64748b">등급: A* / A / B / C / D / E / F / G / U</text>
+        <text x="20" y="84" font-size="13" fill="#64748b">A* ≈ 90%+, A ≈ 80%, ...</text>
+        <text x="20" y="108" font-size="11" fill="#94a3b8">과학 practical exam 필수</text>
+      </g>
+
+      <g transform="translate(320, 24)">
+        <rect width="300" height="120" rx="14" fill="#f5f3ff" stroke="#a855f7" stroke-width="1.5" />
+        <text x="20" y="32" font-size="14" font-weight="800" fill="#4c1d95" letter-spacing="1">EDEXCEL (PEARSON)</text>
+        <text x="20" y="62" font-size="13" fill="#64748b">등급: 9 / 8 / 7 / 6 / 5 / 4 / 3 / 2 / 1</text>
+        <text x="20" y="84" font-size="13" fill="#64748b">9 &gt; A*, 7 ≈ A, 4 = standard pass</text>
+        <text x="20" y="108" font-size="11" fill="#94a3b8">이론 중심, practical 없음</text>
+      </g>
+    </g>
+
+    <!-- Note -->
+    <g transform="translate(40, 280)">
+      <text x="0" y="0" font-size="12" fill="#64748b">📝 IGCSE 자체는 대학 입시 결정 X — A-Level 과목 선택의 게이트키퍼 역할</text>
+      <text x="0" y="22" font-size="12" fill="#64748b">📅 보통 2년 코스. Year 11 5–6월에 최종 시험</text>
+    </g>
+  </g>
+
+  <!-- A-Level Block -->
+  <g transform="translate(820, 220)">
+    <rect width="700" height="350" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <rect x="0" y="0" width="700" height="64" rx="20" fill="#7c3aed" />
+    <rect x="0" y="44" width="700" height="20" fill="#7c3aed" />
+    <text x="32" y="42" font-size="14" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">A-LEVEL — Year 12–13</text>
+    <text x="600" y="42" font-size="11" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="2">G11–G12</text>
+
+    <!-- Grade scale -->
+    <g transform="translate(40, 100)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#64748b" letter-spacing="2">등급 척도 (7단계)</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="80" height="44" rx="8" fill="#7c3aed" />
+        <text x="40" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#ffffff">A*</text>
+        <rect x="90" y="0" width="80" height="44" rx="8" fill="#a855f7" />
+        <text x="130" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#ffffff">A</text>
+        <rect x="180" y="0" width="80" height="44" rx="8" fill="#c4b5fd" />
+        <text x="220" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#4c1d95">B</text>
+        <rect x="270" y="0" width="80" height="44" rx="8" fill="#ddd6fe" />
+        <text x="310" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#4c1d95">C</text>
+        <rect x="360" y="0" width="80" height="44" rx="8" fill="#ede9fe" />
+        <text x="400" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#4c1d95">D</text>
+        <rect x="450" y="0" width="80" height="44" rx="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1" />
+        <text x="490" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#4c1d95">E</text>
+      </g>
+    </g>
+
+    <!-- Specs -->
+    <g transform="translate(40, 200)" font-size="14" fill="#334155">
+      <text x="0" y="0">📚  보통 3~4과목 선택 (STEM은 Math + Further Math 4과목 표준)</text>
+      <text x="0" y="32">⚠  5~6월에만 시행 — 사실상 <tspan fill="#dc2626" font-weight="700">연 1회 응시 한정</tspan></text>
+      <text x="0" y="64">🏛  보드: Cambridge International / Edexcel / AQA / OCR</text>
+      <text x="0" y="96">🔢  Math + Further Math = Oxbridge STEM 사실상 필수 (Cambridge Math 96%)</text>
+    </g>
+  </g>
+
+  <!-- G5 Universities -->
+  <g transform="translate(80, 610)">
+    <text x="0" y="0" font-size="14" font-weight="700" fill="#64748b" letter-spacing="3">영국 G5 + TOP 대학 2026 ENTRY 요구 점수</text>
+
+    <g transform="translate(0, 30)">
+      <g transform="translate(0, 0)">
+        <rect width="280" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+        <rect width="280" height="6" rx="3" fill="#7c3aed" />
+        <text x="20" y="46" font-size="20" font-weight="800" fill="#3b0764">Oxford</text>
+        <text x="20" y="68" font-size="12" fill="#64748b">A-Level offer</text>
+        <text x="20" y="100" font-size="22" font-weight="800" fill="#7c3aed">A*A*A</text>
+        <text x="20" y="130" font-size="12" fill="#64748b">+ 추가 시험 (MAT / TSA / PAT)</text>
+        <text x="20" y="160" font-size="11" font-weight="700" fill="#dc2626">IB: 38–40 (HL 6–7s)</text>
+      </g>
+
+      <g transform="translate(305, 0)">
+        <rect width="280" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+        <rect width="280" height="6" rx="3" fill="#7c3aed" />
+        <text x="20" y="46" font-size="20" font-weight="800" fill="#3b0764">Cambridge</text>
+        <text x="20" y="68" font-size="12" fill="#64748b">A-Level offer</text>
+        <text x="20" y="100" font-size="22" font-weight="800" fill="#7c3aed">A*A*A</text>
+        <text x="20" y="130" font-size="12" fill="#64748b">+ STEP / ESAT / TMUA</text>
+        <text x="20" y="160" font-size="11" font-weight="700" fill="#dc2626">IB: 40–42 (HL 7,7,6)</text>
+      </g>
+
+      <g transform="translate(610, 0)">
+        <rect width="280" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+        <rect width="280" height="6" rx="3" fill="#7c3aed" />
+        <text x="20" y="46" font-size="20" font-weight="800" fill="#3b0764">Imperial</text>
+        <text x="20" y="68" font-size="12" fill="#64748b">A-Level offer</text>
+        <text x="20" y="100" font-size="22" font-weight="800" fill="#7c3aed">A*A*A — A*A*AA</text>
+        <text x="20" y="130" font-size="12" fill="#64748b">STEM: Math + Further Math 필수</text>
+        <text x="20" y="160" font-size="11" font-weight="700" fill="#dc2626">IB: 38–41 (HL Math 7)</text>
+      </g>
+
+      <g transform="translate(915, 0)">
+        <rect width="280" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+        <rect width="280" height="6" rx="3" fill="#7c3aed" />
+        <text x="20" y="46" font-size="20" font-weight="800" fill="#3b0764">LSE</text>
+        <text x="20" y="68" font-size="12" fill="#64748b">A-Level offer</text>
+        <text x="20" y="100" font-size="22" font-weight="800" fill="#7c3aed">AAA — A*AA</text>
+        <text x="20" y="130" font-size="12" fill="#64748b">SAT 단독 미인정 · AP 5+</text>
+        <text x="20" y="160" font-size="11" font-weight="700" fill="#dc2626">IB: 37–39 (HL 6–6–6)</text>
+      </g>
+
+      <g transform="translate(1220, 0)">
+        <rect width="280" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+        <rect width="280" height="6" rx="3" fill="#7c3aed" />
+        <text x="20" y="46" font-size="20" font-weight="800" fill="#3b0764">UCL</text>
+        <text x="20" y="68" font-size="12" fill="#64748b">A-Level offer</text>
+        <text x="20" y="100" font-size="22" font-weight="800" fill="#7c3aed">A*A*A — ABB</text>
+        <text x="20" y="130" font-size="12" fill="#64748b">코스별 차이 큼</text>
+        <text x="20" y="160" font-size="11" font-weight="700" fill="#dc2626">IB: 34–40 (HL 5+)</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="80" y="870" font-size="11" fill="#94a3b8">Source: ox.ac.uk/admissions · undergraduate.study.cam.ac.uk · imperial.ac.uk · lse.ac.uk · ucl.ac.uk · cambridgeinternational.org · qualifications.pearson.com</text>
+</svg>

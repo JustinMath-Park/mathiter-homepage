@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Pretendard', sans-serif">
+  <rect width="1600" height="900" fill="#0b1530" />
+
+  <!-- Title -->
+  <text x="80" y="80" font-size="14" font-weight="700" fill="#94a3b8" letter-spacing="3">FIG 4 — SCORE MATRIX</text>
+  <text x="80" y="125" font-size="36" font-weight="800" fill="#ffffff">대학별 요구 점수 매트릭스</text>
+  <text x="80" y="160" font-size="16" fill="#94a3b8">같은 "Top 대학"이라도 트리에 따라 점수는 완전히 다릅니다</text>
+
+  <!-- Header row -->
+  <g transform="translate(80, 220)">
+    <rect width="1440" height="56" rx="12" fill="#1e293b" />
+    <text x="40" y="34" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="3">대학</text>
+    <text x="370" y="34" font-size="12" font-weight="700" fill="#3b82f6" letter-spacing="3">SAT (US 트리)</text>
+    <text x="700" y="34" font-size="12" font-weight="700" fill="#a855f7" letter-spacing="3">A-LEVEL (UK 트리)</text>
+    <text x="1080" y="34" font-size="12" font-weight="700" fill="#14b8a6" letter-spacing="3">IB DIPLOMA</text>
+    <text x="1320" y="34" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="3">지역</text>
+  </g>
+
+  <!-- Row template -->
+  <!-- Row 1: MIT -->
+  <g transform="translate(80, 290)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">MIT</text>
+    <text x="370" y="36" font-size="16" font-weight="700" fill="#60a5fa">1520–1580</text>
+    <text x="510" y="36" font-size="11" fill="#64748b">(Math 780–800)</text>
+    <text x="700" y="36" font-size="14" fill="#cbd5e1">동등 평가 (US 인정)</text>
+    <text x="1080" y="36" font-size="14" fill="#cbd5e1">~40+ holistic</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇺🇸 미국</text>
+  </g>
+
+  <!-- Row 2: Harvard -->
+  <g transform="translate(80, 354)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">Harvard</text>
+    <text x="370" y="36" font-size="16" font-weight="700" fill="#60a5fa">1500–1580</text>
+    <text x="510" y="36" font-size="11" fill="#64748b">(Math 770–800)</text>
+    <text x="700" y="36" font-size="14" fill="#cbd5e1">동등 평가 (US 인정)</text>
+    <text x="1080" y="36" font-size="14" fill="#cbd5e1">39–44 (HL 6–7s)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇺🇸 미국</text>
+  </g>
+
+  <!-- Row 3: Stanford -->
+  <g transform="translate(80, 418)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">Stanford</text>
+    <text x="370" y="36" font-size="16" font-weight="700" fill="#60a5fa">1500–1560</text>
+    <text x="510" y="36" font-size="11" fill="#64748b">(Math 770–800)</text>
+    <text x="700" y="36" font-size="14" fill="#cbd5e1">동등 평가 (US 인정)</text>
+    <text x="1080" y="36" font-size="14" fill="#cbd5e1">~40+ holistic</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇺🇸 미국</text>
+  </g>
+
+  <!-- Row 4: Cambridge -->
+  <g transform="translate(80, 482)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">Cambridge</text>
+    <text x="370" y="36" font-size="14" fill="#cbd5e1">1500+ (Math 750+) + AP 5점 5개</text>
+    <text x="700" y="36" font-size="16" font-weight="700" fill="#c084fc">A*A*A</text>
+    <text x="780" y="36" font-size="11" fill="#64748b">+ STEP / ESAT / TMUA</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">40–42 (HL 7,7,6)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇬🇧 영국</text>
+  </g>
+
+  <!-- Row 5: Oxford -->
+  <g transform="translate(80, 546)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">Oxford</text>
+    <text x="370" y="36" font-size="14" fill="#cbd5e1">700+ 각 섹션 + AP 5점 3개</text>
+    <text x="700" y="36" font-size="16" font-weight="700" fill="#c084fc">A*A*A</text>
+    <text x="780" y="36" font-size="11" fill="#64748b">+ MAT / TSA / PAT</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">38–40 (HL 6–7s)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇬🇧 영국</text>
+  </g>
+
+  <!-- Row 6: Imperial -->
+  <g transform="translate(80, 610)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">Imperial</text>
+    <text x="370" y="36" font-size="14" fill="#cbd5e1">SAT + AP 조합 인정</text>
+    <text x="700" y="36" font-size="16" font-weight="700" fill="#c084fc">A*A*A — A*A*AA</text>
+    <text x="900" y="36" font-size="11" fill="#64748b">Math + Further Math 필수</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">38–41 (HL Math 7)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇬🇧 영국</text>
+  </g>
+
+  <!-- Row 7: LSE -->
+  <g transform="translate(80, 674)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">LSE</text>
+    <text x="370" y="36" font-size="14" font-weight="600" fill="#fca5a5">SAT 단독 미인정 · AP 5+</text>
+    <text x="700" y="36" font-size="16" font-weight="700" fill="#c084fc">AAA — A*AA</text>
+    <text x="850" y="36" font-size="11" fill="#64748b">HL Math 6 또는 7 필수</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">37–39 (HL 6–6–6)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇬🇧 영국</text>
+  </g>
+
+  <!-- Row 8: HKU -->
+  <g transform="translate(80, 738)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">HKU</text>
+    <text x="370" y="36" font-size="14" fill="#cbd5e1">인정 (코스별)</text>
+    <text x="700" y="36" font-size="16" font-weight="700" fill="#c084fc">AAA+</text>
+    <text x="780" y="36" font-size="11" fill="#64748b">경쟁 코스는 더 높음</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">35+ 권장 / 44+ 장학금</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇭🇰 홍콩</text>
+  </g>
+
+  <!-- Row 9: NUS -->
+  <g transform="translate(80, 802)">
+    <rect width="1440" height="56" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="36" font-size="18" font-weight="700" fill="#ffffff">NUS</text>
+    <text x="370" y="36" font-size="14" fill="#cbd5e1">1250+ (R&amp;W 600+, Math 650+)</text>
+    <text x="700" y="36" font-size="14" fill="#cbd5e1">동등 평가 (코스별)</text>
+    <text x="1080" y="36" font-size="14" fill="#5eead4">40+ 경쟁력 (sample 작음)</text>
+    <text x="1320" y="36" font-size="13" fill="#94a3b8">🇸🇬 싱가포르</text>
+  </g>
+
+  <text x="80" y="880" font-size="10" fill="#475569">⚠ 점수는 25–75 percentile 또는 typical offer · 2024–25 cycle 데이터 · 2026 admissions 기준 변화 가능 · 출처는 글 본문 참조</text>
+</svg>
