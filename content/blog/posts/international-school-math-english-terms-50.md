@@ -37,6 +37,8 @@ canonicalSlug: international-school-math-english-terms-50
 
 8년간 국제학교 학생 1:1 과외를 하면서 가장 자주 본 멈춤 지점이 바로 <strong>수학 용어의 영어</strong>입니다. 개념은 알지만 단어를 몰라서 문제를 못 푸는 것이죠.
 
+![국제학교 첫 수학 수업 — 영어 문제 앞에서 잠시 멈춘 한국 학생](/blog/photos/international-school-math-english-terms-50-1.png)
+
 ## 미리 익혀두면 첫 학기가 달라집니다
 
 이 글에서는 제가 8년간 가장 자주 가르친 50개의 수학 영어 용어를 정리했습니다. 영역별로 묶었으니, 자녀와 함께 하루 5개씩 10일이면 끝납니다.
@@ -150,6 +152,8 @@ canonicalSlug: international-school-math-english-terms-50
 3. <strong>소리 내어 읽기</strong> — 첫 수업에서 입에서 안 나오면 멈춥니다
 
 이 단계를 거치면, 첫 학기 수학 수업에서 자녀가 *Vertex가 뭐야?* 하고 멈추는 일은 없습니다. 개념은 이미 한국에서 다 배운 것이니까요.
+
+![이주 전 영어 수학 적응 학습 — 두 언어를 잇는 책상 풍경](/blog/photos/international-school-math-english-terms-50-2.png)
 
 ## 1:1로 더 빠르게 적응시키고 싶다면
 

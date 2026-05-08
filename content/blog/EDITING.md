@@ -110,6 +110,32 @@ git push origin main
 
 ---
 
+## 📸 본문 사진 (gpt-image-2)
+
+각 글에 photojournalism 스타일 실사 사진 1–2장이 본문 중간에 들어가 있습니다 (`/blog/photos/<slug>-N.png`).
+
+### 새 글에 사진 추가하기
+
+```bash
+# 1. scripts/gen-blog-images.py 열어서 PROMPTS dict에 2개 항목 추가
+#    예: "<slug>-1.png", "<slug>-2.png"
+#    STYLE preamble + 구체 묘사. NO text/logos/captions 명시.
+
+# 2. 실행 (이미 있는 파일은 자동 skip)
+python3 scripts/gen-blog-images.py
+
+# 3. .md 본문 적절한 위치에 마커 추가
+#    ![alt 텍스트](/blog/photos/<slug>-1.png)
+```
+
+스타일 가이드:
+- 모델 `gpt-image-2`, quality `medium`, size `1536x1024` (16:9 가로)
+- Reuters / AP / The Atlantic 같은 documentary editorial 톤
+- 학생 얼굴 가까운 클로즈업 X (익명성)
+- 텍스트·로고·캡션 절대 X (이미지 안에)
+
+---
+
 ## 🆕 새 글 작성
 
 새 글은 직접 .md 만들지 말고 **스킬 사용 권장**:

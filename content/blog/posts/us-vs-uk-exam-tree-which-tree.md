@@ -32,6 +32,8 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 저는 두 아이를 처음부터 말레이시아의 미국제(American curriculum) 국제학교에 보냈습니다. 첫째는 Primary 1, 둘째는 Kindergarten부터요. 입학과 동시에 시험 트리는 자연스럽게 'US 트리(SAT + AP)'로 정해진 셈이었습니다. 그래서 8년간 1:1 과외로 만난 한국 학부모님들이 G9·Y10 무렵에야 단톡방에서 'SAT vs A-Level'을 두고 다투는 모습을 보면 처음에는 의아했습니다. 학교 시설·한국인 비율·위치·학비를 비교하다가, 정작 그 학교가 American인지 British인지를 입학 후에 깨닫는 분이 의외로 많았기 때문입니다.
 
+![동남아시아 국제학교 캠퍼스 — 다양한 국적의 학생들이 어울리는 풍경](/blog/photos/us-vs-uk-exam-tree-which-tree-1.png)
+
 해외 국제학교는 보통 한 도시 안에 <strong>American · British · IB 세 갈래</strong>가 모두 존재합니다. 학교 선택 = 트리 선택입니다. 그리고 한 번 입학하면, <strong>가서 트리를 바꾸는 일은 생각보다 훨씬 비쌉니다.</strong>
 
 ![두 갈래 길 — US 트리 vs UK 트리](/blog/figures/exam-tree-hero.svg)
@@ -139,6 +141,8 @@ STEM 지망이면 AA HL이 사실상 필수입니다. AI는 사회과학·경영
 8년간 [국제학교 1:1 수학 과외](https://mathiter.com/)를 하면서 가장 안타까웠던 건, 한 학생이 G10 후반에 트리를 바꿔야 했던 사례였습니다. 처음엔 British 학교에서 IGCSE를 보고 A-Level을 준비하다가, G10 말에 가족이 미국 대학으로 목표를 바꿨습니다. A-Level Math는 미국 대학 학점으로 거의 인정되지 않고, AP Calculus BC를 G11에 넣으려면 Pre-Calculus가 G10에 끝나 있어야 했는데, 그 학생은 A-Level Year 12 커리큘럼(Pure Math 1)으로 진도를 잡고 있던 상황이었습니다.
 
 결과적으로 G11 한 해를 "Pre-Calc 보강 + AP Calc AB 첫 응시"로 보냈고, BC는 G12로 미뤄졌으며, SAT 첫 응시도 G12 봄으로 늦춰졌습니다. 학생 본인은 똑똑하고 성실했지만, <strong>방향을 1년 늦게 정한 대가</strong>를 한 학년 통째로 치른 셈이었습니다. 부모님은 "학교 커리큘럼만 따라가면 된다고 생각했다"고 하셨습니다. 학교는 학교의 길을 안내하지만, <strong>대학 지원국이 다르면 그 길이 자녀에게 맞는 길이 아닐 수 있습니다.</strong>
+
+![American과 British 커리큘럼을 비교하며 학교를 결정하는 한국 부부](/blog/photos/us-vs-uk-exam-tree-which-tree-2.png)
 
 ## Action — 우리 아이는 어디로? 5분 결정 가이드
 
