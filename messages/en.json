@@ -611,7 +611,7 @@
       "kakao": {
         "tag": "💬 KakaoTalk",
         "title": "Message via KakaoTalk",
-        "value": "@mathiter",
+        "value": "mathiter",
         "hint": "Open chat or ID search",
         "cta": "Open KakaoTalk"
       },

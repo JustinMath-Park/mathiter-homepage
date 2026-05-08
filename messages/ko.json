@@ -611,7 +611,7 @@
       "kakao": {
         "tag": "💬 카카오톡",
         "title": "카카오톡으로 상담",
-        "value": "@mathiter",
+        "value": "mathiter",
         "hint": "오픈채팅 또는 ID 검색",
         "cta": "카카오톡으로 이동"
       },
