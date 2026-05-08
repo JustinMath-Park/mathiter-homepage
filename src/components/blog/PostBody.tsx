@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 import "katex/dist/katex.min.css";
 
 interface Props {
@@ -17,7 +18,10 @@ export default function PostBody({ content }: Props) {
         // singleTilde: false → only `~~two~~` triggers strikethrough,
         // not single `~` used in Korean range expressions like "A*~G".
         remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath]}
-        rehypePlugins={[rehypeKatex]}
+        // rehypeRaw lets us use <strong>한국어 직접 조사</strong>-style HTML
+        // because Korean particles ('은', '이', '를' …) right after **bold**
+        // break CommonMark right-flanking and leave ** as raw text.
+        rehypePlugins={[rehypeRaw, rehypeKatex]}
         components={{
           h2: ({ children }) => (
             <h2 className="text-2xl sm:text-3xl font-bold mt-12 mb-4 text-foreground">
