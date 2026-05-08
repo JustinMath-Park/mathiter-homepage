@@ -26,7 +26,7 @@ export default function TutoringPricing() {
     },
     {
       k: "advanced",
-      hi: false,
+      hi: true,
       hasGroup: true,
       features: ["feat1", "feat2", "feat3", "feat4", "feat5"],
       prevName: t("basic.name"),
@@ -40,7 +40,7 @@ export default function TutoringPricing() {
     },
     {
       k: "master",
-      hi: true,
+      hi: false,
       hasGroup: false,
       features: ["feat1", "feat2", "feat3", "feat4", "feat5", "feat6"],
       prevName: t("pro.name"),
