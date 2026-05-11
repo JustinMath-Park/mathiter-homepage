@@ -4,6 +4,29 @@
 
 ---
 
+## ✅ 2026-05-11 — Claude가 자동 처리한 부분
+
+| 단계 | 상태 | 비고 |
+|---|---|---|
+| 1. Firebase Web App 등록 | ✅ 이미 있었음 | "Mathiter Web App" — Mathiter 학습앱과 공유 |
+| 2. Authentication Google 로그인 | 🟡 Justin 확인 필요 | console에서 토글만 (1분) |
+| 3. Vercel 환경변수 6개 | ✅ CLI로 자동 추가 | production + preview scope |
+| 4. Firestore Security Rules | ✅ CLI로 자동 deploy | 학습앱 기존 25+ rules 보존 + blog/inquiry 2개 추가 |
+
+**Justin이 해야 할 일 (1개만 남음)**: 2단계 Authentication Google 로그인 활성화 확인 →
+[Authentication > Sign-in method](https://console.firebase.google.com/project/mathiter-prod/authentication/providers)
+에서 Google이 "사용 설정됨"이면 끝. 아니면 토글만 켜고 저장. **다음 deploy 끝나면** `https://mathiter.com/admin` 접속 가능.
+
+> ⚠ **firestore.rules SSOT 노트**: 학습앱(`mathiter-app`) repo도 별도의 `firestore.rules`를 갖고 있습니다.
+> 이번에 mathiter-homepage의 `firestore.rules`에 `blogPosts` + `tutoringInquiries` 2개 match 블록을
+> 추가하고 deploy했지만, **학습앱 repo의 `firestore.rules`에는 아직 그 2개가 빠져 있습니다.**
+> 향후 학습앱 repo에서 `firebase deploy --only firestore:rules`를 실행하면 그 2개가 사라집니다.
+> 안전을 위해 `/Users/justinminim4/projects/mathiter-app/firestore.rules`에도 동일한 2개 match 블록을
+> append 후 commit/push해주세요. (학습앱 repo는 현재 `design/claude-design-v1` branch라 main에 직접
+> sync 필요.)
+
+---
+
 ## 📋 셋업 4단계
 
 ### 1단계 — Firebase Web App 등록 (3분)
