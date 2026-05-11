@@ -602,8 +602,8 @@ export default function TutoringPricing() {
                 <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   {isKo ? "월 교습료" : "Monthly Fee"}
                 </th>
-                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  {isKo ? "총 월 시간" : "Total Hours"}
+                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "left" }}>
+                  {isKo ? "신고 교습 시간 (산식)" : "Declared Hours (formula)"}
                 </th>
                 <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   {isKo ? "시간당" : "Per Hour"}
@@ -616,7 +616,13 @@ export default function TutoringPricing() {
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩600,000
                 </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>30.1h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
+                  <strong>30.1h</strong>
+                  <br />
+                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
+                    {isKo ? "일 140분 × 주 3회 × 4.3주" : "140min × 3/wk × 4.3wks"}
+                  </span>
+                </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩19,933
                 </td>
@@ -626,7 +632,13 @@ export default function TutoringPricing() {
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩860,000
                 </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>43.0h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
+                  <strong>43.0h</strong>
+                  <br />
+                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
+                    {isKo ? "일 150분 × 주 4회 × 4.3주" : "150min × 4/wk × 4.3wks"}
+                  </span>
+                </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩20,000
                 </td>
@@ -636,7 +648,13 @@ export default function TutoringPricing() {
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩960,000
                 </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>48.0h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
+                  <strong>48.0h</strong>
+                  <br />
+                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
+                    {isKo ? "일 167분 × 주 4회 × 4.3주*" : "167min × 4/wk × 4.3wks*"}
+                  </span>
+                </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩20,000
                 </td>
@@ -646,7 +664,13 @@ export default function TutoringPricing() {
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩1,200,000
                 </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>57.3h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
+                  <strong>57.3h</strong>
+                  <br />
+                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
+                    {isKo ? "일 160분 × 주 5회 × 4.3주" : "160min × 5/wk × 4.3wks"}
+                  </span>
+                </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
                   ₩20,942
                 </td>
@@ -654,14 +678,27 @@ export default function TutoringPricing() {
             </tbody>
           </table>
           <p style={{ fontSize: 12, color: "#6B7280", marginBottom: 6 }}>
+            {isKo ? (
+              <>
+                ▸ <strong>1:1 실시간 화상 코칭</strong>: Basic·Advanced·Pro = 주 2회 × 55분 (월 ~7.3h),
+                Master = 주 3회 × 55분 (월 ~11h)
+              </>
+            ) : (
+              <>
+                ▸ <strong>1:1 live video coaching</strong>: Basic·Advanced·Pro = 2/wk × 55min (~7.3h/mo),
+                Master = 3/wk × 55min (~11h/mo)
+              </>
+            )}
+          </p>
+          <p style={{ fontSize: 12, color: "#6B7280", marginBottom: 6 }}>
             {isKo
-              ? "▸ 시간당 단가는 법정 상한(22,000원) 이내 준수. 패키지 시간 = 1:1 화상 코칭 + AI 학습 모니터링 + 과제 첨삭 + 학부모 주간 리포트 + Q&A 응답 합산."
-              : "▸ Hourly rate within statutory cap (KRW 22,000). Package hours = 1:1 video coaching + AI learning monitoring + homework review + weekly parent reports + Q&A responses."}
+              ? "▸ 나머지 시간 = AI 학습 모니터링·과제 첨삭·학부모 주간 리포트·Q&A 응답 (비동기 학습 관리). 시간당 단가는 법정 상한(22,000원) 이내 준수."
+              : "▸ Remaining hours = AI monitoring + homework review + parent weekly reports + Q&A responses (asynchronous management). Hourly rate within statutory cap (KRW 22,000)."}
           </p>
           <p style={{ fontSize: 12, color: "#6B7280" }}>
             {isKo
-              ? "▸ 신고번호: 발급 진행 중 (용인교육지원청) · 환불은 진행 회차 비율로 정산 (자세히는 환불정책 참조)"
-              : "▸ Registration number: pending issuance (Yongin Education Support Office) · Refunds are calculated by completed session ratio (see Refund Policy for details)"}
+              ? "▸ * Pro 단가는 보완 신고 진행 중 · 신고번호: 발급 진행 중 (용인교육지원청) · 환불은 진행 회차 비율로 정산"
+              : "▸ * Pro supplementary filing in progress · Registration: pending (Yongin Education Support Office) · Refunds calculated by completed session ratio"}
           </p>
         </div>
       </div>
