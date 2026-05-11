@@ -40,6 +40,8 @@ type PostSummary = {
   publishedAt: string;
   updatedAt?: string;
   category: string;
+  showOnHome: boolean;
+  showOnTutoring: boolean;
 };
 
 export default function AdminBlogList() {
@@ -73,6 +75,8 @@ function BlogListInner() {
             publishedAt: String(d.publishedAt ?? ""),
             updatedAt: d.updatedAt ? String(d.updatedAt) : undefined,
             category: String(d.category ?? "general"),
+            showOnHome: d.showOnHome !== false,
+            showOnTutoring: d.showOnTutoring !== false,
           };
         });
         list.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
@@ -118,7 +122,23 @@ function BlogListInner() {
       <main className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex items-center justify-between mb-8">
           <p className="text-sm text-muted">
-            총 {posts.length}편 — 클릭해서 편집하세요
+            총 {posts.length}편 — 메인 노출{" "}
+            <span className="font-semibold text-foreground">
+              {
+                posts.filter(
+                  (p) => p.showOnHome && p.status === "published"
+                ).length
+              }
+            </span>
+            편 · 튜터링 노출{" "}
+            <span className="font-semibold text-foreground">
+              {
+                posts.filter(
+                  (p) => p.showOnTutoring && p.status === "published"
+                ).length
+              }
+            </span>
+            편
           </p>
           <a
             href="/ko/blog"
@@ -151,6 +171,7 @@ function BlogListInner() {
                   <th className="text-left py-3 px-5 font-medium">제목</th>
                   <th className="text-left py-3 px-3 font-medium w-24">분류</th>
                   <th className="text-left py-3 px-3 font-medium w-20">상태</th>
+                  <th className="text-left py-3 px-3 font-medium w-24">노출</th>
                   <th className="text-left py-3 px-3 font-medium w-28">발행일</th>
                   <th className="w-20"></th>
                 </tr>
@@ -184,6 +205,38 @@ function BlogListInner() {
                       >
                         {post.status}
                       </span>
+                    </td>
+                    <td className="py-4 px-3">
+                      <div className="flex items-center gap-1.5 text-xs">
+                        <span
+                          title={
+                            post.showOnHome
+                              ? "메인 페이지에 노출됨"
+                              : "메인 페이지 노출 안 됨"
+                          }
+                          className={
+                            post.showOnHome
+                              ? "px-1.5 py-0.5 rounded bg-primary/10 text-primary font-medium"
+                              : "px-1.5 py-0.5 rounded bg-gray-100 text-gray-400 line-through"
+                          }
+                        >
+                          메인
+                        </span>
+                        <span
+                          title={
+                            post.showOnTutoring
+                              ? "튜터링 페이지에 노출됨"
+                              : "튜터링 페이지 노출 안 됨"
+                          }
+                          className={
+                            post.showOnTutoring
+                              ? "px-1.5 py-0.5 rounded bg-primary/10 text-primary font-medium"
+                              : "px-1.5 py-0.5 rounded bg-gray-100 text-gray-400 line-through"
+                          }
+                        >
+                          튜터링
+                        </span>
+                      </div>
                     </td>
                     <td className="py-4 px-3 text-xs text-muted">
                       {post.publishedAt}

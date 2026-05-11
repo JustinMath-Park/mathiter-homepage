@@ -40,6 +40,8 @@ type Frontmatter = {
   publishedAt: string;
   status: string;
   category: string;
+  showOnHome: boolean;
+  showOnTutoring: boolean;
 };
 
 function BlogEditInner({ slug }: { slug: string }) {
@@ -51,6 +53,8 @@ function BlogEditInner({ slug }: { slug: string }) {
     publishedAt: "",
     status: "published",
     category: "general",
+    showOnHome: true,
+    showOnTutoring: true,
   });
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -78,6 +82,8 @@ function BlogEditInner({ slug }: { slug: string }) {
           publishedAt: String(data.publishedAt ?? ""),
           status: String(data.status ?? "published"),
           category: String(data.category ?? "general"),
+          showOnHome: data.showOnHome !== false, // default true
+          showOnTutoring: data.showOnTutoring !== false, // default true
         });
       } catch (e) {
         setError(e instanceof Error ? e.message : String(e));
@@ -104,6 +110,8 @@ function BlogEditInner({ slug }: { slug: string }) {
         publishedAt: frontmatter.publishedAt,
         status: frontmatter.status,
         category: frontmatter.category,
+        showOnHome: frontmatter.showOnHome,
+        showOnTutoring: frontmatter.showOnTutoring,
         content,
         updatedAt: today,
         lastEditedAt: serverTimestamp(),
@@ -241,6 +249,47 @@ function BlogEditInner({ slug }: { slug: string }) {
                 value={frontmatter.publishedAt}
                 onChange={(v) => setF("publishedAt", v)}
               />
+
+              {/* Visibility toggles */}
+              <div className="pt-3 border-t border-gray-100 space-y-2.5">
+                <label className="text-xs font-medium text-foreground/70 block">
+                  노출 위치
+                </label>
+
+                <label className="flex items-start gap-2.5 cursor-pointer group">
+                  <input
+                    type="checkbox"
+                    checked={frontmatter.showOnHome}
+                    onChange={(e) => setF("showOnHome", e.target.checked)}
+                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary/30"
+                  />
+                  <span className="text-xs leading-snug text-foreground/80 group-hover:text-foreground transition-colors">
+                    <span className="font-semibold">메인 페이지에 노출</span>
+                    <br />
+                    <span className="text-muted">
+                      체크된 글 중 발행일 최신 3개가 자동 노출됩니다.
+                    </span>
+                  </span>
+                </label>
+
+                <label className="flex items-start gap-2.5 cursor-pointer group">
+                  <input
+                    type="checkbox"
+                    checked={frontmatter.showOnTutoring}
+                    onChange={(e) =>
+                      setF("showOnTutoring", e.target.checked)
+                    }
+                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary/30"
+                  />
+                  <span className="text-xs leading-snug text-foreground/80 group-hover:text-foreground transition-colors">
+                    <span className="font-semibold">튜터링 페이지에 노출</span>
+                    <br />
+                    <span className="text-muted">
+                      체크된 글 중 발행일 최신 6개가 자동 노출됩니다.
+                    </span>
+                  </span>
+                </label>
+              </div>
 
               <p className="text-[11px] text-muted leading-relaxed pt-3 border-t border-gray-100">
                 💡 저장 시 Firestore에만 반영됩니다. git의 .md 파일은 별도로 동기화 필요 — 자세한 내용은 <code className="text-[10px]">content/blog/EDITING.md</code>
