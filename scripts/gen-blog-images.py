@@ -158,6 +158,40 @@ The mood: precise, calm mentorship — a draft being carefully shaped before
 submission.
 Horizontal landscape framing (16:9), over-shoulder editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 5: 대치동 → 국제학교 (Persona 1+2)
+    # ═══════════════════════════════════════════════════════
+    "korea-vs-us-math-daechi-perspective-1.png": STYLE + """
+A Korean teenage student (around 14–15, middle school age) at a study desk
+late at night in a Korean private-academy district setting (Daechi-dong
+style). The desk is densely packed: a thick Korean math workbook open to
+a page filled with handwritten work in pencil, multiple sharpened pencils
+in a holder, a clear plastic ruler, a half-finished mug of barley tea,
+stacked notes. The student leans forward, writing precise mathematical
+notation by hand — no calculator visible. Warm desk-lamp light isolates
+the work surface from a darker room background. Korean academic-pressure
+atmosphere, but not stressful — focused, deeply absorbed.
+The mood: the silent intensity of Korean math training — handwritten,
+calculator-free, precise.
+Horizontal landscape framing (16:9), three-quarter angle.
+""",
+
+    "korea-vs-us-math-daechi-perspective-2.png": STYLE + """
+An overhead view of a wooden study table where two distinct sets of
+materials are juxtaposed side-by-side: on the LEFT, a Korean math
+workbook with handwritten Korean notation in pencil (clean, dense,
+calculator-free); on the RIGHT, an English-language math textbook open
+to a page with word problems and a Desmos-style graphing calculator
+screen visible on a laptop. Between them sit a graphing calculator (TI
+or similar), a notebook with bilingual English/Korean vocabulary lists
+in handwriting, and a cup of coffee. A child's hand (partial, out of
+focus at the edge) holds a pencil, mid-comparison. Warm late-afternoon
+natural light through a window.
+The mood: the quiet moment of bridging two mathematical worlds — neither
+abandoned, both held at once.
+Horizontal landscape framing (16:9), top-down editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
