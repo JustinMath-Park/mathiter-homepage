@@ -22,12 +22,65 @@ export default function PostBody({ content }: Props) {
         // because Korean particles ('은', '이', '를' …) right after **bold**
         // break CommonMark right-flanking and leave ** as raw text.
         rehypePlugins={[rehypeRaw, rehypeKatex]}
+        // Localize the GFM footnote section labels (default English →
+        // "Footnotes" / "Back to reference"). Korean parents read these.
+        remarkRehypeOptions={{
+          footnoteLabel: "용어 설명",
+          footnoteBackLabel: (referenceIndex: number) =>
+            `↑ 본문 ${referenceIndex + 1}번 위치로 돌아가기`,
+        }}
         components={{
-          h2: ({ children }) => (
-            <h2 className="text-2xl sm:text-3xl font-bold mt-12 mb-4 text-foreground">
+          h2: ({ children, id, ...props }) => {
+            // Footnote section's "용어 설명" header — smaller, marks the
+            // start of the appendix area at the bottom of the article.
+            if (id === "footnote-label") {
+              return (
+                <h2
+                  id={id}
+                  className="text-sm font-bold tracking-widest text-muted uppercase mt-16 pt-8 mb-5 border-t border-gray-200"
+                  {...props}
+                >
+                  {children}
+                </h2>
+              );
+            }
+            return (
+              <h2
+                id={id}
+                className="text-2xl sm:text-3xl font-bold mt-12 mb-4 text-foreground"
+                {...props}
+              >
+                {children}
+              </h2>
+            );
+          },
+          // Footnote reference markers in the body (small primary-colored
+          // superscript link). e.g. "TIMSS¹·PISA²".
+          sup: ({ children, ...props }) => (
+            <sup
+              className="text-[0.7em] font-semibold text-primary"
+              {...props}
+            >
               {children}
-            </h2>
+            </sup>
           ),
+          // Definitions list at the bottom of the article — slightly muted
+          // body so it reads as appendix, not main content.
+          section: ({ children, ...props }) => {
+            const isFootnotes =
+              (props as { "data-footnotes"?: boolean })["data-footnotes"];
+            if (isFootnotes) {
+              return (
+                <section
+                  className="text-sm text-foreground/75 leading-relaxed [&_ol]:list-decimal [&_ol]:ml-5 [&_li]:my-3 [&_li_p]:my-1"
+                  {...props}
+                >
+                  {children}
+                </section>
+              );
+            }
+            return <section {...props}>{children}</section>;
+          },
           h3: ({ children }) => (
             <h3 className="text-xl font-bold mt-8 mb-3 text-foreground">
               {children}
