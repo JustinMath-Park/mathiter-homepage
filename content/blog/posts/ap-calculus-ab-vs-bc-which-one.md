@@ -45,7 +45,7 @@ AP Calculus 과목 선택은 단순히 한 과목의 문제가 아닙니다. 11�
 
 - 극한과 연속성 (Limits & Continuity)
 - 미분과 그 응용 (Derivatives & Applications)
-- 적분의 기본 개념과 \\(\\int f(x)\\,dx\\) 형태의 기초 적분
+- 적분의 기본 개념과 $\int f(x)\,dx$ 형태의 기초 적분
 - 미분방정식의 입문 수준 (separable equations)
 - 면적·부피 응용
 

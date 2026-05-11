@@ -5,6 +5,10 @@ import dynamic from "next/dynamic";
 import { doc, getDoc, updateDoc, serverTimestamp } from "firebase/firestore";
 import { getClientDb } from "@/lib/firebase-client";
 import AdminGate from "@/components/admin/AdminGate";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 
 // react-md-editor uses window/document — must be client-only
 const MDEditor = dynamic(
@@ -14,6 +18,7 @@ const MDEditor = dynamic(
 
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
+import "katex/dist/katex.min.css";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -250,6 +255,16 @@ function BlogEditInner({ slug }: { slug: string }) {
                 height={720}
                 preview="live"
                 visibleDragbar={false}
+                previewOptions={{
+                  // Match the live PostBody rendering pipeline so the
+                  // editor's preview shows the exact same output:
+                  //   - GFM tables / strikethrough (with singleTilde:false)
+                  //   - $...$ inline + $$...$$ block math via KaTeX
+                  //   - raw HTML (<strong>...</strong>) for Korean-particle
+                  //     bold edge cases
+                  remarkPlugins: [[remarkGfm, { singleTilde: false }], remarkMath],
+                  rehypePlugins: [rehypeRaw, rehypeKatex],
+                }}
               />
             </div>
           </div>
