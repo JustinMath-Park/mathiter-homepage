@@ -79,16 +79,16 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 ## UK 트리 — IGCSE → A-Level의 길
 
-영국·홍콩·싱가포르를 노린다면 길은 <strong>IGCSE → A-Level</strong>입니다.
+영국·홍콩·싱가포르를 노린다면 길은 <strong>IGCSE[^igcse] → A-Level[^alevel]</strong>입니다.
 
 <strong>IGCSE</strong>는 Year 10–11 (G9–G10)에 응시하는 시험으로, Cambridge 보드는 A*–G 8단계 + U, Edexcel International 보드는 9–1 9단계 + U로 등급을 매깁니다. (Edexcel 9가 Cambridge A*보다 한 단계 더 높습니다.) 두 시스템 모두 영국 대학에서 동등하게 인정합니다. IGCSE는 그 자체로는 대학 입시에 결정적이지 않지만, A-Level 과목 선택의 게이트키퍼 역할을 합니다.
 
-<strong>A-Level</strong>은 Year 12–13 (G11–G12)에 응시하며, 등급은 A*, A, B, C, D, E의 7단계입니다. 보통 3–4과목을 선택하고, STEM 지망생은 Math + Further Math를 포함한 4과목이 표준입니다. 보드는 Cambridge International (CAIE), Pearson Edexcel International, AQA, OCR. 가장 큰 함정은 <strong>International A-Level의 경우 10–11월이나 1월 시험 세션도 존재하지만, 학교 커리큘럼상 보통 5–6월 메인 시험 한 번에 승부를 걸어야 하는 구조</strong>라 부담이 크다는 점입니다. SAT처럼 "7번 보고 가장 좋은 점수"를 만드는 게 사실상 어렵습니다.
+<strong>A-Level</strong>은 Year 12–13 (G11–G12)에 응시하며, 등급은 A*, A, B, C, D, E의 7단계입니다. 보통 3–4과목을 선택하고, STEM 지망생은 Math + Further Math를 포함한 4과목이 표준입니다. 보드는 Cambridge International (CAIE[^caie]), Pearson Edexcel[^edexcel] International, AQA, OCR. 가장 큰 함정은 <strong>International A-Level의 경우 10–11월이나 1월 시험 세션도 존재하지만, 학교 커리큘럼상 보통 5–6월 메인 시험 한 번에 승부를 걸어야 하는 구조</strong>라 부담이 크다는 점입니다. SAT처럼 "7번 보고 가장 좋은 점수"를 만드는 게 사실상 어렵습니다.
 
 영국 G5 + Top 대학 2026 entry 요구 점수는 다음과 같습니다.
 
 - <strong>Oxford</strong>: A*A*A + 추가 시험 (MAT/TSA/PAT 등 학과별)
-- <strong>Cambridge</strong>: A*A*A + STEP (수학) 또는 ESAT/TMUA. 수학과는 Further Math 거의 필수 (합격자 96%)
+- <strong>Cambridge</strong>: A*A*A + STEP[^step] (수학) 또는 ESAT/TMUA. 수학과는 Further Math 거의 필수 (합격자 96%)
 - <strong>Imperial</strong>: A*A*A 또는 A*A*AA. STEM은 Math + Further Math 필수
 - <strong>LSE</strong>: AAA – A*AA. <strong>SAT 단독으로는 인정하지 않음</strong>
 - <strong>UCL</strong>: A*A*A – ABB (코스별)
@@ -100,7 +100,7 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 ## IB Diploma — 양쪽 인정의 안전망
 
-IB는 미국과 영국 양쪽이 모두 인정하는 디플로마입니다. 6과목 (각 7점) + Core (TOK·EE·CAS, 0–3점), 만점 45점, 합격 최소 24점입니다. 시험은 May session (4월 말–5월), 결과 발표 7월 6일. 남반구 학교는 November session.
+IB[^ib]는 미국과 영국 양쪽이 모두 인정하는 디플로마입니다. 6과목 (각 7점) + Core (TOK·EE·CAS[^core], 0–3점), 만점 45점, 합격 최소 24점입니다. 시험은 May session (4월 말–5월), 결과 발표 7월 6일. 남반구 학교는 November session.
 
 수학은 <strong>Math AA (Analysis & Approaches)</strong> 와 <strong>Math AI (Applications & Interpretation)</strong> 두 갈래입니다. STEM 지망이라면 사실상 <strong>Math AA HL이 표준</strong>이고, 사회과학·경영 지망이면 AI HL/SL이 적합합니다.
 
@@ -163,3 +163,17 @@ STEM 지망이면 AA HL이 사실상 필수입니다. AI는 사회과학·경영
 > [👉 무료 30분 상담 신청 →](/ko/contact)
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
+
+[^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국식 중등 마지막 단계 (Year 10–11, 만 14–16세) 국제 자격 시험. Cambridge International과 Edexcel International 두 보드가 있고, 세계 약 160개국 국제학교에서 운영. A-Level 이수를 위한 사전 자격으로 가장 널리 쓰입니다.
+
+[^alevel]: **A-Level** (Advanced Level) — 영국 대학 입시의 핵심 시험. Year 12–13 (만 16–18세) 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 마지막 1년에 외부 시험을 칩니다. 등급은 A*–E. 한국 수능과 비슷한 "마지막 한 번의 시험으로 거의 결정"되는 구조라 부담이 크지만, 과목 선택의 자유도가 높습니다.
+
+[^caie]: **CAIE** (Cambridge Assessment International Education) — 케임브리지 대학교 산하 국제 시험 기관. IGCSE와 International A-Level 두 시험을 모두 운영합니다. 세계에서 가장 큰 영국식 국제 시험 보드.
+
+[^edexcel]: **Edexcel** — Pearson사가 운영하는 영국식 시험 보드. CAIE와 함께 양대 보드로, International GCSE / International A-Level을 운영합니다. Edexcel IGCSE는 1–9 등급제(9가 최상), CAIE IGCSE는 A*–G 등급제 — 같은 IGCSE라도 등급 체계가 다릅니다.
+
+[^step]: **STEP** (Sixth Term Examination Paper) — 케임브리지 대학교 수학과 입학을 위한 추가 시험. 일반 A-Level Math보다 훨씬 어려운 난이도로, 단순 계산이 아닌 수학적 사고를 평가합니다. 케임브리지 수학과 합격자 거의 전원이 응시.
+
+[^core]: **TOK · EE · CAS** — IB Diploma의 Core(필수) 3요소. **TOK** (Theory of Knowledge, 인식론) 에세이 + 발표, **EE** (Extended Essay, 4천 단어 개인 연구 논문), **CAS** (Creativity·Activity·Service, 봉사·예술·체육 활동 150시간). 6과목 외에 별도로 이수해야 디플로마 수여. 총 0–3점이 가산됩니다.
+
+[^ib]: **IB Diploma** (International Baccalaureate Diploma Programme) — 1968년 스위스 제네바에서 설립된 비영리 교육기관 IBO가 운영하는 2년제 대학입시 과정. 미국·영국 양쪽이 모두 인정해 "트리에 묶이지 않는 선택지"로 평가됩니다. 만점 45점, 합격 최소 24점.

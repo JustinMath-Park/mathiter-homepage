@@ -32,9 +32,9 @@ canonicalSlug: ib-math-aa-hl-7-points
 ---
 > "학교 수업은 다 이해해요. 그런데 시험만 보면 6점이 나와요."
 
-매년 5월, May session이 끝난 직후가 되면 송도·제주 IB DP 학교에 자녀를 보내신 학부모님들로부터 비슷한 톤의 카톡이 도착합니다. "수업 시간에 선생님이 푸는 건 다 따라가요. 숙제도 잘 해요. 그런데 왜 mock에서 7점이 안 나올까요." 저는 8년 동안 국제학교 학생들을 1:1로 지도하면서 이 질문을 너무 많이 받아서, 어느 순간부터는 답이 거의 정해져 있습니다. <strong>IB Math AA HL 7점은 마지막 6개월의 문제 풀이로 만들어지지 않습니다.</strong> 2년의 IB DP 흐름 전체에서, 어느 시점에 무엇을 했느냐로 결정됩니다.
+매년 5월, May session[^session]이 끝난 직후가 되면 송도·제주 IB DP[^ibdp] 학교에 자녀를 보내신 학부모님들로부터 비슷한 톤의 카톡이 도착합니다. "수업 시간에 선생님이 푸는 건 다 따라가요. 숙제도 잘 해요. 그런데 왜 mock에서 7점이 안 나올까요." 저는 8년 동안 국제학교 학생들을 1:1로 지도하면서 이 질문을 너무 많이 받아서, 어느 순간부터는 답이 거의 정해져 있습니다. <strong>IB Math AA HL 7점은 마지막 6개월의 문제 풀이로 만들어지지 않습니다.</strong> 2년의 IB DP 흐름 전체에서, 어느 시점에 무엇을 했느냐로 결정됩니다.
 
-저는 두 자녀를 말레이시아 미국제 학교에 보낸 학부모라 본인 자녀의 트랙은 AP입니다. 하지만 1:1 과외에서 만난 한국 학부모들의 자녀 중 절반 가까이가 IB DP였고, 그중에서도 AA HL을 선택한 학생이 가장 많았습니다. 그래서 오늘은 한 발 뒤로 물러서서 — IA·Paper 1·Paper 2·Paper 3을 따로따로가 아닌 "하나의 그림"으로 보는 시야를 풀어 드리려 합니다.
+저는 두 자녀를 말레이시아 미국제 학교에 보낸 학부모라 본인 자녀의 트랙은 AP입니다. 하지만 1:1 과외에서 만난 한국 학부모들의 자녀 중 절반 가까이가 IB DP였고, 그중에서도 AA HL[^aahl]을 선택한 학생이 가장 많았습니다. 그래서 오늘은 한 발 뒤로 물러서서 — IA·Paper 1·Paper 2·Paper 3을 따로따로가 아닌 "하나의 그림"으로 보는 시야를 풀어 드리려 합니다.
 
 ![IB DP 학생이 늦은 밤 책상에서 Paper 연습을 풀고 있는 모습 — GDC와 필기 답안이 책상 위에 펼쳐져 있다](/blog/photos/ib-math-aa-hl-7-points-1.png)
 
@@ -42,7 +42,7 @@ canonicalSlug: ib-math-aa-hl-7-points
 
 많은 학부모님이 6점과 7점을 "조금만 더 하면 되는 차이"로 생각하십니다. 8년간 가르치면서 제가 본 현실은 그렇지 않습니다. 6점은 "교과 내용을 잘 이해한 학생"이 받는 점수입니다. 7점은 "이해한 내용을 낯선 문제 상황에서 다시 조립할 수 있는 학생"이 받는 점수입니다. 둘 사이엔 점수상 한 단계지만, 사고 회로 자체가 다릅니다.
 
-IB AA HL의 최종 점수는 네 가지가 합산됩니다 — Paper 1 (계산기 없음, 약 30%), Paper 2 (GDC 허용, 약 30%), Paper 3 (HL only, 약 20%), 그리고 IA (Mathematical Exploration, 약 20%). 각 시험의 raw mark grade boundary는 session마다 달라지지만, AA HL 7점의 컷오프는 역사적으로 전체 mark의 대략 60% 후반대에서 형성되어 왔습니다. "전체에서 골고루 잘 보면 되는 점수"가 아니라, <strong>외부 시험 80%와 IA 20%의 약점이 동시에 없어야 도달하는 점수</strong>입니다. 한 영역에서만 무너져도 7점은 흔들립니다.
+IB AA HL의 최종 점수는 네 가지가 합산됩니다 — Paper 1 (계산기 없음, 약 30%), Paper 2 (GDC[^gdc] 허용, 약 30%), Paper 3[^paper3] (HL only, 약 20%), 그리고 IA[^ia] (Mathematical Exploration, 약 20%). 각 시험의 raw mark grade boundary는 session마다 달라지지만, AA HL 7점의 컷오프는 역사적으로 전체 mark의 대략 60% 후반대에서 형성되어 왔습니다. "전체에서 골고루 잘 보면 되는 점수"가 아니라, <strong>외부 시험 80%와 IA 20%의 약점이 동시에 없어야 도달하는 점수</strong>입니다. 한 영역에서만 무너져도 7점은 흔들립니다.
 
 ## Paper 1·2·3 — 각 paper에서 점수를 잃는 지점이 다릅니다
 
@@ -111,3 +111,15 @@ May session 직후, 또는 November session을 6개월 앞둔 지금 시점이�
 > [👉 무료 30분 상담 신청 →](/ko/contact)
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
+
+[^ibdp]: **IB DP** (International Baccalaureate Diploma Programme) — 만 16–19세 학생을 위한 2년제 국제 대학입시 과정. 6과목 + Core(TOK·EE·CAS)로 구성. 만점 45점. 전 세계 약 160개국 5천여 학교에서 운영.
+
+[^aahl]: **AA HL** = **Mathematics: Analysis and Approaches Higher Level** — IB DP 수학 4트랙 중 가장 학문적·전통적인 트랙. 미적분·해석·증명을 깊이 다룹니다. STEM·경제·공학 진학자 다수가 선택. 2019 reform 이후 AA SL/HL, AI SL/HL의 4개로 분기됐습니다.
+
+[^session]: **May session / November session** — IB DP의 두 응시 시기. 북반구 학교는 May session (4월 말–5월 중순), 남반구는 November session (11월) 응시. 학교별로 정해져 있어 학생이 선택하지는 않습니다. 결과 발표는 7월 / 1월.
+
+[^gdc]: **GDC** (Graphing Display Calculator) — 그래프를 그리고 함수를 시각적으로 분석할 수 있는 휴대용 계산기 (TI-84, Casio fx-CG50 등). IB Math의 Paper 2·3에서 사용 필수. IB가 허용 모델을 매년 공식 발표합니다.
+
+[^paper3]: **Paper 3** — IB Math **HL 학생만** 응시. 1시간, 2문항. 각 문제가 "특수 사례 → 패턴 발견 → 일반화 → 증명·해석"의 investigation 형식입니다. 일반 시험과 달리 long-form 탐구 능력을 요구해 한국 학생들이 가장 낯설게 느끼는 형식입니다.
+
+[^ia]: **IA** (Internal Assessment) — IB Math의 **Mathematical Exploration**. 학생이 자기 관심 주제를 정해 12–20페이지 분량의 수학 탐구 보고서를 씁니다. 최종 성적의 20%. 5개 채점 기준 (Presentation 4 / Mathematical Communication 4 / Personal Engagement 3 / Reflection 3 / Use of Mathematics 6) 총 20점.
