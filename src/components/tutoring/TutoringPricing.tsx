@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 type TierKey = "basic" | "advanced" | "pro" | "master";
@@ -22,6 +22,8 @@ const PREV_ICON: Record<TierKey, string> = {
 
 export default function TutoringPricing() {
   const t = useTranslations("tutoring.pricing");
+  const locale = useLocale();
+  const isKo = locale === "ko";
 
   const tiers: Tier[] = [
     {
@@ -554,6 +556,113 @@ export default function TutoringPricing() {
             <li>{t("paymentLine2")}</li>
             <li>{t("paymentLine3")}</li>
           </ul>
+        </div>
+
+        {/* 교습료 신고 안내 박스 — 「학원법」 의무 게시 */}
+        <div
+          style={{
+            marginTop: 28,
+            padding: "20px 24px",
+            borderRadius: 14,
+            border: "1px solid #E5E7EB",
+            background: "#F9FAFB",
+            fontSize: 13,
+            lineHeight: 1.7,
+            color: "#374151",
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 600,
+              color: "#111827",
+              marginBottom: 10,
+              fontSize: 14,
+            }}
+          >
+            📋 {isKo ? "교습료 신고 안내" : "Tutoring Fee Disclosure"}
+          </h3>
+          <p style={{ marginBottom: 12 }}>
+            {isKo
+              ? "본 서비스는 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 용인교육지원청에 신고된 개인과외교습 서비스입니다. 교습료는 신고된 시간당 단가 × 월 총 교습 시간으로 산정됩니다."
+              : "This service is a registered private tutoring service under Korea's Act on the Establishment and Operation of Private Teaching Institutes, filed with the Yongin Education Support Office. Tuition is calculated as the declared hourly rate × monthly total tutoring hours."}
+          </p>
+          <table
+            style={{
+              width: "100%",
+              borderCollapse: "collapse",
+              fontSize: 12,
+              marginBottom: 12,
+            }}
+          >
+            <thead>
+              <tr style={{ background: "#F3F4F6" }}>
+                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "left" }}>
+                  {isKo ? "패키지" : "Package"}
+                </th>
+                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  {isKo ? "월 교습료" : "Monthly Fee"}
+                </th>
+                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  {isKo ? "총 월 시간" : "Total Hours"}
+                </th>
+                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  {isKo ? "시간당" : "Per Hour"}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Basic</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩600,000
+                </td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>30.1h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩19,933
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Advanced</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩860,000
+                </td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>43.0h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩20,000
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Pro</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩960,000
+                </td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>48.0h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩20,000
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Master</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩1,200,000
+                </td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>57.3h</td>
+                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
+                  ₩20,942
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p style={{ fontSize: 12, color: "#6B7280", marginBottom: 6 }}>
+            {isKo
+              ? "▸ 시간당 단가는 법정 상한(22,000원) 이내 준수. 패키지 시간 = 1:1 화상 코칭 + AI 학습 모니터링 + 과제 첨삭 + 학부모 주간 리포트 + Q&A 응답 합산."
+              : "▸ Hourly rate within statutory cap (KRW 22,000). Package hours = 1:1 video coaching + AI learning monitoring + homework review + weekly parent reports + Q&A responses."}
+          </p>
+          <p style={{ fontSize: 12, color: "#6B7280" }}>
+            {isKo
+              ? "▸ 신고번호: 발급 진행 중 (용인교육지원청) · 환불은 진행 회차 비율로 정산 (자세히는 환불정책 참조)"
+              : "▸ Registration number: pending issuance (Yongin Education Support Office) · Refunds are calculated by completed session ratio (see Refund Policy for details)"}
+          </p>
         </div>
       </div>
 
