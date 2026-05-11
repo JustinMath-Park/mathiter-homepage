@@ -277,7 +277,17 @@
     },
     "copyright": "© {year} Mathiter. All rights reserved.",
     "privacyPolicy": "개인정보 처리방침",
-    "termsOfService": "이용약관"
+    "termsOfService": "이용약관",
+    "refundPolicy": "환불정책",
+    "business": {
+      "companyName": "엘리코바 (Elicova)",
+      "representative": "대표 박세준",
+      "businessNumber": "사업자등록번호: 710-05-03676",
+      "address": "주소: 경기도 용인시 처인구 (간이과세자)",
+      "ecommerce": "통신판매업 신고: 신청 진행 중 (정부24)",
+      "tutoring": "개인과외교습자 신고: 발급 진행 중 (용인교육지원청)",
+      "contactLabel": "문의:"
+    }
   },
   "languageSwitcher": {
     "label": "언어",

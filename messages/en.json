@@ -277,7 +277,17 @@
     },
     "copyright": "© {year} Mathiter. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "refundPolicy": "Refund Policy",
+    "business": {
+      "companyName": "Elicova",
+      "representative": "Representative: Sejun Park",
+      "businessNumber": "Business Registration: 710-05-03676",
+      "address": "Address: Cheoin-gu, Yongin-si, Gyeonggi-do, Republic of Korea (Simplified Taxpayer)",
+      "ecommerce": "E-commerce Registration: Pending application",
+      "tutoring": "Private Tutoring Registration: Pending (Yongin Education Support Office)",
+      "contactLabel": "Inquiries:"
+    }
   },
   "languageSwitcher": {
     "label": "Language",

@@ -108,11 +108,33 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* 사업자 정보 박스 — 한국 「전자상거래법」 의무 게시 */}
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          <div className="rounded-lg border border-gray-100 bg-gray-50 px-5 py-4 text-xs text-muted leading-relaxed space-y-1">
+            <p>
+              <strong className="text-foreground/80">{t("business.companyName")}</strong>
+              {" | "}
+              {t("business.representative")}
+              {" | "}
+              {t("business.businessNumber")}
+            </p>
+            <p>{t("business.address")}</p>
+            <p>{t("business.ecommerce")}</p>
+            <p>{t("business.tutoring")}</p>
+            <p>
+              {t("business.contactLabel")}{" "}
+              <a href="mailto:support@mathiter.com" className="hover:text-foreground transition-colors">
+                support@mathiter.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6 justify-center">
             <a
               href={`${localePrefix}/privacy`}
               className="text-xs text-muted hover:text-foreground transition-colors"
@@ -124,6 +146,12 @@ export default function Footer() {
               className="text-xs text-muted hover:text-foreground transition-colors"
             >
               {t("termsOfService")}
+            </a>
+            <a
+              href={`${localePrefix}/refund`}
+              className="text-xs text-muted hover:text-foreground transition-colors"
+            >
+              {t("refundPolicy")}
             </a>
           </div>
         </div>
