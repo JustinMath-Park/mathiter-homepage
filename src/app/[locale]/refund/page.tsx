@@ -72,7 +72,7 @@ const content: Record<
       },
       {
         heading: "C-1. 환불 요청 방법",
-        body: `<p>환불을 요청하시려면 다음 중 하나의 방법으로 연락해 주시기 바랍니다:</p><ul><li><strong>이메일</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a> — 회원 가입 이메일·결제 일시·환불 사유 명시.</li><li><strong>카카오톡 채널</strong>: @mathiter — 1:1 채팅으로 요청.</li><li><strong>마이페이지</strong>: "결제 내역 → 환불 요청" 메뉴 (개발 예정).</li></ul>`,
+        body: `<p>환불을 요청하시려면 다음 중 하나의 방법으로 연락해 주시기 바랍니다:</p><ul><li><strong>이메일</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a> — 회원 가입 이메일·결제 일시·환불 사유 명시.</li><li><strong>카카오톡 ID</strong>: mathiter — 친구 추가 후 1:1 채팅으로 요청.</li><li><strong>마이페이지</strong>: "결제 내역 → 환불 요청" 메뉴 (개발 예정).</li></ul>`,
       },
       {
         heading: "C-2. 환불 처리 기간",
@@ -146,7 +146,7 @@ const content: Record<
       },
       {
         heading: "C-1. How to Request a Refund",
-        body: `<p>To request a refund, contact us through one of the following:</p><ul><li><strong>Email</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a> — Include registered email, payment date/time, and refund reason.</li><li><strong>KakaoTalk Channel</strong>: @mathiter — Direct 1:1 chat.</li><li><strong>My Page</strong>: "Payment history → Request refund" menu (planned).</li></ul>`,
+        body: `<p>To request a refund, contact us through one of the following:</p><ul><li><strong>Email</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a> — Include registered email, payment date/time, and refund reason.</li><li><strong>KakaoTalk ID</strong>: mathiter — Add as friend for direct 1:1 chat.</li><li><strong>My Page</strong>: "Payment history → Request refund" menu (planned).</li></ul>`,
       },
       {
         heading: "C-2. Processing Time",
