@@ -649,14 +649,14 @@ export default function TutoringPricing() {
                   ₩960,000
                 </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
-                  <strong>48.0h</strong>
+                  <strong>45.9h</strong>
                   <br />
                   <span style={{ color: "#9CA3AF", fontSize: 11 }}>
-                    {isKo ? "일 167분 × 주 4회 × 4.3주*" : "167min × 4/wk × 4.3wks*"}
+                    {isKo ? "일 160분 × 주 4회 × 4.3주*" : "160min × 4/wk × 4.3wks*"}
                   </span>
                 </td>
                 <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩20,000
+                  ₩20,929
                 </td>
               </tr>
               <tr>
