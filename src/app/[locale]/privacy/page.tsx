@@ -44,7 +44,7 @@ const content: Record<
       },
       {
         heading: "6. 만 14세 미만 아동의 개인정보",
-        body: `<p>회사는 만 14세 미만 아동의 회원 가입 시 법정대리인(부모 또는 보호자)의 동의를 받습니다. 동의 받지 않은 만 14세 미만 아동의 개인정보가 수집된 사실을 인지한 경우, 회사는 즉시 해당 정보를 삭제합니다.</p><p>법정대리인은 언제든 자녀의 개인정보 열람·정정·삭제를 요청할 수 있으며, <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>으로 연락해 주시기 바랍니다.</p>`,
+        body: `<p>회사는 만 14세 미만 아동의 회원 가입 시 법정대리인(부모 또는 보호자)의 동의를 받습니다. 동의 받지 않은 만 14세 미만 아동의 개인정보가 수집된 사실을 인지한 경우, 회사는 즉시 해당 정보를 삭제합니다.</p><p>법정대리인은 언제든 자녀의 개인정보 열람·정정·삭제를 요청할 수 있으며, <a href="mailto:support@mathiter.com">support@mathiter.com</a>으로 연락해 주시기 바랍니다.</p>`,
       },
       {
         heading: "7. 쿠키 및 추적 기술",
@@ -56,7 +56,7 @@ const content: Record<
       },
       {
         heading: "9. 정보주체의 권리",
-        body: `<p>회원(정보주체)은 회사에 대해 다음 권리를 행사할 수 있습니다:</p><ul><li><strong>열람 요청</strong>: 회사가 보유한 본인의 개인정보 열람.</li><li><strong>정정·삭제 요청</strong>: 부정확하거나 불완전한 정보의 정정, 삭제.</li><li><strong>처리정지 요청</strong>: 개인정보 처리의 일시적 중단 요청.</li><li><strong>동의 철회</strong>: 개인정보 수집·이용·제공에 대한 동의의 철회.</li><li><strong>이동권</strong>: 개인정보를 기계 판독 가능한 형식으로 제공받을 권리.</li></ul><p>위 권리 행사는 회사 고객센터(<a href="mailto:contact@mathiter.com">contact@mathiter.com</a>)로 요청하시면 지체 없이 처리합니다. 회사는 본인 확인 절차를 거친 후 회원의 요청을 처리합니다.</p><p>회원이 회사의 처리에 대해 이의가 있는 경우 개인정보보호위원회(privacy.go.kr) 또는 한국인터넷진흥원 개인정보침해신고센터(privacy.kisa.or.kr, 국번없이 118)에 신고할 수 있습니다.</p>`,
+        body: `<p>회원(정보주체)은 회사에 대해 다음 권리를 행사할 수 있습니다:</p><ul><li><strong>열람 요청</strong>: 회사가 보유한 본인의 개인정보 열람.</li><li><strong>정정·삭제 요청</strong>: 부정확하거나 불완전한 정보의 정정, 삭제.</li><li><strong>처리정지 요청</strong>: 개인정보 처리의 일시적 중단 요청.</li><li><strong>동의 철회</strong>: 개인정보 수집·이용·제공에 대한 동의의 철회.</li><li><strong>이동권</strong>: 개인정보를 기계 판독 가능한 형식으로 제공받을 권리.</li></ul><p>위 권리 행사는 회사 고객센터(<a href="mailto:support@mathiter.com">support@mathiter.com</a>)로 요청하시면 지체 없이 처리합니다. 회사는 본인 확인 절차를 거친 후 회원의 요청을 처리합니다.</p><p>회원이 회사의 처리에 대해 이의가 있는 경우 개인정보보호위원회(privacy.go.kr) 또는 한국인터넷진흥원 개인정보침해신고센터(privacy.kisa.or.kr, 국번없이 118)에 신고할 수 있습니다.</p>`,
       },
       {
         heading: "10. 개인정보의 안전성 확보 조치",
@@ -64,7 +64,7 @@ const content: Record<
       },
       {
         heading: "11. 개인정보보호책임자 및 문의처",
-        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>개인정보보호책임자</strong>: 박세준 (대표)<br/><strong>이메일</strong>: <a href="mailto:contact@mathiter.com">contact@mathiter.com</a><br/><strong>소속</strong>: 엘리코바 (Elicova)<br/><strong>전화</strong>: 070-OOOO-OOOO (운영 시간: 평일 10:00~18:00 KST)</p></div><p>개인정보 관련 문의·민원은 위 책임자에게 접수해 주시기 바랍니다. 회사는 접수 후 지체 없이 답변드립니다(영업일 기준 7일 이내).</p>`,
+        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>개인정보보호책임자</strong>: 박세준 (대표)<br/><strong>이메일</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>소속</strong>: 엘리코바 (Elicova)<br/><strong>전화</strong>: 010-7510-9092 (운영 시간: 평일 10:00~18:00 KST)</p></div><p>개인정보 관련 문의·민원은 위 책임자에게 접수해 주시기 바랍니다. 회사는 접수 후 지체 없이 답변드립니다(영업일 기준 7일 이내).</p>`,
       },
       {
         heading: "12. 본 개인정보처리방침의 변경",
@@ -102,7 +102,7 @@ const content: Record<
       },
       {
         heading: "6. Personal Information of Children Under 14",
-        body: `<p>For Members under the age of 14, the Company obtains consent from a legal representative (parent or guardian) at registration. If the Company becomes aware that it has collected personal information of a child under 14 without legal representative consent, the Company will promptly delete such information.</p><p>Legal representatives may request access, correction, or deletion of their child's personal information at any time via <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>.</p>`,
+        body: `<p>For Members under the age of 14, the Company obtains consent from a legal representative (parent or guardian) at registration. If the Company becomes aware that it has collected personal information of a child under 14 without legal representative consent, the Company will promptly delete such information.</p><p>Legal representatives may request access, correction, or deletion of their child's personal information at any time via <a href="mailto:support@mathiter.com">support@mathiter.com</a>.</p>`,
       },
       {
         heading: "7. Cookies and Tracking Technologies",
@@ -114,7 +114,7 @@ const content: Record<
       },
       {
         heading: "9. Rights of Data Subjects",
-        body: `<p>As a data subject, you may exercise the following rights with respect to the Company:</p><ul><li><strong>Right of access</strong>: Request to view personal information held by the Company about you.</li><li><strong>Right to correction/deletion</strong>: Request correction or deletion of inaccurate or incomplete data.</li><li><strong>Right to suspend processing</strong>: Request temporary suspension of data processing.</li><li><strong>Right to withdraw consent</strong>: Withdraw consent for collection, use, or provision of personal information.</li><li><strong>Right to data portability</strong>: Receive your personal information in a machine-readable format.</li></ul><p>To exercise these rights, please contact our customer support at <a href="mailto:contact@mathiter.com">contact@mathiter.com</a>. The Company will process requests without undue delay after identity verification.</p><p>You may also report concerns to the Personal Information Protection Commission of Korea (privacy.go.kr) or the Korea Internet & Security Agency's Privacy Infringement Reporting Center (privacy.kisa.or.kr, dial 118).</p>`,
+        body: `<p>As a data subject, you may exercise the following rights with respect to the Company:</p><ul><li><strong>Right of access</strong>: Request to view personal information held by the Company about you.</li><li><strong>Right to correction/deletion</strong>: Request correction or deletion of inaccurate or incomplete data.</li><li><strong>Right to suspend processing</strong>: Request temporary suspension of data processing.</li><li><strong>Right to withdraw consent</strong>: Withdraw consent for collection, use, or provision of personal information.</li><li><strong>Right to data portability</strong>: Receive your personal information in a machine-readable format.</li></ul><p>To exercise these rights, please contact our customer support at <a href="mailto:support@mathiter.com">support@mathiter.com</a>. The Company will process requests without undue delay after identity verification.</p><p>You may also report concerns to the Personal Information Protection Commission of Korea (privacy.go.kr) or the Korea Internet & Security Agency's Privacy Infringement Reporting Center (privacy.kisa.or.kr, dial 118).</p>`,
       },
       {
         heading: "10. Security Measures",
@@ -122,7 +122,7 @@ const content: Record<
       },
       {
         heading: "11. Data Protection Officer and Contact",
-        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>Data Protection Officer</strong>: Sejun Park (Representative)<br/><strong>Email</strong>: <a href="mailto:contact@mathiter.com">contact@mathiter.com</a><br/><strong>Affiliation</strong>: Elicova<br/><strong>Phone</strong>: 070-OOOO-OOOO (Hours: Weekdays 10:00–18:00 KST)</p></div><p>Please direct privacy-related inquiries or complaints to the officer above. The Company will respond without undue delay (within 7 business days).</p>`,
+        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>Data Protection Officer</strong>: Sejun Park (Representative)<br/><strong>Email</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>Affiliation</strong>: Elicova<br/><strong>Phone</strong>: 010-7510-9092 (Hours: Weekdays 10:00–18:00 KST)</p></div><p>Please direct privacy-related inquiries or complaints to the officer above. The Company will respond without undue delay (within 7 business days).</p>`,
       },
       {
         heading: "12. Changes to This Privacy Policy",

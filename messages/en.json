@@ -286,7 +286,9 @@
       "address": "Address: Cheoin-gu, Yongin-si, Gyeonggi-do, Republic of Korea (Simplified Taxpayer)",
       "ecommerce": "E-commerce Registration: Pending application",
       "tutoring": "Private Tutoring Registration: Pending (Yongin Education Support Office)",
-      "contactLabel": "Inquiries:"
+      "contactLabel": "Inquiries:",
+      "phone": "Phone: 010-7510-9092",
+      "kakao": "KakaoTalk: @mathiter"
     }
   },
   "languageSwitcher": {

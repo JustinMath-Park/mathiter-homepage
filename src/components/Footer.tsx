@@ -126,6 +126,10 @@ export default function Footer() {
               <a href="mailto:support@mathiter.com" className="hover:text-foreground transition-colors">
                 support@mathiter.com
               </a>
+              {" | "}
+              {t("business.phone")}
+              {" | "}
+              {t("business.kakao")}
             </p>
           </div>
         </div>
