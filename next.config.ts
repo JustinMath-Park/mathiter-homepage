@@ -14,6 +14,21 @@ const nextConfig: NextConfig = {
       { source: "/en/:path*", destination: "/", permanent: true },
     ];
   },
+  async headers() {
+    return [
+      {
+        // Allow Firebase signInWithPopup to communicate with the popup window.
+        // Default (or stricter) COOP blocks window.closed polling against
+        // accounts.google.com and floods the console with warnings.
+        // "same-origin-allow-popups" preserves COOP isolation for the rest
+        // of the document while permitting OAuth popups to function.
+        source: "/admin/:path*",
+        headers: [
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin-allow-popups" },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
