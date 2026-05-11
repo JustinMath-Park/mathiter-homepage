@@ -124,6 +124,40 @@ Coffee mugs and a notebook with handwritten pros/cons visible. Soft natural
 window light. The mood: an important family decision in progress.
 Horizontal landscape framing (16:9), three-quarter angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 3: IB Math AA HL 7점 받는 법 (Persona 2)
+    # ═══════════════════════════════════════════════════════
+    "ib-math-aa-hl-7-points-1.png": STYLE + """
+A Korean teenage student (around 16–17, IB Diploma age) studying late at night
+at a wooden desk in a quiet international school dorm or home study room.
+Multiple long-form exam papers spread across the desk, dense with handwritten
+mathematical working in pencil — equations, integrals, function graphs sketched
+by hand. A graphing display calculator (GDC) sits next to the papers. The
+student leans forward, brow slightly furrowed in concentration, mid-thought.
+A warm desk lamp casts focused light on the work surface; the rest of the room
+falls into soft shadow. A half-finished cup of tea on the corner of the desk.
+The mood: the intense, lonely focus of a student deep in IB exam preparation —
+the quiet weight of a 2-year diploma program nearing its decisive moment.
+Horizontal landscape framing (16:9), three-quarter angle from across the desk.
+""",
+
+    "ib-math-aa-hl-7-points-2.png": STYLE + """
+An over-the-shoulder view of a 1:1 tutoring session at a wooden table.
+A Korean student (teenage, ~17) is seated facing forward, and an older
+mentor figure (Korean man in his 40s, business-casual) sits next to them,
+pointing at a multi-page handwritten mathematical exploration document
+with red pen markings, sketches of graphs, and integral notation visible
+on the pages. The student listens attentively, head tilted toward the
+mentor. The pages on the table are clearly a working draft — marginalia,
+crossed-out lines, fresh comments in red ink. A laptop open in the
+background shows mathematical software (not in sharp focus). Soft natural
+afternoon light through a window. Both faces visible only in partial
+profile — emphasis on hands, the document, and the act of guided revision.
+The mood: precise, calm mentorship — a draft being carefully shaped before
+submission.
+Horizontal landscape framing (16:9), over-shoulder editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

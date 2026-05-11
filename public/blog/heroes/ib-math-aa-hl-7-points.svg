@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <linearGradient id="scoreCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="paper1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="paper3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+    <linearGradient id="iaCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg3)" />
+  <circle cx="180" cy="160" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="740" r="300" fill="#ffffff" opacity="0.04" />
+
+  <!-- IB Math AA HL label -->
+  <text x="800" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.7" letter-spacing="4">IB MATH AA HL</text>
+
+  <!-- Big "7" score -->
+  <g transform="translate(800, 460)">
+    <circle r="200" fill="url(#scoreCard)" opacity="0.95" />
+    <text x="0" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="280" font-weight="800" fill="#ffffff">7</text>
+  </g>
+
+  <!-- Paper 1 card -->
+  <g transform="translate(120, 660)">
+    <rect width="280" height="160" rx="20" fill="url(#paper1)" />
+    <text x="140" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.85">Paper 1</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">~30%</text>
+    <text x="140" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">No GDC</text>
+  </g>
+
+  <!-- Paper 2 card -->
+  <g transform="translate(450, 660)">
+    <rect width="280" height="160" rx="20" fill="url(#paper2)" />
+    <text x="140" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.85">Paper 2</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">~30%</text>
+    <text x="140" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">GDC 허용</text>
+  </g>
+
+  <!-- Paper 3 card -->
+  <g transform="translate(870, 660)">
+    <rect width="280" height="160" rx="20" fill="url(#paper3)" />
+    <text x="140" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.85">Paper 3</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">~20%</text>
+    <text x="140" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">HL only</text>
+  </g>
+
+  <!-- IA card -->
+  <g transform="translate(1200, 660)">
+    <rect width="280" height="160" rx="20" fill="url(#iaCard)" />
+    <text x="140" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.85">IA</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">~20%</text>
+    <text x="140" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">Exploration</text>
+  </g>
+</svg>
