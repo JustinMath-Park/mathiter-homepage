@@ -119,7 +119,17 @@ export default function Footer() {
               {t("business.businessNumber")}
             </p>
             <p>{t("business.address")}</p>
-            <p>{t("business.ecommerce")}</p>
+            <p>
+              {t("business.ecommerce")}{" "}
+              <a
+                href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=7100503676"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground underline transition-colors"
+              >
+                {t("business.ecommerceLookup")}
+              </a>
+            </p>
             <p>{t("business.tutoring")}</p>
             <p>
               {t("business.contactLabel")}{" "}
