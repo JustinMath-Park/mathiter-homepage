@@ -54,7 +54,7 @@ Digital SAT[^dsat]의 수학 영역은 총 44문항, 70분, 두 개의 모듈로
 
 > *If $f(x) = 2x^2 - 5$, what is the sum of all integer values of $x$ for which $f(x) = 27$?*
 
-이 문제에서 한국 학생들이 자주 놓치는 단어는 **'all'**입니다. 영어를 빠르게 읽으면 'integer values'까지만 눈에 들어와 양의 해 $x = 4$만 적고 4를 답으로 적습니다. 또는 'sum'을 함수값들의 합으로 잘못 해석해 $f(4) = 27$ 같은 값을 적기도 합니다. 정답은 $2x^2 - 5 = 27$에서 $x = \pm 4$, **'all'** integer values이므로 $-4 + 4 = 0$.
+이 문제에서 한국 학생들이 자주 놓치는 단어는 <strong>'all'</strong>입니다. 영어를 빠르게 읽으면 'integer values'까지만 눈에 들어와 양의 해 $x = 4$만 적고 4를 답으로 적습니다. 또는 'sum'을 함수값들의 합으로 잘못 해석해 $f(4) = 27$ 같은 값을 적기도 합니다. 정답은 $2x^2 - 5 = 27$에서 $x = \pm 4$, **'all'** integer values이므로 $-4 + 4 = 0$.
 
 수학 자체는 한국 학생 전원이 풀 수 있는 문제입니다. 영어 한 단어를 놓쳐서 점수가 깎이는 거죠. 800점 학생들은 풀이 시작 전 문제에서 어휘 한 줄을 다시 봅니다. 'integer / positive / sum / value / which of the following / all'에 동그라미부터 칩니다.
 
@@ -95,7 +95,7 @@ SAT는 직접 답을 묻기보다 '다음 중 ~일 수 있는 것은?' 식으로
 > *(C) $n$ is a multiple of 4*
 > *(D) $n$ is negative*
 
-핵심 단어는 **'must be true'**입니다. SAT는 'could be true'(가능한 것)를 묻기도 하고 'must be true'(반드시 참인 것)를 묻기도 합니다. 한국 학생들은 이 둘을 빠르게 같은 것으로 처리해 한 케이스만 확인하고 답을 고릅니다. $n=2$로 시도해 $n^2=4$가 짝수이므로 (A) — 답은 맞습니다. 하지만 풀이 과정에 'must'에 대한 검증이 빠져 있습니다. 800점 학생들은 'must'를 표시하고 대우 추론을 마지막에 한 줄 적습니다 — '$n$이 홀수면 $n^2$도 홀수, 그러므로 $n^2$이 짝수면 $n$은 **반드시** 짝수'. 같은 문제 패턴이 'could be'로 출제될 때도 같은 사고가 작동합니다.
+핵심 단어는 <strong>'must be true'</strong>입니다. SAT는 'could be true'(가능한 것)를 묻기도 하고 'must be true'(반드시 참인 것)를 묻기도 합니다. 한국 학생들은 이 둘을 빠르게 같은 것으로 처리해 한 케이스만 확인하고 답을 고릅니다. $n=2$로 시도해 $n^2=4$가 짝수이므로 (A) — 답은 맞습니다. 하지만 풀이 과정에 'must'에 대한 검증이 빠져 있습니다. 800점 학생들은 'must'를 표시하고 대우 추론을 마지막에 한 줄 적습니다 — '$n$이 홀수면 $n^2$도 홀수, 그러므로 $n^2$이 짝수면 $n$은 **반드시** 짝수'. 같은 문제 패턴이 'could be'로 출제될 때도 같은 사고가 작동합니다.
 
 ### 함정 5 – 단위·표·그래프 해석 실수
 
@@ -105,7 +105,7 @@ Problem-Solving and Data Analysis 영역은 한국 학생이 가장 만만하게
 
 > *In a city, the daily mean rainfall in May (31 days) was 4 mm. After 30 days of June data were added, the daily mean rainfall over the two months combined became 7 mm. What was the daily mean rainfall in June?*
 
-핵심 함정은 **'daily mean'을 단순 평균으로 처리하는 것**입니다. 한국 학생들은 자주 $(4 + x) / 2 = 7$로 풀어서 $x = 10$을 답합니다. 그러나 두 달의 일수가 다르므로 가중평균 $(31 \times 4 + 30 \times x) / 61 = 7$로 풀어야 합니다 — 정답은 $x \approx 10.1$. 'mean'과 'median'을 빠르게 읽다가 혼동하는 사례도 많습니다. 'typical value'라는 단어가 보이면 보통 중앙값을 묻는 신호입니다.
+핵심 함정은 <strong>'daily mean'을 단순 평균으로 처리하는 것</strong>입니다. 한국 학생들은 자주 $(4 + x) / 2 = 7$로 풀어서 $x = 10$을 답합니다. 그러나 두 달의 일수가 다르므로 가중평균 $(31 \times 4 + 30 \times x) / 61 = 7$로 풀어야 합니다 — 정답은 $x \approx 10.1$. 'mean'과 'median'을 빠르게 읽다가 혼동하는 사례도 많습니다. 'typical value'라는 단어가 보이면 보통 중앙값을 묻는 신호입니다.
 
 800점 학생들은 표나 그래프 문제를 만나면 항상 단위·축 라벨·제목·기간을 먼저 손가락으로 짚고 시작합니다.
 

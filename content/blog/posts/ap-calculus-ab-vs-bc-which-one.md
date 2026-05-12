@@ -121,7 +121,7 @@ BC 5점은 미국 대학에서 보통 <strong>2학기 분량의 Calculus 학점<
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
-[^ap]: **AP** (Advanced Placement) — 미국 **College Board**가 주관하는 고등학교 고급 과정. 38개 과목이 있고 5월 첫 2주에 시험이 몰려 있습니다. 1–5점 척도로 채점되며, 보통 4점 이상이면 미국 대학에서 학점 인정. 수학 관련 과목은 Calculus AB, BC, Statistics, Precalculus 4종입니다.
+[^ap]: **AP** (Advanced Placement) — 미국 <strong>College Board</strong>가 주관하는 고등학교 고급 과정. 38개 과목이 있고 5월 첫 2주에 시험이 몰려 있습니다. 1–5점 척도로 채점되며, 보통 4점 이상이면 미국 대학에서 학점 인정. 수학 관련 과목은 Calculus AB, BC, Statistics, Precalculus 4종입니다.
 
 [^stem]: **STEM** — Science, Technology, Engineering, Mathematics의 약자. 자연·공학·수학 계열 학문을 통칭하며 미국 대학 입시에서 "이 학생이 어느 트랙인가"의 핵심 시그널로 쓰입니다. STEM 지망생은 AP Calc BC, AP Physics C, AP CS 같은 과목으로 트랙을 강하게 표시합니다.
 
