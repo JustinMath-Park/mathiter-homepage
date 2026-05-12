@@ -431,5 +431,19 @@ service cloud.firestore {
       allow write: if true;
     }
 
+    // ============================================
+    // Blog Views (조회수 dedup 기록)
+    // dedup id = "{slug}__{ipHash12}__{YYYY-MM-DD}"
+    // Server-only write via Admin SDK (POST /api/blog/view). 클라이언트 직접 X.
+    // sspark222@gmail.com만 read (analytics용).
+    // ============================================
+    match /blogViews/{id} {
+      allow read: if request.auth != null
+        && request.auth.token.email in [
+          'sspark222@gmail.com'
+        ];
+      allow write: if false;
+    }
+
   }
 }

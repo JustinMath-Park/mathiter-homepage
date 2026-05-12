@@ -43,6 +43,17 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
 
   const isAdmin = isAdminEmail(user?.email);
 
+  // Once an admin has signed in on this browser, mark localStorage so the
+  // public blog view tracker (BlogViewTracker.tsx) can skip counting views
+  // from this device. Justin uses Tailscale (100.x.x.x is internal, not
+  // public IP), so IP-only exclusion is unreliable — localStorage is the
+  // robust path.
+  useEffect(() => {
+    if (isAdmin && typeof window !== "undefined") {
+      window.localStorage.setItem("mathiter_admin_seen", "1");
+    }
+  }, [isAdmin]);
+
   return (
     <AdminAuthContext.Provider value={{ user, isAdmin, loading, configured }}>
       {children}

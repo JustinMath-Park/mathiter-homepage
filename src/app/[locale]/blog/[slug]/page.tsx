@@ -7,6 +7,7 @@ import PostBody from "@/components/blog/PostBody";
 import AuthorCard from "@/components/blog/AuthorCard";
 import CTABox from "@/components/blog/CTABox";
 import RelatedPosts from "@/components/blog/RelatedPosts";
+import BlogViewTracker from "@/components/blog/BlogViewTracker";
 import {
   getAllSlugs,
   getPostBySlug,
@@ -247,6 +248,7 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <BlogViewTracker slug={post.slug} />
     </>
   );
 }

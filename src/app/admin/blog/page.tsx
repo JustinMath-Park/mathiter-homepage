@@ -42,6 +42,7 @@ type PostSummary = {
   category: string;
   showOnHome: boolean;
   showOnTutoring: boolean;
+  viewCount: number;
 };
 
 export default function AdminBlogList() {
@@ -77,6 +78,7 @@ function BlogListInner() {
             category: String(d.category ?? "general"),
             showOnHome: d.showOnHome !== false,
             showOnTutoring: d.showOnTutoring !== false,
+            viewCount: typeof d.viewCount === "number" ? d.viewCount : 0,
           };
         });
         list.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
@@ -122,7 +124,11 @@ function BlogListInner() {
       <main className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex items-center justify-between mb-8">
           <p className="text-sm text-muted">
-            총 {posts.length}편 — 메인 노출{" "}
+            총 {posts.length}편 · 누적 조회수{" "}
+            <span className="font-semibold text-foreground">
+              {posts.reduce((sum, p) => sum + (p.viewCount || 0), 0).toLocaleString()}
+            </span>
+            회 · 메인 노출{" "}
             <span className="font-semibold text-foreground">
               {
                 posts.filter(
@@ -172,6 +178,7 @@ function BlogListInner() {
                   <th className="text-left py-3 px-3 font-medium w-24">분류</th>
                   <th className="text-left py-3 px-3 font-medium w-20">상태</th>
                   <th className="text-left py-3 px-3 font-medium w-24">노출</th>
+                  <th className="text-right py-3 px-3 font-medium w-20">조회수</th>
                   <th className="text-left py-3 px-3 font-medium w-28">발행일</th>
                   <th className="w-20"></th>
                 </tr>
@@ -237,6 +244,18 @@ function BlogListInner() {
                           튜터링
                         </span>
                       </div>
+                    </td>
+                    <td className="py-4 px-3 text-right">
+                      <span
+                        className={`text-sm font-mono tabular-nums ${
+                          post.viewCount > 0
+                            ? "font-semibold text-foreground"
+                            : "text-muted/60"
+                        }`}
+                        title="같은 IP는 24시간 내 1회, 어드민 방문 기록이 있는 브라우저는 제외"
+                      >
+                        {post.viewCount.toLocaleString()}
+                      </span>
                     </td>
                     <td className="py-4 px-3 text-xs text-muted">
                       {post.publishedAt}
