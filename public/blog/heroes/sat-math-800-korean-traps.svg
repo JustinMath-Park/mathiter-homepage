@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1d3d" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <linearGradient id="scoreGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="trapCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg6)" />
+  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header label -->
+  <text x="800" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff" opacity="0.7" letter-spacing="6">SAT MATH · 한국 학생 5가지 함정</text>
+
+  <!-- Big 800 score -->
+  <g transform="translate(800, 380)">
+    <circle r="180" fill="url(#scoreGold)" opacity="0.95" />
+    <text x="0" y="50" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="200" font-weight="800" fill="#0c1d3d">800</text>
+    <text x="0" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#0c1d3d" opacity="0.7" letter-spacing="3">MATH PERFECT</text>
+  </g>
+
+  <!-- 5 trap cards -->
+  <g transform="translate(60, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapCard)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 1</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">영어 수학 어휘</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">integer · whole · sum</text>
+  </g>
+
+  <g transform="translate(370, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapCard)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 2</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">문장→식 setup</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">Word problem</text>
+  </g>
+
+  <g transform="translate(680, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapCard)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 3</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Desmos 미사용</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">손계산 고집</text>
+  </g>
+
+  <g transform="translate(990, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapCard)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 4</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">could vs must</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">간접 질문</text>
+  </g>
+
+  <g transform="translate(1300, 640)">
+    <rect width="240" height="180" rx="20" fill="url(#trapCard)" />
+    <text x="120" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 5</text>
+    <text x="120" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">단위·표 해석</text>
+    <text x="120" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">mean / median</text>
+  </g>
+</svg>

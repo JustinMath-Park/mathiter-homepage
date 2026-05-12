@@ -192,6 +192,41 @@ The mood: the quiet moment of bridging two mathematical worlds — neither
 abandoned, both held at once.
 Horizontal landscape framing (16:9), top-down editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 4: SAT Math 800 한국 학생 함정 5가지 (Persona 2)
+    # ═══════════════════════════════════════════════════════
+    "sat-math-800-korean-traps-1.png": STYLE + """
+A Korean teenage student (around 16-17, high school junior) seated at a
+desk taking a practice digital SAT exam. A laptop is open in front of
+them showing a generic math testing interface (NOT actual SAT content
+— just abstract math test layout with question number visible, neutral
+white-and-blue design, no recognizable logos). Scratch paper to the
+right of the laptop with handwritten work in pencil. A simple wristwatch
+on the desk indicating time pressure. The student is leaning forward,
+intensely focused, brow slightly furrowed. Natural daytime light through
+a window. Books and a water bottle in soft-focus background.
+The mood: the controlled tension of a high-stakes timed test — focused
+intelligence under time pressure.
+Horizontal landscape framing (16:9), three-quarter angle.
+""",
+
+    "sat-math-800-korean-traps-2.png": STYLE + """
+Over-the-shoulder editorial shot of a 1:1 tutoring session. A Korean
+tutor (40s, business-casual, partial profile only — no clear face) and
+a teenage student (~17, back of head visible) are reviewing a printed
+SAT-style math practice answer sheet together. The page on the table
+shows multiple math problems with handwritten work, several red pen
+circles around mistakes and a few short red annotations in margins
+(generic math notation, NOT actual SAT content). A laptop sits open
+nearby showing a Desmos-style graphing calculator with a parabola
+plotted on it (not in sharp focus). Both hands visible — the tutor
+pointing at a specific problem, the student's pencil paused mid-thought.
+Warm afternoon natural light through a window. Wooden table surface.
+The mood: precise, calm diagnosis — finding exactly where points were
+lost.
+Horizontal landscape framing (16:9), over-shoulder editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
