@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "lint:blog": "node scripts/lint-blog.mjs",
     "seed:blog": "node scripts/seed-blog.mjs"
   },
   "dependencies": {

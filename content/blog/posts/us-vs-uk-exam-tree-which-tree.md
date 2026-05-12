@@ -42,7 +42,7 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 트리는 <strong>유학 가기 전에 결정</strong>해서 입학해야 합니다. 가서 바꾸려고 시도할 때 치르는 비용은 다섯 가지입니다.
 
-<strong>1. 학기 시작 월 자체가 다릅니다.</strong> American은 8월 초·중순 시작, British는 9월 초 시작입니다. 예를 들어 ISKL(말레이시아 American)의 2026–27 학년도는 8월 5일에 시작하고, 같은 도시의 Alice Smith(영국식)는 9월에 시작합니다. 한 학년이 끝나고 트리를 바꾸려면 6주~3개월의 gap이 생기고, 남반구 학교(호주 등 1·2월 시작)로 옮기면 <strong>6개월 또는 한 학년이 통째로 비는</strong> 상황이 가능합니다.
+<strong>1. 학기 시작 월 자체가 다릅니다.</strong> American은 8월 초·중순 시작, British는 9월 초 시작입니다. 예를 들어 ISKL(말레이시아 American)의 2026–27 학년도는 8월 5일에 시작하고, 같은 도시의 Alice Smith(영국식)는 9월에 시작합니다. 한 학년이 끝나고 트리를 바꾸려면 6주–3개월의 gap이 생기고, 남반구 학교(호주 등 1·2월 시작)로 옮기면 <strong>6개월 또는 한 학년이 통째로 비는</strong> 상황이 가능합니다.
 
 <strong>2. 학년 매핑이 1년 어긋납니다.</strong> 영국 시스템은 만 4세에 의무 Reception이 시작되어, 미국 Kindergarten보다 1년 빠릅니다. 그래서 같은 만 14세 학생이 미국에서는 G9, 영국에서는 Y10입니다. 트리를 바꾸면 placement test 결과 따라 <strong>한 학년 강등될 가능성</strong>이 있고, 영국식 학교가 미국식보다 entry test가 엄격한 편입니다.
 
