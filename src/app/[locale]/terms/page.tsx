@@ -20,7 +20,7 @@ const content: Record<
     sections: [
       {
         heading: "",
-        body: `<p>엘리코바(Elicova)(이하 "회사", "당사", "엘리코바")가 운영하는 Mathiter 서비스를 이용해 주셔서 감사합니다. 본 서비스 이용약관("약관")은 회사가 제공하는 Mathiter 웹사이트(<a href="https://mathiter.com">mathiter.com</a>), 웹·모바일 애플리케이션, Mathiter Tutoring 서비스 및 모든 관련 제품·서비스(이하 통칭 "서비스")에 대한 귀하의 이용을 규율합니다.</p><p>서비스를 이용함으로써 귀하는 본 약관에 동의하게 됩니다. 동의하지 않으시는 경우 서비스를 이용하지 마시기 바랍니다. 회사는 두 가지 별도의 서비스 트랙(Mathiter 학습앱 / Mathiter Tutoring)을 운영하며, 트랙별 별도 규정은 본 약관 § A 및 § B에 명시되어 있습니다.</p>`,
+        body: `<p>엘리코바(Elicova)(이하 "회사", "당사", "엘리코바")가 운영하는 Mathiter 서비스를 이용해 주셔서 감사합니다. 본 서비스 이용약관("약관")은 회사가 제공하는 Mathiter 웹사이트(<a href="https://mathiter.com">mathiter.com</a>), 웹·모바일 애플리케이션, Mathiter Tutoring 서비스 및 모든 관련 제품·서비스(이하 통칭 "서비스")에 대한 귀하의 이용을 규율합니다.</p><p>서비스를 이용함으로써 귀하는 본 약관에 동의하게 됩니다. 동의하지 않으시는 경우 서비스를 이용하지 마시기 바랍니다. 회사는 두 가지 별도의 서비스 트랙(Mathiter 학습앱 / Mathiter Tutoring)을 운영하며, 트랙별 별도 규정은 본 약관 A 및 B에 명시되어 있습니다.</p>`,
       },
       {
         heading: "1. 용어의 정의",
@@ -36,11 +36,11 @@ const content: Record<
       },
       {
         heading: "4. 서비스의 구성",
-        body: `<p>회사는 다음 두 가지 독립된 서비스 트랙을 제공합니다:</p><ul><li><strong>Mathiter 학습앱 (SaaS 트랙)</strong>: 적응형 진단 테스트(adaptive-test), AI 학습 코칭, 문제 풀이, 강의, 학부모 대시보드 등을 포함한 자기주도 학습 도구. 무료 사용자와 유료 구독자로 구분됩니다. 본 약관 § B에서 별도로 규정합니다.</li><li><strong>Mathiter Tutoring (튜터링 트랙)</strong>: 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 신고된 개인과외교습 서비스로, 박세준 대표가 직접 운영하는 1:1 화상 코칭 + AI 학습 모니터링 + 학부모 리포트 + Q&A를 포함한 종합 교습 패키지. 본 약관 § A에서 별도로 규정합니다.</li></ul><p>회원은 각 트랙을 개별 또는 동시에 이용할 수 있으며, 트랙별로 별도의 결제·환불·운영 규정이 적용됩니다. 트랙 간 전환에 관한 규정은 § C를 따릅니다.</p>`,
+        body: `<p>회사는 다음 두 가지 독립된 서비스 트랙을 제공합니다:</p><ul><li><strong>Mathiter 학습앱 (SaaS 트랙)</strong>: 적응형 진단 테스트(adaptive-test), AI 학습 코칭, 문제 풀이, 강의, 학부모 대시보드 등을 포함한 자기주도 학습 도구. 무료 사용자와 유료 구독자로 구분됩니다. 본 약관 B에서 별도로 규정합니다.</li><li><strong>Mathiter Tutoring (튜터링 트랙)</strong>: 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 신고된 개인과외교습 서비스로, 박세준 대표가 직접 운영하는 1:1 화상 코칭 + AI 학습 모니터링 + 학부모 리포트 + Q&A를 포함한 종합 교습 패키지. 본 약관 A에서 별도로 규정합니다.</li></ul><p>회원은 각 트랙을 개별 또는 동시에 이용할 수 있으며, 트랙별로 별도의 결제·환불·운영 규정이 적용됩니다. 트랙 간 전환에 관한 규정은 C를 따릅니다.</p>`,
       },
       {
-        heading: "§ A. Mathiter Tutoring (튜터링 트랙)",
-        body: `<p>본 § A의 조항은 Mathiter Tutoring 트랙 이용에만 적용됩니다.</p>`,
+        heading: "A. Mathiter Tutoring (튜터링 트랙)",
+        body: `<p>본 A의 조항은 Mathiter Tutoring 트랙 이용에만 적용됩니다.</p>`,
       },
       {
         heading: "A-1. 사전 영업 프로세스 (무료)",
@@ -67,8 +67,8 @@ const content: Record<
         body: `<p>사이클 완료 시점의 자동 결제가 실패하는 경우 다음 절차에 따라 처리합니다:</p><ol><li><strong>1차 결제 시도 실패</strong> — 학부모와 회사에 즉시 이메일로 통보합니다.</li><li><strong>24시간 후 2차 자동 재시도</strong> — 카드 한도·만료 등 일시적 문제가 해소된 경우 자동 결제됩니다.</li><li><strong>2차 시도도 실패</strong> — 자동 재시도를 중단하고 학부모와 회사에 이메일 통보합니다. 회사가 학부모와 직접 연락하여 결제수단 갱신 또는 정산 방식을 협의합니다.</li></ol><p>결제 실패 사유로 즉시 수업이 중단되지는 않으며, 학부모와의 협의 절차를 거칩니다.</p>`,
       },
       {
-        heading: "§ B. Mathiter 학습앱 (SaaS 트랙)",
-        body: `<p>본 § B의 조항은 Mathiter 학습앱 트랙 이용에만 적용됩니다.</p>`,
+        heading: "B. Mathiter 학습앱 (SaaS 트랙)",
+        body: `<p>본 B의 조항은 Mathiter 학습앱 트랙 이용에만 적용됩니다.</p>`,
       },
       {
         heading: "B-1. Freemium 구조",
@@ -88,10 +88,10 @@ const content: Record<
       },
       {
         heading: "B-5. Mathiter Tutoring 회원의 자동 무료 이용",
-        body: `<p>Mathiter Tutoring(§ A) 정식 수업이 진행되는 동안(상태: active) 회원은 Mathiter 학습앱 유료 기능을 무료로 이용합니다. 별도 결제 없이 자동 적용되며, 회사는 이를 위해 별도의 빌링키를 발급하지 않습니다.</p><p>튜터링 종료 후 학습앱 구독 처리는 § C(트랙 간 전환)을 따릅니다.</p>`,
+        body: `<p>Mathiter Tutoring(A) 정식 수업이 진행되는 동안(상태: active) 회원은 Mathiter 학습앱 유료 기능을 무료로 이용합니다. 별도 결제 없이 자동 적용되며, 회사는 이를 위해 별도의 빌링키를 발급하지 않습니다.</p><p>튜터링 종료 후 학습앱 구독 처리는 C(트랙 간 전환)을 따릅니다.</p>`,
       },
       {
-        heading: "§ C. 트랙 간 전환",
+        heading: "C. 트랙 간 전환",
         body: `<p>회원이 Mathiter Tutoring과 Mathiter 학습앱 간 이동하는 경우 다음 규정을 적용합니다.</p>`,
       },
       {
@@ -100,7 +100,7 @@ const content: Record<
       },
       {
         heading: "C-2. Mathiter Tutoring 종료 시 학습앱 14일 유예 기간",
-        body: `<p>Mathiter Tutoring 정식 수업이 종료(해지·완료·만료)되면, 회원은 14일 동안 Mathiter 학습앱 유료 기능을 그대로 이용할 수 있습니다(유예 기간). 유예 기간 중 다음 안내 이메일이 발송됩니다:</p><ul><li><strong>Day 1</strong> — 유예 시작 알림 및 학습앱 구독 안내 (선택 옵션 제시)</li><li><strong>Day 7</strong> — 중간 알림</li><li><strong>Day 14</strong> — 마지막 알림</li></ul><p>유예 기간 중 회원은 다음 중 하나를 선택할 수 있습니다:</p><ol><li><strong>Mathiter 학습앱 정기결제 시작</strong> — 회원은 별도의 결제 동의 절차를 거쳐 새로운 빌링키를 등록해야 합니다. 튜터링용 빌링키는 자동 사용되지 않습니다.</li><li><strong>무료 사용자로 전환</strong> — 일일 사용량 제한이 적용되며, § B-4의 학습 데이터 보존 정책이 적용됩니다.</li></ol><p>회원이 14일 이내 별도 선택을 하지 않는 경우, 회사는 자동으로 "무료 사용자 전환"을 적용합니다.</p>`,
+        body: `<p>Mathiter Tutoring 정식 수업이 종료(해지·완료·만료)되면, 회원은 14일 동안 Mathiter 학습앱 유료 기능을 그대로 이용할 수 있습니다(유예 기간). 유예 기간 중 다음 안내 이메일이 발송됩니다:</p><ul><li><strong>Day 1</strong> — 유예 시작 알림 및 학습앱 구독 안내 (선택 옵션 제시)</li><li><strong>Day 7</strong> — 중간 알림</li><li><strong>Day 14</strong> — 마지막 알림</li></ul><p>유예 기간 중 회원은 다음 중 하나를 선택할 수 있습니다:</p><ol><li><strong>Mathiter 학습앱 정기결제 시작</strong> — 회원은 별도의 결제 동의 절차를 거쳐 새로운 빌링키를 등록해야 합니다. 튜터링용 빌링키는 자동 사용되지 않습니다.</li><li><strong>무료 사용자로 전환</strong> — 일일 사용량 제한이 적용되며, B-4의 학습 데이터 보존 정책이 적용됩니다.</li></ol><p>회원이 14일 이내 별도 선택을 하지 않는 경우, 회사는 자동으로 "무료 사용자 전환"을 적용합니다.</p>`,
       },
       {
         heading: "5. 지적재산권",
@@ -158,7 +158,7 @@ const content: Record<
     sections: [
       {
         heading: "",
-        body: `<p>Welcome to Mathiter, operated by Elicova (hereinafter "the Company," "we," "us," or "Elicova"), a sole proprietorship registered in the Republic of Korea. These Terms of Service ("Terms") govern your access to and use of the Mathiter website (<a href="https://mathiter.com">mathiter.com</a>), web and mobile applications, the Mathiter Tutoring service, and all related products and services (collectively, the "Service").</p><p>By accessing or using the Service, you agree to be bound by these Terms. The Company operates two distinct service tracks (Mathiter learning app / Mathiter Tutoring), each governed by separate provisions set out in § A and § B below.</p>`,
+        body: `<p>Welcome to Mathiter, operated by Elicova (hereinafter "the Company," "we," "us," or "Elicova"), a sole proprietorship registered in the Republic of Korea. These Terms of Service ("Terms") govern your access to and use of the Mathiter website (<a href="https://mathiter.com">mathiter.com</a>), web and mobile applications, the Mathiter Tutoring service, and all related products and services (collectively, the "Service").</p><p>By accessing or using the Service, you agree to be bound by these Terms. The Company operates two distinct service tracks (Mathiter learning app / Mathiter Tutoring), each governed by separate provisions set out in A and B below.</p>`,
       },
       {
         heading: "1. Definitions",
@@ -174,11 +174,11 @@ const content: Record<
       },
       {
         heading: "4. Service Structure",
-        body: `<p>The Company provides two independent service tracks:</p><ul><li><strong>Mathiter learning app (SaaS track)</strong>: A self-directed learning toolkit including adaptive diagnostic testing, AI-powered coaching, problem practice, video lessons, and a parent dashboard. Available in free and paid tiers, governed by § B.</li><li><strong>Mathiter Tutoring (tutoring track)</strong>: A registered private tutoring service under Korea's Act on the Establishment and Operation of Private Teaching Institutes and Extracurricular Lessons, personally operated by Sejun Park as a registered individual private tutor. The package includes 1:1 video coaching, AI learning monitoring, parent reports, and Q&A — governed by § A.</li></ul><p>Members may use either or both tracks. Each track has separate billing, refund, and operational rules. Track transitions are governed by § C.</p>`,
+        body: `<p>The Company provides two independent service tracks:</p><ul><li><strong>Mathiter learning app (SaaS track)</strong>: A self-directed learning toolkit including adaptive diagnostic testing, AI-powered coaching, problem practice, video lessons, and a parent dashboard. Available in free and paid tiers, governed by B.</li><li><strong>Mathiter Tutoring (tutoring track)</strong>: A registered private tutoring service under Korea's Act on the Establishment and Operation of Private Teaching Institutes and Extracurricular Lessons, personally operated by Sejun Park as a registered individual private tutor. The package includes 1:1 video coaching, AI learning monitoring, parent reports, and Q&A — governed by A.</li></ul><p>Members may use either or both tracks. Each track has separate billing, refund, and operational rules. Track transitions are governed by C.</p>`,
       },
       {
-        heading: "§ A. Mathiter Tutoring",
-        body: `<p>The provisions of this § A apply exclusively to the Mathiter Tutoring track.</p>`,
+        heading: "A. Mathiter Tutoring",
+        body: `<p>The provisions of this A apply exclusively to the Mathiter Tutoring track.</p>`,
       },
       {
         heading: "A-1. Pre-Enrollment Process (Free)",
@@ -205,8 +205,8 @@ const content: Record<
         body: `<p>If the automatic charge at cycle completion fails, the following procedure applies:</p><ol><li><strong>First failed attempt</strong> — The parent and the Company are notified by email immediately.</li><li><strong>Automatic retry after 24 hours</strong> — If the temporary issue (card limit, expiration, etc.) is resolved, the payment is processed automatically.</li><li><strong>Second failed attempt</strong> — Automatic retries cease. The parent and the Company are notified by email. The Company contacts the parent directly to coordinate payment method updates or alternative settlement.</li></ol><p>Tutoring sessions are not immediately suspended due to failed payment; the Company first coordinates with the parent.</p>`,
       },
       {
-        heading: "§ B. Mathiter learning app (SaaS)",
-        body: `<p>The provisions of this § B apply exclusively to the Mathiter learning app track.</p>`,
+        heading: "B. Mathiter learning app (SaaS)",
+        body: `<p>The provisions of this B apply exclusively to the Mathiter learning app track.</p>`,
       },
       {
         heading: "B-1. Freemium Structure",
@@ -226,10 +226,10 @@ const content: Record<
       },
       {
         heading: "B-5. Auto-Free for Mathiter Tutoring Members",
-        body: `<p>While Mathiter Tutoring (§ A) sessions are actively running (status: active), Members automatically receive free access to all Mathiter learning app paid features. No separate payment is required and no billing key is issued for this purpose.</p><p>Subscription handling after tutoring ends follows § C (Track Transitions).</p>`,
+        body: `<p>While Mathiter Tutoring (A) sessions are actively running (status: active), Members automatically receive free access to all Mathiter learning app paid features. No separate payment is required and no billing key is issued for this purpose.</p><p>Subscription handling after tutoring ends follows C (Track Transitions).</p>`,
       },
       {
-        heading: "§ C. Track Transitions",
+        heading: "C. Track Transitions",
         body: `<p>The following provisions apply when a Member moves between Mathiter Tutoring and the Mathiter learning app.</p>`,
       },
       {
@@ -238,7 +238,7 @@ const content: Record<
       },
       {
         heading: "C-2. 14-Day Grace After Tutoring Termination",
-        body: `<p>When Mathiter Tutoring sessions are terminated (canceled, completed, or expired), Members retain access to Mathiter learning app paid features for 14 days (grace period). The following notification emails are sent during this period:</p><ul><li><strong>Day 1</strong> — Grace start notification with subscription options.</li><li><strong>Day 7</strong> — Mid-grace reminder.</li><li><strong>Day 14</strong> — Final reminder.</li></ul><p>During the grace period, the Member may choose one of the following:</p><ol><li><strong>Start Mathiter learning app subscription</strong> — Requires a separate consent process and registration of a new billing key. The tutoring billing key is not auto-used.</li><li><strong>Switch to free tier</strong> — Daily usage cap applies, and the § B-4 learning data retention policy applies.</li></ol><p>If the Member does not make an explicit choice within 14 days, the Company automatically applies "Switch to free tier."</p>`,
+        body: `<p>When Mathiter Tutoring sessions are terminated (canceled, completed, or expired), Members retain access to Mathiter learning app paid features for 14 days (grace period). The following notification emails are sent during this period:</p><ul><li><strong>Day 1</strong> — Grace start notification with subscription options.</li><li><strong>Day 7</strong> — Mid-grace reminder.</li><li><strong>Day 14</strong> — Final reminder.</li></ul><p>During the grace period, the Member may choose one of the following:</p><ol><li><strong>Start Mathiter learning app subscription</strong> — Requires a separate consent process and registration of a new billing key. The tutoring billing key is not auto-used.</li><li><strong>Switch to free tier</strong> — Daily usage cap applies, and the B-4 learning data retention policy applies.</li></ol><p>If the Member does not make an explicit choice within 14 days, the Company automatically applies "Switch to free tier."</p>`,
       },
       {
         heading: "5. Intellectual Property",

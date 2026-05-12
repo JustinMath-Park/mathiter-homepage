@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 type TierKey = "basic" | "advanced" | "pro" | "master";
@@ -22,8 +22,6 @@ const PREV_ICON: Record<TierKey, string> = {
 
 export default function TutoringPricing() {
   const t = useTranslations("tutoring.pricing");
-  const locale = useLocale();
-  const isKo = locale === "ko";
 
   const tiers: Tier[] = [
     {
@@ -558,149 +556,6 @@ export default function TutoringPricing() {
           </ul>
         </div>
 
-        {/* 교습료 신고 안내 박스 — 「학원법」 의무 게시 */}
-        <div
-          style={{
-            marginTop: 28,
-            padding: "20px 24px",
-            borderRadius: 14,
-            border: "1px solid #E5E7EB",
-            background: "#F9FAFB",
-            fontSize: 13,
-            lineHeight: 1.7,
-            color: "#374151",
-          }}
-        >
-          <h3
-            style={{
-              fontWeight: 600,
-              color: "#111827",
-              marginBottom: 10,
-              fontSize: 14,
-            }}
-          >
-            📋 {isKo ? "교습료 신고 안내" : "Tutoring Fee Disclosure"}
-          </h3>
-          <p style={{ marginBottom: 12 }}>
-            {isKo
-              ? "본 서비스는 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 용인교육지원청에 신고된 개인과외교습 서비스입니다. 교습료는 신고된 시간당 단가 × 월 총 교습 시간으로 산정됩니다."
-              : "This service is a registered private tutoring service under Korea's Act on the Establishment and Operation of Private Teaching Institutes, filed with the Yongin Education Support Office. Tuition is calculated as the declared hourly rate × monthly total tutoring hours."}
-          </p>
-          <table
-            style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              fontSize: 12,
-              marginBottom: 12,
-            }}
-          >
-            <thead>
-              <tr style={{ background: "#F3F4F6" }}>
-                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "left" }}>
-                  {isKo ? "패키지" : "Package"}
-                </th>
-                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  {isKo ? "월 교습료" : "Monthly Fee"}
-                </th>
-                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "left" }}>
-                  {isKo ? "신고 교습 시간 (산식)" : "Declared Hours (formula)"}
-                </th>
-                <th style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  {isKo ? "시간당" : "Per Hour"}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Basic</td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩600,000
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
-                  <strong>30.1h</strong>
-                  <br />
-                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
-                    {isKo ? "일 140분 × 주 3회 × 4.3주" : "140min × 3/wk × 4.3wks"}
-                  </span>
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩19,933
-                </td>
-              </tr>
-              <tr>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Advanced</td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩860,000
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
-                  <strong>43.0h</strong>
-                  <br />
-                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
-                    {isKo ? "일 150분 × 주 4회 × 4.3주" : "150min × 4/wk × 4.3wks"}
-                  </span>
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩20,000
-                </td>
-              </tr>
-              <tr>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Pro</td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩960,000
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
-                  <strong>45.9h</strong>
-                  <br />
-                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
-                    {isKo ? "일 160분 × 주 4회 × 4.3주*" : "160min × 4/wk × 4.3wks*"}
-                  </span>
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩20,929
-                </td>
-              </tr>
-              <tr>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>Master</td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩1,200,000
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px" }}>
-                  <strong>57.3h</strong>
-                  <br />
-                  <span style={{ color: "#9CA3AF", fontSize: 11 }}>
-                    {isKo ? "일 160분 × 주 5회 × 4.3주" : "160min × 5/wk × 4.3wks"}
-                  </span>
-                </td>
-                <td style={{ border: "1px solid #E5E7EB", padding: "6px 8px", textAlign: "right" }}>
-                  ₩20,942
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <p style={{ fontSize: 12, color: "#6B7280", marginBottom: 6 }}>
-            {isKo ? (
-              <>
-                ▸ <strong>1:1 실시간 화상 코칭</strong>: Basic·Advanced·Pro = 주 2회 × 55분 (월 ~7.3h),
-                Master = 주 3회 × 55분 (월 ~11h)
-              </>
-            ) : (
-              <>
-                ▸ <strong>1:1 live video coaching</strong>: Basic·Advanced·Pro = 2/wk × 55min (~7.3h/mo),
-                Master = 3/wk × 55min (~11h/mo)
-              </>
-            )}
-          </p>
-          <p style={{ fontSize: 12, color: "#6B7280", marginBottom: 6 }}>
-            {isKo
-              ? "▸ 나머지 시간 = AI 학습 모니터링·과제 첨삭·학부모 주간 리포트·Q&A 응답 (비동기 학습 관리). 시간당 단가는 법정 상한(22,000원) 이내 준수."
-              : "▸ Remaining hours = AI monitoring + homework review + parent weekly reports + Q&A responses (asynchronous management). Hourly rate within statutory cap (KRW 22,000)."}
-          </p>
-          <p style={{ fontSize: 12, color: "#6B7280" }}>
-            {isKo
-              ? "▸ * Pro 단가는 보완 신고 진행 중 · 신고번호: 발급 진행 중 (용인교육지원청) · 환불은 진행 회차 비율로 정산"
-              : "▸ * Pro supplementary filing in progress · Registration: pending (Yongin Education Support Office) · Refunds calculated by completed session ratio"}
-          </p>
-        </div>
       </div>
 
       <style jsx>{`

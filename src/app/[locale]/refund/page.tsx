@@ -20,10 +20,10 @@ const content: Record<
     sections: [
       {
         heading: "",
-        body: `<p>엘리코바(Elicova)(이하 "회사")가 운영하는 Mathiter 서비스의 환불정책을 안내드립니다. 본 환불정책은 「전자상거래 등에서의 소비자보호에 관한 법률」 및 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 정해진 절차를 준수하며, 회사 서비스 이용약관과 함께 적용됩니다.</p><p>회사는 두 가지 별도의 서비스 트랙(Mathiter Tutoring / Mathiter 학습앱 구독)을 운영하며, 트랙별 환불 정책은 각각 § A, § B에서 별도로 규정됩니다. 어느 트랙에 해당하는지 명확하지 않은 경우 <a href="mailto:support@mathiter.com">support@mathiter.com</a>으로 문의해 주시기 바랍니다.</p>`,
+        body: `<p>엘리코바(Elicova)(이하 "회사")가 운영하는 Mathiter 서비스의 환불정책을 안내드립니다. 본 환불정책은 「전자상거래 등에서의 소비자보호에 관한 법률」 및 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 정해진 절차를 준수하며, 회사 서비스 이용약관과 함께 적용됩니다.</p><p>회사는 두 가지 별도의 서비스 트랙(Mathiter Tutoring / Mathiter 학습앱 구독)을 운영하며, 트랙별 환불 정책은 각각 A, B에서 별도로 규정됩니다. 어느 트랙에 해당하는지 명확하지 않은 경우 <a href="mailto:support@mathiter.com">support@mathiter.com</a>으로 문의해 주시기 바랍니다.</p>`,
       },
       {
-        heading: "§ A. Mathiter Tutoring 환불 정책",
+        heading: "A. Mathiter Tutoring 환불 정책",
         body: `<p>Mathiter Tutoring은 「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 신고된 개인과외교습 서비스입니다. 본 환불 정책은 동 법령 시행령 제18조의2의 환불 기준을 준수합니다.</p>`,
       },
       {
@@ -47,7 +47,7 @@ const content: Record<
         body: `<p>학부모는 회차가 자동 마킹된 후 24시간 이내 이의를 제기할 수 있습니다. 이의제기는 학부모 대시보드 또는 <a href="mailto:support@mathiter.com">support@mathiter.com</a>으로 제출하시면 됩니다. 회사는 이의제기를 검토 후 정당한 경우 해당 회차의 카운팅을 취소합니다.</p>`,
       },
       {
-        heading: "§ B. Mathiter 학습앱 구독 환불 정책",
+        heading: "B. Mathiter 학습앱 구독 환불 정책",
         body: `<p>Mathiter 학습앱(SaaS) 구독은 「전자상거래 등에서의 소비자보호에 관한 법률」 및 디지털 콘텐츠 약관 일반 원칙에 따라 다음과 같이 운영됩니다.</p>`,
       },
       {
@@ -64,10 +64,10 @@ const content: Record<
       },
       {
         heading: "B-4. Mathiter Tutoring 종료 후 학습앱 결제 처리",
-        body: `<p>Mathiter Tutoring 회원은 § A 트랙 진행 동안 학습앱 유료 기능을 무료로 이용합니다(별도 결제 없음). Tutoring이 종료되면 14일간 학습앱 유예 기간이 적용되며, 이 기간 중 회원이 학습앱 정기결제를 명시적으로 시작하지 않으면 자동으로 무료 사용자로 전환됩니다(별도 환불 사항 없음).</p>`,
+        body: `<p>Mathiter Tutoring 회원은 A 트랙 진행 동안 학습앱 유료 기능을 무료로 이용합니다(별도 결제 없음). Tutoring이 종료되면 14일간 학습앱 유예 기간이 적용되며, 이 기간 중 회원이 학습앱 정기결제를 명시적으로 시작하지 않으면 자동으로 무료 사용자로 전환됩니다(별도 환불 사항 없음).</p>`,
       },
       {
-        heading: "§ C. 공통 사항",
+        heading: "C. 공통 사항",
         body: ``,
       },
       {
@@ -94,10 +94,10 @@ const content: Record<
     sections: [
       {
         heading: "",
-        body: `<p>This Refund Policy applies to all paid services operated by Elicova (the "Company") under the Mathiter brand. It complies with Korea's Act on Consumer Protection in Electronic Commerce and the Act on the Establishment and Operation of Private Teaching Institutes and applies together with the Company's Terms of Service.</p><p>The Company operates two distinct service tracks (Mathiter Tutoring / Mathiter learning app subscription), each with its own refund rules detailed in § A and § B. If you are unsure which track applies to you, please contact <a href="mailto:support@mathiter.com">support@mathiter.com</a>.</p>`,
+        body: `<p>This Refund Policy applies to all paid services operated by Elicova (the "Company") under the Mathiter brand. It complies with Korea's Act on Consumer Protection in Electronic Commerce and the Act on the Establishment and Operation of Private Teaching Institutes and applies together with the Company's Terms of Service.</p><p>The Company operates two distinct service tracks (Mathiter Tutoring / Mathiter learning app subscription), each with its own refund rules detailed in A and B. If you are unsure which track applies to you, please contact <a href="mailto:support@mathiter.com">support@mathiter.com</a>.</p>`,
       },
       {
-        heading: "§ A. Mathiter Tutoring Refunds",
+        heading: "A. Mathiter Tutoring Refunds",
         body: `<p>Mathiter Tutoring is a registered private tutoring service under Korea's Act on the Establishment and Operation of Private Teaching Institutes. This refund policy adheres to the refund standards in Article 18-2 of the Enforcement Decree of that Act.</p>`,
       },
       {
@@ -121,7 +121,7 @@ const content: Record<
         body: `<p>The parent may dispute an automatic session marking within 24 hours via the parent dashboard or by emailing <a href="mailto:support@mathiter.com">support@mathiter.com</a>. The Company reviews disputes and cancels the count for valid objections.</p>`,
       },
       {
-        heading: "§ B. Mathiter learning app Subscription Refunds",
+        heading: "B. Mathiter learning app Subscription Refunds",
         body: `<p>The Mathiter learning app (SaaS) subscription follows the principles of Korea's Act on Consumer Protection in Electronic Commerce and standard digital content terms.</p>`,
       },
       {
@@ -138,10 +138,10 @@ const content: Record<
       },
       {
         heading: "B-4. Learning App Subscription After Tutoring Ends",
-        body: `<p>Mathiter Tutoring Members receive free access to learning app paid features while § A is active (no separate charge). When tutoring ends, a 14-day grace period applies; if the Member does not explicitly start a learning app subscription during this period, they are automatically switched to the free tier (no separate refund applies).</p>`,
+        body: `<p>Mathiter Tutoring Members receive free access to learning app paid features while A is active (no separate charge). When tutoring ends, a 14-day grace period applies; if the Member does not explicitly start a learning app subscription during this period, they are automatically switched to the free tier (no separate refund applies).</p>`,
       },
       {
-        heading: "§ C. Common Provisions",
+        heading: "C. Common Provisions",
         body: ``,
       },
       {
