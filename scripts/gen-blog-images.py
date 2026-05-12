@@ -227,6 +227,44 @@ The mood: precise, calm diagnosis — finding exactly where points were
 lost.
 Horizontal landscape framing (16:9), over-shoulder editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 8: IGCSE Extended Math A* 한국 학생 5가지 (Persona 2)
+    # ═══════════════════════════════════════════════════════
+    "igcse-extended-math-a-star-korean-traps-1.png": STYLE + """
+Close-up over-the-shoulder shot of a Korean teenage student's hand
+(age 15-16, IGCSE Year 10-11) holding a black pen and writing
+mathematical working line-by-line on a generic exam-style answer
+sheet. The page is filled with neat handwritten algebra steps —
+multiple lines of working visible, fractions, equations with
+substitution arrows, all in pencil/black pen with a calm precise
+hand. NO actual Cambridge IGCSE content visible — just generic
+math working (cosine rule, fraction arithmetic style). A scientific
+calculator (Casio fx-style, generic) sits next to the page. A
+school-style desk with warm afternoon light from a window.
+The mood: the quiet discipline of writing every step out — the
+exact habit that wins method marks.
+Horizontal landscape framing (16:9), close-up over-shoulder angle
+on the hand and the page (no face visible).
+""",
+
+    "igcse-extended-math-a-star-korean-traps-2.png": STYLE + """
+Top-down editorial shot of a wooden study table. On the table:
+a printed mock exam answer sheet with multiple math problems and
+handwritten student work, several red pen annotations in margins
+("show working", "+1 method", reasoning notes — generic, NOT
+Cambridge content), a small bilingual notebook with English
+geometry vocabulary lists ("alternate angles", "isosceles",
+"cyclic quadrilateral", "bearings 045°") in clean handwriting,
+a Casio scientific calculator, a protractor, a sharpened pencil.
+A tutor's hand (40s, business casual sleeve visible at edge of
+frame) holds a red pen, mid-annotation on the page. Soft natural
+afternoon light from above-right. No faces visible.
+The mood: precise diagnosis — where exactly did the marks slip,
+and how does the student's English geometry vocabulary need to
+grow.
+Horizontal landscape framing (16:9), top-down editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

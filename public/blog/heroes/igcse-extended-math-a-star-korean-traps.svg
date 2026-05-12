@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <linearGradient id="starGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    <linearGradient id="trapBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg7)" />
+  <circle cx="180" cy="180" r="220" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header label -->
+  <text x="800" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff" opacity="0.7" letter-spacing="6">IGCSE EXTENDED MATH · 한국 학생 5가지 함정</text>
+
+  <!-- A* badge -->
+  <g transform="translate(800, 380)">
+    <circle r="170" fill="url(#starGold)" opacity="0.95" />
+    <text x="0" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="180" font-weight="800" fill="#1e1b4b">A*</text>
+    <text x="0" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="600" fill="#1e1b4b" opacity="0.7" letter-spacing="3">CAMBRIDGE EXTENDED</text>
+  </g>
+
+  <!-- 5 trap cards -->
+  <g transform="translate(60, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapBlue)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 1</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Method Marks</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">Show your working</text>
+  </g>
+
+  <g transform="translate(370, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapBlue)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 2</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Geometry Reason</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">alternate · isosceles</text>
+  </g>
+
+  <g transform="translate(680, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapBlue)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 3</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Bearings</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">3자리 표기 · 시계방향</text>
+  </g>
+
+  <g transform="translate(990, 640)">
+    <rect width="280" height="180" rx="20" fill="url(#trapBlue)" />
+    <text x="140" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 4</text>
+    <text x="140" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Set Notation</text>
+    <text x="140" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">ξ · ∪ · ∩ · A′</text>
+  </g>
+
+  <g transform="translate(1300, 640)">
+    <rect width="240" height="180" rx="20" fill="url(#trapBlue)" />
+    <text x="120" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">함정 5</text>
+    <text x="120" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Word Problem</text>
+    <text x="120" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">영어 → 식 setup</text>
+  </g>
+</svg>
