@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#082f49" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+    <linearGradient id="krGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="usGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg9)" />
+  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Title -->
+  <text x="800" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.75" letter-spacing="6">주재원 자녀 · 두 길의 동시 대비</text>
+
+  <!-- Korean path -->
+  <g transform="translate(180, 230)">
+    <rect width="500" height="500" rx="32" fill="url(#krGrad)" />
+    <text x="250" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="700" fill="#ffffff">한국 귀국</text>
+    <text x="250" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" fill="#ffffff" opacity="0.75">재외국민 특례 트랙</text>
+
+    <text x="250" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.95">3년 특례</text>
+    <text x="250" y="255" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">부모 동반 + 3년 해외</text>
+
+    <text x="250" y="320" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.95">12년 특례</text>
+    <text x="250" y="355" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">2026~ 지원 제한 폐지</text>
+
+    <text x="250" y="440" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.6" letter-spacing="2">GPA · 한국어 · 면접</text>
+  </g>
+
+  <!-- Bridge arrow -->
+  <g transform="translate(800, 470)">
+    <circle r="60" fill="#ffffff" opacity="0.12" />
+    <text x="0" y="8" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.85">동시</text>
+  </g>
+
+  <!-- US path -->
+  <g transform="translate(920, 230)">
+    <rect width="500" height="500" rx="32" fill="url(#usGrad)" />
+    <text x="250" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="700" fill="#ffffff">해외 대학</text>
+    <text x="250" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" fill="#ffffff" opacity="0.75">Common App 트랙</text>
+
+    <text x="250" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.95">SAT · AP</text>
+    <text x="250" y="255" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">G10–G11 응시</text>
+
+    <text x="250" y="320" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.95">에세이 · 활동</text>
+    <text x="250" y="355" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">8월 1일 open</text>
+
+    <text x="250" y="440" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.6" letter-spacing="2">GPA · 영어 · 에세이</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="800" y="810" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.55" letter-spacing="2">G9 이전에 결정 — 늦으면 한쪽을 포기해야 합니다</text>
+</svg>

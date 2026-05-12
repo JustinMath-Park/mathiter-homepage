@@ -298,6 +298,44 @@ The mood: a quiet, thoughtful family planning moment — choosing
 the right academic path one grade at a time.
 Horizontal landscape framing (16:9), three-quarter angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 7: 주재원 자녀 한국·해외 동시 대비 (Persona 3)
+    # ═══════════════════════════════════════════════════════
+    "expat-korean-students-math-roadmap-1.png": STYLE + """
+A wide warm-toned scene of a Korean expat family at home in
+Southeast Asia (Malaysia/Singapore/Hong Kong style apartment with
+tropical greenery visible through tall windows). A Korean father
+(early-40s, business casual) and mother (early-40s) sit at a
+dining table with their teenage child (around 14-15) leaning into
+the conversation. On the table: a printed road-map style sheet
+with handwritten columns and arrows, a laptop displaying a generic
+university comparison page (no recognizable logos), two coffee
+cups, an open notebook with bilingual Korean/English notes. The
+family is mid-conversation — engaged, thoughtful, not stressed.
+Soft natural late-afternoon light through the windows.
+The mood: an honest expat family planning conversation —
+balancing two countries, two futures, one child.
+Horizontal landscape framing (16:9), three-quarter angle.
+""",
+
+    "expat-korean-students-math-roadmap-2.png": STYLE + """
+Close-up over-the-shoulder shot of a Korean teenage student
+(around 16-17) sitting at a study desk in an apartment abroad
+during a 1:1 online math tutoring session via Google Meet style
+video call. A laptop screen shows a video call interface with a
+math problem visible on a shared whiteboard (generic algebra
+equations, no actual brand logos). Next to the laptop: a Korean-
+language textbook, an English-language SAT-style practice page,
+a graphing calculator. Through the window in the background,
+Southeast Asian or East Asian tropical/modern cityscape view
+suggesting the student is studying from abroad. Warm desk lamp
+light, late evening / early night.
+The mood: the quiet focus of a study session that bridges two
+time zones and two academic systems — distance doesn't reduce
+quality.
+Horizontal landscape framing (16:9), three-quarter angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
