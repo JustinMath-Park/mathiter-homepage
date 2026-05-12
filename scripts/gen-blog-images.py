@@ -265,6 +265,39 @@ and how does the student's English geometry vocabulary need to
 grow.
 Horizontal landscape framing (16:9), top-down editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 6: 채드윅·KIS·SIS·NLCS 학년별 로드맵 (Persona 2)
+    # ═══════════════════════════════════════════════════════
+    "chadwick-kis-sis-nlcs-math-roadmap-1.png": STYLE + """
+Wide establishing shot of a modern Korean international school campus
+exterior (generic, NOT a specific real school — composite stylized
+architecture). Contemporary architecture with glass and brick facade,
+landscaped courtyard with trees, several students (mixed ethnicity,
+school-uniform style outfits) walking between buildings during a
+class change. Late spring/early summer afternoon light. The campus
+feels prestigious, well-resourced, calm but academically intense.
+No identifying logos or school names visible anywhere.
+The mood: the daily reality of a Korean international school
+student — different campuses, different curricula, different paths.
+Horizontal landscape framing (16:9), wide editorial angle.
+""",
+
+    "chadwick-kis-sis-nlcs-math-roadmap-2.png": STYLE + """
+A Korean mother (early-40s) and her teenage child (around 14-15,
+middle-school age) sit at a kitchen table at home, leaning over a
+handwritten roadmap chart on a notebook — labeled columns "G7 G8
+G9 G10 G11 G12" with handwritten subject names ("Pre-Algebra",
+"Algebra I", "Geometry", "AP Calc", etc.). A school brochure is
+open beside the notebook (generic, no recognizable school logo).
+A laptop on the side shows a generic spreadsheet/comparison view.
+Two teacups, a calm late-afternoon natural light from a window.
+Both faces visible only in partial profile — emphasis on the
+notebook and the act of planning together.
+The mood: a quiet, thoughtful family planning moment — choosing
+the right academic path one grade at a time.
+Horizontal landscape framing (16:9), three-quarter angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
