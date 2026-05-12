@@ -74,7 +74,13 @@ canonicalSlug: korea-vs-us-math-daechi-perspective
 
 ### 4. Word problem과 real-world application의 비중이 큽니다
 
-한국 수능 수학의 "실생활 응용" 문제는 보통 한두 문항이고, 그마저도 본질은 추상 수학입니다. 미국 수학은 거의 모든 단원에서 word problem[^wp]이 비중 있게 나옵니다. AP Calc FRQ(Free Response Question)는 "한 마을의 인구가 시각 $t$에서 $P(t) = ...$로 모델링된다. (a) 인구가 가장 빠르게 증가하는 시점을 구하라. (b) 이 모델의 한계를 한 문장으로 서술하라" 식으로 나옵니다. 모델 자체에 대한 비판적 평가를 묻습니다. Word problem이 약하면 미국 수학 평가에서 점수를 잃습니다.
+한국 수능 수학의 "실생활 응용" 문제는 보통 한두 문항이고, 그마저도 본질은 추상 수학입니다. 미국 수학은 거의 모든 단원에서 word problem[^wp]이 비중 있게 나옵니다. AP Calc FRQ(Free Response Question)는 영어 원문으로 다음과 같이 출제됩니다 —
+
+> *A town's population at time $t$ is modeled by $P(t) = \dots$.*
+> *(a) Find the time at which the population is increasing most rapidly.*
+> *(b) **In one sentence, describe a limitation of this model.***
+
+핵심은 **(b)**입니다. "이 모델의 한계를 한 문장으로 서술하라" — 한국 수능에는 사실상 존재하지 않는 형식입니다. 모델 자체에 대한 비판적 평가를 **영어 문장으로** 쓰게 합니다. (a)의 미적분 계산은 한국 학생이 빠르게 풀 수 있지만, (b)에서 한 학생당 평균 1–2점이 빠집니다. Word problem이 약하면 미국 수학 평가에서 점수를 잃는 이유의 절반이 여기서 옵니다.
 
 ### 5. 평가가 한 시험이 아니라 한 학기 누적입니다
 
