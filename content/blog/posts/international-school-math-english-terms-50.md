@@ -165,6 +165,6 @@ canonicalSlug: international-school-math-english-terms-50
 >
 > 두 자녀를 해외 국제학교에서 직접 키운 같은 학부모로서, 이주 전 4주 영어 수학 적응 수업부터 입학 후 정규 수업까지 한 사람이 끝까지 가르칩니다.
 >
-> [👉 무료 30분 상담 신청 →](/ko/contact)
+> [👉 무료 30분 상담 신청 →](/ko/tutoring)
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*

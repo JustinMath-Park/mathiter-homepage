@@ -143,7 +143,7 @@ Problem-Solving and Data Analysis 영역은 한국 학생이 가장 만만하게
 
 > SAT 수학 800점이 안 나오는 자녀의 풀이를 직접 보면 어디서 점수가 새는지 30분 안에 진단할 수 있습니다. <strong>Mathiter Tutoring</strong>에서 30분 무료 상담을 진행합니다. 8년간 SAT 만점·AP BC 5점 학생을 다수 배출한 제가 직접 자녀의 최근 모의 결과를 같이 봐 드립니다.
 >
-> [👉 무료 30분 상담 신청 →](/ko/contact)
+> [👉 무료 30분 상담 신청 →](/ko/tutoring)
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 

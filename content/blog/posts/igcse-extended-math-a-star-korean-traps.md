@@ -128,7 +128,7 @@ Venn diagram 문제는 한국 학생이 답은 잘 맞히는데 표기에서 점
 
 > Mathiter Tutoring에서는 IGCSE Extended Math 1:1 맞춤 상담을 30분 무료로 진행합니다. 8년간 국제학교 학생을 가르치며 IGCSE Extended A*, SAT 만점, AP Calculus BC 5점을 다수 배출한 제가 직접 자녀의 답안지를 보고 상담드립니다. 1회 시범 수업 후 결정하시면 됩니다.
 >
-> [👉 무료 30분 상담 신청 →](/ko/contact)
+> [👉 무료 30분 상담 신청 →](/ko/tutoring)
 >
 > *영업시간 1시간 이내 회신 · 첫 대면 수업 1회 후 진행 결정*
 

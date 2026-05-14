@@ -257,14 +257,14 @@ function lintFile(path) {
       hint: "Add at least one natural anchor to landing (위키 §9.1).",
     });
   }
-  const hasContactCta = /\/(?:ko\/)?contact/.test(content);
+  const hasContactCta = /\/(?:ko\/)?tutoring/.test(content);
   if (!hasContactCta) {
     issues.push({
       severity: "warn",
       line: 0,
-      name: "No /contact (or /ko/contact) link in CTA",
+      name: "No /tutoring (or /ko/tutoring) link in CTA",
       sample: "",
-      hint: "CTA blockquote should link to /ko/contact (Korean) or /contact (English).",
+      hint: "CTA blockquote should link to /ko/tutoring (Korean) or /tutoring (English).",
     });
   }
 

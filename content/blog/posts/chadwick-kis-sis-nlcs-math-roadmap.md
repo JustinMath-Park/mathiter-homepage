@@ -116,7 +116,7 @@ canonicalSlug: chadwick-kis-sis-nlcs-math-roadmap
 
 > 자녀가 채드윅·KIS·SIS·NLCS Jeju 중 어디에 다니든, 학년·학교별 정확한 다음 단계가 무엇인지 1:1로 진단받고 싶으시다면 — <strong>Mathiter Tutoring</strong>에서 30분 무료 상담을 진행합니다. 8년간 SAT 만점·AP BC 5점 학생을 다수 배출한 제가 직접 상담해 드립니다.
 >
-> [무료 상담 신청 →](/ko/contact)
+> [무료 상담 신청 →](/ko/tutoring)
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
