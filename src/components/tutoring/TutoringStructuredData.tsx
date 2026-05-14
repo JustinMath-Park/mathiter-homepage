@@ -189,7 +189,35 @@ export default async function TutoringStructuredData() {
     })),
   };
 
-  const allSchemas = [personSchema, organizationSchema, ...courseSchemas, faqSchema];
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: "Mathiter Tutoring · 국제학교 수학 1:1 (박세준)",
+    description:
+      "왜 한 선생이 한국 수학과 미국 수학, 두 시스템을 모두 가르쳐야 하는가 — Mathiter Tutoring 박세준 원장이 1분 안에 보여드립니다. 12년 대치동 + 8년 국제학교, SAT Math 800, AP Calculus BC 5점.",
+    thumbnailUrl: ["https://mathiter.com/videos/tutoring_hero_poster.jpg"],
+    uploadDate: "2026-05-14",
+    duration: "PT1M11S",
+    contentUrl: "https://mathiter.com/videos/tutoring_hero_1080p.mp4",
+    embedUrl: "https://mathiter.com/ko/tutoring#hero-video",
+    publisher: {
+      "@type": "Organization",
+      name: "Mathiter Tutoring",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://mathiter.com/logo-192.png",
+      },
+    },
+    inLanguage: ["ko"],
+  };
+
+  const allSchemas = [
+    personSchema,
+    organizationSchema,
+    ...courseSchemas,
+    faqSchema,
+    videoSchema,
+  ];
 
   return (
     <>

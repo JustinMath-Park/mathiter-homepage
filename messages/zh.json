@@ -747,6 +747,15 @@
         "summary": "8 years teaching international-school math 1:1 · many students with SAT 800 / AP BC 5 · raising two children in international schools abroad",
         "education": "Korea University Mathematics (admitted) · Hanyang University EECE (graduated) · Whimoon Middle / Joongdong High"
       }
+    },
+    "heroVideo": {
+      "eyebrow": "Watch — 1 minute",
+      "title": "Why one tutor needs to teach <em>both</em> systems.",
+      "subtitle": "Park Sejun has lived inside both Korean math and US math. See how he designs each 1:1 lesson — in just one minute.",
+      "caption": "Muted autoplay · turn on the sound to hear Park Sejun's voice.",
+      "playLabel": "Play video",
+      "unmuteLabel": "Sound on",
+      "fallbackText": "Your browser cannot play this video."
     }
   }
 }
