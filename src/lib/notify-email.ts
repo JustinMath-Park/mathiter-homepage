@@ -40,6 +40,24 @@ function escapeHtml(input: string): string {
     .replace(/'/g, "&#39;");
 }
 
+const PACKAGE_LABELS: Record<string, { name: string; price: string }> = {
+  basic: { name: "Basic (초등)", price: "₩600,000 / 월" },
+  advanced: { name: "Advanced (중등)", price: "₩860,000 / 월" },
+  pro: { name: "Pro (고등)", price: "₩960,000 / 월" },
+  master: { name: "Master (입시·경시)", price: "₩1,200,000 / 월" },
+};
+
+const TRACK_LABELS: Record<string, string> = {
+  us: "US 트랙 (SAT·AP·Common Core)",
+  uk: "UK 트랙 (IGCSE·A-Level)",
+  both: "US·UK 양쪽 고려",
+};
+
+const RESIDENCE_LABELS: Record<string, string> = {
+  kr: "한국 거주",
+  overseas: "해외 거주",
+};
+
 function buildEmailBody(inquiry: InquiryEmailPayload): {
   subject: string;
   text: string;
@@ -49,15 +67,28 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
     timeZone: "Asia/Seoul",
   });
 
-  const subject = `[Mathiter Tutoring] ${inquiry.parentName} 학부모 상담 신청 — ${inquiry.studentGrade}`;
+  // 새 필드 사용 + legacy fallback
+  const studentName = inquiry.studentName || inquiry.parentName || "(이름 미입력)";
+  const gradeLevel = inquiry.gradeLevel || inquiry.studentGrade || "(학년 미입력)";
+  const trackLabel = inquiry.track ? TRACK_LABELS[inquiry.track] : "—";
+  const residenceLabel = inquiry.residence
+    ? RESIDENCE_LABELS[inquiry.residence]
+    : "—";
+  const pkg = inquiry.recommendedPackage
+    ? PACKAGE_LABELS[inquiry.recommendedPackage]
+    : null;
+
+  const subject = `[Mathiter Tutoring] ${studentName} 학생 상담 신청 · ${gradeLevel}${pkg ? ` · ${pkg.name}` : ""}`;
 
   const lines = [
     `📬 새 상담 신청이 들어왔습니다`,
     ``,
-    `[학부모] ${inquiry.parentName}`,
-    `[자녀 학년/시험] ${inquiry.studentGrade}`,
-    inquiry.school ? `[재학(예정) 학교] ${inquiry.school}` : null,
-    inquiry.examGoal ? `[목표 시험·단계] ${inquiry.examGoal}` : null,
+    `[학생 이름] ${studentName} 학생`,
+    `[학년] ${gradeLevel}`,
+    `[공부 경로] ${trackLabel}`,
+    `[현재 거주지] ${residenceLabel}`,
+    pkg ? `[추천 패키지] ${pkg.name} — ${pkg.price}` : null,
+    ``,
     `[연락 선호] ${inquiry.contactMethod}`,
     `[연락처] ${inquiry.contactDetail}`,
     inquiry.message ? `\n[메시지]\n${inquiry.message}` : null,
@@ -78,15 +109,22 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
   const html = `<!doctype html>
 <html lang="ko">
 <body style="font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f8fafc;margin:0;padding:24px;color:#0f172a;">
-  <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:32px;border:1px solid #e2e8f0;">
+  <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:16px;padding:32px;border:1px solid #e2e8f0;">
     <div style="font-size:12px;font-weight:700;letter-spacing:0.16em;color:#f97316;text-transform:uppercase;margin-bottom:8px;">📬 새 상담 신청</div>
-    <h2 style="margin:0 0 20px;font-size:20px;font-weight:700;color:#0b2a57;letter-spacing:-0.01em;">${escapeHtml(inquiry.parentName)} 학부모님 — ${escapeHtml(inquiry.studentGrade)}</h2>
+    <h2 style="margin:0 0 6px;font-size:22px;font-weight:700;color:#0b2a57;letter-spacing:-0.01em;">${escapeHtml(studentName)} 학생</h2>
+    <p style="margin:0 0 24px;font-size:14px;color:#64748b;">${escapeHtml(gradeLevel)} · ${escapeHtml(trackLabel)} · ${escapeHtml(residenceLabel)}</p>
+
+    ${pkg ? `<div style="margin:0 0 24px;padding:18px 20px;background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:12px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#2563eb;text-transform:uppercase;margin-bottom:4px;">사용자가 본 추천 패키지</div>
+      <div style="font-size:18px;font-weight:700;color:#0b2a57;margin-bottom:2px;">${escapeHtml(pkg.name)}</div>
+      <div style="font-size:14px;color:#475569;">${escapeHtml(pkg.price)} (카드결제 기준)</div>
+    </div>` : ""}
 
     <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.6;">
-      <tr><td style="padding:6px 0;color:#64748b;width:120px;">학부모</td><td style="padding:6px 0;color:#0f172a;font-weight:600;">${escapeHtml(inquiry.parentName)}</td></tr>
-      <tr><td style="padding:6px 0;color:#64748b;">자녀 학년/시험</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(inquiry.studentGrade)}</td></tr>
-      ${inquiry.school ? `<tr><td style="padding:6px 0;color:#64748b;">재학(예정) 학교</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(inquiry.school)}</td></tr>` : ""}
-      ${inquiry.examGoal ? `<tr><td style="padding:6px 0;color:#64748b;">목표 시험·단계</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(inquiry.examGoal)}</td></tr>` : ""}
+      <tr><td style="padding:6px 0;color:#64748b;width:120px;">학생 이름</td><td style="padding:6px 0;color:#0f172a;font-weight:600;">${escapeHtml(studentName)}</td></tr>
+      <tr><td style="padding:6px 0;color:#64748b;">학년</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(gradeLevel)}</td></tr>
+      <tr><td style="padding:6px 0;color:#64748b;">공부 경로</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(trackLabel)}</td></tr>
+      <tr><td style="padding:6px 0;color:#64748b;">거주지</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(residenceLabel)}</td></tr>
       <tr><td style="padding:6px 0;color:#64748b;">연락 선호</td><td style="padding:6px 0;color:#0f172a;">${escapeHtml(inquiry.contactMethod)}</td></tr>
       <tr><td style="padding:6px 0;color:#64748b;">연락처</td><td style="padding:6px 0;color:#0f172a;font-weight:600;">${escapeHtml(inquiry.contactDetail)}</td></tr>
     </table>

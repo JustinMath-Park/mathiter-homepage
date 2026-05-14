@@ -1,19 +1,14 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { submitInquiry, type SubmitResult } from "@/app/[locale]/contact/actions";
+import ContactForm from "@/app/[locale]/contact/ContactForm";
+import type { BlogLocale } from "@/types/blog";
 
 export default function ContactPage() {
   const t = useTranslations("tutoring.contact");
-  const locale = useLocale();
-  const [state, formAction, isPending] = useActionState<
-    SubmitResult | null,
-    FormData
-  >(submitInquiry, null);
-  const submitted = state?.ok === true;
-  const submitError = state && state.ok === false ? state.error : null;
+  const locale = useLocale() as BlogLocale;
   const [kakaoCopied, setKakaoCopied] = useState(false);
 
   const phoneNumber = t("phone.value");
@@ -181,7 +176,7 @@ export default function ContactPage() {
               />
             </div>
 
-            {/* Right: Message form */}
+            {/* Right: 3-Step Inquiry Wizard */}
             <article
               style={{
                 background: "#fff",
@@ -191,186 +186,19 @@ export default function ContactPage() {
                 boxShadow: "0 18px 40px rgba(15,23,42,0.06)",
               }}
             >
-              <span
+              <ContactForm locale={locale} />
+
+              <p
                 style={{
-                  display: "inline-block",
-                  fontSize: 11.5,
-                  fontWeight: 700,
-                  letterSpacing: "0.14em",
-                  color: "#c2410c",
-                  background: "#fff7ed",
-                  padding: "5px 12px",
-                  borderRadius: 9999,
-                  textTransform: "uppercase",
+                  margin: "20px 0 0",
+                  fontSize: 11,
+                  color: "#94a3b8",
+                  lineHeight: 1.55,
+                  textAlign: "center",
                 }}
               >
-                {t("form.tag")}
-              </span>
-              <h2
-                style={{
-                  margin: "16px 0 6px",
-                  fontSize: 24,
-                  fontWeight: 700,
-                  color: "#0b2a57",
-                  letterSpacing: "-0.015em",
-                  lineHeight: 1.3,
-                }}
-              >
-                {t("form.title")}
-              </h2>
-              <p style={{ margin: 0, fontSize: 14.5, color: "#64748b", lineHeight: 1.6 }}>
-                {t("form.subtitle")}
+                {t("form.agreement")}
               </p>
-
-              {submitted ? (
-                <div
-                  style={{
-                    marginTop: 28,
-                    padding: "32px 24px",
-                    background: "#ecfdf5",
-                    border: "1px solid #6ee7b7",
-                    borderRadius: 14,
-                    textAlign: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: 28,
-                      marginBottom: 10,
-                    }}
-                  >
-                    ✅
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 17,
-                      fontWeight: 700,
-                      color: "#047857",
-                      marginBottom: 6,
-                    }}
-                  >
-                    상담 신청이 접수됐습니다
-                  </div>
-                  <div style={{ fontSize: 14, color: "#065f46", lineHeight: 1.55 }}>
-                    영업시간 1시간 이내로 박세준 원장이 직접 연락드립니다.
-                  </div>
-                </div>
-              ) : (
-                <form
-                  action={formAction}
-                  style={{
-                    marginTop: 24,
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 16,
-                  }}
-                >
-                  <input type="hidden" name="locale" value={locale} />
-                  <input type="hidden" name="source" value="tutoring-contact" />
-                  <input type="hidden" name="contactMethod" value="kakao" />
-
-                  <FormField
-                    name="parentName"
-                    label={t("form.nameLabel")}
-                    placeholder={t("form.namePlaceholder")}
-                    required
-                  />
-                  <FormField
-                    name="contactDetail"
-                    label={t("form.contactLabel")}
-                    placeholder={t("form.contactPlaceholder")}
-                    required
-                  />
-                  <FormField
-                    name="studentGrade"
-                    label={t("form.studentLabel")}
-                    placeholder={t("form.studentPlaceholder")}
-                  />
-                  <FormField
-                    name="message"
-                    label={t("form.messageLabel")}
-                    placeholder={t("form.messagePlaceholder")}
-                    multiline
-                  />
-
-                  {submitError && (
-                    <div
-                      style={{
-                        background: "#fef2f2",
-                        border: "1px solid #fecaca",
-                        color: "#b91c1c",
-                        padding: "10px 14px",
-                        borderRadius: 10,
-                        fontSize: 13,
-                      }}
-                    >
-                      {submitError}
-                    </div>
-                  )}
-
-                  <button
-                    type="submit"
-                    disabled={isPending}
-                    style={{
-                      marginTop: 4,
-                      background: "linear-gradient(135deg,#f59e0b 0%, #f97316 100%)",
-                      color: "#fff",
-                      border: "none",
-                      fontWeight: 600,
-                      padding: "15px 24px",
-                      borderRadius: 9999,
-                      fontSize: 15,
-                      cursor: isPending ? "not-allowed" : "pointer",
-                      opacity: isPending ? 0.7 : 1,
-                      boxShadow:
-                        "0 12px 28px rgba(249,115,22,0.32), 0 2px 4px rgba(249,115,22,0.18)",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: 10,
-                    }}
-                  >
-                    {isPending ? "전송 중..." : t("form.submit")}
-                    <svg
-                      width="16"
-                      height="16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </button>
-
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: 11.5,
-                      color: "#94a3b8",
-                      lineHeight: 1.55,
-                      textAlign: "center",
-                    }}
-                  >
-                    {t("form.submitNote")}
-                  </p>
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: 11,
-                      color: "#94a3b8",
-                      lineHeight: 1.55,
-                      textAlign: "center",
-                    }}
-                  >
-                    {t("form.agreement")}
-                  </p>
-                </form>
-              )}
             </article>
           </section>
 

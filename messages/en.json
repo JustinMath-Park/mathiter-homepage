@@ -132,12 +132,30 @@
     "title": "One Platform, Every Major Exam",
     "subtitle": "Math problems may look different across exams, but the skills you need are universal. Mathiter helps you master them all from a single platform.",
     "exams": {
-      "sat": { "name": "Digital SAT", "description": "College Board adaptive format" },
-      "igcse": { "name": "IGCSE", "description": "Cambridge International" },
-      "ib": { "name": "IB Math", "description": "AA & AI (SL/HL)" },
-      "aLevel": { "name": "A-Level", "description": "Edexcel / CIE" },
-      "csat": { "name": "CSAT Math", "description": "Korean College Scholastic Ability Test" },
-      "more": { "name": "More", "description": "AP, GCE O-Level, and more" }
+      "sat": {
+        "name": "Digital SAT",
+        "description": "College Board adaptive format"
+      },
+      "igcse": {
+        "name": "IGCSE",
+        "description": "Cambridge International"
+      },
+      "ib": {
+        "name": "IB Math",
+        "description": "AA & AI (SL/HL)"
+      },
+      "aLevel": {
+        "name": "A-Level",
+        "description": "Edexcel / CIE"
+      },
+      "csat": {
+        "name": "CSAT Math",
+        "description": "Korean College Scholastic Ability Test"
+      },
+      "more": {
+        "name": "More",
+        "description": "AP, GCE O-Level, and more"
+      }
     },
     "statuses": {
       "live": "Live",
@@ -606,6 +624,17 @@
       "paymentLine2": "🔄 Missed a session? Make-up time is guaranteed; if a make-up isn't possible we shift the next billing date instead",
       "paymentLine3": "✓ Card · bank transfer · first trial lesson is free"
     },
+    "pricingTeaser": {
+      "eyebrow": "Tailored packages",
+      "title": "Four packages, matched to grade and goal",
+      "subtitle": "From elementary through admissions and competition prep, we run four packages matched to each student's grade and target. The exact program and fee are shared 1:1 after a free diagnostic consultation.",
+      "ctaEyebrow": "Custom quote",
+      "ctaTitle": "Start with a free 30-minute consultation",
+      "ctaBody": "Tell us your child's current grade, school curriculum, and target exam. We'll recommend the best-fit package and share the exact fee — directly from Mathiter Tutoring.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Meet the tutor",
+      "ctaNote": "Replies within 1 hour during business hours · One trial session before you decide"
+    },
     "faq": {
       "eyebrow": "FAQ",
       "title": "Questions parents ask first.",
@@ -626,11 +655,9 @@
       "q8": "Isn't this expensive compared to a per-hour tutor?",
       "a8": "These packages are not 2-hour-a-week tutoring — they are a monthly system that tracks and analyses your child's math every day. Each price includes 1:1 video coaching + the Mathiter Learning App + weekly parent reports. Per-hour math compared to a hagwon may seem higher, but once you add daily solution analysis, weakness drilling, and AI-mock-exam time, the effective rate is competitive with — and outperforms — typical hagwon rates.",
       "q9": "What's the difference between Pro and Master?",
-      "a9": "Pro (₩960,000) is the standard high-school SAT prep tier — 2× per week, 8 sessions per month. Master (₩1,200,000) is for students within 3 months of an exam, or those tackling high-difficulty exams like AP Calculus, A-Level, and math olympiads. Coaching frequency is 1.5× higher (3× per week, 12 sessions per month) and includes 1:1 admissions/study consulting.",
-      "q10": "How do I sign up for the 3-person group discount?",
-      "a10": "Find two other students in the same grade and similar level, then sign up for Advanced (Middle School) or Pro (High School). Per-person pricing automatically drops to ₩600,000 (Basic-tier price). Mention \"3-person group\" when you book the free consultation. ※ Master (Exam·Olympiad Specialized) is 1:1 only — no group discount.",
-      "q11": "What about students at British-curriculum schools — IGCSE and A-Level?",
-      "a11": "Yes, fully covered at the same package price. The packages above are framed around the US curriculum (Common Core, GPA, AP, SAT), but **IGCSE Extended Math and Cambridge A-Level / Further Math curricula are delivered for British-curriculum students at the same monthly package cost.** During the free consultation, just tell us your child's school and target exam, and we tailor the curriculum accordingly."
+      "a9": "Prois the standard high-school SAT prep tier — 2× per week, 8 sessions per month. Masteris for students within 3 months of an exam, or those tackling high-difficulty exams like AP Calculus, A-Level, and math olympiads. Coaching frequency is 1.5× higher (3× per week, 12 sessions per month) and includes 1:1 admissions/study consulting. Exact package fee is shared during your free consultation.",
+      "q10": "What about students at British-curriculum schools — IGCSE and A-Level?",
+      "a10": "Yes, fully covered with the same curriculum coverage. The packages above are framed around the US curriculum (Common Core, GPA, AP, SAT), but **IGCSE Extended Math and Cambridge A-Level / Further Math curricula are delivered for British-curriculum students at the same monthly package cost.** During the free consultation, just tell us your child's school and target exam, and we tailor the curriculum accordingly."
     },
     "finalCta": {
       "tag": "● NOW ACCEPTING NEW STUDENTS",

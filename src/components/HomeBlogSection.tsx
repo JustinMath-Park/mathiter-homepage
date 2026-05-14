@@ -9,7 +9,7 @@ interface Props {
 const COPY = {
   ko: {
     eyebrow: "BLOG",
-    title: "박세준 원장의 글",
+    title: "Mathiter Tutoring 블로그",
     subtitle:
       "8년 1:1 국제학교 수학 과외에서 나온 가이드. 자녀의 시험과 진학에 바로 쓸 수 있습니다.",
     cta: "전체 글 보기 →",

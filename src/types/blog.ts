@@ -58,14 +58,32 @@ export interface BlogPostSummary {
   author: BlogAuthor;
 }
 
+export type TutoringTrack = "us" | "uk" | "both";
+export type TutoringResidence = "kr" | "overseas";
+export type TutoringPackage = "basic" | "advanced" | "pro" | "master";
+
 export interface TutoringInquiry {
-  parentName: string;
-  studentGrade: string;
-  school?: string;
-  examGoal?: string;
+  // Step 3 — 연락처 (학부모가 부를 때 사용)
+  studentName: string;
   contactMethod: "kakao" | "phone" | "email";
   contactDetail: string;
   message?: string;
+
+  // Step 1 — Pre-qualifier
+  gradeLevel: string;            // e.g., "G10", "G8 (중2)"
+  track: TutoringTrack;          // US / UK / Both
+  residence: TutoringResidence;  // KR / Overseas
+
+  // Step 2 — 추천된 패키지 (사용자가 본 추천)
+  recommendedPackage: TutoringPackage;
+
+  // 메타
   source?: string;
   locale: BlogLocale;
+
+  // Legacy (기존 폼 호환용 — 곧 deprecate)
+  parentName?: string;
+  studentGrade?: string;
+  school?: string;
+  examGoal?: string;
 }

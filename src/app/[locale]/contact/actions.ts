@@ -2,7 +2,12 @@
 
 import { getAdminDb, isFirebaseConfigured } from "@/lib/firebase-admin";
 import { sendInquiryNotification } from "@/lib/notify-email";
-import type { TutoringInquiry } from "@/types/blog";
+import type {
+  TutoringInquiry,
+  TutoringTrack,
+  TutoringResidence,
+  TutoringPackage,
+} from "@/types/blog";
 
 const INQUIRY_COLLECTION = "tutoringInquiries";
 
@@ -10,15 +15,26 @@ export type SubmitResult =
   | { ok: true; mode: "firestore" | "log" }
   | { ok: false; error: string };
 
+function asTrack(v: string | null): TutoringTrack {
+  if (v === "us" || v === "uk" || v === "both") return v;
+  return "both";
+}
+function asResidence(v: string | null): TutoringResidence {
+  return v === "overseas" ? "overseas" : "kr";
+}
+function asPackage(v: string | null): TutoringPackage {
+  if (v === "basic" || v === "advanced" || v === "pro" || v === "master")
+    return v;
+  return "basic";
+}
+
 export async function submitInquiry(
   _prevState: SubmitResult | null,
   formData: FormData
 ): Promise<SubmitResult> {
   const inquiry: TutoringInquiry = {
-    parentName: String(formData.get("parentName") ?? "").trim(),
-    studentGrade: String(formData.get("studentGrade") ?? "").trim(),
-    school: String(formData.get("school") ?? "").trim() || undefined,
-    examGoal: String(formData.get("examGoal") ?? "").trim() || undefined,
+    // Step 3 — 연락처
+    studentName: String(formData.get("studentName") ?? "").trim(),
     contactMethod:
       (formData.get("contactMethod") as
         | "kakao"
@@ -27,21 +43,37 @@ export async function submitInquiry(
         | null) ?? "kakao",
     contactDetail: String(formData.get("contactDetail") ?? "").trim(),
     message: String(formData.get("message") ?? "").trim() || undefined,
+
+    // Step 1 — Pre-qualifier
+    gradeLevel: String(formData.get("gradeLevel") ?? "").trim(),
+    track: asTrack(formData.get("track") as string | null),
+    residence: asResidence(formData.get("residence") as string | null),
+
+    // Step 2 — 추천 패키지
+    recommendedPackage: asPackage(
+      formData.get("recommendedPackage") as string | null
+    ),
+
+    // Meta
     source: String(formData.get("source") ?? "").trim() || "contact-page",
     locale: (formData.get("locale") as "ko" | "en" | null) ?? "ko",
   };
 
-  if (!inquiry.parentName) {
-    return { ok: false, error: "이름을 입력해 주세요." };
+  // Validation
+  if (!inquiry.studentName) {
+    return { ok: false, error: "학생 이름을 입력해 주세요." };
   }
   if (!inquiry.contactDetail) {
     return { ok: false, error: "연락처를 입력해 주세요." };
+  }
+  if (!inquiry.gradeLevel) {
+    return { ok: false, error: "학년 정보가 비어 있습니다. 처음부터 다시 시도해 주세요." };
   }
 
   const db = getAdminDb();
   const receivedAt = new Date();
 
-  // Step 1: Persist to Firestore (or log if not configured)
+  // Step A: Firestore 저장 (or log)
   let firestoreDocId: string | undefined;
   let mode: "firestore" | "log" = "log";
 
@@ -69,7 +101,7 @@ export async function submitInquiry(
     }
   }
 
-  // Step 2: Email notification (best-effort — don't fail user submission if SMTP fails)
+  // Step B: 이메일 알림 (best-effort)
   try {
     const result = await sendInquiryNotification({
       ...inquiry,

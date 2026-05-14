@@ -22,7 +22,7 @@ const PAGE_COPY = {
     eyebrow: "BLOG",
     metaTitle: "블로그 | Mathiter Tutoring",
     metaDescription:
-      "국제학교 수학과 SAT, AP, IB, IGCSE 시험 대비 가이드. 8년간 1:1 과외와 두 자녀를 해외 국제학교에서 키운 박세준 원장이 직접 씁니다.",
+      "국제학교 수학과 SAT, AP, IB, IGCSE 시험 대비 가이드. 8년간 1:1 과외와 두 자녀를 해외 국제학교에서 키운 Mathiter Tutoring이 직접 씁니다.",
     empty: "곧 첫 글이 올라옵니다.",
   },
   en: {

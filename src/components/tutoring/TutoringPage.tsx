@@ -5,7 +5,7 @@ import WorryHook from "./WorryHook";
 import Process from "./Process";
 import SystemShowcase from "./SystemShowcase";
 import TutorProfile from "./TutorProfile";
-import TutoringPricing from "./TutoringPricing";
+import PricingTeaser from "./PricingTeaser";
 import Faq from "./Faq";
 import FinalCta from "./FinalCta";
 import HomeBlogSection from "@/components/HomeBlogSection";
@@ -21,7 +21,7 @@ export default async function TutoringPage() {
         <Process />
         <SystemShowcase />
         <TutorProfile />
-        <TutoringPricing />
+        <PricingTeaser />
         <Faq />
         <HomeBlogSection locale={locale} />
         <FinalCta />
