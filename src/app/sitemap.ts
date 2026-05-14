@@ -14,8 +14,9 @@ function localeUrl(locale: string, path: string = "") {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Pages available in all 4 locales
   const sharedPages = ["", "/terms", "/privacy"];
-  // Pages only in ko/en (tutoring landing + blog system + product)
-  const tutoringPages = ["/contact", "/product", "/blog"];
+  // Pages only in ko/en (tutoring landing + contact + blog)
+  // /product was merged into / (home) on 2026-05-14 — redirect set in next.config
+  const tutoringPages = ["/tutoring", "/contact", "/blog"];
 
   const sharedEntries = sharedPages.flatMap((path) =>
     allLocales.map((locale) => ({

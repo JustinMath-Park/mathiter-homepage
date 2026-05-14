@@ -6,6 +6,12 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // /product → / (2026-05-14: product 콘텐츠가 홈으로 이동, 기존 외부 링크 보호)
+      { source: "/product", destination: "/", permanent: true },
+      { source: "/product/:path*", destination: "/", permanent: true },
+      { source: "/:locale(ko|ms|zh)/product", destination: "/:locale", permanent: true },
+      { source: "/:locale(ko|ms|zh)/product/:path*", destination: "/:locale", permanent: true },
+
       { source: "/pricing-plans/:path*", destination: "/#pricing", permanent: true },
       { source: "/challenges", destination: "/", permanent: true },
       { source: "/notifications", destination: "/", permanent: true },
