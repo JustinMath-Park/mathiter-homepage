@@ -64,8 +64,14 @@ const contentChecks = [
   {
     name: "자기 객관화 — 박세준 3인칭 자기 지칭",
     severity: "error",
-    pattern: /박세준(의\s|\s원장(이|의|은)|\s본인(이|의|은))/g,
-    hint: '1인칭 사용: "박세준의 X" → "제 X" / "박세준 원장이" → "제가".',
+    pattern: /박세준(의\s|\s본인(이|의|은))/g,
+    hint: '1인칭 사용: "박세준의 X" → "제 X" / "박세준 본인이" → "제가".',
+  },
+  {
+    name: '"박세준 원장" 직함 — 한국식 1:1 과외 문화에 어색',
+    severity: "error",
+    pattern: /박세준\s*원장/g,
+    hint: '"박세준 원장"은 학원 원장에게나 어울리는 호칭. 본문은 "제가" / 외부 시각(CTA·description·anchor)은 "Mathiter Tutoring" 또는 "저희가" 또는 "8년 1:1 과외 경험"으로. 박세준 이름 단독은 author.name frontmatter 한 곳에서만.',
   },
   {
     name: "박세준을 학원 강사 출신처럼 표기",
@@ -148,6 +154,14 @@ const frontmatterChecks = [
     test: (fm) => fm.category && !["sat", "ap", "ib", "igcse", "school-life", "moving", "general"].includes(fm.category),
     hint: "Use one of the canonical categories.",
     detail: (fm) => `current: "${fm.category}"`,
+  },
+  {
+    name: '"박세준 원장" in description/excerpt — 한국식 문화에 어색',
+    severity: "error",
+    test: (fm) =>
+      (fm.description && /박세준\s*원장/.test(fm.description)) ||
+      (fm.excerpt && /박세준\s*원장/.test(fm.excerpt)),
+    hint: 'Replace with "Mathiter Tutoring" or "8년 1:1 과외 경험" — 박세준 이름은 author.name에서만.',
   },
 ];
 

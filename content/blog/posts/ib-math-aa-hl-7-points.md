@@ -5,7 +5,7 @@ locale: ko
 title: 'IB Math AA HL 7점 받는 법 — IA부터 Paper 3까지 8년 1:1 과외 노트'
 description: >-
   송도·제주 IB DP 학부모께. 학교 수업은 따라가는데 왜 7점이 안 나올까요. Paper 1·2·3과 IA를 통합한 2년 전략을
-  8년간 국제학교 1:1 과외로 SAT 만점·AP BC 5점 학생을 다수 배출한 박세준 원장이 풀어 드립니다.
+  Mathiter Tutoring이 8년 1:1 과외 경험으로 풀어 드립니다.
 excerpt: >-
   IB Math AA HL 7점은 마지막 6개월의 문제 풀이로 만들어지지 않습니다. IA·Paper 1·2·3을 묶어 보는 2년 통합 전략을
   풀어 드립니다.
