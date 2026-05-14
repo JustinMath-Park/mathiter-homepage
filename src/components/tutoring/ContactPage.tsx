@@ -8,7 +8,9 @@ import type { BlogLocale } from "@/types/blog";
 
 export default function ContactPage() {
   const t = useTranslations("tutoring.contact");
-  const locale = useLocale() as BlogLocale;
+  const rawLocale = useLocale();
+  // ContactForm은 ko/en 카피만 가지고 있음 — ms/zh는 ko로 안전 fallback
+  const locale: BlogLocale = rawLocale === "en" ? "en" : "ko";
   const [kakaoCopied, setKakaoCopied] = useState(false);
 
   const phoneNumber = t("phone.value");
