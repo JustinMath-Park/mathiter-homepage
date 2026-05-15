@@ -133,7 +133,7 @@ export default function ContactPage() {
             </p>
           </section>
 
-          {/* Channels + Form */}
+          {/* Form (primary) + Channels (secondary) */}
           <section
             className="contact-grid"
             style={{
@@ -143,42 +143,7 @@ export default function ContactPage() {
               alignItems: "start",
             }}
           >
-            {/* Left: 3 channel cards */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              <ChannelCard
-                tag={t("phone.tag")}
-                title={t("phone.title")}
-                value={phoneNumber}
-                hint={t("phone.hint")}
-                cta={t("phone.cta")}
-                href={`tel:${t("phone.tel")}`}
-                accent="#1d5396"
-                chipBg="#eff5fc"
-              />
-              <ChannelCard
-                tag={t("kakao.tag")}
-                title={t("kakao.title")}
-                value={kakaoId}
-                hint={t("kakao.hint")}
-                cta={kakaoCopied ? t("kakao.copied") : t("kakao.cta")}
-                href="#kakao-copy"
-                onClick={handleKakaoCopy}
-                accent="#92400e"
-                chipBg="#fef3c7"
-              />
-              <ChannelCard
-                tag={t("email.tag")}
-                title={t("email.title")}
-                value={emailAddress}
-                hint={t("email.hint")}
-                cta={t("email.cta")}
-                href={`mailto:${emailAddress}`}
-                accent="#0b2a57"
-                chipBg="#e0e7ff"
-              />
-            </div>
-
-            {/* Right: 3-Step Inquiry Wizard */}
+            {/* PRIMARY: 3-Step Inquiry Wizard */}
             <article
               style={{
                 background: "#fff",
@@ -202,6 +167,69 @@ export default function ContactPage() {
                 {t("form.agreement")}
               </p>
             </article>
+
+            {/* SECONDARY: 3 channel cards (compact aside) */}
+            <aside className="contact-channels">
+              <div
+                style={{
+                  fontSize: 11.5,
+                  fontWeight: 700,
+                  letterSpacing: "0.14em",
+                  color: "#64748b",
+                  textTransform: "uppercase",
+                  marginBottom: 6,
+                  textAlign: "center",
+                }}
+              >
+                {locale === "en" ? "Other channels" : "다른 연락 방법"}
+              </div>
+              <p
+                style={{
+                  fontSize: 12,
+                  color: "#94a3b8",
+                  textAlign: "center",
+                  margin: "0 0 14px",
+                  lineHeight: 1.5,
+                }}
+              >
+                {locale === "en"
+                  ? "Prefer to call directly? Use the channels below."
+                  : "바로 통화하고 싶으시면 아래 채널을 이용해 주세요."}
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                <ChannelCard
+                  tag={t("phone.tag")}
+                  title={t("phone.title")}
+                  value={phoneNumber}
+                  hint={t("phone.hint")}
+                  cta={t("phone.cta")}
+                  href={`tel:${t("phone.tel")}`}
+                  accent="#1d5396"
+                  chipBg="#eff5fc"
+                />
+                <ChannelCard
+                  tag={t("kakao.tag")}
+                  title={t("kakao.title")}
+                  value={kakaoId}
+                  hint={t("kakao.hint")}
+                  cta={kakaoCopied ? t("kakao.copied") : t("kakao.cta")}
+                  href="#kakao-copy"
+                  onClick={handleKakaoCopy}
+                  accent="#92400e"
+                  chipBg="#fef3c7"
+                />
+                <ChannelCard
+                  tag={t("email.tag")}
+                  title={t("email.title")}
+                  value={emailAddress}
+                  hint={t("email.hint")}
+                  cta={t("email.cta")}
+                  href={`mailto:${emailAddress}`}
+                  accent="#0b2a57"
+                  chipBg="#e0e7ff"
+                />
+              </div>
+            </aside>
           </section>
 
           {/* Trust badges */}
@@ -289,10 +317,15 @@ export default function ContactPage() {
       </main>
 
       <style>{`
+        /* Mobile (default): single column, form first, channels after */
         .contact-grid { grid-template-columns: 1fr; }
+        .contact-channels { margin-top: 8px; }
         .contact-title { font-size: 30px; }
+
+        /* PC: form takes primary width (left, ~70%), channels become a narrow sidebar (right, ~30%) */
         @media (min-width: 900px) {
-          .contact-grid { grid-template-columns: 0.85fr 1.15fr; gap: 28px; }
+          .contact-grid { grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.7fr); gap: 32px; }
+          .contact-channels { margin-top: 0; position: sticky; top: 96px; }
           .contact-title { font-size: 42px; }
         }
       `}</style>
