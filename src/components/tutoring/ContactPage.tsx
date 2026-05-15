@@ -52,7 +52,7 @@ export default function ContactPage() {
           }}
         >
           <Link
-            href="/"
+            href="/tutoring"
             style={{
               display: "flex",
               alignItems: "center",
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </span>
           </Link>
           <Link
-            href="/"
+            href="/tutoring"
             style={{
               fontSize: 14,
               color: "#475569",
