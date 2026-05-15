@@ -14,11 +14,14 @@ export default function HeroVideoSection() {
   const t = useTranslations("tutoring.heroVideo");
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const [isMuted, setIsMuted] = useState(true);
+  // Default state assumes sound-on. Browser may force mute fallback below.
+  const [isMuted, setIsMuted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
 
-  // Auto-play (muted) when section enters the viewport
+  // When the section enters the viewport, try to autoplay WITH SOUND first.
+  // Browsers will reject unmuted autoplay without a prior user gesture — in
+  // that case we silently fall back to muted autoplay so the visuals still
+  // hook the visitor, and the toggle pill below lets them turn sound on.
   useEffect(() => {
     const node = containerRef.current;
     const video = videoRef.current;
@@ -27,9 +30,18 @@ export default function HeroVideoSection() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {
-            /* iOS may block; user can press play */
-          });
+          // Optimistically try unmuted autoplay
+          video.muted = false;
+          video.volume = 0.85;
+          video
+            .play()
+            .then(() => setIsMuted(false))
+            .catch(() => {
+              // Fallback: muted autoplay (always allowed)
+              video.muted = true;
+              setIsMuted(true);
+              video.play().catch(() => undefined);
+            });
         } else {
           video.pause();
         }
@@ -40,27 +52,36 @@ export default function HeroVideoSection() {
     return () => observer.disconnect();
   }, []);
 
-  const handleUnmute = () => {
+  const handleToggleSound = () => {
     const v = videoRef.current;
     if (!v) return;
-    v.muted = false;
-    v.volume = 0.85;
-    setIsMuted(false);
-    setHasInteracted(true);
-    if (v.paused) v.play().catch(() => undefined);
+    if (v.muted) {
+      // Currently muted → unmute and (re)start so the message is heard from the top
+      v.muted = false;
+      v.volume = 0.85;
+      v.currentTime = 0;
+      setIsMuted(false);
+      v.play().catch(() => undefined);
+    } else {
+      v.muted = true;
+      setIsMuted(true);
+    }
   };
 
   const handlePlayPause = () => {
     const v = videoRef.current;
     if (!v) return;
     if (v.paused) {
+      // First user-gesture play: ensure sound is on
+      v.muted = false;
+      v.volume = 0.85;
+      setIsMuted(false);
       v.play();
       setIsPlaying(true);
     } else {
       v.pause();
       setIsPlaying(false);
     }
-    setHasInteracted(true);
   };
 
   return (
@@ -294,45 +315,57 @@ export default function HeroVideoSection() {
             </button>
           )}
 
-          {/* Bottom-left: unmute pill (only while muted, after auto-play) */}
-          {isMuted && (
-            <button
-              type="button"
-              onClick={handleUnmute}
-              aria-label={t("unmuteLabel")}
-              style={{
-                position: "absolute",
-                left: 18,
-                bottom: 18,
-                zIndex: 4,
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                padding: "9px 16px",
-                borderRadius: 9999,
-                background: "rgba(0,0,0,0.55)",
-                color: "#fff",
-                border: "1px solid rgba(255,255,255,0.18)",
-                backdropFilter: "blur(8px)",
-                cursor: "pointer",
-                fontSize: 13,
-                fontWeight: 600,
-                letterSpacing: "0.01em",
-                transition: "background .2s, transform .2s",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "rgba(34,211,238,0.85)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "rgba(0,0,0,0.55)")
-              }
-            >
+          {/* Bottom-left: sound toggle pill (always visible) */}
+          <button
+            type="button"
+            onClick={handleToggleSound}
+            aria-label={isMuted ? t("unmuteLabel") : t("muteLabel")}
+            style={{
+              position: "absolute",
+              left: 18,
+              bottom: 18,
+              zIndex: 4,
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              padding: "9px 16px",
+              borderRadius: 9999,
+              background: isMuted
+                ? "rgba(34,211,238,0.85)"
+                : "rgba(0,0,0,0.55)",
+              color: "#fff",
+              border: "1px solid rgba(255,255,255,0.18)",
+              backdropFilter: "blur(8px)",
+              cursor: "pointer",
+              fontSize: 13,
+              fontWeight: 600,
+              letterSpacing: "0.01em",
+              transition: "background .2s, transform .2s",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.background = isMuted
+                ? "rgba(34,211,238,1)"
+                : "rgba(34,211,238,0.85)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.background = isMuted
+                ? "rgba(34,211,238,0.85)"
+                : "rgba(0,0,0,0.55)")
+            }
+          >
+            {isMuted ? (
+              // Muted icon (speaker with X)
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+              </svg>
+            ) : (
+              // Unmuted icon (speaker with sound waves)
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77S18.01 4.14 14 3.23z" />
               </svg>
-              <span>{t("unmuteLabel")}</span>
-            </button>
-          )}
+            )}
+            <span>{isMuted ? t("unmuteLabel") : t("muteLabel")}</span>
+          </button>
         </div>
 
         {/* Caption strip below video */}

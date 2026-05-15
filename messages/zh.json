@@ -752,10 +752,11 @@
       "eyebrow": "Watch — 1 minute",
       "title": "Why one tutor needs to teach <em>both</em> systems.",
       "subtitle": "Park Sejun has lived inside both Korean math and US math. See how he designs each 1:1 lesson — in just one minute.",
-      "caption": "Muted autoplay · turn on the sound to hear Park Sejun's voice.",
+      "caption": "Plays with Park Sejun's voice · tap bottom-left to mute",
       "playLabel": "Play video",
       "unmuteLabel": "Sound on",
-      "fallbackText": "Your browser cannot play this video."
+      "fallbackText": "Your browser cannot play this video.",
+      "muteLabel": "Mute"
     }
   }
 }
