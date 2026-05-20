@@ -55,7 +55,7 @@ export default async function PaymentFailPage({ params, searchParams }: Props) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16 min-h-screen bg-gradient-to-b from-red-50/30 to-white">
+      <main className="pt-24 pb-16 bg-gradient-to-b from-red-50/30 to-white">
         <div className="mx-auto max-w-2xl px-6 lg:px-8">
           <div className="rounded-2xl border border-red-200 bg-white shadow-sm overflow-hidden">
             <div className="px-8 py-8 border-b border-gray-100 bg-gradient-to-r from-red-50/60 to-white text-center">

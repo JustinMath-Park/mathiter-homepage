@@ -99,7 +99,7 @@ export default async function PricingPage({ params }: Props) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16 bg-gradient-to-b from-blue-50/40 to-white min-h-screen">
+      <main className="pt-24 pb-16 bg-gradient-to-b from-blue-50/40 to-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           {/* Title */}
           <div className="text-center mb-10">

@@ -89,7 +89,7 @@ export default async function PaymentSuccessPage({
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16 min-h-screen bg-gradient-to-b from-green-50/30 to-white">
+      <main className="pt-24 pb-16 bg-gradient-to-b from-green-50/30 to-white">
         <div className="mx-auto max-w-2xl px-6 lg:px-8">
           <SuccessConfirm
             paymentKey={paymentKey}
