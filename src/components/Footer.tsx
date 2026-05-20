@@ -110,9 +110,9 @@ export default function Footer() {
 
         {/* 사업자 정보 박스 — 한국 「전자상거래법」 의무 게시 */}
         <div className="mt-12 border-t border-gray-100 pt-8">
-          <div className="rounded-lg border border-gray-100 bg-gray-50 px-5 py-4 text-xs text-muted leading-relaxed space-y-1">
+          <div className="rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-[11px] text-muted/75 leading-snug space-y-0.5">
             <p>
-              <strong className="text-foreground/80">{t("business.companyName")}</strong>
+              <strong className="text-foreground/60 font-medium">{t("business.companyName")}</strong>
               {" | "}
               {t("business.representative")}
               {" | "}

@@ -64,7 +64,7 @@ const content: Record<
       },
       {
         heading: "11. 개인정보보호책임자 및 문의처",
-        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>개인정보보호책임자</strong>: 박세준 (대표)<br/><strong>이메일</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>소속</strong>: 엘리코바 (Elicova)<br/><strong>전화</strong>: 010-7510-9092 (운영 시간: 평일 10:00~18:00 KST)</p></div><p>개인정보 관련 문의·민원은 위 책임자에게 접수해 주시기 바랍니다. 회사는 접수 후 지체 없이 답변드립니다(영업일 기준 7일 이내).</p>`,
+        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>개인정보보호책임자</strong>: 박세준 (대표)<br/><strong>이메일</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>소속</strong>: 엘리코바 (Elicova)<br/><strong>전화</strong>: 010-5187-8080 (운영 시간: 평일 10:00~18:00 KST)</p></div><p>개인정보 관련 문의·민원은 위 책임자에게 접수해 주시기 바랍니다. 회사는 접수 후 지체 없이 답변드립니다(영업일 기준 7일 이내).</p>`,
       },
       {
         heading: "12. 본 개인정보처리방침의 변경",
@@ -122,7 +122,7 @@ const content: Record<
       },
       {
         heading: "11. Data Protection Officer and Contact",
-        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>Data Protection Officer</strong>: Sejun Park (Representative)<br/><strong>Email</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>Affiliation</strong>: Elicova<br/><strong>Phone</strong>: 010-7510-9092 (Hours: Weekdays 10:00–18:00 KST)</p></div><p>Please direct privacy-related inquiries or complaints to the officer above. The Company will respond without undue delay (within 7 business days).</p>`,
+        body: `<div style="background:#f9f9f9;padding:16px;border-radius:8px;margin:12px 0;"><p style="margin:0;"><strong>Data Protection Officer</strong>: Sejun Park (Representative)<br/><strong>Email</strong>: <a href="mailto:support@mathiter.com">support@mathiter.com</a><br/><strong>Affiliation</strong>: Elicova<br/><strong>Phone</strong>: 010-5187-8080 (Hours: Weekdays 10:00–18:00 KST)</p></div><p>Please direct privacy-related inquiries or complaints to the officer above. The Company will respond without undue delay (within 7 business days).</p>`,
       },
       {
         heading: "12. Changes to This Privacy Policy",
