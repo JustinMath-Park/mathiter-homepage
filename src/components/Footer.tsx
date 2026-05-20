@@ -139,7 +139,14 @@ export default function Footer() {
               {" | "}
               {t("business.phone")}
               {" | "}
-              {t("business.kakao")}
+              <a
+                href="https://pf.kakao.com/_sUxnxkn/chat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors underline-offset-2 hover:underline"
+              >
+                {t("business.kakao")}
+              </a>
             </p>
           </div>
         </div>

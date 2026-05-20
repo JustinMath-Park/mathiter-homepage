@@ -1,30 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ContactForm from "@/app/[locale]/contact/ContactForm";
 import type { BlogLocale } from "@/types/blog";
+
+// 카카오톡 비즈니스 채널 @mathiter 의 1:1 채팅 직링크
+const KAKAO_CHAT_URL = "https://pf.kakao.com/_sUxnxkn/chat";
 
 export default function ContactPage() {
   const t = useTranslations("tutoring.contact");
   const rawLocale = useLocale();
   // ContactForm은 ko/en 카피만 가지고 있음 — ms/zh는 ko로 안전 fallback
   const locale: BlogLocale = rawLocale === "en" ? "en" : "ko";
-  const [kakaoCopied, setKakaoCopied] = useState(false);
 
   const phoneNumber = t("phone.value");
   const kakaoId = t("kakao.value");
   const emailAddress = t("email.value");
-
-  function handleKakaoCopy(e: React.MouseEvent<HTMLAnchorElement>) {
-    e.preventDefault();
-    if (typeof navigator !== "undefined" && navigator.clipboard) {
-      navigator.clipboard.writeText(kakaoId).catch(() => {});
-    }
-    setKakaoCopied(true);
-    window.setTimeout(() => setKakaoCopied(false), 2000);
-  }
 
   return (
     <div style={{ background: "#f8fafc", minHeight: "100vh" }}>
@@ -212,9 +204,9 @@ export default function ContactPage() {
                   title={t("kakao.title")}
                   value={kakaoId}
                   hint={t("kakao.hint")}
-                  cta={kakaoCopied ? t("kakao.copied") : t("kakao.cta")}
-                  href="#kakao-copy"
-                  onClick={handleKakaoCopy}
+                  cta={t("kakao.cta")}
+                  href={KAKAO_CHAT_URL}
+                  external
                   accent="#92400e"
                   chipBg="#fef3c7"
                 />

@@ -707,10 +707,10 @@
       "kakao": {
         "tag": "💬 KakaoTalk",
         "title": "Message via KakaoTalk",
-        "value": "mathiter",
-        "hint": "Copy the ID, then add as a friend in KakaoTalk",
-        "cta": "Copy ID",
-        "copied": "Copied ✓"
+        "value": "@mathiter",
+        "hint": "Click to open a 1:1 KakaoTalk chat instantly.",
+        "cta": "Start 1:1 chat →",
+        "copied": "Opened ✓"
       },
       "email": {
         "tag": "✉️ Email",
