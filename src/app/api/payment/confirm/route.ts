@@ -18,6 +18,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 const TOSS_API_URL = "https://api.tosspayments.com/v1/payments/confirm";
 
+// 명시적으로 Node.js Runtime 강제 — Edge Runtime에서는 Buffer 동작이
+// 다를 수 있고, Toss docs는 표준 Base64 인코딩을 요구함.
+export const runtime = "nodejs";
+
 type ConfirmRequest = {
   paymentKey: string;
   orderId: string;
@@ -25,9 +29,9 @@ type ConfirmRequest = {
 };
 
 export async function POST(req: NextRequest) {
-  const secretKey = process.env.TOSS_SECRET_KEY;
+  const rawKey = process.env.TOSS_SECRET_KEY;
 
-  if (!secretKey) {
+  if (!rawKey) {
     console.error("[PaymentConfirm] TOSS_SECRET_KEY is not set");
     return NextResponse.json(
       { success: false, error: "Server configuration error" },
@@ -35,14 +39,31 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // 환경변수 정리 — Toss docs 요구사항: UTF-8 BOM, 공백, 줄바꿈 제거
+  //   .trim()            → 앞뒤 공백·줄바꿈 제거
+  //   replace ^﻿/  → UTF-8 BOM (혹시 .env에 섞였을 가능성)
+  const secretKey = rawKey.trim().replace(/^﻿/, "");
+
+  if (secretKey.length === 0) {
+    console.error("[PaymentConfirm] TOSS_SECRET_KEY is empty after trim");
+    return NextResponse.json(
+      { success: false, error: "Server configuration error" },
+      { status: 500 }
+    );
+  }
+
   // 🔍 진단 로그 — Vercel 함수 로그에서 키 셋업 확인용
-  // (시크릿 키 전체는 절대 로그 X — 앞 prefix만)
+  // (시크릿 키 전체는 절대 로그 X — prefix·suffix만)
   const keyDiag = {
+    rawLength: rawKey.length,
+    cleanLength: secretKey.length,
+    diff: rawKey.length - secretKey.length,
+    hadBOM: rawKey.charCodeAt(0) === 0xfeff,
+    hadLeadingSpace: rawKey.startsWith(" ") || rawKey.startsWith("\t"),
+    hadTrailingSpace: rawKey.endsWith(" ") || rawKey.endsWith("\t"),
+    hadNewline: /[\r\n]/.test(rawKey),
     prefix: secretKey.slice(0, 12),
     suffix: secretKey.slice(-4),
-    length: secretKey.length,
-    hasWhitespace: /\s/.test(secretKey),
-    hasNewline: /[\r\n]/.test(secretKey),
     startsWithTestSk: secretKey.startsWith("test_sk_"),
     startsWithLiveSk: secretKey.startsWith("live_sk_"),
   };
@@ -85,8 +106,17 @@ export async function POST(req: NextRequest) {
   }
 
   // 3. 토스 결제 승인 API 호출
-  // 시크릿 키 + ":" 형식을 Base64 인코딩
-  const auth = Buffer.from(`${secretKey}:`).toString("base64");
+  // Toss docs: "시크릿 키 뒤에 ':'을 추가하고 base64로 인코딩하세요"
+  //   - UTF-8로 인코딩 (Buffer 기본값)
+  //   - 콜론 누락 금지
+  //   - BOM 금지 (위에서 제거함)
+  const auth = Buffer.from(`${secretKey}:`, "utf8").toString("base64");
+
+  console.log("[PaymentConfirm] Auth header diagnostic:", {
+    authLength: auth.length,
+    authPrefix: auth.slice(0, 16),
+    expectedDecodedLength: secretKey.length + 1, // +1 for ':'
+  });
 
   try {
     const tossRes = await fetch(TOSS_API_URL, {
