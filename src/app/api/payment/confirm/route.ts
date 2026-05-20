@@ -35,6 +35,19 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // 🔍 진단 로그 — Vercel 함수 로그에서 키 셋업 확인용
+  // (시크릿 키 전체는 절대 로그 X — 앞 prefix만)
+  const keyDiag = {
+    prefix: secretKey.slice(0, 12),
+    suffix: secretKey.slice(-4),
+    length: secretKey.length,
+    hasWhitespace: /\s/.test(secretKey),
+    hasNewline: /[\r\n]/.test(secretKey),
+    startsWithTestSk: secretKey.startsWith("test_sk_"),
+    startsWithLiveSk: secretKey.startsWith("live_sk_"),
+  };
+  console.log("[PaymentConfirm] Key diagnostics:", keyDiag);
+
   // 1. 요청 본문 파싱
   let body: Partial<ConfirmRequest>;
   try {
