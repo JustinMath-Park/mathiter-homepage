@@ -17,10 +17,8 @@ export async function navigateToAppWithSSO(
   targetUrl: string,
   nextPath?: string
 ): Promise<void> {
-  console.log("[SSO] navigate start", { hasUser: !!user, uid: user?.uid, targetUrl });
   // 비로그인 — 그냥 이동
   if (!user) {
-    console.log("[SSO] no user, plain redirect");
     window.location.href = targetUrl;
     return;
   }
@@ -28,16 +26,13 @@ export async function navigateToAppWithSSO(
   try {
     // 항상 강제 갱신 — 캐시된 stale token 으로 verifyIdToken 가 깨지는
     // 케이스(프로젝트 마이그 직후 등) 를 차단.
-    console.log("[SSO] calling getIdToken(true)...");
     const idToken = await user.getIdToken(/* forceRefresh */ true);
-    console.log("[SSO] got idToken", { idTokenLen: idToken?.length });
     if (!idToken) {
       console.warn("[SSO] user.getIdToken returned empty");
       window.location.href = targetUrl;
       return;
     }
 
-    console.log("[SSO] POST /api/sso/grant-token...");
     const res = await fetch("/api/sso/grant-token", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -68,7 +63,6 @@ export async function navigateToAppWithSSO(
       window.location.href = targetUrl;
       return;
     }
-    console.log("[SSO] got customToken, redirecting to /sso...");
 
     // 1) target 이 fully-qualified URL 인지 path 인지 따져서 base 분리
     const url = new URL(targetUrl);
@@ -76,7 +70,6 @@ export async function navigateToAppWithSSO(
     url.pathname = "/sso";
     url.searchParams.set("token", customToken);
     if (nextPath) url.searchParams.set("next", nextPath);
-    console.log("[SSO] final URL:", url.toString().replace(/token=[^&]+/, "token=<redacted>"));
     window.location.href = url.toString();
   } catch (err) {
     console.warn("[SSO] unexpected error, falling back to plain redirect", err);
