@@ -24,7 +24,12 @@ const content: Record<
     termsLink: string;
     privacyLink: string;
     cta: string;
+    ctaLoginRequired: string;
     legalLine: string;
+    loginBannerTitle: string;
+    loginBannerBody: string;
+    loginBannerLogin: string;
+    loginBannerSignup: string;
   }
 > = {
   ko: {
@@ -46,6 +51,7 @@ const content: Record<
     noticeTitle: "결제 안내",
     notices: [
       "본 상품은 디지털 콘텐츠 1개월 이용권입니다. 결제 즉시 정보통신망을 통해 서비스가 제공됩니다.",
+      "결제는 회원만 가능합니다. 결제 전 회원가입(또는 로그인)이 필요합니다.",
       "단건 결제 상품으로 자동 갱신되지 않습니다. (정기구독은 추후 출시 예정)",
       "결제 후 7일 이내 한 번도 유료 기능에 접속하지 않은 경우 전액 환불됩니다.",
       "그 외 환불 조건은 환불정책 페이지를 참고해 주세요.",
@@ -54,8 +60,14 @@ const content: Record<
     termsLink: "이용약관 →",
     privacyLink: "개인정보처리방침 →",
     cta: "결제하기",
+    ctaLoginRequired: "로그인하고 결제하기",
     legalLine:
       "「결제하기」를 클릭하면 이용약관·환불정책·개인정보처리방침에 동의한 것으로 간주됩니다.",
+    loginBannerTitle: "결제는 회원만 가능해요",
+    loginBannerBody:
+      "Mathiter Premium 결제·이용권 활성화·환불 처리는 모두 회원 계정 기준으로 운영됩니다. 로그인하거나 계정을 만들어 주세요.",
+    loginBannerLogin: "로그인",
+    loginBannerSignup: "회원가입",
   },
   en: {
     title: "Mathiter Premium Subscription",
@@ -76,6 +88,7 @@ const content: Record<
     noticeTitle: "Payment Notice",
     notices: [
       "This is a 1-month pass for digital content. Service is provided immediately upon payment via the internet.",
+      "Purchase is members-only. Please log in or sign up before payment.",
       "One-time purchase. Auto-renewal is not available (recurring subscription will be released later).",
       "If you have not accessed any paid feature within 7 days of payment, a full refund is available.",
       "For other refund conditions, please refer to the Refund Policy.",
@@ -84,8 +97,14 @@ const content: Record<
     termsLink: "Terms of Service →",
     privacyLink: "Privacy Policy →",
     cta: "Pay Now",
+    ctaLoginRequired: "Log in to pay",
     legalLine:
       "By clicking 'Pay Now', you agree to the Terms of Service, Refund Policy, and Privacy Policy.",
+    loginBannerTitle: "Payment requires a member account",
+    loginBannerBody:
+      "Mathiter Premium purchases, access entitlements, and refunds are all tied to a member account. Please log in or sign up first.",
+    loginBannerLogin: "Log in",
+    loginBannerSignup: "Sign up",
   },
 };
 
@@ -149,7 +168,12 @@ export default async function PricingPage({ params }: Props) {
                 taxFreeAmount={0}
                 locale={locale}
                 cta={c.cta}
+                ctaLoginRequired={c.ctaLoginRequired}
                 legalLine={c.legalLine}
+                loginBannerTitle={c.loginBannerTitle}
+                loginBannerBody={c.loginBannerBody}
+                loginBannerLogin={c.loginBannerLogin}
+                loginBannerSignup={c.loginBannerSignup}
               />
             </div>
           </div>
