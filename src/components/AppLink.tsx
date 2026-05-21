@@ -39,6 +39,7 @@ export default function AppLink({
   const { user } = useAuth();
 
   async function handleClick(e: MouseEvent<HTMLAnchorElement>) {
+    console.log("[AppLink] click intercepted", { hasUser: !!user, email: user?.email, href, nextPath });
     onClick?.(e);
     if (e.defaultPrevented) return;
     // 평소 a 태그 동작을 가로채서 SSO 흐름 진입
