@@ -57,8 +57,10 @@ export default function PaymentForm({
   const clientKey = process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY;
   const localePrefix = locale === "en" ? "" : `/${locale}`;
   const pricingPath = `${localePrefix}/pricing`;
-  const loginHref = `${localePrefix}/login?next=${encodeURIComponent(pricingPath)}`;
-  const signupHref = `${localePrefix}/signup?next=${encodeURIComponent(pricingPath)}`;
+  // intent=checkout 으로 결제 흐름이라는 컨텍스트를 로그인/회원가입 페이지에 전달
+  const checkoutQuery = `intent=checkout&next=${encodeURIComponent(pricingPath)}`;
+  const loginHref = `${localePrefix}/login?${checkoutQuery}`;
+  const signupHref = `${localePrefix}/signup?${checkoutQuery}`;
 
   useEffect(() => {
     if (!clientKey) {

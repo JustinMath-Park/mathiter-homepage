@@ -5,7 +5,7 @@ import LoginForm from "./LoginForm";
 
 type Props = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ next?: string }>;
+  searchParams: Promise<{ next?: string; intent?: string }>;
 };
 
 const content: Record<
@@ -13,6 +13,7 @@ const content: Record<
   {
     title: string;
     subtitle: string;
+    subtitleCheckout: string;
     emailLabel: string;
     passwordLabel: string;
     submit: string;
@@ -29,7 +30,8 @@ const content: Record<
 > = {
   ko: {
     title: "로그인",
-    subtitle: "Mathiter Premium 결제를 위해 로그인해주세요.",
+    subtitle: "Mathiter에 오신 것을 환영합니다.",
+    subtitleCheckout: "Mathiter Premium 결제를 위해 로그인해주세요.",
     emailLabel: "이메일",
     passwordLabel: "비밀번호",
     submit: "로그인",
@@ -48,7 +50,8 @@ const content: Record<
   },
   en: {
     title: "Log in",
-    subtitle: "Please log in to purchase Mathiter Premium.",
+    subtitle: "Welcome back to Mathiter.",
+    subtitleCheckout: "Please log in to purchase Mathiter Premium.",
     emailLabel: "Email",
     passwordLabel: "Password",
     submit: "Log in",
@@ -66,7 +69,8 @@ const content: Record<
   },
   ms: {
     title: "Log masuk",
-    subtitle: "Sila log masuk untuk membeli Mathiter Premium.",
+    subtitle: "Selamat kembali ke Mathiter.",
+    subtitleCheckout: "Sila log masuk untuk membeli Mathiter Premium.",
     emailLabel: "E-mel",
     passwordLabel: "Kata laluan",
     submit: "Log masuk",
@@ -85,7 +89,8 @@ const content: Record<
   },
   zh: {
     title: "登录",
-    subtitle: "请登录以购买 Mathiter Premium。",
+    subtitle: "欢迎回到 Mathiter。",
+    subtitleCheckout: "请登录以购买 Mathiter Premium。",
     emailLabel: "电子邮箱",
     passwordLabel: "密码",
     submit: "登录",
@@ -107,7 +112,14 @@ export default async function LoginPage({ params, searchParams }: Props) {
   setRequestLocale(locale);
   const c = content[locale] || content.en;
   const localePrefix = locale === "en" ? "" : `/${locale}`;
-  const nextUrl = sp.next || `${localePrefix}/pricing`;
+  // intent=checkout 일 때만 결제 안내 문구. 그 외 일반 로그인 흐름은 환영 문구.
+  const isCheckout = sp.intent === "checkout";
+  const subtitle = isCheckout ? c.subtitleCheckout : c.subtitle;
+  const nextUrl = sp.next || (isCheckout ? `${localePrefix}/pricing` : `${localePrefix}/`);
+  // 회원가입 링크에도 동일 intent 전달 — 회원가입 페이지 subtitle 도 같은 분기를 따른다
+  const signupQuery = new URLSearchParams();
+  signupQuery.set("next", nextUrl);
+  if (isCheckout) signupQuery.set("intent", "checkout");
 
   return (
     <>
@@ -116,7 +128,7 @@ export default async function LoginPage({ params, searchParams }: Props) {
         <div className="mx-auto max-w-md px-6">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight">{c.title}</h1>
-            <p className="mt-2 text-sm text-muted">{c.subtitle}</p>
+            <p className="mt-2 text-sm text-muted">{subtitle}</p>
           </div>
 
           <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8">
@@ -124,7 +136,7 @@ export default async function LoginPage({ params, searchParams }: Props) {
               locale={locale}
               labels={c}
               nextUrl={nextUrl}
-              signupHref={`${localePrefix}/signup?next=${encodeURIComponent(nextUrl)}`}
+              signupHref={`${localePrefix}/signup?${signupQuery.toString()}`}
             />
           </div>
 

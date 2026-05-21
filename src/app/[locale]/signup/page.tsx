@@ -5,7 +5,7 @@ import SignupForm from "./SignupForm";
 
 type Props = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ next?: string }>;
+  searchParams: Promise<{ next?: string; intent?: string }>;
 };
 
 const content: Record<
@@ -13,11 +13,13 @@ const content: Record<
   {
     title: string;
     subtitle: string;
+    subtitleCheckout: string;
     displayNameLabel: string;
     emailLabel: string;
     passwordLabel: string;
     passwordHint: string;
     submit: string;
+    submitCheckout: string;
     google: string;
     hasAccount: string;
     loginLink: string;
@@ -37,12 +39,14 @@ const content: Record<
 > = {
   ko: {
     title: "회원가입",
-    subtitle: "Mathiter Premium 결제를 위해 계정을 만들어 주세요.",
+    subtitle: "Mathiter 계정을 만들어 학습을 시작하세요.",
+    subtitleCheckout: "Mathiter Premium 결제를 위해 계정을 만들어 주세요.",
     displayNameLabel: "이름",
     emailLabel: "이메일",
     passwordLabel: "비밀번호",
     passwordHint: "최소 8자 이상, 영문·숫자 조합 권장",
-    submit: "회원가입하고 결제하기",
+    submit: "회원가입",
+    submitCheckout: "회원가입하고 결제하기",
     google: "Google 계정으로 가입",
     hasAccount: "이미 계정이 있으신가요?",
     loginLink: "로그인 →",
@@ -64,12 +68,14 @@ const content: Record<
   },
   en: {
     title: "Sign up",
-    subtitle: "Create an account to purchase Mathiter Premium.",
+    subtitle: "Create your Mathiter account to start learning.",
+    subtitleCheckout: "Create an account to purchase Mathiter Premium.",
     displayNameLabel: "Name",
     emailLabel: "Email",
     passwordLabel: "Password",
     passwordHint: "At least 8 characters, mix letters & numbers recommended",
-    submit: "Sign up & continue to payment",
+    submit: "Sign up",
+    submitCheckout: "Sign up & continue to payment",
     google: "Sign up with Google",
     hasAccount: "Already have an account?",
     loginLink: "Log in →",
@@ -91,12 +97,14 @@ const content: Record<
   },
   ms: {
     title: "Daftar",
-    subtitle: "Buat akaun untuk membeli Mathiter Premium.",
+    subtitle: "Daftar akaun Mathiter untuk mula belajar.",
+    subtitleCheckout: "Buat akaun untuk membeli Mathiter Premium.",
     displayNameLabel: "Nama",
     emailLabel: "E-mel",
     passwordLabel: "Kata laluan",
     passwordHint: "Sekurang-kurangnya 8 aksara, gabungan huruf & nombor disyorkan",
-    submit: "Daftar & teruskan pembayaran",
+    submit: "Daftar",
+    submitCheckout: "Daftar & teruskan pembayaran",
     google: "Daftar dengan Google",
     hasAccount: "Sudah ada akaun?",
     loginLink: "Log masuk →",
@@ -117,12 +125,14 @@ const content: Record<
   },
   zh: {
     title: "注册",
-    subtitle: "创建账号以购买 Mathiter Premium。",
+    subtitle: "注册 Mathiter 账号开始学习。",
+    subtitleCheckout: "创建账号以购买 Mathiter Premium。",
     displayNameLabel: "姓名",
     emailLabel: "电子邮箱",
     passwordLabel: "密码",
     passwordHint: "至少 8 个字符,建议字母与数字组合",
-    submit: "注册并继续付款",
+    submit: "注册",
+    submitCheckout: "注册并继续付款",
     google: "使用 Google 注册",
     hasAccount: "已有账号?",
     loginLink: "登录 →",
@@ -148,7 +158,14 @@ export default async function SignupPage({ params, searchParams }: Props) {
   setRequestLocale(locale);
   const c = content[locale] || content.en;
   const localePrefix = locale === "en" ? "" : `/${locale}`;
-  const nextUrl = sp.next || `${localePrefix}/pricing`;
+  const isCheckout = sp.intent === "checkout";
+  const subtitle = isCheckout ? c.subtitleCheckout : c.subtitle;
+  const nextUrl = sp.next || (isCheckout ? `${localePrefix}/pricing` : `${localePrefix}/`);
+  // intent 가 있으면 SignupForm 의 submit 라벨도 결제용으로 표시 + 로그인 링크에도 intent 전달
+  const labelsForForm = { ...c, submit: isCheckout ? c.submitCheckout : c.submit };
+  const loginQuery = new URLSearchParams();
+  loginQuery.set("next", nextUrl);
+  if (isCheckout) loginQuery.set("intent", "checkout");
 
   return (
     <>
@@ -157,15 +174,15 @@ export default async function SignupPage({ params, searchParams }: Props) {
         <div className="mx-auto max-w-md px-6">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight">{c.title}</h1>
-            <p className="mt-2 text-sm text-muted">{c.subtitle}</p>
+            <p className="mt-2 text-sm text-muted">{subtitle}</p>
           </div>
 
           <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8">
             <SignupForm
               locale={locale}
-              labels={c}
+              labels={labelsForForm}
               nextUrl={nextUrl}
-              loginHref={`${localePrefix}/login?next=${encodeURIComponent(nextUrl)}`}
+              loginHref={`${localePrefix}/login?${loginQuery.toString()}`}
               termsHref={`${localePrefix}/terms`}
               privacyHref={`${localePrefix}/privacy`}
               refundHref={`${localePrefix}/refund`}
