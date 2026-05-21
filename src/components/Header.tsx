@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
+import AppLink from "./AppLink";
 import { useAuth } from "@/lib/auth-context";
 
 export default function Header() {
@@ -120,12 +121,11 @@ export default function Header() {
                         {user.email}
                       </p>
                     </div>
-                    <a
-                      href="https://app.mathiter.com"
+                    <AppLink
                       className="block px-4 py-2.5 text-sm text-foreground hover:bg-gray-50 transition-colors"
                     >
                       {t("startFree")} →
-                    </a>
+                    </AppLink>
                     <button
                       onClick={handleSignOut}
                       className="block w-full text-left px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors border-t border-gray-100"
@@ -144,12 +144,11 @@ export default function Header() {
                 >
                   {t("signIn")}
                 </a>
-                <a
-                  href="https://app.mathiter.com"
+                <AppLink
                   className="gradient-bg text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity"
                 >
                   {t("startFree")}
-                </a>
+                </AppLink>
               </>
             )}
           </div>
@@ -216,13 +215,12 @@ export default function Header() {
                     <p className="text-xs text-muted truncate">{user.email}</p>
                   </div>
                 </div>
-                <a
-                  href="https://app.mathiter.com"
+                <AppLink
                   className="mt-2 block w-full text-center gradient-bg text-white text-sm font-medium px-5 py-2.5 rounded-full"
                   onClick={() => setMobileOpen(false)}
                 >
                   {t("startFree")} →
-                </a>
+                </AppLink>
                 <button
                   onClick={async () => {
                     setMobileOpen(false);
@@ -249,13 +247,12 @@ export default function Header() {
                 >
                   {t("signUp")}
                 </a>
-                <a
-                  href="https://app.mathiter.com"
+                <AppLink
                   className="block w-full text-center gradient-bg text-white text-sm font-medium px-5 py-2.5 rounded-full"
                   onClick={() => setMobileOpen(false)}
                 >
                   {t("startFree")}
-                </a>
+                </AppLink>
               </div>
             ) : null}
           </div>

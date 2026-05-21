@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
+import AppLink from "./AppLink";
 
 const DashboardMockup = dynamic(() => import("./DashboardMockup"), {
   ssr: false,
@@ -67,12 +68,11 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="mt-8 flex items-center gap-4 flex-wrap justify-center lg:justify-start">
-              <a
-                href="https://app.mathiter.com"
+              <AppLink
                 className="gradient-bg text-white font-semibold px-7 py-3.5 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
               >
                 {t("ctaPrimary")}
-              </a>
+              </AppLink>
               <a
                 href="#features"
                 className="flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full text-base border border-gray-200 hover:border-gray-300 transition-colors"

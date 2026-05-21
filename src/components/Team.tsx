@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import AppLink from "./AppLink";
 
 const beliefKeys = ["direction", "feedback", "consistency"] as const;
 const promiseKeys = ["clarity", "consistency", "confidence"] as const;
@@ -120,15 +121,14 @@ export default function Team() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <a
-            href="https://app.mathiter.com"
+          <AppLink
             className="inline-flex items-center gap-2 gradient-bg text-white text-base font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-primary/20"
           >
             {t("cta")}
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </AppLink>
           <p className="mt-4 text-sm text-muted">
             {t("tagline")}
           </p>

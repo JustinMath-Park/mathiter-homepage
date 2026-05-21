@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import AppLink from "./AppLink";
 
 const planKeys = ["basic", "premium", "school"] as const;
 const featureCounts = { basic: 5, premium: 8, school: 7 };
@@ -72,22 +73,28 @@ export default function Pricing() {
                     ))}
                   </ul>
 
-                  <a
-                    href={
-                      key === "school"
-                        ? "mailto:contact@mathiter.com"
-                        : key === "premium"
-                          ? `${localePrefix}/pricing`
-                          : "https://app.mathiter.com"
-                    }
-                    className={`mt-8 block w-full rounded-full py-3 text-center text-sm font-semibold transition-all ${
-                      isHighlight
-                        ? "gradient-bg text-white hover:opacity-90"
-                        : "border border-gray-200 text-foreground hover:border-primary hover:text-primary"
-                    }`}
-                  >
-                    {t(`plans.${key}.cta`)}
-                  </a>
+                  {key === "basic" ? (
+                    <AppLink
+                      className={`mt-8 block w-full rounded-full py-3 text-center text-sm font-semibold transition-all border border-gray-200 text-foreground hover:border-primary hover:text-primary`}
+                    >
+                      {t(`plans.${key}.cta`)}
+                    </AppLink>
+                  ) : (
+                    <a
+                      href={
+                        key === "school"
+                          ? "mailto:contact@mathiter.com"
+                          : `${localePrefix}/pricing`
+                      }
+                      className={`mt-8 block w-full rounded-full py-3 text-center text-sm font-semibold transition-all ${
+                        isHighlight
+                          ? "gradient-bg text-white hover:opacity-90"
+                          : "border border-gray-200 text-foreground hover:border-primary hover:text-primary"
+                      }`}
+                    >
+                      {t(`plans.${key}.cta`)}
+                    </a>
+                  )}
                 </div>
               </div>
             );

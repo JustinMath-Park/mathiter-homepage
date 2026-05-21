@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import AppLink from "./AppLink";
 
 export default function CTA() {
   const t = useTranslations("cta");
@@ -22,12 +23,11 @@ export default function CTA() {
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
-              <a
-                href="https://app.mathiter.com"
+              <AppLink
                 className="bg-white text-primary font-semibold px-8 py-3.5 rounded-full text-base hover:bg-gray-50 transition-colors shadow-lg"
               >
                 {t("ctaPrimary")}
-              </a>
+              </AppLink>
               <a
                 href="mailto:contact@mathiter.com"
                 className="border-2 border-white/30 text-white font-semibold px-8 py-3.5 rounded-full text-base hover:border-white/60 transition-colors"

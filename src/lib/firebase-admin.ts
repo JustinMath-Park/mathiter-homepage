@@ -1,7 +1,9 @@
 import { cert, getApps, initializeApp, type App } from "firebase-admin/app";
+import { getAuth, type Auth } from "firebase-admin/auth";
 import { getFirestore, type Firestore } from "firebase-admin/firestore";
 
 let cachedDb: Firestore | null = null;
+let cachedAuth: Auth | null = null;
 let initialized = false;
 
 function getServiceAccount() {
@@ -60,6 +62,14 @@ export function getAdminDb(): Firestore | null {
   }
   cachedDb = db;
   return cachedDb;
+}
+
+export function getAdminAuth(): Auth | null {
+  if (cachedAuth) return cachedAuth;
+  const app = initAdmin();
+  if (!app) return null;
+  cachedAuth = getAuth(app);
+  return cachedAuth;
 }
 
 export function isFirebaseConfigured(): boolean {

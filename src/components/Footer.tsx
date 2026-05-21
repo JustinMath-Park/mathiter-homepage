@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import AppLink from "./AppLink";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -97,12 +98,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://app.mathiter.com"
+                <AppLink
                   className="text-sm text-muted hover:text-foreground transition-colors"
                 >
                   app.mathiter.com
-                </a>
+                </AppLink>
               </li>
             </ul>
           </div>

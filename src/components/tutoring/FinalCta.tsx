@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import AppLink from "../AppLink";
 
 export default function FinalCta() {
   const t = useTranslations("tutoring.finalCta");
@@ -195,12 +196,11 @@ export default function FinalCta() {
             <Link href="/terms" style={{ color: "inherit", textDecoration: "none" }}>
               {tFooter("terms")}
             </Link>
-            <a
-              href="https://app.mathiter.com"
+            <AppLink
               style={{ color: "inherit", textDecoration: "none" }}
             >
               {tFooter("app")}
-            </a>
+            </AppLink>
           </div>
         </footer>
       </div>

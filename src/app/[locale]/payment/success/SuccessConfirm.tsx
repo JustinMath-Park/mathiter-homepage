@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import AppLink from "@/components/AppLink";
 
 type Labels = {
   confirmingTitle: string;
@@ -193,12 +194,11 @@ export default function SuccessConfirm({
       )}
 
       <div className="px-8 py-6 border-t border-gray-100 bg-gray-50/50 text-center">
-        <a
-          href="https://app.mathiter.com"
+        <AppLink
           className="inline-block rounded-lg bg-primary text-white px-6 py-3 text-sm font-semibold hover:bg-primary/90 transition-colors"
         >
           {labels.goToApp}
-        </a>
+        </AppLink>
       </div>
     </div>
   );
