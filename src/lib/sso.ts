@@ -24,8 +24,14 @@ export async function navigateToAppWithSSO(
   }
 
   try {
-    // 항상 fresh token (만료 60초 미만이면 강제 갱신)
-    const idToken = await user.getIdToken(/* forceRefresh */ false);
+    // 항상 강제 갱신 — 캐시된 stale token 으로 verifyIdToken 가 깨지는
+    // 케이스(프로젝트 마이그 직후 등) 를 차단.
+    const idToken = await user.getIdToken(/* forceRefresh */ true);
+    if (!idToken) {
+      console.warn("[SSO] user.getIdToken returned empty");
+      window.location.href = targetUrl;
+      return;
+    }
 
     const res = await fetch("/api/sso/grant-token", {
       method: "POST",
@@ -35,14 +41,25 @@ export async function navigateToAppWithSSO(
     });
 
     if (!res.ok) {
-      // grant 실패 — 로그 남기고 그냥 이동 (app 에서 다시 로그인 받음)
-      console.warn("[SSO] grant-token failed", res.status);
+      // 실패 원인을 콘솔에 자세히 남겨야 디버깅 가능. body 까지 출력.
+      let body = "";
+      try {
+        body = await res.text();
+      } catch {}
+      console.warn(
+        "[SSO] grant-token failed",
+        res.status,
+        body || "<empty body>",
+        { uid: user.uid, email: user.email, idTokenLen: idToken.length }
+      );
+      // grant 실패 — 그냥 이동 (app 에서 다시 로그인 받음)
       window.location.href = targetUrl;
       return;
     }
 
     const { customToken } = (await res.json()) as { customToken?: string };
     if (!customToken) {
+      console.warn("[SSO] grant-token response missing customToken");
       window.location.href = targetUrl;
       return;
     }

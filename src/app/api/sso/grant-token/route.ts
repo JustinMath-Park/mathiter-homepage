@@ -53,13 +53,28 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // idToken 의 payload 를 decode 만 (signature 검증 없이) 해서 어떤 project
+  // 에서 발급된 토큰인지 진단에 사용. Vercel env(server admin) 와 클라이언트
+  // Firebase project 가 mismatch 면 verifyIdToken 이 깨지는데, 그 정보가
+  // 응답에 같이 있으면 디버깅 즉시 가능.
+  let tokenAud: string | undefined;
+  let tokenIss: string | undefined;
+  try {
+    const payload = JSON.parse(
+      Buffer.from(idToken.split(".")[1] || "", "base64url").toString("utf8")
+    );
+    tokenAud = payload?.aud;
+    tokenIss = payload?.iss;
+  } catch {
+    // 디코드 실패 — 토큰 자체 malformed
+  }
+
   try {
     // 1) ID token 검증 — 만료된/위조된 토큰은 throw
     const decoded = await auth.verifyIdToken(idToken, true);
 
     // 2) 동일 uid 로 custom token 발급 (1시간 만료)
     const customToken = await auth.createCustomToken(decoded.uid, {
-      // 필요 시 추가 claim — app 측에서 회원 가입 출처 표시 등
       sso_source: "mathiter-homepage",
     });
 
@@ -71,29 +86,38 @@ export async function POST(req: NextRequest) {
       },
       {
         headers: {
-          // 캐시 금지 (개별 토큰이므로)
           "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
         },
       }
     );
   } catch (err) {
     const code = (err as { code?: string }).code;
-    // 토큰 만료/위조 — 401 로 반환 (클라이언트는 그냥 일반 redirect 로 fallback)
+    const message = (err as { message?: string }).message;
+    // 진단용 — 어느 project 의 token 인지 + 서버 admin 이 어느 project 인지
+    // 둘 다 응답에 노출 (mismatch 가 흔한 원인).
+    const diag = {
+      code,
+      message,
+      tokenAud,
+      tokenIss,
+      serverProjectId: process.env.FIREBASE_PROJECT_ID,
+    };
+
     if (code === "auth/id-token-expired" || code === "auth/id-token-revoked") {
       return NextResponse.json(
-        { error: "ID token expired or revoked." },
+        { error: "ID token expired or revoked.", diag },
         { status: 401 }
       );
     }
     if (code === "auth/argument-error" || code === "auth/invalid-id-token") {
       return NextResponse.json(
-        { error: "Invalid ID token." },
+        { error: "Invalid ID token.", diag },
         { status: 400 }
       );
     }
     console.error("[sso/grant-token] verifyIdToken failed:", err);
     return NextResponse.json(
-      { error: "Failed to grant SSO token." },
+      { error: "Failed to grant SSO token.", diag },
       { status: 500 }
     );
   }
