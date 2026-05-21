@@ -1,10 +1,12 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const planKeys = ["basic", "premium", "school"] as const;
 const featureCounts = { basic: 5, premium: 8, school: 7 };
 
 export default function Pricing() {
   const t = useTranslations("pricing");
+  const locale = useLocale();
+  const localePrefix = locale === "en" ? "" : `/${locale}`;
 
   return (
     <section id="pricing" className="py-20 lg:py-28 bg-surface">
@@ -74,7 +76,9 @@ export default function Pricing() {
                     href={
                       key === "school"
                         ? "mailto:contact@mathiter.com"
-                        : "https://app.mathiter.com"
+                        : key === "premium"
+                          ? `${localePrefix}/pricing`
+                          : "https://app.mathiter.com"
                     }
                     className={`mt-8 block w-full rounded-full py-3 text-center text-sm font-semibold transition-all ${
                       isHighlight
