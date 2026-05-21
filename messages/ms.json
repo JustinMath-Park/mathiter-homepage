@@ -14,8 +14,12 @@
       "team": "Our Vision",
       "blog": "Blog"
     },
-    "signIn": "Sign In",
-    "startFree": "Start Free"
+    "signIn": "Log masuk",
+    "startFree": "Mula percuma",
+    "signUp": "Daftar",
+    "logout": "Log keluar",
+    "account": "Akaun saya",
+    "loggedInAs": "{name}"
   },
   "hero": {
     "badge": "AI Math Coach for International School Exams",

@@ -15,7 +15,11 @@
       "blog": "블로그"
     },
     "signIn": "로그인",
-    "startFree": "무료 시작"
+    "startFree": "무료 시작",
+    "signUp": "회원가입",
+    "logout": "로그아웃",
+    "account": "내 계정",
+    "loggedInAs": "{name}님"
   },
   "hero": {
     "badge": "국제학교 수학 시험 대비 AI 학습 코치",

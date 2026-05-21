@@ -15,7 +15,11 @@
       "blog": "Blog"
     },
     "signIn": "Sign In",
-    "startFree": "Start Free"
+    "startFree": "Start Free",
+    "signUp": "Sign Up",
+    "logout": "Log out",
+    "account": "My account",
+    "loggedInAs": "{name}"
   },
   "hero": {
     "badge": "AI Math Coach for International School Exams",
