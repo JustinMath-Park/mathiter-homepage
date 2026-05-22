@@ -118,7 +118,7 @@ export default function TutoringNav() {
             {t("app")}
           </Link>
           <div className="tutoring-nav-lang">
-            <LanguageSwitcher />
+            <LanguageSwitcher locales={["en", "ko"]} />
           </div>
           <Link
             href="/contact"

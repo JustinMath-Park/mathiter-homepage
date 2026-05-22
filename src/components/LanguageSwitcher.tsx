@@ -5,7 +5,11 @@ import { useRouter, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useTransition } from "react";
 
-export default function LanguageSwitcher() {
+type Props = {
+  locales?: readonly string[];
+};
+
+export default function LanguageSwitcher({ locales = routing.locales }: Props) {
   const t = useTranslations("languageSwitcher");
   const locale = useLocale();
   const router = useRouter();
@@ -28,7 +32,7 @@ export default function LanguageSwitcher() {
         className="appearance-none bg-transparent border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-[var(--muted)] hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]/20 cursor-pointer pr-8"
         aria-label={t("label")}
       >
-        {routing.locales.map((loc) => (
+        {locales.map((loc) => (
           <option key={loc} value={loc}>
             {t(loc)}
           </option>

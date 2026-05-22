@@ -1,7 +1,11 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function TutoringStructuredData() {
+  const locale = await getLocale();
   const t = await getTranslations("tutoring");
+  const localePrefix = locale === "en" ? "" : `/${locale}`;
+  const pageUrl = `https://mathiter.com${localePrefix}/tutoring`;
+  const contactUrl = `https://mathiter.com${localePrefix}/contact`;
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -74,7 +78,7 @@ export default async function TutoringStructuredData() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      url: "https://mathiter.com/contact",
+      url: contactUrl,
       availableLanguage: ["ko", "en"],
     },
     offers: [
@@ -114,34 +118,34 @@ export default async function TutoringStructuredData() {
       name: "SAT Math 1:1 Tutoring",
       description:
         "1:1 tutoring for the Digital SAT Math section, taught by Justin Park (multiple students with 800/800).",
-      url: "https://mathiter.com/#pricing",
+      url: `${pageUrl}#pricing`,
       educationalLevel: "High School",
     },
     {
       name: "AP Calculus AB / BC 1:1 Tutoring",
       description:
         "1:1 tutoring for AP Calculus AB and BC, with many students achieving a 5/5 score.",
-      url: "https://mathiter.com/#pricing",
+      url: `${pageUrl}#pricing`,
       educationalLevel: "High School",
     },
     {
       name: "IB Math AA / AI 1:1 Tutoring",
       description:
         "1:1 tutoring for IB Math AA and AI (SL & HL), including IA support and Paper 3 strategy.",
-      url: "https://mathiter.com/#pricing",
+      url: `${pageUrl}#pricing`,
       educationalLevel: "High School",
     },
     {
       name: "IGCSE Extended Math 1:1 Tutoring",
       description:
         "1:1 tutoring for Cambridge IGCSE Extended Math targeting an A* grade.",
-      url: "https://mathiter.com/#pricing",
+      url: `${pageUrl}#pricing`,
       educationalLevel: "Middle/High School",
     },
     {
       name: "Korean CSAT (수능) Math 1:1 Tutoring",
       description: "1:1 tutoring for the Korean CSAT (수능) math section.",
-      url: "https://mathiter.com/#pricing",
+      url: `${pageUrl}#pricing`,
       educationalLevel: "High School",
     },
   ];
@@ -199,7 +203,7 @@ export default async function TutoringStructuredData() {
     uploadDate: "2026-05-14",
     duration: "PT1M11S",
     contentUrl: "https://mathiter.com/videos/tutoring_hero_1080p.mp4",
-    embedUrl: "https://mathiter.com/ko/tutoring#hero-video",
+    embedUrl: `${pageUrl}#hero-video`,
     publisher: {
       "@type": "Organization",
       name: "Mathiter Tutoring",

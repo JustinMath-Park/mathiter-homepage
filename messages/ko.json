@@ -323,10 +323,10 @@
   },
   "tutoring": {
     "metadata": {
-      "title": "국제학교 수학 1:1 과외 | SAT·AP·IB 박세준 — Mathiter Tutoring",
-      "description": "대치동 K-12 12년·국제학교 수학 8년 경력 박세준 선생님의 1:1 화상과외. SAT 만점·AP Calc BC 5점 학생 다수. Mathiter 학습앱으로 학부모 대시보드까지 제공합니다.",
-      "ogTitle": "국제학교 수학 1:1 과외 — SAT·AP·IB·IGCSE | Mathiter Tutoring",
-      "ogDescription": "해외 이주, 국제학교 진학을 앞두고 자녀의 수학이 걱정되시나요? 8년 경력 박세준 선생님의 1:1 화상과외 + Mathiter 학습앱."
+      "title": "SAT 수학 과외 · 국제학교 수학 1:1 | 박세준 — Mathiter",
+      "description": "SAT 수학 과외와 국제학교 수학 1:1 화상과외. 대치동 K-12 12년·국제학교 수학 8년 경력 박세준 선생님이 SAT Math, AP Calc BC, IB Math를 Mathiter 학습앱과 함께 지도합니다.",
+      "ogTitle": "SAT 수학 과외 · 국제학교 수학 1:1 — AP·IB·IGCSE | Mathiter",
+      "ogDescription": "해외 이주·국제학교 진학을 앞둔 자녀를 위한 SAT 수학 과외. 8년 경력 박세준 선생님의 1:1 화상과외 + Mathiter 학습앱."
     },
     "nav": {
       "worry": "이런 걱정",
@@ -339,8 +339,8 @@
       "blog": "블로그 →"
     },
     "hero": {
-      "badge": "국제학교 학부모를 위한 1:1 수학 과외 · SAT · AP · IB · IGCSE",
-      "headline": "<grad>국제학교 수학</grad> <em>1:1 과외</em>로<br></br>SAT·AP·IB 수학을 완벽하게 정복하세요.",
+      "badge": "SAT 수학 과외 · 국제학교 수학 1:1 · AP · IB · IGCSE",
+      "headline": "<grad>SAT 수학 과외</grad>와 <em>국제학교 수학</em><br></br>1:1로 정확하게 지도합니다.",
       "subHeadline": "국제학교에 아이들을 보내며 학부모의 시선으로 수학 교육을 깊이 고민해왔습니다.\n\n그 경험을 바탕으로 지난 8년간 국제학교 중·고등학생들을 전문적으로 지도해왔으며, SAT Math 및 AP Calculus BC에서 우수한 성과를 이끌어왔습니다.",
       "ctaPrimary": "무료 상담 신청",
       "ctaSecondary": "수업이 어떻게 진행되나요?",
