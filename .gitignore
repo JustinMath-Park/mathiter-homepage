@@ -40,3 +40,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Personal / scratch (project root only — public/ images are committable)
+/.claude/
+/screenshots/
+
+# Personal photos / screenshots accidentally dropped at project root
+# (committed images belong under public/, src/, content/, or messages/)
+/*.JPG
+/*.jpg
+/*.jpeg
+/*.HEIC
+/*.heic
+/*.png
+/*.gif
+/*.pdf
+/*.mp4
+/*.mov
