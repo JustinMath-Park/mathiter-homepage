@@ -6,6 +6,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { AuthProvider } from "@/lib/auth-context";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -30,45 +31,31 @@ export function generateStaticParams() {
 
 const BASE_URL = "https://mathiter.com";
 
+function ogLocale(locale: string) {
+  if (locale === "ko") return "ko_KR";
+  if (locale === "zh") return "zh_CN";
+  if (locale === "ms") return "ms_MY";
+  return "en_US";
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "tutoring.metadata" });
-
-  const languages: Record<string, string> = {};
-  for (const loc of routing.locales) {
-    languages[loc] =
-      loc === routing.defaultLocale ? BASE_URL : `${BASE_URL}/${loc}`;
-  }
+  const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(BASE_URL),
-    alternates: {
-      canonical: locale === routing.defaultLocale ? "/" : `/${locale}`,
-      languages,
-    },
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
-      url:
-        locale === routing.defaultLocale
-          ? BASE_URL
-          : `${BASE_URL}/${locale}`,
       siteName: "Mathiter",
       type: "website",
-      locale:
-        locale === "en"
-          ? "en_US"
-          : locale === "ko"
-            ? "ko_KR"
-            : locale === "zh"
-              ? "zh_CN"
-              : "ms_MY",
+      locale: ogLocale(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -131,6 +118,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSansKR.variable} font-sans antialiased`}
       >
+        <GoogleAnalytics />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <AuthProvider>{children}</AuthProvider>
         </NextIntlClientProvider>
