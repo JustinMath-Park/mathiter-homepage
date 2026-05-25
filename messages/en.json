@@ -639,6 +639,77 @@
       "ctaSecondary": "Meet the tutor",
       "ctaNote": "Replies within 1 hour during business hours · One trial session before you decide"
     },
+    "pricingTable": {
+      "eyebrow": "Tuition",
+      "title": "Tuition by Grade & Track",
+      "subtitle": "Three tracks — Regular, Advanced, Elite — across Elementary, Middle, and High School grade bands. 100% 1:1 live online lessons (60 min/session). Mathiter AI learning app is included free in every package.",
+      "tracks": {
+        "regular": {
+          "name": "Regular",
+          "engName": "On-Grade",
+          "frequency": "1× / week · 60 min",
+          "tagline": "Steady learning at grade level",
+          "detail": "School-pace support plus exam fundamentals. Mathiter AI fills in self-study between sessions."
+        },
+        "advanced": {
+          "name": "Advanced",
+          "engName": "Advanced",
+          "frequency": "2× / week · 60 min",
+          "tagline": "Full pace · Most popular",
+          "detail": "School curriculum + exam prep + 1–2 year acceleration. The proven sweet-spot frequency — chosen by most students.",
+          "badge": "Most popular"
+        },
+        "elite": {
+          "name": "Elite",
+          "engName": "Elite",
+          "frequency": "3× / week · 60 min",
+          "tagline": "School + Competition + Top-tier admissions",
+          "detail": "2–3 year acceleration · AMC 8/10/12 · AIME · USAMO · IMO (International Math Olympiad) · SAT 800 · AP 5 prep. Monthly progress reports and admissions consulting included."
+        }
+      },
+      "grades": {
+        "elementary": "Elementary (G1–5)",
+        "middle": "Middle (G6–8)",
+        "high": "High (G9–12)"
+      },
+      "monthlyLabel": "Monthly tuition",
+      "unit": "₩10K",
+      "ctaLabel": "Book free consultation",
+      "notes": {
+        "ai": "Mathiter AI learning app included free in every package",
+        "trial": "Free diagnostic test + 30-min consultation",
+        "format": "100% 1:1 live online (Google Meet)",
+        "card": "Prices shown are for card payment. Bank transfer discounts are available — please ask during the consultation."
+      },
+      "gradeChart": {
+        "trigger": "Grade chart (US Grade · UK Year)",
+        "modalTitle": "Grade matching chart",
+        "modalSubtitle": "How US Grade and UK Year map to age — based on Korean school year (March intake). Schools may differ by ±1 year.",
+        "columns": {
+          "age": "Age",
+          "us": "US (Grade)",
+          "uk": "UK (Year)",
+          "kr": "Korea",
+          "band": "Mathiter band"
+        },
+        "rows": [
+          { "age": "6", "us": "Grade 1", "uk": "Year 2", "kr": "Cho 1", "band": "Elementary" },
+          { "age": "7", "us": "Grade 2", "uk": "Year 3", "kr": "Cho 2", "band": "Elementary" },
+          { "age": "8", "us": "Grade 3", "uk": "Year 4", "kr": "Cho 3", "band": "Elementary" },
+          { "age": "9", "us": "Grade 4", "uk": "Year 5", "kr": "Cho 4", "band": "Elementary" },
+          { "age": "10", "us": "Grade 5", "uk": "Year 6", "kr": "Cho 5", "band": "Elementary" },
+          { "age": "11", "us": "Grade 6", "uk": "Year 7", "kr": "Cho 6", "band": "Middle" },
+          { "age": "12", "us": "Grade 7", "uk": "Year 8", "kr": "Jung 1", "band": "Middle" },
+          { "age": "13", "us": "Grade 8", "uk": "Year 9", "kr": "Jung 2", "band": "Middle" },
+          { "age": "14", "us": "Grade 9 (Freshman)", "uk": "Year 10", "kr": "Jung 3", "band": "High" },
+          { "age": "15", "us": "Grade 10 (Sophomore)", "uk": "Year 11", "kr": "Go 1", "band": "High" },
+          { "age": "16", "us": "Grade 11 (Junior)", "uk": "Year 12", "kr": "Go 2", "band": "High" },
+          { "age": "17", "us": "Grade 12 (Senior)", "uk": "Year 13", "kr": "Go 3", "band": "High" }
+        ],
+        "note": "Intake month varies (US: September · UK: September · Korea: March), so the same age may map to different grades. We'll confirm placement during the free consultation.",
+        "closeLabel": "Close"
+      }
+    },
     "faq": {
       "eyebrow": "FAQ",
       "title": "Questions parents ask first.",

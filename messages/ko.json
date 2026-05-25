@@ -639,6 +639,77 @@
       "ctaSecondary": "튜터 소개 보기",
       "ctaNote": "영업시간 1시간 이내 회신 · 1회 대면 시범 수업 후 결정"
     },
+    "pricingTable": {
+      "eyebrow": "수업료",
+      "title": "학년·트랙별 수업료",
+      "subtitle": "초등·중등·고등 학년 그룹에 맞춰 정규·심화·엘리트 3가지 트랙. 100% 1:1 화상 수업 60분/회, 모든 패키지에 Mathiter AI 학습 앱이 무료로 포함됩니다.",
+      "tracks": {
+        "regular": {
+          "name": "정규반",
+          "engName": "On-Grade",
+          "frequency": "주 1회 · 60분",
+          "tagline": "학년에 맞는 안정적 학습",
+          "detail": "학교 진도 보조와 시험 정규 대비. 수업 사이의 자기학습은 Mathiter AI 학습 앱이 보완합니다."
+        },
+        "advanced": {
+          "name": "심화반",
+          "engName": "Advanced",
+          "frequency": "주 2회 · 60분",
+          "tagline": "본격 학습 · 가장 추천",
+          "detail": "학교 진도 + 시험 대비 + 1~2년 선행을 함께. 학습 효과가 검증된 빈도로 가장 많은 학생이 선택합니다.",
+          "badge": "가장 인기"
+        },
+        "elite": {
+          "name": "엘리트반",
+          "engName": "Elite",
+          "frequency": "주 3회 · 60분",
+          "tagline": "학교 + 경시 + 명문대 입시",
+          "detail": "2~3년 선행 · AMC 8/10/12 · AIME · USAMO · IMO (수학 올림피아드) · SAT 800 · AP 5점 대비. 월간 학습 리포트와 입시 컨설팅이 포함됩니다."
+        }
+      },
+      "grades": {
+        "elementary": "초등 (G1-5)",
+        "middle": "중등 (G6-8)",
+        "high": "고등 (G9-12)"
+      },
+      "monthlyLabel": "월 수업료",
+      "unit": "만 원",
+      "ctaLabel": "무료 상담 신청",
+      "notes": {
+        "ai": "모든 패키지에 Mathiter AI 학습 앱 무료 포함",
+        "trial": "첫 진단테스트 + 30분 상담 1회 무료",
+        "format": "100% 1:1 화상 수업 (Google Meet)",
+        "card": "표시 가격은 카드 결제 기준입니다. 현금 결제 시 추가 혜택은 상담을 통해 안내드립니다."
+      },
+      "gradeChart": {
+        "trigger": "학년 매칭표 보기 (US Grade / UK Year)",
+        "modalTitle": "학년 매칭표",
+        "modalSubtitle": "한국 학제 기준 만 나이로 미국·영국 학년이 어떻게 매칭되는지 정리했습니다. 학교마다 1년 차이가 있을 수 있어요.",
+        "columns": {
+          "age": "만 나이",
+          "us": "미국 (US Grade)",
+          "uk": "영국 (UK Year)",
+          "kr": "한국",
+          "band": "Mathiter 그룹"
+        },
+        "rows": [
+          { "age": "6", "us": "Grade 1", "uk": "Year 2", "kr": "초 1", "band": "초등" },
+          { "age": "7", "us": "Grade 2", "uk": "Year 3", "kr": "초 2", "band": "초등" },
+          { "age": "8", "us": "Grade 3", "uk": "Year 4", "kr": "초 3", "band": "초등" },
+          { "age": "9", "us": "Grade 4", "uk": "Year 5", "kr": "초 4", "band": "초등" },
+          { "age": "10", "us": "Grade 5", "uk": "Year 6", "kr": "초 5", "band": "초등" },
+          { "age": "11", "us": "Grade 6", "uk": "Year 7", "kr": "초 6", "band": "중등" },
+          { "age": "12", "us": "Grade 7", "uk": "Year 8", "kr": "중 1", "band": "중등" },
+          { "age": "13", "us": "Grade 8", "uk": "Year 9", "kr": "중 2", "band": "중등" },
+          { "age": "14", "us": "Grade 9 (Freshman)", "uk": "Year 10", "kr": "중 3", "band": "고등" },
+          { "age": "15", "us": "Grade 10 (Sophomore)", "uk": "Year 11", "kr": "고 1", "band": "고등" },
+          { "age": "16", "us": "Grade 11 (Junior)", "uk": "Year 12", "kr": "고 2", "band": "고등" },
+          { "age": "17", "us": "Grade 12 (Senior)", "uk": "Year 13", "kr": "고 3", "band": "고등" }
+        ],
+        "note": "학교 입학월(미국 9월 / 영국 9월 / 한국 3월)에 따라 같은 만 나이라도 학년이 달라질 수 있습니다. 정확한 진단은 무료 상담에서 안내드립니다.",
+        "closeLabel": "닫기"
+      }
+    },
     "faq": {
       "eyebrow": "자주 묻는 질문",
       "title": "학부모님이 가장 자주 물으시는 질문.",
