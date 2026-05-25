@@ -4,26 +4,36 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 /**
- * PricingTeaser
+ * PricingTeaser (3-tier, 2026-05-25 v2)
  * --------------------------------------------------------------
- * 랜딩 페이지에서는 가격을 직접 노출하지 않는다.
- * 패키지의 "단계 구조"만 보여주고, 정확한 금액은 무료 상담에서 안내.
- * (TutoringPricing 컴포넌트는 그대로 보존되어 있어, 추후 복귀 가능)
+ * 랜딩 페이지(/tutoring) 에서는 가격을 직접 노출하지 않는다.
+ * 트랙의 "단계 구조"와 "타겟 학생상"만 보여주고,
+ * 정확한 금액은 박세준 원장님이 직접 상담 시 /tutoring/pricing 페이지로 안내.
+ *
+ * 디자인: PricingTable 과 동일한 3 컬럼 카드 + 심화반 "가장 인기" 강조.
+ * 차이: 월 수업료 row 가 통째로 없음. CTA = "무료 상담 신청".
  */
+
+type TrackKey = "regular" | "advanced" | "elite";
+
+interface Track {
+  key: TrackKey;
+  featured: boolean;
+}
+
+const TRACKS: Track[] = [
+  { key: "regular", featured: false },
+  { key: "advanced", featured: true },
+  { key: "elite", featured: false },
+];
+
 export default function PricingTeaser() {
   const t = useTranslations("tutoring.pricingTeaser");
-  const tp = useTranslations("tutoring.pricing");
-
-  const tiers: Array<{ k: "basic" | "advanced" | "pro" | "master"; icon: string }> = [
-    { k: "basic", icon: "🚲" },
-    { k: "advanced", icon: "🚗" },
-    { k: "pro", icon: "🚙" },
-    { k: "master", icon: "🏎️" },
-  ];
+  const tt = useTranslations("tutoring.pricingTable"); // 트랙 이름/메시지 재사용
 
   return (
     <section id="pricing" style={{ padding: "112px 0", background: "#f8fafc" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 32px" }}>
+      <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 32px" }}>
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: 760, margin: "0 auto" }}>
           <p
@@ -62,65 +72,22 @@ export default function PricingTeaser() {
           </p>
         </div>
 
-        {/* 4 Tier Pills (이름·아이콘만, 가격 X) */}
+        {/* 3 Track Cards (no price row) */}
         <div
           style={{
-            marginTop: 48,
+            marginTop: 56,
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: 16,
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: 24,
+            alignItems: "stretch",
           }}
         >
-          {tiers.map(({ k, icon }) => (
-            <div
-              key={k}
-              style={{
-                background: "#ffffff",
-                border: "1px solid #e2e8f0",
-                borderRadius: 16,
-                padding: "24px 20px",
-                textAlign: "center",
-                boxShadow: "0 1px 3px rgba(15,23,42,0.04)",
-              }}
-            >
-              <div style={{ fontSize: 36, lineHeight: 1 }}>{icon}</div>
-              <p
-                style={{
-                  margin: "12px 0 4px",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.16em",
-                  color: "#64748b",
-                }}
-              >
-                {tp(`${k}.stage`)}
-              </p>
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: 22,
-                  fontWeight: 700,
-                  color: "#0b2a57",
-                }}
-              >
-                {tp(`${k}.name`)}
-              </p>
-              <p
-                style={{
-                  margin: "10px 0 0",
-                  fontSize: 13,
-                  color: "#94a3b8",
-                  lineHeight: 1.5,
-                }}
-              >
-                {tp(`${k}.desc`)}
-              </p>
-            </div>
+          {TRACKS.map((track) => (
+            <TrackCard key={track.key} track={track} tt={tt} />
           ))}
         </div>
 
-        {/* Inquiry Card */}
+        {/* CTA Card — 무료 상담 funnel */}
         <div
           style={{
             marginTop: 56,
@@ -228,5 +195,123 @@ export default function PricingTeaser() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* ── TrackCard (price row removed) ──────────────────────── */
+
+function TrackCard({
+  track,
+  tt,
+}: {
+  track: Track;
+  tt: ReturnType<typeof useTranslations>;
+}) {
+  const featured = track.featured;
+  const trackKey = `tracks.${track.key}`;
+
+  return (
+    <div
+      style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        background: featured
+          ? "linear-gradient(135deg, #0b2a57 0%, #1e40af 100%)"
+          : "#ffffff",
+        color: featured ? "#ffffff" : "#0b2a57",
+        border: featured ? "none" : "1px solid #e2e8f0",
+        borderRadius: 20,
+        padding: featured ? "44px 28px 32px" : "40px 28px 32px",
+        boxShadow: featured
+          ? "0 24px 60px rgba(15,23,42,0.18)"
+          : "0 1px 3px rgba(15,23,42,0.04)",
+        transform: featured ? "translateY(-8px)" : "none",
+        minHeight: 360,
+      }}
+    >
+      {/* "가장 인기" 배지 */}
+      {featured && (
+        <div
+          style={{
+            position: "absolute",
+            top: -14,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#f97316",
+            color: "#ffffff",
+            fontSize: 11,
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: "0.16em",
+            padding: "6px 16px",
+            borderRadius: 999,
+            boxShadow: "0 6px 16px rgba(249,115,22,0.32)",
+          }}
+        >
+          {tt(`${trackKey}.badge`)}
+        </div>
+      )}
+
+      {/* Track header */}
+      <p
+        style={{
+          margin: 0,
+          fontSize: 11,
+          fontWeight: 700,
+          textTransform: "uppercase",
+          letterSpacing: "0.18em",
+          color: featured ? "#bfdbfe" : "#64748b",
+        }}
+      >
+        {tt(`${trackKey}.engName`)}
+      </p>
+      <h3
+        style={{
+          margin: "10px 0 6px",
+          fontSize: 30,
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
+          color: featured ? "#ffffff" : "#0b2a57",
+        }}
+      >
+        {tt(`${trackKey}.name`)}
+      </h3>
+      <p
+        style={{
+          margin: 0,
+          fontSize: 14,
+          fontWeight: 600,
+          color: featured ? "#dbeafe" : "#475569",
+        }}
+      >
+        {tt(`${trackKey}.frequency`)}
+      </p>
+
+      {/* Tagline + detail */}
+      <p
+        style={{
+          marginTop: 24,
+          marginBottom: 0,
+          fontSize: 16,
+          fontWeight: 600,
+          color: featured ? "#ffffff" : "#0b2a57",
+          lineHeight: 1.4,
+        }}
+      >
+        {tt(`${trackKey}.tagline`)}
+      </p>
+      <p
+        style={{
+          margin: "12px 0 0",
+          fontSize: 14,
+          color: featured ? "#dbeafe" : "#475569",
+          lineHeight: 1.65,
+          flexGrow: 1,
+        }}
+      >
+        {tt(`${trackKey}.detail`)}
+      </p>
+    </div>
   );
 }
