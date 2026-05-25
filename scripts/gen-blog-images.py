@@ -336,6 +336,44 @@ time zones and two academic systems — distance doesn't reduce
 quality.
 Horizontal landscape framing (16:9), three-quarter angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 21: Exam prep calendar by grade — 3 tracks
+    # ═══════════════════════════════════════════════════════
+    "exam-prep-calendar-by-grade-3-tracks-1.png": STYLE + """
+A Korean mother in her 40s sitting at a wooden dining table or home study
+area, looking down at a large opened paper academic year planner spread out
+in front of her with handwritten color-coded notes in different pen colors
+marking different months — generic month markers visible (no readable text).
+On the table beside the planner: a notebook with handwritten Korean notes,
+a printed school course catalog, two different colored highlighter pens
+(blue and red representing different tracks), a steaming mug of tea, a
+smartphone face-down. She is gently underlining or marking a date with
+focused, calm concentration — the moment of mapping out a child's year of
+exams. Only her hands and side profile visible (no clear face).
+Soft late afternoon natural window light. Neutral warm home interior.
+The mood: a Korean parent quietly planning out her child's upcoming
+academic year — calm, deliberate, organized. The sense of "let me see
+what's actually coming this year."
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
+
+    "exam-prep-calendar-by-grade-3-tracks-2.png": STYLE + """
+Top-down editorial shot of a wooden study desk with a Korean teenage
+student's open A4-size academic planner / monthly calendar in the center,
+handwritten in two languages (Korean and English) with month and date grid
+visible but no readable specifics. Around the planner scattered: a sharpened
+pencil and a fountain pen, a small stack of colored sticky-flag tabs (blue,
+purple, green, red — representing different exam tracks), an open math
+textbook in English partially in frame, a Korean-English vocabulary
+notebook, a steaming mug of tea, a smartphone face-down. A teenage hand
+(partial, no face) hovering with a pen above a particular date as if
+marking it. Warm afternoon light from above-left, soft shadows.
+The mood: the quiet act of mapping out a school year — exam dates being
+marked one at a time, the methodical preparation of a student who
+knows what's coming.
+Horizontal landscape framing (16:9), top-down editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

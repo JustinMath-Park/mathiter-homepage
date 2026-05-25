@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgCal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="usT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="ukT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+    <linearGradient id="ibT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="krT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgCal)" />
+  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="95" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="600" fill="#ffffff" opacity="0.78" letter-spacing="6">국제학교 학년별 시험 캘린더</text>
+  <text x="800" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#ffffff" opacity="0.5" letter-spacing="2">미국 · 영국 · IB · 한국 — 4 트랙, 같은 16세 다른 시험</text>
+
+  <!-- Year axis (G6/Y7 → G12/Y13) -->
+  <g transform="translate(80, 200)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6" letter-spacing="2">학년 / 연령</text>
+  </g>
+
+  <!-- Grade column labels (left) -->
+  <g font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" text-anchor="end">
+    <text x="170" y="265">G6 / Y7 · 11–12세</text>
+    <text x="170" y="305">G7 / Y8 · 12–13세</text>
+    <text x="170" y="345">G8 / Y9 · 13–14세</text>
+    <text x="170" y="385">G9 / Y10 · 14–15세</text>
+    <text x="170" y="425">G10 / Y11 · 15–16세</text>
+    <text x="170" y="465">G11 / Y12 · 16–17세</text>
+    <text x="170" y="505">G12 / Y13 · 17–18세</text>
+  </g>
+
+  <!-- Horizontal guide lines -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.08">
+    <line x1="190" y1="260" x2="1530" y2="260" />
+    <line x1="190" y1="300" x2="1530" y2="300" />
+    <line x1="190" y1="340" x2="1530" y2="340" />
+    <line x1="190" y1="380" x2="1530" y2="380" />
+    <line x1="190" y1="420" x2="1530" y2="420" />
+    <line x1="190" y1="460" x2="1530" y2="460" />
+    <line x1="190" y1="500" x2="1530" y2="500" />
+  </g>
+
+  <!-- TRACK 1: US AP -->
+  <g transform="translate(200, 230)">
+    <rect width="310" height="300" rx="20" fill="url(#usT)" opacity="0.92" />
+    <text x="155" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="2">US · AP 트랙</text>
+    <line x1="50" y1="58" x2="260" y2="58" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="155" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Pre-Algebra · Algebra I</text>
+    <text x="155" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Geometry · Algebra II</text>
+    <text x="155" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Pre-Calculus · PSAT</text>
+    <text x="155" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">★ G11 5월 AP 결정적</text>
+    <text x="155" y="222" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.75">SAT 봄·가을 · STEM AP</text>
+    <text x="155" y="260" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.6">G12 Common App · 12월 Early</text>
+  </g>
+
+  <!-- TRACK 2: UK IGCSE → A Level -->
+  <g transform="translate(530, 230)">
+    <rect width="310" height="300" rx="20" fill="url(#ukT)" opacity="0.92" />
+    <text x="155" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="2">UK · IGCSE → A Level</text>
+    <line x1="50" y1="58" x2="260" y2="58" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="155" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">KS3 (Y7–Y9)</text>
+    <text x="155" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Y10 IGCSE 1년차</text>
+    <text x="155" y="160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Y11 IGCSE 5–6월 시험</text>
+    <text x="155" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Y12 A Level 1년차 · AS</text>
+    <text x="155" y="240" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">★ Y13 5–6월 A Level 최종</text>
+    <text x="155" y="262" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.65">결과 8월 · UCAS confirm</text>
+  </g>
+
+  <!-- TRACK 3: IB Diploma -->
+  <g transform="translate(860, 230)">
+    <rect width="310" height="300" rx="20" fill="url(#ibT)" opacity="0.92" />
+    <text x="155" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="2">IB Diploma</text>
+    <line x1="50" y1="58" x2="260" y2="58" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="155" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">MYP / IGCSE 선행</text>
+    <text x="155" y="145" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Y11/G10 Pre-DP · 과목 선택</text>
+    <text x="155" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Y12/G11 DP Year 1 · EE</text>
+    <text x="155" y="222" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">★ Y13/G12 5월 IB 최종</text>
+    <text x="155" y="244" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">결과 7월 6일</text>
+    <text x="155" y="270" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.6">US·UK 양쪽 인정</text>
+  </g>
+
+  <!-- TRACK 4: 한국 -->
+  <g transform="translate(1190, 230)">
+    <rect width="310" height="300" rx="20" fill="url(#krT)" opacity="0.92" />
+    <text x="155" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="2">한국 내신·수능</text>
+    <line x1="50" y1="58" x2="260" y2="58" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="155" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">초6 (만 11–12세)</text>
+    <text x="155" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">중1–중3 자유학기제</text>
+    <text x="155" y="160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">고1 수학(상)(하) · I·II</text>
+    <text x="155" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">고2 미적분·확통·기하</text>
+    <text x="155" y="240" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">★ 고3 11월 수능</text>
+    <text x="155" y="262" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.65">9·10월 수시 원서</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="800" y="660" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" fill="#ffffff" opacity="0.85" letter-spacing="2">같은 16–17세, 같은 G11이라도 — 트랙별로 결정적 순간이 완전히 다릅니다</text>
+
+  <!-- Decision moments callout -->
+  <g transform="translate(800, 720)">
+    <rect x="-440" y="0" width="880" height="120" rx="16" fill="#ffffff" opacity="0.05" />
+    <text x="0" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff" opacity="0.85" letter-spacing="1">미국: G11 5월 AP가 입시 거의 결정 · 영국: Y13 5월 A Level 최종이 대학 입학 조건</text>
+    <text x="0" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff" opacity="0.85" letter-spacing="1">IB: Y13/G12 5월 시험 · 결과 7월 6일 · 한국: 고3 11월 수능 + 9·10월 수시</text>
+    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6" letter-spacing="2">학년 매핑은 평균선일 뿐 — 학기 시작 월·국가별 cutoff로 같은 생년월일도 1년 어긋날 수 있습니다</text>
+  </g>
+</svg>
