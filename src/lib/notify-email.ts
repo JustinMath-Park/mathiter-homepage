@@ -40,11 +40,40 @@ function escapeHtml(input: string): string {
     .replace(/'/g, "&#39;");
 }
 
+// Legacy 4-tier (Firestore 기존 데이터 호환)
 const PACKAGE_LABELS: Record<string, { name: string; price: string }> = {
   basic: { name: "Basic (초등)", price: "₩600,000 / 월" },
   advanced: { name: "Advanced (중등)", price: "₩860,000 / 월" },
   pro: { name: "Pro (고등)", price: "₩960,000 / 월" },
   master: { name: "Master (입시·경시)", price: "₩1,200,000 / 월" },
+};
+
+// 새 3-tier (2026-05-25 v2)
+const TRACK3_LABELS: Record<string, string> = {
+  regular: "정규 코스 (주 1회 · 월 4회)",
+  advanced: "심화 코스 (주 2회 · 월 8회)",
+  elite: "엘리트 코스 (주 3회 · 월 12회)",
+};
+
+const GOAL_LABELS: Record<string, string> = {
+  // 초등
+  "elem-school-pace": "초등 · 학교 진도 보조",
+  "elem-foundation": "초등 · 기초 + 사고력 강화",
+  "elem-accelerated": "초등 · 선행 학습",
+  // 중등
+  "mid-school-pace": "중등 · 학교 진도 보조",
+  "mid-pre-sat": "중등 · Pre-SAT 기초",
+  "mid-igcse-intro": "중등 · IGCSE 입문",
+  "mid-accelerated": "중등 · 선행 학습",
+  // 고등 US
+  "high-us-sat": "고등 US · SAT",
+  "high-us-ap-ab": "고등 US · AP Calculus AB",
+  "high-us-ap-bc": "고등 US · AP Calculus BC",
+  // 고등 UK
+  "high-uk-igcse-diagnostic": "고등 UK · IGCSE Math 진단 · 점수 개선",
+  "high-uk-igcse-add-math": "고등 UK · IGCSE Additional Math 심화 학습",
+  "high-uk-a-level-bridge": "고등 UK · A Level Math 준비 브리지",
+  "high-uk-a-level-full": "고등 UK · AS/A Level + Further Math",
 };
 
 const TRACK_LABELS: Record<string, string> = {
@@ -74,11 +103,33 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
   const residenceLabel = inquiry.residence
     ? RESIDENCE_LABELS[inquiry.residence]
     : "—";
+
+  // 새 v2 — goals (다중) + recommendedTrack
+  const goalKeys: string[] = (inquiry.goals && inquiry.goals.length > 0)
+    ? inquiry.goals
+    : inquiry.goal
+      ? [inquiry.goal]
+      : [];
+  const goalLabelArr = goalKeys.map((k) => GOAL_LABELS[k] ?? k);
+  const goalLabel = goalLabelArr.length > 0 ? goalLabelArr.join(", ") : null;
+  const goalLabelHtml =
+    goalLabelArr.length > 0
+      ? goalLabelArr.map((g) => `<li style="margin:2px 0;">${escapeHtml(g)}</li>`).join("")
+      : "";
+
+  const recommendedTrackLabel = inquiry.recommendedTrack
+    ? TRACK3_LABELS[inquiry.recommendedTrack]
+    : null;
+
+  // Legacy 4-tier fallback (구버전 폼 데이터 처리용)
   const pkg = inquiry.recommendedPackage
     ? PACKAGE_LABELS[inquiry.recommendedPackage]
     : null;
 
-  const subject = `[Mathiter Tutoring] ${studentName} 학생 상담 신청 · ${gradeLevel}${pkg ? ` · ${pkg.name}` : ""}`;
+  // 제목: 새 v2 우선, legacy fallback
+  const recommendForSubject =
+    recommendedTrackLabel ?? (pkg ? pkg.name : "");
+  const subject = `[Mathiter Tutoring] ${studentName} 학생 상담 신청 · ${gradeLevel}${recommendForSubject ? ` · ${recommendForSubject}` : ""}`;
 
   const lines = [
     `📬 새 상담 신청이 들어왔습니다`,
@@ -87,7 +138,11 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
     `[학년] ${gradeLevel}`,
     `[공부 경로] ${trackLabel}`,
     `[현재 거주지] ${residenceLabel}`,
-    pkg ? `[추천 패키지] ${pkg.name} — ${pkg.price}` : null,
+    goalLabel
+      ? `[학습 목표 ${goalLabelArr.length}개] ${goalLabel}`
+      : null,
+    recommendedTrackLabel ? `[추천 코스] ${recommendedTrackLabel}` : null,
+    pkg ? `[Legacy 추천 패키지] ${pkg.name} — ${pkg.price}` : null,
     ``,
     `[연락 선호] ${inquiry.contactMethod}`,
     `[연락처] ${inquiry.contactDetail}`,
@@ -99,6 +154,8 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
     inquiry.firestoreDocId
       ? `[Firestore docId] ${inquiry.firestoreDocId}`
       : null,
+    ``,
+    `※ 다양한 수업 코스와 비용은 상담에서 직접 안내`,
     ``,
     `--`,
     `Mathiter Tutoring · mathiter.com/contact`,
@@ -114,8 +171,13 @@ function buildEmailBody(inquiry: InquiryEmailPayload): {
     <h2 style="margin:0 0 6px;font-size:22px;font-weight:700;color:#0b2a57;letter-spacing:-0.01em;">${escapeHtml(studentName)} 학생</h2>
     <p style="margin:0 0 24px;font-size:14px;color:#64748b;">${escapeHtml(gradeLevel)} · ${escapeHtml(trackLabel)} · ${escapeHtml(residenceLabel)}</p>
 
-    ${pkg ? `<div style="margin:0 0 24px;padding:18px 20px;background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:12px;">
-      <div style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#2563eb;text-transform:uppercase;margin-bottom:4px;">사용자가 본 추천 패키지</div>
+    ${recommendedTrackLabel ? `<div style="margin:0 0 24px;padding:18px 20px;background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:12px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#2563eb;text-transform:uppercase;margin-bottom:4px;">사용자가 본 추천 코스</div>
+      <div style="font-size:18px;font-weight:700;color:#0b2a57;margin-bottom:6px;">${escapeHtml(recommendedTrackLabel)}</div>
+      ${goalLabelHtml ? `<div style="font-size:13px;color:#475569;margin-top:8px;">선택한 목표 (${goalLabelArr.length}개):<ul style="margin:4px 0 0;padding-left:18px;color:#334155;">${goalLabelHtml}</ul></div>` : ""}
+      <div style="font-size:12px;color:#64748b;margin-top:10px;font-style:italic;">※ 다양한 수업 코스와 비용은 상담에서 안내</div>
+    </div>` : pkg ? `<div style="margin:0 0 24px;padding:18px 20px;background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:12px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#2563eb;text-transform:uppercase;margin-bottom:4px;">Legacy 추천 패키지</div>
       <div style="font-size:18px;font-weight:700;color:#0b2a57;margin-bottom:2px;">${escapeHtml(pkg.name)}</div>
       <div style="font-size:14px;color:#475569;">${escapeHtml(pkg.price)} (카드결제 기준)</div>
     </div>` : ""}

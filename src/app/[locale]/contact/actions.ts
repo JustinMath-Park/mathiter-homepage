@@ -6,7 +6,8 @@ import type {
   TutoringInquiry,
   TutoringTrack,
   TutoringResidence,
-  TutoringPackage,
+  TutoringTrack3,
+  TutoringGoal,
 } from "@/types/blog";
 
 const INQUIRY_COLLECTION = "tutoringInquiries";
@@ -22,10 +23,37 @@ function asTrack(v: string | null): TutoringTrack {
 function asResidence(v: string | null): TutoringResidence {
   return v === "overseas" ? "overseas" : "kr";
 }
-function asPackage(v: string | null): TutoringPackage {
-  if (v === "basic" || v === "advanced" || v === "pro" || v === "master")
-    return v;
-  return "basic";
+function asTrack3(v: string | null): TutoringTrack3 {
+  if (v === "regular" || v === "advanced" || v === "elite") return v;
+  return "regular";
+}
+
+const ALL_GOALS: TutoringGoal[] = [
+  "elem-school-pace",
+  "elem-foundation",
+  "elem-accelerated",
+  "mid-school-pace",
+  "mid-pre-sat",
+  "mid-igcse-intro",
+  "mid-accelerated",
+  "high-us-sat",
+  "high-us-ap-ab",
+  "high-us-ap-bc",
+  "high-uk-igcse-diagnostic",
+  "high-uk-igcse-add-math",
+  "high-uk-a-level-bridge",
+  "high-uk-a-level-full",
+];
+
+function asGoal(v: string | null): TutoringGoal {
+  if (v && (ALL_GOALS as string[]).includes(v)) return v as TutoringGoal;
+  return "elem-school-pace"; // fallback (validation에서 한 번 더 체크)
+}
+
+function asGoals(values: FormDataEntryValue[]): TutoringGoal[] {
+  return values
+    .filter((v): v is string => typeof v === "string")
+    .filter((v) => (ALL_GOALS as string[]).includes(v)) as TutoringGoal[];
 }
 
 export async function submitInquiry(
@@ -33,7 +61,7 @@ export async function submitInquiry(
   formData: FormData
 ): Promise<SubmitResult> {
   const inquiry: TutoringInquiry = {
-    // Step 3 — 연락처
+    // Step 4 — 연락처
     studentName: String(formData.get("studentName") ?? "").trim(),
     contactMethod:
       (formData.get("contactMethod") as
@@ -49,10 +77,12 @@ export async function submitInquiry(
     track: asTrack(formData.get("track") as string | null),
     residence: asResidence(formData.get("residence") as string | null),
 
-    // Step 2 — 추천 패키지
-    recommendedPackage: asPackage(
-      formData.get("recommendedPackage") as string | null
-    ),
+    // Step 2 — 학습 목표 (다중 선택)
+    goals: asGoals(formData.getAll("goals")),
+    goal: asGoal(formData.get("goal") as string | null), // legacy first-pick
+
+    // Step 3 — 추천 코스 (가격은 별도 페이지에서 안내)
+    recommendedTrack: asTrack3(formData.get("recommendedTrack") as string | null),
 
     // Meta
     source: String(formData.get("source") ?? "").trim() || "contact-page",
@@ -68,6 +98,12 @@ export async function submitInquiry(
   }
   if (!inquiry.gradeLevel) {
     return { ok: false, error: "학년 정보가 비어 있습니다. 처음부터 다시 시도해 주세요." };
+  }
+  if (!inquiry.goals || inquiry.goals.length === 0) {
+    return {
+      ok: false,
+      error: "학습 목표를 1개 이상 선택해 주세요. 처음부터 다시 시도해 주세요.",
+    };
   }
 
   const db = getAdminDb();

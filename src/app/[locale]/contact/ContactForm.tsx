@@ -6,20 +6,22 @@ import type {
   BlogLocale,
   TutoringTrack,
   TutoringResidence,
-  TutoringPackage,
+  TutoringTrack3,
+  TutoringGoal,
 } from "@/types/blog";
 
 /* ─────────────────────────────────────────────────────────────
-   COPY
+   COPY (ko/en — ms/zh는 별도 페이지로 fallback)
 ───────────────────────────────────────────────────────────── */
 
 const COPY = {
   ko: {
-    stepLabel: (n: number) => `Step ${n} / 3`,
+    stepLabel: (n: number) => `Step ${n} / 4`,
     next: "다음 →",
     back: "← 이전",
 
-    step1Title: "자녀에게 맞는 패키지를 추천해 드릴게요.",
+    // Step 1
+    step1Title: "자녀에게 맞는 트랙을 추천해 드릴게요.",
     step1Subtitle: "30초면 됩니다 — 3가지만 알려 주세요.",
     gradeLabel: "자녀 학년",
     gradePlaceholder: "선택해 주세요",
@@ -63,34 +65,37 @@ const COPY = {
     },
     residenceLabel: "현재 거주지",
     residenceOptions: { kr: "한국", overseas: "해외" },
-    step1Cta: "추천 패키지 보기 →",
+    step1Cta: "다음으로 →",
     noPersonalNote: "이 단계에서는 연락처를 받지 않습니다.",
 
-    step2Eyebrow: "추천 패키지",
-    step2TitlePrefix: "학년 {grade}, ",
-    tracksLabel: { us: "US 트랙", uk: "UK 트랙", both: "US·UK 양쪽 고려" },
-    residenceText: { kr: "한국 거주", overseas: "해외 거주" },
-    step2Title: " 학생을 위한 맞춤 패키지",
-    perMonth: "/ 월",
-    cardPaymentNote:
-      "💳 표시 금액은 카드결제 기준입니다. 현금 결제 시 상담을 통해 추가 혜택을 안내해 드립니다.",
-    groupDiscountNote:
-      "💡 같은 학년 친구 3명과 함께 신청하시면 그룹 단가가 적용됩니다. 자세한 조건은 무료 상담 시 안내해 드립니다.",
-    masterNote:
-      "※ Master 패키지는 입시·경시·시험 임박 학생을 위한 1:1 밀착 진행 패키지입니다.",
-    secondaryEyebrow: "AP · SAT 적극 대비",
-    secondaryHeadline:
-      "G11에 AP 시험 5점을 노리신다면, Master가 더 효율적입니다",
-    secondaryBody:
-      "Master는 주 3회로 학습 빈도가 1.5배 늘어나지만, 회당 단가는 오히려 ₩{savePerSession}원 저렴합니다 (Pro 대비 17% ↓). AP·SAT 같은 고난도 시험을 단기간에 끌어올려야 하는 학생에게 가장 효과적이에요.",
-    secondaryCompare: "회당 단가",
-    secondaryPickThis: "Master로 신청하기 →",
-    pickThis: "이 패키지로 신청하기 →",
-    step2Cta: "신청 계속하기 →",
+    // Step 2 (NEW) — 목표 선택 (다중 가능)
+    step2Title: "어떤 목표를 가지고 계신가요?",
+    step2Subtitle: "선택하신 목표에 따라 가장 적합한 코스를 추천해 드립니다.",
+    step2MultiHint: "✓ 여러 개를 선택하실 수 있어요 (1개 이상 필요)",
+    step2Cta: "추천 코스 보기 →",
+    goalGroupUs: "US 트랙",
+    goalGroupUk: "UK 트랙",
 
-    step3Eyebrow: "마지막 단계",
-    step3Title: "연락처를 남겨 주세요",
+    // Step 3 (이전 Step 2) — 추천 코스 + 기본 가격
+    step3Eyebrow: "맞춤 추천",
+    step3Title: "추천 코스",
     step3Subtitle:
+      "자녀의 학년·목표를 바탕으로 가장 적합한 코스를 추천드립니다.",
+    step3Cta: "이 코스로 신청 계속하기 →",
+    summaryGrade: "학년",
+    summaryTrack: "경로",
+    summaryResidence: "거주",
+    summaryGoal: "목표",
+    priceLabel: "월 수업료",
+    priceUnit: "만 원",
+    selectedGoalsLabel: "선택하신 목표",
+    feeNote:
+      "💬 다양한 수업 코스와 비용에 대해서는 상담에서 안내드립니다.",
+
+    // Step 4 (이전 Step 3) — 연락처
+    step4Eyebrow: "마지막 단계",
+    step4Title: "연락처를 남겨 주세요",
+    step4Subtitle:
       "Mathiter Tutoring에서 영업시간 1시간 이내로 직접 연락드립니다.",
     studentName: "학생 이름",
     studentNamePh: "예: 박세준",
@@ -112,11 +117,11 @@ const COPY = {
     successContact: "긴급한 문의는 contact@mathiter.com",
   },
   en: {
-    stepLabel: (n: number) => `Step ${n} / 3`,
+    stepLabel: (n: number) => `Step ${n} / 4`,
     next: "Next →",
     back: "← Back",
 
-    step1Title: "Let us recommend the right package.",
+    step1Title: "Let us recommend the right track.",
     step1Subtitle: "Takes 30 seconds — just three quick questions.",
     gradeLabel: "Student's grade",
     gradePlaceholder: "Please select",
@@ -160,34 +165,35 @@ const COPY = {
     },
     residenceLabel: "Current residence",
     residenceOptions: { kr: "Korea", overseas: "Overseas" },
-    step1Cta: "See recommended package →",
+    step1Cta: "Next →",
     noPersonalNote: "No contact details collected at this step.",
 
-    step2Eyebrow: "Recommended package",
-    step2TitlePrefix: "For a Grade {grade}, ",
-    tracksLabel: { us: "US Track", uk: "UK Track", both: "US / UK (both)" },
-    residenceText: { kr: "Korea-based", overseas: "Overseas-based" },
-    step2Title: " student",
-    perMonth: " / month",
-    cardPaymentNote:
-      "💳 Listed price is for card payment. Cash payment includes additional benefits — discussed during consultation.",
-    groupDiscountNote:
-      "💡 Group rates apply when three friends in the same grade apply together. Conditions explained during the free consultation.",
-    masterNote:
-      "※ Master is a focused 1:1 package for admissions, competitions, or short-deadline exam prep.",
-    secondaryEyebrow: "Serious AP · SAT prep",
-    secondaryHeadline:
-      "Aiming for a 5 on AP exams in G11? Master is more efficient.",
-    secondaryBody:
-      "Master adds 1.5× session frequency, yet costs ₩{savePerSession} less per session (17% lower vs. Pro). Best for students who must lift AP/SAT scores in a short window.",
-    secondaryCompare: "Per-session rate",
-    secondaryPickThis: "Apply with Master →",
-    pickThis: "Apply with this package →",
-    step2Cta: "Continue to apply →",
+    step2Title: "What is your goal?",
+    step2Subtitle:
+      "We'll recommend the most suitable course based on your goals.",
+    step2MultiHint: "✓ You can select multiple (at least 1 required)",
+    step2Cta: "See recommended course →",
+    goalGroupUs: "US Track",
+    goalGroupUk: "UK Track",
 
-    step3Eyebrow: "Final step",
-    step3Title: "Leave your contact details",
+    step3Eyebrow: "Personalized recommendation",
+    step3Title: "Recommended course",
     step3Subtitle:
+      "Based on your child's grade and goal, this is our recommended course.",
+    step3Cta: "Continue with this course →",
+    summaryGrade: "Grade",
+    summaryTrack: "Track",
+    summaryResidence: "Residence",
+    summaryGoal: "Goal",
+    priceLabel: "Monthly tuition",
+    priceUnit: "₩10K",
+    selectedGoalsLabel: "Selected goals",
+    feeNote:
+      "💬 Different course options and pricing are explained during the consultation.",
+
+    step4Eyebrow: "Final step",
+    step4Title: "Leave your contact details",
+    step4Subtitle:
       "Mathiter Tutoring will reach out within 1 business hour.",
     studentName: "Student's name",
     studentNamePh: "e.g., Sejun Park",
@@ -213,142 +219,248 @@ const COPY = {
 } as const;
 
 /* ─────────────────────────────────────────────────────────────
-   추천 알고리즘 + 패키지 데이터
+   GOAL 옵션 + 추천 로직 (2026-05-25 v2 옵션 A)
 ───────────────────────────────────────────────────────────── */
 
-const PACKAGES: Record<
-  TutoringPackage,
+interface GoalDef {
+  key: TutoringGoal;
+  name: { ko: string; en: string };
+  desc: { ko: string; en: string };
+  recommendedTrack: TutoringTrack3;
+  groupLabel?: "us" | "uk"; // 고등 only — US/UK 그룹 분리용
+}
+
+const GOALS: GoalDef[] = [
+  // 초등 (G1-5) — 시험 X
   {
-    name: string;
+    key: "elem-school-pace",
+    name: { ko: "학교 진도 보조", en: "School-pace support" },
+    desc: {
+      ko: "학교에서 배우는 내용을 안정적으로 따라가기",
+      en: "Steady support to keep up with school curriculum",
+    },
+    recommendedTrack: "regular",
+  },
+  {
+    key: "elem-foundation",
+    name: { ko: "기초 + 사고력 강화", en: "Foundations + thinking skills" },
+    desc: {
+      ko: "수학 개념을 단단히 다지고 수학적 사고력 키우기",
+      en: "Build solid foundations and develop mathematical thinking",
+    },
+    recommendedTrack: "regular",
+  },
+  {
+    key: "elem-accelerated",
+    name: { ko: "선행 학습", en: "Accelerated learning" },
+    desc: {
+      ko: "학년에 비해 1~2년 선행 진도 (영재학원 대비 등)",
+      en: "1–2 year acceleration ahead of grade level",
+    },
+    recommendedTrack: "advanced", // 선행 = 학습량 많아야 가능 → 심화
+  },
+
+  // 중등 (G6-8) — 시험 X (Pre-SAT 는 US 전용, IGCSE 입문은 UK 전용)
+  {
+    key: "mid-school-pace",
+    name: { ko: "학교 진도 보조", en: "School-pace support" },
+    desc: {
+      ko: "Pre-Algebra · Algebra 기초 안정",
+      en: "Steady support for Pre-Algebra & Algebra basics",
+    },
+    recommendedTrack: "regular",
+    // groupLabel 없음 = common (US/UK 모두 표시)
+  },
+  {
+    key: "mid-pre-sat",
+    name: { ko: "Pre-SAT 기초", en: "Pre-SAT foundations" },
+    desc: {
+      ko: "SAT 준비를 위한 기초 다지기 (G7~8 권장)",
+      en: "Build foundations for future SAT prep (G7~8 recommended)",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "us",
+  },
+  {
+    key: "mid-igcse-intro",
+    name: { ko: "IGCSE 입문", en: "IGCSE introduction" },
+    desc: {
+      ko: "G8 진단 + IGCSE 시작 전 브리지",
+      en: "G8 diagnostic + bridge before starting IGCSE",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "uk",
+  },
+  {
+    key: "mid-accelerated",
+    name: { ko: "선행 학습", en: "Accelerated learning" },
+    desc: {
+      ko: "2~3년 선행 진도 (영재학원 · AMC 8 대비)",
+      en: "2–3 year acceleration (gifted program / AMC 8 prep)",
+    },
+    recommendedTrack: "advanced", // 선행 = 학습량 많아야 가능 → 심화
+    // groupLabel 없음 = common
+  },
+
+  // 고등 US
+  {
+    key: "high-us-sat",
+    name: { ko: "SAT", en: "SAT" },
+    desc: {
+      ko: "Digital SAT Math 800 목표",
+      en: "Digital SAT Math 800 target",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "us",
+  },
+  {
+    key: "high-us-ap-ab",
+    name: { ko: "AP Calculus AB", en: "AP Calculus AB" },
+    desc: {
+      ko: "AP Calculus AB 5점 대비 (G10~G12)",
+      en: "AP Calculus AB 5 prep (G10~G12)",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "us",
+  },
+  {
+    key: "high-us-ap-bc",
+    name: { ko: "AP Calculus BC", en: "AP Calculus BC" },
+    desc: {
+      ko: "AP Calculus BC 5점 대비 (G11~G12)",
+      en: "AP Calculus BC 5 prep (G11~G12)",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "us",
+  },
+
+  // 고등 UK
+  {
+    key: "high-uk-igcse-diagnostic",
+    name: {
+      ko: "IGCSE Mathematics 진단 · 점수 개선",
+      en: "IGCSE Math diagnostic & score improvement",
+    },
+    desc: {
+      ko: "현재 점수 진단 + 약점 보완 (Year 10~11)",
+      en: "Current score diagnostic + targeted improvement",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "uk",
+  },
+  {
+    key: "high-uk-igcse-add-math",
+    name: {
+      ko: "IGCSE Additional Mathematics 심화 학습",
+      en: "IGCSE Additional Mathematics advanced study",
+    },
+    desc: {
+      ko: "Add Math A* 목표 심화 학습",
+      en: "Additional Math A* deep dive",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "uk",
+  },
+  {
+    key: "high-uk-a-level-bridge",
+    name: {
+      ko: "A Level Mathematics 준비 브리지 코스",
+      en: "A Level Math bridge course",
+    },
+    desc: {
+      ko: "IGCSE → A Level 전환 브리지 (Year 11~12)",
+      en: "Bridge from IGCSE to A Level (Year 11~12)",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "uk",
+  },
+  {
+    key: "high-uk-a-level-full",
+    name: {
+      ko: "AS/A Level Mathematics + Further Mathematics",
+      en: "AS/A Level Math + Further Math",
+    },
+    desc: {
+      ko: "A Level Math + Further Math 동시 진행 (Year 12~13)",
+      en: "A Level + Further Math combined (Year 12~13)",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "uk",
+  },
+];
+
+function gradeGroup(grade: string): "elementary" | "middle" | "high" {
+  const n = parseInt(grade.replace(/[^0-9]/g, ""), 10);
+  if (!n) return "elementary";
+  if (n <= 5) return "elementary";
+  if (n <= 8) return "middle";
+  return "high";
+}
+
+function goalsForGradeAndTrack(
+  grade: string,
+  track: TutoringTrack
+): GoalDef[] {
+  const group = gradeGroup(grade);
+
+  // 1단계: 학년 그룹별 후보 추출
+  let candidates: GoalDef[];
+  if (group === "elementary") {
+    candidates = GOALS.filter((g) => g.key.startsWith("elem-"));
+  } else if (group === "middle") {
+    candidates = GOALS.filter((g) => g.key.startsWith("mid-"));
+  } else {
+    candidates = GOALS.filter((g) => g.key.startsWith("high-"));
+  }
+
+  // 2단계: 트랙별 필터 (Both 면 다 표시)
+  if (track === "both") return candidates;
+  // common (groupLabel 없음) + 해당 트랙만
+  return candidates.filter((g) => !g.groupLabel || g.groupLabel === track);
+}
+
+function findGoal(key: TutoringGoal): GoalDef | undefined {
+  return GOALS.find((g) => g.key === key);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TRACK META (Step 3 표시용 — 가격 X)
+───────────────────────────────────────────────────────────── */
+
+const TRACK_META: Record<
+  TutoringTrack3,
+  {
+    name: { ko: string; en: string };
+    frequency: { ko: string; en: string };
     icon: string;
-    stage: { ko: string; en: string };
-    pricePerMonth: number;
-    sessions: { ko: string; en: string };
-    includes: { ko: string[]; en: string[] };
-    groupEligible: boolean;
   }
 > = {
-  basic: {
-    name: "Basic",
-    icon: "🚲",
-    stage: { ko: "초등 (US G1~5)", en: "Elementary (US G1~5)" },
-    pricePerMonth: 600000,
-    sessions: {
-      ko: "주 2회 × 50분 · 월 8회 1:1 화상",
-      en: "Twice a week × 50 min · 8 sessions/month",
-    },
-    includes: {
-      ko: [
-        "Mathiter 학습앱 (Common Core 기반)",
-        "분수·소수·비율 등 핵심 개념",
-        "주간 학습 진도 리포트",
-      ],
-      en: [
-        "Mathiter learning app (Common Core aligned)",
-        "Core concepts: fractions, decimals, ratios",
-        "Weekly progress reports",
-      ],
-    },
-    groupEligible: false,
+  regular: {
+    name: { ko: "정규 코스", en: "Regular" },
+    frequency: { ko: "주 1회 · 60분 · 월 4회", en: "1× / week · 60 min · 4×/month" },
+    icon: "🟢",
   },
   advanced: {
-    name: "Advanced",
-    icon: "🚗",
-    stage: { ko: "중등 (US G6~8)", en: "Middle School (US G6~8)" },
-    pricePerMonth: 860000,
-    sessions: {
-      ko: "주 2회 × 55분 · 월 8회 1:1 화상",
-      en: "Twice a week × 55 min · 8 sessions/month",
-    },
-    includes: {
-      ko: [
-        "Pre-Algebra · Algebra 1 집중",
-        "US Middle School GPA 관리",
-        "Mathiter 학습앱 + 학부모 주간 리포트",
-      ],
-      en: [
-        "Pre-Algebra & Algebra 1 focus",
-        "US Middle School GPA management",
-        "Mathiter app + weekly parent report",
-      ],
-    },
-    groupEligible: true,
+    name: { ko: "심화 코스", en: "Advanced" },
+    frequency: { ko: "주 2회 · 60분 · 월 8회", en: "2× / week · 60 min · 8×/month" },
+    icon: "🔵",
   },
-  pro: {
-    name: "Pro",
-    icon: "🚙",
-    stage: { ko: "고등 (US G9~11)", en: "High School (US G9~11)" },
-    pricePerMonth: 960000,
-    sessions: {
-      ko: "주 2회 × 55분 · 월 8회 1:1 화상",
-      en: "Twice a week × 55 min · 8 sessions/month",
-    },
-    includes: {
-      ko: [
-        "Algebra 1·2 · Geometry · Pre-Calculus",
-        "SAT 실전 대비 + GPA 마스터",
-        "Mathiter 학습앱 + 학부모 주간 리포트",
-      ],
-      en: [
-        "Algebra 1/2, Geometry, Pre-Calculus",
-        "SAT prep + GPA mastery",
-        "Mathiter app + weekly parent report",
-      ],
-    },
-    groupEligible: true,
-  },
-  master: {
-    name: "Master",
-    icon: "🏎️",
-    stage: {
-      ko: "입시·경시·시험 임박",
-      en: "Admissions · Competition · Exam-imminent",
-    },
-    pricePerMonth: 1200000,
-    sessions: {
-      ko: "주 3회 × 55분 · 월 12회 1:1 화상",
-      en: "Three times a week × 55 min · 12 sessions/month",
-    },
-    includes: {
-      ko: [
-        "AP / SAT / ACT / AMC 대비",
-        "1:1 입시·학습 컨설팅",
-        "Mathiter 학습앱 + 학부모 주간 리포트",
-      ],
-      en: [
-        "AP / SAT / ACT / AMC prep",
-        "1:1 admissions & study consulting",
-        "Mathiter app + weekly parent report",
-      ],
-    },
-    groupEligible: false,
+  elite: {
+    name: { ko: "엘리트 코스", en: "Elite" },
+    frequency: { ko: "주 3회 · 60분 · 월 12회", en: "3× / week · 60 min · 12×/month" },
+    icon: "🟣",
   },
 };
 
-function recommendPackage(grade: string): TutoringPackage {
-  const n = parseInt(grade.replace(/[^0-9]/g, ""), 10);
-  if (!n) return "basic";
-  if (n <= 5) return "basic";
-  if (n <= 8) return "advanced";
-  if (n <= 11) return "pro";
-  return "master"; // G12
-}
-
-/**
- * 보조 추천 — G10·G11에서 AP·SAT 적극 대비를 원하는 학생용.
- * 회당 단가가 Pro보다 17% 저렴해서, 빈도 1.5배에도 비용 효율이 더 높음.
- */
-function secondaryRecommendation(grade: string): TutoringPackage | null {
-  const n = parseInt(grade.replace(/[^0-9]/g, ""), 10);
-  if (n === 10 || n === 11) return "master";
-  return null;
-}
-
-function pricePerSession(p: TutoringPackage): number {
-  const pkg = PACKAGES[p];
-  const sessionsPerMonth = p === "master" ? 12 : 8;
-  return Math.round(pkg.pricePerMonth / sessionsPerMonth);
-}
+// 추천 트랙 + 학년 그룹 → 월 수업료 (만 원 단위) — PricingTable과 동일한 가격표
+const TRACK_PRICES: Record<
+  TutoringTrack3,
+  Record<"elementary" | "middle" | "high", number>
+> = {
+  regular: { elementary: 25, middle: 40, high: 50 },
+  advanced: { elementary: 40, middle: 65, high: 80 },
+  elite: { elementary: 53, middle: 85, high: 105 },
+};
 
 /* ─────────────────────────────────────────────────────────────
    COMPONENT
@@ -361,24 +473,34 @@ interface Props {
 export default function ContactForm({ locale }: Props) {
   const copy = COPY[locale];
 
-  const [step, setStep] = useState<1 | 2 | 3>(1);
+  const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [grade, setGrade] = useState<string>("");
   const [track, setTrack] = useState<TutoringTrack | "">("");
   const [residence, setResidence] = useState<TutoringResidence | "">("");
-  const [selectedPackage, setSelectedPackage] =
-    useState<TutoringPackage | null>(null);
+  const [goals, setGoals] = useState<TutoringGoal[]>([]);
 
-  const recommended: TutoringPackage = grade
-    ? recommendPackage(grade)
-    : "basic";
-  const secondary = grade ? secondaryRecommendation(grade) : null;
-  const pkg = PACKAGES[recommended];
-  // Step 3에서는 사용자가 실제로 선택한 패키지를 우선
-  const finalPackage: TutoringPackage = selectedPackage ?? recommended;
+  const availableGoals =
+    grade && track ? goalsForGradeAndTrack(grade, track as TutoringTrack) : [];
 
-  function chooseAndContinue(p: TutoringPackage) {
-    setSelectedPackage(p);
-    setStep(3);
+  const selectedGoalDefs = goals
+    .map((g) => findGoal(g))
+    .filter((d): d is GoalDef => Boolean(d));
+
+  // 다중 선택 → 추천 트랙: 심화가 1개라도 있으면 심화, 아니면 정규
+  const recommendedTrack: TutoringTrack3 = selectedGoalDefs.some(
+    (d) => d.recommendedTrack === "advanced"
+  )
+    ? "advanced"
+    : selectedGoalDefs.some((d) => d.recommendedTrack === "elite")
+      ? "elite"
+      : "regular";
+
+  const trackMeta = TRACK_META[recommendedTrack];
+
+  function toggleGoal(key: TutoringGoal) {
+    setGoals((prev) =>
+      prev.includes(key) ? prev.filter((g) => g !== key) : [...prev, key]
+    );
   }
 
   const [state, formAction, isPending] = useActionState<
@@ -410,19 +532,19 @@ export default function ContactForm({ locale }: Props) {
           {copy.stepLabel(step)}
         </span>
         <span className="text-xs text-muted">
-          {Math.round((step / 3) * 100)}%
+          {Math.round((step / 4) * 100)}%
         </span>
       </div>
       <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
         <div
           className="h-full bg-primary transition-all duration-300"
-          style={{ width: `${(step / 3) * 100}%` }}
+          style={{ width: `${(step / 4) * 100}%` }}
         />
       </div>
     </div>
   );
 
-  /* ───── STEP 1 ───── */
+  /* ───── STEP 1 — 학년 + 트랙 + 거주지 ───── */
   if (step === 1) {
     const canProceed = grade && track && residence;
     return (
@@ -442,7 +564,10 @@ export default function ContactForm({ locale }: Props) {
           <p className="text-xs text-muted mb-2">{copy.gradeHelp}</p>
           <select
             value={grade}
-            onChange={(e) => setGrade(e.target.value)}
+            onChange={(e) => {
+              setGrade(e.target.value);
+              setGoals([]); // 학년 바뀌면 목표 초기화
+            }}
             className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none text-sm bg-white"
           >
             <option value="" disabled>
@@ -470,7 +595,10 @@ export default function ContactForm({ locale }: Props) {
               <button
                 key={t}
                 type="button"
-                onClick={() => setTrack(t)}
+                onClick={() => {
+                  setTrack(t);
+                  setGoals([]); // 트랙 바뀌면 목표 초기화
+                }}
                 className={`px-4 py-3 border rounded-lg text-left transition-all ${
                   track === t
                     ? "border-primary bg-primary/5"
@@ -527,81 +655,57 @@ export default function ContactForm({ locale }: Props) {
     );
   }
 
-  /* ───── STEP 2 ───── */
+  /* ───── STEP 2 — 학년별 목표 선택 (다중) ───── */
   if (step === 2) {
-    const stage = pkg.stage[locale];
-    const sessions = pkg.sessions[locale];
-    const includes = pkg.includes[locale];
-    const trackText = copy.tracksLabel[track as TutoringTrack];
-    const residenceText = copy.residenceText[residence as TutoringResidence];
-    const priceStr = `₩${pkg.pricePerMonth.toLocaleString()}`;
+    const canProceed = goals.length > 0;
+    const group = gradeGroup(grade);
+    // Both 트랙 + 고등 → US/UK 그룹 분리. (중등 Both 도 동일 처리 가능하나 옵션이 4개라 단일 리스트로 충분)
+    const showUsUkLabels = group === "high" && track === "both";
+    const usGoals = availableGoals.filter((g) => g.groupLabel === "us");
+    const ukGoals = availableGoals.filter((g) => g.groupLabel === "uk");
 
     return (
       <div>
         <Progress />
-
-        <div className="mb-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-            {copy.step2Eyebrow}
-          </p>
-          <h2 className="text-xl sm:text-2xl font-bold text-foreground">
-            {copy.step2TitlePrefix.replace("{grade}", grade)}
-            {trackText} · {residenceText}
+        <div className="mb-7">
+          <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
             {copy.step2Title}
           </h2>
+          <p className="text-sm text-muted">{copy.step2Subtitle}</p>
+          <p className="text-xs text-primary mt-2 font-medium">
+            {copy.step2MultiHint}
+          </p>
         </div>
 
-        <div className="rounded-2xl bg-gradient-to-br from-primary/5 via-white to-accent/5 border border-primary/20 p-8 mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-5xl">{pkg.icon}</span>
-            <div>
-              <div className="text-xs font-bold uppercase tracking-widest text-primary">
-                {stage}
-              </div>
-              <div className="text-2xl font-bold text-foreground">
-                {pkg.name}
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-5 mb-5">
-            <div className="text-4xl sm:text-5xl font-bold text-foreground">
-              {priceStr}
-              <span className="text-base font-normal text-muted">
-                {copy.perMonth}
-              </span>
-            </div>
-            <div className="text-sm text-muted mt-2">{sessions}</div>
-          </div>
-
-          <ul className="space-y-2 mt-5">
-            {includes.map((line, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm">
-                <span className="text-primary mt-0.5">✓</span>
-                <span>{line}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="space-y-3 mb-6">
-          <div className="rounded-lg bg-amber-50 border border-amber-200 p-4 text-sm text-amber-900 leading-relaxed">
-            {copy.cardPaymentNote}
-          </div>
-          {pkg.groupEligible && (
-            <div className="rounded-lg bg-blue-50 border border-blue-200 p-4 text-sm text-blue-900 leading-relaxed">
-              {copy.groupDiscountNote}
-            </div>
-          )}
-          {recommended === "master" && (
-            <div className="rounded-lg bg-gray-50 border border-gray-200 p-4 text-xs text-muted leading-relaxed">
-              {copy.masterNote}
-            </div>
+        <div className="space-y-4 mb-8">
+          {showUsUkLabels ? (
+            <>
+              <GoalGroup
+                label={copy.goalGroupUs}
+                goals={usGoals}
+                selected={goals}
+                onToggle={toggleGoal}
+                locale={locale}
+              />
+              <GoalGroup
+                label={copy.goalGroupUk}
+                goals={ukGoals}
+                selected={goals}
+                onToggle={toggleGoal}
+                locale={locale}
+              />
+            </>
+          ) : (
+            <GoalGroup
+              goals={availableGoals}
+              selected={goals}
+              onToggle={toggleGoal}
+              locale={locale}
+            />
           )}
         </div>
 
-        {/* 메인 추천으로 진행하는 CTA */}
-        <div className="grid grid-cols-[auto_1fr] gap-3 mb-8">
+        <div className="grid grid-cols-[auto_1fr] gap-3">
           <button
             type="button"
             onClick={() => setStep(1)}
@@ -611,129 +715,204 @@ export default function ContactForm({ locale }: Props) {
           </button>
           <button
             type="button"
-            onClick={() => chooseAndContinue(recommended)}
-            className="gradient-bg text-white font-semibold px-6 py-4 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/20"
+            disabled={!canProceed}
+            onClick={() => setStep(3)}
+            className="gradient-bg text-white font-semibold px-6 py-4 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/20 disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            {pkg.name} · {copy.pickThis}
+            {copy.step2Cta}
+            {goals.length > 0 && (
+              <span className="ml-1 text-xs opacity-80">
+                ({goals.length})
+              </span>
+            )}
           </button>
         </div>
-
-        {/* 보조 추천 (G10·G11 → Master) */}
-        {secondary && (() => {
-          const sec = PACKAGES[secondary];
-          const mainPerSession = pricePerSession(recommended);
-          const secPerSession = pricePerSession(secondary);
-          const savePerSession = mainPerSession - secPerSession;
-          const savePerSessionStr = savePerSession.toLocaleString();
-          return (
-            <div className="mt-2 mb-2 rounded-2xl bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 border border-orange-200 p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-orange-700 mb-2">
-                💡 {copy.secondaryEyebrow}
-              </p>
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 leading-snug">
-                {copy.secondaryHeadline}
-              </h3>
-              <p className="text-sm text-foreground/80 mb-5 leading-relaxed">
-                {copy.secondaryBody.replace(
-                  "{savePerSession}",
-                  savePerSessionStr
-                )}
-              </p>
-
-              {/* 비교 박스 */}
-              <div className="grid grid-cols-2 gap-3 mb-5">
-                <div className="rounded-lg bg-white border border-gray-200 p-4">
-                  <div className="text-xs text-muted mb-1">{pkg.name}</div>
-                  <div className="text-sm font-semibold mb-1">
-                    {pkg.sessions[locale]}
-                  </div>
-                  <div className="text-xs text-muted mt-2">
-                    {copy.secondaryCompare}
-                  </div>
-                  <div className="text-lg font-bold text-foreground">
-                    ₩{mainPerSession.toLocaleString()}
-                  </div>
-                </div>
-                <div className="rounded-lg bg-white border-2 border-orange-400 p-4 shadow-sm">
-                  <div className="flex items-center gap-1.5 mb-1">
-                    <span>{sec.icon}</span>
-                    <span className="text-xs font-bold text-orange-700">
-                      {sec.name}
-                    </span>
-                  </div>
-                  <div className="text-sm font-semibold mb-1">
-                    {sec.sessions[locale]}
-                  </div>
-                  <div className="text-xs text-muted mt-2">
-                    {copy.secondaryCompare}
-                  </div>
-                  <div className="text-lg font-bold text-orange-700">
-                    ₩{secPerSession.toLocaleString()}
-                    <span className="text-xs font-normal text-orange-600 ml-1">
-                      (-{Math.round((savePerSession / mainPerSession) * 100)}%)
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Master 월 금액 + CTA */}
-              <div className="flex flex-wrap items-baseline gap-2 mb-4">
-                <span className="text-sm text-muted">{sec.name} 월</span>
-                <span className="text-2xl font-bold text-foreground">
-                  ₩{sec.pricePerMonth.toLocaleString()}
-                </span>
-                <span className="text-sm text-muted">{copy.perMonth}</span>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => chooseAndContinue(secondary)}
-                className="w-full bg-gradient-to-br from-orange-500 to-red-500 text-white font-semibold px-6 py-3.5 rounded-full text-sm hover:opacity-90 transition-opacity shadow-md"
-              >
-                {copy.secondaryPickThis}
-              </button>
-            </div>
-          );
-        })()}
       </div>
     );
   }
 
-  /* ───── STEP 3 ───── */
+  /* ───── STEP 3 — 추천 코스 표시 (학년별 가격 포함) ───── */
+  if (step === 3) {
+    const goalNames = selectedGoalDefs.map((d) => d.name[locale]);
+    const goalSummary =
+      goalNames.length === 0
+        ? "—"
+        : goalNames.length === 1
+          ? goalNames[0]
+          : `${goalNames[0]} 외 ${goalNames.length - 1}개`;
+    return (
+      <div>
+        <Progress />
+
+        <div className="mb-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
+            {copy.step3Eyebrow}
+          </p>
+          <h2 className="text-xl sm:text-2xl font-bold text-foreground">
+            {copy.step3Title}
+          </h2>
+          <p className="text-sm text-muted mt-2 leading-relaxed">
+            {copy.step3Subtitle}
+          </p>
+        </div>
+
+        {/* Summary chips */}
+        <div className="rounded-lg bg-gray-50 border border-gray-100 p-4 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+          <SummaryChip label={copy.summaryGrade} value={grade} />
+          <SummaryChip
+            label={copy.summaryTrack}
+            value={
+              track === "us"
+                ? copy.trackOptions.us.title
+                : track === "uk"
+                  ? copy.trackOptions.uk.title
+                  : copy.trackOptions.both.title
+            }
+          />
+          <SummaryChip
+            label={copy.summaryResidence}
+            value={
+              residence === "kr"
+                ? copy.residenceOptions.kr
+                : copy.residenceOptions.overseas
+            }
+          />
+          <SummaryChip label={copy.summaryGoal} value={goalSummary} />
+        </div>
+
+        {/* Recommended track card */}
+        <div
+          className="rounded-2xl p-8 mb-6"
+          style={{
+            background:
+              recommendedTrack === "advanced"
+                ? "linear-gradient(135deg, #0b2a57 0%, #1e40af 100%)"
+                : recommendedTrack === "elite"
+                  ? "linear-gradient(135deg, #f97316 0%, #ea580c 100%)"
+                  : "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+            color: "#ffffff",
+            boxShadow: "0 18px 48px rgba(15,23,42,0.18)",
+          }}
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-4xl">{trackMeta.icon}</span>
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest opacity-80">
+                {locale === "ko" ? "추천 코스" : "Recommended"}
+              </div>
+              <div className="text-3xl font-bold">{trackMeta.name[locale]}</div>
+            </div>
+          </div>
+          <p className="text-base font-semibold opacity-95 mt-3">
+            {trackMeta.frequency[locale]}
+          </p>
+
+          {/* 가격 표시 (학년 그룹 기반) */}
+          <div className="mt-5 pt-5 border-t border-white/25">
+            <div className="text-[11px] font-bold uppercase tracking-widest opacity-80 mb-1">
+              {copy.priceLabel}
+            </div>
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-4xl sm:text-5xl font-bold leading-none">
+                {TRACK_PRICES[recommendedTrack][gradeGroup(grade)]}
+              </span>
+              <span className="text-base font-medium opacity-85">
+                {copy.priceUnit}
+              </span>
+            </div>
+          </div>
+
+          {/* 선택한 목표 리스트 (다중) */}
+          {selectedGoalDefs.length > 0 && (
+            <div className="mt-5 text-sm opacity-95">
+              <div className="text-[11px] font-bold uppercase tracking-widest opacity-80 mb-2">
+                {copy.selectedGoalsLabel} ({selectedGoalDefs.length})
+              </div>
+              <ul className="space-y-1.5">
+                {selectedGoalDefs.map((d) => (
+                  <li key={d.key} className="flex items-start gap-2 leading-relaxed">
+                    <span className="opacity-75 flex-shrink-0">•</span>
+                    <span className="font-medium">{d.name[locale]}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Fee note */}
+        <div className="rounded-lg bg-amber-50 border border-amber-200 p-4 text-sm text-amber-900 leading-relaxed mb-8">
+          {copy.feeNote}
+        </div>
+
+        <div className="grid grid-cols-[auto_1fr] gap-3">
+          <button
+            type="button"
+            onClick={() => setStep(2)}
+            className="px-5 py-4 border border-gray-200 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors"
+          >
+            {copy.back}
+          </button>
+          <button
+            type="button"
+            onClick={() => setStep(4)}
+            className="gradient-bg text-white font-semibold px-6 py-4 rounded-full text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/20"
+          >
+            {copy.step3Cta}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  /* ───── STEP 4 — 연락처 ───── */
   return (
     <div>
       <Progress />
 
       <div className="mb-6">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-          {copy.step3Eyebrow}
+          {copy.step4Eyebrow}
         </p>
         <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-          {copy.step3Title}
+          {copy.step4Title}
         </h2>
-        <p className="text-sm text-muted">{copy.step3Subtitle}</p>
+        <p className="text-sm text-muted">{copy.step4Subtitle}</p>
       </div>
 
       <div className="rounded-lg bg-gray-50 border border-gray-100 p-3 mb-6 text-xs text-muted flex flex-wrap items-center gap-2">
-        <span>{PACKAGES[finalPackage].icon}</span>
+        <span>{trackMeta.icon}</span>
         <span className="font-semibold text-foreground">
-          {PACKAGES[finalPackage].name}
+          {trackMeta.name[locale]}
         </span>
         <span>·</span>
         <span>{grade}</span>
-        <span>·</span>
-        <span>{copy.tracksLabel[track as TutoringTrack]}</span>
-        <span>·</span>
-        <span>{copy.residenceText[residence as TutoringResidence]}</span>
+        {selectedGoalDefs.length > 0 && (
+          <>
+            <span>·</span>
+            <span>
+              {selectedGoalDefs[0].name[locale]}
+              {selectedGoalDefs.length > 1 && (
+                <span className="opacity-75"> 외 {selectedGoalDefs.length - 1}개</span>
+              )}
+            </span>
+          </>
+        )}
       </div>
 
       <form action={formAction} className="space-y-5">
         <input type="hidden" name="locale" value={locale} />
-        <input type="hidden" name="source" value="contact-page-wizard" />
+        <input type="hidden" name="source" value="contact-page-wizard-v2" />
         <input type="hidden" name="gradeLevel" value={grade} />
         <input type="hidden" name="track" value={track} />
         <input type="hidden" name="residence" value={residence} />
-        <input type="hidden" name="recommendedPackage" value={finalPackage} />
+        {/* 다중 선택 — 동일 name 으로 여러 input → FormData.getAll("goals") 로 수신 */}
+        {goals.map((g) => (
+          <input key={g} type="hidden" name="goals" value={g} />
+        ))}
+        {/* Legacy 호환 — 첫 번째 goal 도 별도로 전송 */}
+        <input type="hidden" name="goal" value={goals[0] ?? ""} />
+        <input type="hidden" name="recommendedTrack" value={recommendedTrack} />
 
         {state?.ok === false && (
           <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-700">
@@ -808,7 +987,7 @@ export default function ContactForm({ locale }: Props) {
         <div className="grid grid-cols-[auto_1fr] gap-3">
           <button
             type="button"
-            onClick={() => setStep(2)}
+            onClick={() => setStep(3)}
             disabled={isPending}
             className="px-5 py-4 border border-gray-200 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors disabled:opacity-50"
           >
@@ -823,6 +1002,103 @@ export default function ContactForm({ locale }: Props) {
           </button>
         </div>
       </form>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   GoalGroup — 목표 선택 라디오 그룹
+───────────────────────────────────────────────────────────── */
+
+function GoalGroup({
+  label,
+  goals,
+  selected,
+  onToggle,
+  locale,
+}: {
+  label?: string;
+  goals: GoalDef[];
+  selected: TutoringGoal[];
+  onToggle: (key: TutoringGoal) => void;
+  locale: BlogLocale;
+}) {
+  return (
+    <div>
+      {label && (
+        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2.5">
+          {label}
+        </p>
+      )}
+      <div className="grid gap-2">
+        {goals.map((g) => {
+          const isSelected = selected.includes(g.key);
+          return (
+            <button
+              key={g.key}
+              type="button"
+              onClick={() => onToggle(g.key)}
+              aria-pressed={isSelected}
+              className={`relative px-4 py-3 pl-11 border rounded-lg text-left transition-all ${
+                isSelected
+                  ? "border-primary bg-primary/5 ring-1 ring-primary/30"
+                  : "border-gray-200 hover:border-gray-300 hover:bg-gray-50"
+              }`}
+            >
+              {/* Checkbox indicator */}
+              <span
+                aria-hidden
+                className={`absolute left-3.5 top-1/2 -translate-y-1/2 inline-flex items-center justify-center w-5 h-5 rounded border-2 transition-colors ${
+                  isSelected
+                    ? "border-primary bg-primary text-white"
+                    : "border-gray-300 bg-white"
+                }`}
+              >
+                {isSelected && (
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 6.5L4.5 9L10 3"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                )}
+              </span>
+              <div className="text-sm font-semibold text-foreground">
+                {g.name[locale]}
+              </div>
+              <div className="text-xs text-muted mt-1 leading-relaxed">
+                {g.desc[locale]}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SummaryChip — Step 3 상단 요약
+───────────────────────────────────────────────────────────── */
+
+function SummaryChip({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <div className="text-[10px] font-bold uppercase tracking-wider text-muted mb-1">
+        {label}
+      </div>
+      <div className="text-sm font-semibold text-foreground truncate">
+        {value}
+      </div>
     </div>
   );
 }
