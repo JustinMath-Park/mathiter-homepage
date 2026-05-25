@@ -88,6 +88,8 @@ const COPY = {
     summaryGoal: "목표",
     priceLabel: "월 수업료",
     priceUnit: "만 원",
+    cardPaymentHint:
+      "위 결제 금액은 카드 결제 기준이며, 현금 결제 시 추가 혜택이 있습니다.",
     selectedGoalsLabel: "선택하신 목표",
     feeNote:
       "💬 다양한 수업 코스와 비용에 대해서는 상담에서 안내드립니다.",
@@ -187,6 +189,8 @@ const COPY = {
     summaryGoal: "Goal",
     priceLabel: "Monthly tuition",
     priceUnit: "₩10K",
+    cardPaymentHint:
+      "The amount above is for card payment. Cash payments include additional benefits.",
     selectedGoalsLabel: "Selected goals",
     feeNote:
       "💬 Different course options and pricing are explained during the consultation.",
@@ -807,7 +811,7 @@ export default function ContactForm({ locale }: Props) {
             {trackMeta.frequency[locale]}
           </p>
 
-          {/* 가격 표시 (학년 그룹 기반) */}
+          {/* 가격 표시 (학년 그룹 기반) + 카드/현금 안내 */}
           <div className="mt-5 pt-5 border-t border-white/25">
             <div className="text-[11px] font-bold uppercase tracking-widest opacity-80 mb-1">
               {copy.priceLabel}
@@ -820,6 +824,9 @@ export default function ContactForm({ locale }: Props) {
                 {copy.priceUnit}
               </span>
             </div>
+            <p className="text-[12px] opacity-80 mt-3 leading-relaxed">
+              💳 {copy.cardPaymentHint}
+            </p>
           </div>
 
           {/* 선택한 목표 리스트 (다중) */}
