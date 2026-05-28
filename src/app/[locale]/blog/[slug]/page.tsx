@@ -17,6 +17,22 @@ import type { BlogLocale } from "@/types/blog";
 
 const SUPPORTED_LOCALES: BlogLocale[] = ["ko", "en"];
 
+/**
+ * "YYYY-MM-DD" → "YYYY-MM-DDT00:00:00+09:00" (KST)
+ * 이미 timezone 정보가 포함된 값이면 그대로 반환.
+ * Schema.org BlogPosting datePublished / dateModified 의
+ * Google "missing a timezone" warning 방지.
+ */
+function toISOWithKST(date: string | undefined): string | undefined {
+  if (!date) return undefined;
+  // 이미 ISO 8601 + timezone 형식 (T + +/-/Z) 이면 그대로
+  if (/T.*([+-]\d{2}:?\d{2}|Z)$/.test(date)) return date;
+  // "YYYY-MM-DD" 형식 → KST 자정 (+09:00) 으로 normalize
+  if (/^\d{4}-\d{2}-\d{2}$/.test(date)) return `${date}T00:00:00+09:00`;
+  // 다른 형식은 그대로 (혹시 다른 변형이 들어왔을 때 깨지지 않게)
+  return date;
+}
+
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
@@ -109,8 +125,10 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description || post.excerpt,
     image: absoluteHero ? [absoluteHero] : undefined,
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt,
+    // ISO 8601 + KST timezone (Search Console "missing a timezone" warning fix)
+    // markdown frontmatter 는 "2026-05-14" 형식. 이미 timezone 포함된 값이면 그대로.
+    datePublished: toISOWithKST(post.publishedAt),
+    dateModified: toISOWithKST(post.updatedAt),
     wordCount,
     timeRequired: post.readingTime ? `PT${post.readingTime}M` : undefined,
     articleSection: categoryLabel,

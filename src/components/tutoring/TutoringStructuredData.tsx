@@ -200,7 +200,7 @@ export default async function TutoringStructuredData() {
     description:
       "왜 한 선생이 한국 수학과 미국 수학, 두 시스템을 모두 가르쳐야 하는가 — Mathiter Tutoring 박세준 원장이 1분 안에 보여드립니다. 12년 대치동 + 8년 국제학교, SAT Math 800, AP Calculus BC 5점.",
     thumbnailUrl: ["https://mathiter.com/videos/tutoring_hero_poster.jpg"],
-    uploadDate: "2026-05-14",
+    uploadDate: "2026-05-14T19:20:00+09:00", // ISO 8601 + KST (영상 파일 mtime 기준, Search Console timezone warning fix)
     duration: "PT1M11S",
     contentUrl: "https://mathiter.com/videos/tutoring_hero_1080p.mp4",
     embedUrl: `${pageUrl}#hero-video`,
