@@ -88,11 +88,13 @@ ACT 공식 안내에 따르면 Science와 Writing은 선택 영역이며, <stron
 | 계산기 사용 | Math 전체, Bluebook[^bluebook] 내장 Desmos[^desmos] 제공 | Math 가능, 온라인 시험에 Desmos 제공 |
 | Science | 없음 | 선택 가능 |
 
+![G11 학생이 노트북으로 디지털 모의시험을 시간 안에 풀어 보며 SAT와 ACT 중 어느 쪽이 본인 풀이 스타일에 맞는지 측정하는 모습](/blog/photos/sat-vs-act-for-international-school-1.png)
+
 SAT는 Reading and Writing 54문항과 Math 44문항으로 구성되며, 총 시험 시간은 2시간 14분입니다. 각 영역은 두 개의 모듈로 나뉘고, <strong>첫 번째 모듈의 성취에 따라 두 번째 모듈의 난도가 조정되는 적응형 구조</strong>입니다. 이 구조 때문에 SAT는 모듈 1에서 한 문항도 흘리지 않는 정확도 관리가 800점의 핵심이 됩니다.
 
 ACT의 필수 영역은 English 50문항 35분, Math 45문항 50분, Reading 36문항 40분으로 구성됩니다. Science를 추가로 선택하면 40문항 40분이 더 붙습니다. 국제학생의 경우 ACT는 <strong>온라인 방식으로만 응시</strong>하며, 온라인 ACT Math에서도 내장 Desmos 계산기를 사용할 수 있습니다. 즉 Desmos 활용은 SAT만의 무기가 아니라 ACT 온라인 응시에서도 똑같이 중요한 도구입니다.
 
-![G11 학생이 노트북으로 디지털 모의시험을 시간 안에 풀어 보며 SAT와 ACT 중 어느 쪽이 본인 풀이 스타일에 맞는지 측정하는 모습](/blog/photos/sat-vs-act-for-international-school-1.png)
+![수학 문항당 평균 시간 95초(SAT) vs 67초(ACT) — 28초 차이가 두 시험의 성격을 가르는 핵심](/blog/figures/sat-vs-act-timing.svg)
 
 ## 수학 범위 비교 — ACT Math가 SAT Math보다 조금 더 넓습니다
 
@@ -107,6 +109,8 @@ SAT Math의 공식 영역은 다음 네 가지입니다.
 | Problem-Solving and Data Analysis | 5–7문항 |
 | Geometry and Trigonometry | 5–7문항 |
 
+![SAT Math 4영역 비중 시각화 — Algebra + Advanced Math가 약 26–30문항(60–70%)으로 무게중심](/blog/figures/sat-vs-act-sat-math-areas.svg)
+
 SAT Math의 무게중심은 <strong>Algebra와 Advanced Math</strong>에 있습니다. 두 영역을 합치면 전체 44문항 중 약 26–30문항으로, 시험의 약 60–70%가 이 두 영역에서 나옵니다. Geometry와 Trigonometry는 비교적 작은 비중을 차지합니다.
 
 ACT Math의 공식 영역과 비중은 다음과 같습니다.
@@ -119,6 +123,8 @@ ACT Math의 공식 영역과 비중은 다음과 같습니다.
 | Geometry | 17–20% |
 | Statistics & Probability | 12–15% |
 | Integrating Essential Skills | 20% |
+
+![ACT Math 6영역 비중 + SAT에 명시 없는 ACT 추가 범위 5주제(복소수·벡터·행렬·로그함수·조각함수·원뿔곡선)](/blog/figures/sat-vs-act-act-math-areas.svg)
 
 ACT는 6개 영역에 비중이 비교적 고르게 분포되어 있고, 특히 ACT 공식 설명에는 SAT 공식 영역 설명에서 별도로 강조되지 않는 다음 주제가 명시되어 있습니다.
 
@@ -164,6 +170,8 @@ Yale은 지원자가 AP 또는 IB 시험 점수를 ACT/SAT 점수와 함께 제�
 ## 우리 아이는 어떻게 결정할까 — 6단계 현실 가이드
 
 SAT와 ACT를 처음부터 동시에 장기간 공부하는 건 비효율적입니다. 두 시험은 대수·함수·데이터 분석 영역에서 상당한 공통 기반을 갖고 있어, 어느 쪽이든 기초 학습이 둘 다에 도움이 되긴 합니다. 그러나 일정 시점부터는 한 시험에 집중해야 점수가 안정됩니다. 제가 추천하는 현실적인 순서는 다음 6단계입니다.
+
+![SAT vs ACT 6단계 결정 플로 — 학교 수학·전공 확인 → 공통 기초 → SAT 모의 → ACT 모의 → 점수·시간 비교 → 더 유리한 시험 집중](/blog/figures/sat-vs-act-decision-flow.svg)
 
 1. <strong>학교 수학 수준과 목표 전공 확인.</strong> 자녀가 학교에서 어떤 수학을 수강 중인지, 어느 전공 계열을 목표로 하는지를 먼저 정리하세요. STEM 계열은 SAT/ACT 어느 쪽이든 Math 고득점이 사실상 필수입니다.
 2. <strong>SAT Math와 ACT Math의 공통 기초 학습.</strong> 대수·함수·데이터 분석은 어느 쪽이든 공통으로 다루는 영역이라, 어느 시험을 고르기 전에 이 공통 기반부터 다지는 것이 효율적입니다.

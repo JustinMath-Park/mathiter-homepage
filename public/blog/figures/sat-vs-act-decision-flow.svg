@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgFlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="stepBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="stepGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="branchBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="branchOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" opacity="0.55" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgFlow)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="4">SAT vs ACT — 6단계 결정 플로</text>
+  <text x="800" y="118" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff" opacity="0.55" letter-spacing="2">단순 환산표가 아닌, 모의시험 기반의 실제 비교로 결정하세요</text>
+
+  <!-- 6 steps in a flow (top row 3 + bottom row 3) -->
+  <!-- Step 1 -->
+  <g transform="translate(80, 165)">
+    <rect width="320" height="140" rx="20" fill="url(#stepBlue)" opacity="0.92" />
+    <circle cx="40" cy="40" r="22" fill="#fbbf24" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#1e1b4b">1</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">학교 수학 + 목표 전공</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">자녀의 수학 수강 수준과</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">목표 전공 계열 먼저 정리</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="400" y1="235" x2="478" y2="235" stroke="#ffffff" stroke-width="2" opacity="0.55" marker-end="url(#arrow)" />
+
+  <!-- Step 2 -->
+  <g transform="translate(490, 165)">
+    <rect width="320" height="140" rx="20" fill="url(#stepBlue)" opacity="0.92" />
+    <circle cx="40" cy="40" r="22" fill="#fbbf24" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#1e1b4b">2</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">공통 기초 학습</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">대수·함수·데이터 분석은</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">SAT/ACT 양쪽 공통 기반</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="810" y1="235" x2="888" y2="235" stroke="#ffffff" stroke-width="2" opacity="0.55" marker-end="url(#arrow)" />
+
+  <!-- Step 3 -->
+  <g transform="translate(900, 165)">
+    <rect width="320" height="140" rx="20" fill="url(#stepBlue)" opacity="0.92" />
+    <circle cx="40" cy="40" r="22" fill="#fbbf24" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#1e1b4b">3</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">SAT 공식 모의 1회</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">College Board Bluebook 앱</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">정해진 시간 안에 응시</text>
+  </g>
+
+  <!-- Curved arrow 3→4 (down) -->
+  <path d="M 1060 305 Q 1380 305 1380 380 Q 1380 455 1060 455" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.55" marker-end="url(#arrow)" />
+
+  <!-- Step 4 -->
+  <g transform="translate(900, 410)">
+    <rect width="320" height="140" rx="20" fill="url(#stepBlue)" opacity="0.92" />
+    <circle cx="40" cy="40" r="22" fill="#fbbf24" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#1e1b4b">4</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">ACT 공식 모의 1회</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">English · Math · Reading 3영역</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Science 선택 → 우선 제외 OK</text>
+  </g>
+
+  <!-- Arrow 4→5 (reverse, leftward) -->
+  <line x1="888" y1="480" x2="810" y2="480" stroke="#ffffff" stroke-width="2" opacity="0.55" marker-end="url(#arrow)" />
+
+  <!-- Step 5 -->
+  <g transform="translate(490, 410)">
+    <rect width="320" height="140" rx="20" fill="url(#stepGold)" opacity="0.95" />
+    <circle cx="40" cy="40" r="22" fill="#1e1b4b" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#fbbf24">5</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#1e1b4b">점수 · 시간 부담 비교</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#1e1b4b" opacity="0.85">Concordance Table은 도구일 뿐</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#1e1b4b" opacity="0.85">실제 응시 결과로 비교</text>
+  </g>
+
+  <!-- Arrow 5→6 (leftward) -->
+  <line x1="478" y1="480" x2="400" y2="480" stroke="#ffffff" stroke-width="2" opacity="0.55" marker-end="url(#arrow)" />
+
+  <!-- Step 6 (decision) -->
+  <g transform="translate(80, 410)">
+    <rect width="320" height="140" rx="20" fill="url(#stepGold)" opacity="0.95" />
+    <circle cx="40" cy="40" r="22" fill="#1e1b4b" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#fbbf24">6</text>
+    <text x="80" y="50" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#1e1b4b">한 시험에 집중</text>
+    <text x="40" y="90" font-family="-apple-system, sans-serif" font-size="13" fill="#1e1b4b" opacity="0.85">더 유리한 쪽 하나에 시간 투자</text>
+    <text x="40" y="110" font-family="-apple-system, sans-serif" font-size="13" fill="#1e1b4b" opacity="0.85">두 시험 동시 진행은 비효율</text>
+  </g>
+
+  <!-- Branch arrows from Step 6 -->
+  <line x1="240" y1="555" x2="280" y2="640" stroke="#3b82f6" stroke-width="2" opacity="0.6" marker-end="url(#arrow)" />
+  <line x1="240" y1="555" x2="1100" y2="640" stroke="#f97316" stroke-width="2" opacity="0.6" marker-end="url(#arrow)" />
+
+  <!-- Branch outcome cards -->
+  <g transform="translate(180, 650)">
+    <rect width="540" height="120" rx="16" fill="url(#branchBlue)" opacity="0.94" />
+    <text x="270" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="3">SAT 집중</text>
+    <text x="270" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.88">대수·함수 강점 · 정확도 95%+ · Desmos 활용</text>
+    <text x="270" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65">G11 봄·가을 2회 응시로 best score 만들기</text>
+  </g>
+
+  <g transform="translate(880, 650)">
+    <rect width="540" height="120" rx="16" fill="url(#branchOrange)" opacity="0.94" />
+    <text x="270" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="3">ACT 집중</text>
+    <text x="270" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.88">기하·삼각 고른 강점 · 빠른 처리 · 추가 범위 익숙</text>
+    <text x="270" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65">필요 시 Science 선택 응시 → STEM 강점 추가</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="800" y="820" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" letter-spacing="2">옆집 아이의 결정은 옆집 아이의 강점에 맞춘 결정 — 자녀의 결정은 자녀의 강점에 맞춰야 합니다</text>
+</svg>

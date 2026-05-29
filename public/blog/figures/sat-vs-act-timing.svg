@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="satBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="actOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgTime)" />
+  <circle cx="200" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.78" letter-spacing="4">수학 문항당 평균 시간</text>
+  <text x="800" y="155" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.55" letter-spacing="2">한 문제에 얼마의 시간이 주어지는가 — 시험의 성격을 가르는 핵심 차이</text>
+
+  <!-- SAT bar group -->
+  <g transform="translate(160, 230)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="36" font-weight="700" fill="#60a5fa" letter-spacing="3">SAT</text>
+    <text x="100" y="-3" font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff" opacity="0.6">Math 70분 / 44문항 = 신중하게 푸는 시험</text>
+
+    <!-- 95s bar — width represents seconds visually (95s = full bar) -->
+    <rect x="0" y="30" width="1280" height="100" rx="14" fill="#1e3a8a" opacity="0.35" />
+    <rect x="0" y="30" width="1280" height="100" rx="14" fill="url(#satBlue)" opacity="0.95" />
+
+    <!-- Second markers along the bar -->
+    <g font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.4">
+      <line x1="0" y1="130" x2="0" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="0" y="155" text-anchor="middle">0초</text>
+      <line x1="320" y1="130" x2="320" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="320" y="155" text-anchor="middle">25초</text>
+      <line x1="640" y1="130" x2="640" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="640" y="155" text-anchor="middle">50초</text>
+      <line x1="960" y1="130" x2="960" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="960" y="155" text-anchor="middle">75초</text>
+    </g>
+
+    <!-- 95s label inside bar -->
+    <text x="1220" y="92" text-anchor="end" font-family="-apple-system, sans-serif" font-size="64" font-weight="800" fill="#ffffff">95초</text>
+    <text x="1220" y="115" text-anchor="end" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.75">문항당</text>
+  </g>
+
+  <!-- ACT bar group -->
+  <g transform="translate(160, 450)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="36" font-weight="700" fill="#fdba74" letter-spacing="3">ACT</text>
+    <text x="100" y="-3" font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff" opacity="0.6">Math 50분 / 45문항 = 빠르게 판단하는 시험</text>
+
+    <!-- 67s bar — proportionally shorter (67/95 ≈ 0.705 of bar width) -->
+    <rect x="0" y="30" width="1280" height="100" rx="14" fill="#7c2d12" opacity="0.35" />
+    <rect x="0" y="30" width="902" height="100" rx="14" fill="url(#actOrange)" opacity="0.95" />
+
+    <!-- Second markers -->
+    <g font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.4">
+      <line x1="0" y1="130" x2="0" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="0" y="155" text-anchor="middle">0초</text>
+      <line x1="320" y1="130" x2="320" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="320" y="155" text-anchor="middle">25초</text>
+      <line x1="640" y1="130" x2="640" y2="138" stroke="#ffffff" stroke-width="1" />
+      <text x="640" y="155" text-anchor="middle">50초</text>
+      <line x1="902" y1="130" x2="902" y2="138" stroke="#fbbf24" stroke-width="2" />
+    </g>
+
+    <!-- 67s label inside bar -->
+    <text x="842" y="92" text-anchor="end" font-family="-apple-system, sans-serif" font-size="64" font-weight="800" fill="#ffffff">67초</text>
+    <text x="842" y="115" text-anchor="end" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">문항당</text>
+
+    <!-- Gap callout — between 67 and 95 -->
+    <g transform="translate(902, 30)">
+      <rect width="378" height="100" fill="#fbbf24" opacity="0.08" />
+      <text x="189" y="56" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a">＋28초</text>
+      <text x="189" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#fde68a" opacity="0.7">SAT가 더 여유로움</text>
+    </g>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="680" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" fill="#ffffff" opacity="0.85" letter-spacing="2">28초 차이 = 학생에게 요구하는 풀이 기질이 완전히 다른 시험</text>
+
+  <!-- Callout boxes -->
+  <g transform="translate(220, 730)">
+    <rect width="540" height="100" rx="14" fill="#3b82f6" opacity="0.18" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4" />
+    <text x="270" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#93c5fd" letter-spacing="2">SAT가 맞는 학생</text>
+    <text x="270" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.8">신중하게 풀어 정확도 95%+ 유지</text>
+    <text x="270" y="88" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">적응형 모듈에서 첫 모듈 실수 X</text>
+  </g>
+
+  <g transform="translate(840, 730)">
+    <rect width="540" height="100" rx="14" fill="#f97316" opacity="0.18" stroke="#f97316" stroke-width="1" stroke-opacity="0.4" />
+    <text x="270" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#fdba74" letter-spacing="2">ACT가 맞는 학생</text>
+    <text x="270" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.8">빠르게 읽고 빠르게 결정하는 스타일</text>
+    <text x="270" y="88" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">넓은 범위에서 영역별 강점이 고름</text>
+  </g>
+</svg>

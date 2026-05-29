@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgSatM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="satAlg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="satAdv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="satPSDA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <linearGradient id="satGeo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#93c5fd" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgSatM)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#60a5fa" letter-spacing="4">SAT Math · 4영역 비중</text>
+  <text x="800" y="155" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.55" letter-spacing="2">총 44문항 · 70분 · 무게중심은 Algebra + Advanced Math</text>
+
+  <!-- 4 horizontal bars (max bar width = 1100px, scaled by max 15 문항) -->
+  <!-- Algebra 13–15 문항 → bar to 1100 (showing 15) -->
+  <g transform="translate(180, 230)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Algebra</text>
+    <text x="0" y="24" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">일차방정식·연립·일차함수·부등식</text>
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="#1e3a8a" opacity="0.25" />
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="url(#satAlg)" />
+    <text x="1400" y="22" text-anchor="end" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">13–15 문항</text>
+    <text x="1400" y="42" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">약 30–34%</text>
+  </g>
+
+  <!-- Advanced Math 13–15 문항 → same width -->
+  <g transform="translate(180, 340)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Advanced Math</text>
+    <text x="0" y="24" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">이차방정식·다항·지수·유리·근호·비선형</text>
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="#1e3a8a" opacity="0.25" />
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="url(#satAdv)" />
+    <text x="1400" y="22" text-anchor="end" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">13–15 문항</text>
+    <text x="1400" y="42" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">약 30–34%</text>
+  </g>
+
+  <!-- PSDA 5–7 문항 → scaled (7/15 * 1040 = 485) -->
+  <g transform="translate(180, 450)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Problem-Solving &amp; Data Analysis</text>
+    <text x="0" y="24" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">비율·퍼센트·통계·데이터 해석</text>
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="#1e3a8a" opacity="0.25" />
+    <rect x="380" y="-10" width="485" height="56" rx="10" fill="url(#satPSDA)" />
+    <text x="1400" y="22" text-anchor="end" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">5–7 문항</text>
+    <text x="1400" y="42" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">약 11–16%</text>
+  </g>
+
+  <!-- Geo & Trig 5–7 문항 → same -->
+  <g transform="translate(180, 560)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Geometry &amp; Trigonometry</text>
+    <text x="0" y="24" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55">넓이·부피·삼각형·원·삼각비</text>
+    <rect x="380" y="-10" width="1040" height="56" rx="10" fill="#1e3a8a" opacity="0.25" />
+    <rect x="380" y="-10" width="485" height="56" rx="10" fill="url(#satGeo)" />
+    <text x="1400" y="22" text-anchor="end" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">5–7 문항</text>
+    <text x="1400" y="42" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">약 11–16%</text>
+  </g>
+
+  <!-- Bottom highlight callout -->
+  <g transform="translate(800, 720)">
+    <rect x="-560" y="0" width="1120" height="110" rx="16" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#fde68a" letter-spacing="2">★ Algebra + Advanced Math = 약 26–30 문항</text>
+    <text x="0" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.85">SAT Math 전체 44문항 중 60–70%가 이 두 영역에서 나옵니다</text>
+    <text x="0" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6" letter-spacing="1">대수·함수가 강하면 SAT 쪽으로 점수가 안정적으로 나옵니다</text>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgActM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="actBar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+    <linearGradient id="actBar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <linearGradient id="actBar3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgActM)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#fdba74" letter-spacing="4">ACT Math · 6영역 비중</text>
+  <text x="800" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.55" letter-spacing="2">총 45문항 · 50분 · 6개 영역에 비교적 고르게 분포</text>
+
+  <!-- 6 horizontal bars — scaled by 20% as max bar -->
+  <!-- Number &amp; Quantity 10-12% -->
+  <g transform="translate(140, 200)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Number &amp; Quantity</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">실수·복소수·정수·유리지수·벡터·행렬</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="540" height="42" rx="8" fill="url(#actBar1)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">10–12%</text>
+  </g>
+
+  <!-- Algebra 17-20% -->
+  <g transform="translate(140, 270)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Algebra</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">일차·다항·근호·지수, 연립, 행렬 표현</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="url(#actBar2)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">17–20%</text>
+  </g>
+
+  <!-- Functions 17-20% -->
+  <g transform="translate(140, 340)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Functions</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">일차·근호·조각·다항·로그함수</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="url(#actBar2)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">17–20%</text>
+  </g>
+
+  <!-- Geometry 17-20% -->
+  <g transform="translate(140, 410)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Geometry</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">합동·닮음·넓이·부피·삼각비·원뿔곡선 방정식</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="url(#actBar2)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">17–20%</text>
+  </g>
+
+  <!-- Stats & Prob 12-15% -->
+  <g transform="translate(140, 480)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Statistics &amp; Probability</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">분포 중심·산포·자료 수집·이변량·확률</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="675" height="42" rx="8" fill="url(#actBar1)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">12–15%</text>
+  </g>
+
+  <!-- Integrating Essential Skills 20% -->
+  <g transform="translate(140, 550)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Integrating Essential Skills</text>
+    <text x="0" y="20" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">비율·백분율·평균·중앙값·복합 문제</text>
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="#7c2d12" opacity="0.25" />
+    <rect x="450" y="-8" width="900" height="42" rx="8" fill="url(#actBar2)" />
+    <text x="1370" y="20" text-anchor="end" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">20%</text>
+  </g>
+
+  <!-- Bottom highlight callout — ACT 추가 범위 5주제 (SAT 대비) -->
+  <g transform="translate(800, 660)">
+    <rect x="-680" y="0" width="1360" height="200" rx="18" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6" />
+    <text x="0" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#fde68a" letter-spacing="2">★ SAT에 명시 없는 ACT 추가 범위 — 5개 주제</text>
+
+    <!-- 5 chips in a row -->
+    <g transform="translate(-580, 70)">
+      <rect width="210" height="90" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">복소수</text>
+      <text x="105" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#fde68a" opacity="0.75">Number &amp; Quantity</text>
+    </g>
+    <g transform="translate(-348, 70)">
+      <rect width="210" height="90" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">벡터 · 행렬</text>
+      <text x="105" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#fde68a" opacity="0.75">Number &amp; Quantity</text>
+    </g>
+    <g transform="translate(-116, 70)">
+      <rect width="210" height="90" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">로그함수</text>
+      <text x="105" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#fde68a" opacity="0.75">Functions</text>
+    </g>
+    <g transform="translate(116, 70)">
+      <rect width="210" height="90" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">조각함수</text>
+      <text x="105" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#fde68a" opacity="0.75">Functions</text>
+    </g>
+    <g transform="translate(348, 70)">
+      <rect width="210" height="90" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.5" />
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" font-weight="700" fill="#ffffff">원뿔곡선</text>
+      <text x="105" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#fde68a" opacity="0.75">Geometry</text>
+    </g>
+
+    <text x="0" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" letter-spacing="1">SAT에서 ACT로 전환하는 학생은 이 5개 주제를 추가로 점검해야 합니다</text>
+  </g>
+</svg>
