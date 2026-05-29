@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgSatAct" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="satCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="actCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="newsBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgSatAct)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="100" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.78" letter-spacing="6">SAT vs ACT</text>
+  <text x="800" y="145" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#ffffff" opacity="0.55" letter-spacing="2">국제학교 학생의 미국 대학 준비 — 2025–26 최신 변경 반영</text>
+
+  <!-- 2025-09 News band -->
+  <rect x="320" y="180" width="960" height="44" rx="22" fill="url(#newsBand)" stroke="#fbbf24" stroke-width="1" opacity="0.8" />
+  <text x="800" y="208" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="600" fill="#fde68a" letter-spacing="2">★ 2025년 9월부터 국제학생 ACT Science는 선택 영역 · Composite 미포함</text>
+
+  <!-- SAT Card -->
+  <g transform="translate(180, 270)">
+    <rect width="580" height="450" rx="24" fill="url(#satCard)" opacity="0.94" />
+    <!-- Card header -->
+    <text x="290" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="4">SAT</text>
+    <text x="290" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="2">College Board · Digital · Adaptive</text>
+    <line x1="80" y1="115" x2="500" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <!-- Spec rows -->
+    <g font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff">
+      <text x="70" y="155" opacity="0.65">필수 영역</text>
+      <text x="510" y="155" text-anchor="end" font-weight="600">Reading & Writing · Math</text>
+
+      <text x="70" y="190" opacity="0.65">총 시험 시간</text>
+      <text x="510" y="190" text-anchor="end" font-weight="600">2시간 14분</text>
+
+      <text x="70" y="225" opacity="0.65">수학 문항 / 시간</text>
+      <text x="510" y="225" text-anchor="end" font-weight="600">44문항 / 70분</text>
+
+      <text x="70" y="260" opacity="0.65">문항당 시간</text>
+      <text x="510" y="260" text-anchor="end" font-weight="700" fill="#fde68a">약 95초</text>
+
+      <text x="70" y="295" opacity="0.65">점수 체계</text>
+      <text x="510" y="295" text-anchor="end" font-weight="600">총점 400–1600</text>
+
+      <text x="70" y="330" opacity="0.65">계산기</text>
+      <text x="510" y="330" text-anchor="end" font-weight="600">Bluebook · 내장 Desmos</text>
+    </g>
+
+    <line x1="80" y1="355" x2="500" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <!-- Math composition -->
+    <text x="70" y="385" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65" letter-spacing="1">수학 무게중심</text>
+    <text x="70" y="412" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Algebra + Advanced Math</text>
+    <text x="70" y="432" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">전체 44문항 중 약 26–30문항 (60–70%)</text>
+  </g>
+
+  <!-- VS divider -->
+  <g transform="translate(800, 495)">
+    <circle r="46" fill="#1e1b4b" stroke="#fbbf24" stroke-width="2" opacity="0.95" />
+    <text text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a" dy="8">VS</text>
+  </g>
+
+  <!-- ACT Card -->
+  <g transform="translate(840, 270)">
+    <rect width="580" height="450" rx="24" fill="url(#actCard)" opacity="0.94" />
+    <!-- Card header -->
+    <text x="290" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="4">ACT</text>
+    <text x="290" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7" letter-spacing="2">American College Testing · Online (국제학생)</text>
+    <line x1="80" y1="115" x2="500" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <!-- Spec rows -->
+    <g font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff">
+      <text x="70" y="155" opacity="0.7">필수 영역</text>
+      <text x="510" y="155" text-anchor="end" font-weight="600">English · Math · Reading</text>
+
+      <text x="70" y="190" opacity="0.7">총 시험 시간</text>
+      <text x="510" y="190" text-anchor="end" font-weight="600">2시간 5분</text>
+
+      <text x="70" y="225" opacity="0.7">수학 문항 / 시간</text>
+      <text x="510" y="225" text-anchor="end" font-weight="600">45문항 / 50분</text>
+
+      <text x="70" y="260" opacity="0.7">문항당 시간</text>
+      <text x="510" y="260" text-anchor="end" font-weight="700" fill="#fde68a">약 67초</text>
+
+      <text x="70" y="295" opacity="0.7">점수 체계</text>
+      <text x="510" y="295" text-anchor="end" font-weight="600">Composite 1–36</text>
+
+      <text x="70" y="330" opacity="0.7">선택 영역</text>
+      <text x="510" y="330" text-anchor="end" font-weight="600">Science · Writing</text>
+    </g>
+
+    <line x1="80" y1="355" x2="500" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <!-- Math extra topics -->
+    <text x="70" y="385" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="1">SAT 대비 추가 범위</text>
+    <text x="70" y="412" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">복소수 · 행렬 · 로그 · 조각함수 · 원뿔곡선</text>
+    <text x="70" y="432" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">Geometry 17–20% 비중 · 빠른 처리 속도 중요</text>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="775" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#ffffff" opacity="0.85" letter-spacing="2">SAT는 정확도·Desmos·적응형 · ACT는 빠른 속도·넓은 범위·고른 영역 강점</text>
+
+  <!-- Decision callout -->
+  <g transform="translate(800, 820)">
+    <rect x="-560" y="0" width="1120" height="58" rx="14" fill="#ffffff" opacity="0.05" />
+    <text x="0" y="36" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7" letter-spacing="2">난이도가 다른 게 아니라 시험의 성격이 다릅니다 — 두 공식 모의시험 1회씩 응시 후 비교하는 것이 가장 정확합니다</text>
+  </g>
+</svg>

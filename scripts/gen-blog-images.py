@@ -374,6 +374,47 @@ marked one at a time, the methodical preparation of a student who
 knows what's coming.
 Horizontal landscape framing (16:9), top-down editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 22: SAT vs ACT for international school — 2026 ACT 개편 반영
+    # ═══════════════════════════════════════════════════════
+    "sat-vs-act-for-international-school-1.png": STYLE + """
+A Korean teenage student (around 16-17, G11 level, partial side profile only
+— no clear face visible) sitting at a quiet study desk in late afternoon
+light, taking a digital practice test on a 13-inch laptop. On the laptop
+screen: a generic test interface showing a math problem area with a
+graphing calculator widget visible in the corner (Desmos-style design but
+no readable text, no logos). The student is wearing comfortable casual
+clothes, leaning slightly forward in focused concentration with a hand
+resting on the laptop trackpad. Next to the laptop on the wooden desk:
+an open physical math notebook with handwritten work in two languages
+(English equations + small Korean side notes), a sharpened pencil, a
+half-empty mug of tea, a small wristwatch placed face-up (suggesting timed
+practice). Warm window light from the side, soft shallow depth of field.
+The mood: the quiet seriousness of a student taking an official practice
+test in real exam conditions — the moment of measuring oneself against the
+test's actual time pressure before deciding which exam to commit to.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
+
+    "sat-vs-act-for-international-school-2.png": STYLE + """
+A Korean mother in her 40s and her teenage child (around 16, G11)
+sitting together at a wooden dining table in a calm home setting, deep in
+discussion about academic choices. Between them on the table: two
+different printed test preparation booklets side by side (one with a
+generic blue cover design, one with an orange cover — no readable text, no
+brand names), a notebook with handwritten Korean notes and a comparison
+chart drawn by hand, a printed page that looks like a college admissions
+information sheet, two mugs of tea, a calculator. The mother is gently
+pointing at one of the booklets while the child looks at it thoughtfully.
+Both faces shown only in partial side profile (no clear face). Late
+afternoon natural light through a kitchen window. Neutral warm home
+interior with a small bookshelf in the soft-focus background.
+The mood: a serious but calm Korean family conversation about which of
+two college entrance exams suits the child better — the quiet weight of
+a high-stakes decision being thought through together, not rushed.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
