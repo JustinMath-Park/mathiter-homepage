@@ -42,7 +42,7 @@
     <!-- Spec rows -->
     <g font-family="-apple-system, sans-serif" font-size="15" fill="#ffffff">
       <text x="70" y="155" opacity="0.65">필수 영역</text>
-      <text x="510" y="155" text-anchor="end" font-weight="600">Reading & Writing · Math</text>
+      <text x="510" y="155" text-anchor="end" font-weight="600">Reading &amp; Writing · Math</text>
 
       <text x="70" y="190" opacity="0.65">총 시험 시간</text>
       <text x="510" y="190" text-anchor="end" font-weight="600">2시간 14분</text>
