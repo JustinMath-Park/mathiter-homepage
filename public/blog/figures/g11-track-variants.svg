@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTrack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="trackUS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="trackIB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="trackKR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgTrack)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="4">G11 master schedule — 학교 트랙별 변형</text>
+  <text x="800" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.55" letter-spacing="2">같은 G11 학생이라도 학교 트랙이 다르면 5월 충돌 구조가 완전히 다릅니다</text>
+
+  <!-- 3 columns -->
+  <!-- US 미국제 -->
+  <g transform="translate(80, 180)">
+    <rect width="470" height="600" rx="22" fill="url(#trackUS)" opacity="0.94" />
+    <text x="235" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">US 미국제</text>
+    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">Chadwick · KIS · SIS · Dulwich Seoul</text>
+    <line x1="50" y1="115" x2="420" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <text x="40" y="160" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">학기 시작</text>
+    <text x="430" y="160" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">8월–9월</text>
+
+    <text x="40" y="200" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 가을 핵심</text>
+    <text x="430" y="200" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">PSAT/NMSQT</text>
+
+    <text x="40" y="240" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 봄 SAT</text>
+    <text x="430" y="240" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3월 첫 응시</text>
+
+    <text x="40" y="280" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 5월 시험</text>
+    <text x="430" y="280" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">AP 5월 첫 2주</text>
+
+    <text x="40" y="320" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G12 입시 마감</text>
+    <text x="430" y="320" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">11/1 ED · Common App</text>
+
+    <line x1="50" y1="355" x2="420" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <!-- 5월 충돌 -->
+    <text x="235" y="395" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#fde68a" letter-spacing="2">★ G11 5월 충돌 구조</text>
+
+    <g transform="translate(50, 420)">
+      <rect width="370" height="40" rx="8" fill="#ef4444" opacity="0.85" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">AP STEM 5월 첫 2주</text>
+    </g>
+    <g transform="translate(50, 470)">
+      <rect width="370" height="40" rx="8" fill="#8b5cf6" opacity="0.85" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">학교 final exams</text>
+    </g>
+    <g transform="translate(50, 520)">
+      <rect width="370" height="40" rx="8" fill="#3b82f6" opacity="0.75" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">SAT 5월 (skip 가능)</text>
+    </g>
+  </g>
+
+  <!-- IB Diploma -->
+  <g transform="translate(565, 180)">
+    <rect width="470" height="600" rx="22" fill="url(#trackIB)" opacity="0.94" />
+    <text x="235" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">IB Diploma</text>
+    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">NLCS Jeju · BHA Jeju IB · KIS IB</text>
+    <line x1="50" y1="115" x2="420" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <text x="40" y="160" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">학기 시작</text>
+    <text x="430" y="160" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">8월</text>
+
+    <text x="40" y="200" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 = IB Year 1</text>
+    <text x="430" y="200" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">DP Year 1</text>
+
+    <text x="40" y="240" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 봄 SAT</text>
+    <text x="430" y="240" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3월 첫 응시</text>
+
+    <text x="40" y="280" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 5월 시험</text>
+    <text x="430" y="280" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">IB Year 1 mock</text>
+
+    <text x="40" y="320" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G12 결정적</text>
+    <text x="430" y="320" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">5월 IB 최종</text>
+
+    <line x1="50" y1="355" x2="420" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <text x="235" y="395" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#fde68a" letter-spacing="2">★ G11 5월 충돌 구조</text>
+
+    <g transform="translate(50, 420)">
+      <rect width="370" height="40" rx="8" fill="#10b981" opacity="0.85" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">IB Year 1 mock exam</text>
+    </g>
+    <g transform="translate(50, 470)">
+      <rect width="370" height="40" rx="8" fill="#8b5cf6" opacity="0.85" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">학교 final exams</text>
+    </g>
+    <g transform="translate(50, 520)">
+      <rect width="370" height="40" rx="8" fill="#3b82f6" opacity="0.75" />
+      <text x="185" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">SAT 5월 (skip 가능)</text>
+    </g>
+  </g>
+
+  <!-- 한국 일반학교 + SAT -->
+  <g transform="translate(1050, 180)">
+    <rect width="470" height="600" rx="22" fill="url(#trackKR)" opacity="0.94" />
+    <text x="235" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">한국 일반 + SAT</text>
+    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">국내 일반고 학생이 SAT 병행</text>
+    <line x1="50" y1="115" x2="420" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <text x="40" y="160" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">학기 시작</text>
+    <text x="430" y="160" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3월</text>
+
+    <text x="40" y="200" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">G11 ≈ 고2</text>
+    <text x="430" y="200" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">한국 고2 1학기 3–7월</text>
+
+    <text x="40" y="240" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">SAT 응시</text>
+    <text x="430" y="240" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">봄·여름·가을 가능</text>
+
+    <text x="40" y="280" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">AP</text>
+    <text x="430" y="280" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">미응시 일반</text>
+
+    <text x="40" y="320" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">내신 기말</text>
+    <text x="430" y="320" text-anchor="end" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">6–7월 / 12월</text>
+
+    <line x1="50" y1="355" x2="420" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <text x="235" y="395" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#fde68a" letter-spacing="2">★ 가장 큰 충돌점</text>
+
+    <g transform="translate(50, 425)">
+      <rect width="370" height="100" rx="12" fill="#1e1b4b" stroke="#fde68a" stroke-width="1.5" stroke-opacity="0.6" />
+      <text x="185" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#fde68a">한국 내신 6–7월</text>
+      <text x="185" y="65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.7">vs</text>
+      <text x="185" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">SAT 6월 응시</text>
+    </g>
+  </g>
+</svg>

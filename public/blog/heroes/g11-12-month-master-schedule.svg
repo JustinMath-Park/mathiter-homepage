@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgG11" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="satG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="apG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#991b1b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <linearGradient id="psatG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#facc15" />
+    </linearGradient>
+    <linearGradient id="schoolG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="cappG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgG11)" />
+  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="4">G11 SAT · AP · 내신 — 9개월 master schedule</text>
+  <text x="800" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">G11 9월 → G12 5월 — 한 학년에 몰리는 5가지 시험을 한 화면에</text>
+
+  <!-- Month columns -->
+  <!-- 13 columns from x=120 to x=1480, width 1360, each col ~105px -->
+  <g font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" text-anchor="middle">
+    <text x="160" y="195">G11 9월</text>
+    <text x="265" y="195">10월</text>
+    <text x="370" y="195">11월</text>
+    <text x="475" y="195">12월</text>
+    <text x="580" y="195">G11 1월</text>
+    <text x="685" y="195">2월</text>
+    <text x="790" y="195">3월</text>
+    <text x="895" y="195">4월</text>
+    <text x="1000" y="195" font-weight="700" fill="#fde68a" font-size="15">★ 5월</text>
+    <text x="1105" y="195">6월</text>
+    <text x="1210" y="195">7–8월</text>
+    <text x="1315" y="195">G12 가을</text>
+    <text x="1420" y="195" font-weight="700" fill="#fdba74" font-size="15">★ 11월</text>
+  </g>
+
+  <!-- Vertical column guides -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.08">
+    <line x1="212" y1="220" x2="212" y2="780" />
+    <line x1="317" y1="220" x2="317" y2="780" />
+    <line x1="422" y1="220" x2="422" y2="780" />
+    <line x1="527" y1="220" x2="527" y2="780" />
+    <line x1="632" y1="220" x2="632" y2="780" />
+    <line x1="737" y1="220" x2="737" y2="780" />
+    <line x1="842" y1="220" x2="842" y2="780" />
+    <line x1="947" y1="220" x2="947" y2="780" />
+    <line x1="1052" y1="220" x2="1052" y2="780" />
+    <line x1="1157" y1="220" x2="1157" y2="780" />
+    <line x1="1262" y1="220" x2="1262" y2="780" />
+    <line x1="1367" y1="220" x2="1367" y2="780" />
+  </g>
+
+  <!-- Highlight columns for May (red) and Nov G12 (orange) -->
+  <rect x="947" y="220" width="105" height="560" fill="#ef4444" opacity="0.10" />
+  <rect x="947" y="220" width="105" height="560" fill="none" stroke="#fde68a" stroke-width="2" opacity="0.5" />
+  <rect x="1367" y="220" width="105" height="560" fill="#f97316" opacity="0.10" />
+  <rect x="1367" y="220" width="105" height="560" fill="none" stroke="#fdba74" stroke-width="2" opacity="0.5" />
+
+  <!-- Swim lane labels -->
+  <g font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" opacity="0.85">
+    <text x="105" y="270" text-anchor="end">SAT</text>
+    <text x="105" y="370" text-anchor="end">AP</text>
+    <text x="105" y="470" text-anchor="end">PSAT</text>
+    <text x="105" y="570" text-anchor="end">학교</text>
+    <text x="105" y="670" text-anchor="end">CA / ED</text>
+  </g>
+
+  <!-- Swim lane horizontal guides -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.10">
+    <line x1="120" y1="270" x2="1480" y2="270" />
+    <line x1="120" y1="370" x2="1480" y2="370" />
+    <line x1="120" y1="470" x2="1480" y2="470" />
+    <line x1="120" y1="570" x2="1480" y2="570" />
+    <line x1="120" y1="670" x2="1480" y2="670" />
+  </g>
+
+  <!-- SAT events: 3월, 5월, 6월, 8월, G12 가을 (10월) -->
+  <!-- 3월 -->
+  <g transform="translate(790, 245)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#satG)" opacity="0.94" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SAT 3월</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">첫 응시</text>
+  </g>
+  <!-- 5월 -->
+  <g transform="translate(1000, 245)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#satG)" opacity="0.80" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SAT 5월</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.85">skip 가능</text>
+  </g>
+  <!-- 6월 -->
+  <g transform="translate(1105, 245)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#satG)" opacity="0.94" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SAT 6월</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">재응시</text>
+  </g>
+  <!-- 8월 -->
+  <g transform="translate(1210, 245)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#satG)" opacity="0.94" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SAT 8월</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">가을 첫</text>
+  </g>
+  <!-- G12 10월 -->
+  <g transform="translate(1315, 245)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#satG)" opacity="0.94" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SAT 10월</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.85">마무리</text>
+  </g>
+
+  <!-- AP events: G11 9월 (진도시작), G11 4월 (mock), G11 5월 (★ 시험) -->
+  <g transform="translate(160, 345)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#apG)" opacity="0.55" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">진도</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">4과목 ≤</text>
+  </g>
+  <g transform="translate(895, 345)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#apG)" opacity="0.7" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">AP mock</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">4월</text>
+  </g>
+  <g transform="translate(1000, 345)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#apG)" opacity="0.98" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#ffffff">★ AP</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff">5월 첫 2주</text>
+  </g>
+  <g transform="translate(1210, 345)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#apG)" opacity="0.55" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#ffffff">결과</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.75">7월 발표</text>
+  </g>
+
+  <!-- PSAT events: G11 9월 (등록), 10월 (★ 시험) -->
+  <g transform="translate(160, 445)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#psatG)" opacity="0.55" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#1e1b4b">등록</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#1e1b4b" opacity="0.85">9월 마감</text>
+  </g>
+  <g transform="translate(265, 445)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#psatG)" opacity="0.98" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" fill="#1e1b4b">PSAT</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#1e1b4b" opacity="0.85">10월 중순</text>
+  </g>
+
+  <!-- 학교 events: 10월 중간, 12월 기말, 2월 중간, 5월 final, G12 12월 기말 -->
+  <g transform="translate(265, 545)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#schoolG)" opacity="0.7" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#ffffff">중간</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.8">1학기</text>
+  </g>
+  <g transform="translate(475, 545)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#schoolG)" opacity="0.85" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">1학기 기말</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.8">12월</text>
+  </g>
+  <g transform="translate(1000, 545)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#schoolG)" opacity="0.98" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#ffffff">★ final</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff">5–6월</text>
+  </g>
+
+  <!-- Common App / ED events: 8월 1일 open, G12 가을 작성, G12 11월 ED 마감 -->
+  <g transform="translate(1210, 645)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#cappG)" opacity="0.75" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff">CA open</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.85">8/1</text>
+  </g>
+  <g transform="translate(1315, 645)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#cappG)" opacity="0.88" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff">CA 작성</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.85">9–10월</text>
+  </g>
+  <g transform="translate(1420, 645)">
+    <rect x="-44" y="0" width="88" height="50" rx="10" fill="url(#cappG)" opacity="0.98" />
+    <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#ffffff">★ ED 마감</text>
+    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff">11/1</text>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="820" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#ffffff" opacity="0.85" letter-spacing="2">★ G11 5월 = 최대 충돌점 (AP + final + SAT) · ★ G12 11월 = ED/EA 마감 (입시 출구)</text>
+  <text x="800" y="855" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" letter-spacing="2">실제 시험 날짜는 매년 College Board · AP · 학교가 발표하는 공식 일정 확인 필수</text>
+</svg>

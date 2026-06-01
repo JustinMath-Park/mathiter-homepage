@@ -415,6 +415,50 @@ two college entrance exams suits the child better — the quiet weight of
 a high-stakes decision being thought through together, not rushed.
 Horizontal landscape framing (16:9), candid editorial angle from the side.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 14: G11 12-month master schedule (SAT·AP·내신 동시 대비)
+    # ═══════════════════════════════════════════════════════
+    "g11-12-month-master-schedule-1.png": STYLE + """
+Top-down editorial shot of a Korean G11 student's study desk in late
+afternoon light. The desk is busy but organized — visible items:
+an open SAT preparation book (generic blue cover, no readable brand
+text), an AP Calculus textbook open to a page with handwritten margin
+notes in two languages (English equations + small Korean notes),
+a school binder with class notes peeking out, a printed academic year
+planner with handwritten color-coded entries (different colored pens
+for SAT/AP/school exams — no readable specifics), a sharpened pencil
+and two fountain pens, a graphing calculator face-up, a small stack
+of practice test pages, a steaming mug of tea, a small wristwatch
+placed face-up suggesting timed practice. A teenage hand (partial,
+no face) hovering over the planner with a pen, as if marking a date.
+Warm window light from the side, soft shallow depth of field.
+The mood: the quiet seriousness of a G11 student facing multiple
+overlapping exam preparations — the moment of looking at all the
+materials together and trying to plan the year ahead.
+Horizontal landscape framing (16:9), top-down editorial angle.
+""",
+
+    "g11-12-month-master-schedule-2.png": STYLE + """
+A Korean mother in her 40s and her G11 teenage child (around 16-17)
+sitting together at a wooden dining table or home study desk, both
+looking down at a large opened academic year planner spread between
+them. The planner has handwritten color-coded entries in different
+pen colors marking different months (generic month grid visible, no
+readable specifics, no brand names). On the table beside the planner:
+a notebook with handwritten Korean notes, a printed school course
+catalog, two different colored highlighter pens (one red, one blue,
+representing different priorities), a steaming mug of tea, a calculator,
+a small stack of school exam papers. The mother is gently pointing at
+one date in the planner with a pencil while the child looks at it
+thoughtfully and takes notes. Both faces shown only in partial side
+profile (no clear face). Late afternoon natural window light. Neutral
+warm home interior with soft-focus bookshelf in the background.
+The mood: a calm Korean family planning conversation about a G11
+student's year ahead — the quiet weight of mapping out SAT·AP·school
+exam priorities together, not rushed, methodical.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
