@@ -153,13 +153,13 @@ G12 가을은 한 해의 모든 준비가 출구로 흘러나가는 시기입니
 
 ## 학교 트랙별 변형 — US 미국제 vs IB DP vs 한국 일반학교
 
-위에서 정리한 master schedule은 US 미국제 국제학교 학생을 기준으로 한 모델입니다. 같은 G11 학생이라도 학교 트랙이 다르면 일정도 다릅니다. 세 가지 트랙으로 정리하겠습니다.
+위에서 정리한 master schedule은 US 미국제 국제학교 학생을 기준으로 한 모델입니다. 같은 G11 학생이라도 학교 트랙이 다르면 일정도 다릅니다. 세 가지 트랙으로 정리하겠습니다. <strong>학교별 정확한 커리큘럼은 학교 공식 입학 안내를 반드시 다시 확인해 주세요</strong>(여기서 분류는 2026년 기준).
 
 ![G11 master schedule 트랙별 변형 — US 미국제 / IB Diploma / 한국 일반학교 + SAT 병행 3트랙 비교](/blog/figures/g11-track-variants.svg)
 
-<strong>US 미국제 국제학교 트랙</strong> (Chadwick·KIS·SIS·Dulwich Seoul AP 등). 위 master schedule이 그대로 적용됩니다. 핵심 충돌점은 G11 5월의 AP + 학교 final + SAT 5월. 카운슬러 시스템도 미국식이라 G11 가을부터 정기 미팅이 시작됩니다.
+<strong>US 미국제 국제학교 트랙</strong> (KIS 판교·제주 · SIS 분당 등 American curriculum + AP 학교). 위 master schedule이 그대로 적용됩니다. 핵심 충돌점은 G11 5월의 AP + 학교 final + SAT 5월. 카운슬러 시스템도 미국식이라 G11 가을부터 정기 미팅이 시작됩니다.
 
-<strong>IB Diploma 트랙</strong> (NLCS Jeju·BHA Jeju IB 등). AP 대신 <strong>IB DP Year 1 mock exam</strong>이 G11 5월 또는 학년 말에 있습니다. SAT 봄·가을 응시 일정은 동일하지만, IB Year 2(G12) 5월 IB 최종 시험이 가장 결정적이라 G11 5월 mock 결과로 IB 예상 점수를 추정합니다. IB 학생의 5월 충돌은 "AP + final + SAT"가 아니라 <strong>"IB Year 1 mock + final + SAT"</strong>의 구조입니다.
+<strong>IB Diploma 트랙</strong> (Chadwick 송도 · Dulwich Seoul · NLCS Jeju · BHA Jeju 등 IB Diploma Programme 학교). AP 대신 <strong>IB DP Year 1 mock exam</strong>이 G11 5월 또는 학년 말에 있습니다. SAT 봄·가을 응시 일정은 동일하지만, IB Year 2(G12) 5월 IB 최종 시험이 가장 결정적이라 G11 5월 mock 결과로 IB 예상 점수를 추정합니다. IB 학생의 5월 충돌은 "AP + final + SAT"가 아니라 <strong>"IB Year 1 mock + final + SAT"</strong>의 구조입니다.
 
 <strong>한국 일반학교 + SAT 병행 트랙</strong>. 소수지만 실제 케이스입니다. 한국 학기는 3월 시작이라 한국 고2 1학기가 3–7월입니다. 한국 내신 기말은 6월·7월(1학기), 12월(2학기). SAT는 봄·여름·가을 응시 가능. AP는 미응시가 일반적이고, 응시하는 경우에도 보통 1–2과목으로 제한됩니다. 한국 일반학교 학생이 SAT를 병행할 때 가장 큰 충돌점은 <strong>한국 내신 6–7월과 SAT 6월 응시</strong>입니다.
 

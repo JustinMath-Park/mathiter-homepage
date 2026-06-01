@@ -31,7 +31,7 @@
   <g transform="translate(80, 180)">
     <rect width="470" height="600" rx="22" fill="url(#trackUS)" opacity="0.94" />
     <text x="235" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">US 미국제</text>
-    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">Chadwick · KIS · SIS · Dulwich Seoul</text>
+    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">KIS 판교·제주 · SIS 분당 등</text>
     <line x1="50" y1="115" x2="420" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
 
     <text x="40" y="160" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">학기 시작</text>
@@ -72,7 +72,7 @@
   <g transform="translate(565, 180)">
     <rect width="470" height="600" rx="22" fill="url(#trackIB)" opacity="0.94" />
     <text x="235" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">IB Diploma</text>
-    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">NLCS Jeju · BHA Jeju IB · KIS IB</text>
+    <text x="235" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7" letter-spacing="2">Chadwick · Dulwich Seoul · NLCS Jeju · BHA Jeju</text>
     <line x1="50" y1="115" x2="420" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
 
     <text x="40" y="160" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" letter-spacing="1">학기 시작</text>
