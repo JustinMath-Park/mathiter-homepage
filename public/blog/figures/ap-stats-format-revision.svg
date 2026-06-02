@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgRev" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="oldFmt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="newFmt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <marker id="arrowFmt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#fbbf24" opacity="0.85" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgRev)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#fdba74" letter-spacing="4">AP Statistics 2026–27 개편</text>
+  <text x="800" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">2027년 5월 시험을 응시할 학생부터 새 format이 적용됩니다</text>
+
+  <!-- Old format card (LEFT) -->
+  <g transform="translate(140, 200)">
+    <rect width="540" height="600" rx="22" fill="url(#oldFmt)" opacity="0.92" />
+    <text x="270" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">현재 (May 2026까지)</text>
+    <text x="270" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65" letter-spacing="2">2025–26 학년도 · 기존 format</text>
+    <line x1="50" y1="115" x2="490" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <g font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff">
+      <text x="40" y="160" opacity="0.65">객관식 (MC)</text>
+      <text x="500" y="160" text-anchor="end" font-weight="700">40문항 · 5지선다</text>
+
+      <text x="40" y="210" opacity="0.65">FRQ</text>
+      <text x="500" y="210" text-anchor="end" font-weight="700">6문항</text>
+
+      <text x="40" y="260" opacity="0.65">Format</text>
+      <text x="500" y="260" text-anchor="end" font-weight="700">Hybrid</text>
+      <text x="500" y="280" text-anchor="end" font-size="12" opacity="0.65">(MC 디지털 + FRQ 종이)</text>
+
+      <text x="40" y="320" opacity="0.65">Units</text>
+      <text x="500" y="320" text-anchor="end" font-weight="700">8 units</text>
+
+      <text x="40" y="370" opacity="0.65">Framework</text>
+      <text x="500" y="370" text-anchor="end" font-weight="700">7 statistical practices</text>
+
+      <text x="40" y="420" opacity="0.65">시험 시간</text>
+      <text x="500" y="420" text-anchor="end" font-weight="700">3시간</text>
+    </g>
+
+    <line x1="50" y1="450" x2="490" y2="450" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <text x="270" y="490" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#fde68a" letter-spacing="2">★ 적용 학생</text>
+    <text x="270" y="520" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">2026년 5월 시험 응시생</text>
+    <text x="270" y="545" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.65">= 현재 G11 (2026 May 시험)</text>
+    <text x="270" y="585" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">FRQ 종이 손글씨 작성에 적응 필요</text>
+  </g>
+
+  <!-- Arrow between -->
+  <g transform="translate(800, 500)">
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#fbbf24" stroke-width="3" opacity="0.85" marker-end="url(#arrowFmt)" />
+    <text x="0" y="-25" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#fde68a" letter-spacing="2">2026-27부터</text>
+    <text x="0" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#fde68a" opacity="0.7">May 2027 시험</text>
+  </g>
+
+  <!-- New format card (RIGHT) -->
+  <g transform="translate(920, 200)">
+    <rect width="540" height="600" rx="22" fill="url(#newFmt)" opacity="0.94" />
+    <text x="270" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="3">개편 후 (May 2027부터)</text>
+    <text x="270" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.75" letter-spacing="2">2026–27 학년도 · 새 framework</text>
+    <line x1="50" y1="115" x2="490" y2="115" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <g font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff">
+      <text x="40" y="160" opacity="0.7">객관식 (MC)</text>
+      <text x="500" y="160" text-anchor="end" font-weight="700">42문항 · 4지선다</text>
+
+      <text x="40" y="210" opacity="0.7">FRQ</text>
+      <text x="500" y="210" text-anchor="end" font-weight="700">4문항 (각 10점)</text>
+
+      <text x="40" y="260" opacity="0.7">Format</text>
+      <text x="500" y="260" text-anchor="end" font-weight="700">All-digital Bluebook</text>
+      <text x="500" y="280" text-anchor="end" font-size="12" opacity="0.75">(종이 답안지 X)</text>
+
+      <text x="40" y="320" opacity="0.7">Units</text>
+      <text x="500" y="320" text-anchor="end" font-weight="700">5 units (통합)</text>
+
+      <text x="40" y="370" opacity="0.7">Framework</text>
+      <text x="500" y="370" text-anchor="end" font-weight="700">4 statistical practices</text>
+
+      <text x="40" y="420" opacity="0.7">시험 시간</text>
+      <text x="500" y="420" text-anchor="end" font-weight="700">3시간 (조정 가능)</text>
+    </g>
+
+    <line x1="50" y1="450" x2="490" y2="450" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+    <text x="270" y="490" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#fde68a" letter-spacing="2">★ 4 statistical practices</text>
+    <text x="270" y="520" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Formulate → Collect → Analyze → Interpret</text>
+    <text x="270" y="555" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">통계적 탐구 과정 전체 흐름이 핵심</text>
+    <text x="270" y="585" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.6">Bluebook 사전 적응 필요</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="800" y="855" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" letter-spacing="2">삭제·축소된 topic: geometric distribution · combining random variables · chi-square goodness-of-fit (standalone) · formal inference for regression slope</text>
+</svg>

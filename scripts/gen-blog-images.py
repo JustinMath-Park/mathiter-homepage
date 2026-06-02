@@ -459,6 +459,52 @@ student's year ahead — the quiet weight of mapping out SAT·AP·school
 exam priorities together, not rushed, methodical.
 Horizontal landscape framing (16:9), candid editorial angle from the side.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 10: AP Statistics 한국 학생 5가지 함정
+    # ═══════════════════════════════════════════════════════
+    "ap-statistics-korean-traps-1.png": STYLE + """
+A Korean G11 student (around 16-17, partial side profile only — no
+clear face visible) sitting at a wooden study desk in late afternoon
+warm window light, deeply focused on writing English handwritten
+responses on a sheet of free-response practice questions. The desk
+shows a thoughtful study setup — visible items: an open statistics
+textbook with bilingual handwritten margin notes (English equations
++ small Korean side notes — no specific brand readable), a separate
+practice sheet partly filled in with neat English handwriting (text
+blurred/illegible at distance), a graphing calculator face-up showing
+a graph display, a sharpened pencil and a fountain pen, a stack of
+flashcards bound with a ring (vocabulary terms — no readable text),
+a steaming mug of tea, a small wristwatch face-up suggesting timed
+practice. The student grips the fountain pen and is mid-sentence
+on the practice sheet, looking down with quiet concentration —
+the moment of carefully writing English justification.
+The mood: the quiet seriousness of a Korean student facing the
+language-heavy AP Statistics free-response — the moment of
+choosing precise English phrasing for a statistical conclusion.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
+
+    "ap-statistics-korean-traps-2.png": STYLE + """
+A Korean mother in her 40s and her G11 teenage child (around 16-17)
+sitting together at a wooden dining table in a calm warm home setting,
+both looking down at a printed page showing a generic test result
+report with bar chart graphics visible (no readable specific scores or
+brand names — abstract chart shapes). Beside the report on the table:
+a notebook with handwritten Korean notes and English diagnostic
+checkmarks, a printed page that looks like a practice problem set with
+red pen corrections, two different colored highlighter pens, two mugs
+of tea, a graphing calculator. The mother is gently pointing at one
+chart on the report with a pencil while the child looks at it
+thoughtfully and takes notes in the Korean notebook. Both faces shown
+only in partial side profile (no clear face). Late afternoon natural
+window light. Neutral warm home interior with soft-focus bookshelf
+in the background.
+The mood: a calm Korean family diagnostic conversation about exactly
+where the child is losing points on AP Statistics free-response —
+calm, methodical, problem-solving together.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

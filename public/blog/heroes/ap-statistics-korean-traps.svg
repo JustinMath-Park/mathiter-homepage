@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgAS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="trapRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="trapBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="trapPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="trapGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="trapOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgAS)" />
+  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="4">AP Statistics — 한국 학생이 자주 막히는 5가지 함정</text>
+  <text x="800" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">5점 비율 17.0% (STEM AP 중 가장 낮은 편) — 영어 어휘·절차·표현이 한국 통계와 다른 시험</text>
+
+  <!-- Stats banner -->
+  <g transform="translate(800, 175)">
+    <rect x="-540" y="0" width="1080" height="68" rx="14" fill="#1e1b4b" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.5" />
+    <g font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff">
+      <text x="-440" y="32" text-anchor="middle" opacity="0.65">AP Stats 5점</text>
+      <text x="-440" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="#fde68a">17.0%</text>
+
+      <text x="-200" y="32" text-anchor="middle" opacity="0.65">AP Calc BC 5점</text>
+      <text x="-200" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="#93c5fd">44.0%</text>
+
+      <text x="40" y="32" text-anchor="middle" opacity="0.65">AP Calc AB 5점</text>
+      <text x="40" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="#93c5fd">20.3%</text>
+
+      <text x="280" y="32" text-anchor="middle" opacity="0.65">Pass rate (3+)</text>
+      <text x="280" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="#86efac">60.3%</text>
+
+      <text x="460" y="32" text-anchor="middle" opacity="0.65">2025 응시자</text>
+      <text x="460" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="#ffffff">26.7만</text>
+    </g>
+  </g>
+
+  <!-- 5 Trap cards in horizontal row -->
+  <!-- Card 1: FRQ 영어 -->
+  <g transform="translate(50, 290)">
+    <rect width="290" height="540" rx="22" fill="url(#trapRed)" opacity="0.94" />
+    <circle cx="48" cy="50" r="28" fill="#fbbf24" />
+    <text x="48" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#7c2d12">1</text>
+    <text x="90" y="48" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">함정 1</text>
+    <text x="90" y="70" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7" letter-spacing="1">시험의 50%가 영어 주관식</text>
+
+    <line x1="30" y1="98" x2="260" y2="98" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+
+    <text x="145" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">FRQ 영어</text>
+    <text x="145" y="172" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">justification</text>
+
+    <g transform="translate(145, 215)">
+      <text x="0" y="0" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#fde68a" opacity="0.85">한국 학생 답안</text>
+      <rect x="-110" y="15" width="220" height="40" rx="8" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#fca5a5" font-style="italic">"Yes" → 1–2점</text>
+
+      <text x="0" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#fde68a" opacity="0.85">5점 학생 답안</text>
+      <rect x="-130" y="100" width="260" height="120" rx="8" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="124" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#86efac" font-style="italic">Yes, because p (0.023) &lt;</text>
+      <text x="0" y="142" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#86efac" font-style="italic">α (0.05), reject H0.</text>
+      <text x="0" y="166" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#86efac" font-style="italic">The data provide significant</text>
+      <text x="0" y="184" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#86efac" font-style="italic">evidence that...</text>
+      <text x="0" y="208" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#86efac">→ 5점</text>
+    </g>
+
+    <g transform="translate(145, 480)">
+      <rect x="-115" y="0" width="230" height="36" rx="10" fill="#1e1b4b" opacity="0.7" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#fde68a">★ rubric keyword 일관 사용</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Sampling distribution -->
+  <g transform="translate(360, 290)">
+    <rect width="290" height="540" rx="22" fill="url(#trapBlue)" opacity="0.94" />
+    <circle cx="48" cy="50" r="28" fill="#fbbf24" />
+    <text x="48" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#1e3a8a">2</text>
+    <text x="90" y="48" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">함정 2</text>
+    <text x="90" y="70" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7" letter-spacing="1">한국 통계 교과서 번역 문제</text>
+
+    <line x1="30" y1="98" x2="260" y2="98" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+
+    <text x="145" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff">Sampling Dist</text>
+    <text x="145" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff">vs</text>
+    <text x="145" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff">Sample Dist</text>
+
+    <g transform="translate(145, 240)">
+      <rect x="-130" y="0" width="260" height="80" rx="10" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">Sample distribution</text>
+      <text x="0" y="42" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.85">= 표본의 분포</text>
+      <text x="0" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7">한 sample 안 데이터</text>
+
+      <rect x="-130" y="95" width="260" height="80" rx="10" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="117" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">Sampling distribution</text>
+      <text x="0" y="137" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.85">= 표본분포</text>
+      <text x="0" y="157" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7">여러 sample mean들의 분포</text>
+    </g>
+
+    <g transform="translate(145, 480)">
+      <rect x="-115" y="0" width="230" height="36" rx="10" fill="#1e1b4b" opacity="0.7" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#fde68a">★ inference 이론적 기반</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Inference 4-step -->
+  <g transform="translate(670, 290)">
+    <rect width="290" height="540" rx="22" fill="url(#trapPurple)" opacity="0.94" />
+    <circle cx="48" cy="50" r="28" fill="#fbbf24" />
+    <text x="48" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#4c1d95">3</text>
+    <text x="90" y="48" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">함정 3</text>
+    <text x="90" y="70" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7" letter-spacing="1">절차 일관성이 점수의 핵심</text>
+
+    <line x1="30" y1="98" x2="260" y2="98" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+
+    <text x="145" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Inference</text>
+    <text x="145" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">4-step 절차</text>
+
+    <g transform="translate(50, 215)">
+      <rect x="0" y="0" width="190" height="50" rx="8" fill="#1e1b4b" opacity="0.6" />
+      <circle cx="22" cy="25" r="14" fill="#fbbf24" />
+      <text x="22" y="30" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#4c1d95">1</text>
+      <text x="105" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Hypotheses</text>
+      <text x="105" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.7">H0, Ha 명시</text>
+
+      <rect x="0" y="58" width="190" height="50" rx="8" fill="#1e1b4b" opacity="0.6" />
+      <circle cx="22" cy="83" r="14" fill="#fbbf24" />
+      <text x="22" y="88" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#4c1d95">2</text>
+      <text x="105" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Conditions</text>
+      <text x="105" y="96" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.7">Random / Indep / Normal</text>
+
+      <rect x="0" y="116" width="190" height="50" rx="8" fill="#fbbf24" opacity="0.3" stroke="#fde68a" stroke-width="1" />
+      <circle cx="22" cy="141" r="14" fill="#fbbf24" />
+      <text x="22" y="146" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#4c1d95">3</text>
+      <text x="105" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Test (계산)</text>
+      <text x="105" y="154" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#fde68a" opacity="0.9">한국 학생 OK</text>
+
+      <rect x="0" y="174" width="190" height="50" rx="8" fill="#1e1b4b" opacity="0.6" />
+      <circle cx="22" cy="199" r="14" fill="#fbbf24" />
+      <text x="22" y="204" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#4c1d95">4</text>
+      <text x="105" y="196" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Conclusion</text>
+      <text x="105" y="212" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#ffffff" opacity="0.7">in context</text>
+    </g>
+
+    <g transform="translate(145, 480)">
+      <rect x="-115" y="0" width="230" height="36" rx="10" fill="#1e1b4b" opacity="0.7" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#fde68a">★ 1·2·4 빠짐 = 절반 점수</text>
+    </g>
+  </g>
+
+  <!-- Card 4: Type I/II error -->
+  <g transform="translate(980, 290)">
+    <rect width="290" height="540" rx="22" fill="url(#trapGreen)" opacity="0.94" />
+    <circle cx="48" cy="50" r="28" fill="#fbbf24" />
+    <text x="48" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#064e3b">4</text>
+    <text x="90" y="48" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">함정 4</text>
+    <text x="90" y="70" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7" letter-spacing="1">in context 적용 필수</text>
+
+    <line x1="30" y1="98" x2="260" y2="98" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+
+    <text x="145" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Type I vs II</text>
+    <text x="145" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Error</text>
+
+    <g transform="translate(145, 210)">
+      <rect x="-130" y="0" width="260" height="80" rx="10" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#86efac">Type I</text>
+      <text x="0" y="42" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.85">참인데 기각</text>
+      <text x="0" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7">= false positive</text>
+
+      <rect x="-130" y="95" width="260" height="80" rx="10" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="117" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#86efac">Type II</text>
+      <text x="0" y="137" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.85">거짓인데 채택</text>
+      <text x="0" y="157" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7">= false negative</text>
+    </g>
+
+    <g transform="translate(145, 480)">
+      <rect x="-115" y="0" width="230" height="36" rx="10" fill="#1e1b4b" opacity="0.7" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#fde68a">★ "in this context" 표현</text>
+    </g>
+  </g>
+
+  <!-- Card 5: Simulation -->
+  <g transform="translate(1290, 290)">
+    <rect width="290" height="540" rx="22" fill="url(#trapOrange)" opacity="0.94" />
+    <circle cx="48" cy="50" r="28" fill="#fbbf24" />
+    <text x="48" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#7c2d12">5</text>
+    <text x="90" y="48" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">함정 5</text>
+    <text x="90" y="70" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.7" letter-spacing="1">한국 학생 가장 약한 영역</text>
+
+    <line x1="30" y1="98" x2="260" y2="98" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+
+    <text x="145" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Simulation</text>
+    <text x="145" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Randomization</text>
+
+    <!-- Mini histogram visual -->
+    <g transform="translate(35, 215)">
+      <text x="110" y="0" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.75">관찰된 통계량의 극단성</text>
+
+      <!-- Bars -->
+      <rect x="0" y="60" width="14" height="10" fill="#ffffff" opacity="0.5" />
+      <rect x="20" y="50" width="14" height="20" fill="#ffffff" opacity="0.6" />
+      <rect x="40" y="35" width="14" height="35" fill="#ffffff" opacity="0.7" />
+      <rect x="60" y="20" width="14" height="50" fill="#ffffff" opacity="0.85" />
+      <rect x="80" y="15" width="14" height="55" fill="#ffffff" opacity="0.95" />
+      <rect x="100" y="20" width="14" height="50" fill="#ffffff" opacity="0.85" />
+      <rect x="120" y="35" width="14" height="35" fill="#ffffff" opacity="0.7" />
+      <rect x="140" y="50" width="14" height="20" fill="#ffffff" opacity="0.6" />
+      <rect x="160" y="55" width="14" height="15" fill="#ffffff" opacity="0.5" />
+      <rect x="180" y="58" width="14" height="12" fill="#fde68a" />
+      <rect x="200" y="62" width="14" height="8" fill="#fde68a" />
+
+      <line x1="0" y1="80" x2="220" y2="80" stroke="#ffffff" stroke-width="1.5" opacity="0.7" />
+
+      <!-- Observed marker (extreme tail) -->
+      <line x1="195" y1="50" x2="195" y2="90" stroke="#fde68a" stroke-width="2.5" />
+      <text x="195" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#fde68a">관찰값</text>
+    </g>
+
+    <g transform="translate(145, 360)">
+      <rect x="-130" y="0" width="260" height="65" rx="10" fill="#1e1b4b" opacity="0.6" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#86efac">p-value ≈ 23 / 1000</text>
+      <text x="0" y="46" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#86efac">= 0.023</text>
+    </g>
+
+    <g transform="translate(145, 480)">
+      <rect x="-115" y="0" width="230" height="36" rx="10" fill="#1e1b4b" opacity="0.7" />
+      <text x="0" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#fde68a">★ 분포 시각화 + 극단성 판단</text>
+    </g>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="870" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.55" letter-spacing="2">수학 실력이 부족한 게 아니라 — 한국 통계와 어휘·기호·절차가 다른 시험. 한 학기면 점수가 달라집니다.</text>
+</svg>
