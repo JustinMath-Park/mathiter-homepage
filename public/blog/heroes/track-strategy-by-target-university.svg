@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="usT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="ukT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+    <linearGradient id="ibT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgTS)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG core message -->
+  <text x="800" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="2">"최고의 트리"는 없습니다</text>
+  <text x="800" y="290" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="600" fill="#fde68a" letter-spacing="1">타겟 지역 확실성의 함수일 뿐</text>
+
+  <!-- 3 simple tree pillars -->
+  <g transform="translate(0, 400)">
+    <!-- US -->
+    <g transform="translate(280, 0)">
+      <rect x="-150" y="0" width="300" height="280" rx="28" fill="url(#usT)" opacity="0.94" />
+      <text x="0" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="2">미국</text>
+      <line x1="-100" y1="120" x2="100" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.35" />
+      <text x="0" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" fill="#fde68a">AP</text>
+      <text x="0" y="235" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">+ SAT</text>
+    </g>
+
+    <!-- UK -->
+    <g transform="translate(800, 0)">
+      <rect x="-150" y="0" width="300" height="280" rx="28" fill="url(#ukT)" opacity="0.94" />
+      <text x="0" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="2">영국</text>
+      <line x1="-100" y1="120" x2="100" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.35" />
+      <text x="0" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#fde68a">A-Level</text>
+      <text x="0" y="235" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">3–4과목 깊이</text>
+    </g>
+
+    <!-- IB -->
+    <g transform="translate(1320, 0)">
+      <rect x="-150" y="0" width="300" height="280" rx="28" fill="url(#ibT)" opacity="0.94" />
+      <text x="0" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="2">IB</text>
+      <line x1="-100" y1="120" x2="100" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.35" />
+      <text x="0" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#fde68a">IB DP</text>
+      <text x="0" y="235" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">글로벌 hedge</text>
+    </g>
+  </g>
+
+  <!-- Bottom one-liner -->
+  <text x="800" y="800" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85" letter-spacing="1">트리는 우열이 아니라 — 타겟 × 아이 성향의 매칭입니다</text>
+</svg>

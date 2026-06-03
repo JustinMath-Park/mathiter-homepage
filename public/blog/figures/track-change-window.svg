@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgCw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="safeZone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="lockZone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgCw)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG core message -->
+  <text x="800" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="1">변경의 안전선 = 만 13–14세</text>
+  <text x="800" y="215" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="600" fill="#fde68a">2년 과정에 들어가면 사실상 고정</text>
+
+  <!-- Timeline bar -->
+  <g transform="translate(160, 380)">
+    <!-- Safe zone (left) -->
+    <rect x="0" y="0" width="560" height="120" rx="20" fill="url(#safeZone)" opacity="0.92" />
+    <text x="280" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">✓ 자유롭게 변경</text>
+    <text x="280" y="95" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">만 13세 이전 (G9 / Y10 전)</text>
+
+    <!-- Safe line marker -->
+    <g transform="translate(560, 0)">
+      <line x1="0" y1="-50" x2="0" y2="170" stroke="#fbbf24" stroke-width="5" />
+      <circle cx="0" cy="60" r="14" fill="#fbbf24" />
+      <text x="0" y="-65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="800" fill="#fde68a">안전선</text>
+    </g>
+
+    <!-- Lock zone (right) -->
+    <rect x="560" y="0" width="720" height="120" rx="20" fill="url(#lockZone)" opacity="0.92" />
+    <text x="920" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">✕ 사실상 고정</text>
+    <text x="920" y="95" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">2년 과정 진입 후 (1년 손실 각오)</text>
+  </g>
+
+  <!-- Two key takeaways big -->
+  <g transform="translate(800, 620)">
+    <rect x="-620" y="0" width="1240" height="200" rx="24" fill="#fbbf24" opacity="0.10" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#fde68a">IGCSE 후가 마지막 갈림길</text>
+    <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" fill="#ffffff" opacity="0.85">A-Level·IB DP는 2년 통짜 — 진입 전에 결정</text>
+    <text x="0" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.65">불확실할수록 IB가 유리 — 바꿀 필요 자체를 줄여준다</text>
+  </g>
+</svg>

@@ -544,6 +544,73 @@ curriculum options late in the evening — methodical, thoughtful,
 weighing a major long-term decision for their child.
 Horizontal landscape framing (16:9), three-quarter editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 24: Track strategy by target university (evocative-heavy)
+    # ═══════════════════════════════════════════════════════
+    "track-strategy-by-target-university-1.png": STYLE + """
+A single Korean teenage student (around 14-15, seen from behind or in
+soft side profile — no clear face) standing at a literal fork in a
+path, where a walking trail splits into two or three diverging routes
+through a calm green park or tree-lined campus in soft morning light.
+The student carries a school backpack and stands still at the junction,
+looking thoughtfully down the diverging paths, as if deciding which way
+to go. The diverging paths are clearly visible, lined with trees,
+receding into gentle distance. Soft natural morning light, dappled
+shade, a quiet contemplative atmosphere.
+The mood: the quiet weight of a major decision — a young student at a
+crossroads, the metaphor of choosing one path among several diverging
+futures. Hopeful, contemplative, not anxious.
+Horizontal landscape framing (16:9), wide editorial angle from behind.
+""",
+
+    "track-strategy-by-target-university-2.png": STYLE + """
+A Korean high school student (around 16-17, soft side profile, no clear
+face) sitting at a library or study desk fully focused, surrounded by
+thick academic books and notes, writing intently. The desk is rich with
+the texture of serious study — several open textbooks stacked, neat
+handwritten notes, a few sticky tabs marking pages, a fountain pen, a
+glass of water, a small desk lamp casting warm focused light in an
+otherwise dim library setting. Tall bookshelves softly out of focus in
+the background. The single student is the clear focal point, illuminated.
+The mood: the truth that at the top tier, what matters most is not the
+track you choose but the depth and excellence of your work within it —
+quiet, intense, dedicated mastery. The atmosphere of rigorous study.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
+
+    "track-strategy-by-target-university-3.png": STYLE + """
+An evocative editorial still life on a wooden desk by a window in warm
+morning light: a vintage-style globe of the world as the clear central
+focus, with a few university-related objects arranged around it — a
+small stack of college brochures (generic, no readable text or real
+logos), an open notebook with handwritten notes, a passport, a pair of
+reading glasses, a fountain pen, a steaming cup of tea. Soft natural
+light streams from the window, highlighting the globe. No people in
+frame — pure still-life composition. Shallow depth of field with the
+globe sharp and surroundings softly blurred.
+The mood: the sense of a world of universities opening up — global
+possibility, the breadth of international options, a family looking
+outward at the whole world. Aspirational, warm, hopeful.
+Horizontal landscape framing (16:9), still-life editorial angle.
+""",
+
+    "track-strategy-by-target-university-4.png": STYLE + """
+A Korean parent in their 40s and their teenage child (around 15-16)
+sitting side by side at a warm wooden home table in soft afternoon
+light, both looking together at an open notebook where a simple
+hand-drawn plan or roadmap is sketched (abstract lines and boxes, no
+readable text). The parent has an arm gently around or near the child
+in a supportive gesture, both leaning in toward the shared notebook
+with calm, collaborative body language. On the table: two mugs of tea,
+a few printed pages, a pen, a closed laptop. Both faces shown only in
+soft partial side profile (no clear identifiable face). Warm window
+light, neutral cozy home interior, soft-focus bookshelf behind.
+The mood: a warm, collaborative Korean parent-child moment of planning
+a future path together — supportive, calm, the feeling that the right
+choice is a matched one made together, not a competition. Reassuring.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
