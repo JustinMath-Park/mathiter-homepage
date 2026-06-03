@@ -70,7 +70,7 @@ canonicalSlug: track-strategy-by-target-university
 ### 🇺🇸 미국 최상위 (HYPSM[^hypsm])
 
 - <strong>공식 입장: AP·IB·A-Level 선호 없음.</strong> 어느 트리든 차별하지 않습니다.
-- 진짜 기준은 <strong>"네 학교에서 가능한 가장 어려운 커리큘럼을 택했는가"</strong> + 그 안에서의 최상위 성적입니다.
+- 진짜 기준은 <strong>"자녀의 학교에서 가능한 가장 어려운 커리큘럼을 택했는가"</strong> + 그 안에서의 최상위 성적입니다.
 - MIT는 AP 수학·과학, IB는 HL 수학·과학을 무겁게 봅니다.
 - <strong>2025년부터 MIT·Harvard·Caltech가 SAT/ACT 재필수화</strong> → 어느 트리든 SAT는 별도로 필요합니다.
 

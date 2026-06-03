@@ -86,6 +86,14 @@ const contentChecks = [
     hint: 'Replace with "Google Meet 기반 Mathiter 학습앱".',
   },
   {
+    name: "학부모 독자에게 학생 2인칭 (네/너) — 독자 프레임 불일치",
+    severity: "error",
+    // 영어 입시 표현 "your school/score" 직역 함정: "네 학교/네 성적/너의 ~/네가 ~"
+    // 학부모용 글이므로 "자녀의 ~" 로. (네/내 발음 혼동까지 유발)
+    pattern: /(네\s*(학교|성적|아이|자녀|점수|커리큘럼|강점)|너의\s|네가\s|너는\s|너를\s)/g,
+    hint: '글은 학부모 독자 대상. 학생에게 "네/너" 2인칭으로 말 걸지 말 것 (영어 "your"의 직역 함정). "네 학교" → "자녀의 학교", "네가" → "자녀가". 단 인용문 안 학생/학부모 대사는 예외.',
+  },
+  {
     name: "광고법 위반 가능 문구 (Top 1%, 100% 보장 등)",
     severity: "error",
     pattern: /(Top\s*1%|100%\s*(보장|만점|합격|환불\s*보장)|무조건\s*만점|유일한\s*강사|업계\s*최고)/g,
@@ -247,14 +255,14 @@ function lintFile(path) {
   }
 
   // Internal-link sanity
-  const hasMathiterAnchor = /https?:\/\/mathiter\.com\//.test(content);
-  if (!hasMathiterAnchor) {
+  const hasInternalAnchor = /https?:\/\/mathiter\.com\/|\]\(\/(?:ko\/)?(?:tutoring|product)/.test(content);
+  if (!hasInternalAnchor) {
     issues.push({
       severity: "warn",
       line: 0,
-      name: "No https://mathiter.com/ anchor in body",
+      name: "No internal anchor (/tutoring·/product·landing) in body",
       sample: "",
-      hint: "Add at least one natural anchor to landing (위키 §9.1).",
+      hint: "Add at least one natural anchor to /tutoring (or /product / landing) (위키 §9.1).",
     });
   }
   const hasContactCta = /\/(?:ko\/)?tutoring/.test(content);
