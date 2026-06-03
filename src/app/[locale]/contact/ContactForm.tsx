@@ -61,6 +61,7 @@ const COPY = {
     trackOptions: {
       us: { title: "US 트랙", body: "SAT · AP · Common Core" },
       uk: { title: "UK 트랙", body: "IGCSE · A-Level · GCSE" },
+      ib: { title: "IB 트랙", body: "IB Math AA · AI (SL/HL)" },
       both: { title: "둘 다 고려 중", body: "아직 결정하지 않음 / 양쪽 가능성" },
     },
     residenceLabel: "현재 거주지",
@@ -75,6 +76,7 @@ const COPY = {
     step2Cta: "추천 코스 보기 →",
     goalGroupUs: "US 트랙",
     goalGroupUk: "UK 트랙",
+    goalGroupIb: "IB 트랙",
 
     // Step 3 (이전 Step 2) — 추천 코스 + 기본 가격
     step3Eyebrow: "맞춤 추천",
@@ -163,6 +165,7 @@ const COPY = {
     trackOptions: {
       us: { title: "US Track", body: "SAT · AP · Common Core" },
       uk: { title: "UK Track", body: "IGCSE · A-Level · GCSE" },
+      ib: { title: "IB Track", body: "IB Math AA · AI (SL/HL)" },
       both: { title: "Considering both", body: "Not decided yet" },
     },
     residenceLabel: "Current residence",
@@ -177,6 +180,7 @@ const COPY = {
     step2Cta: "See recommended course →",
     goalGroupUs: "US Track",
     goalGroupUk: "UK Track",
+    goalGroupIb: "IB Track",
 
     step3Eyebrow: "Personalized recommendation",
     step3Title: "Recommended course",
@@ -231,7 +235,7 @@ interface GoalDef {
   name: { ko: string; en: string };
   desc: { ko: string; en: string };
   recommendedTrack: TutoringTrack3;
-  groupLabel?: "us" | "uk"; // 고등 only — US/UK 그룹 분리용
+  groupLabel?: "us" | "uk" | "ib"; // 고등 only — US/UK/IB 그룹 분리용
 }
 
 const GOALS: GoalDef[] = [
@@ -390,6 +394,48 @@ const GOALS: GoalDef[] = [
     },
     recommendedTrack: "advanced",
     groupLabel: "uk",
+  },
+
+  // 고등 IB (DP, Year 12~13)
+  {
+    key: "high-ib-aa-sl",
+    name: { ko: "IB Math AA SL", en: "IB Math AA SL" },
+    desc: {
+      ko: "Analysis & Approaches SL — 6~7점 목표",
+      en: "Analysis & Approaches SL — target 6~7",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "ib",
+  },
+  {
+    key: "high-ib-aa-hl",
+    name: { ko: "IB Math AA HL", en: "IB Math AA HL" },
+    desc: {
+      ko: "Analysis & Approaches HL — 최상위 7점 + Paper 3",
+      en: "Analysis & Approaches HL — top 7 + Paper 3",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "ib",
+  },
+  {
+    key: "high-ib-ai-sl",
+    name: { ko: "IB Math AI SL", en: "IB Math AI SL" },
+    desc: {
+      ko: "Applications & Interpretation SL — 6~7점 목표",
+      en: "Applications & Interpretation SL — target 6~7",
+    },
+    recommendedTrack: "regular",
+    groupLabel: "ib",
+  },
+  {
+    key: "high-ib-ai-hl",
+    name: { ko: "IB Math AI HL", en: "IB Math AI HL" },
+    desc: {
+      ko: "Applications & Interpretation HL — 7점 + Paper 3",
+      en: "Applications & Interpretation HL — top 7 + Paper 3",
+    },
+    recommendedTrack: "advanced",
+    groupLabel: "ib",
   },
 ];
 
@@ -594,8 +640,8 @@ export default function ContactForm({ locale }: Props) {
             {copy.trackLabel} <span className="text-primary">*</span>
           </label>
           <p className="text-xs text-muted mb-2">{copy.trackHint}</p>
-          <div className="grid sm:grid-cols-3 gap-2">
-            {(["us", "uk", "both"] as const).map((t) => (
+          <div className="grid sm:grid-cols-2 gap-2">
+            {(["us", "uk", "ib", "both"] as const).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -667,6 +713,7 @@ export default function ContactForm({ locale }: Props) {
     const showUsUkLabels = group === "high" && track === "both";
     const usGoals = availableGoals.filter((g) => g.groupLabel === "us");
     const ukGoals = availableGoals.filter((g) => g.groupLabel === "uk");
+    const ibGoals = availableGoals.filter((g) => g.groupLabel === "ib");
 
     return (
       <div>
@@ -694,6 +741,13 @@ export default function ContactForm({ locale }: Props) {
               <GoalGroup
                 label={copy.goalGroupUk}
                 goals={ukGoals}
+                selected={goals}
+                onToggle={toggleGoal}
+                locale={locale}
+              />
+              <GoalGroup
+                label={copy.goalGroupIb}
+                goals={ibGoals}
                 selected={goals}
                 onToggle={toggleGoal}
                 locale={locale}
@@ -770,7 +824,9 @@ export default function ContactForm({ locale }: Props) {
                 ? copy.trackOptions.us.title
                 : track === "uk"
                   ? copy.trackOptions.uk.title
-                  : copy.trackOptions.both.title
+                  : track === "ib"
+                    ? copy.trackOptions.ib.title
+                    : copy.trackOptions.both.title
             }
           />
           <SummaryChip

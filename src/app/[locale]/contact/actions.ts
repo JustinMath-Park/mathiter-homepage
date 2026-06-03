@@ -17,7 +17,7 @@ export type SubmitResult =
   | { ok: false; error: string };
 
 function asTrack(v: string | null): TutoringTrack {
-  if (v === "us" || v === "uk" || v === "both") return v;
+  if (v === "us" || v === "uk" || v === "ib" || v === "both") return v;
   return "both";
 }
 function asResidence(v: string | null): TutoringResidence {
@@ -43,6 +43,10 @@ const ALL_GOALS: TutoringGoal[] = [
   "high-uk-igcse-add-math",
   "high-uk-a-level-bridge",
   "high-uk-a-level-full",
+  "high-ib-aa-sl",
+  "high-ib-aa-hl",
+  "high-ib-ai-sl",
+  "high-ib-ai-hl",
 ];
 
 function asGoal(v: string | null): TutoringGoal {

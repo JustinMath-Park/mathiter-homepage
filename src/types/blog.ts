@@ -58,7 +58,7 @@ export interface BlogPostSummary {
   author: BlogAuthor;
 }
 
-export type TutoringTrack = "us" | "uk" | "both";
+export type TutoringTrack = "us" | "uk" | "ib" | "both";
 export type TutoringResidence = "kr" | "overseas";
 
 // Legacy 4-tier (Firestore/email 기존 데이터 호환용)
@@ -86,7 +86,12 @@ export type TutoringGoal =
   | "high-uk-igcse-diagnostic"
   | "high-uk-igcse-add-math"
   | "high-uk-a-level-bridge"
-  | "high-uk-a-level-full";
+  | "high-uk-a-level-full"
+  // 고등 IB (DP, Y12-13)
+  | "high-ib-aa-sl"
+  | "high-ib-aa-hl"
+  | "high-ib-ai-sl"
+  | "high-ib-ai-hl";
 
 export interface TutoringInquiry {
   // Step 4 — 연락처 (학부모가 부를 때 사용)
