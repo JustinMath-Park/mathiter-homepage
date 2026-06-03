@@ -14,7 +14,6 @@ export default function Footer() {
     { label: t("product.diagnosticTest"), href: `${localePrefix}/product#features` },
     { label: t("product.aiPractice"), href: `${localePrefix}/product#features` },
     { label: t("product.examSimulation"), href: `${localePrefix}/product#features` },
-    { label: t("product.videoLessons"), href: `${localePrefix}/product#features` },
     { label: t("product.pricing"), href: `${localePrefix}/product#pricing` },
   ];
 
