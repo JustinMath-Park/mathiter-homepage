@@ -12,7 +12,8 @@
       "howItWorks": "How It Works",
       "pricing": "Pricing",
       "team": "Our Vision",
-      "blog": "Blog"
+      "blog": "Blog",
+      "tutoring": "1:1 Tutoring"
     },
     "signIn": "Sign In",
     "startFree": "Start Free",
@@ -26,7 +27,7 @@
     "headlineLine1": "Find your child's math weak spots",
     "headlineHighlight": " in 10 minutes",
     "headlineLine2": " — then fix them",
-    "subHeadline": "Spending a fortune on private tutoring? For just $24.99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and explains mistakes with custom videos.",
+    "subHeadline": "Spending a fortune on private tutoring? For just $24.99/month, Mathiter's AI pinpoints your child's weak topics, generates personalized problems, and tracks every mistake as a weak spot.",
     "benefits": {
       "diagnosis": "10-minute adaptive test for precise skill assessment",
       "analytics": "Real-time parent dashboard to track learning progress",
@@ -64,11 +65,6 @@
         "tag": "AI Coach",
         "title": "Smart Questioning That Finds Your Weak Spots",
         "description": "Instead of just giving you answers, our AI asks guiding questions that help you discover mistakes on your own. It detects hidden gaps in your understanding and tracks them for focused review."
-      },
-      "videos": {
-        "tag": "Video Lessons",
-        "title": "Personalized Explanation Videos",
-        "description": "When you struggle with a concept, the AI creates a short video explanation tailored to your exact mistake. Each video targets the specific topic you need help with — not a generic lecture."
       },
       "analytics": {
         "tag": "Smart Analytics",
@@ -119,8 +115,8 @@
       "review": {
         "step": "04",
         "title": "Review",
-        "subtitle": "Video & Analysis",
-        "description": "When you make repeated mistakes, the AI creates personalized video explanations. Your data is analyzed to predict scores and plan what to study next."
+        "subtitle": "Mistake Analysis & Tracking",
+        "description": "The AI automatically gathers the mistake patterns you keep repeating and tracks them as weak spots. Your data is analyzed to predict scores and plan what to study next."
       },
       "test": {
         "step": "05",
@@ -197,7 +193,7 @@
         "features": {
           "0": "Everything in Basic",
           "1": "Unlimited AI-guided practice",
-          "2": "Personalized video explanations",
+          "2": "Auto mistake log & weak-spot tracking",
           "3": "Deep learning analytics",
           "4": "Exam simulations (SAT, IGCSE...)",
           "5": "Score prediction tracking",
@@ -221,6 +217,11 @@
           "6": "Dedicated support"
         }
       }
+    },
+    "tutoringCta": {
+      "title": "Need closer, 1:1 support?",
+      "body": "Mathiter Tutoring — 8 years of 1:1 live tutoring plus a daily weak-spot tracking report, managing your child's math directly.",
+      "cta": "Get a free 1:1 diagnosis →"
     }
   },
   "team": {
@@ -276,7 +277,6 @@
       "diagnosticTest": "Diagnostic Test",
       "aiPractice": "AI-Guided Practice",
       "examSimulation": "Exam Simulation",
-      "videoLessons": "Video Lessons",
       "pricing": "Pricing"
     },
     "exams": {
@@ -339,10 +339,10 @@
       "blog": "Blog →"
     },
     "hero": {
-      "badge": "1:1 MATH TUTORING FOR INTERNATIONAL-SCHOOL FAMILIES · SAT · AP · IB · IGCSE",
-      "headline": "<grad>International School Math</grad> <em>1:1 Tutoring</em><br></br>for SAT · AP · IB · IGCSE.",
-      "subHeadline": "As a parent sending my own children to international schools, I have thought deeply about math education from a parent's perspective.\n\nBuilt on that experience, I have spent the past 8 years specializing in tutoring international-school middle and high school students, guiding many to outstanding results on SAT Math and AP Calculus BC.",
-      "ctaPrimary": "Book a Free Consultation",
+      "badge": "1:1 INTERNATIONAL-SCHOOL MATH DIAGNOSIS · SAT · AP · IB · IGCSE · A-LEVEL",
+      "headline": "Is your child's <grad>international school math</grad><br></br>really on track? <em>We'll diagnose it.</em>",
+      "subHeadline": "Whether your child is on the US track (SAT·AP), the UK track (IGCSE·A-Level), or IB — and where they're weak right now. We show their current level and weak spots in a clear report.\n\nNot tutoring that ends when the lesson does: every problem solved and every mistake keeps stacking up and is tracked as a weak spot, managed directly by an 8-year 1:1 tutor.",
+      "ctaPrimary": "Book a Free Diagnosis",
       "ctaSecondary": "How does it work?",
       "ctaMicrocopy": "● Reply within 1 business hour · Decide after one trial lesson",
       "trustBadges": {

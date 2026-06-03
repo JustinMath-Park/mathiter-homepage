@@ -100,6 +100,25 @@ export default function Pricing() {
             );
           })}
         </div>
+
+        {(locale === "ko" || locale === "en") && (
+          <div className="mt-14 rounded-2xl border border-primary/15 bg-primary/5 px-6 py-8 sm:px-10 sm:flex sm:items-center sm:justify-between gap-6">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">
+                {t("tutoringCta.title")}
+              </h3>
+              <p className="mt-1.5 text-sm text-muted max-w-xl">
+                {t("tutoringCta.body")}
+              </p>
+            </div>
+            <a
+              href={`${localePrefix}/tutoring`}
+              className="mt-4 sm:mt-0 inline-block shrink-0 rounded-full gradient-bg text-white text-sm font-semibold px-6 py-3 hover:opacity-90 transition-opacity"
+            >
+              {t("tutoringCta.cta")}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

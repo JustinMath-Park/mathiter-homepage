@@ -16,8 +16,12 @@ export default function Header() {
 
   const localePrefix = locale === "en" ? "" : `/${locale}`;
   const showBlogNav = locale === "ko" || locale === "en";
+  const showTutoringNav = locale === "ko" || locale === "en";
 
   const navLinks = [
+    ...(showTutoringNav
+      ? [{ href: `${localePrefix}/tutoring`, label: t("nav.tutoring") }]
+      : []),
     { href: `${localePrefix}/product#problem`, label: t("nav.whyMathiter") },
     { href: `${localePrefix}/product#features`, label: t("nav.features") },
     { href: `${localePrefix}/product#how-it-works`, label: t("nav.howItWorks") },

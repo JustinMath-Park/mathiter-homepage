@@ -144,7 +144,7 @@ https://mathiter.com/ko/tutoring
 4. **HTML strong 태그 제거**: 자체 블로그의 `<strong>...</strong>` 전부 ** ... ** 굵게로 변환
 5. **블록 인용 제거**: 처음 후킹 quote 블록 → 첫 줄 단순 인용부호
 6. **FAQ 5개 제거**: 자체 블로그 "자주 묻는 질문 5가지" 섹션은 네이버에서 통째로 컷 (가장 큰 압축 포인트). 핵심 답은 IB Diploma 섹션과 5분 결정 가이드에 흡수
-7. **링크 제거**: 자체 블로그 본문 중간 `[국제학교 1:1 수학 과외](https://mathiter.com/)` → 네이버는 본문 안 링크 없이 글 끝 CTA로만 통합
+7. **링크 제거**: 자체 블로그 본문 중간 `[국제학교 1:1 수학 과외](https://mathiter.com/tutoring)` → 네이버는 본문 안 링크 없이 글 끝 CTA로만 통합
 8. **인포그래픽 SVG 6개 → 이미지 6장 재구성**: 자체 블로그 SVG 인포그래픽(timeline/us tree/uk tree/score matrix/decision flowchart) → 네이버는 사진·일러스트 mix로 변경 (네이버 알고리즘은 SVG보다 PNG 사진 선호)
 9. **자체 블로그 학교 분류 섹션 컷**: 자체 블로그의 "어느 대학에 어느 점수가 필요할까" + KIS/KFS/Chadwick American/Dulwich Seoul/NLCS Jeju/SFS 학교 분류 단락 → 네이버는 통째로 컷 (토픽 6과 중복 회피)
 10. **표현 톤 캐주얼화**: "~입니다" 위주 → "~죠", "~거든요", "~네요" 어미 빈도 증가
