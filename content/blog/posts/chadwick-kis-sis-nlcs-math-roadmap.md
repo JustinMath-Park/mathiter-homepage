@@ -103,7 +103,7 @@ canonicalSlug: chadwick-kis-sis-nlcs-math-roadmap
 
 제가 가르친 한 채드윅 학생 — G10 MYP까지는 학교 성적이 우수했지만, G11에 IB DP가 시작되자 Math AA HL의 추상도와 IA 분량에 부담을 느꼈습니다. AA SL로 옮기는 결정을 G11 초에 내렸고, SL에서 6점을 받으면서 대학 지원에 안정적인 점수를 확보했습니다. **"우리 아이가 HL을 못 따라가서 실패"가 아니라, 그 학생에게 맞는 트랙을 G11 초에 정확히 골라준 것이 결과를 만들었습니다.**
 
-한 NLCS Jeju 학생 — Y10 시점에 IGCSE Extended Math를 준비하면서 동시에 미국 대학 지원도 염두에 두고 SAT를 시작했습니다. 학교는 SAT를 직접 다루지 않으므로 1:1 과외에서 SAT 어휘·풀이 패턴을 따로 잡았고, Y11 IGCSE에서 A*를 받으면서 Y12 봄에 SAT 770점에 도달했습니다. <strong>학교 진도와 미국 트랙을 동시에 가져갈 수 있다는 것이 핵심</strong>이었습니다.
+한 NLCS Jeju 학생 — Y10 시점에 IGCSE Extended Math를 준비하면서 동시에 미국 대학 지원도 염두에 두고 SAT를 시작했습니다. 학교는 SAT를 직접 다루지 않으므로 1:1 과외에서 SAT 어휘·풀이 패턴을 따로 잡았고, Y11 IGCSE에서 A\*를 받으면서 Y12 봄에 SAT 770점에 도달했습니다. <strong>학교 진도와 미국 트랙을 동시에 가져갈 수 있다는 것이 핵심</strong>이었습니다.
 
 ## 이번 학기 점검할 3가지
 
@@ -138,6 +138,6 @@ canonicalSlug: chadwick-kis-sis-nlcs-math-roadmap
 
 [^ap]: **AP** (Advanced Placement) — College Board가 운영하는 미국식 고급 과목 시험. 5점 만점. AP Calc AB·BC, AP Stats 등 40+ 과목.
 
-[^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국 Cambridge·Pearson Edexcel이 운영하는 만 14–16세 국제 중등 시험. Extended·Core 두 레벨, 9–1 또는 A*–G 등급.
+[^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국 Cambridge·Pearson Edexcel이 운영하는 만 14–16세 국제 중등 시험. Extended·Core 두 레벨, 9–1 또는 A\*–G 등급.
 
 [^gyear]: **G/Y 학년 매핑** — American Grade(G)와 British Year(Y)는 1년 차이. Y10 = G9, Y11 = G10, Y12 = G11, Y13 = G12. 한국 학년으로는 Y10이 대략 중3 후반–고1 초입.

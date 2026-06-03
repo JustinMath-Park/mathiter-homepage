@@ -139,7 +139,7 @@ IB는 "미국·영국 양쪽이 동시에 인정되는 디플로마"라는 게 �
 
 ## 제가 본 두 학생 — 같은 G10, 완전히 다른 준비
 
-8년간 [국제학교 1:1 수학 과외](https://mathiter.com/)로 가장 자주 마주친 케이스 하나를 소개합니다. 같은 G10(만 15–16세) 학생 둘이 비슷한 시기에 상담을 받으러 왔습니다. 한 명은 미국제 학교의 G10, 다른 한 명은 영국식 학교의 Y11(미국 G10 ≈ Y11).
+8년간 [국제학교 1:1 수학 과외](/ko/tutoring)로 가장 자주 마주친 케이스 하나를 소개합니다. 같은 G10(만 15–16세) 학생 둘이 비슷한 시기에 상담을 받으러 왔습니다. 한 명은 미국제 학교의 G10, 다른 한 명은 영국식 학교의 Y11(미국 G10 ≈ Y11).
 
 첫 학생은 미국제 학교에서 AP 트랙 준비 중이었고, 이번 학년의 핵심 과제는 "Pre-Calculus를 마치고 G11 9월에 AP Calculus BC에 진입할 준비"였습니다. 학년 중에는 SAT도 신경 쓰지 않고 Pre-Calc 단원별 진도(Limits 직전까지)와 학교 GPA에 집중. SAT는 G11 봄·여름에 처음 응시.
 
@@ -203,7 +203,7 @@ IB는 "미국·영국 양쪽이 동시에 인정되는 디플로마"라는 게 �
 
 [^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국식 중등 마지막 단계 (Year 10–11) 국제 자격 시험. Cambridge International과 Pearson Edexcel 두 보드가 있고, 세계 약 160개국 국제학교에서 운영.
 
-[^alevel]: **A Level** (Advanced Level) — 영국 대학 입시의 핵심 시험. Year 12–13 (만 16–18세) 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 Year 13 마지막에 외부 시험. 등급은 A*–E.
+[^alevel]: **A Level** (Advanced Level) — 영국 대학 입시의 핵심 시험. Year 12–13 (만 16–18세) 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 Year 13 마지막에 외부 시험. 등급은 A\*–E.
 
 [^aslevel]: **AS Level** (Advanced Subsidiary Level) — A Level의 1년차에 해당하는 단독 자격. International AS는 Cambridge·Edexcel 모두 1년 과정으로 독립 응시 가능하며, A Level의 절반 가치로 인정.
 

@@ -52,7 +52,7 @@ canonicalSlug: track-strategy-by-target-university
 | 트리 | 글로벌 인정 범위 | 특징 |
 |---|---|---|
 | **IB DP** | <strong>140개국 이상 · 4,500+ 대학</strong>이 매년 IB 지원서 접수 | 미국·영국 양쪽 native. 국제 이동 전제로 설계 |
-| **A-Level** | 영국 native + 전 세계 폭넓게 인정 | UCAS[^ucas]에서 IB 38점 ≈ A*AA로 환산 |
+| **A-Level** | 영국 native + 전 세계 폭넓게 인정 | UCAS[^ucas]에서 IB 38점 ≈ A\*AA로 환산 |
 | **AP** | 미국 친화 + 영국(Oxbridge 포함)도 인정 | "미국 중심"이라 IB만큼 보편적이진 않음 |
 
 <strong>왜 IB가 가장 넓은가</strong> — IB는 애초에 "국제 이동을 전제로" 설계된 시스템이라 미국·영국·유럽·아시아 어디든 native에 가깝게 받아들여집니다. AP는 미국 색이 강하고 A-Level은 영국 색이 강한데, IB는 "국적이 없는" 자격에 가깝습니다. 그래서 <strong>타겟 국가를 아직 못 정했거나 미국·영국·아시아를 다 열어두고 싶다면, IB가 가장 안전한 hedge</strong>입니다.
@@ -82,7 +82,7 @@ canonicalSlug: track-strategy-by-target-university
 
 | 자격 | Oxford | Cambridge |
 |---|---|---|
-| **A-Level** | AAA ~ A*A*A | A*A*A 또는 A*AA |
+| **A-Level** | AAA ~ A\*A\*A | A\*A\*A 또는 A\*AA |
 | **IB** | 38–40점 (HL 6–7) | **40–42점 (HL 7·7·6)** |
 | **AP** | SAT 1470–1500+ 또는 ACT 33+ **그리고 AP 3–4과목 5점** | 유사 수준 |
 
@@ -158,7 +158,7 @@ canonicalSlug: track-strategy-by-target-university
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
-[^ucas]: **UCAS** (Universities and Colleges Admissions Service) — 영국 학부 대학 지원을 중앙 처리하는 기관. 자격별 점수를 환산하는 Tariff 체계를 운영하며, IB 38점을 A*AA에 준하는 수준으로 본다.
+[^ucas]: **UCAS** (Universities and Colleges Admissions Service) — 영국 학부 대학 지원을 중앙 처리하는 기관. 자격별 점수를 환산하는 Tariff 체계를 운영하며, IB 38점을 A\*AA에 준하는 수준으로 본다.
 
 [^hypsm]: **HYPSM** — 미국 최상위 5개 대학(Harvard·Yale·Princeton·Stanford·MIT)을 묶어 부르는 약칭.
 

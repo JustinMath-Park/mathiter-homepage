@@ -57,6 +57,14 @@ const markdownChecks = [
     pattern: /[가-힣]~[가-힣0-9]/g,
     hint: 'Use en dash "–": "6개월~12개월" → "6개월–12개월".',
   },
+  {
+    name: "Unescaped A* grade — markdown이 별표를 이탤릭으로 먹습니다",
+    severity: "error",
+    // A* 등급(A*A*A, A*AA, A*–E, A*–G 등)의 * 는 markdown emphasis 로 파싱됨.
+    // (?<!\\) 이미 escape된 A\* 제외, (?!\*) bold ** (예: AA**) 제외.
+    pattern: /(?<!\\)A\*(?!\*)/g,
+    hint: 'A-Level/IGCSE 등급의 별표는 escape 필요: "A*A*A" → "A\\*A\\*A". 안 하면 *A* 가 이탤릭으로 렌더되고 별표가 사라짐. (frontmatter 제목/태그는 markdown 아니라 예외 — 본문만 escape.)',
+  },
 ];
 
 // Content/tone (위키 §13 + §4 SSOT)

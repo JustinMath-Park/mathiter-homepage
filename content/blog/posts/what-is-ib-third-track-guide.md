@@ -72,7 +72,7 @@ IB가 "추가 시험"이 아니라 별개의 시스템이라는 점을 이해하
 
 <strong>AP는 "디플로마"가 아니라 개별 과목 시험입니다.</strong> 이 점이 가장 중요합니다. AP는 College Board가 만든 college-level 개별 과목 시험으로, 미국 고등학교 디플로마 <strong>위에 얹는</strong> 형태입니다. 1–5점으로 채점되고, 몇 과목을 볼지는 학생이 자유롭게 정합니다. AP Calculus BC 하나만 볼 수도 있고, 5–6과목을 볼 수도 있습니다. AP 자체가 졸업장이 아니라, 미국 고교 졸업장에 "이 학생은 이런 college-level 과목을 이수했다"는 증거를 더하는 것입니다.
 
-<strong>A-Level은 3–4과목을 깊이 공부하는 영국 대학 입시의 표준</strong>입니다. Y12–Y13 2년에 걸쳐 보통 3–4과목을 선택해 깊게 파고, 등급은 A*–E입니다. 미국 AP가 "넓게 여러 개"라면, A-Level은 "좁고 깊게"입니다.
+<strong>A-Level은 3–4과목을 깊이 공부하는 영국 대학 입시의 표준</strong>입니다. Y12–Y13 2년에 걸쳐 보통 3–4과목을 선택해 깊게 파고, 등급은 A\*–E입니다. 미국 AP가 "넓게 여러 개"라면, A-Level은 "좁고 깊게"입니다.
 
 <strong>IB DP는 6과목 + Core를 묶은 하나의 완성된 디플로마</strong>입니다. AP처럼 개별 과목을 골라 얹는 게 아니라, 6과목을 동시에 + TOK·EE·CAS Core까지 모두 이수해야 45점 만점의 디플로마가 나옵니다. 즉 IB DP는 "전부 아니면 전무"에 가까운 통합 과정입니다.
 
@@ -155,7 +155,7 @@ IB가 "추가 시험"이 아니라 별개의 시스템이라는 점을 이해하
 
 [^ap]: **AP** (Advanced Placement) — College Board의 미국식 college-level 개별 과목 시험. 1–5점 척도, 매년 5월 첫 2주 시험. 디플로마가 아니라 미국 고교 졸업장 위에 얹는 개별 과목 시험으로, 응시 과목 수는 학생이 자유롭게 정한다.
 
-[^alevel]: **A-Level** (Advanced Level) — 영국 대학 입시의 핵심. Y12–Y13 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 마지막에 외부 시험. 등급은 A*–E.
+[^alevel]: **A-Level** (Advanced Level) — 영국 대학 입시의 핵심. Y12–Y13 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 마지막에 외부 시험. 등급은 A\*–E.
 
 [^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국식 중등 마지막 단계(Y10–Y11, 만 14–16세) 외부 시험 자격. Cambridge International과 Pearson Edexcel 두 보드가 주관.
 
