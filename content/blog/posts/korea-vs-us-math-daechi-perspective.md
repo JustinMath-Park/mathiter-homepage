@@ -124,7 +124,7 @@ canonicalSlug: korea-vs-us-math-daechi-perspective
 
 자녀가 곧 해외 국제학교로 이주하거나, 한국 국제학교에서 SAT·AP 단계로 진입한다면 — 영어 수학 환경에 본격 진입하기 전에 다음 네 가지를 점검하시기 바랍니다.
 
-1. <strong>영어 수학 어휘 100개</strong>를 한국어 정의와 1:1로 짝지어 말할 수 있는가. Vertex·coefficient·factor·domain·asymptote 같은 기초 어휘에서 막히면 시험 점수가 아니라 학교 수업부터 막힙니다. (별도 가이드: [국제학교 1:1 수학 과외](https://mathiter.com/) 페이지의 영어 수학 용어 50선 글을 참고하세요.)
+1. <strong>영어 수학 어휘 100개</strong>를 한국어 정의와 1:1로 짝지어 말할 수 있는가. Vertex·coefficient·factor·domain·asymptote 같은 기초 어휘에서 막히면 시험 점수가 아니라 학교 수업부터 막힙니다. (별도 가이드: [국제학교 1:1 수학 과외](/ko/tutoring) 페이지의 영어 수학 용어 50선 글을 참고하세요.)
 2. <strong>Desmos 그래핑 계산기</strong>를 30분 정도 직접 만져 봤는가. 함수 입력, slider, 교점 찾기, 도함수 표시까지. 시험장에서 처음 만나면 늦습니다.
 3. <strong>간단한 word problem을 영어 두 문장으로 setup</strong>할 수 있는가. "한 마을의 인구가 ..." 같은 문장에서 변수를 정의하고 식을 세우는 단계입니다.
 4. <strong>자기 풀이를 영어 한 문장으로 "왜 그런가" 설명</strong>할 수 있는가. 한국식 풀이 정확도가 100%여도, 이 한 문장이 안 되면 미국 학교 평가에서 점수를 잃습니다.

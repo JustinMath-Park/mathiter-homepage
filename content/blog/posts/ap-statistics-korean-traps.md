@@ -181,7 +181,7 @@ Simulation의 핵심은 수식이 아니라 <strong>"분포 시각화 + 극단�
 
 ## 제가 가르친 두 학생 — 3점에서 5점으로
 
-8년간 [국제학교 1:1 수학 과외](https://mathiter.com/)로 비슷한 시점에 AP Statistics를 준비하던 두 학생을 가르친 경험이 있습니다. 두 학생 모두 G11, 둘 다 한국에서 수학 1등급 수준의 실력을 갖고 있었지만, AP Statistics 점수 패턴이 달랐습니다.
+8년간 [국제학교 1:1 수학 과외](/ko/tutoring)로 비슷한 시점에 AP Statistics를 준비하던 두 학생을 가르친 경험이 있습니다. 두 학생 모두 G11, 둘 다 한국에서 수학 1등급 수준의 실력을 갖고 있었지만, AP Statistics 점수 패턴이 달랐습니다.
 
 <strong>학생 A — 4점에서 5점으로.</strong> G11 9월 시점 학교 mock에서 4점이 나왔던 학생입니다. 첫 진단에서 본 문제는 분명했습니다. 수학 풀이는 거의 완벽한데, FRQ 영어 정당화가 짧고 rubric keyword가 빠져 있었습니다(함정 1). "reject H0"만 적고 "the data provide significant evidence that..." 부분이 없는 식이었습니다. 그리고 4-step 절차 중 Conditions 단계를 자주 빠뜨렸습니다(함정 3). 저희가 한 작업은 단순했습니다 — 5점 학생들의 FRQ sample 답안에서 자주 등장하는 keyword를 정리해 ("evidence", "significant", "reject", "do not have evidence to suggest", "in context") 일관 사용하도록 했고, 모든 inference 문제에 같은 4-step 템플릿을 적용했습니다. 그해 5월 시험 결과 5점.
 

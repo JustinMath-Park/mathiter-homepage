@@ -129,7 +129,7 @@ Problem-Solving and Data Analysis 영역은 한국 학생이 가장 만만하게
 
 또 한 학생은 한국 국제학교에서 학교 성적은 A를 받지만 SAT만 보면 750에서 멈췄습니다. 이 친구는 Word problem에서 식을 세 줄 안에 정리하지 못했습니다. 영어 문장을 한국어로 직역한 다음 식을 세우려다 보니 시간을 다 썼습니다. 8주간 'read once, translate once, solve once' 원칙으로 훈련했고, 결국 800에 닿았습니다.
 
-[Mathiter Tutoring의 1:1 SAT 수학 과외](https://mathiter.com/)는 이런 식의 '한국 학생 specific 함정'에 맞춰진 커리큘럼을 운영합니다. 한국식 수학 어휘에 익숙한 학생이 영어 시험에서 어떻게 무너지는지를 8년간 직접 봤기에 가능한 진단입니다.
+[Mathiter Tutoring의 1:1 SAT 수학 과외](/ko/tutoring)는 이런 식의 '한국 학생 specific 함정'에 맞춰진 커리큘럼을 운영합니다. 한국식 수학 어휘에 익숙한 학생이 영어 시험에서 어떻게 무너지는지를 8년간 직접 봤기에 가능한 진단입니다.
 
 ## 이번 달 안에 점검할 3가지
 
