@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="usTrack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="ukTrack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+    <linearGradient id="ibTrack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMap)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" opacity="0.88" letter-spacing="3">한국 국제학교 트랙 지도</text>
+  <text x="800" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">같은 한국 안에서도 학교에 따라 트랙이 완전히 다릅니다 (2026 기준 · 학교 공식 확인 필수)</text>
+
+  <!-- Track 1: American + AP -->
+  <g transform="translate(80, 180)">
+    <rect width="460" height="620" rx="22" fill="url(#usTrack)" opacity="0.94" />
+    <text x="230" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="2">① American + AP</text>
+    <text x="230" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">미국 트랙 · G11–G12에 AP + SAT</text>
+    <line x1="40" y1="108" x2="420" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <!-- Path -->
+    <text x="230" y="145" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#fde68a" opacity="0.9">K–G5 → G6–G8 → G9–G12 + AP</text>
+
+    <!-- Schools -->
+    <g transform="translate(40, 175)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">SIS (분당)</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">Seoul International School</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">American + AP 24과목</text>
+    </g>
+
+    <g transform="translate(40, 300)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">KIS (판교 · 제주)</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">Korea International School</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">American + AP 18과목 + Capstone</text>
+    </g>
+
+    <g transform="translate(230, 460)">
+      <rect x="-190" y="0" width="380" height="120" rx="14" fill="#3b82f6" opacity="0.25" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4" />
+      <text x="0" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#93c5fd">G11–G12 시점</text>
+      <text x="0" y="65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">AP 과목 선택 + SAT 응시</text>
+      <text x="0" y="95" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">미국 대학 지원 표준 경로</text>
+    </g>
+  </g>
+
+  <!-- Track 2: British → IGCSE → IB DP -->
+  <g transform="translate(570, 180)">
+    <rect width="460" height="620" rx="22" fill="url(#ukTrack)" opacity="0.94" />
+    <text x="230" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="1">② British → IGCSE → IB</text>
+    <text x="230" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">영국식 초·중등 + IB 고등 (반전!)</text>
+    <line x1="40" y1="108" x2="420" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <text x="230" y="145" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#fde68a" opacity="0.9">Y1–Y9 → IGCSE(Y10–11) → IB DP(Y12–13)</text>
+
+    <g transform="translate(40, 175)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Dulwich College Seoul</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">영국 National Curriculum 기반</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#c084fc">IGCSE → IB DP</text>
+    </g>
+
+    <g transform="translate(40, 300)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">NLCS Jeju</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">North London Collegiate</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#c084fc">IGCSE → IB DP (A-Level X)</text>
+    </g>
+
+    <g transform="translate(230, 460)">
+      <rect x="-190" y="0" width="380" height="120" rx="14" fill="#fbbf24" opacity="0.15" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6" />
+      <text x="0" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#fde68a">★ 한국의 반전</text>
+      <text x="0" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">"영국식 학교 = A-Level"이</text>
+      <text x="0" y="84" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">한국에선 통하지 않습니다</text>
+      <text x="0" y="108" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">IGCSE 이후 IB DP를 선택</text>
+    </g>
+  </g>
+
+  <!-- Track 3: Full IB continuum -->
+  <g transform="translate(1060, 180)">
+    <rect width="460" height="620" rx="22" fill="url(#ibTrack)" opacity="0.94" />
+    <text x="230" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="1">③ Full IB continuum</text>
+    <text x="230" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.75">PYP / MYP / DP 전 과정 IB</text>
+    <line x1="40" y1="108" x2="420" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+    <text x="230" y="145" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#fde68a" opacity="0.9">PYP → MYP → DP</text>
+
+    <g transform="translate(40, 175)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Chadwick International (송도)</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">IB World School (PK–G12)</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#34d399">PYP·MYP·DP·CP + 미국 인증 디플로마</text>
+    </g>
+
+    <g transform="translate(40, 300)">
+      <rect width="380" height="110" rx="14" fill="#1e1b4b" opacity="0.6" />
+      <text x="190" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">SFS (서울)</text>
+      <text x="190" y="64" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">Seoul Foreign School</text>
+      <text x="190" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#34d399">IB Continuum (MYP + DP)</text>
+    </g>
+
+    <g transform="translate(230, 460)">
+      <rect x="-190" y="0" width="380" height="120" rx="14" fill="#10b981" opacity="0.25" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+      <text x="0" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#34d399">중등 단계</text>
+      <text x="0" y="65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">MYP 사용 (IGCSE 아님)</text>
+      <text x="0" y="95" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">미국·영국 양쪽 인정 디플로마</text>
+    </g>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="850" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.6" letter-spacing="2">"우리 아이를 어느 트리로 보낼까"의 실제 결정 = "어느 학교에 보낼까"의 결정입니다</text>
+</svg>

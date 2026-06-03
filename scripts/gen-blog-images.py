@@ -505,6 +505,45 @@ where the child is losing points on AP Statistics free-response —
 calm, methodical, problem-solving together.
 Horizontal landscape framing (16:9), candid editorial angle from the side.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 23: What is IB — third track guide (G4 parents)
+    # ═══════════════════════════════════════════════════════
+    "what-is-ib-third-track-guide-1.png": STYLE + """
+A Korean mother in her late 30s or 40s and her young elementary-school
+child (around 9-10, Grade 4 age) sitting together at a warm wooden
+home study table in soft late-afternoon window light. They are looking
+together at an open illustrated workbook and a colorful world map or
+globe on the table, with the mother gently guiding with a pencil while
+the child looks up with curiosity. On the table: a stack of children's
+books, a few colored pencils in a cup, an open notebook with simple
+handwriting, a small globe paperweight, a steaming mug of tea for the
+mother and a glass of water for the child. Both faces shown only in
+soft partial side profile (no clear identifiable face). Neutral warm
+home interior with a soft-focus bookshelf in the background.
+The mood: the early, hopeful stage of a Korean family thinking about
+a child's long educational journey ahead — calm, warm, the beginning
+of a long-term plan, not exam pressure. The child is still young.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
+
+    "what-is-ib-third-track-guide-2.png": STYLE + """
+A Korean parent in their 40s sitting at a home desk in the evening,
+researching international school options on a laptop, with several
+printed school brochures and prospectuses spread on the desk beside
+the laptop (generic brochure designs, no readable text or real school
+names or logos). The parent holds a pen and is taking notes in a
+notebook with a hand-drawn comparison chart (three columns suggesting
+three options — abstract, no readable specifics). On the desk: a cup
+of coffee, reading glasses, a smartphone face-down, a small stack of
+documents. Only the parent's hands and soft side profile visible (no
+clear face). Warm desk lamp light, calm evening atmosphere. Neutral
+home-office interior, soft-focus bookshelf behind.
+The mood: a Korean parent carefully comparing international school
+curriculum options late in the evening — methodical, thoughtful,
+weighing a major long-term decision for their child.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgIB3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="usLane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="ukLane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6b21a8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="ibLane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgIB3)" />
+  <circle cx="180" cy="170" r="240" fill="#ffffff" opacity="0.04" />
+  <circle cx="1430" cy="730" r="280" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="33" font-weight="700" fill="#ffffff" opacity="0.88" letter-spacing="3">미국 · 영국 · IB — 세 개의 평행한 트리</text>
+  <text x="800" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">IB는 SAT·AP에 추가하는 시험이 아니라, 만 3세부터 19세까지 별개의 12년 시스템입니다</text>
+
+  <!-- Age axis labels (top) -->
+  <g font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.55" text-anchor="middle">
+    <text x="350" y="178">초등 (만 3–12세)</text>
+    <text x="760" y="178">중등 (만 11–16세)</text>
+    <text x="1180" y="178">고등 (만 16–19세)</text>
+  </g>
+
+  <!-- Stage divider lines -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.10" stroke-dasharray="4,6">
+    <line x1="560" y1="195" x2="560" y2="720" />
+    <line x1="970" y1="195" x2="970" y2="720" />
+  </g>
+
+  <!-- US TRACK -->
+  <g transform="translate(0, 215)">
+    <text x="130" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#60a5fa" letter-spacing="2">미국</text>
+    <text x="130" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">US Track</text>
+
+    <!-- Elementary -->
+    <rect x="220" y="25" width="320" height="70" rx="14" fill="url(#usLane)" opacity="0.85" />
+    <text x="380" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">K – G5</text>
+    <text x="380" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.8">Elementary</text>
+
+    <!-- Middle -->
+    <rect x="580" y="25" width="370" height="70" rx="14" fill="url(#usLane)" opacity="0.85" />
+    <text x="765" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">G6 – G8</text>
+    <text x="765" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.8">Middle School</text>
+
+    <!-- High + AP -->
+    <rect x="990" y="25" width="470" height="70" rx="14" fill="url(#usLane)" opacity="0.95" />
+    <text x="1130" y="52" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">G9 – G12</text>
+    <text x="1130" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.85">High School</text>
+    <rect x="1290" y="38" width="150" height="44" rx="10" fill="#fbbf24" />
+    <text x="1365" y="58" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#1e3a8a">AP</text>
+    <text x="1365" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#1e3a8a" opacity="0.85">+ SAT</text>
+  </g>
+
+  <!-- UK TRACK -->
+  <g transform="translate(0, 380)">
+    <text x="130" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#c084fc" letter-spacing="2">영국</text>
+    <text x="130" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">UK Track</text>
+
+    <!-- Elementary -->
+    <rect x="220" y="25" width="320" height="70" rx="14" fill="url(#ukLane)" opacity="0.85" />
+    <text x="380" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Y1 – Y6</text>
+    <text x="380" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.8">Primary</text>
+
+    <!-- Middle + IGCSE -->
+    <rect x="580" y="25" width="370" height="70" rx="14" fill="url(#ukLane)" opacity="0.85" />
+    <text x="700" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Y7 – Y9</text>
+    <text x="700" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.8">KS3</text>
+    <rect x="800" y="38" width="135" height="44" rx="10" fill="#fbbf24" />
+    <text x="867" y="58" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#6b21a8">IGCSE</text>
+    <text x="867" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#6b21a8" opacity="0.85">Y10–11</text>
+
+    <!-- A-Level -->
+    <rect x="990" y="25" width="470" height="70" rx="14" fill="url(#ukLane)" opacity="0.95" />
+    <text x="1225" y="52" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Y12 – Y13 · A-Level</text>
+    <text x="1225" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.85">3–4과목 깊이 · A*–E</text>
+  </g>
+
+  <!-- IB TRACK -->
+  <g transform="translate(0, 545)">
+    <text x="130" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#34d399" letter-spacing="2">IB</text>
+    <text x="130" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.55">IB Track</text>
+
+    <!-- PYP -->
+    <rect x="220" y="25" width="320" height="70" rx="14" fill="url(#ibLane)" opacity="0.9" />
+    <text x="380" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">PYP</text>
+    <text x="380" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.8">Primary Years (3–12세)</text>
+
+    <!-- MYP -->
+    <rect x="580" y="25" width="370" height="70" rx="14" fill="url(#ibLane)" opacity="0.9" />
+    <text x="765" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">MYP</text>
+    <text x="765" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.8">Middle Years (11–16세)</text>
+
+    <!-- DP -->
+    <rect x="990" y="25" width="470" height="70" rx="14" fill="url(#ibLane)" opacity="1" />
+    <text x="1225" y="52" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">DP · Diploma Programme</text>
+    <text x="1225" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.85">6과목 + Core · 45점 만점</text>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="800" y="715" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#ffffff" opacity="0.85" letter-spacing="2">세 트리는 동시에 밟는 게 아니라 — 셋 중 하나를 선택해 걷는 평행한 다른 길입니다</text>
+
+  <!-- Key callout -->
+  <g transform="translate(800, 745)">
+    <rect x="-620" y="0" width="1240" height="110" rx="16" fill="#fbbf24" opacity="0.10" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.5" />
+    <text x="0" y="42" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#fde68a" letter-spacing="1">★ 학교를 선택하는 순간 트리가 정해집니다 — IB World School = IB 트리, American school = AP 트리</text>
+    <text x="0" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.8">SAT는 커리큘럼이 아니라 표준화 시험 — 어느 트리 위에든 얹을 수 있습니다 (US·IB 트랙 모두 SAT 준비)</text>
+    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">학년·연령 매핑은 평균선 · 학교 학기 시작 월과 국가별 cutoff에 따라 달라질 수 있습니다</text>
+  </g>
+</svg>

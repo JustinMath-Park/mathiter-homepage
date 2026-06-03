@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgIBs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="pyp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="myp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="dp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <marker id="arrIBs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" opacity="0.6" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgIBs)" />
+  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+
+  <!-- Header -->
+  <text x="800" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#34d399" letter-spacing="3">IB는 만 3세부터 19세까지 — 4단계 통합 프로그램</text>
+  <text x="800" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">"IB"라고 부르는 것은 보통 마지막 단계 IB DP를 가리킵니다 — 그 아래로 PYP·MYP가 연결됩니다</text>
+
+  <!-- 3 stage cards + arrows (PYP → MYP → DP) -->
+  <!-- PYP -->
+  <g transform="translate(80, 200)">
+    <rect width="340" height="220" rx="22" fill="url(#pyp)" opacity="0.92" />
+    <text x="170" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">PYP</text>
+    <text x="170" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.8">Primary Years Programme</text>
+    <line x1="40" y1="105" x2="300" y2="105" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="170" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a">만 3 – 12세</text>
+    <text x="170" y="172" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">미국 K–G5 / 영국 Y1–Y6</text>
+    <text x="170" y="198" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65">탐구 기반 전인 교육</text>
+  </g>
+
+  <line x1="420" y1="310" x2="455" y2="310" stroke="#ffffff" stroke-width="2.5" opacity="0.6" marker-end="url(#arrIBs)" />
+
+  <!-- MYP -->
+  <g transform="translate(470, 200)">
+    <rect width="340" height="220" rx="22" fill="url(#myp)" opacity="0.92" />
+    <text x="170" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">MYP</text>
+    <text x="170" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.8">Middle Years Programme</text>
+    <line x1="40" y1="105" x2="300" y2="105" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="170" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a">만 11 – 16세</text>
+    <text x="170" y="172" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">미국 G6–G10 / 영국 Y7–Y11</text>
+    <text x="170" y="198" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.65">프레임워크 (eAssessment 선택)</text>
+  </g>
+
+  <line x1="810" y1="310" x2="845" y2="310" stroke="#ffffff" stroke-width="2.5" opacity="0.6" marker-end="url(#arrIBs)" />
+
+  <!-- DP -->
+  <g transform="translate(860, 200)">
+    <rect width="340" height="220" rx="22" fill="url(#dp)" opacity="0.96" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.6" />
+    <text x="170" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">DP</text>
+    <text x="170" y="85" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">Diploma Programme</text>
+    <line x1="40" y1="105" x2="300" y2="105" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <text x="170" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a">만 16 – 19세</text>
+    <text x="170" y="172" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">미국 G11–G12 / 영국 Y12–Y13</text>
+    <text x="170" y="198" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#fde68a" font-weight="600">★ "IB"가 보통 가리키는 단계</text>
+  </g>
+
+  <!-- CP note -->
+  <g transform="translate(1240, 200)">
+    <rect width="280" height="220" rx="22" fill="#1e1b4b" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.5" />
+    <text x="140" y="50" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="800" fill="#34d399" letter-spacing="2">CP</text>
+    <text x="140" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">Career-related</text>
+    <line x1="40" y1="95" x2="240" y2="95" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+    <text x="140" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="600" fill="#ffffff" opacity="0.85">만 16–19세</text>
+    <text x="140" y="152" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">DP의 직업 연계형</text>
+    <text x="140" y="175" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">2014년 도입</text>
+    <text x="140" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">DP 과목 + 직업 학습</text>
+  </g>
+
+  <!-- DP scoring breakdown -->
+  <g transform="translate(800, 480)">
+    <rect x="-720" y="0" width="1440" height="350" rx="22" fill="#ffffff" opacity="0.05" />
+    <text x="0" y="50" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#34d399" letter-spacing="2">IB DP 채점 구조 — 만점 45점</text>
+
+    <!-- 6 subjects -->
+    <g transform="translate(-680, 90)">
+      <rect width="640" height="220" rx="16" fill="#047857" opacity="0.35" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+      <text x="320" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">6개 과목군에서 6과목</text>
+      <text x="320" y="66" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">3과목 HL(심화) + 3과목 SL(표준)</text>
+
+      <!-- 6 subject group chips -->
+      <g font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff">
+        <rect x="30" y="90" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="120" y="113" text-anchor="middle" opacity="0.95">Language &amp; Literature</text>
+        <rect x="230" y="90" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="320" y="113" text-anchor="middle" opacity="0.95">Language Acquisition</text>
+        <rect x="430" y="90" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="520" y="113" text-anchor="middle" opacity="0.95">Individuals &amp; Societies</text>
+        <rect x="30" y="135" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="120" y="158" text-anchor="middle" opacity="0.95">Sciences</text>
+        <rect x="230" y="135" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="320" y="158" text-anchor="middle" opacity="0.95">Mathematics</text>
+        <rect x="430" y="135" width="180" height="36" rx="8" fill="#10b981" opacity="0.6" />
+        <text x="520" y="158" text-anchor="middle" opacity="0.95">The Arts</text>
+      </g>
+
+      <text x="320" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#fde68a">각 7점 × 6 = 42점</text>
+    </g>
+
+    <!-- plus sign -->
+    <text x="0" y="215" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff" opacity="0.6">+</text>
+
+    <!-- Core -->
+    <g transform="translate(40, 90)">
+      <rect width="640" height="220" rx="16" fill="#1e40af" opacity="0.35" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4" />
+      <text x="320" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Core (3 요소)</text>
+
+      <g font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff">
+        <rect x="30" y="65" width="580" height="40" rx="8" fill="#3b82f6" opacity="0.5" />
+        <text x="50" y="90" font-weight="700">TOK</text>
+        <text x="600" y="90" text-anchor="end" opacity="0.85">Theory of Knowledge (지식론)</text>
+
+        <rect x="30" y="112" width="580" height="40" rx="8" fill="#3b82f6" opacity="0.5" />
+        <text x="50" y="137" font-weight="700">EE</text>
+        <text x="600" y="137" text-anchor="end" opacity="0.85">Extended Essay (소논문)</text>
+
+        <rect x="30" y="159" width="580" height="40" rx="8" fill="#64748b" opacity="0.4" />
+        <text x="50" y="184" font-weight="700">CAS</text>
+        <text x="600" y="184" text-anchor="end" opacity="0.7">Creativity·Activity·Service (무등급)</text>
+      </g>
+    </g>
+
+    <!-- equals + 45 -->
+    <g transform="translate(0, 335)">
+      <text x="0" y="0" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.85">TOK + EE 보너스 최대 <tspan font-weight="800" fill="#fde68a">+3점</tspan>  →  6과목 42 + Core 3 = <tspan font-weight="800" fill="#34d399" font-size="20">만점 45점</tspan>  ·  디플로마 취득 최소 24점</text>
+    </g>
+  </g>
+</svg>
