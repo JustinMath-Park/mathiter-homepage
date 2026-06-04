@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgAL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="pillAL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgAL)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG title -->
+  <text x="800" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="80" font-weight="800" fill="#ffffff" letter-spacing="2">A-Level이란?</text>
+  <text x="800" y="270" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="600" fill="#e9d5ff" letter-spacing="1">영국 대학 입시의 핵심 — 좁고 깊게</text>
+
+  <!-- 3 big fact pillars -->
+  <g transform="translate(0, 360)">
+    <!-- 2년 -->
+    <g transform="translate(290, 0)">
+      <rect x="-180" y="0" width="360" height="300" rx="28" fill="url(#pillAL)" opacity="0.94" />
+      <text x="0" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="68" font-weight="800" fill="#fde68a">2년</text>
+      <text x="0" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff">Year 12 – 13</text>
+      <text x="0" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">만 16 – 18세</text>
+    </g>
+    <!-- 3-4과목 -->
+    <g transform="translate(800, 0)">
+      <rect x="-180" y="0" width="360" height="300" rx="28" fill="url(#pillAL)" opacity="0.94" />
+      <text x="0" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="68" font-weight="800" fill="#fde68a">3–4과목</text>
+      <text x="0" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff">깊이 집중</text>
+      <text x="0" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">전공 방향 결정</text>
+    </g>
+    <!-- A*-E -->
+    <g transform="translate(1310, 0)">
+      <rect x="-180" y="0" width="360" height="300" rx="28" fill="url(#pillAL)" opacity="0.94" />
+      <text x="0" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="64" font-weight="800" fill="#fde68a">A*–E</text>
+      <text x="0" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff">6단계 등급</text>
+      <text x="0" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">A* 최상위 (2010~)</text>
+    </g>
+  </g>
+
+  <!-- Bottom one-liner -->
+  <text x="800" y="800" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85" letter-spacing="1">미국 AP가 "넓게", IB가 "균형"이면 — A-Level은 "좁고 깊게"</text>
+</svg>

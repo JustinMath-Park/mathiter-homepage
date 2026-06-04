@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="apCol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="ibCol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="alCol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGl)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG message -->
+  <text x="800" y="160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="1">세 시험의 성격 — 한 줄로</text>
+
+  <!-- 3 columns: AP / IB / A-Level -->
+  <g transform="translate(110, 280)">
+    <rect width="420" height="480" rx="28" fill="url(#apCol)" opacity="0.5" />
+    <text x="210" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" fill="#93c5fd">AP</text>
+    <line x1="60" y1="120" x2="360" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.25" />
+    <text x="210" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="48" font-weight="800" fill="#ffffff">넓게</text>
+    <text x="210" y="300" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.8">개별 과목 시험</text>
+    <text x="210" y="345" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.8">여러 개 자유 선택</text>
+    <text x="210" y="430" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#93c5fd" opacity="0.9">미국</text>
+  </g>
+
+  <g transform="translate(590, 280)">
+    <rect width="420" height="480" rx="28" fill="url(#ibCol)" opacity="0.5" />
+    <text x="210" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" fill="#6ee7b7">IB DP</text>
+    <line x1="60" y1="120" x2="360" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.25" />
+    <text x="210" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="48" font-weight="800" fill="#ffffff">균형</text>
+    <text x="210" y="300" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.8">6과목 + Core</text>
+    <text x="210" y="345" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.8">넓이 + 탐구</text>
+    <text x="210" y="430" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#6ee7b7" opacity="0.9">국제</text>
+  </g>
+
+  <!-- A-Level highlighted -->
+  <g transform="translate(1070, 280)">
+    <rect width="420" height="480" rx="28" fill="url(#alCol)" opacity="0.96" stroke="#fbbf24" stroke-width="3" stroke-opacity="0.6" />
+    <text x="210" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#fde68a">A-Level</text>
+    <line x1="60" y1="120" x2="360" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.35" />
+    <text x="210" y="225" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="46" font-weight="800" fill="#ffffff">좁고 깊게</text>
+    <text x="210" y="300" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">3–4과목 집중</text>
+    <text x="210" y="345" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">전공 깊이</text>
+    <text x="210" y="430" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#fde68a" opacity="0.95">영국 (이 글의 주제)</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="800" y="830" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.8">전공이 분명한 학생에게 A-Level의 "좁고 깊게"가 유리합니다</text>
+</svg>

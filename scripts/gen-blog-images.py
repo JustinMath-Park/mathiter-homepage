@@ -611,6 +611,76 @@ a future path together — supportive, calm, the feeling that the right
 choice is a matched one made together, not a competition. Reassuring.
 Horizontal landscape framing (16:9), candid editorial angle from the side.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 25: What is A-Level — UK exam guide
+    # ═══════════════════════════════════════════════════════
+    "what-is-a-level-guide-1.png": STYLE + """
+A Korean teenage student (around 16-17, soft side profile, no clear
+identifiable face) sitting at a wooden desk in a quiet British-style
+international school study room or library, deeply focused on working
+through an advanced mathematics problem in an A4 exam-style answer
+booklet. On the desk: an open thick mathematics textbook with dense
+notation visible (calculus, algebra — no readable brand text), a
+scientific calculator, neatly handwritten working in pen, a couple of
+sharpened pencils, a ruler, a glass of water. Tall bookshelves and a
+window with soft natural daylight in the background. The student writes
+with careful concentration — the depth-focused, single-subject mastery
+that A-Level rewards.
+The mood: the quiet, disciplined depth of British-curriculum study —
+fewer subjects studied very deeply. Serious, focused, calm.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
+
+    "what-is-a-level-guide-2.png": STYLE + """
+A Korean mother in her 40s and her teenage child (around 15-16, just
+finishing IGCSE age) sitting together at a wooden home table in warm
+afternoon light, looking at an open subject-selection booklet or course
+guide spread between them (generic printed booklet, no readable text or
+real logos). The mother points thoughtfully at a list while the child
+considers, pen in hand over a notebook with a hand-drawn shortlist of
+subjects (abstract, no readable specifics). On the table: two mugs of
+tea, a calculator, a few printed pages. Both faces shown only in soft
+partial side profile (no clear face). Neutral warm home interior,
+soft-focus bookshelf behind.
+The mood: a thoughtful Korean family choosing A-Level subjects together
+— the weight of picking just 3-4 subjects that shape a future path.
+Calm, deliberate, collaborative.
+Horizontal landscape framing (16:9), candid editorial angle from the side.
+""",
+
+    "what-is-a-level-guide-3.png": STYLE + """
+A wide editorial shot of a modern international school campus in a
+Southeast Asian setting (Malaysia / Singapore style) — clean
+contemporary architecture with tropical greenery, palm trees, students
+of diverse nationalities walking between buildings in school uniforms
+(seen at a distance, no clear identifiable faces). Bright warm daylight,
+blue sky, a sense of an established British-curriculum international
+school. Modern glass-and-concrete school buildings, a covered walkway,
+manicured lawn.
+The mood: the welcoming, established feel of a Southeast Asian
+international school where British A-Level curriculum is the norm —
+the destination many relocating Korean families are heading toward.
+Hopeful, bright, aspirational.
+Horizontal landscape framing (16:9), wide architectural editorial angle.
+""",
+
+    "what-is-a-level-guide-4.png": STYLE + """
+A Korean 1:1 tutoring scene — a teenage student (around 16-17) and a
+tutor sitting side by side at a wooden study desk, planning out an
+A-Level study roadmap together. On the desk between them: an open
+planner or large sheet with a hand-drawn two-year timeline and a
+shortlist of subjects/units (abstract handwriting, no readable
+specifics), a mathematics textbook, a scientific calculator, colored
+pens, two mugs. The tutor gestures toward the timeline while the
+student takes notes. Both shown in soft partial side profile (no clear
+identifiable faces). Warm desk lamp and window light, calm focused
+study atmosphere, soft-focus bookshelf behind.
+The mood: the calm, structured work of designing an A-Level plan
+one-on-one — subject choices, unit sequencing, modular session timing
+mapped out together. Methodical, reassuring, expert.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

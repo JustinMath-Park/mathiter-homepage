@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMod" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="modGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="linGray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMod)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG message -->
+  <text x="800" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="1">국제 A-Level의 가장 큰 장점</text>
+  <text x="800" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="600" fill="#fde68a">유닛을 나눠서 + 약점만 재응시</text>
+
+  <!-- 국제 (모듈러) card -->
+  <g transform="translate(110, 270)">
+    <rect width="630" height="520" rx="28" fill="url(#modGreen)" opacity="0.94" />
+    <text x="315" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">국제 A-Level</text>
+    <text x="315" y="112" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#fde68a">모듈러 (Modular)</text>
+    <line x1="80" y1="140" x2="550" y2="140" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+
+    <!-- units split visual -->
+    <g transform="translate(80, 175)">
+      <rect x="0" y="0" width="110" height="60" rx="10" fill="#ffffff" opacity="0.9" />
+      <text x="55" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#047857">P1</text>
+      <rect x="125" y="0" width="110" height="60" rx="10" fill="#ffffff" opacity="0.9" />
+      <text x="180" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#047857">P3</text>
+      <rect x="250" y="0" width="110" height="60" rx="10" fill="#ffffff" opacity="0.9" />
+      <text x="305" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#047857">M1</text>
+      <rect x="375" y="0" width="110" height="60" rx="10" fill="#fde68a" />
+      <text x="430" y="33" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#7c2d12">S1</text>
+      <text x="430" y="52" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#7c2d12">재응시</text>
+    </g>
+
+    <g font-family="-apple-system, sans-serif" fill="#ffffff" transform="translate(315, 295)">
+      <text x="0" y="0" text-anchor="middle" font-size="22" font-weight="700">✓ 유닛 따로 응시</text>
+      <text x="0" y="48" text-anchor="middle" font-size="22" font-weight="700">✓ 약점 유닛만 재응시</text>
+      <text x="0" y="96" text-anchor="middle" font-size="22" font-weight="700">✓ 연 2–3회 세션 분산</text>
+    </g>
+
+    <g transform="translate(315, 460)">
+      <rect x="-250" y="0" width="500" height="44" rx="12" fill="#1e1b4b" opacity="0.55" />
+      <text x="0" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#86efac">점수를 차곡차곡 쌓는 전략 가능</text>
+    </g>
+  </g>
+
+  <!-- VS -->
+  <g transform="translate(800, 530)">
+    <circle r="44" fill="#1e1b4b" stroke="#fbbf24" stroke-width="3" opacity="0.95" />
+    <text text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="800" fill="#fde68a" dy="9">VS</text>
+  </g>
+
+  <!-- 영국 본토 (선형) card -->
+  <g transform="translate(860, 270)">
+    <rect width="630" height="520" rx="28" fill="url(#linGray)" opacity="0.92" />
+    <text x="315" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">영국 본토 A-Level</text>
+    <text x="315" y="112" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#cbd5e1">선형 (Linear · 2017~)</text>
+    <line x1="80" y1="140" x2="550" y2="140" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+
+    <!-- one big block -->
+    <g transform="translate(80, 175)">
+      <rect x="0" y="0" width="470" height="60" rx="10" fill="#ffffff" opacity="0.55" />
+      <text x="235" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#334155">2년치 전체 = 한 덩어리</text>
+    </g>
+
+    <g font-family="-apple-system, sans-serif" fill="#ffffff" transform="translate(315, 295)">
+      <text x="0" y="0" text-anchor="middle" font-size="22" font-weight="700">✕ Y13 마지막에 한 번에</text>
+      <text x="0" y="48" text-anchor="middle" font-size="22" font-weight="700">✕ 재응시는 전 과목 통째로</text>
+      <text x="0" y="96" text-anchor="middle" font-size="22" font-weight="700">✕ "몰빵" 구조</text>
+    </g>
+
+    <g transform="translate(315, 460)">
+      <rect x="-250" y="0" width="500" height="44" rx="12" fill="#1e1b4b" opacity="0.55" />
+      <text x="0" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#cbd5e1">한 시점에 부담이 몰림</text>
+    </g>
+  </g>
+
+  <!-- Bottom -->
+  <text x="800" y="855" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff" opacity="0.8">국제학교 학생은 모듈러 = SAT처럼 "나눠서 best score" 전략을 A-Level 안에서</text>
+</svg>

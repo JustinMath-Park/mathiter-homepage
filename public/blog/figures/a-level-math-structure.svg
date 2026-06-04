@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMath" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="pureCore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="appliedM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="appliedS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMath)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG message -->
+  <text x="800" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="1">A-Level 수학 — Pure가 backbone</text>
+  <text x="800" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#93c5fd">순수수학을 먼저, 그 위에 응용을 얹는다</text>
+
+  <!-- Pure foundation (big base) -->
+  <g transform="translate(200, 280)">
+    <rect width="1200" height="200" rx="28" fill="url(#pureCore)" opacity="0.95" />
+    <text x="600" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Pure Mathematics (순수)</text>
+    <text x="600" y="118" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">P1 · P2 · P3 — 대수 · 함수 · 미적분 · 삼각 · 벡터</text>
+    <text x="600" y="162" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a">★ 핵심 backbone — 이게 흔들리면 응용도 무너진다</text>
+  </g>
+
+  <!-- plus -->
+  <text x="800" y="540" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" fill="#ffffff" opacity="0.7">＋ 응용 유닛 선택</text>
+
+  <!-- Two applied options -->
+  <g transform="translate(280, 580)">
+    <rect width="480" height="180" rx="24" fill="url(#appliedM)" opacity="0.94" />
+    <text x="240" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Mechanics (역학)</text>
+    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">M1 · M2</text>
+    <text x="240" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">운동 · 힘 · 운동량</text>
+  </g>
+
+  <g transform="translate(840, 580)">
+    <rect width="480" height="180" rx="24" fill="url(#appliedS)" opacity="0.94" />
+    <text x="240" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Statistics (통계)</text>
+    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">S1 · S2</text>
+    <text x="240" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">확률 · 분포 · 검정</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="800" y="830" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff" opacity="0.8">Cambridge 9709 기준 — AS 2유닛 / 풀 A-Level 4유닛 (보통 P1+P3 + 응용 2개)</text>
+</svg>
