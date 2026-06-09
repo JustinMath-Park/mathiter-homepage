@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgALM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="aBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="astarBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgALM)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG title -->
+  <text x="800" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="1">A-Level 수학 A* 받는 법</text>
+  <text x="800" y="250" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="600" fill="#e9d5ff">A와 A*를 가르는 건 계산력이 아니다</text>
+
+  <!-- A → A* transformation -->
+  <g transform="translate(0, 360)">
+    <!-- A (계산만) -->
+    <g transform="translate(420, 0)">
+      <rect x="-220" y="0" width="440" height="300" rx="28" fill="url(#aBox)" opacity="0.92" />
+      <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="100" font-weight="800" fill="#cbd5e1">A</text>
+      <text x="0" y="185" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff">계산은 강한데</text>
+      <text x="0" y="230" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.75">풀이 생략 · 영어 해석에서 막힘</text>
+    </g>
+
+    <!-- arrow -->
+    <text x="800" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="64" font-weight="800" fill="#fde68a">→</text>
+
+    <!-- A* (서술) -->
+    <g transform="translate(1180, 0)">
+      <rect x="-220" y="0" width="440" height="300" rx="28" fill="url(#astarBox)" opacity="0.96" stroke="#fbbf24" stroke-width="3" stroke-opacity="0.6" />
+      <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="100" font-weight="800" fill="#fde68a">A*</text>
+      <text x="0" y="185" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff">풀이·서술까지</text>
+      <text x="0" y="230" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.85">method marks · 영어 모델링</text>
+    </g>
+  </g>
+
+  <!-- Bottom one-liner -->
+  <text x="800" y="800" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85" letter-spacing="1">Cambridge 9709 · Pure backbone + 응용 · 8년 1:1 과외 전략</text>
+</svg>

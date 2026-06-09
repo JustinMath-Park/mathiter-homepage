@@ -681,6 +681,44 @@ one-on-one — subject choices, unit sequencing, modular session timing
 mapped out together. Methodical, reassuring, expert.
 Horizontal landscape framing (16:9), three-quarter editorial angle.
 """,
+
+    # ═══════════════════════════════════════════════════════
+    # Topic 26: A-Level Math A* strategy (deep-dive)
+    # ═══════════════════════════════════════════════════════
+    "a-level-math-a-star-strategy-1.png": STYLE + """
+Close-up over-the-shoulder shot of a Korean teenage student (around
+16-17, no clear identifiable face) working through an advanced
+A-Level mathematics problem, writing out the FULL working line by line
+in a neat exam-style answer booklet — visible rows of handwritten
+algebra and calculus steps (each step shown, method clearly laid out,
+no readable specific text). On the wooden desk: an open advanced
+mathematics textbook with dense notation, a scientific calculator, a
+ruler, sharpened pencils, an eraser, a glass of water. Warm focused
+desk-lamp light from the side, late afternoon. The emphasis of the
+shot is the careful, complete written working — every step shown.
+The mood: the disciplined habit that earns method marks — showing
+every line of working, not just the final answer. Precise, methodical,
+the difference between A and A-star.
+Horizontal landscape framing (16:9), close-up over-the-shoulder angle.
+""",
+
+    "a-level-math-a-star-strategy-2.png": STYLE + """
+A Korean 1:1 math tutoring scene — a teenage student (around 16-17)
+and a tutor sitting side by side at a wooden study desk, planning an
+A-Level mathematics unit lineup together. On the desk between them: a
+large sheet or planner with a hand-drawn diagram mapping out math
+units and a two-year sequence (abstract boxes and arrows, no readable
+specifics), an open advanced mathematics textbook, a scientific
+calculator, colored pens, a couple of past-paper booklets stacked, two
+mugs. The tutor points toward one part of the plan while the student
+takes notes. Both shown in soft partial side profile (no clear
+identifiable faces). Warm desk lamp and window light, calm focused
+study atmosphere, soft-focus bookshelf behind.
+The mood: the expert, structured work of mapping out an A-Level math
+plan one-on-one — Pure first, applied units, Further Math decision,
+session timing. Methodical, reassuring.
+Horizontal landscape framing (16:9), three-quarter editorial angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

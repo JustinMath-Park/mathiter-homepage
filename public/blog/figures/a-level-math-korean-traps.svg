@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTrp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="c1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="c3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgTrp)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG message -->
+  <text x="800" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="1">한국 학생이 막히는 3가지</text>
+  <text x="800" y="185" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="600" fill="#fde68a">수학 실력이 아니라 — 시험 방식·영어</text>
+
+  <!-- 3 trap cards -->
+  <!-- Card 1: method marks -->
+  <g transform="translate(90, 270)">
+    <rect width="450" height="500" rx="28" fill="url(#c1)" opacity="0.94" />
+    <circle cx="80" cy="80" r="42" fill="#fde68a" />
+    <text x="80" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="46" font-weight="800" fill="#7c2d12">1</text>
+    <text x="225" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">풀이 서술</text>
+    <text x="225" y="255" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#fecaca">method marks</text>
+    <line x1="60" y1="295" x2="390" y2="295" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+    <text x="225" y="355" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">답만 적고 과정 생략</text>
+    <text x="225" y="395" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">→ 맞아도 점수 깎임</text>
+    <g transform="translate(225, 440)">
+      <rect x="-175" y="0" width="350" height="44" rx="12" fill="#1e1b4b" opacity="0.55" />
+      <text x="0" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#fde68a">한 줄씩 보여라</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Mechanics English -->
+  <g transform="translate(575, 270)">
+    <rect width="450" height="500" rx="28" fill="url(#c2)" opacity="0.94" />
+    <circle cx="80" cy="80" r="42" fill="#fde68a" />
+    <text x="80" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="46" font-weight="800" fill="#7c2d12">2</text>
+    <text x="225" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Mechanics</text>
+    <text x="225" y="255" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#fed7aa">영어 문제 해석</text>
+    <line x1="60" y1="295" x2="390" y2="295" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+    <text x="225" y="355" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">한국 수학엔 역학 없음</text>
+    <text x="225" y="395" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">→ 영어 모델링에서 멈춤</text>
+    <g transform="translate(225, 440)">
+      <rect x="-175" y="0" width="350" height="44" rx="12" fill="#1e1b4b" opacity="0.55" />
+      <text x="0" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#fde68a">영어 + 모델링 훈련</text>
+    </g>
+  </g>
+
+  <!-- Card 3: command words -->
+  <g transform="translate(1060, 270)">
+    <rect width="450" height="500" rx="28" fill="url(#c3)" opacity="0.94" />
+    <circle cx="80" cy="80" r="42" fill="#fde68a" />
+    <text x="80" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="46" font-weight="800" fill="#4c1d95">3</text>
+    <text x="225" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="38" font-weight="800" fill="#ffffff">command</text>
+    <text x="225" y="248" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="38" font-weight="800" fill="#ffffff">words</text>
+    <line x1="60" y1="295" x2="390" y2="295" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+    <text x="225" y="350" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#ffffff" opacity="0.9">Show that · exact value</text>
+    <text x="225" y="388" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#ffffff" opacity="0.9">Hence — 흘려 읽으면 0점</text>
+    <g transform="translate(225, 440)">
+      <rect x="-175" y="0" width="350" height="44" rx="12" fill="#1e1b4b" opacity="0.55" />
+      <text x="0" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#fde68a">동사에 동그라미</text>
+    </g>
+  </g>
+
+  <!-- Bottom -->
+  <text x="800" y="840" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="600" fill="#ffffff" opacity="0.8">셋 다 "수학"이 아니라 "영국식 시험 + 영어"의 문제 — 1:1로 잡힌다</text>
+</svg>

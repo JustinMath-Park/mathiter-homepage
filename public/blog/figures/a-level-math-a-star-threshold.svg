@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgThr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="barFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgThr)" />
+  <circle cx="200" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <!-- BIG message -->
+  <text x="800" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="54" font-weight="800" fill="#ffffff" letter-spacing="1">A* = 조합 전체 약 80%</text>
+  <text x="800" y="200" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#e9d5ff">개별 페이퍼가 아니라 — 4유닛 합산</text>
+
+  <!-- Big percentage bar -->
+  <g transform="translate(200, 300)">
+    <!-- track -->
+    <rect x="0" y="0" width="1200" height="120" rx="20" fill="#1e1b4b" opacity="0.5" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2" />
+    <!-- fill to ~80% -->
+    <rect x="0" y="0" width="984" height="120" rx="20" fill="url(#barFill)" opacity="0.95" />
+
+    <!-- A* threshold marker at ~80% -->
+    <line x1="984" y1="-40" x2="984" y2="160" stroke="#fbbf24" stroke-width="5" />
+    <text x="984" y="-55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#fde68a">A* 경계선</text>
+
+    <!-- big % inside bar -->
+    <text x="490" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff">약 78–86%</text>
+
+    <!-- axis labels -->
+    <text x="0" y="160" text-anchor="start" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.6">0%</text>
+    <text x="1200" y="160" text-anchor="end" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.6">100%</text>
+    <text x="600" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.5">세션·조합별로 경계선 변동 — 매 시리즈 공식 grade threshold 확인</text>
+  </g>
+
+  <!-- Key takeaway -->
+  <g transform="translate(800, 620)">
+    <rect x="-640" y="0" width="1280" height="200" rx="24" fill="#fbbf24" opacity="0.10" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#fde68a">★ 한 페이퍼 "거의 다 맞았다"로는 부족</text>
+    <text x="0" y="115" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" fill="#ffffff" opacity="0.88">4유닛 어디서든 한두 문제씩 흘리면 A로 떨어진다</text>
+    <text x="0" y="162" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.7">→ 전 유닛에서 "잔실점을 막는 것"이 A*의 핵심</text>
+  </g>
+</svg>
