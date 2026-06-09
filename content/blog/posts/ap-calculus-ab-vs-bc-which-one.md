@@ -121,11 +121,11 @@ BC 5점은 미국 대학에서 보통 <strong>2학기 분량의 Calculus 학점<
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
-[^ap]: **AP** (Advanced Placement) — 미국 <strong>College Board</strong>가 주관하는 고등학교 고급 과정. 38개 과목이 있고 5월 첫 2주에 시험이 몰려 있습니다. 1–5점 척도로 채점되며, 보통 4점 이상이면 미국 대학에서 학점 인정. 수학 관련 과목은 Calculus AB, BC, Statistics, Precalculus 4종입니다.
+[^ap]: **AP** (Advanced Placement) — 미국 <strong>College Board</strong>가 주관하는 고등학교 고급 과정. 약 40개 과목이 있고 5월 첫 2주에 시험이 몰려 있습니다. 1–5점 척도로 채점되며, 보통 4점 이상이면 미국 대학에서 학점 인정. 수학 관련 과목은 Calculus AB, BC, Statistics, Precalculus 4종입니다.
 
 [^stem]: **STEM** — Science, Technology, Engineering, Mathematics의 약자. 자연·공학·수학 계열 학문을 통칭하며 미국 대학 입시에서 "이 학생이 어느 트랙인가"의 핵심 시그널로 쓰입니다. STEM 지망생은 AP Calc BC, AP Physics C, AP CS 같은 과목으로 트랙을 강하게 표시합니다.
 
-[^mcq]: **MCQ** (Multiple Choice Question) — 객관식 문제. AP Calculus 시험의 절반(45문항, 105분)이 MCQ로 구성됩니다. 1분 30초 정도가 한 문항에 주어지는 시간 — 한국식 수능 페이스의 학생들이 큰 어려움 없이 적응하는 영역입니다.
+[^mcq]: **MCQ** (Multiple Choice Question) — 객관식 문제. AP Calculus 시험의 절반(45문항, 105분)이 MCQ로 구성됩니다. 한 문항에 약 2분 20초가 주어지는 셈 — 한국식 수능 페이스의 학생들이 큰 어려움 없이 적응하는 영역입니다.
 
 [^frq]: **FRQ** (Free Response Question) — 자유 응답형(서술형) 문제. AP 시험의 나머지 절반(6문항, 90분)이 FRQ입니다. 풀이 과정을 영어로 단계별로 써야 하고, 부분 점수가 풀이의 logic chain마다 매겨집니다. 한국 학생들이 가장 자주 점수를 잃는 영역.
 

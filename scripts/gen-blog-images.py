@@ -46,7 +46,32 @@ STYLE = (
 )
 
 # ─────────────────────────────────────────────────────────────
-# Prompts — 2 per post
+# Prompts — 2+ per post
+#
+# ⚠️ IMAGE DIVERSITY RULE (2026-06 — Justin feedback "이미지가 다 똑같다")
+# Do NOT default every photo to the two over-used compositions:
+#   (a) "single teenager leaning over a desk, warm lamp, three-quarter angle"
+#   (b) "parent + child sitting across a kitchen/dining table with papers + tea"
+# Rotate through a DIVERSE ARCHETYPE PALETTE so no two posts feel identical.
+# Cap any single archetype at ~2-3 uses across the whole blog.
+#
+# ARCHETYPE PALETTE (mix freely; pick what fits the topic):
+#   A. single student at desk            — USE SPARINGLY (was over-used)
+#   B. parent + child at table           — USE SPARINGLY (was over-used)
+#   C. over-shoulder 1:1 tutoring (red pen)
+#   D. top-down flat-lay (objects/roadmap/planner as hero, no faces)
+#   E. campus wide establishing (vary US / UK / SEA architecture)
+#   F. glass-wall / whiteboard working (equations on the wall)
+#   G. walking-and-talking outdoors (campus path)
+#   H. window-side contemplative single figure (backlit, thinking)
+#   I. peer / small-group study (3-4 diverse students)
+#   J. exam-hall / testing-center wide (rows of desks, wall clock)
+#   K. macro hands / still-life (calculator, compass, graded paper, stopwatch)
+#   L. café / library-stacks casual study
+#   M. results-day emotional moment (envelope / screen)
+#   N. parent alone researching (couch or home-office, laptop)
+#   O. standing at a wall planner / wall calendar
+# Also vary: time of day, indoor/outdoor, angle (macro↔wide), with/without people.
 # ─────────────────────────────────────────────────────────────
 PROMPTS = {
     # ═══════════════════════════════════════════════════════
@@ -77,26 +102,32 @@ Horizontal landscape framing (16:9), top-down editorial angle.
     # ═══════════════════════════════════════════════════════
     # Topic 2: AP Calc AB vs BC (Persona 2)
     # ═══════════════════════════════════════════════════════
+    # Archetype H — window-side contemplative (was: single student at desk)
     "ap-calculus-ab-vs-bc-which-one-1.png": STYLE + """
-A Korean high school student (around 16–17, 11th grade) sitting at a study desk
-late at night, working through an AP Calculus practice problem set. Multiple
-textbooks visible — one labeled with calculus formulas, derivatives and integrals
-faintly visible. The student wears casual clothes, hair slightly messy, eyes
-focused but tired. A laptop is open showing a graph or equation. A water bottle
-and several pencils on the desk. Ambient warm desk lamp lighting.
-The mood: serious focus, the weight of a major exam decision visible in posture.
-Horizontal landscape framing (16:9), three-quarter angle from across the desk.
+A Korean high school student (around 16–17, soft side profile, no clear
+identifiable face) standing by a tall bright window in a quiet study room,
+holding one open mathematics textbook while a second, thicker textbook rests on
+the windowsill — as if weighing two options. The student gazes out the window in
+a thoughtful pause, the two books suggesting two different courses (one slimmer,
+one denser). Soft diffused daylight backlights the figure, calm and
+contemplative. A desk with notes sits softly out of focus behind.
+The mood: the quiet weight of choosing between two paths — AB or BC — a
+reflective moment of decision rather than active studying.
+Horizontal landscape framing (16:9), editorial angle, backlit by the window.
 """,
 
+    # Archetype F — tutor at whiteboard (was: parent + child at table)
     "ap-calculus-ab-vs-bc-which-one-2.png": STYLE + """
-A Korean mother in her 40s and her teenage son sitting at a kitchen table at home,
-having a serious conversation about academic choices. Between them on the table:
-a printed school course catalog, a notebook with handwritten lists, two cups of tea.
-The mother gestures gently with one hand, the son leaning forward listening. Both
-faces show calm engagement — not arguing, problem-solving together.
-Late afternoon natural light through a kitchen window. Neutral home interior.
-The mood: a thoughtful family planning moment about a child's academic future.
-Horizontal landscape framing (16:9), candid editorial angle from the side.
+A Korean tutor (40s, business-casual, partial profile, no clear face) standing at
+a small glass writing wall or whiteboard, sketching two different calculus curves
+side by side with a marker — one gentler, one steeper — explaining a difference to
+a single teenage student (around 16–17) who sits nearby watching and taking notes.
+The hand-drawn curves and a few arrows are visible on the board (abstract, no
+readable text). A bright modern tutoring room with soft natural light. Emphasis on
+the gesture of teaching at the board and the student's attentive posture.
+The mood: a clear one-on-one explanation of how two similar courses actually
+differ — calm expert guidance, the moment a confusing choice becomes clear.
+Horizontal landscape framing (16:9), editorial angle from the side.
 """,
 
     # ═══════════════════════════════════════════════════════
@@ -113,16 +144,18 @@ international, prestigious, contemporary.
 Horizontal landscape framing (16:9), wide editorial angle.
 """,
 
+    # Archetype G — walking-and-talking outdoors (was: parent + child at table)
     "us-vs-uk-exam-tree-which-tree-2.png": STYLE + """
-A Korean couple in their 40s sitting at a kitchen table at home, comparing two
-international school brochures spread out side by side — one clearly marked as
-American curriculum (with stars-and-stripes-like color cues), the other British
-curriculum (with crown / royal blue color cues). A laptop shows a comparison
-chart. The father holds one brochure, the mother holds the other. Both wear
-expressions of careful deliberation — not confused, but thoughtfully weighing.
-Coffee mugs and a notebook with handwritten pros/cons visible. Soft natural
-window light. The mood: an important family decision in progress.
-Horizontal landscape framing (16:9), three-quarter angle.
+A Korean parent in their 40s and their teenage child (around 15–16) walking side
+by side along a tree-lined campus pathway in soft morning light, talking as they
+walk — the parent turned slightly toward the child mid-conversation, the child
+carrying a school backpack. Behind them the path and modern school buildings
+recede gently out of focus. Both seen in a soft three-quarter-from-behind view, no
+clear identifiable faces. Dappled natural light through the trees, an unhurried,
+open atmosphere.
+The mood: a calm walking conversation about which direction to take — US or UK
+track — a decision discussed openly while moving forward together.
+Horizontal landscape framing (16:9), editorial angle following from behind.
 """,
 
     # ═══════════════════════════════════════════════════════
@@ -196,19 +229,18 @@ Horizontal landscape framing (16:9), top-down editorial angle.
     # ═══════════════════════════════════════════════════════
     # Topic 4: SAT Math 800 한국 학생 함정 5가지 (Persona 2)
     # ═══════════════════════════════════════════════════════
+    # Archetype J — exam-hall wide (was: single student at desk)
     "sat-math-800-korean-traps-1.png": STYLE + """
-A Korean teenage student (around 16-17, high school junior) seated at a
-desk taking a practice digital SAT exam. A laptop is open in front of
-them showing a generic math testing interface (NOT actual SAT content
-— just abstract math test layout with question number visible, neutral
-white-and-blue design, no recognizable logos). Scratch paper to the
-right of the laptop with handwritten work in pencil. A simple wristwatch
-on the desk indicating time pressure. The student is leaning forward,
-intensely focused, brow slightly furrowed. Natural daytime light through
-a window. Books and a water bottle in soft-focus background.
-The mood: the controlled tension of a high-stakes timed test — focused
-intelligence under time pressure.
-Horizontal landscape framing (16:9), three-quarter angle.
+A wide editorial shot of a quiet examination hall / testing center: orderly rows
+of individual desks, each with a laptop open to a neutral on-screen test interface
+(abstract, no readable text or logos), several teenage students of mixed
+nationality seated and focused, seen mostly from behind and in soft focus. A large
+plain wall clock is visible on the far wall, emphasizing time pressure. Cool even
+overhead light, a calm but high-stakes atmosphere. One Korean student in the
+mid-foreground (back of head, no face) sits slightly sharper in focus.
+The mood: the controlled tension of a real digital SAT testing environment — many
+students, one clock, the quiet pressure of a timed exam.
+Horizontal landscape framing (16:9), wide editorial angle down the rows.
 """,
 
     "sat-math-800-korean-traps-2.png": STYLE + """
@@ -283,20 +315,18 @@ student — different campuses, different curricula, different paths.
 Horizontal landscape framing (16:9), wide editorial angle.
 """,
 
+    # Archetype D — top-down roadmap flat-lay, no faces (was: parent + child at table)
     "chadwick-kis-sis-nlcs-math-roadmap-2.png": STYLE + """
-A Korean mother (early-40s) and her teenage child (around 14-15,
-middle-school age) sit at a kitchen table at home, leaning over a
-handwritten roadmap chart on a notebook — labeled columns "G7 G8
-G9 G10 G11 G12" with handwritten subject names ("Pre-Algebra",
-"Algebra I", "Geometry", "AP Calc", etc.). A school brochure is
-open beside the notebook (generic, no recognizable school logo).
-A laptop on the side shows a generic spreadsheet/comparison view.
-Two teacups, a calm late-afternoon natural light from a window.
-Both faces visible only in partial profile — emphasis on the
-notebook and the act of planning together.
-The mood: a quiet, thoughtful family planning moment — choosing
-the right academic path one grade at a time.
-Horizontal landscape framing (16:9), three-quarter angle.
+A top-down editorial flat-lay of a hand-drawn academic roadmap as the clear hero
+of the frame: a large sheet of paper with a hand-sketched grade-by-grade timeline
+(columns and connecting arrows running from middle school through senior year,
+abstract handwriting, no readable specifics) laid on a warm wooden table. Arranged
+neatly around it: several colored pens and highlighters, a corner of a school
+brochure, a small stack of past-paper booklets, a steaming mug of tea, a pair of
+reading glasses. No faces — pure overhead composition focused on the plan itself.
+The mood: the satisfying clarity of a whole multi-year path mapped onto one page —
+different curricula, different schools, one coherent plan.
+Horizontal landscape framing (16:9), top-down editorial angle.
 """,
 
     # ═══════════════════════════════════════════════════════
@@ -378,23 +408,18 @@ Horizontal landscape framing (16:9), top-down editorial angle.
     # ═══════════════════════════════════════════════════════
     # Topic 22: SAT vs ACT for international school — 2026 ACT 개편 반영
     # ═══════════════════════════════════════════════════════
+    # Archetype K — macro comparison still-life, no person (was: single student at desk)
     "sat-vs-act-for-international-school-1.png": STYLE + """
-A Korean teenage student (around 16-17, G11 level, partial side profile only
-— no clear face visible) sitting at a quiet study desk in late afternoon
-light, taking a digital practice test on a 13-inch laptop. On the laptop
-screen: a generic test interface showing a math problem area with a
-graphing calculator widget visible in the corner (Desmos-style design but
-no readable text, no logos). The student is wearing comfortable casual
-clothes, leaning slightly forward in focused concentration with a hand
-resting on the laptop trackpad. Next to the laptop on the wooden desk:
-an open physical math notebook with handwritten work in two languages
-(English equations + small Korean side notes), a sharpened pencil, a
-half-empty mug of tea, a small wristwatch placed face-up (suggesting timed
-practice). Warm window light from the side, soft shallow depth of field.
-The mood: the quiet seriousness of a student taking an official practice
-test in real exam conditions — the moment of measuring oneself against the
-test's actual time pressure before deciding which exam to commit to.
-Horizontal landscape framing (16:9), three-quarter editorial angle.
+A top-down editorial still life on a wooden desk comparing two tests side by side,
+no people in frame. On the LEFT: a 13-inch laptop open to a neutral digital test
+interface with a small graphing-calculator widget in the corner (abstract, no
+readable text, no logos). On the RIGHT: a thick paper test booklet with a pencil
+and an eraser resting on it, plus a small separate science-style data-chart page.
+Centered between them: a classic stopwatch and a sharpened pencil. Warm side
+window light, shallow depth of field, clean balanced symmetry.
+The mood: two college-entrance exams laid out for an honest comparison — digital
+vs paper, one decision to weigh, presented calmly side by side.
+Horizontal landscape framing (16:9), top-down editorial angle.
 """,
 
     "sat-vs-act-for-international-school-2.png": STYLE + """
@@ -439,50 +464,37 @@ materials together and trying to plan the year ahead.
 Horizontal landscape framing (16:9), top-down editorial angle.
 """,
 
+    # Archetype O — standing at a wall planner (was: parent + child at table)
     "g11-12-month-master-schedule-2.png": STYLE + """
-A Korean mother in her 40s and her G11 teenage child (around 16-17)
-sitting together at a wooden dining table or home study desk, both
-looking down at a large opened academic year planner spread between
-them. The planner has handwritten color-coded entries in different
-pen colors marking different months (generic month grid visible, no
-readable specifics, no brand names). On the table beside the planner:
-a notebook with handwritten Korean notes, a printed school course
-catalog, two different colored highlighter pens (one red, one blue,
-representing different priorities), a steaming mug of tea, a calculator,
-a small stack of school exam papers. The mother is gently pointing at
-one date in the planner with a pencil while the child looks at it
-thoughtfully and takes notes. Both faces shown only in partial side
-profile (no clear face). Late afternoon natural window light. Neutral
-warm home interior with soft-focus bookshelf in the background.
-The mood: a calm Korean family planning conversation about a G11
-student's year ahead — the quiet weight of mapping out SAT·AP·school
-exam priorities together, not rushed, methodical.
-Horizontal landscape framing (16:9), candid editorial angle from the side.
+A Korean parent in their 40s and their G11 teenage child (around 16–17) standing
+together in front of a large wall-mounted year planner / whiteboard calendar,
+actively marking exam months. The wall calendar shows a 12-month grid with
+color-coded sticky notes and handwritten marks in several colors (abstract, no
+readable specifics, no logos). The child reaches up to place a sticky note on one
+month while the parent points to another — a dynamic, collaborative standing
+posture. Bright natural room light, a modern home study wall. Both seen in soft
+side profile, no clear faces.
+The mood: mapping a demanding G11 year of overlapping SAT, AP and school exams —
+standing back to see the whole year at once, planning it together.
+Horizontal landscape framing (16:9), editorial angle from the side.
 """,
 
     # ═══════════════════════════════════════════════════════
     # Topic 10: AP Statistics 한국 학생 5가지 함정
     # ═══════════════════════════════════════════════════════
+    # Archetype K — macro hand writing English (was: single student at desk)
     "ap-statistics-korean-traps-1.png": STYLE + """
-A Korean G11 student (around 16-17, partial side profile only — no
-clear face visible) sitting at a wooden study desk in late afternoon
-warm window light, deeply focused on writing English handwritten
-responses on a sheet of free-response practice questions. The desk
-shows a thoughtful study setup — visible items: an open statistics
-textbook with bilingual handwritten margin notes (English equations
-+ small Korean side notes — no specific brand readable), a separate
-practice sheet partly filled in with neat English handwriting (text
-blurred/illegible at distance), a graphing calculator face-up showing
-a graph display, a sharpened pencil and a fountain pen, a stack of
-flashcards bound with a ring (vocabulary terms — no readable text),
-a steaming mug of tea, a small wristwatch face-up suggesting timed
-practice. The student grips the fountain pen and is mid-sentence
-on the practice sheet, looking down with quiet concentration —
-the moment of carefully writing English justification.
-The mood: the quiet seriousness of a Korean student facing the
-language-heavy AP Statistics free-response — the moment of
-choosing precise English phrasing for a statistical conclusion.
-Horizontal landscape framing (16:9), three-quarter editorial angle.
+An extreme close-up (macro) of a Korean student's hand writing full English
+sentences in pen on a free-response answer sheet — a handwritten statistical
+justification, several neat lines of English prose visible mid-sentence (clearly
+English handwriting but no specific readable brand content). The edge of a
+graphing calculator and a few ring-bound flashcards rest just outside the main
+focus. Warm afternoon window light rakes across the paper, emphasizing the texture
+of the handwriting. Very shallow depth of field — the pen tip and the current line
+sharp, everything else soft.
+The mood: the heart of AP Statistics for a Korean student — not the math, but
+writing the English justification precisely, one careful sentence at a time.
+Horizontal landscape framing (16:9), macro close-up angle on the hand and page.
 """,
 
     "ap-statistics-korean-traps-2.png": STYLE + """
@@ -632,21 +644,18 @@ fewer subjects studied very deeply. Serious, focused, calm.
 Horizontal landscape framing (16:9), three-quarter editorial angle.
 """,
 
+    # Archetype I — peer / small-group study (was: parent + child at table)
     "what-is-a-level-guide-2.png": STYLE + """
-A Korean mother in her 40s and her teenage child (around 15-16, just
-finishing IGCSE age) sitting together at a wooden home table in warm
-afternoon light, looking at an open subject-selection booklet or course
-guide spread between them (generic printed booklet, no readable text or
-real logos). The mother points thoughtfully at a list while the child
-considers, pen in hand over a notebook with a hand-drawn shortlist of
-subjects (abstract, no readable specifics). On the table: two mugs of
-tea, a calculator, a few printed pages. Both faces shown only in soft
-partial side profile (no clear face). Neutral warm home interior,
-soft-focus bookshelf behind.
-The mood: a thoughtful Korean family choosing A-Level subjects together
-— the weight of picking just 3-4 subjects that shape a future path.
-Calm, deliberate, collaborative.
-Horizontal landscape framing (16:9), candid editorial angle from the side.
+Three or four diverse sixth-form students (including a Korean teenager around
+16–17, plus mixed-nationality peers) collaborating around a shared table in a
+bright British-style international school common room. Open A-Level textbooks,
+handwritten notes, a couple of laptops and a scientific calculator are spread
+across the table; one student explains something to the others, who lean in. Soft
+natural daylight from large windows, a relaxed but studious atmosphere. Faces seen
+mostly in soft profile or from behind, no clear identifiable faces.
+The mood: the collaborative side of A-Level study — a few subjects studied deeply,
+peers working through hard material together in a sixth-form setting.
+Horizontal landscape framing (16:9), candid editorial group angle.
 """,
 
     "what-is-a-level-guide-3.png": STYLE + """
@@ -702,22 +711,19 @@ the difference between A and A-star.
 Horizontal landscape framing (16:9), close-up over-the-shoulder angle.
 """,
 
+    # Archetype F — glass-wall equation working (was: side-by-side tutor planning, dup of what-is-a-level-4)
     "a-level-math-a-star-strategy-2.png": STYLE + """
-A Korean 1:1 math tutoring scene — a teenage student (around 16-17)
-and a tutor sitting side by side at a wooden study desk, planning an
-A-Level mathematics unit lineup together. On the desk between them: a
-large sheet or planner with a hand-drawn diagram mapping out math
-units and a two-year sequence (abstract boxes and arrows, no readable
-specifics), an open advanced mathematics textbook, a scientific
-calculator, colored pens, a couple of past-paper booklets stacked, two
-mugs. The tutor points toward one part of the plan while the student
-takes notes. Both shown in soft partial side profile (no clear
-identifiable faces). Warm desk lamp and window light, calm focused
-study atmosphere, soft-focus bookshelf behind.
-The mood: the expert, structured work of mapping out an A-Level math
-plan one-on-one — Pure first, applied units, Further Math decision,
-session timing. Methodical, reassuring.
-Horizontal landscape framing (16:9), three-quarter editorial angle.
+A Korean tutor (40s, partial profile, no clear face) and a teenage student (around
+16–17) standing together at a large glass study-room wall covered in handwritten
+mathematical working — rows of algebra, calculus and a sketched function graph
+flow across the glass in marker (abstract, no readable specifics). The tutor points
+to one step in the chain of working while the student studies it, marker in hand.
+A bright modern tutoring room, soft daylight, the glass wall of equations filling
+the frame behind them.
+The mood: building an A-Level math argument step by step on the wall — Pure
+foundation first, applied on top — the visible logic of how A* working is
+constructed, not just a desk of notes.
+Horizontal landscape framing (16:9), editorial angle on the glass wall.
 """,
 }
 

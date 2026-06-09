@@ -51,7 +51,7 @@ canonicalSlug: track-strategy-by-target-university
 
 | 트리 | 글로벌 인정 범위 | 특징 |
 |---|---|---|
-| **IB DP** | <strong>140개국 이상 · 4,500+ 대학</strong>이 매년 IB 지원서 접수 | 미국·영국 양쪽 native. 국제 이동 전제로 설계 |
+| **IB DP** | <strong>140개국 이상 · 수천 개 대학</strong>이 IB 디플로마 인정 | 미국·영국 양쪽 native. 국제 이동 전제로 설계 |
 | **A-Level** | 영국 native + 전 세계 폭넓게 인정 | UCAS[^ucas]에서 IB 38점 ≈ A\*AA로 환산 |
 | **AP** | 미국 친화 + 영국(Oxbridge 포함)도 인정 | "미국 중심"이라 IB만큼 보편적이진 않음 |
 
@@ -72,7 +72,7 @@ canonicalSlug: track-strategy-by-target-university
 - <strong>공식 입장: AP·IB·A-Level 선호 없음.</strong> 어느 트리든 차별하지 않습니다.
 - 진짜 기준은 <strong>"자녀의 학교에서 가능한 가장 어려운 커리큘럼을 택했는가"</strong> + 그 안에서의 최상위 성적입니다.
 - MIT는 AP 수학·과학, IB는 HL 수학·과학을 무겁게 봅니다.
-- <strong>2025년부터 MIT·Harvard·Caltech가 SAT/ACT 재필수화</strong> → 어느 트리든 SAT는 별도로 필요합니다.
+- <strong>MIT(2022년)·Harvard·Caltech 등이 SAT/ACT 재필수화</strong> → 어느 트리든 SAT는 별도로 필요합니다.
 
 즉 미국 최상위는 <strong>AP든 IB든 트리 자체는 무관하고, "최고 난이도 + 최고 성적 + SAT[^sat]"</strong>가 핵심입니다.
 
@@ -164,4 +164,4 @@ canonicalSlug: track-strategy-by-target-university
 
 [^oxbridge]: **Oxbridge** — 영국 최상위 두 대학 Oxford와 Cambridge를 묶어 부르는 약칭.
 
-[^sat]: **SAT** — College Board의 미국 대학 입시 표준화 시험. 커리큘럼이 아니라 입학 시험으로, 어느 트리에든 추가로 응시 가능. 2025년부터 MIT·Harvard·Caltech 등이 다시 필수화했다.
+[^sat]: **SAT** — College Board의 미국 대학 입시 표준화 시험. 커리큘럼이 아니라 입학 시험으로, 어느 트리에든 추가로 응시 가능. MIT는 2022년, Harvard·Caltech 등은 2025년 전후로 다시 필수화했다.

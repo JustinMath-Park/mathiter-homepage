@@ -49,9 +49,9 @@ IGCSE Math A\*는 두 가지가 동시에 맞아야 나옵니다. 첫째, Extend
 
 먼저 짚고 가야 할 부분입니다. Cambridge IGCSE Mathematics(0580)는 두 트랙으로 나뉘어 있고, <strong>Core를 선택하면 아무리 잘 봐도 최고 등급이 C</strong>입니다. A\*–G[^grading]에서 A\*는 Extended 트랙 응시생에게만 열려 있습니다.
 
-Extended는 Paper 2 (non-calculator, 2시간, 100점)와 Paper 4 (calculator, 2시간 30분, 130점)[^paper24]를 봅니다. 총점 230점에 A\* 기준선은 최근 session 기준 대략 80% 초중반대에서 형성되고 있습니다. 즉 230점 중 약 190점 안팎을 받아야 A\*입니다. 점수 차이가 한두 문제로 갈리기 때문에, 뒤에 다룰 '풀이 표기 누락'으로 6–8점만 새도 한 등급이 바뀝니다.
+Extended는 Paper 2 (non-calculator, 2시간, 100점)와 Paper 4 (calculator, 2시간, 100점)[^paper24]를 봅니다. 총점 200점에 A\* 기준선은 최근 session 기준 대략 80% 초중반대에서 형성되고 있습니다. 즉 200점 중 약 165점 안팎을 받아야 A\*입니다. 점수 차이가 한두 문제로 갈리기 때문에, 뒤에 다룰 '풀이 표기 누락'으로 6–8점만 새도 한 등급이 바뀝니다.
 
-Edexcel International GCSE(4MA1)[^edexcel]을 보는 학교도 있는데, Edexcel은 Higher tier가 따로 있고 A\*–G 또는 9–1 등급 체계를 씁니다. 이 글의 원칙은 두 보드 모두에 거의 그대로 적용됩니다.
+Edexcel International GCSE(4MA1)[^edexcel]을 보는 학교도 있는데, Edexcel은 Higher tier가 따로 있고 9–1 등급 체계를 씁니다. 이 글의 원칙은 두 보드 모두에 거의 그대로 적용됩니다.
 
 ## 한국 학생이 자주 놓치는 5가지 함정
 
@@ -138,9 +138,9 @@ Venn diagram 문제는 한국 학생이 답은 잘 맞히는데 표기에서 점
 
 [^caie]: **Cambridge / CAIE** (Cambridge Assessment International Education) – 영국 케임브리지 대학 산하 국제 시험 기관. IGCSE 0580 Mathematics를 출제합니다.
 
-[^grading]: **A\*–G grading** – Cambridge IGCSE의 등급 체계. A\*가 최고 등급이며 Extended 트랙 응시생에게만 열려 있습니다. Edexcel은 학교에 따라 9–1 체계도 운영합니다.
+[^grading]: **A\*–G grading** – Cambridge IGCSE의 등급 체계. A\*가 최고 등급이며 Extended 트랙 응시생에게만 열려 있습니다. Edexcel International GCSE(4MA1)는 9–1 체계를 씁니다.
 
-[^paper24]: **Paper 2 / Paper 4** – Extended 트랙의 두 시험지. Paper 2는 계산기 없이 2시간, Paper 4는 계산기 사용 가능 2시간 30분. 합산 230점으로 등급이 결정됩니다.
+[^paper24]: **Paper 2 / Paper 4** – Extended 트랙의 두 시험지. Paper 2는 계산기 없이 2시간, Paper 4는 계산기 사용 가능 2시간. 합산 200점으로 등급이 결정됩니다.
 
 [^edexcel]: **Edexcel (Pearson Edexcel)** – Cambridge와 함께 IGCSE를 출제하는 영국 시험 기관. 시험 코드 4MA1을 쓰며, 학교에 따라 Cambridge 0580 대신 채택합니다.
 

@@ -141,7 +141,7 @@ canonicalSlug: korea-vs-us-math-daechi-perspective
 
 [^pisa]: **PISA** (Programme for International Student Assessment) — OECD가 **3년마다** 시행하는 국제 학업 성취도 평가. **만 15세** 학생을 대상으로 수학·읽기·과학 세 영역을 봅니다. TIMSS가 "교육과정 안에서 배운 내용을 평가"한다면 PISA는 "배운 내용을 실생활 문제에 응용하는 능력"을 평가합니다. 즉 TIMSS는 교과 기반, PISA는 응용 기반 — 한국은 양쪽 모두에서 상위권입니다.
 
-[^cc]: **Common Core State Standards (CCSS)** — 2010년 미국 주지사협의회·교육감협의회가 발표한 K–12 수학·국어 학습 표준. 현재 약 41개 주가 채택. 미국 학교의 수학 수업·교과서·평가가 대체로 이 표준 위에서 설계되므로, 미국 수학을 이해하려면 Common Core를 이해해야 합니다.
+[^cc]: **Common Core State Standards (CCSS)** — 2010년 미국 주지사협의회·교육감협의회가 발표한 K–12 수학·국어 학습 표준. 한때 41개 주가 채택했고, 이후 일부 주는 자체 표준으로 수정·대체했습니다. 미국 학교의 수학 수업·교과서·평가가 대체로 이 표준 위에서 설계되므로, 미국 수학을 이해하려면 Common Core를 이해해야 합니다.
 
 [^smp]: **Standards for Mathematical Practice (SMP)** — Common Core 안의 8가지 "수학적 사고 원칙". 단순히 "무엇을 배우는가"가 아니라 "어떻게 사고하는가"를 규정합니다. 예: ① 문제를 이해하고 끈기 있게 풀기, ③ 논리적 주장을 펴고 다른 사람의 추론을 비판적으로 평가하기, ⑥ 정밀하게 표현하기 등. 한국 수학이 ①·⑥에 강하고, 미국 수학은 ③에 무게를 둡니다.
 

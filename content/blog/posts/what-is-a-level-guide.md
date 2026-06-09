@@ -55,7 +55,7 @@ A-Level에서 학부모님이 가장 먼저 헷갈리시는 부분이 "보드(ex
 |---|---|---|
 | **Cambridge International (CAIE)** | 5–6월 · 10–11월 (연 2회) | 국제학교에서 가장 널리 쓰임. 수학은 9709 |
 | **Pearson Edexcel International (IAL)** | 1월 · 5–6월 · 10–11월 (연 3회) | 세션이 많아 분산 응시·재응시 유연 |
-| **Oxford AQA International** | 1월 · 5–6월 · 11월 (연 3회) | 비교적 최근, 세션 3회 |
+| **Oxford AQA International** | 5–6월 · 11월 (연 2회) | 비교적 최근. 2028년부터 세션 확대 예정 |
 
 세 보드 모두 영국 대학에서 동등하게 인정됩니다. 다만 같은 "A-Level Mathematics"라도 보드마다 단원 구성·시험 형식이 조금씩 다르기 때문에, <strong>자녀의 학교가 어느 보드를 쓰는지 먼저 확인</strong>하셔야 정확한 준비가 됩니다. (영국 본토 학교는 AQA·OCR·Edexcel 등 국내용 보드를 쓰지만, 국제학교 학생은 위 세 "International" 보드를 보는 경우가 대부분입니다.)
 
@@ -69,7 +69,7 @@ A-Level에서 학부모님이 가장 먼저 헷갈리시는 부분이 "보드(ex
 
 <strong>국제 A-Level(모듈러)</strong>은 과목이 여러 개의 유닛(unit)으로 나뉘어 있고, <strong>유닛을 따로 응시</strong>할 수 있습니다. 그래서 — (1) AS 유닛을 Year 12에 미리 보고 점수를 "확보(cash-in)"할 수 있고, (2) 점수가 낮은 유닛만 골라 <strong>재응시</strong>할 수 있으며, (3) 연 2–3회 세션(1월·5–6월·10–11월)에 나눠 응시해 한 시점의 부담을 줄일 수 있습니다.
 
-즉 국제 A-Level 학생은 <strong>"2년치를 마지막에 몰아서"가 아니라, 유닛을 분산하고 약점만 재응시하며 점수를 차곡차곡 쌓는</strong> 전략이 가능합니다. SAT가 "여러 번 보고 best score"를 만드는 것과 비슷한 유연성을 A-Level 안에서 누릴 수 있는 셈입니다. 단, 보드마다 세션 수가 다르니(CAIE 2회 vs Edexcel·Oxford AQA 3회) 학교 보드에 맞춰 계획해야 합니다.
+즉 국제 A-Level 학생은 <strong>"2년치를 마지막에 몰아서"가 아니라, 유닛을 분산하고 약점만 재응시하며 점수를 차곡차곡 쌓는</strong> 전략이 가능합니다. SAT가 "여러 번 보고 best score"를 만드는 것과 비슷한 유연성을 A-Level 안에서 누릴 수 있는 셈입니다. 단, 보드마다 세션 수가 다르니(CAIE·Oxford AQA 2회 vs Edexcel 3회) 학교 보드에 맞춰 계획해야 합니다.
 
 ## 과목 선택 — 3–4과목, 진로 기준으로 고른다
 
@@ -89,15 +89,15 @@ A-Level의 핵심 결정은 <strong>"어떤 3–4과목을 고를 것인가"</st
 
 ## A-Level 수학 — Pure가 중심, 거기에 응용을 얹는다
 
-수학 과외를 8년 해 온 입장에서 가장 자주 받는 질문이 "A-Level 수학은 어떻게 구성되나"입니다. 가장 널리 쓰이는 Cambridge International A Level Mathematics(9709)를 기준으로 보면, <strong>7개 유닛</strong>으로 구성됩니다.
+수학 과외를 8년 해 온 입장에서 가장 자주 받는 질문이 "A-Level 수학은 어떻게 구성되나"입니다. 가장 널리 쓰이는 Cambridge International A Level Mathematics(9709)를 기준으로 보면, <strong>6개 component(시험지)</strong>로 구성됩니다.
 
 | 영역 | 유닛 | 풀 A-Level 구성 |
 |---|---|---|
 | **Pure Mathematics (순수)** | P1 · P2 · P3 | 핵심 backbone (대수·함수·미적분·삼각·벡터) |
-| **Mechanics (역학)** | M1 · M2 | 응용 — 운동·힘·운동량 |
-| **Probability & Statistics (확률·통계)** | S1 · S2 | 응용 — 확률·분포·검정 |
+| **Mechanics (역학)** | Mechanics (Paper 4) | 응용 — 운동·힘·운동량 |
+| **Probability & Statistics (확률·통계)** | P&S1 · P&S2 (Paper 5·6) | 응용 — 확률·분포·검정 |
 
-Cambridge 기준으로 <strong>AS Level은 2개 유닛, 풀 A-Level은 4개 유닛</strong>을 봅니다. 가장 흔한 풀 A-Level 조합은 <strong>P1 + P3(순수 2개) + 응용 2개(M1+S1 또는 S1+S2 등)</strong>입니다. Edexcel International A Level 수학은 Pure를 P1–P4로 나누고 여기에 Mechanics·Statistics를 얹는 구조로, 단원 이름은 다르지만 "순수가 중심 + 응용을 선택"이라는 큰 틀은 같습니다.
+Cambridge 기준으로 <strong>AS Level은 2개 유닛, 풀 A-Level은 4개 유닛</strong>을 봅니다. 가장 흔한 풀 A-Level 조합은 <strong>P1 + P3(순수 2개) + 응용 2개(Mechanics+P&S1 또는 P&S1+P&S2 등)</strong>입니다. Edexcel International A Level 수학은 Pure를 P1–P4로 나누고 여기에 Mechanics·Statistics를 얹는 구조로, 단원 이름은 다르지만 "순수가 중심 + 응용을 선택"이라는 큰 틀은 같습니다.
 
 ![A-Level 수학 구조 — Pure가 backbone, 거기에 Mechanics·Statistics 응용을 얹는다](/blog/figures/a-level-math-structure.svg)
 

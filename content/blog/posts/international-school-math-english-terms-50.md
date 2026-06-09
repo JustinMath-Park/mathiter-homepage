@@ -89,7 +89,7 @@ canonicalSlug: international-school-math-english-terms-50
 |---|---|
 | Vertex | 꼭짓점 |
 | Vertices | 꼭짓점들 (복수) |
-| Edge | 변 |
+| Edge | 모서리 |
 | Hypotenuse | 빗변 |
 | Perimeter | 둘레 |
 | Area | 넓이 |

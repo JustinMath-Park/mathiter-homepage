@@ -153,7 +153,7 @@ SAT와 ACT는 대학 지원용 표준화 시험입니다. 반면 AP Calculus·AP
 - AP Calculus AB 또는 BC, IB Math AA HL 등 고급 수학 성취
 - SAT Math 또는 ACT Math 고득점
 
-Yale은 지원자가 AP 또는 IB 시험 점수를 ACT/SAT 점수와 함께 제출할 수 있다고 안내합니다. 이는 AP·IB와 SAT·ACT가 서로 대체되는 시험이 아니라, <strong>같은 지원서 안에서 서로 다른 칸을 채우는 자료</strong>라는 점을 공식적으로 보여줍니다. SAT vs ACT 선택을 할 때는 <strong>이미 진행 중인 AP/IB/A Level 준비와는 별개</strong>로 생각해야 한다는 뜻입니다.
+Yale은 2026년 5월부터 SAT 또는 ACT 제출을 의무화했고, AP·IB 점수는 그와 별개로 함께 제출하는 보조 자료입니다. 이는 AP·IB와 SAT·ACT가 서로 대체되는 시험이 아니라, <strong>같은 지원서 안에서 서로 다른 칸을 채우는 자료</strong>라는 점을 보여줍니다. SAT vs ACT 선택을 할 때는 <strong>이미 진행 중인 AP/IB/A Level 준비와는 별개</strong>로 생각해야 한다는 뜻입니다.
 
 ## 제가 본 두 학생 — 한 명은 SAT, 한 명은 ACT가 맞았던 경우
 
@@ -195,7 +195,7 @@ SAT와 ACT를 처음부터 동시에 장기간 공부하는 건 비효율적입�
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
-[^sat]: **SAT** — College Board가 운영하는 미국 대학 입시 표준화 시험. 2024년부터 Digital SAT로 전면 전환. Reading and Writing 800 + Math 800, 합계 1600점 만점. 1년 7–8회 응시 가능.
+[^sat]: **SAT** — College Board가 운영하는 미국 대학 입시 표준화 시험. 국제 2023년·미국 2024년 Digital SAT로 전환. Reading and Writing 800 + Math 800, 합계 1600점 만점. 미국 기준 1년 7회 응시 가능(국제 시험장은 더 적을 수 있음).
 
 [^act]: **ACT** — American College Testing이 운영하는 미국 대학 입시 표준화 시험. Composite 1–36점. 국제학생은 온라인 응시 방식만 가능.
 

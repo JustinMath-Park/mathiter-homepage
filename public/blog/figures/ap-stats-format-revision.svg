@@ -44,10 +44,10 @@
       <text x="500" y="280" text-anchor="end" font-size="12" opacity="0.65">(MC 디지털 + FRQ 종이)</text>
 
       <text x="40" y="320" opacity="0.65">Units</text>
-      <text x="500" y="320" text-anchor="end" font-weight="700">8 units</text>
+      <text x="500" y="320" text-anchor="end" font-weight="700">9 units</text>
 
       <text x="40" y="370" opacity="0.65">Framework</text>
-      <text x="500" y="370" text-anchor="end" font-weight="700">7 statistical practices</text>
+      <text x="500" y="370" text-anchor="end" font-weight="700">4 course skills</text>
 
       <text x="40" y="420" opacity="0.65">시험 시간</text>
       <text x="500" y="420" text-anchor="end" font-weight="700">3시간</text>

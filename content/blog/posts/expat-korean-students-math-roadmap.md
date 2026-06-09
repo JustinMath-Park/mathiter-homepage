@@ -115,7 +115,7 @@ IGCSE·IB·A-Level[^alevel] 트랙 학생은 위 SAT·AP 시점에 본인 학교
 
 [^sat]: **SAT** — College Board가 주관하는 미국 대학 입학 표준 시험. 수학(Math)과 영어(Reading & Writing) 두 섹션. 2023년부터 Digital SAT로 전환되었습니다.
 
-[^ap]: **AP** (Advanced Placement) — College Board가 주관하는 미국 대학 학점 인정 시험. 1–5점으로 채점되며 5점이 최고. AP Calculus·Statistics·Physics 등 30여 과목.
+[^ap]: **AP** (Advanced Placement) — College Board가 주관하는 미국 대학 학점 인정 시험. 1–5점으로 채점되며 5점이 최고. AP Calculus·Statistics·Physics 등 약 40개 과목.
 
 [^teukrye]: **재외국민 특례** — 한국 대학 입시의 특별전형. 부모 해외 근무로 동반 체류한 학생(3년 특례) 또는 초·중·고 전 교육과정을 해외에서 이수한 학생(12년 특례)이 지원 가능. 정원외 2% 이내 선발이 기본이며, 12년 특례·순수외국인은 인원 제한 없음.
 

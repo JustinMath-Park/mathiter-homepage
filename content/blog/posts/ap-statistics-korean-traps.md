@@ -54,7 +54,7 @@ College Board[^cb]가 공식 발표한 2025년 5월 AP Statistics 결과를 먼�
 
 수치만 보면 "60% 학생이 3점 이상 받는데 뭐가 어려운가?"라고 생각하실 수 있습니다. 그런데 같은 College Board가 발표한 다른 STEM AP[^ap]의 5점 비율을 옆에 두고 보시면 의미가 달라집니다.
 
-- AP Calculus BC 5점 비율: <strong>44.0%</strong>
+- AP Calculus BC 5점 비율: <strong>43.9%</strong>
 - AP Calculus AB 5점 비율: <strong>20.3%</strong>
 - AP Statistics 5점 비율: <strong>17.0%</strong>
 
@@ -71,12 +71,12 @@ T22 글에서 정리한 ACT Science 선택화처럼, AP Statistics도 2026-27 �
 | 객관식 MC[^mc] | 40문항 5지선다 | <strong>42문항 4지선다</strong> |
 | FRQ | 6문항 | <strong>4문항 (각 10점)</strong> |
 | Format | Hybrid (MC 디지털 + FRQ 종이) | <strong>All-digital Bluebook[^bluebook]</strong> |
-| Units | 8 units | <strong>5 units 통합</strong> |
-| Framework | 7 statistical practices | <strong>4 statistical practices</strong> |
+| Units | 9 units | <strong>5 units 통합</strong> |
+| Framework | 4 course skills | <strong>4 statistical practices</strong> |
 
-![AP Statistics 2025-26 vs 2026-27 format 비교 — MC 40→42, FRQ 6→4, hybrid→all-digital, 8→5 units, 7→4 statistical practices](/blog/figures/ap-stats-format-revision.svg)
+![AP Statistics 2025-26 vs 2026-27 format 비교 — MC 40→42, FRQ 6→4, hybrid→all-digital, 9→5 units, framework 재편](/blog/figures/ap-stats-format-revision.svg)
 
-개편 후 5 units은 다음과 같이 통합됩니다 — Unit 1 Collecting Data, Unit 2 정규분포·CLT, Unit 3 categorical inference·chi-square, Unit 4 mean inference, Unit 5 regression. 그리고 4 statistical practices framework은 <strong>Formulate Questions → Collect Data → Analyze Data → Interpret Results</strong>의 통계적 탐구 과정 전체 흐름이 핵심이 됩니다.
+개편 후에는 현재 9개 unit이 5개 묶음으로 통합되고(데이터 수집 · 분포·확률 · 범주형 추론 · 평균 추론 · 회귀의 큰 흐름), framework도 <strong>4개 statistical practice(Formulate Questions → Collect Data → Analyze Data → Interpret Results)</strong>의 통계적 탐구 과정 전체 흐름을 축으로 재편됩니다.
 
 삭제·축소된 topic도 분명하게 정리되어 있습니다 — geometric distribution, combining random variables, chi-square goodness-of-fit (standalone), formal inference for regression slope. 그동안 한국 학생들이 따로 외워야 했던 일부 분포·결합 공식 부담은 줄어듭니다.
 
@@ -195,7 +195,7 @@ Simulation의 핵심은 수식이 아니라 <strong>"분포 시각화 + 극단�
 
 AP Statistics를 G11에 응시하는 학생을 기준으로 한 해의 학습 일정을 정리해 보겠습니다. G12에 응시하는 학생은 같은 일정을 1년 미루어 적용하시면 됩니다.
 
-- <strong>G11 9월–12월</strong>: AP Statistics 8 units(2026-27부터는 새 5 units) 진도 학습. Probability·Random Variables·Sampling Distribution 핵심 개념을 정확히 잡는 시기입니다. 9월부터 영어 어휘 정리 시작 — 특히 sample distribution과 sampling distribution을 분리해 사용하는 습관을 만들어 두어야 봄에 inference로 진입할 때 흔들리지 않습니다.
+- <strong>G11 9월–12월</strong>: AP Statistics 9 units(2026-27부터는 새 5 units) 진도 학습. Probability·Random Variables·Sampling Distribution 핵심 개념을 정확히 잡는 시기입니다. 9월부터 영어 어휘 정리 시작 — 특히 sample distribution과 sampling distribution을 분리해 사용하는 습관을 만들어 두어야 봄에 inference로 진입할 때 흔들리지 않습니다.
 - <strong>G11 1월–2월</strong>: Inference 본격 시작. Confidence Interval과 Hypothesis Test의 4-step 절차를 템플릿화하고, 1-proportion·2-proportion·1-sample t·2-sample t·chi-square·linear regression 같은 6대 inference 영역을 같은 4-step 구조로 일관 적용합니다. 영어 justification 연습도 1월부터 시작합니다.
 - <strong>G11 3월</strong>: 5월 AP 시험 8–10주 전 mock 시작. FRQ 영어 작성에 집중하는 시기입니다. 5점 답안의 rubric keyword를 정리해 두고 일관 사용 훈련. SAT 봄 시즌과 겹치면 우선순위 조정이 필요합니다.
 - <strong>G11 4월</strong>: 5월 시험 4–5주 전. 5가지 함정을 모두 점검하는 마지막 시기입니다. 특히 simulation과 randomization test는 따로 1–2주 훈련합니다. AP mock exam을 풀어 보고 어떤 함정에서 점수를 놓치는지 마지막 진단.

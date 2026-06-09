@@ -84,7 +84,7 @@ IB가 "추가 시험"이 아니라 별개의 시스템이라는 점을 이해하
 
 그래서 SAT는 어느 트리에서든 추가할 수 있습니다. 미국 트랙 학생은 SAT + AP를 함께 준비하고, <strong>IB 트랙 학생도 미국 대학에 가려면 SAT + IB DP를 함께 준비</strong>합니다. 영국 트랙 학생이 미국 대학도 함께 지원하려면 SAT + A-Level을 병행하기도 합니다.
 
-한 가지 최근 변화를 짚어 두겠습니다. 과거에는 미국 상위권 대학 다수가 test-optional이라 IB 디플로마만으로도 지원이 가능했습니다. 그런데 <strong>2025년부터 MIT·Harvard·Caltech 등이 test-optional을 종료하고 SAT/ACT를 다시 요구</strong>하기 시작했습니다. 즉 IB 학생이 미국 상위권을 노린다면 SAT는 사실상 함께 준비해야 합니다. 다만 Yale처럼 IB 시험 점수로 SAT/ACT를 대체할 수 있는 test-flexible 정책을 둔 학교도 있으니, <strong>목표 대학의 현재 정책은 지원 시점에 반드시 공식 입학 페이지에서 확인</strong>하셔야 합니다.
+한 가지 최근 변화를 짚어 두겠습니다. 과거에는 미국 상위권 대학 다수가 test-optional이라 IB 디플로마만으로도 지원이 가능했습니다. 그런데 <strong>MIT(2022년)를 시작으로 Harvard·Caltech·Yale 등 미국 상위권이 test-optional을 종료하고 SAT/ACT를 다시 요구</strong>하고 있습니다. 특히 Yale은 2024년 한때 AP·IB 점수로도 대체할 수 있는 test-flexible 정책을 뒀다가, 2026년 5월 이를 폐지하고 SAT 또는 ACT 제출을 의무화했습니다. 즉 IB 학생이 미국 상위권을 노린다면 SAT는 사실상 함께 준비해야 합니다. <strong>목표 대학의 현재 정책은 지원 시점에 반드시 공식 입학 페이지에서 확인</strong>하셔야 합니다.
 
 ## 조합 가능·불가능 — 한눈에 정리
 
@@ -149,7 +149,7 @@ IB가 "추가 시험"이 아니라 별개의 시스템이라는 점을 이해하
 
 [^dp]: **IB DP** (Diploma Programme) — IB의 고등 단계 2년 과정. 만 16–19세 대상. 6과목(3 HL + 3 SL) + Core(TOK·EE·CAS). 만점 45점, 디플로마 취득 최소 24점. 미국·영국 양쪽 모두 인정.
 
-[^cp]: **CP** (Career-related Programme) — IB의 직업 연계형 고등 프로그램. 만 16–19세 대상. 2014년 도입. DP 과목 일부 + 직업 학습 + Core를 결합.
+[^cp]: **CP** (Career-related Programme) — IB의 직업 연계형 고등 프로그램. 만 16–19세 대상. 2012년 IBCC로 시작해 2014년 현재 명칭(CP)으로 정착. DP 과목 일부 + 직업 학습 + Core를 결합.
 
 [^cascore]: **TOK·EE·CAS** — IB DP의 Core 세 요소. TOK(Theory of Knowledge, 지식론)와 EE(Extended Essay, 소논문)는 합쳐 최대 3점 보너스. CAS(Creativity·Activity·Service)는 점수가 매겨지지 않는 필수 활동 요건.
 
@@ -157,6 +157,6 @@ IB가 "추가 시험"이 아니라 별개의 시스템이라는 점을 이해하
 
 [^alevel]: **A-Level** (Advanced Level) — 영국 대학 입시의 핵심. Y12–Y13 2년에 걸쳐 보통 3–4과목을 깊게 공부하고 마지막에 외부 시험. 등급은 A\*–E.
 
-[^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국식 중등 마지막 단계(Y10–Y11, 만 14–16세) 외부 시험 자격. Cambridge International과 Pearson Edexcel 두 보드가 주관.
+[^igcse]: **IGCSE** (International General Certificate of Secondary Education) — 영국식 중등 마지막 단계(Y10–Y11, 만 14–16세) 외부 시험 자격. Cambridge International·Pearson Edexcel 등이 주관.
 
 [^sat]: **SAT** — College Board의 미국 대학 입시 표준화 시험. 커리큘럼이 아니라 입학 시험으로, 어느 트리에든 추가로 응시 가능. 2024년부터 Digital SAT, R&W 800 + Math 800 합계 1600점.

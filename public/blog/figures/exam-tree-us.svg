@@ -81,7 +81,7 @@
         <text x="0" y="20" font-size="14" fill="#0b2a57" font-weight="600">Calc BC</text>
         <rect x="120" y="6" width="440" height="20" rx="4" fill="#e2e8f0" />
         <rect x="120" y="6" width="194" height="20" rx="4" fill="#10b981" />
-        <text x="570" y="20" font-size="13" font-weight="700" fill="#0b2a57">44.0%</text>
+        <text x="570" y="20" font-size="13" font-weight="700" fill="#0b2a57">43.9%</text>
       </g>
       <g transform="translate(0, 56)">
         <text x="0" y="20" font-size="14" fill="#0b2a57" font-weight="600">Precalc</text>

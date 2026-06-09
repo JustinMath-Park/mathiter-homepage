@@ -39,16 +39,16 @@ A-Level 수학 상담에서 가장 자주 듣는 말입니다. 그리고 8년간
 
 ## A-Level 수학 구조 — Pure가 backbone, 거기에 응용을 얹는다
 
-먼저 구조를 빠르게 정리하겠습니다. Cambridge 9709[^9709] 수학은 <strong>7개 유닛</strong>으로 구성되고, <strong>AS Level은 2유닛, 풀 A-Level은 4유닛</strong>을 봅니다. 가장 흔한 풀 A-Level 조합은 Pure 2개 + 응용 2개입니다.
+먼저 구조를 빠르게 정리하겠습니다. Cambridge 9709[^9709] 수학은 <strong>6개 component(시험지)</strong>로 구성되고, <strong>AS Level은 2개, 풀 A-Level은 4개</strong>를 봅니다. 가장 흔한 풀 A-Level 조합은 Pure 2개 + 응용 2개입니다.
 
 | 영역 | 유닛 | 대표 단원 |
 |---|---|---|
 | **Pure (순수)** | P1 | 이차식 · 함수 · 좌표기하 · 호도법 · 삼각함수 · 수열 · 미분 · 적분 |
 | **Pure (순수)** | P3 | 대수 · 로그·지수함수 · 삼각 · 미적분 · 수치해법 · 벡터 · 미분방정식 · 복소수 |
-| **Mechanics (역학)** | M1 | 운동학(kinematics) · 뉴턴 운동법칙 · 힘 · 일·에너지·일률 · 운동량 |
-| **Statistics (통계)** | S1 | 자료 표현 · 순열·조합 · 확률 · 이산확률변수 · 정규분포 |
+| **Mechanics (역학)** | Mechanics (Paper 4) | 운동학(kinematics) · 뉴턴 운동법칙 · 힘 · 일·에너지·일률 · 운동량 |
+| **Probability & Statistics (확률·통계)** | P&S1 (Paper 5) | 자료 표현 · 순열·조합 · 확률 · 이산확률변수 · 정규분포 |
 
-핵심은 <strong>Pure Mathematics가 backbone</strong>이라는 점입니다. 순수수학(대수·함수·미적분·삼각·벡터)이 단단해야 Mechanics·Statistics 응용도 올라갑니다. 그래서 A-Level 수학 준비는 거의 항상 <strong>P1·P3를 먼저 탄탄히 잡고, 그 위에 학교가 정한 응용 유닛(M1·S1 등)을 얹는</strong> 순서로 진행합니다. (Edexcel International 수학은 Pure를 P1–P4로 더 잘게 나누지만, "순수가 중심 + 응용을 선택"이라는 큰 틀은 같습니다.)
+핵심은 <strong>Pure Mathematics가 backbone</strong>이라는 점입니다. 순수수학(대수·함수·미적분·삼각·벡터)이 단단해야 Mechanics·Statistics 응용도 올라갑니다. 그래서 A-Level 수학 준비는 거의 항상 <strong>P1·P3를 먼저 탄탄히 잡고, 그 위에 학교가 정한 응용 component(Mechanics·P&S1 등)을 얹는</strong> 순서로 진행합니다. (Edexcel International 수학은 Pure를 P1–P4로 더 잘게 나누지만, "순수가 중심 + 응용을 선택"이라는 큰 틀은 같습니다.)
 
 ## A\* 기준 — 전체 약 80%, "개별 시험 하나"가 아니다
 
@@ -89,7 +89,7 @@ A-Level 수학을 이야기할 때 빠지지 않는 것이 <strong>Further Mathe
 | **Further Mechanics** | 일반 Mechanics를 넘어선 역학 |
 | **Further Probability & Statistics** | 일반 통계를 넘어선 확률·통계 |
 
-Cambridge는 Further Mathematics가 <strong>일반 9709 수학(P1·P3)의 내용을 이미 안다고 가정</strong>합니다. 즉 일반 수학 위에 얹는 한 단계 위의 과목입니다. <strong>공학·수학·물리 등 STEM 최상위(특히 Cambridge·Imperial)를 노린다면 Further Mathematics가 사실상 필요</strong>한 경우가 많습니다. 다만 부담이 큰 별도 과목이라, <strong>Year 12 시작 시점에 라인업에 넣을지 일찍 결정</strong>해야 합니다. 중간에 추가하기는 어렵습니다. 반대로 의대(Chemistry·Biology 중심)나 비STEM 전공은 Further Math가 필수가 아니니, 목표 전공 기준으로 판단하면 됩니다.
+Cambridge는 Further Mathematics가 <strong>일반 9709 수학 전체 내용을 이미 안다고 가정</strong>합니다. 즉 일반 수학 위에 얹는 한 단계 위의 과목입니다. <strong>공학·수학·물리 등 STEM 최상위(특히 Cambridge·Imperial)를 노린다면 Further Mathematics가 사실상 필요</strong>한 경우가 많습니다. 다만 부담이 큰 별도 과목이라, <strong>Year 12 시작 시점에 라인업에 넣을지 일찍 결정</strong>해야 합니다. 중간에 추가하기는 어렵습니다. 반대로 의대(Chemistry·Biology 중심)나 비STEM 전공은 Further Math가 필수가 아니니, 목표 전공 기준으로 판단하면 됩니다.
 
 ![Further Mathematics를 포함한 A-Level 수학 라인업을 1:1로 설계하는 모습](/blog/photos/a-level-math-a-star-strategy-2.png)
 
@@ -111,8 +111,8 @@ Cambridge는 Further Mathematics가 <strong>일반 9709 수학(P1·P3)의 내용
 >
 > *영업시간 1시간 이내 회신 · 1회 시범 수업 후 결정*
 
-[^9709]: **Cambridge 9709** — Cambridge International AS & A Level Mathematics. 7개 유닛(Pure P1·P2·P3 / Mechanics M1·M2 / Probability & Statistics S1·S2). AS는 2유닛, 풀 A-Level은 4유닛. A\*는 개별 유닛이 아닌 선택 조합 전체 점수로 부여되며, 경계선은 세션·조합별로 변동(대체로 전체 약 80% 안팎).
+[^9709]: **Cambridge 9709** — Cambridge International AS & A Level Mathematics. 6개 component(Pure P1·P2·P3 / Mechanics(Paper 4) / Probability & Statistics P&S1·P&S2). AS는 2개, 풀 A-Level은 4개. A\*는 개별 유닛이 아닌 선택 조합 전체 점수로 부여되며, 경계선은 세션·조합별로 변동(대체로 전체 약 80% 안팎).
 
 [^methodmark]: **Method mark** — 풀이 과정에 주어지는 점수. 최종 답이 맞아도 과정이 없으면 깎이고, 답이 틀려도 과정이 맞으면 부분 점수가 들어온다. A-Level·IGCSE 채점의 핵심.
 
-[^furthermath]: **Further Mathematics** (Cambridge 9231) — 일반 Mathematics와 별개인 독립 A-Level 수학 과목. Further Pure 1·2 + Further Mechanics + Further Probability & Statistics로 구성. 일반 9709(P1·P3)의 내용을 안다고 가정하며, 공학·수학·물리 등 STEM 최상위 대학(특히 Cambridge·Imperial)에서 요구·선호하는 경우가 많다.
+[^furthermath]: **Further Mathematics** (Cambridge 9231) — 일반 Mathematics와 별개인 독립 A-Level 수학 과목. Further Pure 1·2 + Further Mechanics + Further Probability & Statistics로 구성. 일반 9709 전체 내용을 안다고 가정하며, 공학·수학·물리 등 STEM 최상위 대학(특히 Cambridge·Imperial)에서 요구·선호하는 경우가 많다.

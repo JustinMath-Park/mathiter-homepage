@@ -60,9 +60,9 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 미국 대학을 목표로 한다면 핵심은 <strong>SAT 1개 + AP 여러 개</strong>의 조합입니다.
 
-<strong>Digital SAT (2026 기준)</strong>은 Reading & Writing 800점 + Math 800점, 합계 1600점 만점입니다. 시험 시간은 2시간 14분, 적응형 (1번째 모듈 성적에 따라 2번째 모듈 난이도가 결정) 구조이고, 1년에 7–8회 응시 가능합니다. 보통 <strong>G11 봄 + G12 가을</strong>의 2회 응시로 가장 좋은 점수를 조합(super-scoring)하는 패턴이 일반적입니다.
+<strong>Digital SAT (2026 기준)</strong>은 Reading & Writing 800점 + Math 800점, 합계 1600점 만점입니다. 시험 시간은 2시간 14분, 적응형 (1번째 모듈 성적에 따라 2번째 모듈 난이도가 결정) 구조이고, 미국 기준 1년 7회 응시 가능합니다(국제 시험장은 더 적을 수 있음). 보통 <strong>G11 봄 + G12 가을</strong>의 2회 응시로 가장 좋은 점수를 조합(super-scoring)하는 패턴이 일반적입니다.
 
-<strong>AP (Advanced Placement)</strong>는 1–5점 척도로, 매년 5월 첫 2주에 시험이 몰려 있습니다. 수학 관련 과목은 AP Calculus AB, BC, Statistics, Precalculus 4종입니다. 2025년 College Board 공식 발표 기준 AP Calculus BC의 5점 비율은 44.0% (전체 합격률 78.6%), AP Calculus AB의 5점 비율은 20.3% (합격률 64.2%), AP Statistics 5점 비율은 17.0%였습니다. 즉 BC가 "어렵지만 5점 받기 쉬운" 과목, AB가 "쉬워 보이지만 5점이 어려운" 과목입니다.
+<strong>AP (Advanced Placement)</strong>는 1–5점 척도로, 매년 5월 첫 2주에 시험이 몰려 있습니다. 수학 관련 과목은 AP Calculus AB, BC, Statistics, Precalculus 4종입니다. 2025년 College Board 공식 발표 기준 AP Calculus BC의 5점 비율은 43.9% (전체 합격률 78.6%), AP Calculus AB의 5점 비율은 20.3% (합격률 64.2%), AP Statistics 5점 비율은 17.0%였습니다. 즉 BC가 "어렵지만 5점 받기 쉬운" 과목, AB가 "쉬워 보이지만 5점이 어려운" 과목입니다.
 
 미국 Top 대학의 합격자 SAT 분포(24-25 cycle, Class 2028-2029 기준)는 다음과 같습니다.
 
@@ -73,7 +73,7 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 - Stanford: 1500–1560 (Math 770–800)
 - Caltech: 1530–1580 (Math 평균 795)
 
-주목할 부분은 <strong>MIT·Caltech 같은 STEM Top은 합격자의 25% 이상이 SAT Math 800 만점</strong>이라는 점입니다. 그리고 25-26 cycle부터 HYPSM(Harvard·Yale·Princeton·Stanford·MIT), UPenn, Brown 등이 SAT를 다시 필수화했습니다. "테스트 옵셔널"이라는 단어에 안심하면 안 되는 시점입니다.
+주목할 부분은 <strong>MIT·Caltech 같은 STEM Top은 합격자의 25% 이상이 SAT Math 800 만점</strong>이라는 점입니다. 그리고 25–26 cycle부터 Harvard·Yale·Stanford·MIT·UPenn·Brown 등이 SAT를 다시 필수화했습니다(Princeton은 2025–26까지 test-optional 유지). "테스트 옵셔널"이라는 단어에 안심하면 안 되는 시점입니다.
 
 ![US 트리 — SAT + AP 시험 흐름](/blog/figures/exam-tree-us.svg)
 
@@ -83,12 +83,12 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 <strong>IGCSE</strong>는 Year 10–11 (G9–G10)에 응시하는 시험으로, Cambridge 보드는 A\*–G 8단계 + U, Edexcel International 보드는 9–1 9단계 + U로 등급을 매깁니다. (Edexcel 9가 Cambridge A\*보다 한 단계 더 높습니다.) 두 시스템 모두 영국 대학에서 동등하게 인정합니다. IGCSE는 그 자체로는 대학 입시에 결정적이지 않지만, A-Level 과목 선택의 게이트키퍼 역할을 합니다.
 
-<strong>A-Level</strong>은 Year 12–13 (G11–G12)에 응시하며, 등급은 A\*, A, B, C, D, E의 7단계입니다. 보통 3–4과목을 선택하고, STEM 지망생은 Math + Further Math를 포함한 4과목이 표준입니다. 보드는 Cambridge International (CAIE[^caie]), Pearson Edexcel[^edexcel] International, AQA, OCR. 가장 큰 함정은 <strong>International A-Level의 경우 10–11월이나 1월 시험 세션도 존재하지만, 학교 커리큘럼상 보통 5–6월 메인 시험 한 번에 승부를 걸어야 하는 구조</strong>라 부담이 크다는 점입니다. SAT처럼 "7번 보고 가장 좋은 점수"를 만드는 게 사실상 어렵습니다.
+<strong>A-Level</strong>은 Year 12–13 (G11–G12)에 응시하며, 등급은 A\*, A, B, C, D, E의 6단계입니다(그 아래 U는 불합격). 보통 3–4과목을 선택하고, STEM 지망생은 Math + Further Math를 포함한 4과목이 표준입니다. 보드는 Cambridge International (CAIE[^caie]), Pearson Edexcel[^edexcel] International, AQA, OCR. 가장 큰 함정은 <strong>International A-Level의 경우 10–11월이나 1월 시험 세션도 존재하지만, 학교 커리큘럼상 보통 5–6월 메인 시험 한 번에 승부를 걸어야 하는 구조</strong>라 부담이 크다는 점입니다. SAT처럼 "7번 보고 가장 좋은 점수"를 만드는 게 사실상 어렵습니다.
 
 영국 G5 + Top 대학 2026 entry 요구 점수는 다음과 같습니다.
 
 - <strong>Oxford</strong>: A\*A\*A + 추가 시험 (MAT/TSA/PAT 등 학과별)
-- <strong>Cambridge</strong>: A\*A\*A + STEP[^step] (수학) 또는 ESAT/TMUA. 수학과는 Further Math 거의 필수 (합격자 96%)
+- <strong>Cambridge</strong>: A\*A\*A + STEP[^step] (수학) 또는 ESAT/TMUA. 수학과는 Further Math 거의 필수 (합격자 대부분)
 - <strong>Imperial</strong>: A\*A\*A 또는 A\*A\*AA. STEM은 Math + Further Math 필수
 - <strong>LSE</strong>: AAA – A\*AA. <strong>SAT 단독으로는 인정하지 않음</strong>
 - <strong>UCL</strong>: A\*A\*A – ABB (코스별)
@@ -122,7 +122,7 @@ IB[^ib]는 미국과 영국 양쪽이 모두 인정하는 디플로마입니다.
 
 <strong>Q2. A-Level만으로 미국 Top 갈 수 있나요?</strong>
 
-원칙적으로 가능하지만 SAT 별도 응시가 사실상 권장됩니다. 25-26 cycle부터 HYPSM·UPenn·Brown 등이 SAT 필수화했기 때문에 A-Level 학생도 SAT를 응시하는 가정이 늘었습니다.
+원칙적으로 가능하지만 SAT 별도 응시가 사실상 권장됩니다. 25–26 cycle부터 Harvard·Yale·Stanford·MIT·UPenn·Brown 등이 SAT 필수화했기 때문에 A-Level 학생도 SAT를 응시하는 가정이 늘었습니다.
 
 <strong>Q3. IB + SAT 둘 다 봐야 하나요?</strong>
 

@@ -41,14 +41,14 @@
   <g transform="translate(280, 580)">
     <rect width="480" height="180" rx="24" fill="url(#appliedM)" opacity="0.94" />
     <text x="240" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Mechanics (역학)</text>
-    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">M1 · M2</text>
+    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">Paper 4 (단일)</text>
     <text x="240" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">운동 · 힘 · 운동량</text>
   </g>
 
   <g transform="translate(840, 580)">
     <rect width="480" height="180" rx="24" fill="url(#appliedS)" opacity="0.94" />
     <text x="240" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Statistics (통계)</text>
-    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">S1 · S2</text>
+    <text x="240" y="110" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">P&amp;S1 · P&amp;S2</text>
     <text x="240" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">확률 · 분포 · 검정</text>
   </g>
 
