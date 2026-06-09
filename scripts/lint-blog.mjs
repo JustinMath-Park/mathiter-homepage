@@ -165,9 +165,9 @@ const frontmatterChecks = [
     },
   },
   {
-    name: "Unknown category (must be one of sat/ap/ib/igcse/school-life/moving/general)",
+    name: "Unknown category (must be one of sat/ap/ib/igcse/alevel/school-life/moving/general)",
     severity: "warn",
-    test: (fm) => fm.category && !["sat", "ap", "ib", "igcse", "school-life", "moving", "general"].includes(fm.category),
+    test: (fm) => fm.category && !["sat", "ap", "ib", "igcse", "alevel", "school-life", "moving", "general"].includes(fm.category),
     hint: "Use one of the canonical categories.",
     detail: (fm) => `current: "${fm.category}"`,
   },

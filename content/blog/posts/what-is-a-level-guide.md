@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   말레이시아·싱가포르로 이주하면 자녀가 A-Level을 봅니다. A-Level이 뭐고 과목은 어떻게 고르고 어떻게 준비하는지 — 보드부터 수학·등급까지 정리했습니다.
 heroImage: /blog/heroes/what-is-a-level-guide.svg
-category: school-life
+category: alevel
 tags:
   - A-Level이란
   - A-Level 준비

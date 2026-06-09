@@ -5,6 +5,7 @@ export type BlogCategory =
   | "ap"
   | "ib"
   | "igcse"
+  | "alevel"
   | "school-life"
   | "moving"
   | "general";

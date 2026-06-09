@@ -238,6 +238,7 @@ function BlogEditInner({ slug }: { slug: string }) {
                   <option value="ap">AP</option>
                   <option value="ib">IB</option>
                   <option value="igcse">IGCSE</option>
+                  <option value="alevel">A-Level</option>
                   <option value="school-life">school-life</option>
                   <option value="moving">moving (이주 준비)</option>
                   <option value="general">general</option>

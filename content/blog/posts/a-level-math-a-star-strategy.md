@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   계산은 강한데 A-Level 수학만 A*가 안 나오는 자녀를 위해. Pure backbone·Mechanics 영어 해석·method marks까지 한국 학생이 막히는 곳과 A* 전략을 정리했습니다.
 heroImage: /blog/heroes/a-level-math-a-star-strategy.svg
-category: school-life
+category: alevel
 tags:
   - A-Level 수학
   - A-Level Mathematics

@@ -9,7 +9,7 @@ description: >-
 excerpt: >-
   한국 귀국과 미국 대학, 두 길을 동시에 보고 계신가요. 8년째 해외 국제학교에서 두 아이를 키운 부모의 시선으로 결정 순서를 정리했습니다.
 heroImage: /blog/heroes/expat-korean-students-math-roadmap.svg
-category: general
+category: moving
 tags:
   - 주재원 자녀
   - 해외 거주

@@ -10,7 +10,7 @@ excerpt: >-
   한국 수학과 미국 수학은 '같은 수학의 다른 표기'가 아닙니다. 양쪽을 다 본 사람의 시각으로 다섯 가지 결정적 차이와, 두 시스템을 다
   잘하는 학생들의 공통점을 풀어 봅니다.
 heroImage: /blog/heroes/korea-vs-us-math-daechi-perspective.svg
-category: school-life
+category: general
 tags:
   - 한국 수학
   - 미국 수학

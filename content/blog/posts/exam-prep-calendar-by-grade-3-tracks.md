@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   옆집 아이는 G11 5월 AP가 결정적, 우리 아이는 Y13 5월 A Level이 최종 — 같은 16세라도 트랙별로 시험 일정이 완전히 다릅니다. 학년별 캘린더를 정리했습니다.
 heroImage: /blog/heroes/exam-prep-calendar-by-grade-3-tracks.svg
-category: school-life
+category: general
 tags:
   - 국제학교 시험
   - 학년별 시험 캘린더

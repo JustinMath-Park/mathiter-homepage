@@ -42,6 +42,7 @@ const CATEGORY_LABEL: Record<string, { ko: string; en: string }> = {
   ap: { ko: "AP", en: "AP" },
   ib: { ko: "IB", en: "IB" },
   igcse: { ko: "IGCSE", en: "IGCSE" },
+  alevel: { ko: "A-Level", en: "A-Level" },
   "school-life": { ko: "학교생활", en: "School Life" },
   moving: { ko: "이주 준비", en: "Moving Abroad" },
   general: { ko: "일반", en: "General" },

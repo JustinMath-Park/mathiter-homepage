@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   G11 5월에 AP 5과목 + 학교 final + SAT까지 — 한 달 안에 어떻게 다 합니까. 8년간 본 G11 9개월 master schedule을 월별로 정리했습니다.
 heroImage: /blog/heroes/g11-12-month-master-schedule.svg
-category: school-life
+category: general
 tags:
   - G11 SAT AP 동시 준비
   - 11학년 수학 일정

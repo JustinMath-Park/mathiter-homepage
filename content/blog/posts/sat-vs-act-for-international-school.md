@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   옆집 아이는 ACT로 바꿨다는데, 우리는 SAT를 계속 가야 할까요. 2026 ACT 개편을 반영해 우리 아이에게 더 맞는 시험을 정리합니다.
 heroImage: /blog/heroes/sat-vs-act-for-international-school.svg
-category: school-life
+category: sat
 tags:
   - SAT vs ACT
   - ACT Science 선택

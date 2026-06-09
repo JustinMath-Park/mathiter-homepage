@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   SAT·AP 하면서 IB도 추가로 해야 하나요? IB는 추가 시험이 아니라 미국·영국과 평행한 제3의 트리입니다. 초등 학부모를 위해 세 트리의 관계를 정리했습니다.
 heroImage: /blog/heroes/what-is-ib-third-track-guide.svg
-category: school-life
+category: ib
 tags:
   - IB가 뭐예요
   - IB vs AP

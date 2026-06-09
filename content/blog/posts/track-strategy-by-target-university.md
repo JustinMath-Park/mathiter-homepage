@@ -8,7 +8,7 @@ description: >-
 excerpt: >-
   "최고의 트리"는 없습니다. 타겟 지역 확실성의 함수일 뿐입니다. 더 많은 대학을 열려면, 상위권을 노리려면, 우리 아이에게 맞추려면 어느 트리인지 전략으로 정리했습니다.
 heroImage: /blog/heroes/track-strategy-by-target-university.svg
-category: school-life
+category: general
 tags:
   - 국제학교 트랙 전략
   - IB vs AP vs A-Level
