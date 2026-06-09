@@ -41,6 +41,8 @@ export interface BlogPost {
   showOnHome?: boolean;
   readingTime?: number;
   viewCount?: number;
+  likeCount?: number;
+  commentCount?: number;
   ogImage?: string;
   canonicalSlug?: string;
 }

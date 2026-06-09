@@ -8,6 +8,8 @@ import AuthorCard from "@/components/blog/AuthorCard";
 import CTABox from "@/components/blog/CTABox";
 import RelatedPosts from "@/components/blog/RelatedPosts";
 import BlogViewTracker from "@/components/blog/BlogViewTracker";
+import BlogReactions from "@/components/blog/BlogReactions";
+import BlogComments from "@/components/blog/BlogComments";
 import {
   getAllSlugs,
   getPostBySlug,
@@ -237,6 +239,14 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Body */}
           <PostBody content={post.content} />
 
+          {/* Reactions — live view count + anonymous like */}
+          <BlogReactions
+            slug={post.slug}
+            initialViewCount={post.viewCount ?? 0}
+            initialLikeCount={post.likeCount ?? 0}
+            locale={blogLocale}
+          />
+
           {/* CTA */}
           <CTABox
             locale={blogLocale}
@@ -256,6 +266,9 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Related */}
           <RelatedPosts posts={related} locale={blogLocale} />
+
+          {/* Comments — Mathiter login required to post */}
+          <BlogComments slug={post.slug} locale={blogLocale} />
         </div>
       </main>
       <Footer />

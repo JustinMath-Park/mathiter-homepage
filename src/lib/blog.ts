@@ -63,6 +63,8 @@ function normalizePost(id: string, data: Record<string, unknown>): BlogPost {
     showOnHome: post.showOnHome ?? false,
     readingTime: post.readingTime,
     viewCount: post.viewCount,
+    likeCount: post.likeCount,
+    commentCount: post.commentCount,
     ogImage: post.ogImage,
     canonicalSlug: post.canonicalSlug ?? post.slug,
   };

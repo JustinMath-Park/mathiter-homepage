@@ -445,5 +445,29 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // ============================================
+    // Blog Likes (좋아요 dedup 기록 — 익명)
+    // dedup id = "{slug}__{ipHash12}"
+    // Server-only write via Admin SDK (POST /api/blog/like). 클라이언트 직접 X.
+    // sspark222@gmail.com만 read (analytics용).
+    // ============================================
+    match /blogLikes/{id} {
+      allow read: if request.auth != null
+        && request.auth.token.email in [
+          'sspark222@gmail.com'
+        ];
+      allow write: if false;
+    }
+
+    // ============================================
+    // Blog Comments (블로그 댓글 — Mathiter 로그인 필요)
+    // 공개 read (목록 표시). Server-only write via Admin SDK
+    // (POST/DELETE /api/blog/comments, ID 토큰 검증). 클라이언트 직접 write X.
+    // ============================================
+    match /blogComments/{id} {
+      allow read: if true;
+      allow write: if false;
+    }
+
   }
 }
