@@ -39,6 +39,10 @@ export interface BlogPost {
   relatedPostIds?: string[];
   showOnTutoring?: boolean;
   showOnHome?: boolean;
+  /** Manual curation order for the public /blog list. Lower = higher.
+   *  Firestore-only (not in .md frontmatter) so reseed (merge) preserves it.
+   *  Posts without sortOrder fall back to publishedAt (newest first). */
+  sortOrder?: number;
   readingTime?: number;
   viewCount?: number;
   likeCount?: number;

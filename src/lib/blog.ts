@@ -9,6 +9,18 @@ import type {
 
 const COLLECTION = "blogPosts";
 
+/**
+ * Public /blog ordering = manual curation first, then newest.
+ * Posts with a numeric sortOrder come first (ascending, lower = higher);
+ * posts without one fall back to publishedAt (newest first).
+ */
+function byCuration(a: BlogPost, b: BlogPost): number {
+  const ao = typeof a.sortOrder === "number" ? a.sortOrder : Number.POSITIVE_INFINITY;
+  const bo = typeof b.sortOrder === "number" ? b.sortOrder : Number.POSITIVE_INFINITY;
+  if (ao !== bo) return ao - bo;
+  return b.publishedAt.localeCompare(a.publishedAt);
+}
+
 function toSummary(post: BlogPost): BlogPostSummary {
   return {
     id: post.id,
@@ -61,6 +73,7 @@ function normalizePost(id: string, data: Record<string, unknown>): BlogPost {
     relatedPostIds: post.relatedPostIds ?? [],
     showOnTutoring: post.showOnTutoring ?? false,
     showOnHome: post.showOnHome ?? false,
+    sortOrder: typeof post.sortOrder === "number" ? post.sortOrder : undefined,
     readingTime: post.readingTime,
     viewCount: post.viewCount,
     likeCount: post.likeCount,
@@ -97,7 +110,7 @@ export async function getAllPublishedPosts(
     const all = await fetchAllPosts();
     return all
       .filter((p) => p.locale === locale && p.status === "published")
-      .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+      .sort(byCuration)
       .map(toSummary);
   } catch (err) {
     console.error("[blog] getAllPublishedPosts failed, using mock:", err);
