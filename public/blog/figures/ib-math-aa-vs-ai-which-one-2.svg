@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)" />
+
+  <text x="800" y="84" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" fill="#ffffff">전공으로 고르는 4분면</text>
+  <text x="800" y="128" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#93c5fd">가로 = 과목(AA·AI) · 세로 = 레벨(HL·SL)</text>
+
+  <!-- quadrants -->
+  <!-- AA HL (top-left) -->
+  <g transform="translate(150, 180)">
+    <rect width="620" height="270" rx="22" fill="#0f766e" opacity="0.92" />
+    <text x="40" y="70" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">AA · HL</text>
+    <text x="40" y="135" font-family="-apple-system, sans-serif" font-size="34" font-weight="700" fill="#99f6e4">STEM · 의대</text>
+    <text x="40" y="190" font-family="-apple-system, sans-serif" font-size="27" fill="#ffffff" opacity="0.9">공학 · 물리 · 수학 · 전산</text>
+    <text x="40" y="232" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.7">대학 1학년부터 미적분·증명 전제</text>
+  </g>
+  <!-- AI HL (top-right) -->
+  <g transform="translate(830, 180)">
+    <rect width="620" height="270" rx="22" fill="#b45309" opacity="0.92" />
+    <text x="40" y="70" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">AI · HL</text>
+    <text x="40" y="135" font-family="-apple-system, sans-serif" font-size="34" font-weight="700" fill="#fed7aa">데이터 · 통계 중심</text>
+    <text x="40" y="190" font-family="-apple-system, sans-serif" font-size="27" fill="#ffffff" opacity="0.9">데이터사이언스 · 일부 경제</text>
+    <text x="40" y="232" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.7">인정 학과 점점 확대 중</text>
+  </g>
+  <!-- AA SL (bottom-left) -->
+  <g transform="translate(150, 470)">
+    <rect width="620" height="250" rx="22" fill="#155e63" opacity="0.85" />
+    <text x="40" y="65" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">AA · SL</text>
+    <text x="40" y="125" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#99f6e4">정량 비중 보통</text>
+    <text x="40" y="178" font-family="-apple-system, sans-serif" font-size="26" fill="#ffffff" opacity="0.85">경영 · 사회과학(수학 일부)</text>
+  </g>
+  <!-- AI SL (bottom-right) -->
+  <g transform="translate(830, 470)">
+    <rect width="620" height="250" rx="22" fill="#92400e" opacity="0.85" />
+    <text x="40" y="65" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">AI · SL</text>
+    <text x="40" y="125" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#fed7aa">수학 비중 낮음</text>
+    <text x="40" y="178" font-family="-apple-system, sans-serif" font-size="26" fill="#ffffff" opacity="0.85">디자인 · 인문 · 예술</text>
+  </g>
+
+  <text x="800" y="800" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#fde68a">★ 레벨(HL·SL)은 마지막에 — 전공이 수학을 많이 쓰면 HL</text>
+  <text x="800" y="850" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.7">대학·학과마다 다르니 목표 학과 공식 요강을 반드시 확인</text>
+</svg>
