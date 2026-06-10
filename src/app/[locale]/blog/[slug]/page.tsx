@@ -10,6 +10,7 @@ import RelatedPosts from "@/components/blog/RelatedPosts";
 import BlogViewTracker from "@/components/blog/BlogViewTracker";
 import BlogReactions from "@/components/blog/BlogReactions";
 import BlogComments from "@/components/blog/BlogComments";
+import AdminBlogLink from "@/components/blog/AdminBlogLink";
 import {
   getAllSlugs,
   getPostBySlug,
@@ -281,6 +282,7 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <BlogViewTracker slug={post.slug} />
+      <AdminBlogLink />
     </>
   );
 }

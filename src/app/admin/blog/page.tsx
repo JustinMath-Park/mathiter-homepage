@@ -278,6 +278,12 @@ function BlogListInner() {
             <h1 className="font-bold">블로그 관리</h1>
           </div>
           <div className="flex items-center gap-4">
+            <a
+              href="/ko/blog"
+              className="text-xs font-semibold text-primary hover:underline"
+            >
+              ← 블로그 사이트
+            </a>
             <span className="text-xs text-muted">{user?.email}</span>
             <button
               onClick={handleSignOut}

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogList from "@/components/blog/BlogList";
 import CTABox from "@/components/blog/CTABox";
+import AdminBlogLink from "@/components/blog/AdminBlogLink";
 import { getAllPublishedPosts } from "@/lib/blog";
 import type { BlogLocale } from "@/types/blog";
 
@@ -102,6 +103,7 @@ export default async function BlogIndexPage({ params }: Props) {
         </div>
       </main>
       <Footer />
+      <AdminBlogLink />
     </>
   );
 }
