@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="eqBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgS)" />
+  <circle cx="230" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="340" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="1">여름방학 수학, 진도냐 SAT냐</text>
+  <text x="800" y="232" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#c7d2fe">답은 둘 중 하나가 아니라 — 순서</text>
+
+  <g transform="translate(800, 440)">
+    <rect x="-560" y="0" width="1120" height="200" rx="28" fill="url(#eqBox)" opacity="0.95" />
+    <text x="0" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Algebra 2 = 최고의 SAT 준비</text>
+    <text x="0" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" fill="#e0e7ff" opacity="0.95">SAT 수학의 약 70%가 사실상 대수(Algebra 1+2)</text>
+  </g>
+
+  <text x="800" y="790" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85">Geometry 다음 — 진도를 그대로 하는 것이 곧 SAT 기초</text>
+</svg>

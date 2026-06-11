@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg3s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg3s)" />
+  <circle cx="250" cy="200" r="320" fill="#ffffff" opacity="0.04" />
+  <circle cx="1380" cy="720" r="340" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="300" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="44" font-weight="600" fill="#c7d2fe">"학교 진도냐 SAT냐" —</text>
+
+  <text x="800" y="445" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="80" font-weight="800" fill="#ffffff">둘 중 무엇이 아니라</text>
+  <text x="800" y="560" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="86" font-weight="800" fill="#fde68a">순서의 문제다</text>
+
+  <g transform="translate(800, 680)">
+    <rect x="-540" y="0" width="1080" height="120" rx="24" fill="#fde68a" opacity="0.10" stroke="#fde68a" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="700" fill="#fef3c7">Algebra 2를 제대로 = 최고의 SAT 준비</text>
+  </g>
+</svg>
