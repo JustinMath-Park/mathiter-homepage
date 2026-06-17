@@ -4,101 +4,73 @@
       <stop offset="0%" stop-color="#0c4a6e" />
       <stop offset="100%" stop-color="#1e1b4b" />
     </linearGradient>
-    <linearGradient id="caOpen" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f97316" />
-      <stop offset="100%" stop-color="#c2410c" />
-    </linearGradient>
-    <linearGradient id="caDeadline" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#facc15" />
-      <stop offset="100%" stop-color="#ca8a04" />
-    </linearGradient>
-    <linearGradient id="satGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1e40af" />
-      <stop offset="100%" stop-color="#3b82f6" />
-    </linearGradient>
-    <marker id="arrowED" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" opacity="0.55" />
-    </marker>
+    <linearGradient id="caOpen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f97316" /><stop offset="100%" stop-color="#c2410c" /></linearGradient>
+    <linearGradient id="satB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b82f6" /><stop offset="100%" stop-color="#1e40af" /></linearGradient>
+    <linearGradient id="dl" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#facc15" /><stop offset="100%" stop-color="#ca8a04" /></linearGradient>
   </defs>
 
   <rect width="1600" height="900" fill="url(#bgED)" />
-  <circle cx="180" cy="180" r="240" fill="#ffffff" opacity="0.04" />
-  <circle cx="1420" cy="720" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="180" cy="170" r="250" fill="#ffffff" opacity="0.04" />
+  <circle cx="1420" cy="730" r="290" fill="#ffffff" opacity="0.04" />
 
-  <!-- Header -->
-  <text x="800" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#fdba74" letter-spacing="4">G12 가을 — Common App + ED 마감</text>
-  <text x="800" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">8월 1일 open → 11월 1일 마감 — 한 학년의 모든 준비가 출구로 흘러나가는 시기</text>
+  <!-- Title -->
+  <text x="800" y="98" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="50" font-weight="800" fill="#fdba74">G12 가을 — Common App · ED 마감</text>
+  <text x="800" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.7">8월 1일 open → 11월 1일 마감 · 한 해 준비가 출구로 모인다</text>
 
-  <!-- Timeline horizontal line -->
-  <line x1="120" y1="450" x2="1480" y2="450" stroke="#ffffff" stroke-width="2" opacity="0.3" />
+  <!-- Timeline line -->
+  <line x1="150" y1="470" x2="1450" y2="470" stroke="#ffffff" stroke-width="2" opacity="0.3" />
 
-  <!-- 5 milestones evenly spaced -->
-  <!-- 1. Aug 1 - CA opens -->
-  <g transform="translate(220, 450)">
-    <circle cx="0" cy="0" r="14" fill="url(#caOpen)" />
-    <line x1="0" y1="-14" x2="0" y2="-200" stroke="#f97316" stroke-width="1.5" opacity="0.55" stroke-dasharray="4,4" />
-    <rect x="-150" y="-340" width="300" height="125" rx="14" fill="url(#caOpen)" opacity="0.92" />
-    <text x="0" y="-310" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff" opacity="0.85" letter-spacing="2">8월 1일</text>
-    <text x="0" y="-275" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Common App open</text>
-    <text x="0" y="-249" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">essay 초안 작성 시작</text>
-    <text x="0" y="-230" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">G11 여름 권장 시점</text>
-    <text x="0" y="30" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">G11 8월</text>
+  <!-- Node 1: 8월 -->
+  <g transform="translate(230, 470)">
+    <circle cx="0" cy="0" r="13" fill="#f97316" />
+    <line x1="0" y1="-13" x2="0" y2="-48" stroke="#f97316" stroke-width="2" opacity="0.5" />
+    <rect x="-130" y="-200" width="260" height="152" rx="14" fill="url(#caOpen)" opacity="0.92" />
+    <text x="0" y="-152" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.9">8월 1일</text>
+    <text x="0" y="-108" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Common App open</text>
+    <text x="0" y="-74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.85">essay 초안 시작</text>
   </g>
-
-  <!-- 2. Sept - 작성 본격화 -->
-  <g transform="translate(480, 450)">
+  <!-- Node 2: 9월 -->
+  <g transform="translate(535, 470)">
     <circle cx="0" cy="0" r="12" fill="#ffffff" opacity="0.85" />
-    <line x1="0" y1="14" x2="0" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.45" stroke-dasharray="4,4" />
-    <rect x="-150" y="130" width="300" height="125" rx="14" fill="#1e1b4b" stroke="#ffffff" stroke-width="1" stroke-opacity="0.45" />
-    <text x="0" y="158" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff" opacity="0.6" letter-spacing="2">9월</text>
-    <text x="0" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Common App 작성</text>
-    <text x="0" y="215" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">학교 추천서 요청 시작</text>
-    <text x="0" y="238" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.55">G12 새 학기 + 카운슬러 마감 학교별</text>
-    <text x="0" y="-30" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">G12 9월</text>
+    <line x1="0" y1="13" x2="0" y2="48" stroke="#ffffff" stroke-width="2" opacity="0.4" />
+    <rect x="-130" y="48" width="260" height="152" rx="14" fill="#1e1b4b" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+    <text x="0" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.7">9월</text>
+    <text x="0" y="134" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="23" font-weight="800" fill="#ffffff">원서 작성 본격화</text>
+    <text x="0" y="168" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.8">학교 추천서 요청</text>
   </g>
-
-  <!-- 3. Oct - SAT 10월 (가을 핵심) -->
-  <g transform="translate(740, 450)">
-    <circle cx="0" cy="0" r="14" fill="url(#satGold)" />
-    <line x1="0" y1="-14" x2="0" y2="-200" stroke="#3b82f6" stroke-width="1.5" opacity="0.55" stroke-dasharray="4,4" />
-    <rect x="-150" y="-340" width="300" height="125" rx="14" fill="url(#satGold)" opacity="0.92" />
-    <text x="0" y="-310" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff" opacity="0.85" letter-spacing="2">10월</text>
-    <text x="0" y="-275" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">SAT 가을 시즌</text>
-    <text x="0" y="-249" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">마지막 안정 응시 기회</text>
-    <text x="0" y="-230" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">8월 응시 결과 보완</text>
-    <text x="0" y="30" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">G12 10월</text>
+  <!-- Node 3: 10월 -->
+  <g transform="translate(840, 470)">
+    <circle cx="0" cy="0" r="13" fill="#3b82f6" />
+    <line x1="0" y1="-13" x2="0" y2="-48" stroke="#3b82f6" stroke-width="2" opacity="0.5" />
+    <rect x="-130" y="-200" width="260" height="152" rx="14" fill="url(#satB)" opacity="0.92" />
+    <text x="0" y="-152" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.9">10월</text>
+    <text x="0" y="-108" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff">SAT 마지막 시즌</text>
+    <text x="0" y="-74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.85">안정 응시 마지노선</text>
   </g>
-
-  <!-- 4. Nov 1 - ED/EA 마감 (★) -->
-  <g transform="translate(1000, 450)">
-    <circle cx="0" cy="0" r="20" fill="url(#caDeadline)" />
-    <circle cx="0" cy="0" r="26" fill="none" stroke="#fde68a" stroke-width="2" opacity="0.6" />
-    <line x1="0" y1="-22" x2="0" y2="-205" stroke="#facc15" stroke-width="2" opacity="0.7" stroke-dasharray="4,4" />
-    <rect x="-160" y="-340" width="320" height="135" rx="14" fill="url(#caDeadline)" opacity="0.95" />
-    <text x="0" y="-310" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#1e1b4b" letter-spacing="2">11월 1일</text>
-    <text x="0" y="-280" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#1e1b4b">★ ED / EA 마감</text>
-    <text x="0" y="-254" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#1e1b4b" opacity="0.85">REA도 동일 시점</text>
-    <text x="0" y="-232" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#1e1b4b" opacity="0.7">Yale / Harvard / Princeton / Stanford</text>
-    <text x="0" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#fde68a">G12 11월</text>
+  <!-- Node 4: ★ 11월 1일 (highlighted) -->
+  <g transform="translate(1145, 470)">
+    <circle cx="0" cy="0" r="19" fill="url(#dl)" />
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#fde68a" stroke-width="2" opacity="0.6" />
+    <line x1="0" y1="-21" x2="0" y2="-50" stroke="#facc15" stroke-width="2.5" opacity="0.7" />
+    <rect x="-140" y="-210" width="280" height="162" rx="14" fill="url(#dl)" opacity="0.96" />
+    <text x="0" y="-160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#1e1b4b">11월 1일</text>
+    <text x="0" y="-114" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="27" font-weight="800" fill="#1e1b4b">★ ED · EA 마감</text>
+    <text x="0" y="-78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="600" fill="#1e1b4b" opacity="0.8">REA도 동일 시점</text>
   </g>
-
-  <!-- 5. Dec - 결과 발표 -->
-  <g transform="translate(1280, 450)">
+  <!-- Node 5: 12월 -->
+  <g transform="translate(1450, 470)">
     <circle cx="0" cy="0" r="12" fill="#ffffff" opacity="0.85" />
-    <line x1="0" y1="14" x2="0" y2="120" stroke="#ffffff" stroke-width="1.5" opacity="0.45" stroke-dasharray="4,4" />
-    <rect x="-150" y="130" width="300" height="125" rx="14" fill="#1e1b4b" stroke="#ffffff" stroke-width="1" stroke-opacity="0.45" />
-    <text x="0" y="158" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff" opacity="0.6" letter-spacing="2">12월 중순</text>
-    <text x="0" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#ffffff">ED 결과 발표</text>
-    <text x="0" y="215" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">합격 → 의무 등록 (binding)</text>
-    <text x="0" y="238" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.55">미정 시 RD 1월 마감 준비</text>
-    <text x="0" y="-30" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">G12 12월</text>
+    <line x1="0" y1="13" x2="0" y2="48" stroke="#ffffff" stroke-width="2" opacity="0.4" />
+    <rect x="-130" y="48" width="260" height="152" rx="14" fill="#1e1b4b" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+    <text x="0" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" opacity="0.7">12월 중순</text>
+    <text x="0" y="134" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="23" font-weight="800" fill="#ffffff">ED 결과 발표</text>
+    <text x="0" y="168" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.8">합격 시 binding 등록</text>
   </g>
 
-  <!-- Warning callout — SAT 11월 응시 -->
-  <g transform="translate(800, 720)">
-    <rect x="-560" y="0" width="1120" height="115" rx="16" fill="#fbbf24" opacity="0.10" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.4" />
-    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" font-weight="700" fill="#fde68a" letter-spacing="2">⚠ SAT 11월 응시는 권장하지 않습니다</text>
-    <text x="0" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">11월 응시 점수가 ED 마감(11월 1일) 전에 학교에 도착하는 시점이 빠듯합니다</text>
-    <text x="0" y="92" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.6">가능하면 10월 응시까지로 SAT를 마무리하는 편이 안전합니다</text>
+  <!-- Bottom warning -->
+  <g transform="translate(800, 730)">
+    <rect x="-620" y="0" width="1240" height="96" rx="18" fill="#fbbf24" opacity="0.1" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.45" />
+    <text x="0" y="42" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="25" font-weight="800" fill="#fde68a">⚠ SAT는 10월까지 마무리</text>
+    <text x="0" y="74" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="19" fill="#ffffff" opacity="0.82">11월 응시 점수는 ED 마감(11/1) 전 도착이 빠듯합니다</text>
   </g>
 </svg>

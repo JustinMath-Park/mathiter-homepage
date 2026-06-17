@@ -4,113 +4,59 @@
       <stop offset="0%" stop-color="#0c4a6e" />
       <stop offset="100%" stop-color="#1e1b4b" />
     </linearGradient>
-    <linearGradient id="apBar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#991b1b" />
-      <stop offset="100%" stop-color="#ef4444" />
+    <linearGradient id="apC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
     </linearGradient>
-    <linearGradient id="finalBar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6d28d9" />
-      <stop offset="100%" stop-color="#8b5cf6" />
+    <linearGradient id="fnC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
     </linearGradient>
-    <linearGradient id="satBar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1e40af" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <linearGradient id="stC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e40af" />
     </linearGradient>
   </defs>
 
   <rect width="1600" height="900" fill="url(#bgMay)" />
-  <circle cx="200" cy="180" r="280" fill="#ffffff" opacity="0.04" />
-  <circle cx="1400" cy="720" r="320" fill="#ffffff" opacity="0.04" />
+  <circle cx="200" cy="170" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1410" cy="730" r="320" fill="#ffffff" opacity="0.04" />
 
-  <!-- Header -->
-  <text x="800" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="700" fill="#fde68a" letter-spacing="4">★ G11 5월 — 한 달 충돌 시점</text>
-  <text x="800" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" fill="#ffffff" opacity="0.6" letter-spacing="2">AP · 학교 final · SAT가 같은 4주 안에 몰리는 구조 — 우선순위 결정이 핵심</text>
+  <!-- BIG title -->
+  <text x="800" y="116" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="56" font-weight="800" fill="#fde68a">★ G11 5월 — 시험 3개가 충돌</text>
+  <text x="800" y="174" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="29" font-weight="600" fill="#ffffff" opacity="0.78">AP · 학교 final · SAT가 같은 4주에 몰린다</text>
 
-  <!-- Calendar grid: 5 weeks (week 1-5) -->
-  <g font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.65" text-anchor="middle">
-    <text x="240" y="200">Week 1 (5월 첫째)</text>
-    <text x="490" y="200">Week 2 (5월 둘째)</text>
-    <text x="740" y="200">Week 3 (5월 셋째)</text>
-    <text x="990" y="200">Week 4 (5월 넷째)</text>
-    <text x="1240" y="200">Week 5–6 (6월 초)</text>
+  <!-- 3 big chips -->
+  <g transform="translate(70, 240)">
+    <rect width="460" height="225" rx="24" fill="url(#apC)" opacity="0.95" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">AP 시험</text>
+    <text x="230" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#fee2e2">5월 첫 2주</text>
+    <text x="230" y="182" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">STEM 집중 시험기</text>
+  </g>
+  <g transform="translate(570, 240)">
+    <rect width="460" height="225" rx="24" fill="url(#fnC)" opacity="0.95" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">학교 final</text>
+    <text x="230" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#ede9fe">5월 말</text>
+    <text x="230" y="182" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">GPA에 직접 영향</text>
+  </g>
+  <g transform="translate(1070, 240)">
+    <rect width="460" height="225" rx="24" fill="url(#stC)" opacity="0.9" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">SAT</text>
+    <text x="230" y="135" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#dbeafe">5월 첫 주말</text>
+    <text x="230" y="182" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">3월 만족 시 skip 권장</text>
   </g>
 
-  <!-- Vertical week guides -->
-  <g stroke="#ffffff" stroke-width="0.5" opacity="0.10">
-    <line x1="365" y1="220" x2="365" y2="660" />
-    <line x1="615" y1="220" x2="615" y2="660" />
-    <line x1="865" y1="220" x2="865" y2="660" />
-    <line x1="1115" y1="220" x2="1115" y2="660" />
+  <!-- Priority strip -->
+  <g transform="translate(800, 515)">
+    <rect x="-680" y="0" width="1360" height="120" rx="22" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#fde68a" letter-spacing="3">우선순위</text>
+    <text x="0" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="800" fill="#ffffff">AP  ›  학교 final  ›  SAT</text>
   </g>
+  <text x="800" y="690" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.72">SAT만 가을(8·10월) 재응시로 만회 가능 — AP · final은 그 해 한 번뿐</text>
 
-  <!-- Lane labels -->
-  <g font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#ffffff">
-    <text x="100" y="285">AP 시험</text>
-    <text x="100" y="395">학교 final</text>
-    <text x="100" y="505">SAT 5월</text>
-    <text x="100" y="615">우선순위</text>
-  </g>
-
-  <!-- AP — weeks 1-2 (5월 첫 2주) -->
-  <g transform="translate(115, 245)">
-    <rect width="500" height="80" rx="14" fill="url(#apBar)" opacity="0.95" />
-    <text x="250" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">AP 시험 5월 첫 2주</text>
-    <text x="250" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">STEM 과목 (Calc / Stats / Physics / Chemistry) 집중 시험기</text>
-  </g>
-
-  <!-- 학교 final — weeks 4-5 -->
-  <g transform="translate(990, 355)">
-    <rect width="490" height="80" rx="14" fill="url(#finalBar)" opacity="0.95" />
-    <text x="245" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">학교 final exams</text>
-    <text x="245" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.85">5월 말 또는 6월 초 · GPA에 직접 영향</text>
-  </g>
-
-  <!-- SAT 5월 — week 1 또는 2 (보통 첫째 또는 둘째 주말) -->
-  <g transform="translate(240, 465)">
-    <rect x="-90" y="0" width="180" height="80" rx="14" fill="url(#satBar)" opacity="0.85" />
-    <text x="0" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff">SAT 5월</text>
-    <text x="0" y="60" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.85">첫째 또는 둘째 주말</text>
-  </g>
-
-  <!-- Strikethrough for SAT — recommend skip -->
-  <text x="450" y="510" text-anchor="start" font-family="-apple-system, sans-serif" font-size="14" fill="#fde68a" opacity="0.85">→ 3월 결과 만족이면 <tspan font-weight="700">skip 권장</tspan></text>
-
-  <!-- Priority arrow row -->
-  <g transform="translate(115, 575)">
-    <rect width="1365" height="80" rx="14" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.5" />
-
-    <!-- AP (highest priority) -->
-    <g transform="translate(80, 18)">
-      <rect width="180" height="44" rx="10" fill="url(#apBar)" opacity="0.92" />
-      <text x="90" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">1. AP</text>
-    </g>
-    <!-- > -->
-    <text x="295" y="50" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" fill="#fde68a" opacity="0.85">›</text>
-
-    <!-- Final (middle) -->
-    <g transform="translate(330, 18)">
-      <rect width="180" height="44" rx="10" fill="url(#finalBar)" opacity="0.92" />
-      <text x="90" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">2. 학교 final</text>
-    </g>
-    <text x="545" y="50" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="28" fill="#fde68a" opacity="0.85">›</text>
-
-    <!-- SAT (lowest) -->
-    <g transform="translate(580, 18)">
-      <rect width="180" height="44" rx="10" fill="url(#satBar)" opacity="0.7" />
-      <text x="90" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff">3. SAT</text>
-    </g>
-
-    <!-- Explanation -->
-    <text x="1080" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85" font-weight="600">대부분 학생 기준 권장 우선순위</text>
-    <text x="1080" y="56" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#ffffff" opacity="0.6">SAT는 가을 재응시 기회로 만회 가능</text>
-  </g>
-
-  <!-- Bottom failure pattern -->
-  <g transform="translate(800, 720)">
-    <rect x="-680" y="0" width="1360" height="130" rx="16" fill="#ef4444" opacity="0.12" stroke="#ef4444" stroke-width="1" stroke-opacity="0.5" />
-    <text x="0" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#fca5a5" letter-spacing="2">⚠ 가장 자주 본 실패 패턴</text>
-    <text x="0" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">AP STEM 5과목 + SAT 5월 + 학교 final까지 모두 한 달에 시도</text>
-    <text x="0" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#ffffff" opacity="0.7">→ AP 4점·3점 섞임 / GPA 하락 / SAT 1380–1420 정체</text>
-    <text x="0" y="116" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#fde68a">어느 것도 제대로 점수가 안 나옵니다</text>
+  <!-- Bottom takeaway -->
+  <g transform="translate(800, 728)">
+    <rect x="-620" y="0" width="1240" height="92" rx="20" fill="#ef4444" opacity="0.14" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.5" />
+    <text x="0" y="59" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="31" font-weight="800" fill="#fca5a5">셋을 한 달에 다 하려 하면 — 셋 다 무너진다</text>
   </g>
 </svg>
