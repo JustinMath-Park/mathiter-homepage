@@ -54,7 +54,15 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 → <strong>가장 안전한 변경 시점은 만 13세 이전 (Y10/G9 시작 전).</strong> 만 14세 이후 변경은 거의 모든 경우 1년 손실을 동반합니다. 이게 "가서 결정하면 된다"는 가정이 위험한 이유입니다.
 
-![학년별 시험 시점 타임라인](/blog/figures/exam-tree-timeline.svg)
+| 학년 (나이) | 🇺🇸 US 트리 — SAT + AP | 🇬🇧 UK 트리 — IGCSE → A-Level |
+|---|---|---|
+| **G9 / Y10** (만 14–15세) | Pre-AP — 기초 다지기 | IGCSE 시작 (2년 코스) |
+| **G10 / Y11** (만 15–16세) | AP 1–2개 (Stats·Precalc) | **IGCSE 응시** — A\*–G 등급 (5–6월) |
+| **G11 / Y12** (만 16–17세) | **AP Calc BC + SAT 1차** (AP 5월 · SAT 봄·가을) | AS-Level (옵션, Year 12) |
+| **G12 / Y13** (만 17–18세) | SAT 2차 — super-scoring | **A-Level 최종** — A\*–E (메인 5–6월) |
+| **대학 입학** | 미국 Top 30 (Common App) | 영국 G5 · 홍콩 · 싱가포르 (UCAS) |
+
+> ⚠ <strong>SAT는 연 7–8회 조합형, A-Level은 5–6월 메인 한 번 승부형</strong>입니다 (International A-Level은 1월·10–11월 추가 세션 존재). 방향을 1년 늦게 정하면 그 사이 1년이 통째로 비효율 학년이 됩니다 — 그래서 방향 결정은 G9 시작 전이 가장 안전합니다.
 
 ## US 트리 — SAT + AP의 길
 
@@ -75,7 +83,14 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 주목할 부분은 <strong>MIT·Caltech 같은 STEM Top은 합격자의 25% 이상이 SAT Math 800 만점</strong>이라는 점입니다. 그리고 25–26 cycle부터 Harvard·Yale·Stanford·MIT·UPenn·Brown 등이 SAT를 다시 필수화했습니다(Princeton은 2025–26까지 test-optional 유지). "테스트 옵셔널"이라는 단어에 안심하면 안 되는 시점입니다.
 
-![US 트리 — SAT + AP 시험 흐름](/blog/figures/exam-tree-us.svg)
+한편 US 트리의 또 다른 축인 <strong>AP</strong>는 과목별로 5점 난이도가 크게 다릅니다. 국제학교에서 가장 많이 응시하는 수학 4과목의 2025년 5점 비율(College Board 공식)은 다음과 같습니다.
+
+| AP 수학 과목 | 2025년 5점 비율 | 성격 |
+|---|---|---|
+| **Calculus BC** | **43.9%** | 범위는 넓지만 5점 받기는 가장 수월 |
+| Precalculus | 28.1% | 2023년 신설 · 중간 난이도 |
+| Calculus AB | 20.3% | 쉬워 보이나 5점은 의외로 까다로움 |
+| Statistics | 17.0% | 수학 AP 중 5점률 최저 (영어 서술 부담) |
 
 ## UK 트리 — IGCSE → A-Level의 길
 
@@ -96,7 +111,12 @@ canonicalSlug: us-vs-uk-exam-tree-which-tree
 
 미국 트랙(US 트리) 준비생이 영국 G5에 교차 지원할 때는 SAT 700+ (각 섹션) + AP 5점 3–5개 조합이 일반적입니다. Cambridge는 SAT 1500+ (Math 750+) + AP 5점 5개를 권장합니다.
 
-![UK 트리 — IGCSE → A-Level 시험 흐름](/blog/figures/exam-tree-uk.svg)
+IGCSE의 두 시험 보드는 등급 체계가 다른데, 영국 대학은 둘을 <strong>동등하게 인정</strong>합니다. 가장 헷갈리는 부분만 표로 정리하면 — Edexcel의 9가 Cambridge의 A\*보다 한 단계 위입니다.
+
+| IGCSE 보드 | 등급 체계 | 환산 기준 | 특징 |
+|---|---|---|---|
+| **Cambridge (CAIE)** | A\*–G (+ U) | A\* ≈ 90%+, A ≈ 80% | 과학 practical exam 필수 |
+| **Edexcel (Pearson)** | 9–1 (+ U) | 9 > A\*, 7 ≈ A, 4 = standard pass | 이론 중심 · practical 없음 |
 
 ## IB Diploma — 양쪽 인정의 안전망
 
@@ -112,7 +132,19 @@ IB[^ib]는 미국과 영국 양쪽이 모두 인정하는 디플로마입니다.
 
 자녀의 국제학교 커리큘럼이 American이라면 KIS·KFS·Chadwick(American track) 같은 학교 → US 트리가 자연스럽고, British이라면 Dulwich Seoul·NLCS Jeju → UK 트리가 자연스럽습니다. SFS(Seoul Foreign)는 IB Diploma + British를 동시 운영하므로 학생 본인이 선택할 수 있습니다.
 
-![대학별 요구 점수 매트릭스](/blog/figures/exam-tree-scores.svg)
+| 대학 | SAT (US 트리) | A-Level (UK 트리) | IB Diploma | 지역 |
+|---|---|---|---|---|
+| **MIT** | 1520–1580 (Math 780–800) | 동등 평가 (US 인정) | ~40+ holistic | 🇺🇸 미국 |
+| **Harvard** | 1500–1580 (Math 770–800) | 동등 평가 (US 인정) | 39–44 (HL 6–7s) | 🇺🇸 미국 |
+| **Stanford** | 1500–1560 (Math 770–800) | 동등 평가 (US 인정) | ~40+ holistic | 🇺🇸 미국 |
+| **Cambridge** | 1500+ (Math 750+) · AP 5점 5개 | A\*A\*A + STEP/ESAT/TMUA | 40–42 (HL 7,7,6) | 🇬🇧 영국 |
+| **Oxford** | 700+ 각 섹션 · AP 5점 3개 | A\*A\*A + MAT/TSA/PAT | 38–40 (HL 6–7s) | 🇬🇧 영국 |
+| **Imperial** | SAT + AP 조합 인정 | A\*A\*A – A\*A\*AA (Math+Further Math 필수) | 38–41 (HL Math 7) | 🇬🇧 영국 |
+| **LSE** | SAT 단독 미인정 · AP 5+ | AAA – A\*AA (HL Math 6/7) | 37–39 (HL 6–6–6) | 🇬🇧 영국 |
+| **HKU** | 인정 (코스별) | AAA+ (경쟁 코스 ↑) | 35+ 권장 / 44+ 장학금 | 🇭🇰 홍콩 |
+| **NUS** | 1250+ (Math 650+) | 동등 평가 (코스별) | 40+ 경쟁력 | 🇸🇬 싱가포르 |
+
+> ⚠ 점수는 25–75 percentile 또는 typical offer 기준 · 2024–25 cycle 데이터 · 2026 admissions에서 변동 가능. 출처는 본문 각주 및 College Board·각 대학 admissions 페이지 참조.
 
 ## 자주 묻는 질문 5가지
 
@@ -156,7 +188,15 @@ STEM 지망이면 AA HL이 사실상 필수입니다. AI는 사회과학·경영
 
 5개 답이 "American + 미국 + 여러 번 + 객관식 + 학점 인정 원함" 쪽으로 기운다면 <strong>US 트리</strong>, "British + 영국 + 한 번에 + 풀이형 + 학점 인정 무관" 쪽이라면 <strong>UK 트리</strong>, 둘이 섞인다면 <strong>IB Diploma</strong>가 가장 안전한 선택지입니다.
 
-![어느 트리? 5분 결정 플로차트](/blog/figures/exam-tree-decision.svg)
+앞의 5가지 질문에 대한 답이 트리별로 어떻게 갈리는지 정리하면 다음과 같습니다.
+
+| 결정 변수 | 🇺🇸 US 트리 | 🇬🇧 UK 트리 | 🌐 IB Diploma |
+|---|---|---|---|
+| 학교 커리큘럼 | American | British / Cambridge | IB World School · 다중 |
+| 목표 대학 | 미국 Top 30 | 영국 G5 · 홍콩 · 싱가포르 | 미국 + 영국 + 홍콩 + 싱가포르 |
+| 시험 응시 빈도 | 여러 번 + best score 조합 | 한 번에 깊이 | 다과목 균형 |
+| 학습 스타일 | 객관식 · 시간 압박형 | 풀이 · 에세이형 | 균형형 (IA · EE) |
+| 학점 인정 | 미국 학점 원함 | 무관 | 유연하나 부담 큼 |
 
 > 자녀의 시험 트리 선택은 늦어도 G9 시작 전에 방향이 잡혀 있어야 합니다. <strong>Mathiter Tutoring</strong>의 30분 무료 상담에서, 제가 자녀의 학교 커리큘럼·목표 대학·학습 스타일을 종합해 US/UK/IB 중 가장 합리적인 길을 함께 정리해 드립니다. 두 자녀를 해외 국제학교에서 직접 키운 같은 학부모로서, 추측이 아니라 데이터를 근거로 답을 드립니다.
 >
