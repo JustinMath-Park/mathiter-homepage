@@ -725,6 +725,29 @@ foundation first, applied on top — the visible logic of how A* working is
 constructed, not just a desk of notes.
 Horizontal landscape framing (16:9), editorial angle on the glass wall.
 """,
+    "international-school-admission-map-test-math-interview-1.png": STYLE + """
+A Korean parent in their late 30s to 40s sitting at a home dining table in the
+evening, looking thoughtfully at an open laptop and a few printed school
+brochures, one hand resting near the chin in contemplation. A child's school
+workbook and a small globe sit nearby on the table, softly out of focus. Warm
+domestic lighting from a side lamp, a window with soft dusk light behind.
+The mood: a parent quietly weighing an international-school move and wondering
+how their child will handle the unfamiliar admission test. Partial profile,
+contemplative, not a tight close-up.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
+    "international-school-admission-map-test-math-interview-2.png": STYLE + """
+A pre-teen student (around 11 to 13, seen from behind and slightly to the side,
+face not identifiable) sitting at a desk taking a test on a laptop in a quiet
+study room. On the laptop screen, an abstract assessment interface with simple
+geometric shapes and a clean multiple-choice layout (no readable text, no logos).
+The student rests one hand near the trackpad, focused and slightly tense,
+mid-decision on a single question. Scratch paper and a pencil beside the laptop.
+Soft daylight from a window, shallow depth of field.
+The mood: concentrating through a computer-adaptive placement test, one question
+at a time, unable to go back to the previous one.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

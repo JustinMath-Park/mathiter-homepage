@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMapF" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <marker id="arrPath" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a5b4fc" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMapF)" />
+  <circle cx="210" cy="170" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="300" fill="#ffffff" opacity="0.04" />
+
+  <!-- Title -->
+  <text x="800" y="108" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff">MAP은 학년이 아니라 '지금 실력'을 잽니다</text>
+  <text x="800" y="158" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="27" font-weight="600" fill="#c7d2fe">컴퓨터 적응형 — 맞히면 어려워지고, 틀리면 쉬워진다</text>
+
+  <!-- annotations -->
+  <text x="300" y="262" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#6ee7b7">정답 → 난이도 ↑</text>
+  <text x="640" y="560" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#fca5a5">오답 → 난이도 ↓</text>
+
+  <!-- true-level dashed line -->
+  <line x1="150" y1="430" x2="1330" y2="430" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6,8" opacity="0.55" />
+  <text x="1336" y="424" font-family="-apple-system, sans-serif" font-size="21" font-weight="700" fill="#fde68a">현재</text>
+  <text x="1336" y="452" font-family="-apple-system, sans-serif" font-size="21" font-weight="700" fill="#fde68a">실력</text>
+
+  <!-- adaptive converging path -->
+  <polyline points="170,430 350,300 530,440 700,360 860,420 1010,400 1150,424 1290,430"
+            fill="none" stroke="#a5b4fc" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrPath)" />
+  <!-- nodes -->
+  <circle cx="350" cy="300" r="13" fill="#34d399" />
+  <circle cx="530" cy="440" r="13" fill="#f87171" />
+  <circle cx="700" cy="360" r="13" fill="#34d399" />
+  <circle cx="860" cy="420" r="13" fill="#f87171" />
+  <!-- convergence marker -->
+  <circle cx="1290" cy="430" r="22" fill="#fbbf24" />
+  <text x="1290" y="490" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#fde68a">RIT</text>
+
+  <!-- Bottom takeaway -->
+  <g transform="translate(800, 640)">
+    <rect x="-640" y="0" width="1280" height="160" rx="22" fill="#fbbf24" opacity="0.1" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.45" />
+    <text x="0" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#fde68a">합격선이 아니라 '실력의 자(ruler)'</text>
+    <text x="0" y="118" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">학년에 무관 — 학년 평균과 비교해 '지금 어느 수준'인지로 읽는다</text>
+  </g>
+</svg>
