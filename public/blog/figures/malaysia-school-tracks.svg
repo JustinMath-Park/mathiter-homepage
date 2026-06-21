@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTrk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="tBr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b82f6" /><stop offset="100%" stop-color="#1e40af" /></linearGradient>
+    <linearGradient id="tAm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ef4444" /><stop offset="100%" stop-color="#991b1b" /></linearGradient>
+    <linearGradient id="tIb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10b981" /><stop offset="100%" stop-color="#047857" /></linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgTrk)" />
+  <circle cx="210" cy="170" r="280" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="300" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="104" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff">말레이시아 국제학교 — 커리큘럼 3갈래</text>
+  <text x="800" y="152" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="600" fill="#c7d2fe">어느 게 더 좋다기보다 — 목표 대학국에 맞는 길이 따로 있다</text>
+
+  <g transform="translate(70, 210)">
+    <rect width="460" height="330" rx="24" fill="url(#tBr)" opacity="0.95" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">🇬🇧 영국식</text>
+    <text x="230" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#dbeafe">IGCSE → A-Level</text>
+    <text x="230" y="208" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="23" fill="#ffffff" opacity="0.9">가장 많은 트랙</text>
+    <text x="230" y="252" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#ffffff" opacity="0.82">영국 · 홍콩 · 싱가포르 대학</text>
+  </g>
+  <g transform="translate(570, 210)">
+    <rect width="460" height="330" rx="24" fill="url(#tAm)" opacity="0.95" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">🇺🇸 미국식</text>
+    <text x="230" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#fee2e2">SAT + AP</text>
+    <text x="230" y="208" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="23" fill="#ffffff" opacity="0.9">미국 고교 졸업장</text>
+    <text x="230" y="252" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#ffffff" opacity="0.82">미국 대학</text>
+  </g>
+  <g transform="translate(1070, 210)">
+    <rect width="460" height="330" rx="24" fill="url(#tIb)" opacity="0.95" />
+    <text x="230" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#ffffff">🌐 IB</text>
+    <text x="230" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="700" fill="#d1fae5">IB Diploma</text>
+    <text x="230" y="208" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="23" fill="#ffffff" opacity="0.9">국가에 안 묶임</text>
+    <text x="230" y="252" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#ffffff" opacity="0.82">미국 · 영국 다 열림</text>
+  </g>
+
+  <g transform="translate(800, 615)">
+    <rect x="-690" y="0" width="1380" height="210" rx="22" fill="#fbbf24" opacity="0.1" stroke="#fbbf24" stroke-width="2" stroke-opacity="0.45" />
+    <text x="0" y="62" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#fde68a" letter-spacing="2">권역별 학교 수 (전국 200곳+)</text>
+    <text x="0" y="130" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#ffffff">KL·클랑밸리 121 · 조호르 22 · 페낭 12 · 기타 48</text>
+    <text x="0" y="178" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" fill="#ffffff" opacity="0.8">한인 밀집 = 몬키아라 · 암팡 · 데사파크시티 (KL)</text>
+  </g>
+</svg>

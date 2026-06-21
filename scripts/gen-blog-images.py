@@ -748,6 +748,27 @@ The mood: concentrating through a computer-adaptive placement test, one question
 at a time, unable to go back to the previous one.
 Horizontal landscape framing (16:9), editorial documentary angle.
 """,
+    "malaysia-international-schools-guide-1.png": STYLE + """
+A wide establishing shot of a modern international school campus in Kuala Lumpur,
+Malaysia — contemporary low-rise buildings with tropical landscaping and palm
+trees, a few students of diverse nationalities (East Asian, South Asian, Western,
+Malay) walking between buildings or sitting on outdoor steps with backpacks in
+mid-morning tropical light. Students seen at a respectful distance, no
+identifiable close-up faces.
+The mood: a welcoming, well-resourced campus that a relocating family might tour.
+No readable text, signage or logos anywhere.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
+    "malaysia-international-schools-guide-2.png": STYLE + """
+A Korean parent couple in their 30s to 40s at a home table reviewing several
+printed school brochures and a laptop showing a comparison, one parent pointing
+at a brochure while the other looks thoughtful, a notebook with handwriting (no
+readable text) beside them. Warm domestic daylight; one or two moving boxes
+softly out of focus in the background hinting at an upcoming relocation.
+The mood: contemplative, weighing which international school to choose. Partial
+profiles, not tight close-ups.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMY" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cCur" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" /><stop offset="100%" stop-color="#4338ca" /></linearGradient>
+    <linearGradient id="cReg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0ea5e9" /><stop offset="100%" stop-color="#0369a1" /></linearGradient>
+    <linearGradient id="cFee" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10b981" /><stop offset="100%" stop-color="#047857" /></linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMY)" />
+  <circle cx="220" cy="175" r="290" fill="#ffffff" opacity="0.04" />
+  <circle cx="1400" cy="730" r="320" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="168" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="58" font-weight="800" fill="#ffffff">말레이시아 국제학교 200곳+</text>
+  <text x="800" y="232" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="600" fill="#c7d2fe">학비도 커리큘럼도 제각각 — 어떻게 고를까?</text>
+
+  <g transform="translate(70, 320)">
+    <rect width="460" height="250" rx="24" fill="url(#cCur)" opacity="0.95" />
+    <text x="230" y="84" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">커리큘럼 3갈래</text>
+    <text x="230" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#e0e7ff">영국 · 미국 · IB</text>
+    <text x="230" y="188" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">목표 대학국에 맞춰</text>
+  </g>
+  <g transform="translate(570, 320)">
+    <rect width="460" height="250" rx="24" fill="url(#cReg)" opacity="0.95" />
+    <text x="230" y="84" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">권역</text>
+    <text x="230" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#e0f2fe">KL · 조호르 · 페낭</text>
+    <text x="230" y="188" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">KL·클랑밸리에 121곳</text>
+  </g>
+  <g transform="translate(1070, 320)">
+    <rect width="460" height="250" rx="24" fill="url(#cFee)" opacity="0.95" />
+    <text x="230" y="84" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffffff">학비 스펙트럼</text>
+    <text x="230" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#d1fae5">RM 1.4만 → 16만+</text>
+    <text x="230" y="188" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">10배 넘는 격차</text>
+  </g>
+
+  <g transform="translate(800, 660)">
+    <rect x="-640" y="0" width="1280" height="160" rx="22" fill="#6366f1" opacity="0.12" stroke="#818cf8" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="70" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="800" fill="#e0e7ff">학비보다 먼저 봐야 할 것</text>
+    <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="25" fill="#ffffff" opacity="0.85">목표 대학국 · 고등 종착단계 · SST 포함 실납부액</text>
+  </g>
+</svg>
