@@ -29,7 +29,7 @@
 | 11 | 🆕 **St Joseph's Intl (SJIIM)** | PJ | British+IBDP·가톨릭 | 72,540 | 86,892 | **100,611** | 25/26·IBDP Y12·13 동일·26/27부터 전액 SST |
 | 12 | 🆕 **AISM 호주국제** | 스리켐방안 | Australian HSC | 75,640 | 91,040 | **97,599** | 26·A-Level/IB 없음(HSC Y12 최고) |
 | 13 | 🆕 **King Henry VIII College** | **사이버자야** | British A-Level·기숙 | 66,400 | 81,800 | **96,000** | 26/27·기숙(주중38k/풀42k)·⚠N.셈빌란 아님 |
-| 14 | 🆕 **Charterhouse Malaysia** | KL 스리하트마스 | British(Y9~·초등없음)·기숙 | — | ~92,715 | **95,850**¹⁰ | 25/26·¹⁰2021개교·Y9시작·학비 출처분쟁 |
+| 14 | 🆕 **Charterhouse Malaysia** | KL 스리하트마스 | British(Y9~·초등없음)·기숙 | — | 92,715 | **95,850**¹⁰ | 25/26·¹⁰2021개교·Y9시작·학비 출처분쟁 |
 | 15 | **Reigate Grammar KL** | KL | British IGCSE/A | 65,500 | 85,500 | **94,500** | 26/27·2024 신설 |
 | 16 | **Tenby Penang** | 페낭 탄중붕아 | British(Y11까지) | 41,322 | 54,384 | **90,561**² | ²Y11 2학기청구 artifact 의심 — 확인 필요 |
 | 17 | **ISP @ ParkCity** | KL 데사파크시티 | British IGCSE/A | 66,000 | 77,400 | **87,000** | 26/27·한국 상위5위 국적 |
@@ -59,7 +59,7 @@
 | 41 | **Tenby Setia EcoHill** | 슬랑오르 세메니 | Cambridge(Y11까지) | 35,625 | 45,390 | **48,981** | 26/27·A-Level 없음 |
 | 42 | **KIS Sabah** | 코타키나발루 | British IGCSE/A | 38,262 | 45,864 | **48,580**⁷ | DAY·24/25·⁷Y12피크 57,000 |
 | 43 | **Invictus JB** | 조호르 호라이즌힐스 | British IGCSE/A | 36,500 | 45,500 | **48,500** | DAY·25/26 |
-| 44 | **Crescendo-HELP (CHIS)** | 조호르 | British IGCSE/A | 32,430 | 40,320 | **~42,030**⁸ | 25/26·⁸A-Level 학기제 별도 |
+| 44 | **Crescendo-HELP (CHIS)** | 조호르 | British IGCSE/A | 32,430 | 40,320 | **42,030**⁸ | 25/26·⁸A-Level 학기제 별도 |
 | 45 | **HELP (HIS)** | 슬랑오르 수방2 | Cambridge IGCSE/A | 50,490 | 64,950 | **42,000**⁹ | 26/27·⁹A-Level 2년÷2(중등이 더 비쌈) |
 | 46 | **St Christopher's (SCIPS)** | 페낭 조지타운 | British(Y8까지) | 33,000 | 해당없음 | **37,200**(Y8) | 25/26·초등·Prep 전용 |
 | 47 | **Beaconhouse Sri Inai** | KL | British(Y11까지) | 35,967 | 41,823 | **36,900**(Y11) | 26/27·Y9이 피크 |

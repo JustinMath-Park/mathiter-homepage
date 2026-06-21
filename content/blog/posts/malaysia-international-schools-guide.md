@@ -94,7 +94,7 @@ canonicalSlug: malaysia-international-schools-guide
 | 40 | Tenby Setia EcoHill | 세메니 | British(Y11) | 35,625 | 45,390 | **48,981** |
 | 41 | KIS Sabah | 코타키나발루 | British | 38,262 | 45,864 | **48,580** |
 | 42 | Invictus JB | 조호르 | British | 36,500 | 45,500 | **48,500** |
-| 43 | Crescendo-HELP | 조호르 | British | 32,430 | 40,320 | **~42,030** |
+| 43 | Crescendo-HELP | 조호르 | British | 32,430 | 40,320 | **42,030** |
 | 44 | HELP (HIS) | 수방2 | British | 50,490 | 64,950 | **42,000** |
 | 45 | St Christopher's | 페낭 | British(Y8까지) | 33,000 | – | **37,200** |
 | 46 | Beaconhouse Sri Inai | KL | British(Y11) | 35,967 | 41,823 | **36,900** |
