@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMK" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cUS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" /><stop offset="100%" stop-color="#4338ca" /></linearGradient>
+    <linearGradient id="cUK" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0ea5e9" /><stop offset="100%" stop-color="#0369a1" /></linearGradient>
+    <linearGradient id="cIB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10b981" /><stop offset="100%" stop-color="#047857" /></linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgMK)" />
+  <circle cx="230" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1390" cy="740" r="320" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="700" fill="#c7d2fe">말레이시아 국제학교 시리즈 ① · 몬키아라 · 암팡</text>
+  <text x="800" y="228" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="60" font-weight="800" fill="#ffffff">한인 밀집지 핵심 국제학교 5곳</text>
+
+  <g transform="translate(80, 320)">
+    <rect width="453" height="250" rx="24" fill="url(#cUS)" opacity="0.95" />
+    <text x="226" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">미국식 · IB</text>
+    <text x="226" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#e0e7ff">ISKL · MKIS</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">암팡 · 몬키아라</text>
+  </g>
+  <g transform="translate(573, 320)">
+    <rect width="453" height="250" rx="24" fill="url(#cUK)" opacity="0.95" />
+    <text x="226" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">영국식</text>
+    <text x="226" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#e0f2fe">GIS · ISP</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">IGCSE → A-Level</text>
+  </g>
+  <g transform="translate(1066, 320)">
+    <rect width="453" height="250" rx="24" fill="url(#cIB)" opacity="0.95" />
+    <text x="226" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">전과정 IB</text>
+    <text x="226" y="140" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#d1fae5">IGBIS</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">PYP · MYP · DP</text>
+  </g>
+
+  <g transform="translate(800, 665)">
+    <rect x="-650" y="0" width="1300" height="160" rx="22" fill="#6366f1" opacity="0.12" stroke="#818cf8" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#e0e7ff">학비보다 먼저 봐야 할 것</text>
+    <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">목표 대학국 · 고등 종착단계 · 통학거리 · SST 포함 실납</text>
+  </g>
+</svg>

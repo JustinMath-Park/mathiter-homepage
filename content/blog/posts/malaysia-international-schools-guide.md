@@ -53,9 +53,9 @@ canonicalSlug: malaysia-international-schools-guide
 | # | 학교 | 지역 | 커리큘럼 | 초등 | 중등 | 고등(최고) |
 |---|---|---|---|---|---|---|
 | 1 | Marlborough College | 조호르 이스칸다르 | British→IB | 125,400 | 141,300 | **166,800** |
-| 2 | ISKL | KL 암팡 | American+IB | 114,500 | 129,300 | **142,000** |
-| 3 | Mont'Kiara (MKIS) | KL 몬키아라 | American+IB | 102,120 | 114,110 | **132,940** |
-| 4 | Garden (GIS) | KL 몬키아라 | British | 102,300 | 122,310 | **126,870** |
+| 2 | ISKL | KL 암팡 | American+IB | 115,600 | 130,600 | **143,400** |
+| 3 | Garden (GIS) | KL 몬키아라 | British | 102,300 | 122,310 | **126,870** |
+| 4 | Mont'Kiara (MKIS) | KL 몬키아라 | American+IB | 102,120 | 114,110 | **125,520** |
 | 5 | BSKL | PJ | British | 90,240 | 102,190 | **122,110** |
 | 6 | IGBIS | KL | IB | 86,500 | 102,400 | **118,200** |
 | 7 | Alice Smith | KL | British | 93,480 | 108,360 | **117,360** |
@@ -102,7 +102,7 @@ canonicalSlug: malaysia-international-schools-guide
 | 48 | R.E.A.L Johor | 조호르 | British(Y11) | 19,140 | 21,590 | **24,190** |
 | 49 | Austin Heights | 조호르 | British(Y11) | 18,400 | 21,400 | **22,000** |
 
-> 단위 RM/년 · 통학(DAY) 기준 · 2025–26학년도 · 환산 RM1≈370원. <strong>(Y11)</strong> 표시는 IGCSE에서 과정이 끝나는 학교(이후 다른 학교로 이동), <strong>G12</strong>는 미국식으로 A-Level 없음. 연 RM 60,000 초과분에 6% SST 별도 → 실납부액은 더 높습니다. 기숙 학교는 통학 학비 기준이며 기숙비는 별도. <strong>일부 학교(HELP·Beaconhouse)는 고등이 중등보다 학비가 낮은데, 오타가 아닙니다</strong> — HELP는 A-Level을 2년 총액으로 묶어 책정해 연 환산이 낮고, Beaconhouse는 Y9이 학비 정점이며 IGCSE(Y11)에서 과정이 끝나기 때문입니다(이래서 '고등 종착단계'를 꼭 확인해야 합니다). 정확한 금액·종착단계는 반드시 학교에 확인하세요.
+> 단위 RM/년 · 통학(DAY) 기준 · 최신 공식(학교별 25–26·26–27 상이) · 환산 RM1≈370원. <strong>(Y11)</strong> 표시는 IGCSE에서 과정이 끝나는 학교(이후 다른 학교로 이동), <strong>G12</strong>는 미국식으로 A-Level 없음. 연 RM 60,000 초과분에 6% SST 별도 → 실납부액은 더 높습니다. 기숙 학교는 통학 학비 기준이며 기숙비는 별도. <strong>일부 학교(HELP·Beaconhouse)는 고등이 중등보다 학비가 낮은데, 오타가 아닙니다</strong> — HELP는 A-Level을 2년 총액으로 묶어 책정해 연 환산이 낮고, Beaconhouse는 Y9이 학비 정점이며 IGCSE(Y11)에서 과정이 끝나기 때문입니다(이래서 '고등 종착단계'를 꼭 확인해야 합니다). 정확한 금액·종착단계는 반드시 학교에 확인하세요.
 
 연 학비의 폭은 생각보다 넓습니다. 저가 구간은 RM 1.4만(약 520만 원) 선부터 시작하고, 프리미엄 학교는 RM 16만(약 5,900만 원)을 넘기며, 풀보딩(전일 기숙) 학교는 RM 26만(약 9,600만 원)까지 올라갑니다. 환율은 RM 1을 약 370원으로 잡은 환산입니다. 같은 "국제학교"라는 이름 아래 10배 넘는 격차가 있는 셈이죠.
 

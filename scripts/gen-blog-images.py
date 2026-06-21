@@ -769,6 +769,33 @@ The mood: contemplative, weighing which international school to choose. Partial
 profiles, not tight close-ups.
 Horizontal landscape framing (16:9), editorial documentary angle.
 """,
+    # ═══════════════════════════════════════════════════════
+    # Malaysia series #1: Mont Kiara / Ampang schools (Persona 1, moving)
+    # Archetype E-variant (residential-neighbourhood streetscape) + I (small group)
+    # — deliberately different from the pillar's E (campus) + B (table) shots.
+    # ═══════════════════════════════════════════════════════
+    "malaysia-intl-schools-mont-kiara-ampang-1.png": STYLE + """
+A street-level establishing shot of the Mont Kiara residential district in Kuala
+Lumpur — a cluster of modern high-rise condominiums with tropical greenery,
+a quiet tree-lined residential street, and a handful of families and uniformed
+schoolchildren of mixed nationalities (including East Asian) walking along the
+pavement in soft mid-morning light. People seen from a respectful distance, no
+identifiable close-up faces. A sense of a settled, walkable expat neighbourhood
+where families live close to international schools.
+No readable text, signage, brand names or logos anywhere in the frame.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
+    "malaysia-intl-schools-mont-kiara-ampang-2.png": STYLE + """
+An over-the-shoulder view of a young East Asian student of about 11 to 13,
+seen from behind so the face is not identifiable, sitting by a bright window and
+working through an English-language mathematics worksheet with a pencil, a few
+geometry tools and a notebook on the desk. Calm natural daylight, focused and
+unhurried mood — a child quietly preparing for the English math environment of a
+new international school before relocation.
+Handwriting and any worksheet content must be soft, blurred and NOT readable;
+no readable text, labels or logos anywhere.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────
