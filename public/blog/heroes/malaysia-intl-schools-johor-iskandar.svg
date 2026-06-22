@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgJB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c2c3a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="jUK" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0ea5e9" /><stop offset="100%" stop-color="#0369a1" /></linearGradient>
+    <linearGradient id="jUS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" /><stop offset="100%" stop-color="#4338ca" /></linearGradient>
+    <linearGradient id="jCA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f43f5e" /><stop offset="100%" stop-color="#be123c" /></linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgJB)" />
+  <circle cx="240" cy="170" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1380" cy="750" r="320" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="700" fill="#7dd3fc">말레이시아 국제학교 시리즈 ② · 조호르 이스칸다르</text>
+  <text x="800" y="226" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="58" font-weight="800" fill="#ffffff">싱가포르 다리 하나 · 기숙 옵션이 많은 곳</text>
+
+  <g transform="translate(80, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#jUK)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">영국식</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#e0f2fe">Marlborough · Invictus</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">IGCSE → IB / A-Level</text>
+  </g>
+  <g transform="translate(573, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#jUS)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">미국식 · AP/IB</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#e0e7ff">RAS · Forest City</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">미국 대학 트랙</text>
+  </g>
+  <g transform="translate(1066, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#jCA)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">캐나다 + IB</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#ffe4e6">Sunway Iskandar</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">온타리오 → IBDP</text>
+  </g>
+
+  <g transform="translate(800, 668)">
+    <rect x="-660" y="0" width="1320" height="160" rx="22" fill="#0ea5e9" opacity="0.12" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#bae6fd">5곳 중 4곳이 기숙 운영</text>
+    <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">통학 vs 기숙 · 목표 대학국 · 통학가와 기숙비는 따로</text>
+  </g>
+</svg>

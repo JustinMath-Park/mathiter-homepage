@@ -25,7 +25,7 @@
 | 7 | **Alice Smith** | KL/슬랑오르 | British IGCSE/A | 93,480 | 108,360 | **117,360** | 25/26·최古 British·비영리 |
 | 8 | **Epsom College** | 네게리셈빌란 반다르엔스텍 | British IGCSE/A | 92,400 | 109,200 | **116,610**¹ | 26/27·기숙(Y7~). ¹Y12피크>Y13 |
 | 9 | **Nexus** | 푸트라자야 | IB+IGCSE | 75,600 | 87,270 | **108,420** | 26/27·기숙·한국어 정규과목 |
-| 10 | **Raffles American** | 조호르 이스칸다르 | American+AP | 98,500 | 98,500 | **106,500** | DAY·25/26·기숙옵션 |
+| 10 | **Raffles American** | 조호르 이스칸다르 | American+AP+**IBDP** | 98,500 | 98,500 | **106,500** | DAY·기숙(2인47k/1인62k)·학년도 공식미표기·플라네타리움 |
 | 11 | 🆕 **St Joseph's Intl (SJIIM)** | PJ | British+IBDP·가톨릭 | 72,540 | 86,892 | **100,611** | 25/26·IBDP Y12·13 동일·26/27부터 전액 SST |
 | 12 | 🆕 **AISM 호주국제** | 스리켐방안 | Australian HSC | 75,640 | 91,040 | **97,599** | 26·A-Level/IB 없음(HSC Y12 최고) |
 | 13 | 🆕 **King Henry VIII College** | **사이버자야** | British A-Level·기숙 | 66,400 | 81,800 | **96,000** | 26/27·기숙(주중38k/풀42k)·⚠N.셈빌란 아님 |
@@ -42,7 +42,7 @@
 | 24 | 🆕 **Kingsgate Intl** | KL/슬랑오르 | British A-Level | 53,400 | 67,800 | **74,100** | 25/26·학기 RM60k↑ 6% SST |
 | 25 | **Forest City (CATS)** | 조호르 포레스트시티 | American(G12) | 60,000 | 68,000 | **74,000** | DAY·25/26·구 Shattuck·기숙별도. cats-fc.org |
 | 26 | **Stonyhurst Penang** | 페낭 탄중토콩 | British IGCSE/A | 51,150 | 66,150 | **71,250** | 국제학생요율·DAY·26/27 |
-| 27 | **Sunway Iskandar** | 조호르 | Canadian+IB | 40,000 | 55,000 | **70,000** | DAY·24(25동결)·캐나다+IB 유일 |
+| 27 | **Sunway Iskandar** | 조호르 | Canadian+IB | 40,000 | 55,000 | **70,000** | DAY+**기숙(SIS House)** 라이브정정·24스케줄(26미공개)·캐나다+IB 유일 |
 | 28 | 🆕 **Adcote/Matrix Global** | 센다얀 세렘반 | British A-Level·기숙 | 37,596 | 42,804 | **68,250**¹² | 26/27·기숙·¹²현지요율(외국인 더↑) |
 | 29 | 🆕 **Tenby Tropicana Aman** | 슬랑오르 | British(Y11까지) | 46,530 | 60,660 | **67,530** | 26/27·A-Level 없음·SST 별도 |
 | 30 | **POWIIS** | 페낭 발릭풀라우 | British IGCSE/A | 38,760 | 58,890 | **64,230** | DAY·26/27·기숙(Full 39,600) |
@@ -58,7 +58,7 @@
 | 40 | **Sri KDU Penang** | 페낭 심팡암팟(본토) | British IGCSE/A | 41,490 | 47,050 | **50,000** | 25/26·구 XCL |
 | 41 | **Tenby Setia EcoHill** | 슬랑오르 세메니 | Cambridge(Y11까지) | 35,625 | 45,390 | **48,981** | 26/27·A-Level 없음 |
 | 42 | **KIS Sabah** | 코타키나발루 | British IGCSE/A | 38,262 | 45,864 | **48,580**⁷ | DAY·24/25·⁷Y12피크 57,000 |
-| 43 | **Invictus JB** | 조호르 호라이즌힐스 | British IGCSE/A | 36,500 | 45,500 | **48,500** | DAY·25/26 |
+| 43 | **Invictus JB** | 조호르 호라이즌힐스 | British IGCSE/A | 36,500 | 43,500 | **48,500** | DAY·25/26·2023개교(중=Y9 43,500 라이브정정, Y10=45,500)·싱가포르 경영·Singapore Math |
 | 44 | **Crescendo-HELP (CHIS)** | 조호르 | British IGCSE/A | 32,430 | 40,320 | **42,030**⁸ | 25/26·⁸A-Level 학기제 별도 |
 | 45 | **HELP (HIS)** | 슬랑오르 수방2 | Cambridge IGCSE/A | 50,490 | 64,950 | **42,000**⁹ | 26/27·⁹A-Level 2년÷2(중등이 더 비쌈) |
 | 46 | **St Christopher's (SCIPS)** | 페낭 조지타운 | British(Y8까지) | 33,000 | 해당없음 | **37,200**(Y8) | 25/26·초등·Prep 전용 |

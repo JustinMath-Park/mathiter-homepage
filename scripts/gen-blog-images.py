@@ -796,6 +796,38 @@ Handwriting and any worksheet content must be soft, blurred and NOT readable;
 no readable text, labels or logos anywhere.
 Horizontal landscape framing (16:9), editorial documentary angle.
 """,
+    # ═══════════════════════════════════════════════════════
+    # Malaysia series #2: Johor Iskandar schools (Persona 1, moving)
+    # Archetype E (wide campus establishing, near-Singapore) + a NEW archetype
+    # for #2: boarding-house / dormitory life — deliberately different from
+    # series #1's residential-street (1) + window-desk over-shoulder (2),
+    # and matches this post's theme (4 of 5 schools offer boarding).
+    # ═══════════════════════════════════════════════════════
+    "malaysia-intl-schools-johor-iskandar-1.png": STYLE + """
+A wide establishing shot of a spacious modern international school campus in the
+Iskandar / Johor region of southern Malaysia, with a sense of being close to
+Singapore across the strait — expansive contemporary low-rise academic buildings,
+generous green sports fields and tropical landscaping, and in the far background a
+hint of a distant causeway or bridge and water under bright mid-morning tropical
+light. A few uniformed students of mixed nationalities walk across the grounds at
+a respectful distance, no identifiable close-up faces. The campus feels large,
+well-resourced and slightly out of the city — the kind of place that offers
+boarding.
+No readable text, signage, brand names or logos anywhere in the frame.
+Horizontal landscape framing (16:9), wide editorial documentary angle.
+""",
+    "malaysia-intl-schools-johor-iskandar-2.png": STYLE + """
+A warm, calm interior of an international school boarding-house common room or
+study lounge in the early evening: a few teenage boarding students of mixed
+nationalities (including an East Asian student) seen mostly from behind or in soft
+side profile — no identifiable faces — quietly studying and reading on comfortable
+sofas and at a shared study table, soft warm lamp light, a bookshelf and tidy
+dormitory-style furnishings in the background, large windows showing dusk outside.
+The mood: the settled, independent rhythm of boarding life away from home —
+students living and studying together in a safe, homely residential setting.
+No readable text, labels or logos anywhere.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

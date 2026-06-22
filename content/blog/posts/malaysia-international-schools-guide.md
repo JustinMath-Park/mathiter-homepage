@@ -61,7 +61,7 @@ canonicalSlug: malaysia-international-schools-guide
 | 7 | Alice Smith | KL | British | 93,480 | 108,360 | **117,360** |
 | 8 | Epsom College | N.셈빌란 | British·기숙 | 92,400 | 109,200 | **116,610** |
 | 9 | Nexus | 푸트라자야 | IB·기숙 | 75,600 | 87,270 | **108,420** |
-| 10 | Raffles American | 조호르 | American | 98,500 | 98,500 | **106,500** |
+| 10 | Raffles American | 조호르 | American/IB | 98,500 | 98,500 | **106,500** |
 | 11 | St Joseph's (SJIIM) | PJ | British+IBDP | 72,540 | 86,892 | **100,611** |
 | 12 | AISM 호주국제 | 스리켐방안 | Australian | 75,640 | 91,040 | **97,599** |
 | 13 | King Henry VIII | 사이버자야 | British·기숙 | 66,400 | 81,800 | **96,000** |
@@ -93,7 +93,7 @@ canonicalSlug: malaysia-international-schools-guide
 | 39 | Sri KDU Penang | 페낭 본토 | British | 41,490 | 47,050 | **50,000** |
 | 40 | Tenby Setia EcoHill | 세메니 | British(Y11) | 35,625 | 45,390 | **48,981** |
 | 41 | KIS Sabah | 코타키나발루 | British | 38,262 | 45,864 | **48,580** |
-| 42 | Invictus JB | 조호르 | British | 36,500 | 45,500 | **48,500** |
+| 42 | Invictus JB | 조호르 | British | 36,500 | 43,500 | **48,500** |
 | 43 | Crescendo-HELP | 조호르 | British | 32,430 | 40,320 | **42,030** |
 | 44 | HELP (HIS) | 수방2 | British | 50,490 | 64,950 | **42,000** |
 | 45 | St Christopher's | 페낭 | British(Y8까지) | 33,000 | – | **37,200** |
