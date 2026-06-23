@@ -48,7 +48,7 @@
 | 30 | **POWIIS** | 페낭 발릭풀라우 | British IGCSE/A | 38,760 | 58,890 | **64,230** | DAY·26/27·기숙(Full 39,600) |
 | 31 | **Fairview KL** | KL 왕사마주 | 전IB | 40,000 | 52,000 | **60,000** | 23/24추정(공식비공개)·최古 IB |
 | 32 | **Sri KDU Subang** | 슬랑오르 수방자야 | British IGCSE/A | 48,300 | 54,920 | **59,500**⁴ | 25/26·⁴Y13 부분년 36,000 |
-| 33 | **Dalat** | 페낭 탄중붕아 | American+기독교 | 49,800 | 55,500 | **57,200** | DAY·25/26·★한국학생 최다(183명)·기숙별도 |
+| 33 | **Dalat** | 페낭 탄중붕아 | American+기독교 | 51,500 | 57,200 | **59,000** | DAY·26/27(라이브정정)·★한국 최다국적(공식프로필 25-26 ~183명)·기숙별도(45,200) |
 | 34 | **Taylor's Intl KL** | KL 수방자야 | Cambridge(Y11까지) | 41,010 | 51,480 | **55,050**⁵ | 26·⁵Pre-U 없음(IGCSE 종료) |
 | 35 | **Cempaka** | KL 다만사라하이츠 | British+Finnish | 36,900 | 45,600 | **53,100**⁶ | ⁶A-Level 학비 비공개(Y11까지만 공개) |
 | 36 | **elc International** | KL | Cambridge IGCSE/A | 36,000 | 45,000 | **51,000** | 25/26·SST 비과세권 |
@@ -67,7 +67,7 @@
 | 49 | **R.E.A.L Johor** | 조호르 | British(Y11까지) | 19,140 | 21,590 | **24,190**(Y11) | DAY·24/25·Intl 스트림 |
 | 50 | **Austin Heights** | 조호르 | British(Y11까지) | 18,400 | 21,400 | **22,000**(G11) | DAY·25/26·A-Level 없음 |
 
-**각주**: ¹Epsom Y12(116,610)>Y13(114,090) · ²Tenby Penang Y11 수치 billing artifact 의심(게시 전 재확인) · ³KTJ Sixth Form 신규생 기숙필수 RM124,500 · ⁴Sri KDU Y13 부분년 · ⁵⁶ A-Level/Pre-U 미운영 또는 비공개 · ⁷KIS Y12 피크 57,000 · ⁸CHIS A-Level 학기제 · ⁹HELP 고등<중등 · ¹⁰Charterhouse 초등 없음·Y9 시작, 학비 출처분쟁(Y9 ~93–99k / A-Level ~96–116k, Carthusian Award 할인 시 ~79k) · ¹¹Sri KDU 코타다만사라 IBDP/식스폼 비공개(공개 최고 Y11) · ¹²Adcote 현지요율(외국인 Y6 46,413/Y9 50,085/Y13 동일 68,250).
+**각주**: ¹Epsom Y12(116,610)>Y13(114,090) · ²Tenby Penang Y11 90,561 **라이브 확정**(학기당 30,187×3, IGCSE 최종학년 고가 — 단순 비교 주의) · ³KTJ Sixth Form 신규생 기숙필수 RM124,500 · ⁴Sri KDU Y13 부분년 · ⁵⁶ A-Level/Pre-U 미운영 또는 비공개 · ⁷KIS Y12 피크 57,000 · ⁸CHIS A-Level 학기제 · ⁹HELP 고등<중등 · ¹⁰Charterhouse 초등 없음·Y9 시작, 학비 출처분쟁(Y9 ~93–99k / A-Level ~96–116k, Carthusian Award 할인 시 ~79k) · ¹¹Sri KDU 코타다만사라 IBDP/식스폼 비공개(공개 최고 Y11) · ¹²Adcote 현지요율(외국인 Y6 46,413/Y9 50,085/Y13 동일 68,250).
 
 > 🆕 = Justin 지적("Oasis 안 보임") 후 보강한 상위권 11개교. **Oasis = #19(RM77,000, 미국식 G12)**. 정정: King Henry VIII=사이버자야(N.셈빌란 아님), Charterhouse=2021 개교·초등 없음(Y9 시작).
 

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgPG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d3b3a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="pIB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#14b8a6" /><stop offset="100%" stop-color="#0f766e" /></linearGradient>
+    <linearGradient id="pUS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b" /><stop offset="100%" stop-color="#b45309" /></linearGradient>
+    <linearGradient id="pUK" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0ea5e9" /><stop offset="100%" stop-color="#0369a1" /></linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgPG)" />
+  <circle cx="250" cy="180" r="300" fill="#ffffff" opacity="0.04" />
+  <circle cx="1370" cy="760" r="320" fill="#ffffff" opacity="0.04" />
+
+  <text x="800" y="148" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="40" font-weight="700" fill="#5eead4">말레이시아 국제학교 시리즈 ③ · 페낭</text>
+  <text x="800" y="226" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="58" font-weight="800" fill="#ffffff">여유로운 섬 · 합리적 비용 · 기숙 옵션</text>
+
+  <g transform="translate(80, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#pIB)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">IB · 페낭 최古</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#ccfbf1">Uplands</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">1955년 · 기숙형 IB</text>
+  </g>
+  <g transform="translate(573, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#pUS)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">미국식 · AP</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#fef3c7">Dalat</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">한국 학생 최다 국적</text>
+  </g>
+  <g transform="translate(1066, 322)">
+    <rect width="453" height="250" rx="24" fill="url(#pUK)" opacity="0.95" />
+    <text x="226" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="30" font-weight="800" fill="#ffffff">영국식 · A-Level</text>
+    <text x="226" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="32" font-weight="800" fill="#e0f2fe">POWIIS · Stonyhurst</text>
+    <text x="226" y="190" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" fill="#ffffff" opacity="0.85">IGCSE → A-Level</text>
+  </g>
+
+  <g transform="translate(800, 668)">
+    <rect x="-660" y="0" width="1320" height="160" rx="22" fill="#14b8a6" opacity="0.12" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.5" />
+    <text x="0" y="68" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="800" fill="#99f6e4">페낭엔 한국 커뮤니티가 있는 학교가 있다</text>
+    <text x="0" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.85">미국식 · 영국식 · IB 다양 · 3곳 기숙 운영 · 통학가와 기숙비는 따로</text>
+  </g>
+</svg>

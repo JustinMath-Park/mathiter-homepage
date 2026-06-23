@@ -828,6 +828,40 @@ students living and studying together in a safe, homely residential setting.
 No readable text, labels or logos anywhere.
 Horizontal landscape framing (16:9), editorial documentary angle.
 """,
+    # ═══════════════════════════════════════════════════════
+    # Malaysia series #3: Penang schools (Persona 1, moving)
+    # Penang = relaxed island, lower cost-of-living, boarding options.
+    # Photo 1 = Georgetown heritage / coastal island streetscape (NEW archetype —
+    #   heritage-town + sea, deliberately different from series #1's KL residential
+    #   high-rises and series #2's wide near-Singapore campus).
+    # Photo 2 = classroom peer / small-group study (Archetype I, NEW for this series —
+    #   not used in #1 window-desk or #2 boarding-lounge), faces non-identifiable.
+    # ═══════════════════════════════════════════════════════
+    "malaysia-intl-schools-penang-1.png": STYLE + """
+A relaxed island streetscape in George Town, Penang, Malaysia in soft warm
+mid-morning light: low-rise heritage shophouses with colourful weathered facades
+and clay-tile roofs along a quiet palm-lined coastal street, a glimpse of the calm
+sea and a distant headland in the background, a few cyclists and pedestrians of
+mixed nationalities (including East Asian) moving unhurriedly along the pavement at
+a respectful distance, no identifiable close-up faces. The atmosphere is laid-back
+and unhurried — a settled tropical island town rather than a dense city, the kind
+of relaxed coastal place a relocating family might choose for a calmer pace.
+No readable text, signage, brand names or logos anywhere in the frame.
+Horizontal landscape framing (16:9), wide editorial documentary angle.
+""",
+    "malaysia-intl-schools-penang-2.png": STYLE + """
+A bright, calm international school classroom in the daytime where three or four
+students of mixed nationalities (including an East Asian student) work together on
+a mathematics problem at a shared table — seen mostly from behind or in soft side
+profile so no faces are identifiable. One student writes English-language math
+working in a notebook while another points at the page; geometry tools, an open
+textbook and a notebook are on the table. Soft natural daylight from large
+classroom windows, a relaxed and focused mood — the ordinary daily life of
+preparing English-language math together at an international school.
+Any handwriting or worksheet content must be soft, blurred and NOT readable;
+no readable text, labels or logos anywhere.
+Horizontal landscape framing (16:9), editorial documentary angle.
+""",
 }
 
 # ─────────────────────────────────────────────────────────────

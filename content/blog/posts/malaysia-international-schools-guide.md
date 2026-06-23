@@ -83,7 +83,7 @@ canonicalSlug: malaysia-international-schools-guide
 | 29 | POWIIS | 페낭 | British·기숙 | 38,760 | 58,890 | **64,230** |
 | 30 | Fairview KL | KL | IB | 40,000 | 52,000 | **60,000** |
 | 31 | Sri KDU Subang | 수방자야 | British | 48,300 | 54,920 | **59,500** |
-| 32 | Dalat | 페낭 | American·기숙 | 49,800 | 55,500 | **57,200** |
+| 32 | Dalat | 페낭 | American·기숙 | 51,500 | 57,200 | **59,000** |
 | 33 | Taylor's Intl KL | 수방자야 | British(Y11) | 41,010 | 51,480 | **55,050** |
 | 34 | Cempaka | KL 다만사라 | British+Finnish | 36,900 | 45,600 | **53,100** |
 | 35 | elc International | KL | British | 36,000 | 45,000 | **51,000** |
